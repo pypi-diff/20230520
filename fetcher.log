@@ -205,3 +205,125 @@
 [2023-05-20 00:13:14] INFO root fetch - main [MainThread]: End processing [pyarmor-webui]: success
 [2023-05-20 00:13:17] INFO root fetch - main [MainThread]: End processing [hordelib]: success
 [2023-05-20 00:13:17] INFO root fetch - main [MainThread]: Store serial: [18176165]
+[2023-05-20 00:18:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18176165]
+[2023-05-20 00:18:26] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-20 00:18:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EOmaps
+[2023-05-20 00:18:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-view-manager
+[2023-05-20 00:18:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tempcf
+[2023-05-20 00:18:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ScriptCollection
+[2023-05-20 00:18:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: RPQ-pytorch
+[2023-05-20 00:18:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rapidpro-flow-tools
+[2023-05-20 00:18:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-oasis4
+[2023-05-20 00:18:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vellum-ai
+[2023-05-20 00:18:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: philbot-voice
+[2023-05-20 00:18:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: visiongraph
+[2023-05-20 00:18:26] INFO root fetch - processPackages [EOmaps]: New version: [6.5] Old Version: [6.4.1]
+[2023-05-20 00:18:26] INFO root fetch - processPackages [django-view-manager]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-20 00:18:26] INFO root fetch - processPackages [visiongraph]: New version: [0.1.45] Old Version: [0.1.44.5]
+[2023-05-20 00:18:26] INFO root fetch - processPackages [vellum-ai]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 00:18:26] INFO root fetch - processPackages [philbot-voice]: New version: [1.7.2] Old Version: [1.7.1]
+[2023-05-20 00:18:26] INFO root fetch - processPackages [rapidpro-flow-tools]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-20 00:18:26] INFO root fetch - processPackages [tempcf]: New version: [0.6.6] Old Version: [0.6.3]
+[2023-05-20 00:18:26] INFO root fetch - processPackages [django-oasis4]: New version: [1.1.1a0] Old Version: [1.1.0]
+[2023-05-20 00:18:26] INFO root fetch - processPackages [RPQ-pytorch]: New version: [0.0.30] Old Version: [0.0.3]
+[2023-05-20 00:18:26] INFO root fetch - processPackages [ScriptCollection]: New version: [3.3.9] Old Version: [3.3.83]
+[2023-05-20 00:18:26] INFO root fetch - processPackages [vellum-ai]: executing diffoscope
+[2023-05-20 00:18:26] INFO root fetch - processPackages [vellum-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vellum_ai-0.0.8.tar.gz tmp/vellum_ai-0.0.9.tar.gz --markdown 20230520/v/vellum-ai/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 00:18:26] INFO root fetch - processPackages [EOmaps]: Downloading https://files.pythonhosted.org/packages/99/dc/181066e203ff1673c9d2147f4ac272d0fae90c428db09ea9dc18e5467f07/EOmaps-6.4.1.tar.gz
+[2023-05-20 00:18:26] INFO root fetch - processPackages [visiongraph]: Downloading https://files.pythonhosted.org/packages/d6/e8/e790f5aa184466970c71623b74d6a50dc379dceaf28f1e5ad14e05e31094/visiongraph-0.1.44.5-py3-none-any.whl
+[2023-05-20 00:18:26] INFO root fetch - processPackages [ScriptCollection]: Downloading https://files.pythonhosted.org/packages/98/c5/4722cfba03b93e122ae02691f3ef97d70401d1ab5c77b2e0628c722948f6/ScriptCollection-3.3.83-py3-none-any.whl
+[2023-05-20 00:18:26] INFO root fetch - processPackages [django-view-manager]: Downloading https://files.pythonhosted.org/packages/45/0c/e6b46b1f1068277a7d0a110c6ed3985f55a15e0f586e24f4d60f273cc911/django_view_manager-1.0.1-py3-none-any.whl
+[2023-05-20 00:18:26] INFO root fetch - processPackages [philbot-voice]: Downloading https://files.pythonhosted.org/packages/c9/f2/723ba5aa72e0cd689811e1dac9969a5f0486c8fd19917bb0e6ab007eb91c/philbot_voice-1.7.1.tar.gz
+[2023-05-20 00:18:26] INFO root fetch - processPackages [RPQ-pytorch]: Downloading https://files.pythonhosted.org/packages/aa/ac/d37de6cc3a67d8fa6342b38d723caff0ef6e93872cbb5cb8d358a2bb597c/RPQ-pytorch-0.0.30.tar.gz
+[2023-05-20 00:18:26] INFO root fetch - processPackages [django-oasis4]: Downloading https://files.pythonhosted.org/packages/30/6f/ad07f8063bc746221a5c335dcb0644b9c44b431438914379f982bf5c059e/django-oasis4-1.1.0.tar.gz
+[2023-05-20 00:18:26] INFO root fetch - processPackages [rapidpro-flow-tools]: Downloading https://files.pythonhosted.org/packages/7c/43/57c047d2bbefd30245005785be27521e4be6a00654d3fa898a47a92cfe45/rapidpro_flow_tools-1.0.3.tar.gz
+[2023-05-20 00:18:26] INFO root fetch - processPackages [tempcf]: Downloading https://files.pythonhosted.org/packages/b3/e4/7eecd738af1fef7f14c3bb622370a912d70890e639f9cdebab0e636e4735/tempcf-0.6.3.tar.gz
+[2023-05-20 00:18:26] INFO root fetch - processPackages [RPQ-pytorch]: executing diffoscope
+[2023-05-20 00:18:26] INFO root fetch - processPackages [RPQ-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RPQ-pytorch-0.0.3.tar.gz tmp/RPQ-pytorch-0.0.30.tar.gz --markdown 20230520/R/RPQ-pytorch/0.0.3-0.0.30/diff.md --exclude *.pyd
+[2023-05-20 00:18:26] INFO root fetch - processPackages [rapidpro-flow-tools]: executing diffoscope
+[2023-05-20 00:18:26] INFO root fetch - processPackages [rapidpro-flow-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpro_flow_tools-1.0.2.tar.gz tmp/rapidpro_flow_tools-1.0.3.tar.gz --markdown 20230520/r/rapidpro-flow-tools/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-20 00:18:26] INFO root fetch - processPackages [ScriptCollection]: executing diffoscope
+[2023-05-20 00:18:26] INFO root fetch - processPackages [ScriptCollection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ScriptCollection-3.3.83-py3-none-any.whl.zip tmp/ScriptCollection-3.3.9-py3-none-any.whl.zip --markdown 20230520/S/ScriptCollection/3.3.83-3.3.9/diff.md --exclude *.pyd
+[2023-05-20 00:18:26] INFO root fetch - processPackages [EOmaps]: Downloading https://files.pythonhosted.org/packages/14/ad/307c4d457961d29464b2a2203c38deefddd8b2faa5e6d8f66a21c553cc54/EOmaps-6.5.tar.gz
+[2023-05-20 00:18:26] INFO root fetch - processPackages [visiongraph]: Downloading https://files.pythonhosted.org/packages/db/22/5bd249c7629572fcb75fc69c3caacaba24d4620ba35d4fe9a46a4754d453/visiongraph-0.1.45-py3-none-any.whl
+[2023-05-20 00:18:26] INFO root fetch - processPackages [django-view-manager]: Downloading https://files.pythonhosted.org/packages/a0/0e/fce60eadd63a08c1129f8150408e49e5f36f56ccb310d8a97100d0fb9f9d/django_view_manager-1.0.2-py3-none-any.whl
+[2023-05-20 00:18:26] INFO root fetch - processPackages [philbot-voice]: Downloading https://files.pythonhosted.org/packages/15/06/48762535a3004f9a18a56778c7dcc49b290c4a5a458a4ae0896d511f388a/philbot_voice-1.7.2.tar.gz
+[2023-05-20 00:18:26] INFO root fetch - processPackages [EOmaps]: executing diffoscope
+[2023-05-20 00:18:26] INFO root fetch - processPackages [EOmaps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EOmaps-6.4.1.tar.gz tmp/EOmaps-6.5.tar.gz --markdown 20230520/E/EOmaps/6.4.1-6.5/diff.md --exclude *.pyd
+[2023-05-20 00:18:26] INFO root fetch - processPackages [django-oasis4]: Downloading https://files.pythonhosted.org/packages/8f/1c/fc1f1a1405953365f55b1e9aa2e6c8b1f33af00d5542fd9250e635900ecb/django-oasis4-1.1.1a0.tar.gz
+[2023-05-20 00:18:26] INFO root fetch - processPackages [visiongraph]: executing diffoscope
+[2023-05-20 00:18:26] INFO root fetch - processPackages [visiongraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/visiongraph-0.1.44.5-py3-none-any.whl.zip tmp/visiongraph-0.1.45-py3-none-any.whl.zip --markdown 20230520/v/visiongraph/0.1.44.5-0.1.45/diff.md --exclude *.pyd
+[2023-05-20 00:18:26] INFO root fetch - processPackages [philbot-voice]: executing diffoscope
+[2023-05-20 00:18:26] INFO root fetch - processPackages [philbot-voice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/philbot_voice-1.7.1.tar.gz tmp/philbot_voice-1.7.2.tar.gz --markdown 20230520/p/philbot-voice/1.7.1-1.7.2/diff.md --exclude *.pyd
+[2023-05-20 00:18:26] INFO root fetch - processPackages [django-view-manager]: executing diffoscope
+[2023-05-20 00:18:26] INFO root fetch - processPackages [django-view-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_view_manager-1.0.1-py3-none-any.whl.zip tmp/django_view_manager-1.0.2-py3-none-any.whl.zip --markdown 20230520/d/django-view-manager/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-20 00:18:26] INFO root fetch - processPackages [tempcf]: Downloading https://files.pythonhosted.org/packages/29/74/a47c98b54145b63dff67dc0395d3769b65b412a4bf0a6362808230b00049/tempcf-0.6.6.tar.gz
+[2023-05-20 00:18:26] INFO root fetch - processPackages [django-oasis4]: executing diffoscope
+[2023-05-20 00:18:26] INFO root fetch - processPackages [django-oasis4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-oasis4-1.1.0.tar.gz tmp/django-oasis4-1.1.1a0.tar.gz --markdown 20230520/d/django-oasis4/1.1.0-1.1.1a0/diff.md --exclude *.pyd
+[2023-05-20 00:18:26] INFO root fetch - processPackages [tempcf]: executing diffoscope
+[2023-05-20 00:18:26] INFO root fetch - processPackages [tempcf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tempcf-0.6.3.tar.gz tmp/tempcf-0.6.6.tar.gz --markdown 20230520/t/tempcf/0.6.3-0.6.6/diff.md --exclude *.pyd
+[2023-05-20 00:18:28] INFO root fetch - processPackages [ScriptCollection]: Start processing: dingtalk-stream
+[2023-05-20 00:18:28] INFO root fetch - main [MainThread]: End processing [ScriptCollection]: success
+[2023-05-20 00:18:28] INFO root fetch - processPackages [dingtalk-stream]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-20 00:18:28] INFO root fetch - processPackages [philbot-voice]: Start processing: flaskosql
+[2023-05-20 00:18:28] INFO root fetch - main [MainThread]: End processing [philbot-voice]: success
+[2023-05-20 00:18:28] INFO root fetch - processPackages [flaskosql]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-20 00:18:28] INFO root fetch - processPackages [dingtalk-stream]: Downloading https://files.pythonhosted.org/packages/78/b3/211bc996ce14086e2f479c1fd0fcd332349474e7c832df5bb82fbccd6839/dingtalk-stream-0.1.0.tar.gz
+[2023-05-20 00:18:28] INFO root fetch - processPackages [RPQ-pytorch]: Start processing: databricks-feature-store
+[2023-05-20 00:18:28] INFO root fetch - main [MainThread]: End processing [RPQ-pytorch]: success
+[2023-05-20 00:18:28] INFO root fetch - processPackages [django-view-manager]: Start processing: cli-command-parser
+[2023-05-20 00:18:28] INFO root fetch - main [MainThread]: End processing [django-view-manager]: success
+[2023-05-20 00:18:28] INFO root fetch - processPackages [flaskosql]: Downloading https://files.pythonhosted.org/packages/5f/80/9b8a421b3553c2e680ca3ae16924e4d3514be19ef03330483e6f9c79619c/flaskosql-1.0.5.tar.gz
+[2023-05-20 00:18:28] INFO root fetch - processPackages [dingtalk-stream]: Downloading https://files.pythonhosted.org/packages/ee/2e/0350060cee2d7dcd3cd59e920422e41f6369dc861d5fd774f2528ff77bdd/dingtalk-stream-0.1.1.tar.gz
+[2023-05-20 00:18:28] INFO root fetch - processPackages [vellum-ai]: Start processing: cappr
+[2023-05-20 00:18:28] INFO root fetch - main [MainThread]: End processing [vellum-ai]: success
+[2023-05-20 00:18:28] INFO root fetch - processPackages [databricks-feature-store]: New version: [0.9.1a2] Old Version: [0.9.1a1]
+[2023-05-20 00:18:28] INFO root fetch - processPackages [flaskosql]: executing diffoscope
+[2023-05-20 00:18:28] INFO root fetch - processPackages [flaskosql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flaskosql-1.0.4.tar.gz tmp/flaskosql-1.0.5.tar.gz --markdown 20230520/f/flaskosql/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-20 00:18:28] INFO root fetch - processPackages [dingtalk-stream]: executing diffoscope
+[2023-05-20 00:18:28] INFO root fetch - processPackages [dingtalk-stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dingtalk-stream-0.1.0.tar.gz tmp/dingtalk-stream-0.1.1.tar.gz --markdown 20230520/d/dingtalk-stream/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-20 00:18:28] INFO root fetch - processPackages [cli-command-parser]: New version: [2023.5.8] Old Version: [2023.5.2]
+[2023-05-20 00:18:28] INFO root fetch - processPackages [cappr]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-20 00:18:28] INFO root fetch - processPackages [databricks-feature-store]: executing diffoscope
+[2023-05-20 00:18:28] INFO root fetch - processPackages [databricks-feature-store]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databricks-feature-store-0.9.1a1.tar.gz tmp/databricks-feature-store-0.9.1a2.tar.gz --markdown 20230520/d/databricks-feature-store/0.9.1a1-0.9.1a2/diff.md --exclude *.pyd
+[2023-05-20 00:18:28] INFO root fetch - processPackages [tempcf]: Start processing: hiddifypanel
+[2023-05-20 00:18:28] INFO root fetch - main [MainThread]: End processing [tempcf]: success
+[2023-05-20 00:18:28] INFO root fetch - processPackages [hiddifypanel]: New version: [7.0.0.dev9] Old Version: [7.0.0.dev8]
+[2023-05-20 00:18:28] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-05-20 00:18:28] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-7.0.0.dev8-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-7.0.0.dev9-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230520/h/hiddifypanel/7.0.0.dev8-7.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-20 00:18:28] INFO root fetch - processPackages [cappr]: Downloading https://files.pythonhosted.org/packages/60/25/777705c8dcc32d6767cda8e3d8ad652e5f43f0b2dcc24a9d56e3b162be1d/cappr-0.2.5.tar.gz
+[2023-05-20 00:18:29] INFO root fetch - processPackages [django-oasis4]: Start processing: tempcf
+[2023-05-20 00:18:29] INFO root fetch - main [MainThread]: End processing [django-oasis4]: success
+[2023-05-20 00:18:29] INFO root fetch - processPackages [EOmaps]: Start processing: rapidpro-flow-tools
+[2023-05-20 00:18:29] INFO root fetch - main [MainThread]: End processing [EOmaps]: success
+[2023-05-20 00:18:29] INFO root fetch - processPackages [tempcf]: New version: [0.6.7] Old Version: [0.6.6]
+[2023-05-20 00:18:29] INFO root fetch - processPackages [rapidpro-flow-tools]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-20 00:18:29] INFO root fetch - processPackages [cli-command-parser]: executing diffoscope
+[2023-05-20 00:18:29] INFO root fetch - processPackages [cli-command-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli_command_parser-2023.5.2.tar.gz tmp/cli_command_parser-2023.5.8.tar.gz --markdown 20230520/c/cli-command-parser/2023.5.2-2023.5.8/diff.md --exclude *.pyd
+[2023-05-20 00:18:29] INFO root fetch - processPackages [cappr]: Downloading https://files.pythonhosted.org/packages/8e/b1/281ee50ee765970646bd209ba477684a1bd5c65e4df7ed3e328a32a19db2/cappr-0.2.6.tar.gz
+[2023-05-20 00:18:29] INFO root fetch - processPackages [rapidpro-flow-tools]: Downloading https://files.pythonhosted.org/packages/05/e0/0f806b797d39cb1a07799727b14bdf09a9fd95df9610d5a803159a3c8258/rapidpro_flow_tools-1.0.4.tar.gz
+[2023-05-20 00:18:29] INFO root fetch - processPackages [tempcf]: Downloading https://files.pythonhosted.org/packages/04/84/42727df998308ed24c3ad74557006a703f12c4d3be226003e988574a6d18/tempcf-0.6.7.tar.gz
+[2023-05-20 00:18:29] INFO root fetch - processPackages [cappr]: executing diffoscope
+[2023-05-20 00:18:29] INFO root fetch - processPackages [cappr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cappr-0.2.5.tar.gz tmp/cappr-0.2.6.tar.gz --markdown 20230520/c/cappr/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-20 00:18:29] INFO root fetch - processPackages [rapidpro-flow-tools]: Start processing: atramentarium
+[2023-05-20 00:18:29] INFO root fetch - main [MainThread]: End processing [rapidpro-flow-tools]: success
+[2023-05-20 00:18:29] INFO root fetch - processPackages [rapidpro-flow-tools]: executing diffoscope
+[2023-05-20 00:18:29] INFO root fetch - processPackages [rapidpro-flow-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpro_flow_tools-1.0.3.tar.gz tmp/rapidpro_flow_tools-1.0.4.tar.gz --markdown 20230520/r/rapidpro-flow-tools/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-20 00:18:29] INFO root fetch - processPackages [atramentarium]: New version: [0.4] Old Version: [0.3]
+[2023-05-20 00:18:29] INFO root fetch - processPackages [tempcf]: executing diffoscope
+[2023-05-20 00:18:29] INFO root fetch - processPackages [tempcf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tempcf-0.6.6.tar.gz tmp/tempcf-0.6.7.tar.gz --markdown 20230520/t/tempcf/0.6.6-0.6.7/diff.md --exclude *.pyd
+[2023-05-20 00:18:29] INFO root fetch - processPackages [atramentarium]: Downloading https://files.pythonhosted.org/packages/01/e8/4aa77cca7612b0ea99e758f9004cf362e4f48198a48d2b28b41b6626bfef/atramentarium-0.3.tar.gz
+[2023-05-20 00:18:30] INFO root fetch - processPackages [atramentarium]: Downloading https://files.pythonhosted.org/packages/4c/7f/35b228432662cf20a714466c86af927f45e373e1374e0abebf2cb64be243/atramentarium-0.4-py3-none-any.whl
+[2023-05-20 00:18:30] INFO root fetch - main [MainThread]: End processing [flaskosql]: success
+[2023-05-20 00:18:30] INFO root fetch - processPackages [atramentarium]: executing diffoscope
+[2023-05-20 00:18:30] INFO root fetch - processPackages [atramentarium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atramentarium-0.3.tar.gz tmp/atramentarium-0.4-py3-none-any.whl.zip --markdown 20230520/a/atramentarium/0.3-0.4/diff.md --exclude *.pyd
+[2023-05-20 00:18:30] INFO root fetch - main [MainThread]: End processing [dingtalk-stream]: success
+[2023-05-20 00:18:30] INFO root fetch - main [MainThread]: End processing [visiongraph]: success
+[2023-05-20 00:18:30] INFO root fetch - main [MainThread]: End processing [databricks-feature-store]: success
+[2023-05-20 00:18:31] INFO root fetch - main [MainThread]: End processing [tempcf]: success
+[2023-05-20 00:18:31] INFO root fetch - main [MainThread]: End processing [atramentarium]: success
+[2023-05-20 00:18:31] INFO root fetch - main [MainThread]: End processing [rapidpro-flow-tools]: success
+[2023-05-20 00:18:32] INFO root fetch - main [MainThread]: End processing [cappr]: success
+[2023-05-20 00:18:32] INFO root fetch - main [MainThread]: End processing [cli-command-parser]: success
+[2023-05-20 00:18:50] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-05-20 00:18:50] INFO root fetch - main [MainThread]: Store serial: [18176217]
