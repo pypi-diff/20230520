@@ -327,3 +327,79 @@
 [2023-05-20 00:18:32] INFO root fetch - main [MainThread]: End processing [cli-command-parser]: success
 [2023-05-20 00:18:50] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-05-20 00:18:50] INFO root fetch - main [MainThread]: Store serial: [18176217]
+[2023-05-20 00:23:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18176217]
+[2023-05-20 00:23:59] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-20 00:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dbt-semantic-interfaces
+[2023-05-20 00:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pepperize.cdk-serverless-cluster-from-snapshot
+[2023-05-20 00:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: agixt
+[2023-05-20 00:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: teradatasql
+[2023-05-20 00:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: modelaapi
+[2023-05-20 00:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rapidpro-flow-tools
+[2023-05-20 00:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dingtalk-stream
+[2023-05-20 00:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyquil
+[2023-05-20 00:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aocref
+[2023-05-20 00:23:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: spotigrabber
+[2023-05-20 00:23:59] WARNING root fetch - processPackages [dbt-semantic-interfaces]: Skipping, unable to determine old version
+[2023-05-20 00:23:59] INFO root fetch - processPackages [dbt-semantic-interfaces]: Start processing: sdmx1
+[2023-05-20 00:23:59] INFO root fetch - main [MainThread]: End processing [dbt-semantic-interfaces] error
+[2023-05-20 00:23:59] INFO root fetch - processPackages [rapidpro-flow-tools]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-20 00:23:59] INFO root fetch - processPackages [aocref]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-20 00:23:59] INFO root fetch - processPackages [pyquil]: New version: [4.0.0rc9] Old Version: [4.0.0rc8]
+[2023-05-20 00:23:59] INFO root fetch - processPackages [spotigrabber]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-20 00:23:59] INFO root fetch - processPackages [dingtalk-stream]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-20 00:23:59] INFO root fetch - processPackages [sdmx1]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-05-20 00:23:59] INFO root fetch - processPackages [agixt]: New version: [1.1.43b0] Old Version: [1.1.42b0]
+[2023-05-20 00:23:59] INFO root fetch - processPackages [modelaapi]: New version: [0.6] Old Version: [0.5.99]
+[2023-05-20 00:23:59] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-20 00:23:59] INFO root fetch - processPackages [teradatasql]: New version: [17.20.0.9] Old Version: [17.20.0.8]
+[2023-05-20 00:23:59] INFO root fetch - processPackages [spotigrabber]: Downloading https://files.pythonhosted.org/packages/bf/7b/2092eaddb010aaa14ffdc95a84d6f5d534f3083e0db82c880071316f65a8/spotigrabber-0.0.3.tar.gz
+[2023-05-20 00:23:59] INFO root fetch - processPackages [aocref]: Downloading https://files.pythonhosted.org/packages/ea/bd/cf12f6b30e023e267e2e3265d53d3ae8c7d2a9772f53f5147c869f427954/aocref-2.0.8.tar.gz
+[2023-05-20 00:23:59] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/ac/3e/633dbf3ca2e4773b3372d89267e13dfe25cca6e0f9e7542c1920dd18d4a7/agixt-1.1.42b0.tar.gz
+[2023-05-20 00:23:59] INFO root fetch - processPackages [rapidpro-flow-tools]: Downloading https://files.pythonhosted.org/packages/07/ac/1448ab6eeb36274dda893ad6d4a6b56899a0108b11b03156594dc370ccbd/rapidpro_flow_tools-1.0.5.tar.gz
+[2023-05-20 00:23:59] INFO root fetch - processPackages [pyquil]: Downloading https://files.pythonhosted.org/packages/d9/31/04bebe8a0e1e9f50a7c18106b7d8ade8b3377f99c6a2249e5a49105b59b4/pyquil-4.0.0rc8.tar.gz
+[2023-05-20 00:23:59] INFO root fetch - processPackages [dingtalk-stream]: Downloading https://files.pythonhosted.org/packages/54/ad/a8dd439ca091a32075b6255ecb5af9529d347d4c8ff2ac0f8b309a7bde5e/dingtalk-stream-0.1.2.tar.gz
+[2023-05-20 00:23:59] INFO root fetch - processPackages [sdmx1]: Downloading https://files.pythonhosted.org/packages/44/4b/374eba00e995541ce5d1a150b39ace8bdb28759085c5dfa8424c82ed2e4e/sdmx1-2.8.0.tar.gz
+[2023-05-20 00:23:59] INFO root fetch - processPackages [modelaapi]: Downloading https://files.pythonhosted.org/packages/56/78/99c2318f17b15eb03938f076f98ad290bac069bd934d476d48afb8b4bb68/modelaapi-0.5.99.tar.gz
+[2023-05-20 00:23:59] INFO root fetch - processPackages [teradatasql]: Downloading https://files.pythonhosted.org/packages/47/a4/6387d78255b60dd036373ce2a3ac58d6df1eaf807ea85066ca385f009fa1/teradatasql-17.20.0.8-py3-none-any.whl
+[2023-05-20 00:23:59] INFO root fetch - processPackages [rapidpro-flow-tools]: executing diffoscope
+[2023-05-20 00:23:59] INFO root fetch - processPackages [rapidpro-flow-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpro_flow_tools-1.0.4.tar.gz tmp/rapidpro_flow_tools-1.0.5.tar.gz --markdown 20230520/r/rapidpro-flow-tools/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-20 00:23:59] WARNING root fetch - processPackages [teradatasql]: Skipping package: exceeds size limit 28119372>=10485760
+[2023-05-20 00:23:59] INFO root fetch - processPackages [teradatasql]: Start processing: lineagex
+[2023-05-20 00:23:59] INFO root fetch - main [MainThread]: End processing [teradatasql] error
+[2023-05-20 00:23:59] INFO root fetch - processPackages [dingtalk-stream]: executing diffoscope
+[2023-05-20 00:23:59] INFO root fetch - processPackages [dingtalk-stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dingtalk-stream-0.1.1.tar.gz tmp/dingtalk-stream-0.1.2.tar.gz --markdown 20230520/d/dingtalk-stream/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-20 00:23:59] INFO root fetch - processPackages [spotigrabber]: Downloading https://files.pythonhosted.org/packages/74/24/50baa237cbe13a248f8a132c980bfdf8b822a9cc1a099615a56f151d0d4f/spotigrabber-0.0.4.tar.gz
+[2023-05-20 00:23:59] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: executing diffoscope
+[2023-05-20 00:23:59] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.98.tar.gz tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.99.tar.gz --markdown 20230520/p/pepperize.cdk-serverless-cluster-from-snapshot/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-20 00:23:59] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/ff/bc/481f0f18177f8c88c4edafc550b19f6edccdd44948e62dd0949aa67d32b8/agixt-1.1.43b0.tar.gz
+[2023-05-20 00:23:59] INFO root fetch - processPackages [aocref]: Downloading https://files.pythonhosted.org/packages/87/d2/eca28112361c5e8ca395c12a250d2eaad5b11ceeaeac5f402f60eb21540b/aocref-2.0.9.tar.gz
+[2023-05-20 00:23:59] INFO root fetch - processPackages [modelaapi]: Downloading https://files.pythonhosted.org/packages/ef/53/dd9b88920f002ec23033464aa3cffd7acf40b8eed3bc7e33bd61193e0bc4/modelaapi-0.6.tar.gz
+[2023-05-20 00:23:59] INFO root fetch - processPackages [lineagex]: New version: [0.0.3a1] Old Version: [0.0.2a2]
+[2023-05-20 00:23:59] INFO root fetch - processPackages [pyquil]: Downloading https://files.pythonhosted.org/packages/3f/f5/a07361d9cd9abaff042e646976f0046519493e9c310c03d2e627f3ff97e8/pyquil-4.0.0rc9.tar.gz
+[2023-05-20 00:23:59] INFO root fetch - processPackages [modelaapi]: executing diffoscope
+[2023-05-20 00:23:59] INFO root fetch - processPackages [modelaapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelaapi-0.5.99.tar.gz tmp/modelaapi-0.6.tar.gz --markdown 20230520/m/modelaapi/0.5.99-0.6/diff.md --exclude *.pyd
+[2023-05-20 00:23:59] INFO root fetch - processPackages [spotigrabber]: executing diffoscope
+[2023-05-20 00:23:59] INFO root fetch - processPackages [spotigrabber]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotigrabber-0.0.3.tar.gz tmp/spotigrabber-0.0.4.tar.gz --markdown 20230520/s/spotigrabber/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-20 00:24:00] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-05-20 00:24:00] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.42b0.tar.gz tmp/agixt-1.1.43b0.tar.gz --markdown 20230520/a/agixt/1.1.42b0-1.1.43b0/diff.md --exclude *.pyd
+[2023-05-20 00:24:00] INFO root fetch - processPackages [pyquil]: executing diffoscope
+[2023-05-20 00:24:00] INFO root fetch - processPackages [pyquil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyquil-4.0.0rc8.tar.gz tmp/pyquil-4.0.0rc9.tar.gz --markdown 20230520/p/pyquil/4.0.0rc8-4.0.0rc9/diff.md --exclude *.pyd
+[2023-05-20 00:24:00] INFO root fetch - processPackages [sdmx1]: Downloading https://files.pythonhosted.org/packages/d4/74/474d459265382856a9124916f8b6b603ef57757e6127c94a76cee6f31de9/sdmx1-2.9.0.tar.gz
+[2023-05-20 00:24:00] INFO root fetch - processPackages [aocref]: executing diffoscope
+[2023-05-20 00:24:00] INFO root fetch - processPackages [aocref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aocref-2.0.8.tar.gz tmp/aocref-2.0.9.tar.gz --markdown 20230520/a/aocref/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-20 00:24:00] INFO root fetch - processPackages [sdmx1]: executing diffoscope
+[2023-05-20 00:24:00] INFO root fetch - processPackages [sdmx1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdmx1-2.8.0.tar.gz tmp/sdmx1-2.9.0.tar.gz --markdown 20230520/s/sdmx1/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-05-20 00:24:00] INFO root fetch - processPackages [lineagex]: Downloading https://files.pythonhosted.org/packages/fc/9d/2ef04627c4aa2c2b630625e179b976ec1bc4bd40b18c519dddb1118e9e95/lineagex-0.0.3a1.tar.gz
+[2023-05-20 00:24:00] INFO root fetch - processPackages [lineagex]: executing diffoscope
+[2023-05-20 00:24:00] INFO root fetch - processPackages [lineagex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lineagex-0.0.2a2.tar.gz tmp/lineagex-0.0.3a1.tar.gz --markdown 20230520/l/lineagex/0.0.2a2-0.0.3a1/diff.md --exclude *.pyd
+[2023-05-20 00:24:01] INFO root fetch - main [MainThread]: End processing [dingtalk-stream]: success
+[2023-05-20 00:24:01] INFO root fetch - main [MainThread]: End processing [spotigrabber]: success
+[2023-05-20 00:24:01] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-serverless-cluster-from-snapshot]: success
+[2023-05-20 00:24:01] INFO root fetch - main [MainThread]: End processing [aocref]: success
+[2023-05-20 00:24:02] INFO root fetch - main [MainThread]: End processing [rapidpro-flow-tools]: success
+[2023-05-20 00:24:02] INFO root fetch - main [MainThread]: End processing [pyquil]: success
+[2023-05-20 00:24:02] INFO root fetch - main [MainThread]: End processing [sdmx1]: success
+[2023-05-20 00:24:02] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-05-20 00:24:04] INFO root fetch - main [MainThread]: End processing [lineagex]: success
+[2023-05-20 00:24:06] INFO root fetch - main [MainThread]: End processing [modelaapi]: success
+[2023-05-20 00:24:06] INFO root fetch - main [MainThread]: Store serial: [18176260]
