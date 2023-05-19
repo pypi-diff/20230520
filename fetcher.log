@@ -1203,3 +1203,74 @@
 [2023-05-20 01:35:30] INFO root fetch - main [MainThread]: End processing [hermescloud]: success
 [2023-05-20 01:35:30] INFO root fetch - main [MainThread]: End processing [BTKSorgu]: success
 [2023-05-20 01:35:30] INFO root fetch - main [MainThread]: Store serial: [18176783]
+[2023-05-20 01:40:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18176783]
+[2023-05-20 01:40:40] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-20 01:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llm-code
+[2023-05-20 01:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mov-cli
+[2023-05-20 01:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kangas
+[2023-05-20 01:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TruMusic
+[2023-05-20 01:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: docusense
+[2023-05-20 01:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: FinQual
+[2023-05-20 01:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: universities-api-wrapper
+[2023-05-20 01:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyGenieScript
+[2023-05-20 01:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: flaskosql
+[2023-05-20 01:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: not1mm
+[2023-05-20 01:40:40] INFO root fetch - processPackages [pyGenieScript]: New version: [0.0.0b9] Old Version: [0.0.0b8]
+[2023-05-20 01:40:40] INFO root fetch - processPackages [mov-cli]: New version: [1.4.0] Old Version: [1.3.9]
+[2023-05-20 01:40:40] INFO root fetch - processPackages [not1mm]: New version: [23.5.9.2] Old Version: [23.5.9.1]
+[2023-05-20 01:40:40] WARNING root fetch - processPackages [FinQual]: Skipping, unable to determine old version
+[2023-05-20 01:40:40] INFO root fetch - processPackages [FinQual]: Start processing: askedith
+[2023-05-20 01:40:40] INFO root fetch - main [MainThread]: End processing [FinQual] error
+[2023-05-20 01:40:40] INFO root fetch - processPackages [universities-api-wrapper]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-20 01:40:40] WARNING root fetch - processPackages [docusense]: Skipping, unable to determine old version
+[2023-05-20 01:40:40] INFO root fetch - processPackages [TruMusic]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-05-20 01:40:40] INFO root fetch - processPackages [docusense]: Start processing: entangled-cli
+[2023-05-20 01:40:40] INFO root fetch - processPackages [flaskosql]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-20 01:40:40] INFO root fetch - main [MainThread]: End processing [docusense] error
+[2023-05-20 01:40:40] INFO root fetch - processPackages [llm-code]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-20 01:40:40] INFO root fetch - processPackages [kangas]: New version: [2.4.1] Old Version: [2.4.0a1]
+[2023-05-20 01:40:40] INFO root fetch - processPackages [askedith]: New version: [0.9.7] Old Version: [0.9.6]
+[2023-05-20 01:40:40] INFO root fetch - processPackages [pyGenieScript]: executing diffoscope
+[2023-05-20 01:40:40] INFO root fetch - processPackages [pyGenieScript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyGenieScript-0.0.0b8.tar.gz tmp/pyGenieScript-0.0.0b9.tar.gz --markdown 20230520/p/pyGenieScript/0.0.0b8-0.0.0b9/diff.md --exclude *.pyd
+[2023-05-20 01:40:40] INFO root fetch - processPackages [not1mm]: executing diffoscope
+[2023-05-20 01:40:40] INFO root fetch - processPackages [not1mm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/not1mm-23.5.9.1.tar.gz tmp/not1mm-23.5.9.2.tar.gz --markdown 20230520/n/not1mm/23.5.9.1-23.5.9.2/diff.md --exclude *.pyd
+[2023-05-20 01:40:40] INFO root fetch - processPackages [entangled-cli]: New version: [2.0.0a2] Old Version: [2.0.0a1]
+[2023-05-20 01:40:40] INFO root fetch - processPackages [kangas]: Downloading https://files.pythonhosted.org/packages/3f/79/a1e29289a7f35b3503f6e912107eaa7c6d819fe56213876cb0f42e8163d4/kangas-2.4.0a1-py3-none-any.whl
+[2023-05-20 01:40:40] INFO root fetch - processPackages [mov-cli]: Downloading https://files.pythonhosted.org/packages/99/94/ef0771d83ed756ae1b45ea14a12a882efd8e2ab21fe38be72af8ea822319/mov_cli-1.4.0.tar.gz
+[2023-05-20 01:40:40] INFO root fetch - processPackages [llm-code]: Downloading https://files.pythonhosted.org/packages/be/93/58fe5a8c24082cd8990ee9998c428b8764f72d4dbe06b14339d7815c9f7b/llm_code-0.1.0.tar.gz
+[2023-05-20 01:40:40] INFO root fetch - processPackages [TruMusic]: Downloading https://files.pythonhosted.org/packages/6e/b1/ab3b74556fe3c9d4913d9ad234d6762bdb03f1e33b163d946d10ec2f5fe2/TruMusic-1.1.5.tar.gz
+[2023-05-20 01:40:40] INFO root fetch - processPackages [universities-api-wrapper]: Downloading https://files.pythonhosted.org/packages/cb/02/3e08399f8e811a8ed62d2e2e9b6ed86a6a55d0f29c0b905b753719c395e3/universities-api-wrapper-0.0.1.tar.gz
+[2023-05-20 01:40:40] INFO root fetch - processPackages [flaskosql]: Downloading https://files.pythonhosted.org/packages/a3/11/df2b729212bfdcde47074c77c614b482456d0791f0f5860fe8b4dec4aa74/flaskosql-1.0.6.tar.gz
+[2023-05-20 01:40:40] INFO root fetch - processPackages [mov-cli]: executing diffoscope
+[2023-05-20 01:40:40] INFO root fetch - processPackages [TruMusic]: executing diffoscope
+[2023-05-20 01:40:40] INFO root fetch - processPackages [mov-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mov_cli-1.3.9.tar.gz tmp/mov_cli-1.4.0.tar.gz --markdown 20230520/m/mov-cli/1.3.9-1.4.0/diff.md --exclude *.pyd
+[2023-05-20 01:40:40] INFO root fetch - processPackages [TruMusic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TruMusic-1.1.4.tar.gz tmp/TruMusic-1.1.5.tar.gz --markdown 20230520/T/TruMusic/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-05-20 01:40:40] INFO root fetch - processPackages [flaskosql]: executing diffoscope
+[2023-05-20 01:40:40] INFO root fetch - processPackages [flaskosql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flaskosql-1.0.5.tar.gz tmp/flaskosql-1.0.6.tar.gz --markdown 20230520/f/flaskosql/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-20 01:40:40] INFO root fetch - processPackages [askedith]: executing diffoscope
+[2023-05-20 01:40:40] INFO root fetch - processPackages [askedith]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/askedith-0.9.6-py3-none-any.whl.zip tmp/askedith-0.9.7-py3-none-any.whl.zip --markdown 20230520/a/askedith/0.9.6-0.9.7/diff.md --exclude *.pyd
+[2023-05-20 01:40:40] INFO root fetch - processPackages [entangled-cli]: Downloading https://files.pythonhosted.org/packages/b7/e1/e85c00670aac75c27d0760a3e37b1c141cf44812af628df9ac2c72a0af86/entangled_cli-2.0.0a1.tar.gz
+[2023-05-20 01:40:40] INFO root fetch - processPackages [universities-api-wrapper]: Downloading https://files.pythonhosted.org/packages/6e/0d/1dfd63f8b67df002024ad31772881117ea5fd22b4e2fa7757098e72f7134/universities-api-wrapper-0.0.2.tar.gz
+[2023-05-20 01:40:40] INFO root fetch - processPackages [universities-api-wrapper]: executing diffoscope
+[2023-05-20 01:40:40] INFO root fetch - processPackages [universities-api-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/universities-api-wrapper-0.0.1.tar.gz tmp/universities-api-wrapper-0.0.2.tar.gz --markdown 20230520/u/universities-api-wrapper/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-20 01:40:40] INFO root fetch - processPackages [llm-code]: Downloading https://files.pythonhosted.org/packages/7e/1e/f7e6262425a7c9716af180cd55cbc623c29233c6bb4811f5f27579e99a65/llm_code-0.1.1.tar.gz
+[2023-05-20 01:40:40] INFO root fetch - processPackages [llm-code]: executing diffoscope
+[2023-05-20 01:40:40] INFO root fetch - processPackages [llm-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_code-0.1.0.tar.gz tmp/llm_code-0.1.1.tar.gz --markdown 20230520/l/llm-code/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-20 01:40:40] INFO root fetch - processPackages [entangled-cli]: Downloading https://files.pythonhosted.org/packages/48/a4/38ec11373a3615abe354421724d2a9d9c33029a370fe1ed822cb08a6c40e/entangled_cli-2.0.0a2.tar.gz
+[2023-05-20 01:40:41] WARNING root fetch - processPackages [kangas]: Skipping package: exceeds size limit 15715440>=10485760
+[2023-05-20 01:40:41] INFO root fetch - processPackages [kangas]: Start processing: ModML
+[2023-05-20 01:40:41] INFO root fetch - main [MainThread]: End processing [kangas] error
+[2023-05-20 01:40:41] INFO root fetch - processPackages [entangled-cli]: executing diffoscope
+[2023-05-20 01:40:41] INFO root fetch - processPackages [entangled-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/entangled_cli-2.0.0a1.tar.gz tmp/entangled_cli-2.0.0a2.tar.gz --markdown 20230520/e/entangled-cli/2.0.0a1-2.0.0a2/diff.md --exclude *.pyd
+[2023-05-20 01:40:41] WARNING root fetch - processPackages [ModML]: Skipping, unable to determine old version
+[2023-05-20 01:40:41] INFO root fetch - main [MainThread]: End processing [ModML] error
+[2023-05-20 01:40:42] INFO root fetch - main [MainThread]: End processing [TruMusic]: success
+[2023-05-20 01:40:42] INFO root fetch - main [MainThread]: End processing [askedith]: success
+[2023-05-20 01:40:42] INFO root fetch - main [MainThread]: End processing [pyGenieScript]: success
+[2023-05-20 01:40:42] INFO root fetch - main [MainThread]: End processing [flaskosql]: success
+[2023-05-20 01:40:42] INFO root fetch - main [MainThread]: End processing [universities-api-wrapper]: success
+[2023-05-20 01:40:42] INFO root fetch - main [MainThread]: End processing [mov-cli]: success
+[2023-05-20 01:40:42] INFO root fetch - main [MainThread]: End processing [llm-code]: success
+[2023-05-20 01:40:42] INFO root fetch - main [MainThread]: End processing [entangled-cli]: success
+[2023-05-20 01:40:46] INFO root fetch - main [MainThread]: End processing [not1mm]: success
+[2023-05-20 01:40:46] INFO root fetch - main [MainThread]: Store serial: [18176827]
