@@ -861,3 +861,46 @@
 [2023-05-20 00:57:21] INFO root fetch - main [MainThread]: End processing [jupyter-ai]: success
 [2023-05-20 00:57:38] INFO root fetch - main [MainThread]: End processing [sqlmesh]: success
 [2023-05-20 00:57:38] INFO root fetch - main [MainThread]: Store serial: [18176569]
+[2023-05-20 01:02:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18176569]
+[2023-05-20 01:02:48] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-20 01:02:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vocode
+[2023-05-20 01:02:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hiddifypanel
+[2023-05-20 01:02:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chainy
+[2023-05-20 01:02:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: popodds
+[2023-05-20 01:02:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: webint-code
+[2023-05-20 01:02:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: great-expectations-experimental
+[2023-05-20 01:02:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tmnt-cu101
+[2023-05-20 01:02:48] INFO root fetch - processPackages [popodds]: New version: [0.7.0] Old Version: [0.6.2]
+[2023-05-20 01:02:48] INFO root fetch - processPackages [webint-code]: New version: [0.0.19] Old Version: [0.0.18]
+[2023-05-20 01:02:48] INFO root fetch - processPackages [vocode]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-20 01:02:48] WARNING root fetch - processPackages [chainy]: Skipping, unable to determine old version
+[2023-05-20 01:02:48] INFO root fetch - main [MainThread]: End processing [chainy] error
+[2023-05-20 01:02:48] INFO root fetch - processPackages [hiddifypanel]: New version: [7.0.0.dev9] Old Version: [7.0.0.dev8]
+[2023-05-20 01:02:48] INFO root fetch - processPackages [great-expectations-experimental]: New version: [0.1.20230519080] Old Version: [0.1.20230510084]
+[2023-05-20 01:02:48] INFO root fetch - processPackages [tmnt-cu101]: New version: [0.7.0b20230519] Old Version: [0.7.0b20230518]
+[2023-05-20 01:02:49] INFO root fetch - processPackages [webint-code]: Downloading https://files.pythonhosted.org/packages/b2/0f/747bddf7fc5531c98ce0dc4dd2a5d4e6fc6245b56f51dd1e30937abf6403/webint_code-0.0.18.tar.gz
+[2023-05-20 01:02:49] INFO root fetch - processPackages [popodds]: Downloading https://files.pythonhosted.org/packages/d2/a1/37becd6feeac2d9a474a9881f060bc55d0fe4ef02731d00e1800c4895620/popodds-0.6.2.tar.gz
+[2023-05-20 01:02:49] INFO root fetch - processPackages [great-expectations-experimental]: Downloading https://files.pythonhosted.org/packages/0b/56/fe5b47d3aa1e37a6ab9f8bf18cf9d07aa1b4ec91571bc1cb22dae13ddf3c/great_expectations_experimental-0.1.20230510084.tar.gz
+[2023-05-20 01:02:49] INFO root fetch - processPackages [webint-code]: Downloading https://files.pythonhosted.org/packages/96/ad/6c25fe7dfa21516d68643aba5149a1a404a2e33b80c2a3339f7a9666ac7e/webint_code-0.0.19.tar.gz
+[2023-05-20 01:02:49] INFO root fetch - processPackages [popodds]: Downloading https://files.pythonhosted.org/packages/ab/8f/a41dc78002a69d82f741d6c6ba13c4ac11c939b96e70a52fe4703f63b1e0/popodds-0.7.0.tar.gz
+[2023-05-20 01:02:49] INFO root fetch - processPackages [vocode]: executing diffoscope
+[2023-05-20 01:02:49] INFO root fetch - processPackages [vocode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vocode-0.1.98.tar.gz tmp/vocode-0.1.99.tar.gz --markdown 20230520/v/vocode/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-20 01:02:49] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-05-20 01:02:49] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-7.0.0.dev8-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-7.0.0.dev9-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230520/h/hiddifypanel/7.0.0.dev8-7.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-20 01:02:49] INFO root fetch - processPackages [tmnt-cu101]: Downloading https://files.pythonhosted.org/packages/bc/70/93f3fd166f07204c4bdeb73e33634a29f08700d7a5eb9b8cbe8d3ce36914/tmnt-cu101-0.7.0b20230519.tar.gz
+[2023-05-20 01:02:49] INFO root fetch - processPackages [great-expectations-experimental]: Downloading https://files.pythonhosted.org/packages/d0/ef/6893c407aec8424e2a447d82b9f14d89a1c3afe34001ca74d15b70cdd8b0/great_expectations_experimental-0.1.20230519080.tar.gz
+[2023-05-20 01:02:49] INFO root fetch - processPackages [webint-code]: executing diffoscope
+[2023-05-20 01:02:49] INFO root fetch - processPackages [webint-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint_code-0.0.18.tar.gz tmp/webint_code-0.0.19.tar.gz --markdown 20230520/w/webint-code/0.0.18-0.0.19/diff.md --exclude *.pyd
+[2023-05-20 01:02:49] INFO root fetch - processPackages [popodds]: executing diffoscope
+[2023-05-20 01:02:49] INFO root fetch - processPackages [popodds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/popodds-0.6.2.tar.gz tmp/popodds-0.7.0.tar.gz --markdown 20230520/p/popodds/0.6.2-0.7.0/diff.md --exclude *.pyd
+[2023-05-20 01:02:49] INFO root fetch - processPackages [tmnt-cu101]: executing diffoscope
+[2023-05-20 01:02:49] INFO root fetch - processPackages [tmnt-cu101]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-cu101-0.7.0b20230518.tar.gz tmp/tmnt-cu101-0.7.0b20230519.tar.gz --markdown 20230520/t/tmnt-cu101/0.7.0b20230518-0.7.0b20230519/diff.md --exclude *.pyd
+[2023-05-20 01:02:49] INFO root fetch - processPackages [great-expectations-experimental]: executing diffoscope
+[2023-05-20 01:02:49] INFO root fetch - processPackages [great-expectations-experimental]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/great_expectations_experimental-0.1.20230510084.tar.gz tmp/great_expectations_experimental-0.1.20230519080.tar.gz --markdown 20230520/g/great-expectations-experimental/0.1.20230510084-0.1.20230519080/diff.md --exclude *.pyd
+[2023-05-20 01:02:50] INFO root fetch - main [MainThread]: End processing [webint-code]: success
+[2023-05-20 01:02:50] INFO root fetch - main [MainThread]: End processing [popodds]: success
+[2023-05-20 01:02:50] INFO root fetch - main [MainThread]: End processing [tmnt-cu101]: success
+[2023-05-20 01:02:51] INFO root fetch - main [MainThread]: End processing [great-expectations-experimental]: success
+[2023-05-20 01:02:51] INFO root fetch - main [MainThread]: End processing [vocode]: success
+[2023-05-20 01:03:11] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-05-20 01:03:11] INFO root fetch - main [MainThread]: Store serial: [18176599]
