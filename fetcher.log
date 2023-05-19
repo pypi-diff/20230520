@@ -1013,3 +1013,62 @@
 [2023-05-20 01:14:11] INFO root fetch - main [MainThread]: End processing [skytemple]: success
 [2023-05-20 01:14:22] INFO root fetch - main [MainThread]: End processing [skytemple-randomizer]: success
 [2023-05-20 01:14:22] INFO root fetch - main [MainThread]: Store serial: [18176660]
+[2023-05-20 01:19:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18176660]
+[2023-05-20 01:19:30] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-20 01:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pepperize.cdk-ses-smtp-credentials
+[2023-05-20 01:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: callingcardstools
+[2023-05-20 01:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CADPR
+[2023-05-20 01:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hiddifypanel
+[2023-05-20 01:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-helper-mod
+[2023-05-20 01:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tap-dbt
+[2023-05-20 01:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: msgtools
+[2023-05-20 01:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: emlib
+[2023-05-20 01:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: r0c
+[2023-05-20 01:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: llm-code
+[2023-05-20 01:19:30] INFO root fetch - processPackages [callingcardstools]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-20 01:19:30] INFO root fetch - processPackages [CADPR]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-20 01:19:30] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.328] Old Version: [0.3.327]
+[2023-05-20 01:19:30] INFO root fetch - processPackages [tap-dbt]: New version: [0.6.0a1] Old Version: [0.6.0]
+[2023-05-20 01:19:30] INFO root fetch - processPackages [py-helper-mod]: New version: [0.0.25] Old Version: [0.0.24]
+[2023-05-20 01:19:30] INFO root fetch - processPackages [r0c]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-05-20 01:19:30] INFO root fetch - processPackages [hiddifypanel]: New version: [7.0.0.dev9] Old Version: [7.0.0.dev8]
+[2023-05-20 01:19:30] INFO root fetch - processPackages [CADPR]: executing diffoscope
+[2023-05-20 01:19:30] INFO root fetch - processPackages [CADPR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CADPR-0.1.0.tar.gz tmp/CADPR-0.1.1.tar.gz --markdown 20230520/C/CADPR/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-20 01:19:30] WARNING root fetch - processPackages [llm-code]: Skipping, unable to determine old version
+[2023-05-20 01:19:30] INFO root fetch - main [MainThread]: End processing [llm-code] error
+[2023-05-20 01:19:30] INFO root fetch - processPackages [msgtools]: New version: [0.37.9] Old Version: [0.37.8]
+[2023-05-20 01:19:30] INFO root fetch - processPackages [emlib]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-20 01:19:30] INFO root fetch - processPackages [r0c]: executing diffoscope
+[2023-05-20 01:19:30] INFO root fetch - processPackages [r0c]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/r0c-1.4.0.tar.gz tmp/r0c-1.4.1.tar.gz --markdown 20230520/r/r0c/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-05-20 01:19:30] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-05-20 01:19:30] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-7.0.0.dev8-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-7.0.0.dev9-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230520/h/hiddifypanel/7.0.0.dev8-7.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-20 01:19:30] INFO root fetch - processPackages [tap-dbt]: Downloading https://files.pythonhosted.org/packages/18/77/bdc9d8240a535073c751702e100879d0397ab8cb81022b1b5280967dda92/tap_dbt-0.6.0.tar.gz
+[2023-05-20 01:19:30] INFO root fetch - processPackages [callingcardstools]: Downloading https://files.pythonhosted.org/packages/6c/2c/43af726b9c812f30f3437e6310c412481f09acfd64e1f5b94f2a8b0cdba6/callingcardstools-0.1.9.tar.gz
+[2023-05-20 01:19:30] INFO root fetch - processPackages [py-helper-mod]: Downloading https://files.pythonhosted.org/packages/05/44/e657163f2cd3617a95ee45bed33df5b7d6faedbf598aa64bf68e610dcb69/py-helper-mod-0.0.24.tar.gz
+[2023-05-20 01:19:30] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/e2/35/e623f597829921816fd397d693928c5110b0264da3c76f15856908bf170b/pepperize.cdk-ses-smtp-credentials-0.3.328.tar.gz
+[2023-05-20 01:19:30] INFO root fetch - processPackages [emlib]: Downloading https://files.pythonhosted.org/packages/ea/67/fcf1b6dc7769f14e2b9f7d88a82eceead943a9d14bd5e7491c508bda8545/emlib-1.9.1.tar.gz
+[2023-05-20 01:19:31] INFO root fetch - processPackages [tap-dbt]: executing diffoscope
+[2023-05-20 01:19:31] INFO root fetch - processPackages [tap-dbt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap_dbt-0.6.0.tar.gz tmp/tap_dbt-0.6.0a1.tar.gz --markdown 20230520/t/tap-dbt/0.6.0-0.6.0a1/diff.md --exclude *.pyd
+[2023-05-20 01:19:31] INFO root fetch - processPackages [py-helper-mod]: Downloading https://files.pythonhosted.org/packages/32/bb/05ab38fda278d5b50e95b6513036454366dce45484160e62573b90a18e7a/py-helper-mod-0.0.25.tar.gz
+[2023-05-20 01:19:31] INFO root fetch - processPackages [callingcardstools]: Downloading https://files.pythonhosted.org/packages/b0/f0/41cea0a87b01d8aa22ae160be9de48e2ea77781b48fa2b214fec97bc23f9/callingcardstools-0.2.0.tar.gz
+[2023-05-20 01:19:31] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-05-20 01:19:31] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.327.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.328.tar.gz --markdown 20230520/p/pepperize.cdk-ses-smtp-credentials/0.3.327-0.3.328/diff.md --exclude *.pyd
+[2023-05-20 01:19:31] INFO root fetch - processPackages [msgtools]: executing diffoscope
+[2023-05-20 01:19:31] INFO root fetch - processPackages [msgtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msgtools-0.37.8.tar.gz tmp/msgtools-0.37.9.tar.gz --markdown 20230520/m/msgtools/0.37.8-0.37.9/diff.md --exclude *.pyd
+[2023-05-20 01:19:31] INFO root fetch - processPackages [py-helper-mod]: executing diffoscope
+[2023-05-20 01:19:31] INFO root fetch - processPackages [py-helper-mod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-helper-mod-0.0.24.tar.gz tmp/py-helper-mod-0.0.25.tar.gz --markdown 20230520/p/py-helper-mod/0.0.24-0.0.25/diff.md --exclude *.pyd
+[2023-05-20 01:19:31] INFO root fetch - processPackages [emlib]: Downloading https://files.pythonhosted.org/packages/2a/c4/46ac55b0f07ecc3157df3355733a20fad3d385671267e699bd178aabd98b/emlib-1.9.2.tar.gz
+[2023-05-20 01:19:31] INFO root fetch - processPackages [emlib]: executing diffoscope
+[2023-05-20 01:19:31] INFO root fetch - processPackages [emlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emlib-1.9.1.tar.gz tmp/emlib-1.9.2.tar.gz --markdown 20230520/e/emlib/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-20 01:19:31] INFO root fetch - processPackages [callingcardstools]: executing diffoscope
+[2023-05-20 01:19:31] INFO root fetch - processPackages [callingcardstools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/callingcardstools-0.1.9.tar.gz tmp/callingcardstools-0.2.0.tar.gz --markdown 20230520/c/callingcardstools/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-05-20 01:19:32] INFO root fetch - main [MainThread]: End processing [r0c]: success
+[2023-05-20 01:19:32] INFO root fetch - main [MainThread]: End processing [CADPR]: success
+[2023-05-20 01:19:32] INFO root fetch - main [MainThread]: End processing [tap-dbt]: success
+[2023-05-20 01:19:32] INFO root fetch - main [MainThread]: End processing [py-helper-mod]: success
+[2023-05-20 01:19:32] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-ses-smtp-credentials]: success
+[2023-05-20 01:19:33] INFO root fetch - main [MainThread]: End processing [msgtools]: success
+[2023-05-20 01:19:33] INFO root fetch - main [MainThread]: End processing [emlib]: success
+[2023-05-20 01:19:34] INFO root fetch - main [MainThread]: End processing [callingcardstools]: success
+[2023-05-20 01:19:49] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-05-20 01:19:49] INFO root fetch - main [MainThread]: Store serial: [18176697]
