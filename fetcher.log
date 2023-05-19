@@ -1181,3 +1181,25 @@
 [2023-05-20 01:30:17] INFO root fetch - main [MainThread]: End processing [forust]: success
 [2023-05-20 01:30:19] INFO root fetch - main [MainThread]: End processing [rime-sdk]: success
 [2023-05-20 01:30:19] INFO root fetch - main [MainThread]: Store serial: [18176762]
+[2023-05-20 01:35:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18176762]
+[2023-05-20 01:35:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 01:35:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BTKSorgu
+[2023-05-20 01:35:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hermescloud
+[2023-05-20 01:35:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ModMLPy
+[2023-05-20 01:35:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyMAdot2
+[2023-05-20 01:35:28] INFO root fetch - processPackages [BTKSorgu]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-20 01:35:28] WARNING root fetch - processPackages [pyMAdot2]: Skipping, unable to determine old version
+[2023-05-20 01:35:28] INFO root fetch - main [MainThread]: End processing [pyMAdot2] error
+[2023-05-20 01:35:28] WARNING root fetch - processPackages [ModMLPy]: Skipping, unable to determine old version
+[2023-05-20 01:35:28] INFO root fetch - main [MainThread]: End processing [ModMLPy] error
+[2023-05-20 01:35:28] INFO root fetch - processPackages [hermescloud]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-20 01:35:29] INFO root fetch - processPackages [BTKSorgu]: Downloading https://files.pythonhosted.org/packages/d1/33/599bb7ccdb1eb1ac9a6e1cee3394715126e5cf5e5b8379cc6fc2df9ff268/BTKSorgu-1.2.1.tar.gz
+[2023-05-20 01:35:29] INFO root fetch - processPackages [hermescloud]: Downloading https://files.pythonhosted.org/packages/9a/2f/4b4afe5fcd3b351680703433f5de241d275a773b7d7d851446673cb65f37/hermescloud-0.0.3.tar.gz
+[2023-05-20 01:35:29] INFO root fetch - processPackages [hermescloud]: executing diffoscope
+[2023-05-20 01:35:29] INFO root fetch - processPackages [hermescloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hermescloud-0.0.2.tar.gz tmp/hermescloud-0.0.3.tar.gz --markdown 20230520/h/hermescloud/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-20 01:35:29] INFO root fetch - processPackages [BTKSorgu]: Downloading https://files.pythonhosted.org/packages/2f/35/2b7b4ce950dce5b87812caae660479b76ab507f0b648b5269a8384feeecb/BTKSorgu-1.2.2.tar.gz
+[2023-05-20 01:35:29] INFO root fetch - processPackages [BTKSorgu]: executing diffoscope
+[2023-05-20 01:35:29] INFO root fetch - processPackages [BTKSorgu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BTKSorgu-1.2.1.tar.gz tmp/BTKSorgu-1.2.2.tar.gz --markdown 20230520/B/BTKSorgu/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-20 01:35:30] INFO root fetch - main [MainThread]: End processing [hermescloud]: success
+[2023-05-20 01:35:30] INFO root fetch - main [MainThread]: End processing [BTKSorgu]: success
+[2023-05-20 01:35:30] INFO root fetch - main [MainThread]: Store serial: [18176783]
