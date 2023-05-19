@@ -501,3 +501,56 @@
 [2023-05-20 00:29:32] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-05-20 00:30:58] INFO root fetch - main [MainThread]: End processing [ddtrace]: success
 [2023-05-20 00:30:58] INFO root fetch - main [MainThread]: Store serial: [18176385]
+[2023-05-20 00:36:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18176385]
+[2023-05-20 00:36:07] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-20 00:36:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gs-include
+[2023-05-20 00:36:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: docformatter
+[2023-05-20 00:36:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: libgal
+[2023-05-20 00:36:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fedml-databricks
+[2023-05-20 00:36:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hermescloud
+[2023-05-20 00:36:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sha256bit
+[2023-05-20 00:36:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tap-dbt
+[2023-05-20 00:36:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sarf
+[2023-05-20 00:36:07] INFO root fetch - processPackages [gs-include]: New version: [0.22.0a20230519] Old Version: [0.22.0a20230518]
+[2023-05-20 00:36:07] WARNING root fetch - processPackages [hermescloud]: Skipping, unable to determine old version
+[2023-05-20 00:36:07] INFO root fetch - processPackages [sha256bit]: New version: [0.0.3] Old Version: [0.0.1]
+[2023-05-20 00:36:07] INFO root fetch - main [MainThread]: End processing [hermescloud] error
+[2023-05-20 00:36:07] INFO root fetch - processPackages [libgal]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 00:36:07] INFO root fetch - processPackages [docformatter]: New version: [1.7.1] Old Version: [1.7.0]
+[2023-05-20 00:36:07] INFO root fetch - processPackages [tap-dbt]: New version: [0.6.0a1] Old Version: [0.5.1a1]
+[2023-05-20 00:36:07] INFO root fetch - processPackages [fedml-databricks]: New version: [1.0.3.dev0] Old Version: [1.0.2.dev0]
+[2023-05-20 00:36:07] INFO root fetch - processPackages [sarf]: New version: [1.0.0rc1] Old Version: [0.3.0]
+[2023-05-20 00:36:07] INFO root fetch - processPackages [docformatter]: Downloading https://files.pythonhosted.org/packages/eb/e0/194b10a4697569d242fd3f8b71477664fcb7e89c8bf7e30ece387a34432d/docformatter-1.7.0.tar.gz
+[2023-05-20 00:36:08] INFO root fetch - processPackages [fedml-databricks]: Downloading https://files.pythonhosted.org/packages/5f/bf/2812abb011da618e8e364f69988f41abacc60b3af120f21fa626a6ae1e64/fedml_databricks-1.0.2.dev0.tar.gz
+[2023-05-20 00:36:08] INFO root fetch - processPackages [gs-include]: Downloading https://files.pythonhosted.org/packages/ed/77/1d2db02c15c88e20b7531ccc82884c593f6276081a3c8809d627d5774e89/gs_include-0.22.0a20230518-py2.py3-none-macosx_11_0_x86_64.whl
+[2023-05-20 00:36:08] INFO root fetch - processPackages [tap-dbt]: Downloading https://files.pythonhosted.org/packages/81/68/5419425aa7238b174c8fe1ef587585124107ae000929984104baefd5eed6/tap_dbt-0.5.1a1.tar.gz
+[2023-05-20 00:36:08] INFO root fetch - processPackages [libgal]: Downloading https://files.pythonhosted.org/packages/fd/f7/3bb2ba6518d060363250bdb2cc8104fe4f312ada15161d9b3e3b934dc206/libgal-0.0.8.tar.gz
+[2023-05-20 00:36:08] INFO root fetch - processPackages [sha256bit]: Downloading https://files.pythonhosted.org/packages/ea/28/feb13e320b0b43ab7531d36400280fa525696573b5460e91e773658e2ef3/sha256bit-0.0.1.tar.gz
+[2023-05-20 00:36:08] WARNING root fetch - processPackages [gs-include]: Skipping package: exceeds size limit 30431353>=10485760
+[2023-05-20 00:36:08] INFO root fetch - main [MainThread]: End processing [gs-include] error
+[2023-05-20 00:36:08] INFO root fetch - processPackages [sarf]: Downloading https://files.pythonhosted.org/packages/a6/e7/2b96fdb0007a5088cddb73e17ce5feb7385fbe580da7c5b798c6d0648b3f/sarf-0.3.0.tar.gz
+[2023-05-20 00:36:08] INFO root fetch - processPackages [docformatter]: Downloading https://files.pythonhosted.org/packages/8e/ef/7a62b80b17cc7ceb44f064fcd6b66210ed69c4dfaf7d3ce3a25aac13368a/docformatter-1.7.1.tar.gz
+[2023-05-20 00:36:08] INFO root fetch - processPackages [tap-dbt]: Downloading https://files.pythonhosted.org/packages/a4/d7/b08591c25055b540a79d0985eab971652791b35d84ae6fbf1b5c6479a5fa/tap_dbt-0.6.0a1.tar.gz
+[2023-05-20 00:36:08] INFO root fetch - processPackages [libgal]: Downloading https://files.pythonhosted.org/packages/73/3c/2c641d1ff28319a7854e7f1de9427e7aba75af69b0e7913e0b776765d3ad/libgal-0.0.9.tar.gz
+[2023-05-20 00:36:08] INFO root fetch - processPackages [fedml-databricks]: Downloading https://files.pythonhosted.org/packages/89/4d/13e732ff961b36c33b0916495560b923031babd8b4a2a340f3770035a537/fedml_databricks-1.0.3.dev0.tar.gz
+[2023-05-20 00:36:08] INFO root fetch - processPackages [docformatter]: executing diffoscope
+[2023-05-20 00:36:08] INFO root fetch - processPackages [docformatter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docformatter-1.7.0.tar.gz tmp/docformatter-1.7.1.tar.gz --markdown 20230520/d/docformatter/1.7.0-1.7.1/diff.md --exclude *.pyd
+[2023-05-20 00:36:08] INFO root fetch - processPackages [sha256bit]: Downloading https://files.pythonhosted.org/packages/b4/da/4060a7cb962551e4b5b9285a45da1b2cd2ea57a15885f385baecbacc05c6/sha256bit-0.0.3.tar.gz
+[2023-05-20 00:36:08] INFO root fetch - processPackages [sarf]: Downloading https://files.pythonhosted.org/packages/3f/85/d0d7d02897a414ff25355a8b966e9a3e2d726dc86ef88114896385c058b3/sarf-1.0.0rc1-py3-none-any.whl
+[2023-05-20 00:36:08] INFO root fetch - processPackages [tap-dbt]: executing diffoscope
+[2023-05-20 00:36:08] INFO root fetch - processPackages [tap-dbt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap_dbt-0.5.1a1.tar.gz tmp/tap_dbt-0.6.0a1.tar.gz --markdown 20230520/t/tap-dbt/0.5.1a1-0.6.0a1/diff.md --exclude *.pyd
+[2023-05-20 00:36:08] INFO root fetch - processPackages [libgal]: executing diffoscope
+[2023-05-20 00:36:08] INFO root fetch - processPackages [libgal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libgal-0.0.8.tar.gz tmp/libgal-0.0.9.tar.gz --markdown 20230520/l/libgal/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 00:36:08] INFO root fetch - processPackages [fedml-databricks]: executing diffoscope
+[2023-05-20 00:36:08] INFO root fetch - processPackages [fedml-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fedml_databricks-1.0.2.dev0.tar.gz tmp/fedml_databricks-1.0.3.dev0.tar.gz --markdown 20230520/f/fedml-databricks/1.0.2.dev0-1.0.3.dev0/diff.md --exclude *.pyd
+[2023-05-20 00:36:08] INFO root fetch - processPackages [sarf]: executing diffoscope
+[2023-05-20 00:36:08] INFO root fetch - processPackages [sarf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sarf-0.3.0.tar.gz tmp/sarf-1.0.0rc1-py3-none-any.whl.zip --markdown 20230520/s/sarf/0.3.0-1.0.0rc1/diff.md --exclude *.pyd
+[2023-05-20 00:36:08] INFO root fetch - processPackages [sha256bit]: executing diffoscope
+[2023-05-20 00:36:08] INFO root fetch - processPackages [sha256bit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sha256bit-0.0.1.tar.gz tmp/sha256bit-0.0.3.tar.gz --markdown 20230520/s/sha256bit/0.0.1-0.0.3/diff.md --exclude *.pyd
+[2023-05-20 00:36:09] INFO root fetch - main [MainThread]: End processing [tap-dbt]: success
+[2023-05-20 00:36:09] INFO root fetch - main [MainThread]: End processing [docformatter]: success
+[2023-05-20 00:36:09] INFO root fetch - main [MainThread]: End processing [sarf]: success
+[2023-05-20 00:36:09] INFO root fetch - main [MainThread]: End processing [libgal]: success
+[2023-05-20 00:36:10] INFO root fetch - main [MainThread]: End processing [fedml-databricks]: success
+[2023-05-20 00:36:10] INFO root fetch - main [MainThread]: End processing [sha256bit]: success
+[2023-05-20 00:36:10] INFO root fetch - main [MainThread]: Store serial: [18176409]
