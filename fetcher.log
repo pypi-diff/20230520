@@ -600,3 +600,82 @@
 [2023-05-20 00:41:21] INFO root fetch - main [MainThread]: End processing [modal-client]: success
 [2023-05-20 00:41:22] INFO root fetch - main [MainThread]: End processing [lineagex]: success
 [2023-05-20 00:41:22] INFO root fetch - main [MainThread]: Store serial: [18176432]
+[2023-05-20 00:46:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18176432]
+[2023-05-20 00:46:30] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-20 00:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: melexis-i2c-stick
+[2023-05-20 00:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wikiscrape
+[2023-05-20 00:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vector-quantize-pytorch
+[2023-05-20 00:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: DiadFit
+[2023-05-20 00:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hermescloud
+[2023-05-20 00:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: databricks-feature-store
+[2023-05-20 00:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rddl-client
+[2023-05-20 00:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pandasai
+[2023-05-20 00:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: configzen
+[2023-05-20 00:46:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: replicate
+[2023-05-20 00:46:30] INFO root fetch - processPackages [vector-quantize-pytorch]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-05-20 00:46:30] INFO root fetch - processPackages [melexis-i2c-stick]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-20 00:46:30] WARNING root fetch - processPackages [hermescloud]: Skipping, unable to determine old version
+[2023-05-20 00:46:30] INFO root fetch - processPackages [hermescloud]: Start processing: r0c
+[2023-05-20 00:46:30] INFO root fetch - main [MainThread]: End processing [hermescloud] error
+[2023-05-20 00:46:30] INFO root fetch - processPackages [databricks-feature-store]: New version: [0.9.1a2] Old Version: [0.9.1a1]
+[2023-05-20 00:46:30] INFO root fetch - processPackages [configzen]: New version: [0.1.19] Old Version: [0.1.18]
+[2023-05-20 00:46:30] INFO root fetch - processPackages [vector-quantize-pytorch]: executing diffoscope
+[2023-05-20 00:46:30] INFO root fetch - processPackages [vector-quantize-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_quantize_pytorch-1.5.0.tar.gz tmp/vector_quantize_pytorch-1.5.1.tar.gz --markdown 20230520/v/vector-quantize-pytorch/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-05-20 00:46:30] INFO root fetch - processPackages [DiadFit]: New version: [0.0.59] Old Version: [0.0.57]
+[2023-05-20 00:46:30] WARNING root fetch - processPackages [wikiscrape]: Skipping, unable to determine old version
+[2023-05-20 00:46:30] INFO root fetch - processPackages [databricks-feature-store]: executing diffoscope
+[2023-05-20 00:46:30] INFO root fetch - processPackages [wikiscrape]: Start processing: rhubarb-graphql
+[2023-05-20 00:46:30] INFO root fetch - main [MainThread]: End processing [wikiscrape] error
+[2023-05-20 00:46:30] INFO root fetch - processPackages [databricks-feature-store]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databricks-feature-store-0.9.1a1.tar.gz tmp/databricks-feature-store-0.9.1a2.tar.gz --markdown 20230520/d/databricks-feature-store/0.9.1a1-0.9.1a2/diff.md --exclude *.pyd
+[2023-05-20 00:46:30] WARNING root fetch - processPackages [rddl-client]: Skipping, unable to determine old version
+[2023-05-20 00:46:30] INFO root fetch - processPackages [rddl-client]: Start processing: x21e8
+[2023-05-20 00:46:30] INFO root fetch - main [MainThread]: End processing [rddl-client] error
+[2023-05-20 00:46:30] INFO root fetch - processPackages [replicate]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-05-20 00:46:30] INFO root fetch - processPackages [pandasai]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-20 00:46:30] INFO root fetch - processPackages [r0c]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-05-20 00:46:30] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-20 00:46:30] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.18.tar.gz tmp/configzen-0.1.19.tar.gz --markdown 20230520/c/configzen/0.1.18-0.1.19/diff.md --exclude *.pyd
+[2023-05-20 00:46:30] INFO root fetch - processPackages [melexis-i2c-stick]: Downloading https://files.pythonhosted.org/packages/10/58/4e04ad63b9e3ea19d3bb33cdb74186cb37dddedec077466305ba1536381d/melexis-i2c-stick-0.1.1.tar.gz
+[2023-05-20 00:46:30] WARNING root fetch - processPackages [rhubarb-graphql]: Skipping, unable to determine old version
+[2023-05-20 00:46:30] INFO root fetch - processPackages [rhubarb-graphql]: Start processing: eigenrules
+[2023-05-20 00:46:30] INFO root fetch - main [MainThread]: End processing [rhubarb-graphql] error
+[2023-05-20 00:46:30] INFO root fetch - processPackages [x21e8]: New version: [0.7.0] Old Version: [0.6.2]
+[2023-05-20 00:46:30] INFO root fetch - processPackages [DiadFit]: Downloading https://files.pythonhosted.org/packages/95/18/ad3d1cbc3fb7b00ecb9d5f713da9ee8804e8f35c9cdb04b10c1967839577/DiadFit-0.0.57.tar.gz
+[2023-05-20 00:46:31] INFO root fetch - processPackages [r0c]: Downloading https://files.pythonhosted.org/packages/15/f7/2fe89382fa7b4043d033aba66ec969aa92c432db3dd5f6b48b8dfea6fb79/r0c-1.4.0.tar.gz
+[2023-05-20 00:46:31] INFO root fetch - processPackages [replicate]: Downloading https://files.pythonhosted.org/packages/a9/de/6256de91ef65594c782d7fb726e5e4561ab2023dde1d69d42300b89ac638/replicate-0.8.1.tar.gz
+[2023-05-20 00:46:31] INFO root fetch - processPackages [pandasai]: Downloading https://files.pythonhosted.org/packages/7a/6b/fe3e815130c1936a7803dea2f136da483e7d861347a5b09c040a826473ab/pandasai-0.2.8.tar.gz
+[2023-05-20 00:46:31] INFO root fetch - processPackages [eigenrules]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 00:46:31] INFO root fetch - processPackages [x21e8]: Downloading https://files.pythonhosted.org/packages/56/09/3dbcb2f05cddba6ac058a960afcf956f000e4e00b043da700c891491636c/x21e8-0.6.2.tar.gz
+[2023-05-20 00:46:31] INFO root fetch - processPackages [melexis-i2c-stick]: Downloading https://files.pythonhosted.org/packages/8b/3e/21bcaf364bc8d0a1535f8ceb755583f84fe97fb7b7858f65223ea07adeb1/melexis-i2c-stick-0.1.2.tar.gz
+[2023-05-20 00:46:31] INFO root fetch - processPackages [melexis-i2c-stick]: executing diffoscope
+[2023-05-20 00:46:31] INFO root fetch - processPackages [replicate]: Downloading https://files.pythonhosted.org/packages/74/ce/dfd839b911fb097127f5d14e8f5f4e72f86201075a1818f12c07b3b412ba/replicate-0.8.2.tar.gz
+[2023-05-20 00:46:31] INFO root fetch - processPackages [melexis-i2c-stick]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/melexis-i2c-stick-0.1.1.tar.gz tmp/melexis-i2c-stick-0.1.2.tar.gz --markdown 20230520/m/melexis-i2c-stick/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-20 00:46:31] INFO root fetch - processPackages [DiadFit]: Downloading https://files.pythonhosted.org/packages/1e/2c/b2bc24cfcbdd7e9f5c61d1e17535ea380012b2e42b987e11ae880ebdb383/DiadFit-0.0.59.tar.gz
+[2023-05-20 00:46:31] INFO root fetch - processPackages [r0c]: Downloading https://files.pythonhosted.org/packages/ef/8b/c1167443b170339aa9b486a5b5846c93be0fcfc96dc64463ef24a1da6d89/r0c-1.4.1.tar.gz
+[2023-05-20 00:46:31] INFO root fetch - processPackages [eigenrules]: Downloading https://files.pythonhosted.org/packages/c4/ac/feaa895d2d94795a8695cbedd6c4a5481392293648533ff4f23d52bdd50c/eigenrules-0.1.8.tar.gz
+[2023-05-20 00:46:31] INFO root fetch - processPackages [DiadFit]: executing diffoscope
+[2023-05-20 00:46:31] INFO root fetch - processPackages [DiadFit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DiadFit-0.0.57.tar.gz tmp/DiadFit-0.0.59.tar.gz --markdown 20230520/D/DiadFit/0.0.57-0.0.59/diff.md --exclude *.pyd
+[2023-05-20 00:46:31] INFO root fetch - processPackages [replicate]: executing diffoscope
+[2023-05-20 00:46:31] INFO root fetch - processPackages [replicate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replicate-0.8.1.tar.gz tmp/replicate-0.8.2.tar.gz --markdown 20230520/r/replicate/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-05-20 00:46:31] INFO root fetch - processPackages [pandasai]: Downloading https://files.pythonhosted.org/packages/1f/53/1ac70595b26514aafd7eaa6cb84f5c5e4ed5fb3ad887a42cbc9e7d9d901d/pandasai-0.2.9.tar.gz
+[2023-05-20 00:46:31] INFO root fetch - processPackages [r0c]: executing diffoscope
+[2023-05-20 00:46:31] INFO root fetch - processPackages [r0c]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/r0c-1.4.0.tar.gz tmp/r0c-1.4.1.tar.gz --markdown 20230520/r/r0c/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-05-20 00:46:31] INFO root fetch - processPackages [x21e8]: Downloading https://files.pythonhosted.org/packages/89/41/2b18e53c22cfdd0b6f4f5fe2e5b319050c1dc656d54024ec5ca041e7a686/x21e8-0.7.0.tar.gz
+[2023-05-20 00:46:31] INFO root fetch - processPackages [eigenrules]: Downloading https://files.pythonhosted.org/packages/90/aa/d823aed6779a1ad67c4d81b4d5f248c264fc5cde63a281a72c48e2a6de96/eigenrules-0.1.9.tar.gz
+[2023-05-20 00:46:31] INFO root fetch - processPackages [pandasai]: executing diffoscope
+[2023-05-20 00:46:31] INFO root fetch - processPackages [pandasai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandasai-0.2.8.tar.gz tmp/pandasai-0.2.9.tar.gz --markdown 20230520/p/pandasai/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-20 00:46:31] INFO root fetch - processPackages [x21e8]: executing diffoscope
+[2023-05-20 00:46:31] INFO root fetch - processPackages [x21e8]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/x21e8-0.6.2.tar.gz tmp/x21e8-0.7.0.tar.gz --markdown 20230520/x/x21e8/0.6.2-0.7.0/diff.md --exclude *.pyd
+[2023-05-20 00:46:31] INFO root fetch - processPackages [eigenrules]: executing diffoscope
+[2023-05-20 00:46:31] INFO root fetch - processPackages [eigenrules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eigenrules-0.1.8.tar.gz tmp/eigenrules-0.1.9.tar.gz --markdown 20230520/e/eigenrules/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 00:46:32] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-20 00:46:32] INFO root fetch - main [MainThread]: End processing [vector-quantize-pytorch]: success
+[2023-05-20 00:46:32] INFO root fetch - main [MainThread]: End processing [melexis-i2c-stick]: success
+[2023-05-20 00:46:32] INFO root fetch - main [MainThread]: End processing [databricks-feature-store]: success
+[2023-05-20 00:46:33] INFO root fetch - main [MainThread]: End processing [eigenrules]: success
+[2023-05-20 00:46:33] INFO root fetch - main [MainThread]: End processing [pandasai]: success
+[2023-05-20 00:46:33] INFO root fetch - main [MainThread]: End processing [x21e8]: success
+[2023-05-20 00:46:33] INFO root fetch - main [MainThread]: End processing [replicate]: success
+[2023-05-20 00:46:34] INFO root fetch - main [MainThread]: End processing [r0c]: success
+[2023-05-20 00:46:35] INFO root fetch - main [MainThread]: End processing [DiadFit]: success
+[2023-05-20 00:46:35] INFO root fetch - main [MainThread]: Store serial: [18176482]
