@@ -1123,3 +1123,61 @@
 [2023-05-20 01:25:01] INFO root fetch - main [MainThread]: End processing [chainy]: success
 [2023-05-20 01:25:01] INFO root fetch - main [MainThread]: End processing [chainy]: success
 [2023-05-20 01:25:01] INFO root fetch - main [MainThread]: Store serial: [18176728]
+[2023-05-20 01:30:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18176728]
+[2023-05-20 01:30:11] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-20 01:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: forust
+[2023-05-20 01:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pycti
+[2023-05-20 01:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: melexis-i2c-stick
+[2023-05-20 01:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rime-sdk
+[2023-05-20 01:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Pint
+[2023-05-20 01:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: veilcord
+[2023-05-20 01:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: TruMusic
+[2023-05-20 01:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: near-api
+[2023-05-20 01:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: defillama2
+[2023-05-20 01:30:11] INFO root fetch - processPackages [forust]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-20 01:30:11] INFO root fetch - processPackages [TruMusic]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-20 01:30:11] INFO root fetch - processPackages [melexis-i2c-stick]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-20 01:30:11] INFO root fetch - processPackages [near-api]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-20 01:30:11] INFO root fetch - processPackages [Pint]: New version: [0.9] Old Version: [0.8.1]
+[2023-05-20 01:30:11] INFO root fetch - processPackages [pycti]: New version: [5.7.post575] Old Version: [5.7.post574]
+[2023-05-20 01:30:11] INFO root fetch - processPackages [veilcord]: New version: [0.0.0.5] Old Version: [0.0.0.4]
+[2023-05-20 01:30:11] INFO root fetch - processPackages [rime-sdk]: New version: [2.1.0rc3] Old Version: [2.1.0rc2]
+[2023-05-20 01:30:11] INFO root fetch - processPackages [pycti]: executing diffoscope
+[2023-05-20 01:30:11] INFO root fetch - processPackages [pycti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycti-5.7.post574.tar.gz tmp/pycti-5.7.post575.tar.gz --markdown 20230520/p/pycti/5.7.post574-5.7.post575/diff.md --exclude *.pyd
+[2023-05-20 01:30:11] INFO root fetch - processPackages [defillama2]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-05-20 01:30:11] INFO root fetch - processPackages [melexis-i2c-stick]: Downloading https://files.pythonhosted.org/packages/9b/f8/332f191344d356b44f321df845e5bc5f519da4a1fe446df3fa1c810a2114/melexis-i2c-stick-0.1.4.tar.gz
+[2023-05-20 01:30:12] INFO root fetch - processPackages [Pint]: Downloading https://files.pythonhosted.org/packages/1e/40/6938f7d544eef208a8183c2c80624289e8a4f4e0aea43f4658b9527077de/Pint-0.8.1.tar.gz
+[2023-05-20 01:30:12] INFO root fetch - processPackages [TruMusic]: Downloading https://files.pythonhosted.org/packages/7b/af/45bee379c003aca26104f0e2ffece25fcbba28c55b6cd5bb933e4c71c340/TruMusic-1.1.4.tar.gz
+[2023-05-20 01:30:12] INFO root fetch - processPackages [near-api]: Downloading https://files.pythonhosted.org/packages/68/d8/3f02c95e375204d265c10fec5da513379f19455f958a64d69dda5d481e2f/near-api-0.2.0.tar.gz
+[2023-05-20 01:30:12] INFO root fetch - processPackages [veilcord]: Downloading https://files.pythonhosted.org/packages/ca/f7/e425cf2b1939f8d53494b83a3589448558c952c2894dc447bc15da53ccdf/veilcord-0.0.0.5.tar.gz
+[2023-05-20 01:30:12] INFO root fetch - processPackages [defillama2]: Downloading https://files.pythonhosted.org/packages/43/4d/f0026ccfa592e20a54075689e3904ca9b975b82ab16e6b86e836c855795a/defillama2-0.7.3.tar.gz
+[2023-05-20 01:30:12] INFO root fetch - processPackages [forust]: executing diffoscope
+[2023-05-20 01:30:12] INFO root fetch - processPackages [forust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/forust-0.2.8.tar.gz tmp/forust-0.2.9.tar.gz --markdown 20230520/f/forust/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-20 01:30:12] INFO root fetch - processPackages [TruMusic]: executing diffoscope
+[2023-05-20 01:30:12] INFO root fetch - processPackages [TruMusic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TruMusic-1.1.3.tar.gz tmp/TruMusic-1.1.4.tar.gz --markdown 20230520/T/TruMusic/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-20 01:30:12] INFO root fetch - processPackages [veilcord]: executing diffoscope
+[2023-05-20 01:30:12] INFO root fetch - processPackages [veilcord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/veilcord-0.0.0.4.tar.gz tmp/veilcord-0.0.0.5.tar.gz --markdown 20230520/v/veilcord/0.0.0.4-0.0.0.5/diff.md --exclude *.pyd
+[2023-05-20 01:30:12] INFO root fetch - processPackages [rime-sdk]: executing diffoscope
+[2023-05-20 01:30:12] INFO root fetch - processPackages [rime-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rime_sdk-2.1.0rc2.tar.gz tmp/rime_sdk-2.1.0rc3.tar.gz --markdown 20230520/r/rime-sdk/2.1.0rc2-2.1.0rc3/diff.md --exclude *.pyd
+[2023-05-20 01:30:12] INFO root fetch - processPackages [melexis-i2c-stick]: Downloading https://files.pythonhosted.org/packages/9f/fa/ad2a1e3af927cac64e3c6e969f2997a6467873e7f98ff50274ad935a3336/melexis-i2c-stick-0.1.5.tar.gz
+[2023-05-20 01:30:12] INFO root fetch - processPackages [near-api]: Downloading https://files.pythonhosted.org/packages/2d/d8/d145148e4d019157a1fbd9eefc1f6d3fd12d8081229c0fba535cdc39e0e6/near-api-0.2.1.tar.gz
+[2023-05-20 01:30:12] INFO root fetch - processPackages [Pint]: Downloading https://files.pythonhosted.org/packages/33/f2/1f32a10dda56fd941297b008b6dd850161537f33b510e283e0b47ce1700b/Pint-0.9.tar.gz
+[2023-05-20 01:30:12] INFO root fetch - processPackages [Pint]: executing diffoscope
+[2023-05-20 01:30:12] INFO root fetch - processPackages [Pint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pint-0.8.1.tar.gz tmp/Pint-0.9.tar.gz --markdown 20230520/P/Pint/0.8.1-0.9/diff.md --exclude *.pyd
+[2023-05-20 01:30:12] INFO root fetch - processPackages [melexis-i2c-stick]: executing diffoscope
+[2023-05-20 01:30:12] INFO root fetch - processPackages [melexis-i2c-stick]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/melexis-i2c-stick-0.1.4.tar.gz tmp/melexis-i2c-stick-0.1.5.tar.gz --markdown 20230520/m/melexis-i2c-stick/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-20 01:30:12] INFO root fetch - processPackages [near-api]: executing diffoscope
+[2023-05-20 01:30:12] INFO root fetch - processPackages [near-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/near-api-0.2.0.tar.gz tmp/near-api-0.2.1.tar.gz --markdown 20230520/n/near-api/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-20 01:30:12] INFO root fetch - processPackages [defillama2]: Downloading https://files.pythonhosted.org/packages/46/0f/26686edb60e90ec18be21d9a738af3c2bd6180d89e3c3ff574c5789983e0/defillama2-0.7.4.tar.gz
+[2023-05-20 01:30:12] INFO root fetch - processPackages [defillama2]: executing diffoscope
+[2023-05-20 01:30:12] INFO root fetch - processPackages [defillama2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/defillama2-0.7.3.tar.gz tmp/defillama2-0.7.4.tar.gz --markdown 20230520/d/defillama2/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2023-05-20 01:30:13] INFO root fetch - main [MainThread]: End processing [TruMusic]: success
+[2023-05-20 01:30:13] INFO root fetch - main [MainThread]: End processing [pycti]: success
+[2023-05-20 01:30:13] INFO root fetch - main [MainThread]: End processing [veilcord]: success
+[2023-05-20 01:30:13] INFO root fetch - main [MainThread]: End processing [melexis-i2c-stick]: success
+[2023-05-20 01:30:14] INFO root fetch - main [MainThread]: End processing [near-api]: success
+[2023-05-20 01:30:15] INFO root fetch - main [MainThread]: End processing [Pint]: success
+[2023-05-20 01:30:16] INFO root fetch - main [MainThread]: End processing [defillama2]: success
+[2023-05-20 01:30:17] INFO root fetch - main [MainThread]: End processing [forust]: success
+[2023-05-20 01:30:19] INFO root fetch - main [MainThread]: End processing [rime-sdk]: success
+[2023-05-20 01:30:19] INFO root fetch - main [MainThread]: Store serial: [18176762]
