@@ -966,3 +966,50 @@
 [2023-05-20 01:08:38] INFO root fetch - main [MainThread]: End processing [skytemple-randomizer]: success
 [2023-05-20 01:08:55] INFO root fetch - main [MainThread]: End processing [sqlmesh]: success
 [2023-05-20 01:08:55] INFO root fetch - main [MainThread]: Store serial: [18176630]
+[2023-05-20 01:13:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18176630]
+[2023-05-20 01:14:04] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-20 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: skytemple-randomizer
+[2023-05-20 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: skytemple
+[2023-05-20 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arckit
+[2023-05-20 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: canopy-platform
+[2023-05-20 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pepperize.cdk-ses-smtp-credentials
+[2023-05-20 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dbt-semantic-interfaces
+[2023-05-20 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: audio-journal
+[2023-05-20 01:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ds4finance
+[2023-05-20 01:14:04] INFO root fetch - processPackages [skytemple-randomizer]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-05-20 01:14:04] INFO root fetch - processPackages [canopy-platform]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-05-20 01:14:04] INFO root fetch - processPackages [skytemple]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-05-20 01:14:04] WARNING root fetch - processPackages [audio-journal]: Skipping, unable to determine old version
+[2023-05-20 01:14:04] INFO root fetch - main [MainThread]: End processing [audio-journal] error
+[2023-05-20 01:14:04] INFO root fetch - processPackages [ds4finance]: New version: [0.1.17] Old Version: [0.1.15]
+[2023-05-20 01:14:04] INFO root fetch - processPackages [arckit]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-20 01:14:04] INFO root fetch - processPackages [dbt-semantic-interfaces]: New version: [0.1.0.dev1] Old Version: [0.1.0.dev0]
+[2023-05-20 01:14:04] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.327] Old Version: [0.3.326]
+[2023-05-20 01:14:04] INFO root fetch - processPackages [ds4finance]: executing diffoscope
+[2023-05-20 01:14:04] INFO root fetch - processPackages [ds4finance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ds4finance-0.1.15.tar.gz tmp/ds4finance-0.1.17.tar.gz --markdown 20230520/d/ds4finance/0.1.15-0.1.17/diff.md --exclude *.pyd
+[2023-05-20 01:14:04] INFO root fetch - processPackages [canopy-platform]: executing diffoscope
+[2023-05-20 01:14:04] INFO root fetch - processPackages [canopy-platform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canopy-platform-0.0.7.tar.gz tmp/canopy-platform-0.0.9.tar.gz --markdown 20230520/c/canopy-platform/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 01:14:04] INFO root fetch - processPackages [arckit]: Downloading https://files.pythonhosted.org/packages/de/e8/7897610e210b071f878e2050ffa50ffac372e24069651113c24bbaa34398/arckit-0.0.3-py3-none-any.whl
+[2023-05-20 01:14:04] INFO root fetch - processPackages [dbt-semantic-interfaces]: Downloading https://files.pythonhosted.org/packages/a4/ac/c85c76ca65693fbf440214609a452bc4e97852d1bf10324f79f3f11fd689/dbt_semantic_interfaces-0.1.0.dev0.tar.gz
+[2023-05-20 01:14:04] INFO root fetch - processPackages [skytemple]: Downloading https://files.pythonhosted.org/packages/63/83/5315e362f82edafdfdd06b0a9ed7e8c963f2c978c1e380229b275a520c29/skytemple-1.5.1-py3-none-any.whl
+[2023-05-20 01:14:04] INFO root fetch - processPackages [skytemple-randomizer]: executing diffoscope
+[2023-05-20 01:14:04] INFO root fetch - processPackages [skytemple-randomizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skytemple_randomizer-1.5.0-py3-none-any.whl.zip tmp/skytemple_randomizer-1.5.1-py3-none-any.whl.zip --markdown 20230520/s/skytemple-randomizer/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-05-20 01:14:04] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/42/0a/f358c94cac432bee5a0e32f92514f7e78a60b18d3a7f82238de94db9f354/pepperize.cdk-ses-smtp-credentials-0.3.327.tar.gz
+[2023-05-20 01:14:05] INFO root fetch - processPackages [arckit]: Downloading https://files.pythonhosted.org/packages/5d/44/fbe4de82747b3287d9d6184dbe2192575fe6f5ffaba02da2711d5875186e/arckit-0.0.4-py3-none-any.whl
+[2023-05-20 01:14:05] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-05-20 01:14:05] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.326.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.327.tar.gz --markdown 20230520/p/pepperize.cdk-ses-smtp-credentials/0.3.326-0.3.327/diff.md --exclude *.pyd
+[2023-05-20 01:14:05] INFO root fetch - processPackages [skytemple]: executing diffoscope
+[2023-05-20 01:14:05] INFO root fetch - processPackages [skytemple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skytemple-1.5.0-py3-none-any.whl.zip tmp/skytemple-1.5.1-py3-none-any.whl.zip --markdown 20230520/s/skytemple/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-05-20 01:14:05] INFO root fetch - processPackages [arckit]: executing diffoscope
+[2023-05-20 01:14:05] INFO root fetch - processPackages [arckit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arckit-0.0.3-py3-none-any.whl.zip tmp/arckit-0.0.4-py3-none-any.whl.zip --markdown 20230520/a/arckit/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-20 01:14:05] INFO root fetch - processPackages [dbt-semantic-interfaces]: Downloading https://files.pythonhosted.org/packages/ea/81/880e4d7bfdf333e0f806b2402c3ebe99ed94b2ea2d43e5d3baa9b61fb62c/dbt_semantic_interfaces-0.1.0.dev1.tar.gz
+[2023-05-20 01:14:05] INFO root fetch - processPackages [dbt-semantic-interfaces]: executing diffoscope
+[2023-05-20 01:14:05] INFO root fetch - processPackages [dbt-semantic-interfaces]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt_semantic_interfaces-0.1.0.dev0.tar.gz tmp/dbt_semantic_interfaces-0.1.0.dev1.tar.gz --markdown 20230520/d/dbt-semantic-interfaces/0.1.0.dev0-0.1.0.dev1/diff.md --exclude *.pyd
+[2023-05-20 01:14:05] INFO root fetch - main [MainThread]: End processing [ds4finance]: success
+[2023-05-20 01:14:06] INFO root fetch - main [MainThread]: End processing [canopy-platform]: success
+[2023-05-20 01:14:06] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-ses-smtp-credentials]: success
+[2023-05-20 01:14:06] INFO root fetch - main [MainThread]: End processing [arckit]: success
+[2023-05-20 01:14:07] INFO root fetch - main [MainThread]: End processing [dbt-semantic-interfaces]: success
+[2023-05-20 01:14:11] INFO root fetch - main [MainThread]: End processing [skytemple]: success
+[2023-05-20 01:14:22] INFO root fetch - main [MainThread]: End processing [skytemple-randomizer]: success
+[2023-05-20 01:14:22] INFO root fetch - main [MainThread]: Store serial: [18176660]
