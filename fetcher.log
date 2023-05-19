@@ -1,0 +1,54 @@
+[2023-05-20 00:02:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18176044]
+[2023-05-20 00:02:14] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-20 00:02:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: camset
+[2023-05-20 00:02:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rapidpro-flow-tools
+[2023-05-20 00:02:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastqueue-lib
+[2023-05-20 00:02:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: reactivated
+[2023-05-20 00:02:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hx-requests
+[2023-05-20 00:02:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kcli
+[2023-05-20 00:02:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: manager-api
+[2023-05-20 00:02:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tapdance
+[2023-05-20 00:02:14] INFO root fetch - processPackages [rapidpro-flow-tools]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-20 00:02:14] INFO root fetch - processPackages [hx-requests]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-20 00:02:14] INFO root fetch - processPackages [camset]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 00:02:14] INFO root fetch - processPackages [fastqueue-lib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 00:02:14] INFO root fetch - processPackages [reactivated]: New version: [3.0.0a64] Old Version: [0.9.0]
+[2023-05-20 00:02:14] INFO root fetch - processPackages [kcli]: New version: [99.0.202305192200] Old Version: [99.0.202305191812]
+[2023-05-20 00:02:14] INFO root fetch - processPackages [manager-api]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-20 00:02:14] INFO root fetch - processPackages [tapdance]: New version: [0.9.9.dev301] Old Version: [0.9.9.dev299]
+[2023-05-20 00:02:14] INFO root fetch - processPackages [hx-requests]: executing diffoscope
+[2023-05-20 00:02:14] INFO root fetch - processPackages [hx-requests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hx_requests-0.8.0.tar.gz tmp/hx_requests-0.9.0.tar.gz --markdown 20230520/h/hx-requests/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-20 00:02:14] INFO root fetch - processPackages [fastqueue-lib]: Downloading https://files.pythonhosted.org/packages/e9/ad/c0b005e75a58ccc5ab669dc67ad93d87b7e19472940cf79bf44cb7a3212d/fastqueue-lib-0.0.8.tar.gz
+[2023-05-20 00:02:14] INFO root fetch - processPackages [reactivated]: executing diffoscope
+[2023-05-20 00:02:14] INFO root fetch - processPackages [reactivated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reactivated-0.9.0.tar.gz tmp/reactivated-3.0.0a64.tar.gz --markdown 20230520/r/reactivated/0.9.0-3.0.0a64/diff.md --exclude *.pyd
+[2023-05-20 00:02:14] INFO root fetch - processPackages [camset]: Downloading https://files.pythonhosted.org/packages/04/c8/404dec8eb94f2f1be0aabf1d89db3349470244123586bdb1a112f0e4dd37/camset-0.0.8-py3-none-any.whl
+[2023-05-20 00:02:14] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/a3/58/687b2b2a530ed2b4e02cb3c924313757938575825ba2b3d78d98a03da973/kcli-99.0.202305191812-py3-none-any.whl
+[2023-05-20 00:02:14] INFO root fetch - processPackages [tapdance]: Downloading https://files.pythonhosted.org/packages/69/93/a7c3f7da9ddcba05fe681f64008e96d82ffe8660682c30356cc9613ee373/tapdance-0.9.9.dev299.tar.gz
+[2023-05-20 00:02:14] INFO root fetch - processPackages [manager-api]: Downloading https://files.pythonhosted.org/packages/76/c0/fadb070fe372019dba6552c2c9a0e55b602424dae86b25c1de95d68505ef/manager-api-0.1.2.tar.gz
+[2023-05-20 00:02:14] INFO root fetch - processPackages [rapidpro-flow-tools]: Downloading https://files.pythonhosted.org/packages/74/bd/7014e12f2df6c527057ae99b9c77e7de335fc2a11ffa53c17543f613a181/rapidpro_flow_tools-1.0.2.tar.gz
+[2023-05-20 00:02:14] INFO root fetch - processPackages [fastqueue-lib]: Downloading https://files.pythonhosted.org/packages/90/0e/8d1c85dc3048c9317a1d0c2a09052983b539361fad0929f07f514a609d03/fastqueue-lib-0.0.9.tar.gz
+[2023-05-20 00:02:14] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/65/ab/12c424729f372917c6d4ecde1ce838c9ffdca658b82f2dda1c6b0f195776/kcli-99.0.202305192200-py3-none-any.whl
+[2023-05-20 00:02:14] INFO root fetch - processPackages [manager-api]: Downloading https://files.pythonhosted.org/packages/a4/78/2ad11d397bae12fcd73e4bd563097c841e2edf38545b09c6cd40daa40610/manager-api-0.1.3.tar.gz
+[2023-05-20 00:02:14] INFO root fetch - processPackages [rapidpro-flow-tools]: executing diffoscope
+[2023-05-20 00:02:14] INFO root fetch - processPackages [rapidpro-flow-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpro_flow_tools-1.0.1.tar.gz tmp/rapidpro_flow_tools-1.0.2.tar.gz --markdown 20230520/r/rapidpro-flow-tools/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-20 00:02:14] INFO root fetch - processPackages [tapdance]: Downloading https://files.pythonhosted.org/packages/54/76/3b00f92c9aa1f16fd4fb6beb5bbc43af0d822489e361a3b29926c889e3bf/tapdance-0.9.9.dev301.tar.gz
+[2023-05-20 00:02:14] INFO root fetch - processPackages [fastqueue-lib]: executing diffoscope
+[2023-05-20 00:02:14] INFO root fetch - processPackages [fastqueue-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastqueue-lib-0.0.8.tar.gz tmp/fastqueue-lib-0.0.9.tar.gz --markdown 20230520/f/fastqueue-lib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 00:02:14] INFO root fetch - processPackages [camset]: Downloading https://files.pythonhosted.org/packages/03/aa/b433927ae973bd7452983b53299faedaa7c50f4a467785a4c1f9522ce8c4/camset-0.0.9-py3-none-any.whl
+[2023-05-20 00:02:14] INFO root fetch - processPackages [tapdance]: executing diffoscope
+[2023-05-20 00:02:14] INFO root fetch - processPackages [tapdance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tapdance-0.9.9.dev299.tar.gz tmp/tapdance-0.9.9.dev301.tar.gz --markdown 20230520/t/tapdance/0.9.9.dev299-0.9.9.dev301/diff.md --exclude *.pyd
+[2023-05-20 00:02:14] INFO root fetch - processPackages [camset]: executing diffoscope
+[2023-05-20 00:02:14] INFO root fetch - processPackages [camset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camset-0.0.8-py3-none-any.whl.zip tmp/camset-0.0.9-py3-none-any.whl.zip --markdown 20230520/c/camset/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 00:02:14] INFO root fetch - processPackages [manager-api]: executing diffoscope
+[2023-05-20 00:02:14] INFO root fetch - processPackages [manager-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manager-api-0.1.2.tar.gz tmp/manager-api-0.1.3.tar.gz --markdown 20230520/m/manager-api/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-20 00:02:15] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-20 00:02:15] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305191812-py3-none-any.whl.zip tmp/kcli-99.0.202305192200-py3-none-any.whl.zip --markdown 20230520/k/kcli/99.0.202305191812-99.0.202305192200/diff.md --exclude *.pyd
+[2023-05-20 00:02:15] INFO root fetch - main [MainThread]: End processing [hx-requests]: success
+[2023-05-20 00:02:16] INFO root fetch - main [MainThread]: End processing [reactivated]: success
+[2023-05-20 00:02:16] INFO root fetch - main [MainThread]: End processing [camset]: success
+[2023-05-20 00:02:16] INFO root fetch - main [MainThread]: End processing [fastqueue-lib]: success
+[2023-05-20 00:02:16] INFO root fetch - main [MainThread]: End processing [tapdance]: success
+[2023-05-20 00:02:16] INFO root fetch - main [MainThread]: End processing [manager-api]: success
+[2023-05-20 00:02:17] INFO root fetch - main [MainThread]: End processing [rapidpro-flow-tools]: success
+[2023-05-20 00:02:23] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-20 00:02:23] INFO root fetch - main [MainThread]: Store serial: [18176066]
