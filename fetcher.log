@@ -904,3 +904,65 @@
 [2023-05-20 01:02:51] INFO root fetch - main [MainThread]: End processing [vocode]: success
 [2023-05-20 01:03:11] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-05-20 01:03:11] INFO root fetch - main [MainThread]: Store serial: [18176599]
+[2023-05-20 01:08:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18176599]
+[2023-05-20 01:08:19] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-20 01:08:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arckit
+[2023-05-20 01:08:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flwr-nightly
+[2023-05-20 01:08:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tmnt
+[2023-05-20 01:08:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: napari-mm3
+[2023-05-20 01:08:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sesg
+[2023-05-20 01:08:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gdsfactory
+[2023-05-20 01:08:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fedml
+[2023-05-20 01:08:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sqlmesh
+[2023-05-20 01:08:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: evnex
+[2023-05-20 01:08:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: BTKSorgu
+[2023-05-20 01:08:19] WARNING root fetch - processPackages [arckit]: Skipping, unable to determine old version
+[2023-05-20 01:08:19] INFO root fetch - processPackages [arckit]: Start processing: skytemple-randomizer
+[2023-05-20 01:08:19] INFO root fetch - main [MainThread]: End processing [arckit] error
+[2023-05-20 01:08:19] INFO root fetch - processPackages [napari-mm3]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-20 01:08:19] INFO root fetch - processPackages [fedml]: New version: [0.8.4a9] Old Version: [0.8.4a8]
+[2023-05-20 01:08:19] INFO root fetch - processPackages [BTKSorgu]: New version: [1.2.0] Old Version: [1.1.9]
+[2023-05-20 01:08:19] INFO root fetch - processPackages [evnex]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-05-20 01:08:19] INFO root fetch - processPackages [sqlmesh]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-20 01:08:19] INFO root fetch - processPackages [sesg]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 01:08:19] INFO root fetch - processPackages [tmnt]: New version: [0.7.0b20230519] Old Version: [0.7.0b20230518]
+[2023-05-20 01:08:19] INFO root fetch - processPackages [gdsfactory]: New version: [6.97.0] Old Version: [6.96.0]
+[2023-05-20 01:08:19] INFO root fetch - processPackages [flwr-nightly]: New version: [1.5.0.dev20230519] Old Version: [1.5.0.dev20230518]
+[2023-05-20 01:08:19] INFO root fetch - processPackages [sesg]: executing diffoscope
+[2023-05-20 01:08:19] INFO root fetch - processPackages [sesg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sesg-0.0.8.tar.gz tmp/sesg-0.0.9.tar.gz --markdown 20230520/s/sesg/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 01:08:19] INFO root fetch - processPackages [BTKSorgu]: executing diffoscope
+[2023-05-20 01:08:19] INFO root fetch - processPackages [BTKSorgu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BTKSorgu-1.1.9.tar.gz tmp/BTKSorgu-1.2.0.tar.gz --markdown 20230520/B/BTKSorgu/1.1.9-1.2.0/diff.md --exclude *.pyd
+[2023-05-20 01:08:19] INFO root fetch - processPackages [napari-mm3]: Downloading https://files.pythonhosted.org/packages/4f/1d/a8952323ac6a80c8f0760077dae72ea1dffcaf20b45ea80f460385e00d6b/napari-mm3-0.0.7.tar.gz
+[2023-05-20 01:08:19] INFO root fetch - processPackages [skytemple-randomizer]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-05-20 01:08:19] INFO root fetch - processPackages [evnex]: Downloading https://files.pythonhosted.org/packages/fb/ef/8a0c9f656323d54ac6575235e4656b8217e268067fc091e7ae5bf142dcb0/evnex-0.3.4.tar.gz
+[2023-05-20 01:08:19] WARNING root fetch - processPackages [napari-mm3]: Skipping package: exceeds size limit 18969590>=10485760
+[2023-05-20 01:08:19] INFO root fetch - main [MainThread]: End processing [napari-mm3] error
+[2023-05-20 01:08:19] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/1b/05/bfc807300e38018864a98a199c4fe2771d87f04088088569df6a12b6a031/tmnt-0.7.0b20230519.tar.gz
+[2023-05-20 01:08:19] INFO root fetch - processPackages [fedml]: executing diffoscope
+[2023-05-20 01:08:19] INFO root fetch - processPackages [fedml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fedml-0.8.4a8.tar.gz tmp/fedml-0.8.4a9.tar.gz --markdown 20230520/f/fedml/0.8.4a8-0.8.4a9/diff.md --exclude *.pyd
+[2023-05-20 01:08:19] INFO root fetch - processPackages [gdsfactory]: Downloading https://files.pythonhosted.org/packages/53/68/cf26c30dac0d71b0832ed98fd26990dda3cc608ba5e61dd96d6f5861c8fc/gdsfactory-6.97.0.tar.gz
+[2023-05-20 01:08:20] INFO root fetch - processPackages [sqlmesh]: executing diffoscope
+[2023-05-20 01:08:20] INFO root fetch - processPackages [sqlmesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlmesh-0.8.1.tar.gz tmp/sqlmesh-0.9.0.tar.gz --markdown 20230520/s/sqlmesh/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-20 01:08:20] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/64/bc/eea47229a3a58970e0066c7238f053c3513dea9f7a48e5e6e0a4f2ded124/flwr_nightly-1.5.0.dev20230519.tar.gz
+[2023-05-20 01:08:20] INFO root fetch - processPackages [evnex]: Downloading https://files.pythonhosted.org/packages/0a/97/9942cfedd583e593ec228a29af8feb5cb5434f81e73ff2535da9499007c3/evnex-0.3.5.tar.gz
+[2023-05-20 01:08:20] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2023-05-20 01:08:20] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.0b20230518.tar.gz tmp/tmnt-0.7.0b20230519.tar.gz --markdown 20230520/t/tmnt/0.7.0b20230518-0.7.0b20230519/diff.md --exclude *.pyd
+[2023-05-20 01:08:20] INFO root fetch - processPackages [gdsfactory]: executing diffoscope
+[2023-05-20 01:08:20] INFO root fetch - processPackages [gdsfactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdsfactory-6.96.0.tar.gz tmp/gdsfactory-6.97.0.tar.gz --markdown 20230520/g/gdsfactory/6.96.0-6.97.0/diff.md --exclude *.pyd
+[2023-05-20 01:08:20] INFO root fetch - processPackages [skytemple-randomizer]: Downloading https://files.pythonhosted.org/packages/de/28/5f8908b95918b43bb526370d6bc7e66de124bbf95b6239afd9af52df0d9c/skytemple_randomizer-1.5.1-py3-none-any.whl
+[2023-05-20 01:08:20] INFO root fetch - processPackages [evnex]: executing diffoscope
+[2023-05-20 01:08:20] INFO root fetch - processPackages [evnex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evnex-0.3.4.tar.gz tmp/evnex-0.3.5.tar.gz --markdown 20230520/e/evnex/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-05-20 01:08:20] INFO root fetch - processPackages [flwr-nightly]: executing diffoscope
+[2023-05-20 01:08:20] INFO root fetch - processPackages [flwr-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flwr_nightly-1.5.0.dev20230518.tar.gz tmp/flwr_nightly-1.5.0.dev20230519.tar.gz --markdown 20230520/f/flwr-nightly/1.5.0.dev20230518-1.5.0.dev20230519/diff.md --exclude *.pyd
+[2023-05-20 01:08:21] INFO root fetch - main [MainThread]: End processing [sesg]: success
+[2023-05-20 01:08:21] INFO root fetch - main [MainThread]: End processing [BTKSorgu]: success
+[2023-05-20 01:08:21] INFO root fetch - main [MainThread]: End processing [evnex]: success
+[2023-05-20 01:08:22] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
+[2023-05-20 01:08:22] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2023-05-20 01:08:22] INFO root fetch - processPackages [skytemple-randomizer]: executing diffoscope
+[2023-05-20 01:08:22] INFO root fetch - processPackages [skytemple-randomizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skytemple_randomizer-1.5.0-py3-none-any.whl.zip tmp/skytemple_randomizer-1.5.1-py3-none-any.whl.zip --markdown 20230520/s/skytemple-randomizer/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-05-20 01:08:29] INFO root fetch - main [MainThread]: End processing [fedml]: success
+[2023-05-20 01:08:30] INFO root fetch - main [MainThread]: End processing [gdsfactory]: success
+[2023-05-20 01:08:38] INFO root fetch - main [MainThread]: End processing [skytemple-randomizer]: success
+[2023-05-20 01:08:55] INFO root fetch - main [MainThread]: End processing [sqlmesh]: success
+[2023-05-20 01:08:55] INFO root fetch - main [MainThread]: Store serial: [18176630]
