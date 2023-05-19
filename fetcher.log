@@ -1274,3 +1274,36 @@
 [2023-05-20 01:40:42] INFO root fetch - main [MainThread]: End processing [entangled-cli]: success
 [2023-05-20 01:40:46] INFO root fetch - main [MainThread]: End processing [not1mm]: success
 [2023-05-20 01:40:46] INFO root fetch - main [MainThread]: Store serial: [18176827]
+[2023-05-20 01:45:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18176827]
+[2023-05-20 01:45:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 01:45:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cycIFAAP
+[2023-05-20 01:45:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deepof
+[2023-05-20 01:45:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prompt-generator
+[2023-05-20 01:45:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hermescloud
+[2023-05-20 01:45:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: t2d2-sdk
+[2023-05-20 01:45:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: CADPR
+[2023-05-20 01:45:55] INFO root fetch - processPackages [t2d2-sdk]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-20 01:45:55] INFO root fetch - processPackages [CADPR]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-20 01:45:55] INFO root fetch - processPackages [hermescloud]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-20 01:45:55] INFO root fetch - processPackages [cycIFAAP]: New version: [5.7.5] Old Version: [5.7.4]
+[2023-05-20 01:45:55] INFO root fetch - processPackages [t2d2-sdk]: executing diffoscope
+[2023-05-20 01:45:55] INFO root fetch - processPackages [t2d2-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/t2d2-sdk-0.0.2.tar.gz tmp/t2d2-sdk-0.0.3.tar.gz --markdown 20230520/t/t2d2-sdk/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-20 01:45:55] WARNING root fetch - processPackages [prompt-generator]: Skipping, unable to determine old version
+[2023-05-20 01:45:55] INFO root fetch - main [MainThread]: End processing [prompt-generator] error
+[2023-05-20 01:45:55] INFO root fetch - processPackages [deepof]: New version: [0.3] Old Version: [0.2]
+[2023-05-20 01:45:55] INFO root fetch - processPackages [CADPR]: executing diffoscope
+[2023-05-20 01:45:55] INFO root fetch - processPackages [CADPR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CADPR-0.1.0.tar.gz tmp/CADPR-0.1.1.tar.gz --markdown 20230520/C/CADPR/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-20 01:45:55] INFO root fetch - processPackages [hermescloud]: executing diffoscope
+[2023-05-20 01:45:55] INFO root fetch - processPackages [hermescloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hermescloud-0.0.2.tar.gz tmp/hermescloud-0.0.3.tar.gz --markdown 20230520/h/hermescloud/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-20 01:45:55] INFO root fetch - processPackages [deepof]: Downloading https://files.pythonhosted.org/packages/79/de/2e1e744234f4688e1c19d3b8bf3b722f5415db6bbabd6bffd8313f26f73f/deepof-0.2.tar.gz
+[2023-05-20 01:45:55] INFO root fetch - processPackages [cycIFAAP]: Downloading https://files.pythonhosted.org/packages/b5/cf/cdeb4c4762fc85381da9366c17621aeb2743751bb46428dd649aa5f39bcc/cycIFAAP-5.7.4.tar.gz
+[2023-05-20 01:45:55] WARNING root fetch - processPackages [cycIFAAP]: Skipping package: exceeds size limit 60879003>=10485760
+[2023-05-20 01:45:55] INFO root fetch - main [MainThread]: End processing [cycIFAAP] error
+[2023-05-20 01:45:56] INFO root fetch - main [MainThread]: End processing [t2d2-sdk]: success
+[2023-05-20 01:45:56] INFO root fetch - main [MainThread]: End processing [hermescloud]: success
+[2023-05-20 01:45:56] INFO root fetch - main [MainThread]: End processing [CADPR]: success
+[2023-05-20 01:45:57] INFO root fetch - processPackages [deepof]: Downloading https://files.pythonhosted.org/packages/24/99/d943907be843be9059992c0143c14b27e64acea893d7a1e132d7c245978e/deepof-0.3.tar.gz
+[2023-05-20 01:45:58] INFO root fetch - processPackages [deepof]: executing diffoscope
+[2023-05-20 01:45:58] INFO root fetch - processPackages [deepof]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepof-0.2.tar.gz tmp/deepof-0.3.tar.gz --markdown 20230520/d/deepof/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-20 01:46:01] INFO root fetch - main [MainThread]: End processing [deepof]: success
+[2023-05-20 01:46:01] INFO root fetch - main [MainThread]: Store serial: [18176852]
