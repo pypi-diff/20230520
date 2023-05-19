@@ -1307,3 +1307,45 @@
 [2023-05-20 01:45:58] INFO root fetch - processPackages [deepof]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepof-0.2.tar.gz tmp/deepof-0.3.tar.gz --markdown 20230520/d/deepof/0.2-0.3/diff.md --exclude *.pyd
 [2023-05-20 01:46:01] INFO root fetch - main [MainThread]: End processing [deepof]: success
 [2023-05-20 01:46:01] INFO root fetch - main [MainThread]: Store serial: [18176852]
+[2023-05-20 01:51:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18176852]
+[2023-05-20 01:51:10] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-20 01:51:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jaxonnxruntime
+[2023-05-20 01:51:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: probability
+[2023-05-20 01:51:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wait-for-it-to
+[2023-05-20 01:51:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sphinxcontrib-confluencebuilder
+[2023-05-20 01:51:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: conjuring
+[2023-05-20 01:51:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flaskosql
+[2023-05-20 01:51:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: qlmaas
+[2023-05-20 01:51:10] WARNING root fetch - processPackages [jaxonnxruntime]: Skipping, unable to determine old version
+[2023-05-20 01:51:10] INFO root fetch - main [MainThread]: End processing [jaxonnxruntime] error
+[2023-05-20 01:51:10] INFO root fetch - processPackages [flaskosql]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-20 01:51:10] WARNING root fetch - processPackages [conjuring]: Skipping, unable to determine old version
+[2023-05-20 01:51:10] INFO root fetch - main [MainThread]: End processing [conjuring] error
+[2023-05-20 01:51:10] INFO root fetch - processPackages [wait-for-it-to]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 01:51:10] INFO root fetch - processPackages [sphinxcontrib-confluencebuilder]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-05-20 01:51:10] INFO root fetch - processPackages [probability]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 01:51:10] INFO root fetch - processPackages [flaskosql]: executing diffoscope
+[2023-05-20 01:51:10] INFO root fetch - processPackages [flaskosql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flaskosql-1.0.5.tar.gz tmp/flaskosql-1.0.6.tar.gz --markdown 20230520/f/flaskosql/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-20 01:51:10] INFO root fetch - processPackages [qlmaas]: New version: [1.7.3] Old Version: [1.7.2]
+[2023-05-20 01:51:10] INFO root fetch - processPackages [sphinxcontrib-confluencebuilder]: Downloading https://files.pythonhosted.org/packages/a0/a0/d9752807699790474c85dfd55c53e634c12dd561d4b0bb2037292326b766/sphinxcontrib_confluencebuilder-2.1.0.tar.gz
+[2023-05-20 01:51:10] INFO root fetch - processPackages [wait-for-it-to]: Downloading https://files.pythonhosted.org/packages/78/50/3ff81816ae7996a85152a6c065d8a95f789c16b027d1655f65a71b4a7608/wait_for_it_to-0.0.8.tar.gz
+[2023-05-20 01:51:10] INFO root fetch - processPackages [probability]: Downloading https://files.pythonhosted.org/packages/a2/75/a53179154d40fadd06689b9590f00a8d50ced28eb10e2a92147c5f85d983/probability-0.0.8.tar.gz
+[2023-05-20 01:51:11] INFO root fetch - processPackages [qlmaas]: Downloading https://files.pythonhosted.org/packages/d8/14/82861111d8011bad249b7cd310956aace5ef56cadc20401cd5930ee2ccbb/qlmaas-1.7.2-cp39-cp39-win_amd64.whl
+[2023-05-20 01:51:11] INFO root fetch - processPackages [sphinxcontrib-confluencebuilder]: Downloading https://files.pythonhosted.org/packages/6d/f7/02722a018c5d52192e80c5b59af7913bfe05db0c021b37c504d7f267893a/sphinxcontrib_confluencebuilder-2.1.1.tar.gz
+[2023-05-20 01:51:11] INFO root fetch - processPackages [probability]: Downloading https://files.pythonhosted.org/packages/0d/e6/d30ef21cb4a13fe72dde82721af1d6a12441f0d7f146892b2962085afbef/probability-0.0.9.tar.gz
+[2023-05-20 01:51:11] INFO root fetch - processPackages [wait-for-it-to]: Downloading https://files.pythonhosted.org/packages/f9/7a/2ba44d0bba3b6e1ff964375e584ac8816d668c0318ad6682849db0da3237/wait_for_it_to-0.0.9.tar.gz
+[2023-05-20 01:51:11] INFO root fetch - processPackages [probability]: executing diffoscope
+[2023-05-20 01:51:11] INFO root fetch - processPackages [probability]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/probability-0.0.8.tar.gz tmp/probability-0.0.9.tar.gz --markdown 20230520/p/probability/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 01:51:11] INFO root fetch - processPackages [wait-for-it-to]: executing diffoscope
+[2023-05-20 01:51:11] INFO root fetch - processPackages [wait-for-it-to]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wait_for_it_to-0.0.8.tar.gz tmp/wait_for_it_to-0.0.9.tar.gz --markdown 20230520/w/wait-for-it-to/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 01:51:11] INFO root fetch - processPackages [sphinxcontrib-confluencebuilder]: executing diffoscope
+[2023-05-20 01:51:11] INFO root fetch - processPackages [sphinxcontrib-confluencebuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib_confluencebuilder-2.1.0.tar.gz tmp/sphinxcontrib_confluencebuilder-2.1.1.tar.gz --markdown 20230520/s/sphinxcontrib-confluencebuilder/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-05-20 01:51:11] INFO root fetch - main [MainThread]: End processing [flaskosql]: success
+[2023-05-20 01:51:12] INFO root fetch - processPackages [qlmaas]: Downloading https://files.pythonhosted.org/packages/48/36/ed253f1fea9514b79e55965c3d0f57ec6b1ea80cc0f3e773ea98b99f68b1/qlmaas-1.7.3-cp39-cp39-macosx_11_0_arm64.whl
+[2023-05-20 01:51:12] INFO root fetch - main [MainThread]: End processing [wait-for-it-to]: success
+[2023-05-20 01:51:12] INFO root fetch - processPackages [qlmaas]: executing diffoscope
+[2023-05-20 01:51:12] INFO root fetch - processPackages [qlmaas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qlmaas-1.7.2-cp39-cp39-win_amd64.whl.zip tmp/qlmaas-1.7.3-cp39-cp39-macosx_11_0_arm64.whl.zip --markdown 20230520/q/qlmaas/1.7.2-1.7.3/diff.md --exclude *.pyd
+[2023-05-20 01:51:12] INFO root fetch - main [MainThread]: End processing [probability]: success
+[2023-05-20 01:51:13] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-confluencebuilder]: success
+[2023-05-20 01:51:13] INFO root fetch - main [MainThread]: End processing [qlmaas]: success
+[2023-05-20 01:51:13] INFO root fetch - main [MainThread]: Store serial: [18176885]
