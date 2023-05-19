@@ -770,3 +770,94 @@
 [2023-05-20 00:51:50] INFO root fetch - main [MainThread]: End processing [tomtoolkit]: success
 [2023-05-20 00:51:50] INFO root fetch - main [MainThread]: End processing [pipenv]: success
 [2023-05-20 00:51:50] INFO root fetch - main [MainThread]: Store serial: [18176527]
+[2023-05-20 00:56:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18176527]
+[2023-05-20 00:56:59] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-20 00:56:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: file-validator
+[2023-05-20 00:56:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hermescloud
+[2023-05-20 00:56:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: formic-opcua
+[2023-05-20 00:56:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ds4finance
+[2023-05-20 00:56:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: configzen
+[2023-05-20 00:56:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: CADPR
+[2023-05-20 00:56:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sqlmesh
+[2023-05-20 00:56:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: configzen
+[2023-05-20 00:56:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: jupyter-ai
+[2023-05-20 00:56:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: jupyter-ai-magics
+[2023-05-20 00:56:59] INFO root fetch - processPackages [formic-opcua]: New version: [1.4.0] Old Version: [1.3.9]
+[2023-05-20 00:56:59] INFO root fetch - processPackages [hermescloud]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-20 00:56:59] INFO root fetch - processPackages [configzen]: New version: [0.1.22] Old Version: [0.1.21]
+[2023-05-20 00:56:59] INFO root fetch - processPackages [file-validator]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-20 00:56:59] INFO root fetch - processPackages [jupyter-ai-magics]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-05-20 00:56:59] INFO root fetch - processPackages [CADPR]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-20 00:56:59] INFO root fetch - processPackages [ds4finance]: New version: [0.1.17] Old Version: [0.1.15]
+[2023-05-20 00:56:59] INFO root fetch - processPackages [configzen]: New version: [0.1.22] Old Version: [0.1.21]
+[2023-05-20 00:56:59] INFO root fetch - processPackages [jupyter-ai]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-05-20 00:56:59] INFO root fetch - processPackages [sqlmesh]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-20 00:56:59] INFO root fetch - processPackages [sqlmesh]: executing diffoscope
+[2023-05-20 00:56:59] INFO root fetch - processPackages [sqlmesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlmesh-0.8.1.tar.gz tmp/sqlmesh-0.9.0.tar.gz --markdown 20230520/s/sqlmesh/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-20 00:56:59] INFO root fetch - processPackages [CADPR]: executing diffoscope
+[2023-05-20 00:56:59] INFO root fetch - processPackages [CADPR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CADPR-0.1.0.tar.gz tmp/CADPR-0.1.1.tar.gz --markdown 20230520/C/CADPR/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-20 00:56:59] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/f6/19/17de48b8ac7e26baf83718505808b57c77f2775cef57ddc4502fd500f6c5/configzen-0.1.21.tar.gz
+[2023-05-20 00:56:59] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/f6/19/17de48b8ac7e26baf83718505808b57c77f2775cef57ddc4502fd500f6c5/configzen-0.1.21.tar.gz
+[2023-05-20 00:56:59] INFO root fetch - processPackages [file-validator]: Downloading https://files.pythonhosted.org/packages/da/e5/1d3fa5ee3b0f8006af38965e9da2c158bf960870097be9717f2f26bee98c/file_validator-1.0.8.tar.gz
+[2023-05-20 00:56:59] INFO root fetch - processPackages [formic-opcua]: Downloading https://files.pythonhosted.org/packages/ee/14/280c3a7c6341e7ae342c37af394b86aa0af37f9070d9212e3a3f76cf5842/formic_opcua-1.4.0.tar.gz
+[2023-05-20 00:56:59] INFO root fetch - processPackages [hermescloud]: Downloading https://files.pythonhosted.org/packages/6f/46/ede90c3f87c078774caa6d8a1260c4071633096d1475b77f3a9af9541fee/hermescloud-0.0.1.tar.gz
+[2023-05-20 00:56:59] INFO root fetch - processPackages [jupyter-ai-magics]: Downloading https://files.pythonhosted.org/packages/e9/07/da0feb638ac14392ac92bcca75e6e18ca05d024ef529b6759403221535d0/jupyter_ai_magics-0.7.1.tar.gz
+[2023-05-20 00:56:59] INFO root fetch - processPackages [jupyter-ai]: Downloading https://files.pythonhosted.org/packages/7e/28/dc0c6dea4c3ffacec2896b35c3ce867031917f42c23991e3d5bba355a1e5/jupyter_ai-0.7.1.tar.gz
+[2023-05-20 00:56:59] INFO root fetch - processPackages [ds4finance]: Downloading https://files.pythonhosted.org/packages/b4/d7/1a2ace1d95b4879b9b5f1d9dcc80fe83cdb829fa805b0c71d3f0b5d4b639/ds4finance-0.1.15.tar.gz
+[2023-05-20 00:56:59] INFO root fetch - processPackages [formic-opcua]: executing diffoscope
+[2023-05-20 00:56:59] INFO root fetch - processPackages [formic-opcua]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/formic_opcua-1.3.9.tar.gz tmp/formic_opcua-1.4.0.tar.gz --markdown 20230520/f/formic-opcua/1.3.9-1.4.0/diff.md --exclude *.pyd
+[2023-05-20 00:56:59] INFO root fetch - processPackages [file-validator]: Downloading https://files.pythonhosted.org/packages/2b/f0/2e6e840794d807c64f634e524fe637b2bb0aa6bb057565ad618d490e9c21/file_validator-1.0.9.tar.gz
+[2023-05-20 00:56:59] INFO root fetch - processPackages [jupyter-ai-magics]: Downloading https://files.pythonhosted.org/packages/8a/c6/e6ac5473aa563662316c2c9450aa3bba642af8936ac65ec36fe6355f73ce/jupyter_ai_magics-0.7.2.tar.gz
+[2023-05-20 00:56:59] INFO root fetch - processPackages [file-validator]: executing diffoscope
+[2023-05-20 00:56:59] INFO root fetch - processPackages [file-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/file_validator-1.0.8.tar.gz tmp/file_validator-1.0.9.tar.gz --markdown 20230520/f/file-validator/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-20 00:56:59] INFO root fetch - processPackages [jupyter-ai-magics]: executing diffoscope
+[2023-05-20 00:56:59] INFO root fetch - processPackages [jupyter-ai-magics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_ai_magics-0.7.1.tar.gz tmp/jupyter_ai_magics-0.7.2.tar.gz --markdown 20230520/j/jupyter-ai-magics/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-05-20 00:56:59] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/ea/86/c9c421e95d6ffde23d0e29509874a195ea3eec7296ae9205afcf219635c4/configzen-0.1.22.tar.gz
+[2023-05-20 00:56:59] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/ea/86/c9c421e95d6ffde23d0e29509874a195ea3eec7296ae9205afcf219635c4/configzen-0.1.22.tar.gz
+[2023-05-20 00:57:00] INFO root fetch - processPackages [hermescloud]: Downloading https://files.pythonhosted.org/packages/cf/8d/cb6ca55aa31e75e5420e7a69501807d2e6fa0747d300a5fc8c0494fe73b6/hermescloud-0.0.2.tar.gz
+[2023-05-20 00:57:00] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-20 00:57:00] INFO root fetch - processPackages [ds4finance]: Downloading https://files.pythonhosted.org/packages/41/aa/43acb69d5330a05727b40c68932761c41c5566e659b6621e255d26036f62/ds4finance-0.1.17.tar.gz
+[2023-05-20 00:57:00] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.21.tar.gz tmp/configzen-0.1.22.tar.gz --markdown 20230520/c/configzen/0.1.21-0.1.22/diff.md --exclude *.pyd
+[2023-05-20 00:57:00] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-20 00:57:00] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.21.tar.gz tmp/configzen-0.1.22.tar.gz --markdown 20230520/c/configzen/0.1.21-0.1.22/diff.md --exclude *.pyd
+[2023-05-20 00:57:00] INFO root fetch - processPackages [jupyter-ai]: Downloading https://files.pythonhosted.org/packages/82/cc/ade642cdcd2e6036eed1787b00079e7d301bcf2a5099b37017d5a8aae31e/jupyter_ai-0.7.2.tar.gz
+[2023-05-20 00:57:00] INFO root fetch - processPackages [hermescloud]: executing diffoscope
+[2023-05-20 00:57:00] INFO root fetch - processPackages [hermescloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hermescloud-0.0.1.tar.gz tmp/hermescloud-0.0.2.tar.gz --markdown 20230520/h/hermescloud/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-20 00:57:00] INFO root fetch - processPackages [ds4finance]: executing diffoscope
+[2023-05-20 00:57:00] INFO root fetch - processPackages [ds4finance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ds4finance-0.1.15.tar.gz tmp/ds4finance-0.1.17.tar.gz --markdown 20230520/d/ds4finance/0.1.15-0.1.17/diff.md --exclude *.pyd
+[2023-05-20 00:57:00] INFO root fetch - processPackages [jupyter-ai]: executing diffoscope
+[2023-05-20 00:57:00] INFO root fetch - processPackages [jupyter-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_ai-0.7.1.tar.gz tmp/jupyter_ai-0.7.2.tar.gz --markdown 20230520/j/jupyter-ai/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-05-20 00:57:01] INFO root fetch - processPackages [formic-opcua]: Start processing: formic-opcua
+[2023-05-20 00:57:01] INFO root fetch - main [MainThread]: End processing [formic-opcua]: success
+[2023-05-20 00:57:01] INFO root fetch - processPackages [formic-opcua]: New version: [1.4.0] Old Version: [1.3.9]
+[2023-05-20 00:57:01] INFO root fetch - processPackages [formic-opcua]: executing diffoscope
+[2023-05-20 00:57:01] INFO root fetch - processPackages [formic-opcua]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/formic_opcua-1.3.9.tar.gz tmp/formic_opcua-1.4.0.tar.gz --markdown 20230520/f/formic-opcua/1.3.9-1.4.0/diff.md --exclude *.pyd
+[2023-05-20 00:57:01] INFO root fetch - processPackages [CADPR]: Start processing: odoo14-addon-stock-request-purchase
+[2023-05-20 00:57:01] INFO root fetch - main [MainThread]: End processing [CADPR]: success
+[2023-05-20 00:57:01] INFO root fetch - processPackages [odoo14-addon-stock-request-purchase]: New version: [14.0.1.0.1.dev4] Old Version: [14.0.1.0.1.dev2]
+[2023-05-20 00:57:01] INFO root fetch - processPackages [jupyter-ai-magics]: Start processing: sesg
+[2023-05-20 00:57:01] INFO root fetch - main [MainThread]: End processing [jupyter-ai-magics]: success
+[2023-05-20 00:57:01] INFO root fetch - processPackages [sesg]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 00:57:01] INFO root fetch - processPackages [configzen]: Start processing: textagon
+[2023-05-20 00:57:01] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-20 00:57:01] INFO root fetch - processPackages [textagon]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-20 00:57:01] INFO root fetch - processPackages [sesg]: executing diffoscope
+[2023-05-20 00:57:01] INFO root fetch - processPackages [sesg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sesg-0.0.8.tar.gz tmp/sesg-0.0.9.tar.gz --markdown 20230520/s/sesg/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 00:57:01] INFO root fetch - processPackages [odoo14-addon-stock-request-purchase]: Downloading https://files.pythonhosted.org/packages/90/9f/6a513ba35daa2a75c45dffafaab7af6b95fb7d883bb0bbb28df7374f4d54/odoo14_addon_stock_request_purchase-14.0.1.0.1.dev2-py3-none-any.whl
+[2023-05-20 00:57:01] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-20 00:57:01] INFO root fetch - processPackages [textagon]: Downloading https://files.pythonhosted.org/packages/7f/76/ab50527d09ee2b748c136dc6593792e532a04f8248bb9336bd14fd730a67/textagon-0.1.5.tar.gz
+[2023-05-20 00:57:01] INFO root fetch - main [MainThread]: End processing [file-validator]: success
+[2023-05-20 00:57:01] INFO root fetch - processPackages [textagon]: executing diffoscope
+[2023-05-20 00:57:01] INFO root fetch - processPackages [textagon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textagon-0.1.4.tar.gz tmp/textagon-0.1.5.tar.gz --markdown 20230520/t/textagon/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-20 00:57:01] INFO root fetch - main [MainThread]: End processing [ds4finance]: success
+[2023-05-20 00:57:02] INFO root fetch - main [MainThread]: End processing [hermescloud]: success
+[2023-05-20 00:57:02] INFO root fetch - processPackages [odoo14-addon-stock-request-purchase]: Downloading https://files.pythonhosted.org/packages/ec/d9/8d2e4ec1f774008df6723c135ec68dd2c84518f38cc7b455e6b32326e1e2/odoo14_addon_stock_request_purchase-14.0.1.0.1.dev4-py3-none-any.whl
+[2023-05-20 00:57:02] INFO root fetch - processPackages [odoo14-addon-stock-request-purchase]: executing diffoscope
+[2023-05-20 00:57:02] INFO root fetch - processPackages [odoo14-addon-stock-request-purchase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_stock_request_purchase-14.0.1.0.1.dev2-py3-none-any.whl.zip tmp/odoo14_addon_stock_request_purchase-14.0.1.0.1.dev4-py3-none-any.whl.zip --markdown 20230520/o/odoo14-addon-stock-request-purchase/14.0.1.0.1.dev2-14.0.1.0.1.dev4/diff.md --exclude *.pyd
+[2023-05-20 00:57:02] INFO root fetch - main [MainThread]: End processing [formic-opcua]: success
+[2023-05-20 00:57:02] INFO root fetch - main [MainThread]: End processing [textagon]: success
+[2023-05-20 00:57:02] INFO root fetch - main [MainThread]: End processing [sesg]: success
+[2023-05-20 00:57:03] INFO root fetch - main [MainThread]: End processing [odoo14-addon-stock-request-purchase]: success
+[2023-05-20 00:57:21] INFO root fetch - main [MainThread]: End processing [jupyter-ai]: success
+[2023-05-20 00:57:38] INFO root fetch - main [MainThread]: End processing [sqlmesh]: success
+[2023-05-20 00:57:38] INFO root fetch - main [MainThread]: Store serial: [18176569]
