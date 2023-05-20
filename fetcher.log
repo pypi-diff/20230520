@@ -9985,3 +9985,38 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 15:43:19] INFO root fetch - main [MainThread]: End processing [flask-starter]: success
 [2023-05-20 15:43:19] INFO root fetch - main [MainThread]: End processing [twilix-python]: success
 [2023-05-20 15:43:19] INFO root fetch - main [MainThread]: Store serial: [18182289]
+[2023-05-20 15:48:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182289]
+[2023-05-20 15:48:28] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 15:48:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: YetAnotherModule
+[2023-05-20 15:48:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NuMeTriS
+[2023-05-20 15:48:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: statml
+[2023-05-20 15:48:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: requests-html2
+[2023-05-20 15:48:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wgd
+[2023-05-20 15:48:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: archeSetup
+[2023-05-20 15:48:28] INFO root fetch - processPackages [archeSetup]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-20 15:48:28] WARNING root fetch - processPackages [YetAnotherModule]: Skipping, unable to determine old version
+[2023-05-20 15:48:28] INFO root fetch - processPackages [statml]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-20 15:48:28] INFO root fetch - processPackages [NuMeTriS]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-20 15:48:28] INFO root fetch - main [MainThread]: End processing [YetAnotherModule] error
+[2023-05-20 15:48:28] WARNING root fetch - processPackages [requests-html2]: Skipping, unable to determine old version
+[2023-05-20 15:48:28] INFO root fetch - main [MainThread]: End processing [requests-html2] error
+[2023-05-20 15:48:28] INFO root fetch - processPackages [wgd]: New version: [2.0.15] Old Version: [2.0.14]
+[2023-05-20 15:48:28] INFO root fetch - processPackages [statml]: Downloading https://files.pythonhosted.org/packages/d7/ee/6d6c419822d9a511e1f4dd6c5815f5c9947edc74284e2ea5ac99282bf1e5/statml-0.0.1.tar.gz
+[2023-05-20 15:48:28] INFO root fetch - processPackages [archeSetup]: Downloading https://files.pythonhosted.org/packages/ca/f8/3bfc65a161d14a35d990e0e5568f0dbc4d58389f5af35befe9270f2c9895/archeSetup-0.0.2.tar.gz
+[2023-05-20 15:48:28] INFO root fetch - processPackages [wgd]: Downloading https://files.pythonhosted.org/packages/35/6b/c1f14dedb2f35daa6f70ce1f6ba4a008eed736ffc342c8f70dff146de763/wgd-2.0.15.tar.gz
+[2023-05-20 15:48:28] INFO root fetch - processPackages [NuMeTriS]: Downloading https://files.pythonhosted.org/packages/c2/30/a0c2e8495d83de65c88ea29dc62a8634baf91dc40a2e31e87569f6213ce8/NuMeTriS-0.0.4.tar.gz
+[2023-05-20 15:48:28] INFO root fetch - processPackages [wgd]: executing diffoscope
+[2023-05-20 15:48:28] INFO root fetch - processPackages [wgd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wgd-2.0.14.tar.gz tmp/wgd-2.0.15.tar.gz --markdown 20230520/w/wgd/2.0.14-2.0.15/diff.md --exclude *.pyd
+[2023-05-20 15:48:28] INFO root fetch - processPackages [NuMeTriS]: executing diffoscope
+[2023-05-20 15:48:28] INFO root fetch - processPackages [NuMeTriS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NuMeTriS-0.0.3.tar.gz tmp/NuMeTriS-0.0.4.tar.gz --markdown 20230520/N/NuMeTriS/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-20 15:48:29] INFO root fetch - processPackages [statml]: Downloading https://files.pythonhosted.org/packages/8a/ce/6e2c7928cca07152ccc55aefa490f4c86e23653513d94fde435593556d29/statml-0.0.2.tar.gz
+[2023-05-20 15:48:29] INFO root fetch - processPackages [archeSetup]: Downloading https://files.pythonhosted.org/packages/e8/3e/ab7e752ca07eded8563b20d8017d5220bf79e59f570592b082e5ce83c7d9/archeSetup-0.0.3.tar.gz
+[2023-05-20 15:48:29] INFO root fetch - processPackages [archeSetup]: executing diffoscope
+[2023-05-20 15:48:29] INFO root fetch - processPackages [archeSetup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/archeSetup-0.0.2.tar.gz tmp/archeSetup-0.0.3.tar.gz --markdown 20230520/a/archeSetup/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-20 15:48:29] INFO root fetch - processPackages [statml]: executing diffoscope
+[2023-05-20 15:48:29] INFO root fetch - processPackages [statml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statml-0.0.1.tar.gz tmp/statml-0.0.2.tar.gz --markdown 20230520/s/statml/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-20 15:48:30] INFO root fetch - main [MainThread]: End processing [NuMeTriS]: success
+[2023-05-20 15:48:30] INFO root fetch - main [MainThread]: End processing [archeSetup]: success
+[2023-05-20 15:48:30] INFO root fetch - main [MainThread]: End processing [statml]: success
+[2023-05-20 15:48:30] INFO root fetch - main [MainThread]: End processing [wgd]: success
+[2023-05-20 15:48:30] INFO root fetch - main [MainThread]: Store serial: [18182312]
