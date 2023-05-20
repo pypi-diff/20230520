@@ -13045,3 +13045,28 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 22:07:15] INFO root fetch - main [MainThread]: End processing [iphack]: success
 [2023-05-20 22:07:16] INFO root fetch - main [MainThread]: End processing [videosrc]: success
 [2023-05-20 22:07:16] INFO root fetch - main [MainThread]: Store serial: [18184088]
+[2023-05-20 22:12:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184088]
+[2023-05-20 22:12:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 22:12:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TMDBTraktSyncer
+[2023-05-20 22:12:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onboardme
+[2023-05-20 22:12:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aim-ui
+[2023-05-20 22:12:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aim
+[2023-05-20 22:12:27] INFO root fetch - processPackages [onboardme]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-05-20 22:12:27] INFO root fetch - processPackages [TMDBTraktSyncer]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-20 22:12:27] INFO root fetch - processPackages [aim-ui]: New version: [4.0.0.dev5] Old Version: [4.0.0.dev4]
+[2023-05-20 22:12:27] INFO root fetch - processPackages [aim]: New version: [4.0.0.dev5] Old Version: [4.0.0.dev4]
+[2023-05-20 22:12:27] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/15/04/0624cfb818b4aa00681fd98b1d6ff24f56e0dc30cc0aa27fb90fce93dcc3/aim-ui-4.0.0.dev4.tar.gz
+[2023-05-20 22:12:27] INFO root fetch - processPackages [onboardme]: Downloading https://files.pythonhosted.org/packages/fe/86/66f101fdc7a59e7627b4050d155a8aa3eacabd8847d69727d5872b36d98a/onboardme-1.1.8.tar.gz
+[2023-05-20 22:12:27] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 21591110>=10485760
+[2023-05-20 22:12:27] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2023-05-20 22:12:27] INFO root fetch - processPackages [TMDBTraktSyncer]: Downloading https://files.pythonhosted.org/packages/b2/a0/162db965b331fa47787c366bb9da4a68b7fc8414d5afe39742cc6ddbfacf/TMDBTraktSyncer-1.1.2.tar.gz
+[2023-05-20 22:12:27] INFO root fetch - processPackages [onboardme]: executing diffoscope
+[2023-05-20 22:12:27] INFO root fetch - processPackages [onboardme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onboardme-1.1.7.tar.gz tmp/onboardme-1.1.8.tar.gz --markdown 20230520/o/onboardme/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-05-20 22:12:27] INFO root fetch - processPackages [TMDBTraktSyncer]: executing diffoscope
+[2023-05-20 22:12:27] INFO root fetch - processPackages [TMDBTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TMDBTraktSyncer-1.1.1.tar.gz tmp/TMDBTraktSyncer-1.1.2.tar.gz --markdown 20230520/T/TMDBTraktSyncer/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-20 22:12:28] INFO root fetch - processPackages [aim]: executing diffoscope
+[2023-05-20 22:12:28] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.0.dev4.tar.gz tmp/aim-4.0.0.dev5.tar.gz --markdown 20230520/a/aim/4.0.0.dev4-4.0.0.dev5/diff.md --exclude *.pyd
+[2023-05-20 22:12:28] INFO root fetch - main [MainThread]: End processing [onboardme]: success
+[2023-05-20 22:12:29] INFO root fetch - main [MainThread]: End processing [TMDBTraktSyncer]: success
+[2023-05-20 22:12:36] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2023-05-20 22:12:36] INFO root fetch - main [MainThread]: Store serial: [18184101]
