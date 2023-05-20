@@ -12046,3 +12046,26 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 19:44:17] INFO root fetch - main [MainThread]: End processing [envoy.base.utils]: success
 [2023-05-20 19:44:30] INFO root fetch - main [MainThread]: End processing [PyroFork-dev]: success
 [2023-05-20 19:44:30] INFO root fetch - main [MainThread]: Store serial: [18183612]
+[2023-05-20 19:49:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183612]
+[2023-05-20 19:49:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 19:49:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: redfin-scraper
+[2023-05-20 19:49:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-tbase-theme-tailwind
+[2023-05-20 19:49:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lmn
+[2023-05-20 19:49:39] INFO root fetch - processPackages [lmn]: New version: [0.2.6rc0] Old Version: [0.2.5]
+[2023-05-20 19:49:39] INFO root fetch - processPackages [django-tbase-theme-tailwind]: New version: [2023.5.2116846047] Old Version: [2023.5.2116846028]
+[2023-05-20 19:49:39] INFO root fetch - processPackages [redfin-scraper]: New version: [0.2.0] Old Version: [0.1.6]
+[2023-05-20 19:49:39] INFO root fetch - processPackages [lmn]: Downloading https://files.pythonhosted.org/packages/25/0f/1445e51c90751b544bb113c3cab2ec6911d4a65fc177c2e21dd8f7d60700/lmn-0.2.5.tar.gz
+[2023-05-20 19:49:39] INFO root fetch - processPackages [redfin-scraper]: Downloading https://files.pythonhosted.org/packages/b3/a2/70cb6fa3fa485f3c00093a43151bf77594a87a485adfcc0298f8975d8421/redfin-scraper-0.1.6.tar.gz
+[2023-05-20 19:49:39] INFO root fetch - processPackages [django-tbase-theme-tailwind]: Downloading https://files.pythonhosted.org/packages/09/36/3d10dec50bafbba48f1f4b149c6aebc27d20418fe61cf8ad468f1aeaed54/django_tbase_theme_tailwind-2023.5.2116846047.tar.gz
+[2023-05-20 19:49:40] INFO root fetch - processPackages [django-tbase-theme-tailwind]: executing diffoscope
+[2023-05-20 19:49:40] INFO root fetch - processPackages [django-tbase-theme-tailwind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_tbase_theme_tailwind-2023.5.2116846028.tar.gz tmp/django_tbase_theme_tailwind-2023.5.2116846047.tar.gz --markdown 20230520/d/django-tbase-theme-tailwind/2023.5.2116846028-2023.5.2116846047/diff.md --exclude *.pyd
+[2023-05-20 19:49:40] INFO root fetch - processPackages [lmn]: Downloading https://files.pythonhosted.org/packages/23/d2/89f9575d27efdef5311570378efe80d3f528279df075eb352b643cff3f17/lmn-0.2.6rc0.tar.gz
+[2023-05-20 19:49:40] INFO root fetch - processPackages [redfin-scraper]: Downloading https://files.pythonhosted.org/packages/12/c9/1a6148e3a16f0d7fa460b2d5f228d4572c4681715a9934e083824629158d/redfin-scraper-0.2.0.tar.gz
+[2023-05-20 19:49:40] INFO root fetch - processPackages [redfin-scraper]: executing diffoscope
+[2023-05-20 19:49:40] INFO root fetch - processPackages [redfin-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redfin-scraper-0.1.6.tar.gz tmp/redfin-scraper-0.2.0.tar.gz --markdown 20230520/r/redfin-scraper/0.1.6-0.2.0/diff.md --exclude *.pyd
+[2023-05-20 19:49:41] INFO root fetch - main [MainThread]: End processing [redfin-scraper]: success
+[2023-05-20 19:49:41] INFO root fetch - processPackages [lmn]: executing diffoscope
+[2023-05-20 19:49:41] INFO root fetch - processPackages [lmn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lmn-0.2.5.tar.gz tmp/lmn-0.2.6rc0.tar.gz --markdown 20230520/l/lmn/0.2.5-0.2.6rc0/diff.md --exclude *.pyd
+[2023-05-20 19:49:42] INFO root fetch - main [MainThread]: End processing [lmn]: success
+[2023-05-20 19:49:42] INFO root fetch - main [MainThread]: End processing [django-tbase-theme-tailwind]: success
+[2023-05-20 19:49:42] INFO root fetch - main [MainThread]: Store serial: [18183621]
