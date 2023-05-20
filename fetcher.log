@@ -10117,3 +10117,107 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 15:58:53] INFO root fetch - main [MainThread]: End processing [netbox-ddns]: success
 [2023-05-20 15:58:53] INFO root fetch - main [MainThread]: End processing [dan-build]: success
 [2023-05-20 15:58:53] INFO root fetch - main [MainThread]: Store serial: [18182406]
+[2023-05-20 16:03:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182406]
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: Found 30 changed packages
+[2023-05-20 16:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gpt-term
+[2023-05-20 16:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqlalchemy-install
+[2023-05-20 16:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytorch-pygame
+[2023-05-20 16:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: req-matplotlib
+[2023-05-20 16:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyyaml-selenium
+[2023-05-20 16:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: req-os
+[2023-05-20 16:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sqlalchemy-requests
+[2023-05-20 16:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: matplotlib-req
+[2023-05-20 16:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: molecule-multipass
+[2023-05-20 16:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: selenium-matplotlib
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [molecule-multipass]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - processPackages [molecule-multipass]: Start processing: pylint-py
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [molecule-multipass] error
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [req-os]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - processPackages [req-os]: Start processing: pygame-install
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [req-os] error
+[2023-05-20 16:04:03] INFO root fetch - processPackages [gpt-term]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [req-matplotlib]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [matplotlib-req]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [pytorch-pygame]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - processPackages [req-matplotlib]: Start processing: pylint-beautifulsoup
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [req-matplotlib] error
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [sqlalchemy-install]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [pyyaml-selenium]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - processPackages [matplotlib-req]: Start processing: Print-pip
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [sqlalchemy-requests]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - processPackages [pytorch-pygame]: Start processing: SciAssist
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [selenium-matplotlib]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [matplotlib-req] error
+[2023-05-20 16:04:03] INFO root fetch - processPackages [sqlalchemy-install]: Start processing: pandas-numpy
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [pylint-py]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - processPackages [pyyaml-selenium]: Start processing: requests-pandas
+[2023-05-20 16:04:03] INFO root fetch - processPackages [sqlalchemy-requests]: Start processing: pytorch-pandas
+[2023-05-20 16:04:03] INFO root fetch - processPackages [selenium-matplotlib]: Start processing: scikit-learn-matplotlib
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [pytorch-pygame] error
+[2023-05-20 16:04:03] INFO root fetch - processPackages [pylint-py]: Start processing: Print-django
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [sqlalchemy-install] error
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [pyyaml-selenium] error
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [sqlalchemy-requests] error
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [selenium-matplotlib] error
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [pylint-py] error
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [pygame-install]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - processPackages [pygame-install]: Start processing: beautifulsoup-numpy
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [pygame-install] error
+[2023-05-20 16:04:03] INFO root fetch - processPackages [SciAssist]: New version: [0.0.37] Old Version: [0.0.36]
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [pytorch-pandas]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - processPackages [pytorch-pandas]: Start processing: alexandria3k
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [pytorch-pandas] error
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [Print-pip]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - processPackages [Print-pip]: Start processing: os-numpy
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [Print-pip] error
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [pylint-beautifulsoup]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - processPackages [pylint-beautifulsoup]: Start processing: beautifulsoup-scikit-learn
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [pylint-beautifulsoup] error
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [pandas-numpy]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - processPackages [pandas-numpy]: Start processing: django-pyyaml
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [pandas-numpy] error
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [Print-django]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - processPackages [Print-django]: Start processing: numpy-selenium
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [Print-django] error
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [requests-pandas]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - processPackages [requests-pandas]: Start processing: install-pyyaml
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [requests-pandas] error
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [scikit-learn-matplotlib]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - processPackages [scikit-learn-matplotlib]: Start processing: matplotlib-sqlalchemy
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [scikit-learn-matplotlib] error
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [beautifulsoup-numpy]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - processPackages [beautifulsoup-numpy]: Start processing: crypto-pygame
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [beautifulsoup-numpy] error
+[2023-05-20 16:04:03] INFO root fetch - processPackages [alexandria3k]: New version: [2.6.6] Old Version: [2.6.5]
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [os-numpy]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - processPackages [os-numpy]: Start processing: pygame-pytorch
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [os-numpy] error
+[2023-05-20 16:04:03] INFO root fetch - processPackages [SciAssist]: Downloading https://files.pythonhosted.org/packages/b4/31/51beb0ecabf7c8ccc2e4e8885211782c0897deb9c95d450f642cbca1eb56/SciAssist-0.0.36.tar.gz
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [beautifulsoup-scikit-learn]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [django-pyyaml]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [beautifulsoup-scikit-learn] error
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [django-pyyaml] error
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [install-pyyaml]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [install-pyyaml] error
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [matplotlib-sqlalchemy]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [matplotlib-sqlalchemy] error
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [numpy-selenium]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [numpy-selenium] error
+[2023-05-20 16:04:03] WARNING root fetch - processPackages [crypto-pygame]: Skipping, unable to determine old version
+[2023-05-20 16:04:03] INFO root fetch - main [MainThread]: End processing [crypto-pygame] error
+[2023-05-20 16:04:04] INFO root fetch - processPackages [gpt-term]: Downloading https://files.pythonhosted.org/packages/96/8e/5256f8eaff41e0487b4c78c8986cefc149bbc040dfa95d3e88cf2ea77b08/gpt-term-1.1.1.tar.gz
+[2023-05-20 16:04:04] WARNING root fetch - processPackages [pygame-pytorch]: Skipping, unable to determine old version
+[2023-05-20 16:04:04] INFO root fetch - main [MainThread]: End processing [pygame-pytorch] error
+[2023-05-20 16:04:04] INFO root fetch - processPackages [alexandria3k]: Downloading https://files.pythonhosted.org/packages/7f/2e/272d98e5502f6dbded77ad43c32f43f864630fa2b1114983c13ae33120fc/alexandria3k-2.6.5.tar.gz
+[2023-05-20 16:04:04] INFO root fetch - processPackages [SciAssist]: Downloading https://files.pythonhosted.org/packages/6e/b2/af79e8a64dab077dab9ba9fba9bdbb16d973d41d95810a243a4751c5ed6e/SciAssist-0.0.37.tar.gz
+[2023-05-20 16:04:04] INFO root fetch - processPackages [SciAssist]: executing diffoscope
+[2023-05-20 16:04:04] INFO root fetch - processPackages [SciAssist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SciAssist-0.0.36.tar.gz tmp/SciAssist-0.0.37.tar.gz --markdown 20230520/S/SciAssist/0.0.36-0.0.37/diff.md --exclude *.pyd
+[2023-05-20 16:04:05] INFO root fetch - processPackages [alexandria3k]: Downloading https://files.pythonhosted.org/packages/ad/af/e3013f201b80bdcb69f2c3d6e7afcd730b9948b7f29246f73931731e068b/alexandria3k-2.6.6.tar.gz
+[2023-05-20 16:04:05] INFO root fetch - processPackages [gpt-term]: executing diffoscope
+[2023-05-20 16:04:05] INFO root fetch - processPackages [gpt-term]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt-term-1.1.0.tar.gz tmp/gpt-term-1.1.1.tar.gz --markdown 20230520/g/gpt-term/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-20 16:04:05] INFO root fetch - processPackages [alexandria3k]: executing diffoscope
+[2023-05-20 16:04:05] INFO root fetch - processPackages [alexandria3k]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alexandria3k-2.6.5.tar.gz tmp/alexandria3k-2.6.6.tar.gz --markdown 20230520/a/alexandria3k/2.6.5-2.6.6/diff.md --exclude *.pyd
+[2023-05-20 16:04:06] INFO root fetch - main [MainThread]: End processing [SciAssist]: success
+[2023-05-20 16:04:06] INFO root fetch - main [MainThread]: End processing [gpt-term]: success
+[2023-05-20 16:04:13] INFO root fetch - main [MainThread]: End processing [alexandria3k]: success
+[2023-05-20 16:04:13] INFO root fetch - main [MainThread]: Store serial: [18182552]
