@@ -9814,3 +9814,73 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 15:22:00] INFO root fetch - main [MainThread]: End processing [easy-post-twitter]: success
 [2023-05-20 15:22:01] INFO root fetch - main [MainThread]: End processing [atmoswing-vigicrues]: success
 [2023-05-20 15:22:01] INFO root fetch - main [MainThread]: Store serial: [18182198]
+[2023-05-20 15:27:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182198]
+[2023-05-20 15:27:10] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-20 15:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: molecule-multipass
+[2023-05-20 15:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: archeSetup
+[2023-05-20 15:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: naruno
+[2023-05-20 15:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: naruno-api
+[2023-05-20 15:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: naruno-gui
+[2023-05-20 15:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: naruno-remote-app
+[2023-05-20 15:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: naruno-tests
+[2023-05-20 15:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pytest-postgresql
+[2023-05-20 15:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: molecule-multipass
+[2023-05-20 15:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: swoopyui
+[2023-05-20 15:27:10] WARNING root fetch - processPackages [archeSetup]: Skipping, unable to determine old version
+[2023-05-20 15:27:10] INFO root fetch - processPackages [archeSetup]: Start processing: mkdocs-flavorwheel-plugin
+[2023-05-20 15:27:10] INFO root fetch - main [MainThread]: End processing [archeSetup] error
+[2023-05-20 15:27:10] INFO root fetch - processPackages [naruno]: New version: [0.57.2] Old Version: [0.57.1]
+[2023-05-20 15:27:10] INFO root fetch - processPackages [mkdocs-flavorwheel-plugin]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-20 15:27:10] INFO root fetch - processPackages [molecule-multipass]: New version: [0.1.0] Old Version: [0.0.0]
+[2023-05-20 15:27:10] INFO root fetch - processPackages [molecule-multipass]: New version: [0.1.0] Old Version: [0.0.0]
+[2023-05-20 15:27:10] INFO root fetch - processPackages [naruno-tests]: New version: [0.57.3] Old Version: [0.57.2]
+[2023-05-20 15:27:10] INFO root fetch - processPackages [naruno-gui]: New version: [0.57.3] Old Version: [0.57.2]
+[2023-05-20 15:27:10] INFO root fetch - processPackages [naruno-api]: New version: [0.57.3] Old Version: [0.57.2]
+[2023-05-20 15:27:10] INFO root fetch - processPackages [naruno-remote-app]: New version: [0.57.3] Old Version: [0.57.2]
+[2023-05-20 15:27:10] INFO root fetch - processPackages [pytest-postgresql]: New version: [5.0.0] Old Version: [4.1.1]
+[2023-05-20 15:27:10] INFO root fetch - processPackages [mkdocs-flavorwheel-plugin]: executing diffoscope
+[2023-05-20 15:27:10] INFO root fetch - processPackages [mkdocs-flavorwheel-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-flavorwheel-plugin-0.0.3.tar.gz tmp/mkdocs-flavorwheel-plugin-0.0.4.tar.gz --markdown 20230520/m/mkdocs-flavorwheel-plugin/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-20 15:27:10] WARNING root fetch - processPackages [swoopyui]: Skipping, unable to determine old version
+[2023-05-20 15:27:10] INFO root fetch - main [MainThread]: End processing [swoopyui] error
+[2023-05-20 15:27:10] INFO root fetch - processPackages [naruno]: Downloading https://files.pythonhosted.org/packages/16/89/351958d495c0f13efee8b243347d0a9e9b2d850247838ab71ee07c76b1d6/naruno-0.57.1.tar.gz
+[2023-05-20 15:27:10] INFO root fetch - processPackages [molecule-multipass]: Downloading https://files.pythonhosted.org/packages/fe/20/5e93bf1f33c0eda7359e0d0a4a3758466dc1096b36def2378b1b184388a6/molecule_multipass-0.0.0.tar.gz
+[2023-05-20 15:27:10] INFO root fetch - processPackages [molecule-multipass]: Downloading https://files.pythonhosted.org/packages/fe/20/5e93bf1f33c0eda7359e0d0a4a3758466dc1096b36def2378b1b184388a6/molecule_multipass-0.0.0.tar.gz
+[2023-05-20 15:27:10] INFO root fetch - processPackages [naruno-gui]: Downloading https://files.pythonhosted.org/packages/09/da/05d799610a8c4dba843b2bbf270d92867d811e561d3eab0df8cb986c1b02/naruno_gui-0.57.2.tar.gz
+[2023-05-20 15:27:10] INFO root fetch - processPackages [pytest-postgresql]: Downloading https://files.pythonhosted.org/packages/5f/83/e31f2b6ffb4fe7c3ac02f314d23b6c1af38f321152be55a6cd5714f27ed6/pytest-postgresql-4.1.1.tar.gz
+[2023-05-20 15:27:10] INFO root fetch - processPackages [naruno-remote-app]: Downloading https://files.pythonhosted.org/packages/cf/19/81afa089076af9e75a148a73d1ddfc52a6ecef5e7e46a8b7c6b1273d0279/naruno_remote_app-0.57.2.tar.gz
+[2023-05-20 15:27:10] INFO root fetch - processPackages [naruno-api]: Downloading https://files.pythonhosted.org/packages/ba/77/8114844176a78f892c0da712b25a9e2fdccdcc95d4bef9a0759c2807dab7/naruno_api-0.57.2.tar.gz
+[2023-05-20 15:27:10] INFO root fetch - processPackages [naruno-tests]: Downloading https://files.pythonhosted.org/packages/b4/c8/7d0009d364a5170ea7e11ae73b8dad944901758d89f73cd1cb03311644db/naruno_tests-0.57.2.tar.gz
+[2023-05-20 15:27:10] INFO root fetch - processPackages [naruno-gui]: Downloading https://files.pythonhosted.org/packages/de/eb/a3baba7315b97192821ba8901131af95b60a91f4e391f65fef6ab23699bf/naruno_gui-0.57.3.tar.gz
+[2023-05-20 15:27:10] INFO root fetch - processPackages [pytest-postgresql]: Downloading https://files.pythonhosted.org/packages/63/68/6cde27e0603a647ab29baa97c1ccb123aa66491accb1ab7441c834e0330a/pytest-postgresql-5.0.0.tar.gz
+[2023-05-20 15:27:10] INFO root fetch - processPackages [naruno-remote-app]: Downloading https://files.pythonhosted.org/packages/26/4d/bed73a259e73bccb45341d28de8076cf38b7a51d0067c57f82fa8cc84339/naruno_remote_app-0.57.3.tar.gz
+[2023-05-20 15:27:11] INFO root fetch - processPackages [molecule-multipass]: Downloading https://files.pythonhosted.org/packages/75/bb/7a0b0b658162a0acc7555161a59cd88142da50aad98c019223b0e7ba3bfb/molecule_multipass-0.1.0.tar.gz
+[2023-05-20 15:27:11] INFO root fetch - processPackages [molecule-multipass]: Downloading https://files.pythonhosted.org/packages/75/bb/7a0b0b658162a0acc7555161a59cd88142da50aad98c019223b0e7ba3bfb/molecule_multipass-0.1.0.tar.gz
+[2023-05-20 15:27:11] INFO root fetch - processPackages [naruno-gui]: executing diffoscope
+[2023-05-20 15:27:11] INFO root fetch - processPackages [naruno-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno_gui-0.57.2.tar.gz tmp/naruno_gui-0.57.3.tar.gz --markdown 20230520/n/naruno-gui/0.57.2-0.57.3/diff.md --exclude *.pyd
+[2023-05-20 15:27:11] INFO root fetch - processPackages [naruno-tests]: Downloading https://files.pythonhosted.org/packages/9e/c5/c150ead414e1cafadfa39870c8a9ef922990deff35aa545b79f95b3ce759/naruno_tests-0.57.3.tar.gz
+[2023-05-20 15:27:11] INFO root fetch - processPackages [pytest-postgresql]: executing diffoscope
+[2023-05-20 15:27:11] INFO root fetch - processPackages [pytest-postgresql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-postgresql-4.1.1.tar.gz tmp/pytest-postgresql-5.0.0.tar.gz --markdown 20230520/p/pytest-postgresql/4.1.1-5.0.0/diff.md --exclude *.pyd
+[2023-05-20 15:27:11] INFO root fetch - processPackages [naruno-remote-app]: executing diffoscope
+[2023-05-20 15:27:11] INFO root fetch - processPackages [naruno-remote-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno_remote_app-0.57.2.tar.gz tmp/naruno_remote_app-0.57.3.tar.gz --markdown 20230520/n/naruno-remote-app/0.57.2-0.57.3/diff.md --exclude *.pyd
+[2023-05-20 15:27:11] INFO root fetch - processPackages [naruno]: Downloading https://files.pythonhosted.org/packages/7f/76/bce4365864c509827a2628b0f61dd54551ea702075b0eaf7d12637d91cdd/naruno-0.57.2.tar.gz
+[2023-05-20 15:27:11] INFO root fetch - processPackages [naruno-api]: Downloading https://files.pythonhosted.org/packages/12/19/d3ac28caca95b79a8bfbb66357df50ec2429d707ccc0202a7e2c72955e7f/naruno_api-0.57.3.tar.gz
+[2023-05-20 15:27:11] INFO root fetch - processPackages [molecule-multipass]: executing diffoscope
+[2023-05-20 15:27:11] INFO root fetch - processPackages [molecule-multipass]: executing diffoscope
+[2023-05-20 15:27:11] INFO root fetch - processPackages [molecule-multipass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/molecule_multipass-0.0.0.tar.gz tmp/molecule_multipass-0.1.0.tar.gz --markdown 20230520/m/molecule-multipass/0.0.0-0.1.0/diff.md --exclude *.pyd
+[2023-05-20 15:27:11] INFO root fetch - processPackages [molecule-multipass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/molecule_multipass-0.0.0.tar.gz tmp/molecule_multipass-0.1.0.tar.gz --markdown 20230520/m/molecule-multipass/0.0.0-0.1.0/diff.md --exclude *.pyd
+[2023-05-20 15:27:11] INFO root fetch - processPackages [naruno-tests]: executing diffoscope
+[2023-05-20 15:27:11] INFO root fetch - processPackages [naruno-tests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno_tests-0.57.2.tar.gz tmp/naruno_tests-0.57.3.tar.gz --markdown 20230520/n/naruno-tests/0.57.2-0.57.3/diff.md --exclude *.pyd
+[2023-05-20 15:27:11] INFO root fetch - processPackages [naruno-api]: executing diffoscope
+[2023-05-20 15:27:11] INFO root fetch - processPackages [naruno-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno_api-0.57.2.tar.gz tmp/naruno_api-0.57.3.tar.gz --markdown 20230520/n/naruno-api/0.57.2-0.57.3/diff.md --exclude *.pyd
+[2023-05-20 15:27:11] INFO root fetch - processPackages [naruno]: executing diffoscope
+[2023-05-20 15:27:11] INFO root fetch - processPackages [naruno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naruno-0.57.1.tar.gz tmp/naruno-0.57.2.tar.gz --markdown 20230520/n/naruno/0.57.1-0.57.2/diff.md --exclude *.pyd
+[2023-05-20 15:27:12] INFO root fetch - main [MainThread]: End processing [mkdocs-flavorwheel-plugin]: success
+[2023-05-20 15:27:12] INFO root fetch - main [MainThread]: End processing [naruno-gui]: success
+[2023-05-20 15:27:12] INFO root fetch - main [MainThread]: End processing [naruno-remote-app]: success
+[2023-05-20 15:27:12] INFO root fetch - main [MainThread]: End processing [pytest-postgresql]: success
+[2023-05-20 15:27:12] INFO root fetch - main [MainThread]: End processing [naruno-api]: success
+[2023-05-20 15:27:12] INFO root fetch - main [MainThread]: End processing [naruno-tests]: success
+[2023-05-20 15:27:12] INFO root fetch - main [MainThread]: End processing [molecule-multipass]: success
+[2023-05-20 15:27:13] INFO root fetch - main [MainThread]: End processing [molecule-multipass]: success
+[2023-05-20 15:27:14] INFO root fetch - main [MainThread]: End processing [naruno]: success
+[2023-05-20 15:27:14] INFO root fetch - main [MainThread]: Store serial: [18182229]
