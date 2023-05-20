@@ -13511,3 +13511,37 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 23:26:58] INFO root fetch - main [MainThread]: End processing [neurodeploy]: success
 [2023-05-20 23:27:00] INFO root fetch - main [MainThread]: End processing [shallowpavlov]: success
 [2023-05-20 23:27:00] INFO root fetch - main [MainThread]: Store serial: [18184356]
+[2023-05-20 23:32:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184356]
+[2023-05-20 23:32:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-20 23:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clustimage
+[2023-05-20 23:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: catchexception
+[2023-05-20 23:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: symgt
+[2023-05-20 23:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: textagon
+[2023-05-20 23:32:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: symgt
+[2023-05-20 23:32:09] INFO root fetch - processPackages [clustimage]: New version: [1.5.9] Old Version: [1.5.8]
+[2023-05-20 23:32:09] INFO root fetch - processPackages [catchexception]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-20 23:32:09] INFO root fetch - processPackages [symgt]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-20 23:32:09] INFO root fetch - processPackages [symgt]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-20 23:32:09] INFO root fetch - processPackages [textagon]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 23:32:09] INFO root fetch - processPackages [textagon]: executing diffoscope
+[2023-05-20 23:32:09] INFO root fetch - processPackages [textagon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textagon-0.1.8.tar.gz tmp/textagon-0.1.9.tar.gz --markdown 20230520/t/textagon/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 23:32:09] INFO root fetch - processPackages [clustimage]: Downloading https://files.pythonhosted.org/packages/57/ed/d304662a558e304bcba25df649b188acd09e7efa6e25c4de1b480242df60/clustimage-1.5.8.tar.gz
+[2023-05-20 23:32:09] INFO root fetch - processPackages [catchexception]: Downloading https://files.pythonhosted.org/packages/80/2f/e2e90e8f0e55b2938b19f96b9d8bb801121b5b49b4e20cd59f1400c8f970/catchexception-0.1.1.tar.gz
+[2023-05-20 23:32:09] INFO root fetch - processPackages [symgt]: Downloading https://files.pythonhosted.org/packages/98/dc/bba188410b4a5a9f93192c857110199d6ce8f9b9d0a73f706653c7706dd6/symgt-0.0.3.tar.gz
+[2023-05-20 23:32:09] INFO root fetch - processPackages [symgt]: Downloading https://files.pythonhosted.org/packages/98/dc/bba188410b4a5a9f93192c857110199d6ce8f9b9d0a73f706653c7706dd6/symgt-0.0.3.tar.gz
+[2023-05-20 23:32:09] INFO root fetch - processPackages [catchexception]: Downloading https://files.pythonhosted.org/packages/f4/ec/36c4830588b6db2c15e696dafd90b4ec9ea9b15452aeb964c2e87edd3396/catchexception-0.1.2.tar.gz
+[2023-05-20 23:32:10] INFO root fetch - processPackages [symgt]: executing diffoscope
+[2023-05-20 23:32:10] INFO root fetch - processPackages [symgt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symgt-0.0.2.tar.gz tmp/symgt-0.0.3.tar.gz --markdown 20230520/s/symgt/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-20 23:32:10] INFO root fetch - processPackages [symgt]: executing diffoscope
+[2023-05-20 23:32:10] INFO root fetch - processPackages [symgt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symgt-0.0.2.tar.gz tmp/symgt-0.0.3.tar.gz --markdown 20230520/s/symgt/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-20 23:32:10] INFO root fetch - processPackages [catchexception]: executing diffoscope
+[2023-05-20 23:32:10] INFO root fetch - processPackages [catchexception]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/catchexception-0.1.1.tar.gz tmp/catchexception-0.1.2.tar.gz --markdown 20230520/c/catchexception/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-20 23:32:10] INFO root fetch - processPackages [clustimage]: Downloading https://files.pythonhosted.org/packages/94/eb/110301aacac610178260ea5b86a12edcfdb979075298fe6edbe3f915b89b/clustimage-1.5.9.tar.gz
+[2023-05-20 23:32:10] INFO root fetch - processPackages [clustimage]: executing diffoscope
+[2023-05-20 23:32:10] INFO root fetch - processPackages [clustimage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clustimage-1.5.8.tar.gz tmp/clustimage-1.5.9.tar.gz --markdown 20230520/c/clustimage/1.5.8-1.5.9/diff.md --exclude *.pyd
+[2023-05-20 23:32:11] INFO root fetch - main [MainThread]: End processing [textagon]: success
+[2023-05-20 23:32:11] INFO root fetch - main [MainThread]: End processing [catchexception]: success
+[2023-05-20 23:32:11] INFO root fetch - main [MainThread]: End processing [clustimage]: success
+[2023-05-20 23:32:15] INFO root fetch - main [MainThread]: End processing [symgt]: success
+[2023-05-20 23:32:16] INFO root fetch - main [MainThread]: End processing [symgt]: success
+[2023-05-20 23:32:16] INFO root fetch - main [MainThread]: Store serial: [18184371]
