@@ -12886,3 +12886,53 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 21:45:38] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-20 21:45:39] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-20 21:45:39] INFO root fetch - main [MainThread]: Store serial: [18184013]
+[2023-05-20 21:50:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184013]
+[2023-05-20 21:50:48] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-20 21:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-lav
+[2023-05-20 21:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kfish
+[2023-05-20 21:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyaipersonality
+[2023-05-20 21:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: polygon-api-client
+[2023-05-20 21:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PyDeepLX
+[2023-05-20 21:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lenskit-build-helpers
+[2023-05-20 21:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: devCellPy
+[2023-05-20 21:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dnt
+[2023-05-20 21:50:48] INFO root fetch - processPackages [lenskit-build-helpers]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-20 21:50:48] INFO root fetch - processPackages [devCellPy]: New version: [1.2.0] Old Version: [1.1.3]
+[2023-05-20 21:50:48] INFO root fetch - processPackages [PyDeepLX]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-20 21:50:48] INFO root fetch - processPackages [kfish]: New version: [99.0.202305201946] Old Version: [99.0.202305201942]
+[2023-05-20 21:50:48] INFO root fetch - processPackages [pyaipersonality]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 21:50:48] INFO root fetch - processPackages [polygon-api-client]: New version: [1.9] Old Version: [1.8.6]
+[2023-05-20 21:50:48] INFO root fetch - processPackages [py-lav]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-20 21:50:48] INFO root fetch - processPackages [dnt]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-20 21:50:49] INFO root fetch - processPackages [PyDeepLX]: Downloading https://files.pythonhosted.org/packages/13/61/67649e068cd664206a4304f2b43b0f0f8aa25deebbee6e7fcdb1ac3a4ab7/PyDeepLX-1.0.0.tar.gz
+[2023-05-20 21:50:49] INFO root fetch - processPackages [lenskit-build-helpers]: Downloading https://files.pythonhosted.org/packages/ae/23/076d751728380496a1a772e08936e65f9a7e90645d141af53d8e062af5ca/lenskit-build-helpers-0.2.0.tar.gz
+[2023-05-20 21:50:49] INFO root fetch - processPackages [pyaipersonality]: executing diffoscope
+[2023-05-20 21:50:49] INFO root fetch - processPackages [pyaipersonality]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaipersonality-0.0.8.tar.gz tmp/pyaipersonality-0.0.9.tar.gz --markdown 20230520/p/pyaipersonality/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 21:50:49] INFO root fetch - processPackages [devCellPy]: Downloading https://files.pythonhosted.org/packages/e8/ec/7e4eee5e9a9b77ac3b5154c791359f648ca3b9552cb57b6f57257c06f5c3/devCellPy-1.2.0.tar.gz
+[2023-05-20 21:50:49] INFO root fetch - processPackages [dnt]: Downloading https://files.pythonhosted.org/packages/43/5d/cd83bf6aa27f9f18e3a267f8ebc6f8ede595fbc11aa79a2f6e531760a534/dnt-0.2.1.tar.gz
+[2023-05-20 21:50:49] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/c6/52/4dbdf4b337e2493283713ba4ef4a10189fb3af787ed5cbac524cd99dff99/kfish-99.0.202305201946-py3-none-any.whl
+[2023-05-20 21:50:49] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-05-20 21:50:49] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202305201942-py3-none-any.whl.zip tmp/kfish-99.0.202305201946-py3-none-any.whl.zip --markdown 20230520/k/kfish/99.0.202305201942-99.0.202305201946/diff.md --exclude *.pyd
+[2023-05-20 21:50:49] INFO root fetch - processPackages [py-lav]: executing diffoscope
+[2023-05-20 21:50:49] INFO root fetch - processPackages [py-lav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_lav-1.9.0.tar.gz tmp/py_lav-1.9.1.tar.gz --markdown 20230520/p/py-lav/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-20 21:50:49] INFO root fetch - processPackages [polygon-api-client]: Downloading https://files.pythonhosted.org/packages/8f/30/aece6637e8450c8ac7f244b63db8145a922c359d26fdc49d860ae74256e8/polygon_api_client-1.9.tar.gz
+[2023-05-20 21:50:49] INFO root fetch - processPackages [devCellPy]: executing diffoscope
+[2023-05-20 21:50:49] INFO root fetch - processPackages [devCellPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devCellPy-1.1.3.tar.gz tmp/devCellPy-1.2.0.tar.gz --markdown 20230520/d/devCellPy/1.1.3-1.2.0/diff.md --exclude *.pyd
+[2023-05-20 21:50:49] INFO root fetch - processPackages [PyDeepLX]: Downloading https://files.pythonhosted.org/packages/a6/38/59f8b66818a9a0ca253d2c63bfc4ab56858a963a12837df500dd010a65ae/PyDeepLX-1.0.1.tar.gz
+[2023-05-20 21:50:49] WARNING root fetch - processPackages [dnt]: Skipping package: exceeds size limit 42975626>=10485760
+[2023-05-20 21:50:49] INFO root fetch - main [MainThread]: End processing [dnt] error
+[2023-05-20 21:50:49] INFO root fetch - processPackages [lenskit-build-helpers]: Downloading https://files.pythonhosted.org/packages/82/fd/523e32d7210c3e109f23ee609ff404c4b24bfb4d73e92f96356478bcacaa/lenskit_build_helpers-0.3.0.tar.gz
+[2023-05-20 21:50:49] INFO root fetch - processPackages [polygon-api-client]: executing diffoscope
+[2023-05-20 21:50:49] INFO root fetch - processPackages [polygon-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polygon_api_client-1.8.6.tar.gz tmp/polygon_api_client-1.9.tar.gz --markdown 20230520/p/polygon-api-client/1.8.6-1.9/diff.md --exclude *.pyd
+[2023-05-20 21:50:49] INFO root fetch - processPackages [PyDeepLX]: executing diffoscope
+[2023-05-20 21:50:49] INFO root fetch - processPackages [PyDeepLX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyDeepLX-1.0.0.tar.gz tmp/PyDeepLX-1.0.1.tar.gz --markdown 20230520/P/PyDeepLX/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-20 21:50:49] INFO root fetch - processPackages [lenskit-build-helpers]: executing diffoscope
+[2023-05-20 21:50:49] INFO root fetch - processPackages [lenskit-build-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lenskit-build-helpers-0.2.0.tar.gz tmp/lenskit_build_helpers-0.3.0.tar.gz --markdown 20230520/l/lenskit-build-helpers/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-20 21:50:50] INFO root fetch - main [MainThread]: End processing [pyaipersonality]: success
+[2023-05-20 21:50:50] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-05-20 21:50:50] INFO root fetch - main [MainThread]: End processing [devCellPy]: success
+[2023-05-20 21:50:50] INFO root fetch - main [MainThread]: End processing [polygon-api-client]: success
+[2023-05-20 21:50:51] INFO root fetch - main [MainThread]: End processing [lenskit-build-helpers]: success
+[2023-05-20 21:50:51] INFO root fetch - main [MainThread]: End processing [PyDeepLX]: success
+[2023-05-20 21:51:32] INFO root fetch - main [MainThread]: End processing [py-lav]: success
+[2023-05-20 21:51:32] INFO root fetch - main [MainThread]: Store serial: [18184037]
