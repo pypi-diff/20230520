@@ -5942,3 +5942,43 @@
 [2023-05-20 06:56:21] INFO root fetch - main [MainThread]: End processing [textagon]: success
 [2023-05-20 06:56:22] INFO root fetch - main [MainThread]: End processing [prospector]: success
 [2023-05-20 06:56:22] INFO root fetch - main [MainThread]: Store serial: [18179767]
+[2023-05-20 07:01:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179767]
+[2023-05-20 07:01:30] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-20 07:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyshortext
+[2023-05-20 07:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyshortext
+[2023-05-20 07:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cyberdrop-dl
+[2023-05-20 07:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tootbot
+[2023-05-20 07:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: requirements-detector
+[2023-05-20 07:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cyberdrop-dl
+[2023-05-20 07:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pytplot-mpl-temp
+[2023-05-20 07:01:30] INFO root fetch - processPackages [cyberdrop-dl]: New version: [4.2.37] Old Version: [4.2.36]
+[2023-05-20 07:01:30] INFO root fetch - processPackages [cyberdrop-dl]: New version: [4.2.37] Old Version: [4.2.36]
+[2023-05-20 07:01:30] INFO root fetch - processPackages [requirements-detector]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-20 07:01:30] WARNING root fetch - processPackages [pyshortext]: Skipping, unable to determine old version
+[2023-05-20 07:01:30] INFO root fetch - main [MainThread]: End processing [pyshortext] error
+[2023-05-20 07:01:30] WARNING root fetch - processPackages [pyshortext]: Skipping, unable to determine old version
+[2023-05-20 07:01:30] INFO root fetch - main [MainThread]: End processing [pyshortext] error
+[2023-05-20 07:01:30] INFO root fetch - processPackages [tootbot]: New version: [7.1.0] Old Version: [7.0.3]
+[2023-05-20 07:01:30] INFO root fetch - processPackages [pytplot-mpl-temp]: New version: [2.1.9] Old Version: [2.1.8]
+[2023-05-20 07:01:30] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2023-05-20 07:01:30] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop-dl-4.2.36.tar.gz tmp/cyberdrop-dl-4.2.37.tar.gz --markdown 20230520/c/cyberdrop-dl/4.2.36-4.2.37/diff.md --exclude *.pyd
+[2023-05-20 07:01:30] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2023-05-20 07:01:30] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop-dl-4.2.36.tar.gz tmp/cyberdrop-dl-4.2.37.tar.gz --markdown 20230520/c/cyberdrop-dl/4.2.36-4.2.37/diff.md --exclude *.pyd
+[2023-05-20 07:01:31] INFO root fetch - processPackages [tootbot]: Downloading https://files.pythonhosted.org/packages/e5/46/90c9be300bb4daeb0f563631289e6e02fe64e768c32e0f46ca98420295c2/tootbot-7.0.3.tar.gz
+[2023-05-20 07:01:31] INFO root fetch - processPackages [requirements-detector]: Downloading https://files.pythonhosted.org/packages/1d/52/b51135f1b3c5eded8b5f7ea486710c893df3af539811493fa426dad637f8/requirements_detector-1.2.1.tar.gz
+[2023-05-20 07:01:31] INFO root fetch - processPackages [pytplot-mpl-temp]: Downloading https://files.pythonhosted.org/packages/02/f0/c143c216ae1553f2355600fa936caf49108733ab308ac632ec1411082e9d/pytplot-mpl-temp-2.1.8.tar.gz
+[2023-05-20 07:01:31] INFO root fetch - processPackages [tootbot]: Downloading https://files.pythonhosted.org/packages/db/8a/4add72adbab334540167ce469d2e67e92e15a684a1706bb01fe2c225d764/tootbot-7.1.0.tar.gz
+[2023-05-20 07:01:31] INFO root fetch - processPackages [requirements-detector]: Downloading https://files.pythonhosted.org/packages/6d/07/caf219327b6ddf29a71c6b248da1406bf084fe6ff0e2f81033f5cb5ff312/requirements_detector-1.2.2.tar.gz
+[2023-05-20 07:01:31] INFO root fetch - processPackages [tootbot]: executing diffoscope
+[2023-05-20 07:01:31] INFO root fetch - processPackages [tootbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tootbot-7.0.3.tar.gz tmp/tootbot-7.1.0.tar.gz --markdown 20230520/t/tootbot/7.0.3-7.1.0/diff.md --exclude *.pyd
+[2023-05-20 07:01:31] INFO root fetch - processPackages [pytplot-mpl-temp]: Downloading https://files.pythonhosted.org/packages/09/31/eedb5f4882f434afd1af2edd3818b8602f6b1fa782e13fd7ae3ddf6af51f/pytplot-mpl-temp-2.1.9.tar.gz
+[2023-05-20 07:01:31] INFO root fetch - processPackages [requirements-detector]: executing diffoscope
+[2023-05-20 07:01:31] INFO root fetch - processPackages [requirements-detector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/requirements_detector-1.2.1.tar.gz tmp/requirements_detector-1.2.2.tar.gz --markdown 20230520/r/requirements-detector/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-20 07:01:32] INFO root fetch - processPackages [pytplot-mpl-temp]: executing diffoscope
+[2023-05-20 07:01:32] INFO root fetch - processPackages [pytplot-mpl-temp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytplot-mpl-temp-2.1.8.tar.gz tmp/pytplot-mpl-temp-2.1.9.tar.gz --markdown 20230520/p/pytplot-mpl-temp/2.1.8-2.1.9/diff.md --exclude *.pyd
+[2023-05-20 07:01:32] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2023-05-20 07:01:32] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2023-05-20 07:01:32] INFO root fetch - main [MainThread]: End processing [tootbot]: success
+[2023-05-20 07:01:32] INFO root fetch - main [MainThread]: End processing [requirements-detector]: success
+[2023-05-20 07:01:34] INFO root fetch - main [MainThread]: End processing [pytplot-mpl-temp]: success
+[2023-05-20 07:01:34] INFO root fetch - main [MainThread]: Store serial: [18179790]
