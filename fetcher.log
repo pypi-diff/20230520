@@ -6938,3 +6938,33 @@
 [2023-05-20 09:58:24] INFO root fetch - main [MainThread]: End processing [nucliadb-utils]: success
 [2023-05-20 09:58:24] INFO root fetch - main [MainThread]: End processing [nucliadb]: success
 [2023-05-20 09:58:24] INFO root fetch - main [MainThread]: Store serial: [18180436]
+[2023-05-20 10:03:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180436]
+[2023-05-20 10:03:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 10:03:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dvc-render
+[2023-05-20 10:03:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-openapi
+[2023-05-20 10:03:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: importer-local
+[2023-05-20 10:03:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xtlsapi
+[2023-05-20 10:03:34] INFO root fetch - processPackages [xtlsapi]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-05-20 10:03:34] INFO root fetch - processPackages [dvc-render]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-05-20 10:03:34] INFO root fetch - processPackages [importer-local]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-20 10:03:34] INFO root fetch - processPackages [python-openapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 10:03:34] INFO root fetch - processPackages [importer-local]: Downloading https://files.pythonhosted.org/packages/45/b2/a83f484d8d4e3fb1025c747a27557412112709f5ac63e53e75acd3f84c83/importer-local-0.0.4.tar.gz
+[2023-05-20 10:03:34] INFO root fetch - processPackages [python-openapi]: Downloading https://files.pythonhosted.org/packages/9a/a3/860fa08f06bd329e4432ec1fc445fd06667da6ef50b4ac8888e9a5815276/python-openapi-0.1.8.tar.gz
+[2023-05-20 10:03:34] INFO root fetch - processPackages [dvc-render]: Downloading https://files.pythonhosted.org/packages/0f/32/f3ba48fafb77133352404e6dc88eb5cb6e159f0cb2ee648102ca19afe4df/dvc-render-0.5.2.tar.gz
+[2023-05-20 10:03:34] INFO root fetch - processPackages [xtlsapi]: Downloading https://files.pythonhosted.org/packages/7a/6f/92e9f26a8411cd955c30ebc3ae9d11d0b20563c138fdbcb1347fb7889706/xtlsapi-3.1.1.tar.gz
+[2023-05-20 10:03:35] INFO root fetch - processPackages [xtlsapi]: executing diffoscope
+[2023-05-20 10:03:35] INFO root fetch - processPackages [xtlsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xtlsapi-3.1.0.tar.gz tmp/xtlsapi-3.1.1.tar.gz --markdown 20230520/x/xtlsapi/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-05-20 10:03:35] INFO root fetch - processPackages [importer-local]: Downloading https://files.pythonhosted.org/packages/d0/f5/ad3ab95d8d2d457f5cfbb634a6fc3f928c85c3a2aeefd4cf63b8855ac62d/importer-local-0.0.5.tar.gz
+[2023-05-20 10:03:35] INFO root fetch - processPackages [python-openapi]: Downloading https://files.pythonhosted.org/packages/6b/27/2692499be7885f908a2b328623f1599eba18e540994f5a7ca4f62bb77860/python-openapi-0.1.9.tar.gz
+[2023-05-20 10:03:35] INFO root fetch - processPackages [dvc-render]: Downloading https://files.pythonhosted.org/packages/90/bf/09a963c059405d188dd9290f26855893f0b8fa91e839f4631293ef94449d/dvc-render-0.5.3.tar.gz
+[2023-05-20 10:03:35] INFO root fetch - processPackages [importer-local]: executing diffoscope
+[2023-05-20 10:03:35] INFO root fetch - processPackages [importer-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/importer-local-0.0.4.tar.gz tmp/importer-local-0.0.5.tar.gz --markdown 20230520/i/importer-local/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-20 10:03:35] INFO root fetch - processPackages [python-openapi]: executing diffoscope
+[2023-05-20 10:03:35] INFO root fetch - processPackages [python-openapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-openapi-0.1.8.tar.gz tmp/python-openapi-0.1.9.tar.gz --markdown 20230520/p/python-openapi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 10:03:35] INFO root fetch - processPackages [dvc-render]: executing diffoscope
+[2023-05-20 10:03:35] INFO root fetch - processPackages [dvc-render]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvc-render-0.5.2.tar.gz tmp/dvc-render-0.5.3.tar.gz --markdown 20230520/d/dvc-render/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-05-20 10:03:36] INFO root fetch - main [MainThread]: End processing [importer-local]: success
+[2023-05-20 10:03:36] INFO root fetch - main [MainThread]: End processing [python-openapi]: success
+[2023-05-20 10:03:36] INFO root fetch - main [MainThread]: End processing [dvc-render]: success
+[2023-05-20 10:03:37] INFO root fetch - main [MainThread]: End processing [xtlsapi]: success
+[2023-05-20 10:03:37] INFO root fetch - main [MainThread]: Store serial: [18180452]
