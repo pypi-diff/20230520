@@ -9951,3 +9951,37 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 15:38:08] INFO root fetch - main [MainThread]: End processing [reait]: success
 [2023-05-20 15:38:08] INFO root fetch - main [MainThread]: End processing [bilibili-api-python]: success
 [2023-05-20 15:38:08] INFO root fetch - main [MainThread]: Store serial: [18182270]
+[2023-05-20 15:43:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182270]
+[2023-05-20 15:43:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 15:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fbgemm-gpu-nightly
+[2023-05-20 15:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: molecule-multipass
+[2023-05-20 15:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: godspeed
+[2023-05-20 15:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: twilix-python
+[2023-05-20 15:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: audiconnectpy
+[2023-05-20 15:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flask-starter
+[2023-05-20 15:43:18] INFO root fetch - processPackages [flask-starter]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-20 15:43:18] WARNING root fetch - processPackages [molecule-multipass]: Skipping, unable to determine old version
+[2023-05-20 15:43:18] INFO root fetch - processPackages [twilix-python]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-20 15:43:18] INFO root fetch - main [MainThread]: End processing [molecule-multipass] error
+[2023-05-20 15:43:18] WARNING root fetch - processPackages [godspeed]: Skipping, unable to determine old version
+[2023-05-20 15:43:18] INFO root fetch - main [MainThread]: End processing [godspeed] error
+[2023-05-20 15:43:18] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2023.5.19] Old Version: [2023.5.18]
+[2023-05-20 15:43:18] INFO root fetch - processPackages [audiconnectpy]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-05-20 15:43:18] INFO root fetch - processPackages [flask-starter]: Downloading https://files.pythonhosted.org/packages/5c/86/a0654a0a148089a741db0e739b78a67ebe2215fa910fff4d4ffdd92105a7/flask-starter-0.5.0.tar.gz
+[2023-05-20 15:43:18] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/37/5e/8ec018165f7ee5ad8f3f6037d95de89b498c3c260167a87f0e2422732197/audiconnectpy-1.3.9.tar.gz
+[2023-05-20 15:43:18] INFO root fetch - processPackages [twilix-python]: Downloading https://files.pythonhosted.org/packages/42/6b/20016c16f03d98dc30c8aeaec0ba6dbd0d928628cfc37a32fea08ee869e9/twilix-python-0.0.1.tar.gz
+[2023-05-20 15:43:18] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/ad/65/aa2038baf4172bd0f005fa56995d0bf70a704646966d6ce6acccaf08d354/fbgemm_gpu_nightly-2023.5.18-cp39-cp39-manylinux1_x86_64.whl
+[2023-05-20 15:43:18] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 283978082>=10485760
+[2023-05-20 15:43:18] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2023-05-20 15:43:18] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2023-05-20 15:43:18] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-1.3.8.tar.gz tmp/audiconnectpy-1.3.9.tar.gz --markdown 20230520/a/audiconnectpy/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-05-20 15:43:18] INFO root fetch - processPackages [flask-starter]: Downloading https://files.pythonhosted.org/packages/2d/02/38605767d14edd97d77bcc82a7ee3cea0356bdd3f180f8843a167fa072c7/flask-starter-0.6.0.tar.gz
+[2023-05-20 15:43:18] INFO root fetch - processPackages [twilix-python]: Downloading https://files.pythonhosted.org/packages/fb/6b/dc969c2f688e65e2413cf4e278b54953d7fdf87303186334976135efbced/twilix-python-0.0.2.tar.gz
+[2023-05-20 15:43:18] INFO root fetch - processPackages [flask-starter]: executing diffoscope
+[2023-05-20 15:43:18] INFO root fetch - processPackages [flask-starter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-starter-0.5.0.tar.gz tmp/flask-starter-0.6.0.tar.gz --markdown 20230520/f/flask-starter/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-20 15:43:18] INFO root fetch - processPackages [twilix-python]: executing diffoscope
+[2023-05-20 15:43:18] INFO root fetch - processPackages [twilix-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twilix-python-0.0.1.tar.gz tmp/twilix-python-0.0.2.tar.gz --markdown 20230520/t/twilix-python/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-20 15:43:19] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2023-05-20 15:43:19] INFO root fetch - main [MainThread]: End processing [flask-starter]: success
+[2023-05-20 15:43:19] INFO root fetch - main [MainThread]: End processing [twilix-python]: success
+[2023-05-20 15:43:19] INFO root fetch - main [MainThread]: Store serial: [18182289]
