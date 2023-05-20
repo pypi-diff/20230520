@@ -5677,3 +5677,9 @@
 [2023-05-20 06:04:20] INFO root fetch - main [MainThread]: End processing [textagon]: success
 [2023-05-20 06:04:21] INFO root fetch - main [MainThread]: End processing [polygon-finance]: success
 [2023-05-20 06:04:21] INFO root fetch - main [MainThread]: Store serial: [18179587]
+[2023-05-20 06:09:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179587]
+[2023-05-20 06:09:31] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-20 06:09:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: khuvirgagch
+[2023-05-20 06:09:32] WARNING root fetch - processPackages [khuvirgagch]: Skipping, unable to determine old version
+[2023-05-20 06:09:32] INFO root fetch - main [MainThread]: End processing [khuvirgagch] error
+[2023-05-20 06:09:32] INFO root fetch - main [MainThread]: Store serial: [18179603]
