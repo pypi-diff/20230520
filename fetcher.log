@@ -13007,3 +13007,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 22:02:03] INFO root fetch - main [MainThread]: End processing [gpyt]: success
 [2023-05-20 22:02:03] INFO root fetch - main [MainThread]: End processing [cardlinky]: success
 [2023-05-20 22:02:03] INFO root fetch - main [MainThread]: Store serial: [18184073]
+[2023-05-20 22:07:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184073]
+[2023-05-20 22:07:13] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 22:07:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iphack
+[2023-05-20 22:07:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gpyt
+[2023-05-20 22:07:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: molecule-multipass
+[2023-05-20 22:07:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: seaplayer
+[2023-05-20 22:07:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-llm
+[2023-05-20 22:07:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: videosrc
+[2023-05-20 22:07:13] INFO root fetch - processPackages [gpyt]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-20 22:07:13] INFO root fetch - processPackages [molecule-multipass]: New version: [0.4.9] Old Version: [0.4.7]
+[2023-05-20 22:07:13] INFO root fetch - processPackages [iphack]: New version: [1.3.9] Old Version: [1.3.7]
+[2023-05-20 22:07:13] INFO root fetch - processPackages [seaplayer]: New version: [0.4a3] Old Version: [0.4a2]
+[2023-05-20 22:07:13] INFO root fetch - processPackages [python-llm]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-20 22:07:13] INFO root fetch - processPackages [videosrc]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-20 22:07:13] INFO root fetch - processPackages [gpyt]: executing diffoscope
+[2023-05-20 22:07:13] INFO root fetch - processPackages [gpyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpyt-0.2.8.tar.gz tmp/gpyt-0.2.9.tar.gz --markdown 20230520/g/gpyt/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-20 22:07:13] INFO root fetch - processPackages [seaplayer]: executing diffoscope
+[2023-05-20 22:07:13] INFO root fetch - processPackages [seaplayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seaplayer-0.4a2.tar.gz tmp/seaplayer-0.4a3.tar.gz --markdown 20230520/s/seaplayer/0.4a2-0.4a3/diff.md --exclude *.pyd
+[2023-05-20 22:07:13] INFO root fetch - processPackages [molecule-multipass]: Downloading https://files.pythonhosted.org/packages/61/95/85feb33bf82ab0464f6af5d897bd029125b5ab1ca180b51944c2b08a1a15/molecule_multipass-0.4.9.tar.gz
+[2023-05-20 22:07:13] INFO root fetch - processPackages [iphack]: Downloading https://files.pythonhosted.org/packages/53/2e/137cd506c7223981e99bce7e539f96375769a9063b27d0c905ed08b41d1b/iphack-1.3.9.tar.gz
+[2023-05-20 22:07:13] INFO root fetch - processPackages [molecule-multipass]: executing diffoscope
+[2023-05-20 22:07:13] INFO root fetch - processPackages [molecule-multipass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/molecule_multipass-0.4.7.tar.gz tmp/molecule_multipass-0.4.9.tar.gz --markdown 20230520/m/molecule-multipass/0.4.7-0.4.9/diff.md --exclude *.pyd
+[2023-05-20 22:07:13] INFO root fetch - processPackages [python-llm]: Downloading https://files.pythonhosted.org/packages/7d/5d/0ad9bc9194dcde34a05032aab561c725e3632d58d48c06f53c5303bfb4d5/python-llm-0.1.6.tar.gz
+[2023-05-20 22:07:13] INFO root fetch - processPackages [iphack]: executing diffoscope
+[2023-05-20 22:07:13] INFO root fetch - processPackages [iphack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iphack-1.3.7.tar.gz tmp/iphack-1.3.9.tar.gz --markdown 20230520/i/iphack/1.3.7-1.3.9/diff.md --exclude *.pyd
+[2023-05-20 22:07:13] INFO root fetch - processPackages [python-llm]: executing diffoscope
+[2023-05-20 22:07:13] INFO root fetch - processPackages [python-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-llm-0.1.5.tar.gz tmp/python-llm-0.1.6.tar.gz --markdown 20230520/p/python-llm/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-20 22:07:13] INFO root fetch - processPackages [videosrc]: Downloading https://files.pythonhosted.org/packages/be/10/01350fc560c8a4a9a99107103b98c1c0f8cf745b6e898a4c642c829c6c94/videosrc-0.1.6-py3-none-any.whl
+[2023-05-20 22:07:13] INFO root fetch - processPackages [videosrc]: Downloading https://files.pythonhosted.org/packages/51/5c/2ee2709d3a72f93559975612c0f72eb8d696af8a65cad3153e0885b522aa/videosrc-0.1.7-py3-none-any.whl
+[2023-05-20 22:07:13] INFO root fetch - processPackages [videosrc]: executing diffoscope
+[2023-05-20 22:07:13] INFO root fetch - processPackages [videosrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/videosrc-0.1.6-py3-none-any.whl.zip tmp/videosrc-0.1.7-py3-none-any.whl.zip --markdown 20230520/v/videosrc/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-20 22:07:14] INFO root fetch - main [MainThread]: End processing [gpyt]: success
+[2023-05-20 22:07:14] INFO root fetch - main [MainThread]: End processing [seaplayer]: success
+[2023-05-20 22:07:14] INFO root fetch - main [MainThread]: End processing [molecule-multipass]: success
+[2023-05-20 22:07:15] INFO root fetch - main [MainThread]: End processing [python-llm]: success
+[2023-05-20 22:07:15] INFO root fetch - main [MainThread]: End processing [iphack]: success
+[2023-05-20 22:07:16] INFO root fetch - main [MainThread]: End processing [videosrc]: success
+[2023-05-20 22:07:16] INFO root fetch - main [MainThread]: Store serial: [18184088]
