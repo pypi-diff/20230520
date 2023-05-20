@@ -8150,3 +8150,41 @@
 [2023-05-20 12:26:48] INFO root fetch - main [MainThread]: End processing [subsonic-connector]: success
 [2023-05-20 12:26:48] INFO root fetch - main [MainThread]: End processing [beetcamp]: success
 [2023-05-20 12:26:48] INFO root fetch - main [MainThread]: Store serial: [18181208]
+[2023-05-20 12:31:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18181208]
+[2023-05-20 12:31:57] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 12:31:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hermescloud
+[2023-05-20 12:31:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: metablock
+[2023-05-20 12:31:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unsplash-rand-downloader
+[2023-05-20 12:31:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PatryksAutoAI
+[2023-05-20 12:31:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: musicpy
+[2023-05-20 12:31:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: textual
+[2023-05-20 12:31:57] INFO root fetch - processPackages [hermescloud]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-20 12:31:57] INFO root fetch - processPackages [metablock]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-05-20 12:31:57] WARNING root fetch - processPackages [unsplash-rand-downloader]: Skipping, unable to determine old version
+[2023-05-20 12:31:57] INFO root fetch - main [MainThread]: End processing [unsplash-rand-downloader] error
+[2023-05-20 12:31:57] INFO root fetch - processPackages [PatryksAutoAI]: New version: [1.5.8] Old Version: [1.5.7]
+[2023-05-20 12:31:57] INFO root fetch - processPackages [musicpy]: New version: [6.67] Old Version: [6.65]
+[2023-05-20 12:31:57] INFO root fetch - processPackages [textual]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-20 12:31:57] INFO root fetch - processPackages [hermescloud]: Downloading https://files.pythonhosted.org/packages/c3/a3/e9bcb9594a634fdd6ddfc537cc711718a15b12ff27035200174ba74bfa42/hermescloud-0.0.4.tar.gz
+[2023-05-20 12:31:57] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/66/d5/b761e2f158a2470b738000802afc9d30ad31a7424e757ea97cdb298d05e1/PatryksAutoAI-1.5.8.tar.gz
+[2023-05-20 12:31:57] INFO root fetch - processPackages [musicpy]: Downloading https://files.pythonhosted.org/packages/67/5a/f10e2df9b34f2238313ed4a7f9d51c0e0157277746a837fb1f61cdd6606a/musicpy-6.65.tar.gz
+[2023-05-20 12:31:57] INFO root fetch - processPackages [PatryksAutoAI]: executing diffoscope
+[2023-05-20 12:31:57] INFO root fetch - processPackages [PatryksAutoAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PatryksAutoAI-1.5.7.tar.gz tmp/PatryksAutoAI-1.5.8.tar.gz --markdown 20230520/P/PatryksAutoAI/1.5.7-1.5.8/diff.md --exclude *.pyd
+[2023-05-20 12:31:57] INFO root fetch - processPackages [metablock]: Downloading https://files.pythonhosted.org/packages/10/4d/3f836196229c4b57078f6c3f0990f918e745510fef9b24f93ce42f236eb8/metablock-0.5.2.tar.gz
+[2023-05-20 12:31:57] INFO root fetch - processPackages [hermescloud]: Downloading https://files.pythonhosted.org/packages/75/b8/f93e8ff4ac244c003207fa367aaa16e457e8bdc4ddce276c7f16da986f2b/hermescloud-0.0.5.tar.gz
+[2023-05-20 12:31:57] INFO root fetch - processPackages [hermescloud]: executing diffoscope
+[2023-05-20 12:31:57] INFO root fetch - processPackages [hermescloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hermescloud-0.0.4.tar.gz tmp/hermescloud-0.0.5.tar.gz --markdown 20230520/h/hermescloud/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-20 12:31:57] INFO root fetch - processPackages [textual]: executing diffoscope
+[2023-05-20 12:31:57] INFO root fetch - processPackages [textual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textual-0.9.0.tar.gz tmp/textual-0.9.1.tar.gz --markdown 20230520/t/textual/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-20 12:31:57] INFO root fetch - processPackages [metablock]: Downloading https://files.pythonhosted.org/packages/6f/24/2d34e4f9f2b335cd889aea94b67fb7f50c174cb73ae5ae763aa9afb9ec1d/metablock-0.5.3.tar.gz
+[2023-05-20 12:31:57] INFO root fetch - processPackages [musicpy]: Downloading https://files.pythonhosted.org/packages/25/d3/34e766a1691e86c8567356428e5f1a69a4f830f9b9afe3a8c0d4ecbb2072/musicpy-6.67.tar.gz
+[2023-05-20 12:31:57] INFO root fetch - processPackages [metablock]: executing diffoscope
+[2023-05-20 12:31:57] INFO root fetch - processPackages [metablock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metablock-0.5.2.tar.gz tmp/metablock-0.5.3.tar.gz --markdown 20230520/m/metablock/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-05-20 12:31:57] INFO root fetch - processPackages [musicpy]: executing diffoscope
+[2023-05-20 12:31:57] INFO root fetch - processPackages [musicpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musicpy-6.65.tar.gz tmp/musicpy-6.67.tar.gz --markdown 20230520/m/musicpy/6.65-6.67/diff.md --exclude *.pyd
+[2023-05-20 12:31:58] INFO root fetch - main [MainThread]: End processing [hermescloud]: success
+[2023-05-20 12:31:58] INFO root fetch - main [MainThread]: End processing [metablock]: success
+[2023-05-20 12:31:59] INFO root fetch - main [MainThread]: End processing [musicpy]: success
+[2023-05-20 12:31:59] INFO root fetch - main [MainThread]: End processing [textual]: success
+[2023-05-20 12:31:59] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
+[2023-05-20 12:31:59] INFO root fetch - main [MainThread]: Store serial: [18181237]
