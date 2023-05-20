@@ -11485,3 +11485,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 18:43:06] INFO root fetch - main [MainThread]: End processing [denoising-diffusion-pytorch]: success
 [2023-05-20 18:43:07] INFO root fetch - main [MainThread]: End processing [mimeograph]: success
 [2023-05-20 18:43:07] INFO root fetch - main [MainThread]: Store serial: [18183320]
+[2023-05-20 18:48:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183320]
+[2023-05-20 18:48:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 18:48:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-llm
+[2023-05-20 18:48:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: q2rad
+[2023-05-20 18:48:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reactivated
+[2023-05-20 18:48:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dbtdocgen-rutryk
+[2023-05-20 18:48:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: align4d
+[2023-05-20 18:48:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: seaplayer
+[2023-05-20 18:48:17] INFO root fetch - processPackages [dbtdocgen-rutryk]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-20 18:48:17] INFO root fetch - processPackages [align4d]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-20 18:48:17] INFO root fetch - processPackages [python-llm]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-20 18:48:17] INFO root fetch - processPackages [q2rad]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-20 18:48:17] INFO root fetch - processPackages [seaplayer]: New version: [0.4a3] Old Version: [0.4a2]
+[2023-05-20 18:48:17] INFO root fetch - processPackages [reactivated]: New version: [3.0.0a64] Old Version: [0.9.0]
+[2023-05-20 18:48:17] INFO root fetch - processPackages [q2rad]: executing diffoscope
+[2023-05-20 18:48:17] INFO root fetch - processPackages [q2rad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/q2rad-0.1.98.tar.gz tmp/q2rad-0.1.99.tar.gz --markdown 20230520/q/q2rad/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-20 18:48:17] INFO root fetch - processPackages [python-llm]: Downloading https://files.pythonhosted.org/packages/69/27/6dcbca3b5b8ecf4079ab0b84f9d899a7307c36e24ffd5601e909639537d7/python-llm-0.1.4.tar.gz
+[2023-05-20 18:48:17] INFO root fetch - processPackages [seaplayer]: executing diffoscope
+[2023-05-20 18:48:17] INFO root fetch - processPackages [seaplayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seaplayer-0.4a2.tar.gz tmp/seaplayer-0.4a3.tar.gz --markdown 20230520/s/seaplayer/0.4a2-0.4a3/diff.md --exclude *.pyd
+[2023-05-20 18:48:17] INFO root fetch - processPackages [reactivated]: executing diffoscope
+[2023-05-20 18:48:17] INFO root fetch - processPackages [reactivated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reactivated-0.9.0.tar.gz tmp/reactivated-3.0.0a64.tar.gz --markdown 20230520/r/reactivated/0.9.0-3.0.0a64/diff.md --exclude *.pyd
+[2023-05-20 18:48:17] INFO root fetch - processPackages [align4d]: Downloading https://files.pythonhosted.org/packages/a9/b6/67c3ab8a88287131f6dc86986601f8878ff5487e1790161ecad9acf3ae8e/align4d-1.1.0.tar.gz
+[2023-05-20 18:48:17] INFO root fetch - processPackages [dbtdocgen-rutryk]: Downloading https://files.pythonhosted.org/packages/1f/55/a88efc41d214ea4cb00690a81693d3b78e1f3164fce6bd37d0ff2d53a62d/dbtdocgen_rutryk-0.0.8.tar.gz
+[2023-05-20 18:48:18] INFO root fetch - processPackages [python-llm]: Downloading https://files.pythonhosted.org/packages/2f/79/1521812ffd166d728c1f1b04b0fe456263e04e1e6713e1b93305837eaa00/python-llm-0.1.5.tar.gz
+[2023-05-20 18:48:18] INFO root fetch - processPackages [dbtdocgen-rutryk]: executing diffoscope
+[2023-05-20 18:48:18] INFO root fetch - processPackages [dbtdocgen-rutryk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbtdocgen_rutryk-0.0.7.tar.gz tmp/dbtdocgen_rutryk-0.0.8.tar.gz --markdown 20230520/d/dbtdocgen-rutryk/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-20 18:48:18] INFO root fetch - processPackages [align4d]: Downloading https://files.pythonhosted.org/packages/53/93/9ee31747cc3c20a41981ef015d99c58e3fa890aabe5655a856dfe3d9a106/align4d-1.1.1.tar.gz
+[2023-05-20 18:48:18] INFO root fetch - processPackages [python-llm]: executing diffoscope
+[2023-05-20 18:48:18] INFO root fetch - processPackages [python-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-llm-0.1.4.tar.gz tmp/python-llm-0.1.5.tar.gz --markdown 20230520/p/python-llm/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-20 18:48:18] INFO root fetch - processPackages [align4d]: executing diffoscope
+[2023-05-20 18:48:18] INFO root fetch - processPackages [align4d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/align4d-1.1.0.tar.gz tmp/align4d-1.1.1.tar.gz --markdown 20230520/a/align4d/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-20 18:48:19] INFO root fetch - main [MainThread]: End processing [q2rad]: success
+[2023-05-20 18:48:19] INFO root fetch - main [MainThread]: End processing [python-llm]: success
+[2023-05-20 18:48:19] INFO root fetch - main [MainThread]: End processing [seaplayer]: success
+[2023-05-20 18:48:19] INFO root fetch - main [MainThread]: End processing [dbtdocgen-rutryk]: success
+[2023-05-20 18:48:19] INFO root fetch - main [MainThread]: End processing [reactivated]: success
+[2023-05-20 18:48:21] INFO root fetch - main [MainThread]: End processing [align4d]: success
+[2023-05-20 18:48:21] INFO root fetch - main [MainThread]: Store serial: [18183338]
