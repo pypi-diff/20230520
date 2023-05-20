@@ -7653,3 +7653,52 @@
 [2023-05-20 11:26:34] INFO root fetch - processPackages [openai-pygenerator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai-pygenerator-0.1.2.tar.gz tmp/openai-pygenerator-0.1.3.tar.gz --markdown 20230520/o/openai-pygenerator/0.1.2-0.1.3/diff.md --exclude *.pyd
 [2023-05-20 11:26:35] INFO root fetch - main [MainThread]: End processing [openai-pygenerator]: success
 [2023-05-20 11:26:35] INFO root fetch - main [MainThread]: Store serial: [18180874]
+[2023-05-20 11:31:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180874]
+[2023-05-20 11:31:45] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-20 11:31:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: motionblinds
+[2023-05-20 11:31:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: caafe
+[2023-05-20 11:31:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scNodes
+[2023-05-20 11:31:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-pms
+[2023-05-20 11:31:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-pms-l10n-es
+[2023-05-20 11:31:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Cryptem
+[2023-05-20 11:31:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mmigrator
+[2023-05-20 11:31:45] INFO root fetch - processPackages [odoo14-addon-pms-l10n-es]: New version: [14.0.2.6.8.dev9] Old Version: [14.0.2.6.8.dev8]
+[2023-05-20 11:31:45] INFO root fetch - processPackages [Cryptem]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-20 11:31:45] INFO root fetch - processPackages [scNodes]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-05-20 11:31:45] INFO root fetch - processPackages [caafe]: New version: [0.1.2] Old Version: [0.1]
+[2023-05-20 11:31:45] INFO root fetch - processPackages [mmigrator]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-20 11:31:45] INFO root fetch - processPackages [motionblinds]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-20 11:31:45] INFO root fetch - processPackages [odoo14-addon-pms]: New version: [14.0.2.9.0] Old Version: [14.0.2.8.0]
+[2023-05-20 11:31:45] INFO root fetch - processPackages [scNodes]: Downloading https://files.pythonhosted.org/packages/69/e1/11bc08806de1ca29404ff31b52f4a23ef08afb5ec0fc3df113dd9466ab61/scNodes-1.1.7.tar.gz
+[2023-05-20 11:31:45] INFO root fetch - processPackages [Cryptem]: Downloading https://files.pythonhosted.org/packages/c7/44/2d90710477d35f95fe16944185727be0e43436cddbfda4e46a732724d1ba/Cryptem-0.0.3.tar.gz
+[2023-05-20 11:31:45] INFO root fetch - processPackages [mmigrator]: Downloading https://files.pythonhosted.org/packages/87/d5/a0d7828fa6621e545e9866e883f909c04a75438f57f0221e01f4e9e577ff/mmigrator-0.1.2.tar.gz
+[2023-05-20 11:31:45] INFO root fetch - processPackages [motionblinds]: Downloading https://files.pythonhosted.org/packages/d7/2e/1b0e344d715b75047336a8c2a061f5faf973aadb5b04b5ae7b3a71f20d7b/motionblinds-0.6.8.tar.gz
+[2023-05-20 11:31:45] INFO root fetch - processPackages [odoo14-addon-pms]: Downloading https://files.pythonhosted.org/packages/35/dd/9ca9ec4be1214b080d690d035081114d6c68515ac18307d8cb5edc8c7664/odoo14_addon_pms-14.0.2.8.0-py3-none-any.whl
+[2023-05-20 11:31:45] INFO root fetch - processPackages [caafe]: Downloading https://files.pythonhosted.org/packages/e2/a1/ef1ebae28c36ef1475748196090b9b572479172a7d7924c3e7ef4ecfd257/caafe-0.1.tar.gz
+[2023-05-20 11:31:45] INFO root fetch - processPackages [odoo14-addon-pms-l10n-es]: Downloading https://files.pythonhosted.org/packages/fc/ed/525349fd2a15ad0a00e765e046e196b42732fa88715451518fb87a6f635d/odoo14_addon_pms_l10n_es-14.0.2.6.8.dev8-py3-none-any.whl
+[2023-05-20 11:31:45] WARNING root fetch - processPackages [scNodes]: Skipping package: exceeds size limit 12072774>=10485760
+[2023-05-20 11:31:45] INFO root fetch - main [MainThread]: End processing [scNodes] error
+[2023-05-20 11:31:45] INFO root fetch - processPackages [mmigrator]: executing diffoscope
+[2023-05-20 11:31:45] INFO root fetch - processPackages [mmigrator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmigrator-0.1.1.tar.gz tmp/mmigrator-0.1.2.tar.gz --markdown 20230520/m/mmigrator/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-20 11:31:45] INFO root fetch - processPackages [Cryptem]: Downloading https://files.pythonhosted.org/packages/ae/bc/953f5ef9742feeb34a7acfc94261b618e89813243f85d2c12d99c4005a19/Cryptem-0.0.4.tar.gz
+[2023-05-20 11:31:45] INFO root fetch - processPackages [caafe]: Downloading https://files.pythonhosted.org/packages/7a/9a/693597c2eb0c39a53e74a96fce6622d111974bb9f7f73d0d7d5661a35e03/caafe-0.1.2.tar.gz
+[2023-05-20 11:31:45] INFO root fetch - processPackages [motionblinds]: Downloading https://files.pythonhosted.org/packages/e0/66/469b48b13dcea998eeeadff164ccc5096014aea07882bd7de7ba3034a09f/motionblinds-0.6.9.tar.gz
+[2023-05-20 11:31:45] INFO root fetch - processPackages [odoo14-addon-pms-l10n-es]: Downloading https://files.pythonhosted.org/packages/f9/46/01f03598bf302f5e6faa906abf772582d6fcfb66609c83995ac64259bd11/odoo14_addon_pms_l10n_es-14.0.2.6.8.dev9-py3-none-any.whl
+[2023-05-20 11:31:45] INFO root fetch - processPackages [odoo14-addon-pms]: Downloading https://files.pythonhosted.org/packages/6b/d2/872d4271026f02e164cdf6773633ee7c39723165f305fdf11e37a2224677/odoo14_addon_pms-14.0.2.9.0-py3-none-any.whl
+[2023-05-20 11:31:45] INFO root fetch - processPackages [Cryptem]: executing diffoscope
+[2023-05-20 11:31:45] INFO root fetch - processPackages [Cryptem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Cryptem-0.0.3.tar.gz tmp/Cryptem-0.0.4.tar.gz --markdown 20230520/C/Cryptem/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-20 11:31:45] INFO root fetch - processPackages [motionblinds]: executing diffoscope
+[2023-05-20 11:31:45] INFO root fetch - processPackages [motionblinds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/motionblinds-0.6.8.tar.gz tmp/motionblinds-0.6.9.tar.gz --markdown 20230520/m/motionblinds/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-20 11:31:46] INFO root fetch - processPackages [caafe]: executing diffoscope
+[2023-05-20 11:31:46] INFO root fetch - processPackages [caafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caafe-0.1.tar.gz tmp/caafe-0.1.2.tar.gz --markdown 20230520/c/caafe/0.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-20 11:31:46] INFO root fetch - processPackages [odoo14-addon-pms-l10n-es]: executing diffoscope
+[2023-05-20 11:31:46] INFO root fetch - processPackages [odoo14-addon-pms-l10n-es]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_pms_l10n_es-14.0.2.6.8.dev8-py3-none-any.whl.zip tmp/odoo14_addon_pms_l10n_es-14.0.2.6.8.dev9-py3-none-any.whl.zip --markdown 20230520/o/odoo14-addon-pms-l10n-es/14.0.2.6.8.dev8-14.0.2.6.8.dev9/diff.md --exclude *.pyd
+[2023-05-20 11:31:46] INFO root fetch - processPackages [odoo14-addon-pms]: executing diffoscope
+[2023-05-20 11:31:46] INFO root fetch - processPackages [odoo14-addon-pms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_pms-14.0.2.8.0-py3-none-any.whl.zip tmp/odoo14_addon_pms-14.0.2.9.0-py3-none-any.whl.zip --markdown 20230520/o/odoo14-addon-pms/14.0.2.8.0-14.0.2.9.0/diff.md --exclude *.pyd
+[2023-05-20 11:31:46] INFO root fetch - main [MainThread]: End processing [mmigrator]: success
+[2023-05-20 11:31:47] INFO root fetch - main [MainThread]: End processing [Cryptem]: success
+[2023-05-20 11:31:47] INFO root fetch - main [MainThread]: End processing [caafe]: success
+[2023-05-20 11:31:47] INFO root fetch - main [MainThread]: End processing [odoo14-addon-pms-l10n-es]: success
+[2023-05-20 11:31:48] INFO root fetch - main [MainThread]: End processing [odoo14-addon-pms]: success
+[2023-05-20 11:32:29] INFO root fetch - main [MainThread]: End processing [motionblinds]: success
+[2023-05-20 11:32:29] INFO root fetch - main [MainThread]: Store serial: [18180904]
