@@ -11305,3 +11305,35 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 18:16:53] INFO root fetch - main [MainThread]: End processing [hpcflow-new2]: success
 [2023-05-20 18:16:53] INFO root fetch - main [MainThread]: End processing [on-rails]: success
 [2023-05-20 18:16:53] INFO root fetch - main [MainThread]: Store serial: [18183231]
+[2023-05-20 18:21:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183231]
+[2023-05-20 18:22:02] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-20 18:22:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: emhass
+[2023-05-20 18:22:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: textagon
+[2023-05-20 18:22:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ezbeq
+[2023-05-20 18:22:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tomcru
+[2023-05-20 18:22:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aiorobonect
+[2023-05-20 18:22:02] INFO root fetch - processPackages [aiorobonect]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 18:22:02] INFO root fetch - processPackages [tomcru]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-20 18:22:02] INFO root fetch - processPackages [ezbeq]: New version: [1.0.0b9] Old Version: [1.0.0b8]
+[2023-05-20 18:22:02] INFO root fetch - processPackages [textagon]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 18:22:02] INFO root fetch - processPackages [emhass]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-20 18:22:02] INFO root fetch - processPackages [textagon]: executing diffoscope
+[2023-05-20 18:22:02] INFO root fetch - processPackages [textagon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textagon-0.1.8.tar.gz tmp/textagon-0.1.9.tar.gz --markdown 20230520/t/textagon/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 18:22:02] INFO root fetch - processPackages [ezbeq]: executing diffoscope
+[2023-05-20 18:22:02] INFO root fetch - processPackages [ezbeq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezbeq-1.0.0b8.tar.gz tmp/ezbeq-1.0.0b9.tar.gz --markdown 20230520/e/ezbeq/1.0.0b8-1.0.0b9/diff.md --exclude *.pyd
+[2023-05-20 18:22:02] INFO root fetch - processPackages [tomcru]: Downloading https://files.pythonhosted.org/packages/59/ab/dd985c0154805eb53efc087c0ccb965656a826a52b908a04f54688ae95ef/tomcru-0.2.9.tar.gz
+[2023-05-20 18:22:02] INFO root fetch - processPackages [emhass]: Downloading https://files.pythonhosted.org/packages/e4/cf/dc9c25ea2cdda3fa802a0b36455db3a3730c3835f37040395d8bc4819fb8/emhass-0.4.8-py3-none-any.whl
+[2023-05-20 18:22:02] INFO root fetch - processPackages [aiorobonect]: Downloading https://files.pythonhosted.org/packages/87/7a/1e0ce8188917ba739d48ec27900a98b18b136bca4216c2c17bcaa462b2c8/aiorobonect-0.1.9.tar.gz
+[2023-05-20 18:22:02] INFO root fetch - processPackages [tomcru]: executing diffoscope
+[2023-05-20 18:22:02] INFO root fetch - processPackages [tomcru]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tomcru-0.2.8.tar.gz tmp/tomcru-0.2.9.tar.gz --markdown 20230520/t/tomcru/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-20 18:22:02] INFO root fetch - processPackages [aiorobonect]: executing diffoscope
+[2023-05-20 18:22:02] INFO root fetch - processPackages [aiorobonect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiorobonect-0.1.8.tar.gz tmp/aiorobonect-0.1.9.tar.gz --markdown 20230520/a/aiorobonect/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 18:22:03] INFO root fetch - processPackages [emhass]: Downloading https://files.pythonhosted.org/packages/ea/5b/2a8a3f737038f4ba6fb73a01fffb86991aaca7ff8a190bec3678ecae509f/emhass-0.4.9-py3-none-any.whl
+[2023-05-20 18:22:03] INFO root fetch - processPackages [emhass]: executing diffoscope
+[2023-05-20 18:22:03] INFO root fetch - processPackages [emhass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emhass-0.4.8-py3-none-any.whl.zip tmp/emhass-0.4.9-py3-none-any.whl.zip --markdown 20230520/e/emhass/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-20 18:22:04] INFO root fetch - main [MainThread]: End processing [aiorobonect]: success
+[2023-05-20 18:22:04] INFO root fetch - main [MainThread]: End processing [emhass]: success
+[2023-05-20 18:22:04] INFO root fetch - main [MainThread]: End processing [tomcru]: success
+[2023-05-20 18:22:05] INFO root fetch - main [MainThread]: End processing [textagon]: success
+[2023-05-20 18:22:11] INFO root fetch - main [MainThread]: End processing [ezbeq]: success
+[2023-05-20 18:22:11] INFO root fetch - main [MainThread]: Store serial: [18183246]
