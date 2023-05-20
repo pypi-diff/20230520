@@ -9545,3 +9545,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 14:48:31] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-05-20 14:49:42] INFO root fetch - main [MainThread]: End processing [quik-config]: success
 [2023-05-20 14:49:42] INFO root fetch - main [MainThread]: Store serial: [18182007]
+[2023-05-20 14:54:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182007]
+[2023-05-20 14:54:52] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 14:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: servestatic
+[2023-05-20 14:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Bigsansar
+[2023-05-20 14:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pysubcipher
+[2023-05-20 14:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyrasgo
+[2023-05-20 14:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: manticore
+[2023-05-20 14:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: apertium2ud
+[2023-05-20 14:54:52] INFO root fetch - processPackages [Bigsansar]: New version: [1.5.0] Old Version: [1.4.9]
+[2023-05-20 14:54:52] INFO root fetch - processPackages [manticore]: New version: [0.3.8.dev230519] Old Version: [0.3.8.dev230518]
+[2023-05-20 14:54:52] INFO root fetch - processPackages [servestatic]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-20 14:54:52] WARNING root fetch - processPackages [apertium2ud]: Skipping, unable to determine old version
+[2023-05-20 14:54:52] INFO root fetch - main [MainThread]: End processing [apertium2ud] error
+[2023-05-20 14:54:52] ERROR root fetch - processPackages [pysubcipher]: Unable to get metadata: No such project 'pysubcipher'
+[2023-05-20 14:54:52] INFO root fetch - main [MainThread]: End processing [pysubcipher] error
+[2023-05-20 14:54:52] INFO root fetch - processPackages [manticore]: executing diffoscope
+[2023-05-20 14:54:52] INFO root fetch - processPackages [manticore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manticore-0.3.8.dev230518.tar.gz tmp/manticore-0.3.8.dev230519.tar.gz --markdown 20230520/m/manticore/0.3.8.dev230518-0.3.8.dev230519/diff.md --exclude *.pyd
+[2023-05-20 14:54:52] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2023-05-20 14:54:52] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bigsansar-1.4.9.tar.gz tmp/Bigsansar-1.5.0.tar.gz --markdown 20230520/B/Bigsansar/1.4.9-1.5.0/diff.md --exclude *.pyd
+[2023-05-20 14:54:53] INFO root fetch - processPackages [pyrasgo]: New version: [2023.5.1] Old Version: [2023.2.2]
+[2023-05-20 14:54:53] INFO root fetch - processPackages [servestatic]: Downloading https://files.pythonhosted.org/packages/54/9c/b093c339f93da0c51540ccc3d1aae1b43c31287018f54be36016acdcb215/servestatic-0.0.2.tar.gz
+[2023-05-20 14:54:53] INFO root fetch - processPackages [pyrasgo]: Downloading https://files.pythonhosted.org/packages/2a/60/08dab843a03bfc9504192a012c0e72159c783a8fc8c4d1e9f46eac633b7b/pyrasgo-2023.2.2.tar.gz
+[2023-05-20 14:54:53] INFO root fetch - processPackages [servestatic]: Downloading https://files.pythonhosted.org/packages/b6/a7/f93800955403ae3fff4630ec3cddfa36aaba3b7a41a23c411e562d076189/servestatic-0.0.3.tar.gz
+[2023-05-20 14:54:53] INFO root fetch - processPackages [pyrasgo]: Downloading https://files.pythonhosted.org/packages/1a/96/935e8eff5653f78178b8c20c5630b838b95b97bf4809619cc8236e0b5f04/pyrasgo-2023.5.1.tar.gz
+[2023-05-20 14:54:53] INFO root fetch - processPackages [servestatic]: executing diffoscope
+[2023-05-20 14:54:53] INFO root fetch - processPackages [servestatic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/servestatic-0.0.2.tar.gz tmp/servestatic-0.0.3.tar.gz --markdown 20230520/s/servestatic/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-20 14:54:53] INFO root fetch - processPackages [pyrasgo]: executing diffoscope
+[2023-05-20 14:54:53] INFO root fetch - processPackages [pyrasgo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrasgo-2023.2.2.tar.gz tmp/pyrasgo-2023.5.1.tar.gz --markdown 20230520/p/pyrasgo/2023.2.2-2023.5.1/diff.md --exclude *.pyd
+[2023-05-20 14:54:54] INFO root fetch - main [MainThread]: End processing [manticore]: success
+[2023-05-20 14:54:54] INFO root fetch - main [MainThread]: End processing [servestatic]: success
+[2023-05-20 14:54:55] INFO root fetch - main [MainThread]: End processing [pyrasgo]: success
+[2023-05-20 14:54:55] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2023-05-20 14:54:55] INFO root fetch - main [MainThread]: Store serial: [18182028]
