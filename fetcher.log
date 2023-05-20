@@ -2154,3 +2154,53 @@
 [2023-05-20 02:40:07] INFO root fetch - main [MainThread]: End processing [veilcord]: success
 [2023-05-20 02:40:07] INFO root fetch - main [MainThread]: End processing [heaobject]: success
 [2023-05-20 02:40:07] INFO root fetch - main [MainThread]: Store serial: [18177341]
+[2023-05-20 02:45:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18177341]
+[2023-05-20 02:45:17] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-20 02:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: np-session
+[2023-05-20 02:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pioreactor-high-temp-plugin
+[2023-05-20 02:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-comprehend-s3olap
+[2023-05-20 02:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apeek
+[2023-05-20 02:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jiggybase
+[2023-05-20 02:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cloudflare
+[2023-05-20 02:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: matchmeta
+[2023-05-20 02:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: xm-ai
+[2023-05-20 02:45:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tfds-nightly
+[2023-05-20 02:45:17] WARNING root fetch - processPackages [apeek]: Skipping, unable to determine old version
+[2023-05-20 02:45:17] INFO root fetch - main [MainThread]: End processing [apeek] error
+[2023-05-20 02:45:17] WARNING root fetch - processPackages [pioreactor-high-temp-plugin]: Skipping, unable to determine old version
+[2023-05-20 02:45:17] INFO root fetch - main [MainThread]: End processing [pioreactor-high-temp-plugin] error
+[2023-05-20 02:45:17] INFO root fetch - processPackages [jiggybase]: New version: [0.0.34] Old Version: [0.0.33]
+[2023-05-20 02:45:17] INFO root fetch - processPackages [np-session]: New version: [0.6.8] Old Version: [0.6.7]
+[2023-05-20 02:45:17] INFO root fetch - processPackages [cdk-comprehend-s3olap]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-20 02:45:17] INFO root fetch - processPackages [matchmeta]: New version: [2023.5.19] Old Version: [2023.4.24]
+[2023-05-20 02:45:17] INFO root fetch - processPackages [xm-ai]: New version: [0.9] Old Version: [0.8]
+[2023-05-20 02:45:17] INFO root fetch - processPackages [cloudflare]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-05-20 02:45:17] INFO root fetch - processPackages [cdk-comprehend-s3olap]: Downloading https://files.pythonhosted.org/packages/d2/64/ec00fce58a2563fe9a768f5ee5a77ecba74bfccf89b1ec489306be4a20a8/cdk_comprehend_s3olap-2.0.98.tar.gz
+[2023-05-20 02:45:17] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.2.dev202305200044] Old Version: [4.9.2.dev202305190044]
+[2023-05-20 02:45:17] INFO root fetch - processPackages [jiggybase]: Downloading https://files.pythonhosted.org/packages/3d/be/91eaace27e594d81eaa6d361547ffd4215bf1c8ef79f89b9b082d3a546bf/jiggybase-0.0.33.tar.gz
+[2023-05-20 02:45:17] INFO root fetch - processPackages [xm-ai]: executing diffoscope
+[2023-05-20 02:45:17] INFO root fetch - processPackages [xm-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xm_ai-0.8-py3-none-any.whl.zip tmp/xm_ai-0.9-py3-none-any.whl.zip --markdown 20230520/x/xm-ai/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-20 02:45:17] INFO root fetch - processPackages [cloudflare]: executing diffoscope
+[2023-05-20 02:45:17] INFO root fetch - processPackages [cloudflare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudflare-2.9.8.tar.gz tmp/cloudflare-2.9.9.tar.gz --markdown 20230520/c/cloudflare/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-05-20 02:45:17] WARNING root fetch - processPackages [cdk-comprehend-s3olap]: Skipping package: exceeds size limit 14179128>=10485760
+[2023-05-20 02:45:17] INFO root fetch - main [MainThread]: End processing [cdk-comprehend-s3olap] error
+[2023-05-20 02:45:17] INFO root fetch - processPackages [matchmeta]: Downloading https://files.pythonhosted.org/packages/06/73/5d46f61842a744df79add041dcefab81d04588ddd17f7d704b38feaa80b4/matchmeta-2023.4.24.tar.gz
+[2023-05-20 02:45:17] INFO root fetch - processPackages [np-session]: Downloading https://files.pythonhosted.org/packages/43/68/330d5cce9aff32fc503db123c3b4ae709157b5476cceef2063e44664e645/np-session-0.6.8.tar.gz
+[2023-05-20 02:45:17] INFO root fetch - processPackages [np-session]: executing diffoscope
+[2023-05-20 02:45:17] INFO root fetch - processPackages [np-session]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np-session-0.6.7.tar.gz tmp/np-session-0.6.8.tar.gz --markdown 20230520/n/np-session/0.6.7-0.6.8/diff.md --exclude *.pyd
+[2023-05-20 02:45:18] INFO root fetch - processPackages [jiggybase]: Downloading https://files.pythonhosted.org/packages/f3/a4/95d21c9bbca8be079db349bc052684a3aaa9f520a6c7e416cac1b28cb684/jiggybase-0.0.34.tar.gz
+[2023-05-20 02:45:18] INFO root fetch - processPackages [matchmeta]: Downloading https://files.pythonhosted.org/packages/ef/29/6cda6dc3b7c5da2cd97a8af7ec84793c65be2bc9a9d0a645323c291c7bcc/matchmeta-2023.5.19.tar.gz
+[2023-05-20 02:45:18] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/37/e0/a1d683483f83703a0acafaa221cb0792e6c759e8ff4f0f5405973a845a0c/tfds-nightly-4.9.2.dev202305200044.tar.gz
+[2023-05-20 02:45:18] INFO root fetch - processPackages [jiggybase]: executing diffoscope
+[2023-05-20 02:45:18] INFO root fetch - processPackages [jiggybase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jiggybase-0.0.33.tar.gz tmp/jiggybase-0.0.34.tar.gz --markdown 20230520/j/jiggybase/0.0.33-0.0.34/diff.md --exclude *.pyd
+[2023-05-20 02:45:18] INFO root fetch - processPackages [matchmeta]: executing diffoscope
+[2023-05-20 02:45:18] INFO root fetch - processPackages [matchmeta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matchmeta-2023.4.24.tar.gz tmp/matchmeta-2023.5.19.tar.gz --markdown 20230520/m/matchmeta/2023.4.24-2023.5.19/diff.md --exclude *.pyd
+[2023-05-20 02:45:18] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2023-05-20 02:45:18] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.2.dev202305190044.tar.gz tmp/tfds-nightly-4.9.2.dev202305200044.tar.gz --markdown 20230520/t/tfds-nightly/4.9.2.dev202305190044-4.9.2.dev202305200044/diff.md --exclude *.pyd
+[2023-05-20 02:45:18] INFO root fetch - main [MainThread]: End processing [xm-ai]: success
+[2023-05-20 02:45:19] INFO root fetch - main [MainThread]: End processing [cloudflare]: success
+[2023-05-20 02:45:19] INFO root fetch - main [MainThread]: End processing [jiggybase]: success
+[2023-05-20 02:45:19] INFO root fetch - main [MainThread]: End processing [np-session]: success
+[2023-05-20 02:45:19] INFO root fetch - main [MainThread]: End processing [matchmeta]: success
+[2023-05-20 02:45:31] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2023-05-20 02:45:31] INFO root fetch - main [MainThread]: Store serial: [18177370]
