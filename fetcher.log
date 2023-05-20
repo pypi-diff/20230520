@@ -8222,3 +8222,17 @@
 [2023-05-20 12:42:22] INFO root fetch - main [MainThread]: End processing [mlflow-aws-rds-iam]: success
 [2023-05-20 12:42:22] INFO root fetch - main [MainThread]: End processing [anjani]: success
 [2023-05-20 12:42:22] INFO root fetch - main [MainThread]: Store serial: [18181297]
+[2023-05-20 12:47:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18181297]
+[2023-05-20 12:47:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-20 12:47:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addons-oca-stock-logistics-warehouse
+[2023-05-20 12:47:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PatryksAutoAI
+[2023-05-20 12:47:32] INFO root fetch - processPackages [PatryksAutoAI]: New version: [1.5.8] Old Version: [1.5.7]
+[2023-05-20 12:47:32] INFO root fetch - processPackages [PatryksAutoAI]: executing diffoscope
+[2023-05-20 12:47:32] INFO root fetch - processPackages [PatryksAutoAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PatryksAutoAI-1.5.7.tar.gz tmp/PatryksAutoAI-1.5.8.tar.gz --markdown 20230520/P/PatryksAutoAI/1.5.7-1.5.8/diff.md --exclude *.pyd
+[2023-05-20 12:47:32] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: New version: [16.0.20230519.0] Old Version: [16.0.20230518.0]
+[2023-05-20 12:47:32] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: Downloading https://files.pythonhosted.org/packages/d2/42/e6d278a42eac2401d15ee044831875047f5ea49b6f66fc0ff725f8ba5b91/odoo_addons_oca_stock_logistics_warehouse-16.0.20230519.0-py3-none-any.whl
+[2023-05-20 12:47:32] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: executing diffoscope
+[2023-05-20 12:47:32] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_stock_logistics_warehouse-16.0.20230518.0-py3-none-any.whl.zip tmp/odoo_addons_oca_stock_logistics_warehouse-16.0.20230519.0-py3-none-any.whl.zip --markdown 20230520/o/odoo-addons-oca-stock-logistics-warehouse/16.0.20230518.0-16.0.20230519.0/diff.md --exclude *.pyd
+[2023-05-20 12:47:33] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
+[2023-05-20 12:47:33] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-stock-logistics-warehouse]: success
+[2023-05-20 12:47:33] INFO root fetch - main [MainThread]: Store serial: [18181302]
