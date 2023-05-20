@@ -13265,3 +13265,51 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 22:39:20] INFO root fetch - main [MainThread]: End processing [jrnl]: success
 [2023-05-20 22:39:27] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-20 22:39:27] INFO root fetch - main [MainThread]: Store serial: [18184217]
+[2023-05-20 22:44:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184217]
+[2023-05-20 22:44:38] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-20 22:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: czapi
+[2023-05-20 22:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tidytcells
+[2023-05-20 22:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: s5
+[2023-05-20 22:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: discovery-transition-ds
+[2023-05-20 22:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: molecule-multipass
+[2023-05-20 22:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: energyzero
+[2023-05-20 22:44:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: logica
+[2023-05-20 22:44:38] INFO root fetch - processPackages [czapi]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-20 22:44:38] INFO root fetch - processPackages [tidytcells]: New version: [1.7.0] Old Version: [1.6.0]
+[2023-05-20 22:44:38] INFO root fetch - processPackages [molecule-multipass]: New version: [0.4.9] Old Version: [0.4.7]
+[2023-05-20 22:44:38] INFO root fetch - processPackages [energyzero]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-20 22:44:38] INFO root fetch - processPackages [s5]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-20 22:44:38] INFO root fetch - processPackages [logica]: New version: [1.3.9] Old Version: [1.3.2]
+[2023-05-20 22:44:38] INFO root fetch - processPackages [discovery-transition-ds]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-05-20 22:44:38] INFO root fetch - processPackages [molecule-multipass]: executing diffoscope
+[2023-05-20 22:44:38] INFO root fetch - processPackages [molecule-multipass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/molecule_multipass-0.4.7.tar.gz tmp/molecule_multipass-0.4.9.tar.gz --markdown 20230520/m/molecule-multipass/0.4.7-0.4.9/diff.md --exclude *.pyd
+[2023-05-20 22:44:38] INFO root fetch - processPackages [discovery-transition-ds]: executing diffoscope
+[2023-05-20 22:44:38] INFO root fetch - processPackages [discovery-transition-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discovery-transition-ds-4.9.8.tar.gz tmp/discovery-transition-ds-4.9.9.tar.gz --markdown 20230520/d/discovery-transition-ds/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-05-20 22:44:38] INFO root fetch - processPackages [czapi]: Downloading https://files.pythonhosted.org/packages/47/99/ca1bf96c25c1a93346917415d0262816aae2d95dd7121afd2a5241b900b1/czapi-0.1.7.tar.gz
+[2023-05-20 22:44:38] INFO root fetch - processPackages [tidytcells]: Downloading https://files.pythonhosted.org/packages/10/6c/177a27ffb9d8d4cd56361410539894ae713ff2d22098bb5ccdd433c45e62/tidytcells-1.6.0.tar.gz
+[2023-05-20 22:44:38] INFO root fetch - processPackages [energyzero]: Downloading https://files.pythonhosted.org/packages/49/52/2cdd1f8777a8a5b0989fd8106e63ab844ce42b0633f7c2ee8762fba6849c/energyzero-0.4.1.tar.gz
+[2023-05-20 22:44:38] INFO root fetch - processPackages [logica]: Downloading https://files.pythonhosted.org/packages/d8/22/2ef83ea0c206602bbbc34991174acdd787c1af68f75e0a89cf95a88ac69e/logica-1.3.2.tar.gz
+[2023-05-20 22:44:38] INFO root fetch - processPackages [s5]: Downloading https://files.pythonhosted.org/packages/e8/04/d484ad45fead0e752699ca024231f9f15883986cb2177bb6517cf60017b1/s5-0.0.2.tar.gz
+[2023-05-20 22:44:38] INFO root fetch - processPackages [czapi]: Downloading https://files.pythonhosted.org/packages/7f/cf/9d7e22f8fdfe43e9a11d9f721182aa2d3e5c825d83e94aca4fa92662e029/czapi-0.1.8.tar.gz
+[2023-05-20 22:44:38] INFO root fetch - processPackages [s5]: Downloading https://files.pythonhosted.org/packages/eb/ac/8d5952f42e54ada48a36e6318fadc5eca92688d43cfd916e178aedaf342c/s5-0.0.3.tar.gz
+[2023-05-20 22:44:38] INFO root fetch - processPackages [energyzero]: Downloading https://files.pythonhosted.org/packages/57/68/a61b6f774ad484000fca683888e7e6fab480e680ddace4538d0c8b2804dc/energyzero-0.4.2.tar.gz
+[2023-05-20 22:44:38] INFO root fetch - processPackages [tidytcells]: Downloading https://files.pythonhosted.org/packages/74/c7/db07261c06651700b3f29386cb3883e081c560eb0498907d2b48ce83867e/tidytcells-1.7.0.tar.gz
+[2023-05-20 22:44:38] INFO root fetch - processPackages [czapi]: executing diffoscope
+[2023-05-20 22:44:38] INFO root fetch - processPackages [czapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czapi-0.1.7.tar.gz tmp/czapi-0.1.8.tar.gz --markdown 20230520/c/czapi/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-20 22:44:38] INFO root fetch - processPackages [s5]: executing diffoscope
+[2023-05-20 22:44:38] INFO root fetch - processPackages [s5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/s5-0.0.2.tar.gz tmp/s5-0.0.3.tar.gz --markdown 20230520/s/s5/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-20 22:44:38] INFO root fetch - processPackages [logica]: Downloading https://files.pythonhosted.org/packages/48/bc/6cb697620cf340143d769ba49b3c94c3737854b8fb3f39fd94bc134e9d5d/logica-1.3.9.tar.gz
+[2023-05-20 22:44:39] INFO root fetch - processPackages [energyzero]: executing diffoscope
+[2023-05-20 22:44:39] INFO root fetch - processPackages [energyzero]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/energyzero-0.4.1.tar.gz tmp/energyzero-0.4.2.tar.gz --markdown 20230520/e/energyzero/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-20 22:44:39] INFO root fetch - processPackages [tidytcells]: executing diffoscope
+[2023-05-20 22:44:39] INFO root fetch - processPackages [tidytcells]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tidytcells-1.6.0.tar.gz tmp/tidytcells-1.7.0.tar.gz --markdown 20230520/t/tidytcells/1.6.0-1.7.0/diff.md --exclude *.pyd
+[2023-05-20 22:44:39] INFO root fetch - processPackages [logica]: executing diffoscope
+[2023-05-20 22:44:39] INFO root fetch - processPackages [logica]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logica-1.3.2.tar.gz tmp/logica-1.3.9.tar.gz --markdown 20230520/l/logica/1.3.2-1.3.9/diff.md --exclude *.pyd
+[2023-05-20 22:44:39] INFO root fetch - main [MainThread]: End processing [molecule-multipass]: success
+[2023-05-20 22:44:40] INFO root fetch - main [MainThread]: End processing [czapi]: success
+[2023-05-20 22:44:40] INFO root fetch - main [MainThread]: End processing [s5]: success
+[2023-05-20 22:44:40] INFO root fetch - main [MainThread]: End processing [energyzero]: success
+[2023-05-20 22:44:40] INFO root fetch - main [MainThread]: End processing [logica]: success
+[2023-05-20 22:44:40] INFO root fetch - main [MainThread]: End processing [tidytcells]: success
+[2023-05-20 22:44:44] INFO root fetch - main [MainThread]: End processing [discovery-transition-ds]: success
+[2023-05-20 22:44:44] INFO root fetch - main [MainThread]: Store serial: [18184238]
