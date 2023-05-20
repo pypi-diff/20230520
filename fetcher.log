@@ -6427,3 +6427,32 @@
 [2023-05-20 08:39:32] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-e-commerce]: success
 [2023-05-20 08:39:32] INFO root fetch - main [MainThread]: End processing [pyserde]: success
 [2023-05-20 08:39:32] INFO root fetch - main [MainThread]: Store serial: [18180122]
+[2023-05-20 08:44:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180122]
+[2023-05-20 08:44:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-20 08:44:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: paper-qa
+[2023-05-20 08:44:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tknodesystem
+[2023-05-20 08:44:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hyt-gpt
+[2023-05-20 08:44:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hyt-gpt
+[2023-05-20 08:44:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vector-vault
+[2023-05-20 08:44:42] WARNING root fetch - processPackages [vector-vault]: Skipping, unable to determine old version
+[2023-05-20 08:44:42] INFO root fetch - main [MainThread]: End processing [vector-vault] error
+[2023-05-20 08:44:42] INFO root fetch - processPackages [tknodesystem]: New version: [0.2] Old Version: [0.1]
+[2023-05-20 08:44:42] INFO root fetch - processPackages [hyt-gpt]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-20 08:44:42] INFO root fetch - processPackages [hyt-gpt]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-20 08:44:42] INFO root fetch - processPackages [paper-qa]: New version: [1.6.3] Old Version: [1.6.2]
+[2023-05-20 08:44:42] INFO root fetch - processPackages [tknodesystem]: Downloading https://files.pythonhosted.org/packages/e8/ab/2369f547099f168ac4b6acc6bb07ac538483a101034aaf25af350a1b0fed/tknodesystem-0.1.tar.gz
+[2023-05-20 08:44:43] INFO root fetch - processPackages [paper-qa]: Downloading https://files.pythonhosted.org/packages/1c/f1/63dff158fb999946b4b50111f7e794c24bd3f358157c2295f7d2b3c4d999/paper-qa-1.6.3.tar.gz
+[2023-05-20 08:44:43] INFO root fetch - processPackages [tknodesystem]: Downloading https://files.pythonhosted.org/packages/51/82/11e3fee856e501c1cbf12298fd7d64e9690215d9245f7c18772b09c2f75b/tknodesystem-0.2.tar.gz
+[2023-05-20 08:44:43] INFO root fetch - processPackages [hyt-gpt]: executing diffoscope
+[2023-05-20 08:44:43] INFO root fetch - processPackages [hyt-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyt-gpt-0.3.8.tar.gz tmp/hyt-gpt-0.3.9.tar.gz --markdown 20230520/h/hyt-gpt/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-20 08:44:43] INFO root fetch - processPackages [hyt-gpt]: executing diffoscope
+[2023-05-20 08:44:43] INFO root fetch - processPackages [hyt-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyt-gpt-0.3.8.tar.gz tmp/hyt-gpt-0.3.9.tar.gz --markdown 20230520/h/hyt-gpt/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-20 08:44:43] INFO root fetch - processPackages [paper-qa]: executing diffoscope
+[2023-05-20 08:44:43] INFO root fetch - processPackages [paper-qa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper-qa-1.6.2.tar.gz tmp/paper-qa-1.6.3.tar.gz --markdown 20230520/p/paper-qa/1.6.2-1.6.3/diff.md --exclude *.pyd
+[2023-05-20 08:44:43] INFO root fetch - processPackages [tknodesystem]: executing diffoscope
+[2023-05-20 08:44:43] INFO root fetch - processPackages [tknodesystem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tknodesystem-0.1.tar.gz tmp/tknodesystem-0.2.tar.gz --markdown 20230520/t/tknodesystem/0.1-0.2/diff.md --exclude *.pyd
+[2023-05-20 08:44:44] INFO root fetch - main [MainThread]: End processing [hyt-gpt]: success
+[2023-05-20 08:44:44] INFO root fetch - main [MainThread]: End processing [hyt-gpt]: success
+[2023-05-20 08:44:44] INFO root fetch - main [MainThread]: End processing [paper-qa]: success
+[2023-05-20 08:44:44] INFO root fetch - main [MainThread]: End processing [tknodesystem]: success
+[2023-05-20 08:44:44] INFO root fetch - main [MainThread]: Store serial: [18180136]
