@@ -8366,3 +8366,31 @@
 [2023-05-20 13:03:43] WARNING root fetch - processPackages [ak-pynn]: Skipping, unable to determine old version
 [2023-05-20 13:03:43] INFO root fetch - main [MainThread]: End processing [ak-pynn] error
 [2023-05-20 13:03:43] INFO root fetch - main [MainThread]: Store serial: [18181378]
+[2023-05-20 13:08:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18181378]
+[2023-05-20 13:08:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 13:08:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pickled-carrots
+[2023-05-20 13:08:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arabica
+[2023-05-20 13:08:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: volsite-postgres-common
+[2023-05-20 13:08:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: protobuf-decoder
+[2023-05-20 13:08:52] INFO root fetch - processPackages [volsite-postgres-common]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 13:08:52] INFO root fetch - processPackages [pickled-carrots]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-20 13:08:52] INFO root fetch - processPackages [arabica]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-05-20 13:08:52] INFO root fetch - processPackages [protobuf-decoder]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-20 13:08:52] INFO root fetch - processPackages [volsite-postgres-common]: executing diffoscope
+[2023-05-20 13:08:52] INFO root fetch - processPackages [volsite-postgres-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/volsite_postgres_common-0.1.8.tar.gz tmp/volsite_postgres_common-0.1.9.tar.gz --markdown 20230520/v/volsite-postgres-common/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 13:08:52] INFO root fetch - processPackages [pickled-carrots]: Downloading https://files.pythonhosted.org/packages/59/83/a73f55e786e7ce614c47c7fe9c70215e652c4944862133af43b6b5d6931b/pickled_carrots-0.1.1.tar.gz
+[2023-05-20 13:08:52] INFO root fetch - processPackages [protobuf-decoder]: Downloading https://files.pythonhosted.org/packages/58/e5/5e27466288cab11e62b9dd944f86011ebf6b8f5ec03e8190c6d8c245c564/protobuf_decoder-0.1.0.tar.gz
+[2023-05-20 13:08:52] INFO root fetch - processPackages [arabica]: Downloading https://files.pythonhosted.org/packages/91/03/18319e2f389b113b79980d54d7f77392e5069420faf21f796798308ab56d/arabica-1.5.1.tar.gz
+[2023-05-20 13:08:52] INFO root fetch - processPackages [pickled-carrots]: Downloading https://files.pythonhosted.org/packages/61/b8/675e29bb4e5a470c9e0e9c50f993f56f8f8ca2d123ecc2635eae720503b4/pickled_carrots-0.1.2.tar.gz
+[2023-05-20 13:08:52] INFO root fetch - processPackages [pickled-carrots]: executing diffoscope
+[2023-05-20 13:08:52] INFO root fetch - processPackages [pickled-carrots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pickled_carrots-0.1.1.tar.gz tmp/pickled_carrots-0.1.2.tar.gz --markdown 20230520/p/pickled-carrots/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-20 13:08:52] INFO root fetch - processPackages [protobuf-decoder]: Downloading https://files.pythonhosted.org/packages/f0/88/8a7752801ff49c00529da995e31a9be63409a94317024630847644ab2d0e/protobuf_decoder-0.2.0.tar.gz
+[2023-05-20 13:08:52] INFO root fetch - processPackages [arabica]: executing diffoscope
+[2023-05-20 13:08:52] INFO root fetch - processPackages [arabica]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arabica-1.5.0.tar.gz tmp/arabica-1.5.1.tar.gz --markdown 20230520/a/arabica/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-05-20 13:08:52] INFO root fetch - processPackages [protobuf-decoder]: executing diffoscope
+[2023-05-20 13:08:52] INFO root fetch - processPackages [protobuf-decoder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protobuf_decoder-0.1.0.tar.gz tmp/protobuf_decoder-0.2.0.tar.gz --markdown 20230520/p/protobuf-decoder/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-20 13:08:53] INFO root fetch - main [MainThread]: End processing [volsite-postgres-common]: success
+[2023-05-20 13:08:53] INFO root fetch - main [MainThread]: End processing [arabica]: success
+[2023-05-20 13:08:53] INFO root fetch - main [MainThread]: End processing [pickled-carrots]: success
+[2023-05-20 13:08:53] INFO root fetch - main [MainThread]: End processing [protobuf-decoder]: success
+[2023-05-20 13:08:53] INFO root fetch - main [MainThread]: Store serial: [18181392]
