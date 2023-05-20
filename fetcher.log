@@ -11248,3 +11248,31 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 18:06:20] INFO root fetch - main [MainThread]: End processing [ssm-simulators]: success
 [2023-05-20 18:06:22] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
 [2023-05-20 18:06:22] INFO root fetch - main [MainThread]: Store serial: [18183207]
+[2023-05-20 18:11:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183207]
+[2023-05-20 18:11:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 18:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ezbeq
+[2023-05-20 18:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-tbase-post
+[2023-05-20 18:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sihl
+[2023-05-20 18:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dcicutils
+[2023-05-20 18:11:33] INFO root fetch - processPackages [django-tbase-post]: New version: [2023.5.2116845988] Old Version: [2023.5.2016845976]
+[2023-05-20 18:11:33] INFO root fetch - processPackages [sihl]: New version: [0.0.2.dev0] Old Version: [0.0.1.dev0]
+[2023-05-20 18:11:33] INFO root fetch - processPackages [ezbeq]: New version: [1.0.0b9] Old Version: [1.0.0b8]
+[2023-05-20 18:11:33] INFO root fetch - processPackages [dcicutils]: New version: [7.4.3.5b16] Old Version: [7.4.3]
+[2023-05-20 18:11:33] INFO root fetch - processPackages [ezbeq]: executing diffoscope
+[2023-05-20 18:11:33] INFO root fetch - processPackages [ezbeq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezbeq-1.0.0b8.tar.gz tmp/ezbeq-1.0.0b9.tar.gz --markdown 20230520/e/ezbeq/1.0.0b8-1.0.0b9/diff.md --exclude *.pyd
+[2023-05-20 18:11:33] INFO root fetch - processPackages [django-tbase-post]: Downloading https://files.pythonhosted.org/packages/75/d4/7b9a189d3c336406c76a5965dbe88714fe4a45efe2018567b9ccc9a74c07/django_tbase_post-2023.5.2116845988.tar.gz
+[2023-05-20 18:11:33] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/dd/e6/e22e37ecac37f94e16768d42e53a826b7fc3e5a5c1a4197f6a19c4ed342d/dcicutils-7.4.3.tar.gz
+[2023-05-20 18:11:33] INFO root fetch - processPackages [django-tbase-post]: executing diffoscope
+[2023-05-20 18:11:33] INFO root fetch - processPackages [sihl]: Downloading https://files.pythonhosted.org/packages/15/f8/b93c00a59b68f5680b744523b93abc2acd4af31e225554e668c8edfa4fc2/sihl-0.0.1.dev0.tar.gz
+[2023-05-20 18:11:33] INFO root fetch - processPackages [django-tbase-post]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_tbase_post-2023.5.2016845976.tar.gz tmp/django_tbase_post-2023.5.2116845988.tar.gz --markdown 20230520/d/django-tbase-post/2023.5.2016845976-2023.5.2116845988/diff.md --exclude *.pyd
+[2023-05-20 18:11:33] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/74/a9/8c776ad466125c57226b94d8698749afb0de7d43e8ea6a57df771dfe719c/dcicutils-7.4.3.5b16.tar.gz
+[2023-05-20 18:11:33] INFO root fetch - processPackages [sihl]: Downloading https://files.pythonhosted.org/packages/6e/ce/bb9ca576e77b38cf918617ceb87cdcdb0a941c4bd302a9ec7332e11c8236/sihl-0.0.2.dev0.tar.gz
+[2023-05-20 18:11:33] INFO root fetch - processPackages [dcicutils]: executing diffoscope
+[2023-05-20 18:11:33] INFO root fetch - processPackages [dcicutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcicutils-7.4.3.tar.gz tmp/dcicutils-7.4.3.5b16.tar.gz --markdown 20230520/d/dcicutils/7.4.3-7.4.3.5b16/diff.md --exclude *.pyd
+[2023-05-20 18:11:33] INFO root fetch - processPackages [sihl]: executing diffoscope
+[2023-05-20 18:11:33] INFO root fetch - processPackages [sihl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sihl-0.0.1.dev0.tar.gz tmp/sihl-0.0.2.dev0.tar.gz --markdown 20230520/s/sihl/0.0.1.dev0-0.0.2.dev0/diff.md --exclude *.pyd
+[2023-05-20 18:11:34] INFO root fetch - main [MainThread]: End processing [django-tbase-post]: success
+[2023-05-20 18:11:35] INFO root fetch - main [MainThread]: End processing [sihl]: success
+[2023-05-20 18:11:35] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
+[2023-05-20 18:11:42] INFO root fetch - main [MainThread]: End processing [ezbeq]: success
+[2023-05-20 18:11:42] INFO root fetch - main [MainThread]: Store serial: [18183219]
