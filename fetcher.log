@@ -5160,3 +5160,28 @@
 [2023-05-20 04:49:21] INFO root fetch - main [MainThread]: End processing [ats-case]: success
 [2023-05-20 04:49:27] INFO root fetch - main [MainThread]: End processing [webint]: success
 [2023-05-20 04:49:27] INFO root fetch - main [MainThread]: Store serial: [18179284]
+[2023-05-20 04:54:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179284]
+[2023-05-20 04:54:37] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 04:54:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlflow-tmp
+[2023-05-20 04:54:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pybrainlife
+[2023-05-20 04:54:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: coconut-develop
+[2023-05-20 04:54:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: agixt
+[2023-05-20 04:54:37] INFO root fetch - processPackages [agixt]: New version: [1.1.43b0] Old Version: [1.1.42b0]
+[2023-05-20 04:54:37] INFO root fetch - processPackages [mlflow-tmp]: New version: [2.3.3.dev0] Old Version: [2.2.4]
+[2023-05-20 04:54:37] INFO root fetch - processPackages [pybrainlife]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-20 04:54:37] INFO root fetch - processPackages [coconut-develop]: New version: [3.0.0a0.dev9] Old Version: [3.0.0a0.dev8]
+[2023-05-20 04:54:37] INFO root fetch - processPackages [mlflow-tmp]: executing diffoscope
+[2023-05-20 04:54:37] INFO root fetch - processPackages [mlflow-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlflow_tmp-2.2.4.tar.gz tmp/mlflow_tmp-2.3.3.dev0.tar.gz --markdown 20230520/m/mlflow-tmp/2.2.4-2.3.3.dev0/diff.md --exclude *.pyd
+[2023-05-20 04:54:37] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-05-20 04:54:37] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.42b0.tar.gz tmp/agixt-1.1.43b0.tar.gz --markdown 20230520/a/agixt/1.1.42b0-1.1.43b0/diff.md --exclude *.pyd
+[2023-05-20 04:54:37] INFO root fetch - processPackages [pybrainlife]: Downloading https://files.pythonhosted.org/packages/6d/5b/414c653b6cf571c0eca0982c38e617d270cc492545e083ec87f93e24636f/pybrainlife-1.1.0.tar.gz
+[2023-05-20 04:54:38] INFO root fetch - processPackages [pybrainlife]: Downloading https://files.pythonhosted.org/packages/5a/93/9c0280315ef56e157db91ecbbed90898c3e4e180587b32e12d0562c92ca0/pybrainlife-1.1.1.tar.gz
+[2023-05-20 04:54:38] INFO root fetch - processPackages [coconut-develop]: executing diffoscope
+[2023-05-20 04:54:38] INFO root fetch - processPackages [coconut-develop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coconut-develop-3.0.0a0.dev8.tar.gz tmp/coconut-develop-3.0.0a0.dev9.tar.gz --markdown 20230520/c/coconut-develop/3.0.0a0.dev8-3.0.0a0.dev9/diff.md --exclude *.pyd
+[2023-05-20 04:54:38] INFO root fetch - processPackages [pybrainlife]: executing diffoscope
+[2023-05-20 04:54:38] INFO root fetch - processPackages [pybrainlife]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybrainlife-1.1.0.tar.gz tmp/pybrainlife-1.1.1.tar.gz --markdown 20230520/p/pybrainlife/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-20 04:54:39] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-05-20 04:54:39] INFO root fetch - main [MainThread]: End processing [pybrainlife]: success
+[2023-05-20 04:54:39] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
+[2023-05-20 04:54:41] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
+[2023-05-20 04:54:41] INFO root fetch - main [MainThread]: Store serial: [18179296]
