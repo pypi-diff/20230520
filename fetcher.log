@@ -9578,3 +9578,44 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 14:54:55] INFO root fetch - main [MainThread]: End processing [pyrasgo]: success
 [2023-05-20 14:54:55] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
 [2023-05-20 14:54:55] INFO root fetch - main [MainThread]: Store serial: [18182028]
+[2023-05-20 14:59:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182028]
+[2023-05-20 15:00:04] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-20 15:00:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fuefpyco
+[2023-05-20 15:00:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: command-line-loom
+[2023-05-20 15:00:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llama-cpp-python
+[2023-05-20 15:00:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: uuyoupinapi
+[2023-05-20 15:00:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lingfo
+[2023-05-20 15:00:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pysubcipher
+[2023-05-20 15:00:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ansible-navigator
+[2023-05-20 15:00:04] INFO root fetch - processPackages [command-line-loom]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-20 15:00:04] INFO root fetch - processPackages [fuefpyco]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-20 15:00:04] INFO root fetch - processPackages [uuyoupinapi]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-20 15:00:04] WARNING root fetch - processPackages [lingfo]: Skipping, unable to determine old version
+[2023-05-20 15:00:04] INFO root fetch - main [MainThread]: End processing [lingfo] error
+[2023-05-20 15:00:04] INFO root fetch - processPackages [llama-cpp-python]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 15:00:04] INFO root fetch - processPackages [ansible-navigator]: New version: [3.3.1] Old Version: [3.3.0]
+[2023-05-20 15:00:04] WARNING root fetch - processPackages [pysubcipher]: Skipping, unable to determine old version
+[2023-05-20 15:00:04] INFO root fetch - main [MainThread]: End processing [pysubcipher] error
+[2023-05-20 15:00:04] INFO root fetch - processPackages [fuefpyco]: Downloading https://files.pythonhosted.org/packages/50/78/9c6162ba6b17a7b41342e8de9be41810412d3b82f931dfd9463feeaf556a/fuefpyco-0.1.0.tar.gz
+[2023-05-20 15:00:04] INFO root fetch - processPackages [uuyoupinapi]: Downloading https://files.pythonhosted.org/packages/5d/7c/36da37b1d0b913c0a02d76ddd17b5f5a5d13a266d1672254de9481fc624e/uuyoupinapi-0.1.0.tar.gz
+[2023-05-20 15:00:04] INFO root fetch - processPackages [command-line-loom]: Downloading https://files.pythonhosted.org/packages/88/d2/cb1005bda786ba6e053f08c996647b96ada0e609a75a9016efd47fa6d5ca/command_line_loom-0.0.5.tar.gz
+[2023-05-20 15:00:04] INFO root fetch - processPackages [ansible-navigator]: Downloading https://files.pythonhosted.org/packages/e8/8a/e32a6b6ba80fcd782d1b19cb933c8149aff3a860a65201b08a4d2a24cc3e/ansible-navigator-3.3.0.tar.gz
+[2023-05-20 15:00:04] INFO root fetch - processPackages [command-line-loom]: executing diffoscope
+[2023-05-20 15:00:04] INFO root fetch - processPackages [command-line-loom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/command_line_loom-0.0.4.tar.gz tmp/command_line_loom-0.0.5.tar.gz --markdown 20230520/c/command-line-loom/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-20 15:00:04] INFO root fetch - processPackages [llama-cpp-python]: executing diffoscope
+[2023-05-20 15:00:04] INFO root fetch - processPackages [llama-cpp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_cpp_python-0.1.8.tar.gz tmp/llama_cpp_python-0.1.9.tar.gz --markdown 20230520/l/llama-cpp-python/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 15:00:04] INFO root fetch - processPackages [fuefpyco]: Downloading https://files.pythonhosted.org/packages/42/73/58eb651c191486291cdaf83b5e0a96ac334b77db0cf392479d64f12cdf6c/fuefpyco-0.2.0.tar.gz
+[2023-05-20 15:00:04] INFO root fetch - processPackages [uuyoupinapi]: Downloading https://files.pythonhosted.org/packages/7b/b6/30cdce87f82d9b5ebd818529317fccb096b570614dd8ded5a0dba59254c0/uuyoupinapi-0.1.1.tar.gz
+[2023-05-20 15:00:04] INFO root fetch - processPackages [ansible-navigator]: Downloading https://files.pythonhosted.org/packages/be/2e/0de219ab5c78dda5539ec23069df528e565fec0987e8ddbf4101e0f80377/ansible-navigator-3.3.1.tar.gz
+[2023-05-20 15:00:04] INFO root fetch - processPackages [uuyoupinapi]: executing diffoscope
+[2023-05-20 15:00:04] INFO root fetch - processPackages [uuyoupinapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uuyoupinapi-0.1.0.tar.gz tmp/uuyoupinapi-0.1.1.tar.gz --markdown 20230520/u/uuyoupinapi/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-20 15:00:04] INFO root fetch - processPackages [fuefpyco]: executing diffoscope
+[2023-05-20 15:00:04] INFO root fetch - processPackages [fuefpyco]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fuefpyco-0.1.0.tar.gz tmp/fuefpyco-0.2.0.tar.gz --markdown 20230520/f/fuefpyco/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-20 15:00:05] INFO root fetch - processPackages [ansible-navigator]: executing diffoscope
+[2023-05-20 15:00:05] INFO root fetch - processPackages [ansible-navigator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansible-navigator-3.3.0.tar.gz tmp/ansible-navigator-3.3.1.tar.gz --markdown 20230520/a/ansible-navigator/3.3.0-3.3.1/diff.md --exclude *.pyd
+[2023-05-20 15:00:05] INFO root fetch - main [MainThread]: End processing [uuyoupinapi]: success
+[2023-05-20 15:00:06] INFO root fetch - main [MainThread]: End processing [command-line-loom]: success
+[2023-05-20 15:00:06] INFO root fetch - main [MainThread]: End processing [fuefpyco]: success
+[2023-05-20 15:00:07] INFO root fetch - main [MainThread]: End processing [ansible-navigator]: success
+[2023-05-20 15:00:07] INFO root fetch - main [MainThread]: End processing [llama-cpp-python]: success
+[2023-05-20 15:00:07] INFO root fetch - main [MainThread]: Store serial: [18182059]
