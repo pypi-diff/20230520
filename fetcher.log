@@ -6201,3 +6201,26 @@
 [2023-05-20 07:47:28] INFO root fetch - main [MainThread]: End processing [llm-code]: success
 [2023-05-20 07:47:29] INFO root fetch - main [MainThread]: End processing [VirxERLU-RLib]: success
 [2023-05-20 07:47:29] INFO root fetch - main [MainThread]: Store serial: [18179932]
+[2023-05-20 07:52:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179932]
+[2023-05-20 07:52:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 07:52:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: satori-playbook-validator
+[2023-05-20 07:52:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: meme-generator
+[2023-05-20 07:52:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyromark
+[2023-05-20 07:52:38] INFO root fetch - processPackages [meme-generator]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 07:52:38] INFO root fetch - processPackages [satori-playbook-validator]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-20 07:52:38] INFO root fetch - processPackages [pyromark]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-20 07:52:38] INFO root fetch - processPackages [meme-generator]: Downloading https://files.pythonhosted.org/packages/a9/d7/0e3a810f2bc5c3297da0dd0b704e0135ad64087f37a1e767b3b1e0a85809/meme_generator-0.0.8.tar.gz
+[2023-05-20 07:52:38] INFO root fetch - processPackages [satori-playbook-validator]: Downloading https://files.pythonhosted.org/packages/9d/e3/eb58452a336d55c1e4df8cc449fd8ff87073a9ca0e3e7fc14ebaa18975bb/satori_playbook_validator-1.0.4.tar.gz
+[2023-05-20 07:52:38] INFO root fetch - processPackages [pyromark]: Downloading https://files.pythonhosted.org/packages/bd/49/293d9bb1c76214ab8643f56803a2947e49c1d3cb421a928442fc90473dfe/pyromark-0.1.0.tar.gz
+[2023-05-20 07:52:38] INFO root fetch - processPackages [satori-playbook-validator]: executing diffoscope
+[2023-05-20 07:52:38] INFO root fetch - processPackages [satori-playbook-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satori_playbook_validator-1.0.3.tar.gz tmp/satori_playbook_validator-1.0.4.tar.gz --markdown 20230520/s/satori-playbook-validator/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-20 07:52:38] INFO root fetch - processPackages [meme-generator]: Downloading https://files.pythonhosted.org/packages/90/df/38bd05ba859b098fb21ed20a255e4ebe63b6e8e39962cd492827b796c48f/meme_generator-0.0.9.tar.gz
+[2023-05-20 07:52:38] INFO root fetch - processPackages [meme-generator]: executing diffoscope
+[2023-05-20 07:52:38] INFO root fetch - processPackages [meme-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meme_generator-0.0.8.tar.gz tmp/meme_generator-0.0.9.tar.gz --markdown 20230520/m/meme-generator/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 07:52:38] INFO root fetch - processPackages [pyromark]: Downloading https://files.pythonhosted.org/packages/fa/28/c01228e3e932543d86cf2e9a66f8e6d396a15611eceea852eb1585f1ce94/pyromark-0.1.1-cp38-cp38-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl
+[2023-05-20 07:52:39] INFO root fetch - main [MainThread]: End processing [satori-playbook-validator]: success
+[2023-05-20 07:52:39] INFO root fetch - processPackages [pyromark]: executing diffoscope
+[2023-05-20 07:52:39] INFO root fetch - processPackages [pyromark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyromark-0.1.0.tar.gz tmp/pyromark-0.1.1-cp38-cp38-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl.zip --markdown 20230520/p/pyromark/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-20 07:52:40] INFO root fetch - main [MainThread]: End processing [meme-generator]: success
+[2023-05-20 07:52:40] INFO root fetch - main [MainThread]: End processing [pyromark]: success
+[2023-05-20 07:52:40] INFO root fetch - main [MainThread]: Store serial: [18179974]
