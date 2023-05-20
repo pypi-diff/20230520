@@ -4886,3 +4886,43 @@
 [2023-05-20 04:03:53] INFO root fetch - main [MainThread]: End processing [curvesim]: success
 [2023-05-20 04:03:53] INFO root fetch - main [MainThread]: End processing [denoising-diffusion-pytorch]: success
 [2023-05-20 04:03:53] INFO root fetch - main [MainThread]: Store serial: [18179017]
+[2023-05-20 04:08:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179017]
+[2023-05-20 04:09:03] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 04:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: manim-course-utils
+[2023-05-20 04:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AeroSandbox
+[2023-05-20 04:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: climt
+[2023-05-20 04:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: netron
+[2023-05-20 04:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-unicorn
+[2023-05-20 04:09:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: textagon
+[2023-05-20 04:09:03] INFO root fetch - processPackages [textagon]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-20 04:09:03] INFO root fetch - processPackages [textagon]: executing diffoscope
+[2023-05-20 04:09:03] INFO root fetch - processPackages [textagon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textagon-0.1.4.tar.gz tmp/textagon-0.1.5.tar.gz --markdown 20230520/t/textagon/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-20 04:09:03] INFO root fetch - processPackages [manim-course-utils]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-20 04:09:03] INFO root fetch - processPackages [netron]: New version: [6.9.0] Old Version: [6.8.9]
+[2023-05-20 04:09:03] INFO root fetch - processPackages [django-unicorn]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-20 04:09:03] INFO root fetch - processPackages [climt]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-20 04:09:03] INFO root fetch - processPackages [AeroSandbox]: New version: [4.0.8] Old Version: [4.0.7]
+[2023-05-20 04:09:03] INFO root fetch - processPackages [django-unicorn]: executing diffoscope
+[2023-05-20 04:09:03] INFO root fetch - processPackages [django-unicorn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-unicorn-0.9.3.tar.gz tmp/django-unicorn-0.9.4.tar.gz --markdown 20230520/d/django-unicorn/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-20 04:09:04] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/9f/1b/6df5b8e281392efd2443deed8c9f40a0a447a16a1444946ceb31e03bda7c/netron-6.8.9-py3-none-any.whl
+[2023-05-20 04:09:04] INFO root fetch - processPackages [climt]: Downloading https://files.pythonhosted.org/packages/f6/77/f3a338b6da42f91497d6eeb939d02c43146971b61d2c26a94d0ff3778a08/climt-0.9.3.tar.gz
+[2023-05-20 04:09:04] INFO root fetch - processPackages [AeroSandbox]: Downloading https://files.pythonhosted.org/packages/cc/51/511690f9b6a1b548c174fd1e298d8dec76ee6512c8298c4ad2882d83dba9/AeroSandbox-4.0.7.tar.gz
+[2023-05-20 04:09:04] INFO root fetch - processPackages [manim-course-utils]: executing diffoscope
+[2023-05-20 04:09:04] INFO root fetch - processPackages [manim-course-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manim_course_utils-0.8.0.tar.gz tmp/manim_course_utils-0.9.0.tar.gz --markdown 20230520/m/manim-course-utils/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-20 04:09:04] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/d9/21/bdb6712e5115a79cf62ffb170db12345086016aba9d42dfc8a0b04be492d/netron-6.9.0-py3-none-any.whl
+[2023-05-20 04:09:04] INFO root fetch - processPackages [netron]: executing diffoscope
+[2023-05-20 04:09:04] INFO root fetch - processPackages [netron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netron-6.8.9-py3-none-any.whl.zip tmp/netron-6.9.0-py3-none-any.whl.zip --markdown 20230520/n/netron/6.8.9-6.9.0/diff.md --exclude *.pyd
+[2023-05-20 04:09:04] INFO root fetch - processPackages [AeroSandbox]: Downloading https://files.pythonhosted.org/packages/b3/90/4078e81a236edc37fad4ed3f130aac106e6dc4fa675f323d41490329c4a7/AeroSandbox-4.0.8.tar.gz
+[2023-05-20 04:09:04] INFO root fetch - main [MainThread]: End processing [textagon]: success
+[2023-05-20 04:09:05] INFO root fetch - main [MainThread]: End processing [manim-course-utils]: success
+[2023-05-20 04:09:05] INFO root fetch - processPackages [AeroSandbox]: executing diffoscope
+[2023-05-20 04:09:05] INFO root fetch - processPackages [AeroSandbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AeroSandbox-4.0.7.tar.gz tmp/AeroSandbox-4.0.8.tar.gz --markdown 20230520/A/AeroSandbox/4.0.7-4.0.8/diff.md --exclude *.pyd
+[2023-05-20 04:09:06] INFO root fetch - processPackages [climt]: Downloading https://files.pythonhosted.org/packages/9b/35/c00695ff78186b8bf44d7dddfe37cf0d699cd27b81b2dd5db2c69753540f/climt-0.9.4.tar.gz
+[2023-05-20 04:09:06] INFO root fetch - main [MainThread]: End processing [django-unicorn]: success
+[2023-05-20 04:09:08] INFO root fetch - processPackages [climt]: executing diffoscope
+[2023-05-20 04:09:08] INFO root fetch - processPackages [climt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/climt-0.9.3.tar.gz tmp/climt-0.9.4.tar.gz --markdown 20230520/c/climt/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-20 04:09:12] INFO root fetch - main [MainThread]: End processing [climt]: success
+[2023-05-20 04:09:39] INFO root fetch - main [MainThread]: End processing [AeroSandbox]: success
+[2023-05-20 04:12:04] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
+[2023-05-20 04:12:04] INFO root fetch - main [MainThread]: End processing [netron] error
+[2023-05-20 04:12:04] INFO root fetch - main [MainThread]: Store serial: [18179040]
