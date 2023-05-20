@@ -5382,3 +5382,34 @@
 [2023-05-20 05:08:07] INFO root fetch - main [MainThread]: End processing [slim-id]: success
 [2023-05-20 05:08:08] INFO root fetch - main [MainThread]: End processing [cirro]: success
 [2023-05-20 05:08:08] INFO root fetch - main [MainThread]: Store serial: [18179391]
+[2023-05-20 05:13:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179391]
+[2023-05-20 05:13:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-20 05:13:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: waymo-open-dataset-tf-2-11-0
+[2023-05-20 05:13:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: js-code
+[2023-05-20 05:13:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: agixt
+[2023-05-20 05:13:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mlflow-tmp
+[2023-05-20 05:13:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: GANDLF
+[2023-05-20 05:13:16] INFO root fetch - processPackages [waymo-open-dataset-tf-2-11-0]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-05-20 05:13:16] INFO root fetch - processPackages [mlflow-tmp]: New version: [2.3.3.dev0] Old Version: [2.2.5]
+[2023-05-20 05:13:16] WARNING root fetch - processPackages [js-code]: Skipping, unable to determine old version
+[2023-05-20 05:13:16] INFO root fetch - main [MainThread]: End processing [js-code] error
+[2023-05-20 05:13:16] INFO root fetch - processPackages [agixt]: New version: [1.1.44b0] Old Version: [1.1.43b0]
+[2023-05-20 05:13:17] INFO root fetch - processPackages [GANDLF]: New version: [0.0.17.dev20230520] Old Version: [0.0.1620230518]
+[2023-05-20 05:13:17] INFO root fetch - processPackages [waymo-open-dataset-tf-2-11-0]: Downloading https://files.pythonhosted.org/packages/81/45/e6210999e89722207cf83862822016e52d3383116d769535d0fd31f45d52/waymo_open_dataset_tf_2_11_0-1.5.1-py3-none-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
+[2023-05-20 05:13:17] INFO root fetch - processPackages [mlflow-tmp]: Downloading https://files.pythonhosted.org/packages/e2/c9/385b3900424f8a83e9b4e0c355f46f8245651d61adc7b76a8b3d3edb4f84/mlflow_tmp-2.2.5.tar.gz
+[2023-05-20 05:13:17] INFO root fetch - processPackages [mlflow-tmp]: executing diffoscope
+[2023-05-20 05:13:17] INFO root fetch - processPackages [mlflow-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlflow_tmp-2.2.5.tar.gz tmp/mlflow_tmp-2.3.3.dev0.tar.gz --markdown 20230520/m/mlflow-tmp/2.2.5-2.3.3.dev0/diff.md --exclude *.pyd
+[2023-05-20 05:13:17] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/45/ec/d652956cef88de1933f8e9cef3aab6a661086d6675802d99716ecbfd8665/agixt-1.1.44b0.tar.gz
+[2023-05-20 05:13:17] INFO root fetch - processPackages [GANDLF]: Downloading https://files.pythonhosted.org/packages/a1/e2/568824bfcf6e2953f24454e3c2b464455fc4a5db7ec7acb50c71c07dfe37/GANDLF-0.0.17.dev20230520.tar.gz
+[2023-05-20 05:13:17] INFO root fetch - processPackages [waymo-open-dataset-tf-2-11-0]: Downloading https://files.pythonhosted.org/packages/85/1d/4cdd31fc8e88c3d689a67978c41b28b6e242bd4fe6b080cf8c99663b77e4/waymo_open_dataset_tf_2_11_0-1.5.2-py3-none-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
+[2023-05-20 05:13:17] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-05-20 05:13:17] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.43b0.tar.gz tmp/agixt-1.1.44b0.tar.gz --markdown 20230520/a/agixt/1.1.43b0-1.1.44b0/diff.md --exclude *.pyd
+[2023-05-20 05:13:17] INFO root fetch - processPackages [waymo-open-dataset-tf-2-11-0]: executing diffoscope
+[2023-05-20 05:13:17] INFO root fetch - processPackages [waymo-open-dataset-tf-2-11-0]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/waymo_open_dataset_tf_2_11_0-1.5.1-py3-none-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.zip tmp/waymo_open_dataset_tf_2_11_0-1.5.2-py3-none-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.zip --markdown 20230520/w/waymo-open-dataset-tf-2-11-0/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-05-20 05:13:17] INFO root fetch - processPackages [GANDLF]: executing diffoscope
+[2023-05-20 05:13:17] INFO root fetch - processPackages [GANDLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GANDLF-0.0.1620230518.tar.gz tmp/GANDLF-0.0.17.dev20230520.tar.gz --markdown 20230520/G/GANDLF/0.0.1620230518-0.0.17.dev20230520/diff.md --exclude *.pyd
+[2023-05-20 05:13:18] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-05-20 05:13:19] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
+[2023-05-20 05:13:22] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
+[2023-05-20 05:13:41] INFO root fetch - main [MainThread]: End processing [waymo-open-dataset-tf-2-11-0]: success
+[2023-05-20 05:13:41] INFO root fetch - main [MainThread]: Store serial: [18179407]
