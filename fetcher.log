@@ -7103,3 +7103,51 @@
 [2023-05-20 10:19:49] INFO root fetch - main [MainThread]: End processing [asimov]: success
 [2023-05-20 10:19:49] INFO root fetch - main [MainThread]: End processing [nvfuser-cu117]: success
 [2023-05-20 10:19:49] INFO root fetch - main [MainThread]: Store serial: [18180538]
+[2023-05-20 10:24:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180538]
+[2023-05-20 10:24:58] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-20 10:24:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-mp-seo
+[2023-05-20 10:24:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rapidocr-openvino
+[2023-05-20 10:24:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nsdotpy
+[2023-05-20 10:24:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycti
+[2023-05-20 10:24:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyMAdot2
+[2023-05-20 10:24:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: data-preprocessors
+[2023-05-20 10:24:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: xtlsapi
+[2023-05-20 10:24:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dinohub-seedwork-be
+[2023-05-20 10:24:58] INFO root fetch - processPackages [django-mp-seo]: New version: [9.0.0] Old Version: [8.0.1]
+[2023-05-20 10:24:58] INFO root fetch - processPackages [pyMAdot2]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-20 10:24:58] INFO root fetch - processPackages [xtlsapi]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-05-20 10:24:58] INFO root fetch - processPackages [pycti]: New version: [5.7.post575] Old Version: [5.7.post574]
+[2023-05-20 10:24:58] INFO root fetch - processPackages [data-preprocessors]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-20 10:24:58] INFO root fetch - processPackages [rapidocr-openvino]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-20 10:24:58] INFO root fetch - processPackages [nsdotpy]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-05-20 10:24:59] INFO root fetch - processPackages [xtlsapi]: executing diffoscope
+[2023-05-20 10:24:59] INFO root fetch - processPackages [xtlsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xtlsapi-3.1.0.tar.gz tmp/xtlsapi-3.1.1.tar.gz --markdown 20230520/x/xtlsapi/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-05-20 10:24:59] INFO root fetch - processPackages [data-preprocessors]: executing diffoscope
+[2023-05-20 10:24:59] INFO root fetch - processPackages [data-preprocessors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-preprocessors-0.8.0.tar.gz tmp/data-preprocessors-0.9.0.tar.gz --markdown 20230520/d/data-preprocessors/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-20 10:24:59] INFO root fetch - processPackages [pycti]: executing diffoscope
+[2023-05-20 10:24:59] INFO root fetch - processPackages [pycti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycti-5.7.post574.tar.gz tmp/pycti-5.7.post575.tar.gz --markdown 20230520/p/pycti/5.7.post574-5.7.post575/diff.md --exclude *.pyd
+[2023-05-20 10:24:59] INFO root fetch - processPackages [dinohub-seedwork-be]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 10:24:59] INFO root fetch - processPackages [django-mp-seo]: Downloading https://files.pythonhosted.org/packages/b0/e6/89a69c6b3836cf927545d53d246f7bf128c721455e22fe0be94e78d38ca7/django-mp-seo-8.0.1.tar.gz
+[2023-05-20 10:24:59] INFO root fetch - processPackages [pyMAdot2]: Downloading https://files.pythonhosted.org/packages/8e/d2/3263d664bc1a36610161bf542a4627a757f692924f117d1ca4765c3ac710/pyMAdot2-0.0.1.tar.gz
+[2023-05-20 10:24:59] INFO root fetch - processPackages [rapidocr-openvino]: Downloading https://files.pythonhosted.org/packages/84/b4/d898eebf016a6f875cb116ae4c6cd5e7e9931fb2508a6d6960f44d3ef2ff/rapidocr_openvino-1.2.8-py3-none-any.whl
+[2023-05-20 10:24:59] INFO root fetch - processPackages [nsdotpy]: Downloading https://files.pythonhosted.org/packages/8e/1f/c14745e9ca56e4fcc9b891f0d616054f2abe85d2ff7250e0420039faaf6e/nsdotpy-1.3.2.tar.gz
+[2023-05-20 10:24:59] WARNING root fetch - processPackages [rapidocr-openvino]: Skipping package: exceeds size limit 12342232>=10485760
+[2023-05-20 10:24:59] INFO root fetch - main [MainThread]: End processing [rapidocr-openvino] error
+[2023-05-20 10:24:59] INFO root fetch - processPackages [django-mp-seo]: Downloading https://files.pythonhosted.org/packages/f4/1a/28e264c7a6210d9250b9994e694975cb879ccf1a2120003f9525bfc30cbc/django-mp-seo-9.0.0.tar.gz
+[2023-05-20 10:24:59] INFO root fetch - processPackages [nsdotpy]: executing diffoscope
+[2023-05-20 10:24:59] INFO root fetch - processPackages [nsdotpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsdotpy-1.3.1.tar.gz tmp/nsdotpy-1.3.2.tar.gz --markdown 20230520/n/nsdotpy/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-05-20 10:24:59] INFO root fetch - processPackages [dinohub-seedwork-be]: executing diffoscope
+[2023-05-20 10:24:59] INFO root fetch - processPackages [dinohub-seedwork-be]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dinohub_seedwork_be-0.1.8.tar.gz tmp/dinohub_seedwork_be-0.1.9.tar.gz --markdown 20230520/d/dinohub-seedwork-be/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 10:24:59] INFO root fetch - processPackages [django-mp-seo]: executing diffoscope
+[2023-05-20 10:24:59] INFO root fetch - processPackages [django-mp-seo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-mp-seo-8.0.1.tar.gz tmp/django-mp-seo-9.0.0.tar.gz --markdown 20230520/d/django-mp-seo/8.0.1-9.0.0/diff.md --exclude *.pyd
+[2023-05-20 10:24:59] INFO root fetch - processPackages [pyMAdot2]: Downloading https://files.pythonhosted.org/packages/05/ff/7caa6e91d4625b0a5f207cd947f3ebc1dfb2e89f3d330bc48f02ac3a97a7/pyMAdot2-0.0.2.tar.gz
+[2023-05-20 10:24:59] INFO root fetch - processPackages [pyMAdot2]: executing diffoscope
+[2023-05-20 10:24:59] INFO root fetch - processPackages [pyMAdot2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyMAdot2-0.0.1.tar.gz tmp/pyMAdot2-0.0.2.tar.gz --markdown 20230520/p/pyMAdot2/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-20 10:25:00] INFO root fetch - main [MainThread]: End processing [data-preprocessors]: success
+[2023-05-20 10:25:00] INFO root fetch - main [MainThread]: End processing [nsdotpy]: success
+[2023-05-20 10:25:00] INFO root fetch - main [MainThread]: End processing [pycti]: success
+[2023-05-20 10:25:00] INFO root fetch - main [MainThread]: End processing [django-mp-seo]: success
+[2023-05-20 10:25:00] INFO root fetch - main [MainThread]: End processing [pyMAdot2]: success
+[2023-05-20 10:25:01] INFO root fetch - main [MainThread]: End processing [dinohub-seedwork-be]: success
+[2023-05-20 10:25:02] INFO root fetch - main [MainThread]: End processing [xtlsapi]: success
+[2023-05-20 10:25:02] INFO root fetch - main [MainThread]: Store serial: [18180561]
