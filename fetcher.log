@@ -8263,3 +8263,97 @@
 [2023-05-20 12:52:45] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-owner-restriction]: success
 [2023-05-20 12:52:48] INFO root fetch - main [MainThread]: End processing [moptipy]: success
 [2023-05-20 12:52:48] INFO root fetch - main [MainThread]: Store serial: [18181318]
+[2023-05-20 12:57:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18181318]
+[2023-05-20 12:57:57] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-20 12:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cq23
+[2023-05-20 12:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pysui
+[2023-05-20 12:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arclet-alconna
+[2023-05-20 12:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pysubcipher-mxngo
+[2023-05-20 12:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: plone.app.locales
+[2023-05-20 12:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ldimbenchmark
+[2023-05-20 12:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Orange3-Tools
+[2023-05-20 12:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fastapi-mqtt
+[2023-05-20 12:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ha-services
+[2023-05-20 12:57:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: onboardme
+[2023-05-20 12:57:57] WARNING root fetch - processPackages [pysubcipher-mxngo]: Skipping, unable to determine old version
+[2023-05-20 12:57:57] WARNING root fetch - processPackages [cq23]: Skipping, unable to determine old version
+[2023-05-20 12:57:57] INFO root fetch - processPackages [pysubcipher-mxngo]: Start processing: PHX
+[2023-05-20 12:57:57] INFO root fetch - main [MainThread]: End processing [pysubcipher-mxngo] error
+[2023-05-20 12:57:57] INFO root fetch - processPackages [cq23]: Start processing: ccxt
+[2023-05-20 12:57:57] INFO root fetch - processPackages [pysui]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-20 12:57:57] INFO root fetch - main [MainThread]: End processing [cq23] error
+[2023-05-20 12:57:57] INFO root fetch - processPackages [ha-services]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-20 12:57:57] INFO root fetch - processPackages [arclet-alconna]: New version: [1.7.5] Old Version: [1.7.4]
+[2023-05-20 12:57:57] INFO root fetch - processPackages [fastapi-mqtt]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-20 12:57:57] INFO root fetch - processPackages [plone.app.locales]: New version: [6.0.9] Old Version: [6.0.8]
+[2023-05-20 12:57:57] INFO root fetch - processPackages [Orange3-Tools]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-20 12:57:57] INFO root fetch - processPackages [onboardme]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-20 12:57:57] INFO root fetch - processPackages [PHX]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-05-20 12:57:57] INFO root fetch - processPackages [ldimbenchmark]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-20 12:57:57] INFO root fetch - processPackages [ccxt]: New version: [3.1.3] Old Version: [3.1.2]
+[2023-05-20 12:57:57] INFO root fetch - processPackages [plone.app.locales]: Downloading https://files.pythonhosted.org/packages/07/57/7616573ed7e1e4246344ae71d2964888db7ce02be744df3f588daa4f8ba5/plone.app.locales-6.0.8.tar.gz
+[2023-05-20 12:57:57] INFO root fetch - processPackages [pysui]: Downloading https://files.pythonhosted.org/packages/df/fd/8060c20cdf32607400911d43fc627a8bf48fe7571dc1992ab190b3274d7b/pysui-0.8.0-py3-none-any.whl
+[2023-05-20 12:57:57] INFO root fetch - processPackages [ldimbenchmark]: Downloading https://files.pythonhosted.org/packages/6d/21/548ce5d404214acbcff2cd67b78156e0bf381bb72678d68414205e526e0a/ldimbenchmark-0.2.0.tar.gz
+[2023-05-20 12:57:57] INFO root fetch - processPackages [arclet-alconna]: Downloading https://files.pythonhosted.org/packages/b0/3b/2a1c0c2c2c48cb7fe7f6ef47d2ba0fc0f71d6101d35fff8d45b941179a44/arclet-alconna-1.7.4.tar.gz
+[2023-05-20 12:57:57] WARNING root fetch - processPackages [plone.app.locales]: Skipping package: exceeds size limit 10880771>=10485760
+[2023-05-20 12:57:57] INFO root fetch - processPackages [plone.app.locales]: Start processing: gfs-dynamical-core
+[2023-05-20 12:57:57] INFO root fetch - main [MainThread]: End processing [plone.app.locales] error
+[2023-05-20 12:57:57] INFO root fetch - processPackages [ha-services]: Downloading https://files.pythonhosted.org/packages/0a/28/d2672bbf915a2b0c467bd1e023c3cc469fdacc1bacdeef49e356cef849e5/ha-services-0.3.1.tar.gz
+[2023-05-20 12:57:57] INFO root fetch - processPackages [PHX]: Downloading https://files.pythonhosted.org/packages/ad/48/a9b966f484d5fbfbde35e2c15c1211cc18359a09978bfbaafcd30f095d50/PHX-1.8.1.tar.gz
+[2023-05-20 12:57:57] INFO root fetch - processPackages [gfs-dynamical-core]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-20 12:57:57] INFO root fetch - processPackages [onboardme]: Downloading https://files.pythonhosted.org/packages/46/78/d23f8842005d95127114697d3eccf5230805d427db0792efbce8818a845a/onboardme-1.1.3.tar.gz
+[2023-05-20 12:57:57] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/86/77/4ba96b14ec3eb4bdca22aec23502c854469ab1f8190cca0d3c095c3889a3/ccxt-3.1.3.tar.gz
+[2023-05-20 12:57:57] INFO root fetch - processPackages [fastapi-mqtt]: Downloading https://files.pythonhosted.org/packages/13/8a/2e98adc63e62fd1ebd9691df3f42bc281a8aff3bae3738010aece9fdced5/fastapi_mqtt-1.0.8.tar.gz
+[2023-05-20 12:57:57] INFO root fetch - processPackages [Orange3-Tools]: Downloading https://files.pythonhosted.org/packages/fa/cd/a06cf7e6a7441580eb7924403f685878869ec7b3353e66c07a9a58d38cc8/Orange3-Tools-0.0.3.tar.gz
+[2023-05-20 12:57:57] INFO root fetch - processPackages [ha-services]: executing diffoscope
+[2023-05-20 12:57:57] INFO root fetch - processPackages [ha-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ha-services-0.3.0.tar.gz tmp/ha-services-0.3.1.tar.gz --markdown 20230520/h/ha-services/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-20 12:57:58] INFO root fetch - processPackages [ldimbenchmark]: Downloading https://files.pythonhosted.org/packages/3b/f5/51600f10ce5f7cd235b7fa4f4996f0b666b512d8064d989eea7951da7a63/ldimbenchmark-0.2.1.tar.gz
+[2023-05-20 12:57:58] INFO root fetch - processPackages [arclet-alconna]: Downloading https://files.pythonhosted.org/packages/cd/40/2ce39cb034760089d7c6cc1d81492fb1377468b49073648a888fbd1f3c6b/arclet-alconna-1.7.5.tar.gz
+[2023-05-20 12:57:58] INFO root fetch - processPackages [Orange3-Tools]: executing diffoscope
+[2023-05-20 12:57:58] INFO root fetch - processPackages [onboardme]: executing diffoscope
+[2023-05-20 12:57:58] INFO root fetch - processPackages [Orange3-Tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Orange3-Tools-0.0.2.tar.gz tmp/Orange3-Tools-0.0.3.tar.gz --markdown 20230520/O/Orange3-Tools/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-20 12:57:58] INFO root fetch - processPackages [onboardme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onboardme-1.1.2.tar.gz tmp/onboardme-1.1.3.tar.gz --markdown 20230520/o/onboardme/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-20 12:57:58] INFO root fetch - processPackages [fastapi-mqtt]: executing diffoscope
+[2023-05-20 12:57:58] INFO root fetch - processPackages [fastapi-mqtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_mqtt-1.0.7.tar.gz tmp/fastapi_mqtt-1.0.8.tar.gz --markdown 20230520/f/fastapi-mqtt/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-20 12:57:58] INFO root fetch - processPackages [pysui]: Downloading https://files.pythonhosted.org/packages/d0/d5/e2108ab88d1f544ccab9554dcf4127133263950ae9c3e3912ab5bb6db12a/pysui-0.9.0-py3-none-any.whl
+[2023-05-20 12:57:58] INFO root fetch - processPackages [PHX]: Downloading https://files.pythonhosted.org/packages/d5/cf/427f0ced8ef3cc98e22c877b4eb980575483e2cf3ac2387f5e901120b744/PHX-1.9.0.tar.gz
+[2023-05-20 12:57:58] INFO root fetch - processPackages [arclet-alconna]: executing diffoscope
+[2023-05-20 12:57:58] INFO root fetch - processPackages [arclet-alconna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arclet-alconna-1.7.4.tar.gz tmp/arclet-alconna-1.7.5.tar.gz --markdown 20230520/a/arclet-alconna/1.7.4-1.7.5/diff.md --exclude *.pyd
+[2023-05-20 12:57:58] INFO root fetch - processPackages [ldimbenchmark]: executing diffoscope
+[2023-05-20 12:57:58] INFO root fetch - processPackages [ldimbenchmark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ldimbenchmark-0.2.0.tar.gz tmp/ldimbenchmark-0.2.1.tar.gz --markdown 20230520/l/ldimbenchmark/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-20 12:57:58] INFO root fetch - processPackages [gfs-dynamical-core]: Downloading https://files.pythonhosted.org/packages/48/79/3a4c5597ea3a0b7de8d6d75f9838f333fb2d44aed763b84478df3fe820e0/gfs_dynamical_core-0.1.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-20 12:57:58] INFO root fetch - processPackages [pysui]: executing diffoscope
+[2023-05-20 12:57:58] INFO root fetch - processPackages [pysui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysui-0.8.0-py3-none-any.whl.zip tmp/pysui-0.9.0-py3-none-any.whl.zip --markdown 20230520/p/pysui/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-20 12:57:58] INFO root fetch - processPackages [PHX]: executing diffoscope
+[2023-05-20 12:57:58] INFO root fetch - processPackages [PHX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PHX-1.8.1.tar.gz tmp/PHX-1.9.0.tar.gz --markdown 20230520/P/PHX/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-05-20 12:57:58] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2023-05-20 12:57:58] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-3.1.2.tar.gz tmp/ccxt-3.1.3.tar.gz --markdown 20230520/c/ccxt/3.1.2-3.1.3/diff.md --exclude *.pyd
+[2023-05-20 12:57:58] INFO root fetch - processPackages [gfs-dynamical-core]: executing diffoscope
+[2023-05-20 12:57:58] INFO root fetch - processPackages [gfs-dynamical-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gfs_dynamical_core-0.1.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/gfs_dynamical_core-0.1.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230520/g/gfs-dynamical-core/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-20 12:57:59] INFO root fetch - processPackages [fastapi-mqtt]: Start processing: pysubcipher
+[2023-05-20 12:57:59] INFO root fetch - main [MainThread]: End processing [fastapi-mqtt]: success
+[2023-05-20 12:57:59] WARNING root fetch - processPackages [pysubcipher]: Skipping, unable to determine old version
+[2023-05-20 12:57:59] INFO root fetch - processPackages [pysubcipher]: Start processing: gpt4-openai-api
+[2023-05-20 12:57:59] INFO root fetch - main [MainThread]: End processing [pysubcipher] error
+[2023-05-20 12:57:59] INFO root fetch - processPackages [gpt4-openai-api]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-05-20 12:57:59] INFO root fetch - processPackages [ha-services]: Start processing: PatryksAutoAI
+[2023-05-20 12:57:59] INFO root fetch - main [MainThread]: End processing [ha-services]: success
+[2023-05-20 12:57:59] INFO root fetch - main [MainThread]: End processing [Orange3-Tools]: success
+[2023-05-20 12:57:59] INFO root fetch - processPackages [PatryksAutoAI]: New version: [1.5.9] Old Version: [1.5.8]
+[2023-05-20 12:58:00] INFO root fetch - processPackages [gpt4-openai-api]: Downloading https://files.pythonhosted.org/packages/98/bd/142ccc74866f024209b31a0af52668bffdd7057ec63f81380ba07efcbcf6/gpt4-openai-api-0.2.1.tar.gz
+[2023-05-20 12:58:00] INFO root fetch - main [MainThread]: End processing [onboardme]: success
+[2023-05-20 12:58:00] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/ff/f7/782130f33d866eaf396e899738b4fda60db07fe38d06286c7f433b1c54f6/PatryksAutoAI-1.5.9.tar.gz
+[2023-05-20 12:58:00] INFO root fetch - main [MainThread]: End processing [ldimbenchmark]: success
+[2023-05-20 12:58:00] INFO root fetch - main [MainThread]: End processing [arclet-alconna]: success
+[2023-05-20 12:58:00] INFO root fetch - processPackages [PatryksAutoAI]: executing diffoscope
+[2023-05-20 12:58:00] INFO root fetch - processPackages [PatryksAutoAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PatryksAutoAI-1.5.8.tar.gz tmp/PatryksAutoAI-1.5.9.tar.gz --markdown 20230520/P/PatryksAutoAI/1.5.8-1.5.9/diff.md --exclude *.pyd
+[2023-05-20 12:58:00] INFO root fetch - processPackages [gpt4-openai-api]: Downloading https://files.pythonhosted.org/packages/79/2b/253323bebdd4e72120efc98695f5308d27d18426fd8b91855b866c40bd19/gpt4-openai-api-0.3.0.tar.gz
+[2023-05-20 12:58:00] INFO root fetch - processPackages [gpt4-openai-api]: executing diffoscope
+[2023-05-20 12:58:00] INFO root fetch - processPackages [gpt4-openai-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt4-openai-api-0.2.1.tar.gz tmp/gpt4-openai-api-0.3.0.tar.gz --markdown 20230520/g/gpt4-openai-api/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-05-20 12:58:00] INFO root fetch - main [MainThread]: End processing [pysui]: success
+[2023-05-20 12:58:00] INFO root fetch - main [MainThread]: End processing [PHX]: success
+[2023-05-20 12:58:01] INFO root fetch - main [MainThread]: End processing [gpt4-openai-api]: success
+[2023-05-20 12:58:01] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
+[2023-05-20 12:58:09] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2023-05-20 12:58:32] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
+[2023-05-20 12:58:32] INFO root fetch - main [MainThread]: Store serial: [18181373]
