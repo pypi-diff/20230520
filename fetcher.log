@@ -5781,3 +5781,54 @@
 [2023-05-20 06:30:15] INFO root fetch - main [MainThread]: End processing [osgiservicebridge]: success
 [2023-05-20 06:30:15] INFO root fetch - main [MainThread]: End processing [zprocess]: success
 [2023-05-20 06:30:15] INFO root fetch - main [MainThread]: Store serial: [18179654]
+[2023-05-20 06:35:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179654]
+[2023-05-20 06:35:24] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-20 06:35:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bofa-scraper
+[2023-05-20 06:35:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ebbs
+[2023-05-20 06:35:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: text2phonemesequence
+[2023-05-20 06:35:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: multibot
+[2023-05-20 06:35:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lolpop
+[2023-05-20 06:35:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nf6x-eetools
+[2023-05-20 06:35:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: flanautils
+[2023-05-20 06:35:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: snowflake-connector-python-nightly
+[2023-05-20 06:35:24] INFO root fetch - processPackages [text2phonemesequence]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-20 06:35:24] INFO root fetch - processPackages [multibot]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-20 06:35:24] INFO root fetch - processPackages [bofa-scraper]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-20 06:35:24] INFO root fetch - processPackages [lolpop]: New version: [0.1.0a5] Old Version: [0.1.0a4]
+[2023-05-20 06:35:24] WARNING root fetch - processPackages [nf6x-eetools]: Skipping, unable to determine old version
+[2023-05-20 06:35:24] INFO root fetch - main [MainThread]: End processing [nf6x-eetools] error
+[2023-05-20 06:35:24] INFO root fetch - processPackages [flanautils]: New version: [1.7.2] Old Version: [1.7.1]
+[2023-05-20 06:35:24] INFO root fetch - processPackages [ebbs]: New version: [2.2.9] Old Version: [2.2.8]
+[2023-05-20 06:35:25] INFO root fetch - processPackages [bofa-scraper]: Downloading https://files.pythonhosted.org/packages/da/2b/f418e957bdee9d81f552f3ef7885468add60d4a8ae0064551d496cd6e307/bofa_scraper-1.0.1.tar.gz
+[2023-05-20 06:35:25] INFO root fetch - processPackages [text2phonemesequence]: Downloading https://files.pythonhosted.org/packages/b8/5d/50a7c5432cda4d83daa236ca0bc8535c07d5417e762d4ccec331cb269d34/text2phonemesequence-0.0.5.tar.gz
+[2023-05-20 06:35:25] INFO root fetch - processPackages [ebbs]: Downloading https://files.pythonhosted.org/packages/e4/4d/600e9b8522cb5e4288fadbaae0e9d2b951d0b79be24416d8b78414a5efb6/ebbs-2.2.8.tar.gz
+[2023-05-20 06:35:25] INFO root fetch - processPackages [multibot]: Downloading https://files.pythonhosted.org/packages/0b/61/b536993c64115322b420bfe556f51b64e1921d320f710f5430968385c72c/multibot-1.9.1.tar.gz
+[2023-05-20 06:35:25] INFO root fetch - processPackages [flanautils]: Downloading https://files.pythonhosted.org/packages/e2/31/619f67ca17662c3aa5840040d36fad0729aa07d630a8490bfede66e82d2b/flanautils-1.7.1.tar.gz
+[2023-05-20 06:35:25] INFO root fetch - processPackages [text2phonemesequence]: executing diffoscope
+[2023-05-20 06:35:25] INFO root fetch - processPackages [text2phonemesequence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text2phonemesequence-0.0.4.tar.gz tmp/text2phonemesequence-0.0.5.tar.gz --markdown 20230520/t/text2phonemesequence/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-20 06:35:25] INFO root fetch - processPackages [lolpop]: Downloading https://files.pythonhosted.org/packages/8f/be/f76386959f2e4317867aa729c8106579be1da735e04c50cdfe16a6462771/lolpop-0.1.0a5.tar.gz
+[2023-05-20 06:35:25] INFO root fetch - processPackages [snowflake-connector-python-nightly]: New version: [2023.5.3] Old Version: [2023.5.20]
+[2023-05-20 06:35:25] INFO root fetch - processPackages [bofa-scraper]: Downloading https://files.pythonhosted.org/packages/82/40/b45f0f859fcc2c8b8bf0f74db62fd87e20a8b912b333fe27cf1a540ea1bd/bofa_scraper-1.0.2.tar.gz
+[2023-05-20 06:35:25] INFO root fetch - processPackages [multibot]: Downloading https://files.pythonhosted.org/packages/4b/30/070675161ed1061b65bae5e6435bd382fc17bc71f276288b164e2ea3b711/multibot-1.9.2.tar.gz
+[2023-05-20 06:35:25] INFO root fetch - processPackages [ebbs]: Downloading https://files.pythonhosted.org/packages/a1/17/09488d6e7c260166edfebc9cb5a173db17c6d6a621677ea3280cda9da438/ebbs-2.2.9.tar.gz
+[2023-05-20 06:35:25] INFO root fetch - processPackages [multibot]: executing diffoscope
+[2023-05-20 06:35:25] INFO root fetch - processPackages [multibot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multibot-1.9.1.tar.gz tmp/multibot-1.9.2.tar.gz --markdown 20230520/m/multibot/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-20 06:35:25] INFO root fetch - processPackages [lolpop]: executing diffoscope
+[2023-05-20 06:35:25] INFO root fetch - processPackages [lolpop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lolpop-0.1.0a4.tar.gz tmp/lolpop-0.1.0a5.tar.gz --markdown 20230520/l/lolpop/0.1.0a4-0.1.0a5/diff.md --exclude *.pyd
+[2023-05-20 06:35:25] INFO root fetch - processPackages [bofa-scraper]: executing diffoscope
+[2023-05-20 06:35:25] INFO root fetch - processPackages [bofa-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bofa_scraper-1.0.1.tar.gz tmp/bofa_scraper-1.0.2.tar.gz --markdown 20230520/b/bofa-scraper/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-20 06:35:25] INFO root fetch - processPackages [flanautils]: Downloading https://files.pythonhosted.org/packages/dd/1b/ead17906650f5275e9bcda84975f6612a1cfcdb7fee8389c659f401ff60d/flanautils-1.7.2.tar.gz
+[2023-05-20 06:35:25] INFO root fetch - processPackages [ebbs]: executing diffoscope
+[2023-05-20 06:35:25] INFO root fetch - processPackages [ebbs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ebbs-2.2.8.tar.gz tmp/ebbs-2.2.9.tar.gz --markdown 20230520/e/ebbs/2.2.8-2.2.9/diff.md --exclude *.pyd
+[2023-05-20 06:35:25] INFO root fetch - processPackages [snowflake-connector-python-nightly]: Downloading https://files.pythonhosted.org/packages/ec/c8/8b626fb07bfa183a8304ef41e92fe92b5180b6b0f7cf81bc1ec5dee166a5/snowflake_connector_python_nightly-2023.5.20-cp311-cp311-macosx_11_0_arm64.whl
+[2023-05-20 06:35:25] INFO root fetch - processPackages [flanautils]: executing diffoscope
+[2023-05-20 06:35:25] INFO root fetch - processPackages [flanautils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flanautils-1.7.1.tar.gz tmp/flanautils-1.7.2.tar.gz --markdown 20230520/f/flanautils/1.7.1-1.7.2/diff.md --exclude *.pyd
+[2023-05-20 06:35:25] WARNING root fetch - processPackages [snowflake-connector-python-nightly]: Skipping package: exceeds size limit 15413001>=10485760
+[2023-05-20 06:35:25] INFO root fetch - main [MainThread]: End processing [snowflake-connector-python-nightly] error
+[2023-05-20 06:35:26] INFO root fetch - main [MainThread]: End processing [text2phonemesequence]: success
+[2023-05-20 06:35:26] INFO root fetch - main [MainThread]: End processing [multibot]: success
+[2023-05-20 06:35:26] INFO root fetch - main [MainThread]: End processing [bofa-scraper]: success
+[2023-05-20 06:35:27] INFO root fetch - main [MainThread]: End processing [ebbs]: success
+[2023-05-20 06:35:27] INFO root fetch - main [MainThread]: End processing [flanautils]: success
+[2023-05-20 06:35:27] INFO root fetch - main [MainThread]: End processing [lolpop]: success
+[2023-05-20 06:35:27] INFO root fetch - main [MainThread]: Store serial: [18179687]
