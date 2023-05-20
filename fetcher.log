@@ -11212,3 +11212,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 18:01:08] INFO root fetch - main [MainThread]: End processing [ssm-simulators]: success
 [2023-05-20 18:01:08] INFO root fetch - main [MainThread]: End processing [dogpile.cache]: success
 [2023-05-20 18:01:08] INFO root fetch - main [MainThread]: Store serial: [18183190]
+[2023-05-20 18:06:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183190]
+[2023-05-20 18:06:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 18:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: osnap-client
+[2023-05-20 18:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbtdocgen-rutryk
+[2023-05-20 18:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ssm-simulators
+[2023-05-20 18:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: notification-service-nightly
+[2023-05-20 18:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ai-flow-nightly
+[2023-05-20 18:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PyDistances
+[2023-05-20 18:06:18] INFO root fetch - processPackages [ssm-simulators]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-20 18:06:18] INFO root fetch - processPackages [dbtdocgen-rutryk]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-20 18:06:18] INFO root fetch - processPackages [notification-service-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-20 18:06:18] INFO root fetch - processPackages [osnap-client]: New version: [0.1.1a3] Old Version: [0.1.1a2]
+[2023-05-20 18:06:18] INFO root fetch - processPackages [ai-flow-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-20 18:06:18] INFO root fetch - processPackages [PyDistances]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 18:06:18] INFO root fetch - processPackages [ai-flow-nightly]: executing diffoscope
+[2023-05-20 18:06:18] INFO root fetch - processPackages [ai-flow-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_flow_nightly-2023.5.8.tar.gz tmp/ai_flow_nightly-2023.5.9.tar.gz --markdown 20230520/a/ai-flow-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-20 18:06:18] INFO root fetch - processPackages [notification-service-nightly]: executing diffoscope
+[2023-05-20 18:06:18] INFO root fetch - processPackages [notification-service-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notification_service_nightly-2023.5.8.tar.gz tmp/notification_service_nightly-2023.5.9.tar.gz --markdown 20230520/n/notification-service-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-20 18:06:18] INFO root fetch - processPackages [PyDistances]: executing diffoscope
+[2023-05-20 18:06:18] INFO root fetch - processPackages [PyDistances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyDistances-0.0.8.tar.gz tmp/PyDistances-0.0.9.tar.gz --markdown 20230520/P/PyDistances/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 18:06:18] INFO root fetch - processPackages [ssm-simulators]: Downloading https://files.pythonhosted.org/packages/e7/3f/7b485cbd0788d8b27f8f938658bf55abbf254edcaebebf43de5908cb1f6f/ssm-simulators-0.3.2.tar.gz
+[2023-05-20 18:06:18] INFO root fetch - processPackages [dbtdocgen-rutryk]: Downloading https://files.pythonhosted.org/packages/6f/a5/6e2b1cfd83dfdbd6fa695a1a305c8032e0baa86c1565b2995845caaa5fb2/dbtdocgen_rutryk-0.0.5.tar.gz
+[2023-05-20 18:06:18] INFO root fetch - processPackages [osnap-client]: Downloading https://files.pythonhosted.org/packages/53/1f/1f7fcf56e6bb95ea457b75bd0623db5741071402d0c7483025640c88b981/osnap_client-0.1.1a3.tar.gz
+[2023-05-20 18:06:18] INFO root fetch - processPackages [ssm-simulators]: executing diffoscope
+[2023-05-20 18:06:18] INFO root fetch - processPackages [ssm-simulators]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssm-simulators-0.3.1.tar.gz tmp/ssm-simulators-0.3.2.tar.gz --markdown 20230520/s/ssm-simulators/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-20 18:06:18] INFO root fetch - processPackages [dbtdocgen-rutryk]: executing diffoscope
+[2023-05-20 18:06:18] INFO root fetch - processPackages [dbtdocgen-rutryk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbtdocgen_rutryk-0.0.4.tar.gz tmp/dbtdocgen_rutryk-0.0.5.tar.gz --markdown 20230520/d/dbtdocgen-rutryk/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-20 18:06:18] INFO root fetch - processPackages [osnap-client]: executing diffoscope
+[2023-05-20 18:06:18] INFO root fetch - processPackages [osnap-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osnap_client-0.1.1a2.tar.gz tmp/osnap_client-0.1.1a3.tar.gz --markdown 20230520/o/osnap-client/0.1.1a2-0.1.1a3/diff.md --exclude *.pyd
+[2023-05-20 18:06:19] INFO root fetch - main [MainThread]: End processing [notification-service-nightly]: success
+[2023-05-20 18:06:19] INFO root fetch - main [MainThread]: End processing [dbtdocgen-rutryk]: success
+[2023-05-20 18:06:19] INFO root fetch - main [MainThread]: End processing [osnap-client]: success
+[2023-05-20 18:06:19] INFO root fetch - main [MainThread]: End processing [PyDistances]: success
+[2023-05-20 18:06:20] INFO root fetch - main [MainThread]: End processing [ssm-simulators]: success
+[2023-05-20 18:06:22] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
+[2023-05-20 18:06:22] INFO root fetch - main [MainThread]: Store serial: [18183207]
