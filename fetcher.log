@@ -7809,3 +7809,18 @@
 [2023-05-20 11:43:35] INFO root fetch - main [MainThread]: End processing [viper-lib]: success
 [2023-05-20 11:43:35] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
 [2023-05-20 11:43:35] INFO root fetch - main [MainThread]: Store serial: [18180973]
+[2023-05-20 11:48:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180973]
+[2023-05-20 11:48:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-20 11:48:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xuanpolicy
+[2023-05-20 11:48:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Pandora-ChatGPT
+[2023-05-20 11:48:44] INFO root fetch - processPackages [xuanpolicy]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-20 11:48:44] INFO root fetch - processPackages [Pandora-ChatGPT]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-05-20 11:48:44] INFO root fetch - processPackages [xuanpolicy]: Downloading https://files.pythonhosted.org/packages/e8/03/10fb384de2c1974a2ab0bcfef11826f025f18bd6263f6b3080238b69c849/xuanpolicy-0.1.3.tar.gz
+[2023-05-20 11:48:44] INFO root fetch - processPackages [Pandora-ChatGPT]: Downloading https://files.pythonhosted.org/packages/c0/fd/bf94664f69ed3817bf25a890b3fdf5e33060741c44ac4dcdfbd69ec7bf95/Pandora-ChatGPT-1.1.5.tar.gz
+[2023-05-20 11:48:44] INFO root fetch - processPackages [Pandora-ChatGPT]: executing diffoscope
+[2023-05-20 11:48:44] INFO root fetch - processPackages [Pandora-ChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pandora-ChatGPT-1.1.4.tar.gz tmp/Pandora-ChatGPT-1.1.5.tar.gz --markdown 20230520/P/Pandora-ChatGPT/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-05-20 11:48:44] INFO root fetch - processPackages [xuanpolicy]: executing diffoscope
+[2023-05-20 11:48:44] INFO root fetch - processPackages [xuanpolicy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xuanpolicy-0.1.2.tar.gz tmp/xuanpolicy-0.1.3.tar.gz --markdown 20230520/x/xuanpolicy/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-20 11:48:46] INFO root fetch - main [MainThread]: End processing [Pandora-ChatGPT]: success
+[2023-05-20 11:48:46] INFO root fetch - main [MainThread]: End processing [xuanpolicy]: success
+[2023-05-20 11:48:46] INFO root fetch - main [MainThread]: Store serial: [18180979]
