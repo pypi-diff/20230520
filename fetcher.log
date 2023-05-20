@@ -11462,3 +11462,26 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 18:37:55] INFO root fetch - main [MainThread]: End processing [tomcru]: success
 [2023-05-20 18:37:55] INFO root fetch - main [MainThread]: End processing [plenoptic]: success
 [2023-05-20 18:37:55] INFO root fetch - main [MainThread]: Store serial: [18183311]
+[2023-05-20 18:42:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183311]
+[2023-05-20 18:43:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 18:43:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mimeograph
+[2023-05-20 18:43:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: denoising-diffusion-pytorch
+[2023-05-20 18:43:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dbtdocgen-rutryk
+[2023-05-20 18:43:04] INFO root fetch - processPackages [dbtdocgen-rutryk]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-20 18:43:04] INFO root fetch - processPackages [mimeograph]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-20 18:43:04] INFO root fetch - processPackages [denoising-diffusion-pytorch]: New version: [1.6.2] Old Version: [1.6.1]
+[2023-05-20 18:43:04] INFO root fetch - processPackages [mimeograph]: Downloading https://files.pythonhosted.org/packages/72/de/717c28ce48e55b8b62404ad6788ac7f2f406ce9d93b68fc5212049ab52a2/mimeograph-0.5.0.tar.gz
+[2023-05-20 18:43:04] INFO root fetch - processPackages [dbtdocgen-rutryk]: Downloading https://files.pythonhosted.org/packages/b1/2c/fd7516d487bb44196fa49340510958ea181ac2d756461e34f3e9980d69c8/dbtdocgen_rutryk-0.0.7.tar.gz
+[2023-05-20 18:43:05] INFO root fetch - processPackages [denoising-diffusion-pytorch]: Downloading https://files.pythonhosted.org/packages/f8/b5/4133511493e25721177840bfdfe466c4886eb0c81e4f92af11a9668cbf89/denoising-diffusion-pytorch-1.6.1.tar.gz
+[2023-05-20 18:43:05] INFO root fetch - processPackages [dbtdocgen-rutryk]: executing diffoscope
+[2023-05-20 18:43:05] INFO root fetch - processPackages [dbtdocgen-rutryk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbtdocgen_rutryk-0.0.6.tar.gz tmp/dbtdocgen_rutryk-0.0.7.tar.gz --markdown 20230520/d/dbtdocgen-rutryk/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-20 18:43:05] INFO root fetch - processPackages [mimeograph]: Downloading https://files.pythonhosted.org/packages/37/74/1898ac057cfc3d593a33e2c8099898c9441890d75ee0949d2d2d77da0a45/mimeograph-0.6.0.tar.gz
+[2023-05-20 18:43:05] INFO root fetch - processPackages [denoising-diffusion-pytorch]: Downloading https://files.pythonhosted.org/packages/2c/c0/51b28bbf8d3bb88ea3b5b1f35a4b437733d30e28b7992410a070fb054bcb/denoising-diffusion-pytorch-1.6.2.tar.gz
+[2023-05-20 18:43:05] INFO root fetch - processPackages [mimeograph]: executing diffoscope
+[2023-05-20 18:43:05] INFO root fetch - processPackages [mimeograph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimeograph-0.5.0.tar.gz tmp/mimeograph-0.6.0.tar.gz --markdown 20230520/m/mimeograph/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-20 18:43:05] INFO root fetch - processPackages [denoising-diffusion-pytorch]: executing diffoscope
+[2023-05-20 18:43:05] INFO root fetch - processPackages [denoising-diffusion-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/denoising-diffusion-pytorch-1.6.1.tar.gz tmp/denoising-diffusion-pytorch-1.6.2.tar.gz --markdown 20230520/d/denoising-diffusion-pytorch/1.6.1-1.6.2/diff.md --exclude *.pyd
+[2023-05-20 18:43:06] INFO root fetch - main [MainThread]: End processing [dbtdocgen-rutryk]: success
+[2023-05-20 18:43:06] INFO root fetch - main [MainThread]: End processing [denoising-diffusion-pytorch]: success
+[2023-05-20 18:43:07] INFO root fetch - main [MainThread]: End processing [mimeograph]: success
+[2023-05-20 18:43:07] INFO root fetch - main [MainThread]: Store serial: [18183320]
