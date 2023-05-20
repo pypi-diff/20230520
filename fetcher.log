@@ -10590,3 +10590,34 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 16:52:31] INFO root fetch - main [MainThread]: End processing [Glances]: success
 [2023-05-20 16:52:32] INFO root fetch - main [MainThread]: End processing [apysc]: success
 [2023-05-20 16:52:32] INFO root fetch - main [MainThread]: Store serial: [18182767]
+[2023-05-20 16:57:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182767]
+[2023-05-20 16:57:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-20 16:57:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: file-and-string-encryption
+[2023-05-20 16:57:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyloobins
+[2023-05-20 16:57:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: temboz
+[2023-05-20 16:57:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bcsfe-discord
+[2023-05-20 16:57:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: difference-finder
+[2023-05-20 16:57:40] WARNING root fetch - processPackages [difference-finder]: Skipping, unable to determine old version
+[2023-05-20 16:57:40] INFO root fetch - main [MainThread]: End processing [difference-finder] error
+[2023-05-20 16:57:40] INFO root fetch - processPackages [file-and-string-encryption]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-20 16:57:40] INFO root fetch - processPackages [temboz]: New version: [4.9] Old Version: [4.8]
+[2023-05-20 16:57:40] INFO root fetch - processPackages [pyloobins]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-20 16:57:40] INFO root fetch - processPackages [bcsfe-discord]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-05-20 16:57:41] INFO root fetch - processPackages [bcsfe-discord]: executing diffoscope
+[2023-05-20 16:57:41] INFO root fetch - processPackages [bcsfe-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bcsfe-discord-2.7.8.tar.gz tmp/bcsfe-discord-2.7.9.tar.gz --markdown 20230520/b/bcsfe-discord/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-05-20 16:57:41] INFO root fetch - processPackages [file-and-string-encryption]: Downloading https://files.pythonhosted.org/packages/3a/fd/6a56782784f4b76e57b819570da1b8dbbb40f6e21b4c5fb55dd627d23733/file_and_string_encryption-0.0.2.tar.gz
+[2023-05-20 16:57:41] INFO root fetch - processPackages [temboz]: Downloading https://files.pythonhosted.org/packages/e2/55/5f76dd54acabab7fd8702b04b4d2ce33a7efe7e6ec12e852f064c6c28321/temboz-4.8.tar.gz
+[2023-05-20 16:57:41] INFO root fetch - processPackages [pyloobins]: Downloading https://files.pythonhosted.org/packages/22/fe/9c4415a74dfa1364b4ba926fb403ce9bf28a7116b964807826bb8f89f339/pyloobins-0.1.5.tar.gz
+[2023-05-20 16:57:41] INFO root fetch - processPackages [file-and-string-encryption]: executing diffoscope
+[2023-05-20 16:57:41] INFO root fetch - processPackages [file-and-string-encryption]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/file_and_string_encryption-0.0.1.tar.gz tmp/file_and_string_encryption-0.0.2.tar.gz --markdown 20230520/f/file-and-string-encryption/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-20 16:57:41] INFO root fetch - processPackages [pyloobins]: Downloading https://files.pythonhosted.org/packages/fd/25/473866c3b14c8537c1fd94ca76c4442c057fd6f61b1cbbe8342734ff8495/pyloobins-0.1.6.tar.gz
+[2023-05-20 16:57:41] INFO root fetch - processPackages [pyloobins]: executing diffoscope
+[2023-05-20 16:57:41] INFO root fetch - processPackages [pyloobins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyloobins-0.1.5.tar.gz tmp/pyloobins-0.1.6.tar.gz --markdown 20230520/p/pyloobins/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-20 16:57:41] INFO root fetch - processPackages [temboz]: Downloading https://files.pythonhosted.org/packages/1b/7e/0a49978e18abbf63577347e3c0049de85a8db07033cb49601356f2d59ee3/temboz-4.9.tar.gz
+[2023-05-20 16:57:41] INFO root fetch - processPackages [temboz]: executing diffoscope
+[2023-05-20 16:57:41] INFO root fetch - processPackages [temboz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/temboz-4.8.tar.gz tmp/temboz-4.9.tar.gz --markdown 20230520/t/temboz/4.8-4.9/diff.md --exclude *.pyd
+[2023-05-20 16:57:42] INFO root fetch - main [MainThread]: End processing [file-and-string-encryption]: success
+[2023-05-20 16:57:42] INFO root fetch - main [MainThread]: End processing [bcsfe-discord]: success
+[2023-05-20 16:57:42] INFO root fetch - main [MainThread]: End processing [pyloobins]: success
+[2023-05-20 16:57:45] INFO root fetch - main [MainThread]: End processing [temboz]: success
+[2023-05-20 16:57:45] INFO root fetch - main [MainThread]: Store serial: [18182784]
