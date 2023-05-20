@@ -7339,3 +7339,38 @@
 [2023-05-20 10:49:18] ERROR root fetch - processPackages [mkdocs-material]: Timeout during execution of pkgdiff
 [2023-05-20 10:49:18] INFO root fetch - main [MainThread]: End processing [mkdocs-material] error
 [2023-05-20 10:49:18] INFO root fetch - main [MainThread]: Store serial: [18180688]
+[2023-05-20 10:54:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180688]
+[2023-05-20 10:54:28] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 10:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: json-timeseries
+[2023-05-20 10:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: enoppy
+[2023-05-20 10:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: age-detection-local
+[2023-05-20 10:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: NotionLab
+[2023-05-20 10:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: manim-voiceover
+[2023-05-20 10:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sftp-uploader
+[2023-05-20 10:54:28] INFO root fetch - processPackages [json-timeseries]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-20 10:54:28] INFO root fetch - processPackages [manim-voiceover]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-20 10:54:28] WARNING root fetch - processPackages [enoppy]: Skipping, unable to determine old version
+[2023-05-20 10:54:28] INFO root fetch - main [MainThread]: End processing [enoppy] error
+[2023-05-20 10:54:28] WARNING root fetch - processPackages [age-detection-local]: Skipping, unable to determine old version
+[2023-05-20 10:54:28] INFO root fetch - main [MainThread]: End processing [age-detection-local] error
+[2023-05-20 10:54:28] INFO root fetch - processPackages [NotionLab]: New version: [1.1.3] Old Version: [1.1.1]
+[2023-05-20 10:54:28] INFO root fetch - processPackages [sftp-uploader]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-20 10:54:28] INFO root fetch - processPackages [manim-voiceover]: Downloading https://files.pythonhosted.org/packages/09/c3/8733a6ebe0ff936fb1e90db09f91efd854114a21c0863df54a549c0a3a91/manim_voiceover-0.3.0.tar.gz
+[2023-05-20 10:54:28] INFO root fetch - processPackages [NotionLab]: Downloading https://files.pythonhosted.org/packages/f6/4d/a2ba7a5d325ac3338cebb7d8332f99819e0897e6747f60e71f6f85b3eed7/NotionLab-1.1.1.tar.gz
+[2023-05-20 10:54:28] INFO root fetch - processPackages [json-timeseries]: Downloading https://files.pythonhosted.org/packages/a7/46/40e20b6af47c393233ec603d7c8a35345f27edccf8ff912afe74e0dcd525/json_timeseries-0.1.4.tar.gz
+[2023-05-20 10:54:28] INFO root fetch - processPackages [json-timeseries]: executing diffoscope
+[2023-05-20 10:54:28] INFO root fetch - processPackages [json-timeseries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_timeseries-0.1.3.tar.gz tmp/json_timeseries-0.1.4.tar.gz --markdown 20230520/j/json-timeseries/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-20 10:54:29] INFO root fetch - processPackages [NotionLab]: Downloading https://files.pythonhosted.org/packages/ea/60/b0e169d2ebc6e27056e8de639406fb570a2b0dc7e907ee08c318bb1d4e6c/NotionLab-1.1.3.tar.gz
+[2023-05-20 10:54:29] INFO root fetch - processPackages [sftp-uploader]: Downloading https://files.pythonhosted.org/packages/13/bd/1455696ea25030a365d75397d0525b498bc1adedcd8b01cb75cde20cc667/sftp_uploader-0.1.2.tar.gz
+[2023-05-20 10:54:29] INFO root fetch - processPackages [manim-voiceover]: Downloading https://files.pythonhosted.org/packages/f5/1e/e36267cabe466f19de1809d091ebdbf550c0fc05ec79899b9b91c8ab1658/manim_voiceover-0.3.1.tar.gz
+[2023-05-20 10:54:29] INFO root fetch - processPackages [NotionLab]: executing diffoscope
+[2023-05-20 10:54:29] INFO root fetch - processPackages [NotionLab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NotionLab-1.1.1.tar.gz tmp/NotionLab-1.1.3.tar.gz --markdown 20230520/N/NotionLab/1.1.1-1.1.3/diff.md --exclude *.pyd
+[2023-05-20 10:54:29] INFO root fetch - processPackages [manim-voiceover]: executing diffoscope
+[2023-05-20 10:54:29] INFO root fetch - processPackages [manim-voiceover]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manim_voiceover-0.3.0.tar.gz tmp/manim_voiceover-0.3.1.tar.gz --markdown 20230520/m/manim-voiceover/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-20 10:54:29] INFO root fetch - processPackages [sftp-uploader]: executing diffoscope
+[2023-05-20 10:54:29] INFO root fetch - processPackages [sftp-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sftp_uploader-0.1.1.tar.gz tmp/sftp_uploader-0.1.2.tar.gz --markdown 20230520/s/sftp-uploader/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-20 10:54:30] INFO root fetch - main [MainThread]: End processing [json-timeseries]: success
+[2023-05-20 10:54:30] INFO root fetch - main [MainThread]: End processing [manim-voiceover]: success
+[2023-05-20 10:54:30] INFO root fetch - main [MainThread]: End processing [sftp-uploader]: success
+[2023-05-20 10:55:11] INFO root fetch - main [MainThread]: End processing [NotionLab]: success
+[2023-05-20 10:55:11] INFO root fetch - main [MainThread]: Store serial: [18180719]
