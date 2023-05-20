@@ -10877,3 +10877,57 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 17:28:14] INFO root fetch - main [MainThread]: End processing [classy-imaginary]: success
 [2023-05-20 17:28:15] INFO root fetch - main [MainThread]: End processing [PyEng]: success
 [2023-05-20 17:28:15] INFO root fetch - main [MainThread]: Store serial: [18182965]
+[2023-05-20 17:33:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182965]
+[2023-05-20 17:33:24] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-20 17:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: difference-finder
+[2023-05-20 17:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shikithon
+[2023-05-20 17:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dbtdocgen-rutryk
+[2023-05-20 17:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-tbase-theme-tailwind
+[2023-05-20 17:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: foliolib
+[2023-05-20 17:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: oarepo-model-builder-cf
+[2023-05-20 17:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: isoCycle
+[2023-05-20 17:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: osgiservicebridge
+[2023-05-20 17:33:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mosek-license-server
+[2023-05-20 17:33:24] WARNING root fetch - processPackages [dbtdocgen-rutryk]: Skipping, unable to determine old version
+[2023-05-20 17:33:24] INFO root fetch - main [MainThread]: End processing [dbtdocgen-rutryk] error
+[2023-05-20 17:33:24] INFO root fetch - processPackages [difference-finder]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-20 17:33:24] INFO root fetch - processPackages [mosek-license-server]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-20 17:33:24] INFO root fetch - processPackages [shikithon]: New version: [2.5.1] Old Version: [2.5]
+[2023-05-20 17:33:24] INFO root fetch - processPackages [isoCycle]: New version: [0.0.26] Old Version: [0.0.25]
+[2023-05-20 17:33:24] INFO root fetch - processPackages [oarepo-model-builder-cf]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-20 17:33:24] INFO root fetch - processPackages [osgiservicebridge]: New version: [1.5.3] Old Version: [1.5.2]
+[2023-05-20 17:33:24] INFO root fetch - processPackages [isoCycle]: Downloading https://files.pythonhosted.org/packages/31/1c/4734f11b0c9e510980f1f88dc744398934c0a8bb884511b534fb09115337/isoCycle-0.0.25.tar.gz
+[2023-05-20 17:33:24] WARNING root fetch - processPackages [isoCycle]: Skipping package: exceeds size limit 90316174>=10485760
+[2023-05-20 17:33:24] WARNING root fetch - processPackages [django-tbase-theme-tailwind]: Skipping, unable to determine old version
+[2023-05-20 17:33:24] INFO root fetch - main [MainThread]: End processing [isoCycle] error
+[2023-05-20 17:33:24] INFO root fetch - main [MainThread]: End processing [django-tbase-theme-tailwind] error
+[2023-05-20 17:33:24] INFO root fetch - processPackages [foliolib]: New version: [0.3.5a1] Old Version: [0.3.4a1]
+[2023-05-20 17:33:24] INFO root fetch - processPackages [osgiservicebridge]: executing diffoscope
+[2023-05-20 17:33:24] INFO root fetch - processPackages [osgiservicebridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osgiservicebridge-1.5.2.tar.gz tmp/osgiservicebridge-1.5.3.tar.gz --markdown 20230520/o/osgiservicebridge/1.5.2-1.5.3/diff.md --exclude *.pyd
+[2023-05-20 17:33:24] INFO root fetch - processPackages [difference-finder]: Downloading https://files.pythonhosted.org/packages/c2/a5/d01d421c0afc3de55dc1729fef3e6daae0f03391df275cda0cb5d98e4046/difference_finder-0.0.1.tar.gz
+[2023-05-20 17:33:24] INFO root fetch - processPackages [shikithon]: Downloading https://files.pythonhosted.org/packages/15/55/194e1b9664723d07129c7cddde215075c2131d52a6e69b357949b8646aee/shikithon-2.5.tar.gz
+[2023-05-20 17:33:24] INFO root fetch - processPackages [mosek-license-server]: Downloading https://files.pythonhosted.org/packages/10/cb/cf8255efe2504626ba06ada67189e7d823f7314d437b8214322f9bfeaff4/mosek_license_server-0.0.6.tar.gz
+[2023-05-20 17:33:24] INFO root fetch - processPackages [oarepo-model-builder-cf]: Downloading https://files.pythonhosted.org/packages/e8/af/70c2edec68faccaf3a02e4bf152b08f1b881abaf3d6fb2f53073cafb0ba7/oarepo-model-builder-cf-1.0.0.tar.gz
+[2023-05-20 17:33:24] INFO root fetch - processPackages [foliolib]: Downloading https://files.pythonhosted.org/packages/52/30/8cf1f02a0ebf7ed3c9338bdb5fa4a46f74c232052200648b1c40bc049359/foliolib-0.3.4a1.tar.gz
+[2023-05-20 17:33:24] INFO root fetch - processPackages [difference-finder]: Downloading https://files.pythonhosted.org/packages/af/dd/e66e7be2f1e0615bf0478f9b3d97fe29e0a2975a90f17c685a6b723c88d5/difference_finder-0.0.2.tar.gz
+[2023-05-20 17:33:24] INFO root fetch - processPackages [shikithon]: Downloading https://files.pythonhosted.org/packages/88/2a/9c568724a3801c98872550070eb5c5dd41a447eb39a91bb500371cb13b8a/shikithon-2.5.1.tar.gz
+[2023-05-20 17:33:24] INFO root fetch - processPackages [oarepo-model-builder-cf]: Downloading https://files.pythonhosted.org/packages/3e/58/bd1a9fe7f3b9471337f7819fce5162e57d2e2a7b2f0ad60e7f8a020a59f4/oarepo-model-builder-cf-1.0.1.tar.gz
+[2023-05-20 17:33:24] INFO root fetch - processPackages [difference-finder]: executing diffoscope
+[2023-05-20 17:33:24] INFO root fetch - processPackages [difference-finder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/difference_finder-0.0.1.tar.gz tmp/difference_finder-0.0.2.tar.gz --markdown 20230520/d/difference-finder/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-20 17:33:24] INFO root fetch - processPackages [shikithon]: executing diffoscope
+[2023-05-20 17:33:24] INFO root fetch - processPackages [oarepo-model-builder-cf]: executing diffoscope
+[2023-05-20 17:33:24] INFO root fetch - processPackages [shikithon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shikithon-2.5.tar.gz tmp/shikithon-2.5.1.tar.gz --markdown 20230520/s/shikithon/2.5-2.5.1/diff.md --exclude *.pyd
+[2023-05-20 17:33:24] INFO root fetch - processPackages [oarepo-model-builder-cf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-model-builder-cf-1.0.0.tar.gz tmp/oarepo-model-builder-cf-1.0.1.tar.gz --markdown 20230520/o/oarepo-model-builder-cf/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-20 17:33:24] INFO root fetch - processPackages [mosek-license-server]: Downloading https://files.pythonhosted.org/packages/1f/c1/c23196b2109f3d739f1b27cba6749ecec1edac8b683b61380a82916fd9fd/mosek_license_server-0.0.7.tar.gz
+[2023-05-20 17:33:24] INFO root fetch - processPackages [foliolib]: Downloading https://files.pythonhosted.org/packages/8d/37/89e3c4135793432b0aa71e509213c789e54a473de09df49cf4abf3ceadd0/foliolib-0.3.5a1.tar.gz
+[2023-05-20 17:33:24] INFO root fetch - processPackages [mosek-license-server]: executing diffoscope
+[2023-05-20 17:33:24] INFO root fetch - processPackages [mosek-license-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mosek_license_server-0.0.6.tar.gz tmp/mosek_license_server-0.0.7.tar.gz --markdown 20230520/m/mosek-license-server/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-20 17:33:24] INFO root fetch - processPackages [foliolib]: executing diffoscope
+[2023-05-20 17:33:24] INFO root fetch - processPackages [foliolib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foliolib-0.3.4a1.tar.gz tmp/foliolib-0.3.5a1.tar.gz --markdown 20230520/f/foliolib/0.3.4a1-0.3.5a1/diff.md --exclude *.pyd
+[2023-05-20 17:33:25] INFO root fetch - main [MainThread]: End processing [difference-finder]: success
+[2023-05-20 17:33:26] INFO root fetch - main [MainThread]: End processing [oarepo-model-builder-cf]: success
+[2023-05-20 17:33:26] INFO root fetch - main [MainThread]: End processing [mosek-license-server]: success
+[2023-05-20 17:33:26] INFO root fetch - main [MainThread]: End processing [shikithon]: success
+[2023-05-20 17:33:27] INFO root fetch - main [MainThread]: End processing [osgiservicebridge]: success
+[2023-05-20 17:33:30] INFO root fetch - main [MainThread]: End processing [foliolib]: success
+[2023-05-20 17:33:30] INFO root fetch - main [MainThread]: Store serial: [18182996]
