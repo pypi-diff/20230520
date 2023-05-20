@@ -7702,3 +7702,55 @@
 [2023-05-20 11:31:48] INFO root fetch - main [MainThread]: End processing [odoo14-addon-pms]: success
 [2023-05-20 11:32:29] INFO root fetch - main [MainThread]: End processing [motionblinds]: success
 [2023-05-20 11:32:29] INFO root fetch - main [MainThread]: Store serial: [18180904]
+[2023-05-20 11:37:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180904]
+[2023-05-20 11:37:37] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-20 11:37:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyalltools
+[2023-05-20 11:37:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: schemathesis
+[2023-05-20 11:37:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyvrp
+[2023-05-20 11:37:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sha256bit
+[2023-05-20 11:37:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-pos-payment-change
+[2023-05-20 11:37:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fetchify
+[2023-05-20 11:37:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Pandora-Cloud
+[2023-05-20 11:37:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fetchify
+[2023-05-20 11:37:38] INFO root fetch - processPackages [fetchify]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-20 11:37:38] WARNING root fetch - processPackages [pyalltools]: Skipping, unable to determine old version
+[2023-05-20 11:37:38] INFO root fetch - main [MainThread]: End processing [pyalltools] error
+[2023-05-20 11:37:38] INFO root fetch - processPackages [pyvrp]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-05-20 11:37:38] INFO root fetch - processPackages [sha256bit]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-05-20 11:37:38] INFO root fetch - processPackages [schemathesis]: New version: [3.9.7] Old Version: [3.9.6]
+[2023-05-20 11:37:38] INFO root fetch - processPackages [odoo-addon-pos-payment-change]: New version: [16.0.1.0.0.6] Old Version: [16.0.1.0.0.5]
+[2023-05-20 11:37:38] INFO root fetch - processPackages [fetchify]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-20 11:37:38] INFO root fetch - processPackages [Pandora-Cloud]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-20 11:37:38] INFO root fetch - processPackages [fetchify]: Downloading https://files.pythonhosted.org/packages/36/a8/c009800b3744cfdc16be91074a7e8a4ca41a106a8739bef1d46f18bd5562/fetchify-1.0.1.tar.gz
+[2023-05-20 11:37:38] INFO root fetch - processPackages [pyvrp]: Downloading https://files.pythonhosted.org/packages/a9/79/72e3e3e80db0b3388ef29ec6c591c0fafe59fcc32a4949f4050bc5686b0f/pyvrp-0.2.1.tar.gz
+[2023-05-20 11:37:38] INFO root fetch - processPackages [fetchify]: Downloading https://files.pythonhosted.org/packages/36/a8/c009800b3744cfdc16be91074a7e8a4ca41a106a8739bef1d46f18bd5562/fetchify-1.0.1.tar.gz
+[2023-05-20 11:37:38] INFO root fetch - processPackages [Pandora-Cloud]: Downloading https://files.pythonhosted.org/packages/b3/71/2a361bf451f686340996218b76e4e78afc108e697a2d9348dc63e3918043/Pandora-Cloud-0.2.2.tar.gz
+[2023-05-20 11:37:38] INFO root fetch - processPackages [schemathesis]: Downloading https://files.pythonhosted.org/packages/8b/ae/800bafd763c2c4b5c0f366a9bf84f7f1eb955e0b2fc7de12e30acfad31cd/schemathesis-3.9.6.tar.gz
+[2023-05-20 11:37:38] INFO root fetch - processPackages [odoo-addon-pos-payment-change]: Downloading https://files.pythonhosted.org/packages/70/a2/19e18d913a42a6480a99694263ed30f89cbdb0e7af1864d87641db889eae/odoo_addon_pos_payment_change-16.0.1.0.0.6-py3-none-any.whl
+[2023-05-20 11:37:39] INFO root fetch - processPackages [sha256bit]: Downloading https://files.pythonhosted.org/packages/32/61/2faae15ebab9f907e7a6d70e03e073d6467a96117f913e0b22b4e80a16d3/sha256bit-0.0.5.tar.gz
+[2023-05-20 11:37:40] INFO root fetch - processPackages [odoo-addon-pos-payment-change]: executing diffoscope
+[2023-05-20 11:37:40] INFO root fetch - processPackages [odoo-addon-pos-payment-change]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_pos_payment_change-16.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_pos_payment_change-16.0.1.0.0.6-py3-none-any.whl.zip --markdown 20230520/o/odoo-addon-pos-payment-change/16.0.1.0.0.5-16.0.1.0.0.6/diff.md --exclude *.pyd
+[2023-05-20 11:37:40] INFO root fetch - processPackages [Pandora-Cloud]: executing diffoscope
+[2023-05-20 11:37:40] INFO root fetch - processPackages [Pandora-Cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pandora-Cloud-0.2.1.tar.gz tmp/Pandora-Cloud-0.2.2.tar.gz --markdown 20230520/P/Pandora-Cloud/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-20 11:37:40] INFO root fetch - processPackages [sha256bit]: executing diffoscope
+[2023-05-20 11:37:40] INFO root fetch - processPackages [sha256bit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sha256bit-0.0.3.tar.gz tmp/sha256bit-0.0.5.tar.gz --markdown 20230520/s/sha256bit/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-05-20 11:37:40] INFO root fetch - processPackages [pyvrp]: Downloading https://files.pythonhosted.org/packages/ad/5f/614d5e0acbdb4957120ae5517f9289a27e415b9236a99d381b6a762155d1/pyvrp-0.3.0.tar.gz
+[2023-05-20 11:37:40] INFO root fetch - processPackages [fetchify]: Downloading https://files.pythonhosted.org/packages/ae/04/9bfe0da12187104fb996525b6e88aab58d394d227e82811778ad0fbd49da/fetchify-1.0.2-py3-none-any.whl
+[2023-05-20 11:37:40] INFO root fetch - processPackages [fetchify]: Downloading https://files.pythonhosted.org/packages/ae/04/9bfe0da12187104fb996525b6e88aab58d394d227e82811778ad0fbd49da/fetchify-1.0.2-py3-none-any.whl
+[2023-05-20 11:37:40] INFO root fetch - processPackages [schemathesis]: Downloading https://files.pythonhosted.org/packages/71/a0/2eac6b3aecc24c5d8a119a30b2adff05f2453ae9dacec1aa5f8cdbbf0668/schemathesis-3.9.7.tar.gz
+[2023-05-20 11:37:40] INFO root fetch - processPackages [pyvrp]: executing diffoscope
+[2023-05-20 11:37:40] INFO root fetch - processPackages [pyvrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvrp-0.2.1.tar.gz tmp/pyvrp-0.3.0.tar.gz --markdown 20230520/p/pyvrp/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-05-20 11:37:40] INFO root fetch - processPackages [schemathesis]: executing diffoscope
+[2023-05-20 11:37:40] INFO root fetch - processPackages [schemathesis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schemathesis-3.9.6.tar.gz tmp/schemathesis-3.9.7.tar.gz --markdown 20230520/s/schemathesis/3.9.6-3.9.7/diff.md --exclude *.pyd
+[2023-05-20 11:37:41] INFO root fetch - processPackages [fetchify]: executing diffoscope
+[2023-05-20 11:37:41] INFO root fetch - processPackages [fetchify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fetchify-1.0.1.tar.gz tmp/fetchify-1.0.2-py3-none-any.whl.zip --markdown 20230520/f/fetchify/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-20 11:37:41] INFO root fetch - processPackages [fetchify]: executing diffoscope
+[2023-05-20 11:37:41] INFO root fetch - processPackages [fetchify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fetchify-1.0.1.tar.gz tmp/fetchify-1.0.2-py3-none-any.whl.zip --markdown 20230520/f/fetchify/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-20 11:37:41] INFO root fetch - main [MainThread]: End processing [odoo-addon-pos-payment-change]: success
+[2023-05-20 11:37:42] INFO root fetch - main [MainThread]: End processing [sha256bit]: success
+[2023-05-20 11:37:42] INFO root fetch - main [MainThread]: End processing [fetchify]: success
+[2023-05-20 11:37:42] INFO root fetch - main [MainThread]: End processing [fetchify]: success
+[2023-05-20 11:37:42] INFO root fetch - main [MainThread]: End processing [schemathesis]: success
+[2023-05-20 11:37:43] INFO root fetch - main [MainThread]: End processing [pyvrp]: success
+[2023-05-20 11:38:24] INFO root fetch - main [MainThread]: End processing [Pandora-Cloud]: success
+[2023-05-20 11:38:24] INFO root fetch - main [MainThread]: Store serial: [18180945]
