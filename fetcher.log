@@ -8920,3 +8920,29 @@
 [2023-05-20 13:40:26] INFO root fetch - main [MainThread]: End processing [bigdl-chronos]: success
 [2023-05-20 13:40:27] INFO root fetch - main [MainThread]: End processing [bigdl-nano]: success
 [2023-05-20 13:40:27] INFO root fetch - main [MainThread]: Store serial: [18181617]
+[2023-05-20 13:45:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18181617]
+[2023-05-20 13:45:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 13:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tailwiz
+[2023-05-20 13:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: airunner
+[2023-05-20 13:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PatryksAutoAI
+[2023-05-20 13:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xpypact
+[2023-05-20 13:45:36] INFO root fetch - processPackages [airunner]: New version: [1.9.5] Old Version: [1.9.4]
+[2023-05-20 13:45:36] INFO root fetch - processPackages [tailwiz]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 13:45:36] INFO root fetch - processPackages [xpypact]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-20 13:45:36] INFO root fetch - processPackages [PatryksAutoAI]: New version: [1.6.2] Old Version: [1.6.1]
+[2023-05-20 13:45:36] INFO root fetch - processPackages [airunner]: executing diffoscope
+[2023-05-20 13:45:36] INFO root fetch - processPackages [airunner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airunner-1.9.4.tar.gz tmp/airunner-1.9.5.tar.gz --markdown 20230520/a/airunner/1.9.4-1.9.5/diff.md --exclude *.pyd
+[2023-05-20 13:45:36] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/da/91/0585a29cc58b1b9686b6bf4e0b577dc6f9a87587922bd6558f35a31a61c5/PatryksAutoAI-1.6.2.tar.gz
+[2023-05-20 13:45:36] INFO root fetch - processPackages [xpypact]: Downloading https://files.pythonhosted.org/packages/c4/4c/50defb69c79bc6d27f68c4bf0f082571fc496d22d9787ba0dcc5b2a53eb8/xpypact-0.4.0.tar.gz
+[2023-05-20 13:45:36] INFO root fetch - processPackages [PatryksAutoAI]: executing diffoscope
+[2023-05-20 13:45:36] INFO root fetch - processPackages [PatryksAutoAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PatryksAutoAI-1.6.1.tar.gz tmp/PatryksAutoAI-1.6.2.tar.gz --markdown 20230520/P/PatryksAutoAI/1.6.1-1.6.2/diff.md --exclude *.pyd
+[2023-05-20 13:45:36] INFO root fetch - processPackages [tailwiz]: executing diffoscope
+[2023-05-20 13:45:36] INFO root fetch - processPackages [tailwiz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tailwiz-0.0.8.tar.gz tmp/tailwiz-0.0.9.tar.gz --markdown 20230520/t/tailwiz/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 13:45:36] INFO root fetch - processPackages [xpypact]: Downloading https://files.pythonhosted.org/packages/d7/fc/64dcd7313a657b65e8583b113dc1775002abd56aaeeea2a79fe5c8ad9b9d/xpypact-0.4.1.tar.gz
+[2023-05-20 13:45:36] INFO root fetch - processPackages [xpypact]: executing diffoscope
+[2023-05-20 13:45:36] INFO root fetch - processPackages [xpypact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xpypact-0.4.0.tar.gz tmp/xpypact-0.4.1.tar.gz --markdown 20230520/x/xpypact/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-20 13:45:37] INFO root fetch - main [MainThread]: End processing [airunner]: success
+[2023-05-20 13:45:37] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
+[2023-05-20 13:45:37] INFO root fetch - main [MainThread]: End processing [tailwiz]: success
+[2023-05-20 13:45:37] INFO root fetch - main [MainThread]: End processing [xpypact]: success
+[2023-05-20 13:45:37] INFO root fetch - main [MainThread]: Store serial: [18181630]
