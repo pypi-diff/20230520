@@ -12110,3 +12110,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 19:54:53] INFO root fetch - main [MainThread]: End processing [q2terminal]: success
 [2023-05-20 19:54:53] INFO root fetch - main [MainThread]: End processing [absplit]: success
 [2023-05-20 19:54:53] INFO root fetch - main [MainThread]: Store serial: [18183641]
+[2023-05-20 19:59:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183641]
+[2023-05-20 20:00:02] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 20:00:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: q2terminal
+[2023-05-20 20:00:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spectrochempy
+[2023-05-20 20:00:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymot
+[2023-05-20 20:00:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stringtokenizer
+[2023-05-20 20:00:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: agixt
+[2023-05-20 20:00:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: TMDBTraktSyncer
+[2023-05-20 20:00:02] INFO root fetch - processPackages [pymot]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-20 20:00:02] INFO root fetch - processPackages [TMDBTraktSyncer]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-20 20:00:02] INFO root fetch - processPackages [spectrochempy]: New version: [0.6.4] Old Version: [0.6.3]
+[2023-05-20 20:00:02] INFO root fetch - processPackages [agixt]: New version: [1.1.48b0] Old Version: [1.1.47b0]
+[2023-05-20 20:00:02] INFO root fetch - processPackages [stringtokenizer]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-20 20:00:02] INFO root fetch - processPackages [q2terminal]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 20:00:02] INFO root fetch - processPackages [TMDBTraktSyncer]: executing diffoscope
+[2023-05-20 20:00:02] INFO root fetch - processPackages [TMDBTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TMDBTraktSyncer-1.0.8.tar.gz tmp/TMDBTraktSyncer-1.0.9.tar.gz --markdown 20230520/T/TMDBTraktSyncer/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-20 20:00:02] INFO root fetch - processPackages [q2terminal]: executing diffoscope
+[2023-05-20 20:00:02] INFO root fetch - processPackages [q2terminal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/q2terminal-0.1.8.tar.gz tmp/q2terminal-0.1.9.tar.gz --markdown 20230520/q/q2terminal/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 20:00:02] INFO root fetch - processPackages [spectrochempy]: Downloading https://files.pythonhosted.org/packages/ef/ed/92c6cc8e268c46173fa36735a0de17485d3db83322894ef29e2643fd0000/spectrochempy-0.6.3.tar.gz
+[2023-05-20 20:00:02] INFO root fetch - processPackages [pymot]: Downloading https://files.pythonhosted.org/packages/82/6e/cd4fce84b86ceb879e803375ab4131ff333f7734c89476a7127e9174795d/pymot-0.0.3.tar.gz
+[2023-05-20 20:00:02] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/d5/36/fa8708acedb7c4934ec2e0c029afd34c1ef0e835a029ad6019b64d6b0df8/agixt-1.1.48b0.tar.gz
+[2023-05-20 20:00:02] INFO root fetch - processPackages [stringtokenizer]: Downloading https://files.pythonhosted.org/packages/f6/68/00b56a02bd38e0cc7fb776f67ddf23e991547011e37c7af84355b33591f4/stringtokenizer-1.0.2.tar.gz
+[2023-05-20 20:00:02] WARNING root fetch - processPackages [pymot]: Skipping package: exceeds size limit 42953143>=10485760
+[2023-05-20 20:00:02] INFO root fetch - main [MainThread]: End processing [pymot] error
+[2023-05-20 20:00:03] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-05-20 20:00:03] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.47b0.tar.gz tmp/agixt-1.1.48b0.tar.gz --markdown 20230520/a/agixt/1.1.47b0-1.1.48b0/diff.md --exclude *.pyd
+[2023-05-20 20:00:03] INFO root fetch - processPackages [stringtokenizer]: Downloading https://files.pythonhosted.org/packages/3f/7d/8ee7ac45af0ba72dc164f5b48636c51fc8d881b61b4f34228fc57c7a826a/stringtokenizer-1.0.3.tar.gz
+[2023-05-20 20:00:03] INFO root fetch - processPackages [spectrochempy]: Downloading https://files.pythonhosted.org/packages/df/3b/6df78360e3ef02f53717307d9e3feb39c00bea874d229c7f75e3ee267569/spectrochempy-0.6.4.tar.gz
+[2023-05-20 20:00:03] INFO root fetch - processPackages [stringtokenizer]: executing diffoscope
+[2023-05-20 20:00:03] INFO root fetch - processPackages [stringtokenizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stringtokenizer-1.0.2.tar.gz tmp/stringtokenizer-1.0.3.tar.gz --markdown 20230520/s/stringtokenizer/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-20 20:00:03] INFO root fetch - processPackages [spectrochempy]: executing diffoscope
+[2023-05-20 20:00:03] INFO root fetch - processPackages [spectrochempy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spectrochempy-0.6.3.tar.gz tmp/spectrochempy-0.6.4.tar.gz --markdown 20230520/s/spectrochempy/0.6.3-0.6.4/diff.md --exclude *.pyd
+[2023-05-20 20:00:03] INFO root fetch - main [MainThread]: End processing [q2terminal]: success
+[2023-05-20 20:00:04] INFO root fetch - main [MainThread]: End processing [TMDBTraktSyncer]: success
+[2023-05-20 20:00:04] INFO root fetch - main [MainThread]: End processing [stringtokenizer]: success
+[2023-05-20 20:00:04] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-05-20 20:00:07] INFO root fetch - main [MainThread]: End processing [spectrochempy]: success
+[2023-05-20 20:00:07] INFO root fetch - main [MainThread]: Store serial: [18183656]
