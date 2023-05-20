@@ -13070,3 +13070,61 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 22:12:29] INFO root fetch - main [MainThread]: End processing [TMDBTraktSyncer]: success
 [2023-05-20 22:12:36] INFO root fetch - main [MainThread]: End processing [aim]: success
 [2023-05-20 22:12:36] INFO root fetch - main [MainThread]: Store serial: [18184101]
+[2023-05-20 22:17:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184101]
+[2023-05-20 22:17:46] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-20 22:17:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyDeepLX
+[2023-05-20 22:17:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TMDBTraktSyncer
+[2023-05-20 22:17:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: molecule-multipass
+[2023-05-20 22:17:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gpyt
+[2023-05-20 22:17:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: click-web
+[2023-05-20 22:17:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: crosscompute-analytics
+[2023-05-20 22:17:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: matflow-new
+[2023-05-20 22:17:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: file-groups
+[2023-05-20 22:17:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ghananews-scraper
+[2023-05-20 22:17:46] INFO root fetch - processPackages [molecule-multipass]: New version: [0.4.9] Old Version: [0.4.7]
+[2023-05-20 22:17:46] INFO root fetch - processPackages [gpyt]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-20 22:17:46] INFO root fetch - processPackages [click-web]: New version: [0.8.3] Old Version: [0.8.2]
+[2023-05-20 22:17:46] INFO root fetch - processPackages [TMDBTraktSyncer]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-20 22:17:46] INFO root fetch - processPackages [crosscompute-analytics]: New version: [0.9.4.9] Old Version: [0.9.4.3]
+[2023-05-20 22:17:46] INFO root fetch - processPackages [ghananews-scraper]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-20 22:17:46] INFO root fetch - processPackages [PyDeepLX]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-20 22:17:46] INFO root fetch - processPackages [molecule-multipass]: executing diffoscope
+[2023-05-20 22:17:46] INFO root fetch - processPackages [molecule-multipass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/molecule_multipass-0.4.7.tar.gz tmp/molecule_multipass-0.4.9.tar.gz --markdown 20230520/m/molecule-multipass/0.4.7-0.4.9/diff.md --exclude *.pyd
+[2023-05-20 22:17:46] INFO root fetch - processPackages [file-groups]: New version: [0.1.0] Old Version: [0.0.2]
+[2023-05-20 22:17:46] INFO root fetch - processPackages [matflow-new]: New version: [0.3.0a9] Old Version: [0.3.0a8]
+[2023-05-20 22:17:46] INFO root fetch - processPackages [gpyt]: executing diffoscope
+[2023-05-20 22:17:46] INFO root fetch - processPackages [gpyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpyt-0.2.8.tar.gz tmp/gpyt-0.2.9.tar.gz --markdown 20230520/g/gpyt/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-20 22:17:46] INFO root fetch - processPackages [ghananews-scraper]: executing diffoscope
+[2023-05-20 22:17:46] INFO root fetch - processPackages [ghananews-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ghananews-scraper-1.0.8.tar.gz tmp/ghananews-scraper-1.0.9.tar.gz --markdown 20230520/g/ghananews-scraper/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-20 22:17:46] INFO root fetch - processPackages [PyDeepLX]: Downloading https://files.pythonhosted.org/packages/49/de/fa2845bb345204241bd2ee5b1c712c05fd8c0f3a06c1adab36042b3e86b0/PyDeepLX-1.0.2.tar.gz
+[2023-05-20 22:17:46] INFO root fetch - processPackages [TMDBTraktSyncer]: Downloading https://files.pythonhosted.org/packages/ba/81/062060bb33e86371fb4c06b02fcd3f88a7a8ac980c3bd4fcac0f76590658/TMDBTraktSyncer-1.1.3.tar.gz
+[2023-05-20 22:17:46] INFO root fetch - processPackages [click-web]: Downloading https://files.pythonhosted.org/packages/81/bf/df1a7575d7d14f9f86c4fe528d592be765a6af61d25931bb76f1e30955e4/click-web-0.8.3.tar.gz
+[2023-05-20 22:17:46] INFO root fetch - processPackages [crosscompute-analytics]: Downloading https://files.pythonhosted.org/packages/43/4d/4918a9bc98cc1ef31c43062f7216a98dae713ca749a9474795d0c2a85ef3/crosscompute-analytics-0.9.4.3.tar.gz
+[2023-05-20 22:17:46] INFO root fetch - processPackages [file-groups]: Downloading https://files.pythonhosted.org/packages/3e/08/f5eb1a50a8f89a9d7a71144075af4e807b49b2716b5c9d70f1b23f86fa9d/file_groups-0.0.2.tar.gz
+[2023-05-20 22:17:46] INFO root fetch - processPackages [matflow-new]: Downloading https://files.pythonhosted.org/packages/33/06/64bf36c9f9b85be9b3b28a1d21d5a2698384823379079834bc89f2af1e7e/matflow_new-0.3.0a8.tar.gz
+[2023-05-20 22:17:46] INFO root fetch - processPackages [TMDBTraktSyncer]: executing diffoscope
+[2023-05-20 22:17:46] INFO root fetch - processPackages [TMDBTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TMDBTraktSyncer-1.1.2.tar.gz tmp/TMDBTraktSyncer-1.1.3.tar.gz --markdown 20230520/T/TMDBTraktSyncer/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-20 22:17:46] INFO root fetch - processPackages [click-web]: executing diffoscope
+[2023-05-20 22:17:46] INFO root fetch - processPackages [click-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/click-web-0.8.2.tar.gz tmp/click-web-0.8.3.tar.gz --markdown 20230520/c/click-web/0.8.2-0.8.3/diff.md --exclude *.pyd
+[2023-05-20 22:17:46] INFO root fetch - processPackages [PyDeepLX]: Downloading https://files.pythonhosted.org/packages/b5/79/cb31871b415031b3e4de845de8db24444a5d958f6d7ba7a2cde1541c18b9/PyDeepLX-1.0.3.tar.gz
+[2023-05-20 22:17:46] INFO root fetch - processPackages [crosscompute-analytics]: Downloading https://files.pythonhosted.org/packages/95/d0/dc80c95b190a8241de268d89f0683ba939b912e51fc0f1d7ba869104decd/crosscompute-analytics-0.9.4.9.tar.gz
+[2023-05-20 22:17:46] INFO root fetch - processPackages [file-groups]: Downloading https://files.pythonhosted.org/packages/2d/2c/1dfd8628bc097fd759d2a182a3ff0e973d518abde60105ae409ff215fadd/file_groups-0.1.0.tar.gz
+[2023-05-20 22:17:46] INFO root fetch - processPackages [PyDeepLX]: executing diffoscope
+[2023-05-20 22:17:46] INFO root fetch - processPackages [PyDeepLX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyDeepLX-1.0.2.tar.gz tmp/PyDeepLX-1.0.3.tar.gz --markdown 20230520/P/PyDeepLX/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-20 22:17:46] INFO root fetch - processPackages [matflow-new]: Downloading https://files.pythonhosted.org/packages/68/c9/418420420155f18aa38d7861e0cfcd92e65ff36933188ec860c52817fd64/matflow_new-0.3.0a9.tar.gz
+[2023-05-20 22:17:46] INFO root fetch - processPackages [crosscompute-analytics]: executing diffoscope
+[2023-05-20 22:17:46] INFO root fetch - processPackages [crosscompute-analytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crosscompute-analytics-0.9.4.3.tar.gz tmp/crosscompute-analytics-0.9.4.9.tar.gz --markdown 20230520/c/crosscompute-analytics/0.9.4.3-0.9.4.9/diff.md --exclude *.pyd
+[2023-05-20 22:17:46] INFO root fetch - processPackages [file-groups]: executing diffoscope
+[2023-05-20 22:17:46] INFO root fetch - processPackages [file-groups]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/file_groups-0.0.2.tar.gz tmp/file_groups-0.1.0.tar.gz --markdown 20230520/f/file-groups/0.0.2-0.1.0/diff.md --exclude *.pyd
+[2023-05-20 22:17:47] INFO root fetch - processPackages [matflow-new]: executing diffoscope
+[2023-05-20 22:17:47] INFO root fetch - processPackages [matflow-new]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matflow_new-0.3.0a8.tar.gz tmp/matflow_new-0.3.0a9.tar.gz --markdown 20230520/m/matflow-new/0.3.0a8-0.3.0a9/diff.md --exclude *.pyd
+[2023-05-20 22:17:47] INFO root fetch - main [MainThread]: End processing [gpyt]: success
+[2023-05-20 22:17:47] INFO root fetch - main [MainThread]: End processing [ghananews-scraper]: success
+[2023-05-20 22:17:48] INFO root fetch - main [MainThread]: End processing [molecule-multipass]: success
+[2023-05-20 22:17:48] INFO root fetch - main [MainThread]: End processing [click-web]: success
+[2023-05-20 22:17:48] INFO root fetch - main [MainThread]: End processing [TMDBTraktSyncer]: success
+[2023-05-20 22:17:48] INFO root fetch - main [MainThread]: End processing [file-groups]: success
+[2023-05-20 22:17:48] INFO root fetch - main [MainThread]: End processing [PyDeepLX]: success
+[2023-05-20 22:17:48] INFO root fetch - main [MainThread]: End processing [crosscompute-analytics]: success
+[2023-05-20 22:17:48] INFO root fetch - main [MainThread]: End processing [matflow-new]: success
+[2023-05-20 22:17:48] INFO root fetch - main [MainThread]: Store serial: [18184134]
