@@ -12307,3 +12307,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 20:26:44] INFO root fetch - main [MainThread]: End processing [ScriptCollection]: success
 [2023-05-20 20:26:44] INFO root fetch - main [MainThread]: End processing [pyalarmdotcomajax]: success
 [2023-05-20 20:26:44] INFO root fetch - main [MainThread]: Store serial: [18183762]
+[2023-05-20 20:31:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183762]
+[2023-05-20 20:31:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 20:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: latch-postgres
+[2023-05-20 20:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: minio
+[2023-05-20 20:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: embedbase-client
+[2023-05-20 20:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dragonfly-radiance
+[2023-05-20 20:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: negspacy
+[2023-05-20 20:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: web3cli
+[2023-05-20 20:31:54] INFO root fetch - processPackages [latch-postgres]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 20:31:54] INFO root fetch - processPackages [embedbase-client]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-20 20:31:54] INFO root fetch - processPackages [minio]: New version: [7.1.9] Old Version: [7.1.8]
+[2023-05-20 20:31:54] INFO root fetch - processPackages [negspacy]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-20 20:31:54] INFO root fetch - processPackages [latch-postgres]: executing diffoscope
+[2023-05-20 20:31:54] INFO root fetch - processPackages [latch-postgres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch_postgres-0.1.8.tar.gz tmp/latch_postgres-0.1.9.tar.gz --markdown 20230520/l/latch-postgres/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 20:31:54] INFO root fetch - processPackages [dragonfly-radiance]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-20 20:31:55] INFO root fetch - processPackages [web3cli]: New version: [1.0.0] Old Version: [0.9.6]
+[2023-05-20 20:31:55] INFO root fetch - processPackages [embedbase-client]: executing diffoscope
+[2023-05-20 20:31:55] INFO root fetch - processPackages [embedbase-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedbase_client-0.1.0.tar.gz tmp/embedbase_client-0.1.1.tar.gz --markdown 20230520/e/embedbase-client/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-20 20:31:55] INFO root fetch - processPackages [minio]: Downloading https://files.pythonhosted.org/packages/b8/66/a8a926f0a71c0f0ecf0b1b0738a83e871e9e04ab0a919865c583c8392606/minio-7.1.8.tar.gz
+[2023-05-20 20:31:55] INFO root fetch - processPackages [negspacy]: Downloading https://files.pythonhosted.org/packages/ed/e2/6adadc26af328268522da923aef42dfb3ae88e49122e54c34062f13505b3/negspacy-1.0.3.tar.gz
+[2023-05-20 20:31:55] INFO root fetch - processPackages [web3cli]: Downloading https://files.pythonhosted.org/packages/c2/4b/a1a458a12cc9194d4a788e5f894bce41463b2dc6d700deebb601b577ac66/web3cli-1.0.0.tar.gz
+[2023-05-20 20:31:55] INFO root fetch - processPackages [negspacy]: Downloading https://files.pythonhosted.org/packages/6b/bd/ef5354a8900d534dd149186092efcd86c083b6eb0a635112da84a7769aa2/negspacy-1.0.4.tar.gz
+[2023-05-20 20:31:55] INFO root fetch - processPackages [dragonfly-radiance]: executing diffoscope
+[2023-05-20 20:31:55] INFO root fetch - processPackages [dragonfly-radiance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-radiance-0.2.8.tar.gz tmp/dragonfly-radiance-0.2.9.tar.gz --markdown 20230520/d/dragonfly-radiance/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-20 20:31:55] INFO root fetch - processPackages [minio]: Downloading https://files.pythonhosted.org/packages/66/43/d2481bfa8eef0b336a97084ce2486d6b026373eca0bb7633a649a4a62f80/minio-7.1.9.tar.gz
+[2023-05-20 20:31:55] INFO root fetch - processPackages [negspacy]: executing diffoscope
+[2023-05-20 20:31:55] INFO root fetch - processPackages [negspacy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/negspacy-1.0.3.tar.gz tmp/negspacy-1.0.4.tar.gz --markdown 20230520/n/negspacy/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-20 20:31:55] INFO root fetch - processPackages [web3cli]: executing diffoscope
+[2023-05-20 20:31:55] INFO root fetch - processPackages [web3cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web3cli-0.9.6.tar.gz tmp/web3cli-1.0.0.tar.gz --markdown 20230520/w/web3cli/0.9.6-1.0.0/diff.md --exclude *.pyd
+[2023-05-20 20:31:55] INFO root fetch - processPackages [minio]: executing diffoscope
+[2023-05-20 20:31:55] INFO root fetch - processPackages [minio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minio-7.1.8.tar.gz tmp/minio-7.1.9.tar.gz --markdown 20230520/m/minio/7.1.8-7.1.9/diff.md --exclude *.pyd
+[2023-05-20 20:31:56] INFO root fetch - main [MainThread]: End processing [latch-postgres]: success
+[2023-05-20 20:31:56] INFO root fetch - main [MainThread]: End processing [embedbase-client]: success
+[2023-05-20 20:31:56] INFO root fetch - main [MainThread]: End processing [dragonfly-radiance]: success
+[2023-05-20 20:31:56] INFO root fetch - main [MainThread]: End processing [negspacy]: success
+[2023-05-20 20:31:57] INFO root fetch - main [MainThread]: End processing [minio]: success
+[2023-05-20 20:31:58] INFO root fetch - main [MainThread]: End processing [web3cli]: success
+[2023-05-20 20:31:58] INFO root fetch - main [MainThread]: Store serial: [18183779]
