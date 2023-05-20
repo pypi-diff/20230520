@@ -4668,3 +4668,44 @@
 [2023-05-20 03:43:01] INFO root fetch - main [MainThread]: End processing [lineagex]: success
 [2023-05-20 03:43:01] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
 [2023-05-20 03:43:01] INFO root fetch - main [MainThread]: Store serial: [18178902]
+[2023-05-20 03:48:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18178902]
+[2023-05-20 03:48:10] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-20 03:48:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: proactive
+[2023-05-20 03:48:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gmpg
+[2023-05-20 03:48:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kuto
+[2023-05-20 03:48:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: proactive-jupyter-kernel
+[2023-05-20 03:48:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: oakvar
+[2023-05-20 03:48:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bytez
+[2023-05-20 03:48:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: certora-cli-alpha-jtoman-cert-2226
+[2023-05-20 03:48:10] INFO root fetch - processPackages [kuto]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 03:48:10] INFO root fetch - processPackages [gmpg]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-20 03:48:10] INFO root fetch - processPackages [oakvar]: New version: [2.9.9] Old Version: [2.9.7]
+[2023-05-20 03:48:10] INFO root fetch - processPackages [proactive]: New version: [8.4.11] Old Version: [8.4.10]
+[2023-05-20 03:48:10] INFO root fetch - processPackages [proactive-jupyter-kernel]: New version: [13.1.1.2212191832.dev0] Old Version: [13.1.1.2212191149.dev0]
+[2023-05-20 03:48:11] INFO root fetch - processPackages [proactive]: Downloading https://files.pythonhosted.org/packages/36/67/8f2441cbc911f3a57a2168b0e419b0751450a04c18791e6ba642af1085d8/proactive-8.4.10.zip
+[2023-05-20 03:48:11] INFO root fetch - processPackages [kuto]: executing diffoscope
+[2023-05-20 03:48:11] INFO root fetch - processPackages [kuto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuto-0.0.8-py3-none-any.whl.zip tmp/kuto-0.0.9.tar.gz --markdown 20230520/k/kuto/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 03:48:11] INFO root fetch - processPackages [bytez]: New version: [0.1.9] Old Version: [0.1.89]
+[2023-05-20 03:48:11] INFO root fetch - processPackages [certora-cli-alpha-jtoman-cert-2226]: New version: [20230520.1.47.623439] Old Version: [20230517.23.34.763928]
+[2023-05-20 03:48:11] WARNING root fetch - processPackages [proactive]: Skipping package: exceeds size limit 18979361>=10485760
+[2023-05-20 03:48:11] INFO root fetch - main [MainThread]: End processing [proactive] error
+[2023-05-20 03:48:11] INFO root fetch - processPackages [proactive-jupyter-kernel]: executing diffoscope
+[2023-05-20 03:48:11] INFO root fetch - processPackages [proactive-jupyter-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proactive-jupyter-kernel-13.1.1.2212191149.dev0.zip tmp/proactive-jupyter-kernel-13.1.1.2212191832.dev0.zip --markdown 20230520/p/proactive-jupyter-kernel/13.1.1.2212191149.dev0-13.1.1.2212191832.dev0/diff.md --exclude *.pyd
+[2023-05-20 03:48:11] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2023-05-20 03:48:11] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.7.tar.gz tmp/oakvar-2.9.9.tar.gz --markdown 20230520/o/oakvar/2.9.7-2.9.9/diff.md --exclude *.pyd
+[2023-05-20 03:48:11] INFO root fetch - processPackages [bytez]: Downloading https://files.pythonhosted.org/packages/76/dc/5b3df5dfaa0fee9ede4530b6456ec220ba019d1d7d7fb7e1d7cc1eef7a28/bytez-0.1.89.tar.gz
+[2023-05-20 03:48:11] INFO root fetch - processPackages [gmpg]: Downloading https://files.pythonhosted.org/packages/33/7d/a8b4facb57e8ca2b17fef60112bd7a2b91792b456eb41f96304133db5b2e/gmpg-0.1.6.tar.gz
+[2023-05-20 03:48:11] INFO root fetch - processPackages [certora-cli-alpha-jtoman-cert-2226]: Downloading https://files.pythonhosted.org/packages/72/75/d0b49b14fe21b5f1943b47f5c532b25563b43a4a80b6262500ec0fa52abe/certora-cli-alpha-jtoman-cert-2226-20230517.23.34.763928.tar.gz
+[2023-05-20 03:48:11] INFO root fetch - processPackages [gmpg]: executing diffoscope
+[2023-05-20 03:48:11] INFO root fetch - processPackages [gmpg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmpg-0.1.5.tar.gz tmp/gmpg-0.1.6.tar.gz --markdown 20230520/g/gmpg/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-20 03:48:11] INFO root fetch - processPackages [bytez]: Downloading https://files.pythonhosted.org/packages/8c/e1/fe6d5a1a4501545e96696aaf1bd70163fa5bd5827f6c25755c7cfecb1af7/bytez-0.1.9.tar.gz
+[2023-05-20 03:48:11] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-20 03:48:11] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.89.tar.gz tmp/bytez-0.1.9.tar.gz --markdown 20230520/b/bytez/0.1.89-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 03:48:11] WARNING root fetch - processPackages [certora-cli-alpha-jtoman-cert-2226]: Skipping package: exceeds size limit 38976413>=10485760
+[2023-05-20 03:48:11] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-jtoman-cert-2226] error
+[2023-05-20 03:48:12] INFO root fetch - main [MainThread]: End processing [kuto]: success
+[2023-05-20 03:48:12] INFO root fetch - main [MainThread]: End processing [proactive-jupyter-kernel]: success
+[2023-05-20 03:48:12] INFO root fetch - main [MainThread]: End processing [gmpg]: success
+[2023-05-20 03:48:12] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-20 03:48:15] INFO root fetch - main [MainThread]: End processing [oakvar]: success
+[2023-05-20 03:48:15] INFO root fetch - main [MainThread]: Store serial: [18178922]
