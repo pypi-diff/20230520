@@ -8198,3 +8198,27 @@
 [2023-05-20 12:37:09] INFO root fetch - processPackages [sharedutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharedutils-0.0.6.tar.gz tmp/sharedutils-0.0.7.tar.gz --markdown 20230520/s/sharedutils/0.0.6-0.0.7/diff.md --exclude *.pyd
 [2023-05-20 12:37:10] INFO root fetch - main [MainThread]: End processing [sharedutils]: success
 [2023-05-20 12:37:10] INFO root fetch - main [MainThread]: Store serial: [18181241]
+[2023-05-20 12:42:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18181241]
+[2023-05-20 12:42:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 12:42:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anjani
+[2023-05-20 12:42:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addons-oca-stock-logistics-barcode
+[2023-05-20 12:42:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mlflow-aws-rds-iam
+[2023-05-20 12:42:20] INFO root fetch - processPackages [anjani]: New version: [2.9.0] Old Version: [2.8.1]
+[2023-05-20 12:42:20] INFO root fetch - processPackages [odoo14-addons-oca-stock-logistics-barcode]: New version: [14.0.20230519.0] Old Version: [14.0.20230503.0]
+[2023-05-20 12:42:20] INFO root fetch - processPackages [mlflow-aws-rds-iam]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-20 12:42:20] INFO root fetch - processPackages [odoo14-addons-oca-stock-logistics-barcode]: Downloading https://files.pythonhosted.org/packages/71/18/3176b88f9ce5209dbda48933bc170dc6cf0b676bc14245bc5c031aa064d6/odoo14_addons_oca_stock_logistics_barcode-14.0.20230503.0-py3-none-any.whl
+[2023-05-20 12:42:20] INFO root fetch - processPackages [anjani]: Downloading https://files.pythonhosted.org/packages/a0/4b/02833bc01203d0b9addbff43d3b48c7c40022e828cbd0b8fdb836018bcac/anjani-2.8.1.tar.gz
+[2023-05-20 12:42:20] INFO root fetch - processPackages [mlflow-aws-rds-iam]: Downloading https://files.pythonhosted.org/packages/8a/95/0daf450a9b07c057febb7ae7e169eff8a414d173e41b7b46cbb1950dd44b/mlflow_aws_rds_iam-0.1.0.tar.gz
+[2023-05-20 12:42:20] INFO root fetch - processPackages [odoo14-addons-oca-stock-logistics-barcode]: Downloading https://files.pythonhosted.org/packages/96/c6/0f6effd019c1940228b24f1892ebc62b390ccc8c06a0e9322a745e5eef12/odoo14_addons_oca_stock_logistics_barcode-14.0.20230519.0-py3-none-any.whl
+[2023-05-20 12:42:21] INFO root fetch - processPackages [odoo14-addons-oca-stock-logistics-barcode]: executing diffoscope
+[2023-05-20 12:42:21] INFO root fetch - processPackages [odoo14-addons-oca-stock-logistics-barcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_stock_logistics_barcode-14.0.20230503.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_stock_logistics_barcode-14.0.20230519.0-py3-none-any.whl.zip --markdown 20230520/o/odoo14-addons-oca-stock-logistics-barcode/14.0.20230503.0-14.0.20230519.0/diff.md --exclude *.pyd
+[2023-05-20 12:42:21] INFO root fetch - processPackages [anjani]: Downloading https://files.pythonhosted.org/packages/f9/9d/09023cad363092c71cd40b8312939b2e4d4bfbd47cae721893d04ab5a6d9/anjani-2.9.0.tar.gz
+[2023-05-20 12:42:21] INFO root fetch - processPackages [mlflow-aws-rds-iam]: Downloading https://files.pythonhosted.org/packages/4b/01/448f2cf4355cb43e0f729768cfcc98fcf39c5d0be20c0c93e9fe9fec1e85/mlflow_aws_rds_iam-0.2.0.tar.gz
+[2023-05-20 12:42:21] INFO root fetch - processPackages [anjani]: executing diffoscope
+[2023-05-20 12:42:21] INFO root fetch - processPackages [anjani]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anjani-2.8.1.tar.gz tmp/anjani-2.9.0.tar.gz --markdown 20230520/a/anjani/2.8.1-2.9.0/diff.md --exclude *.pyd
+[2023-05-20 12:42:21] INFO root fetch - processPackages [mlflow-aws-rds-iam]: executing diffoscope
+[2023-05-20 12:42:21] INFO root fetch - processPackages [mlflow-aws-rds-iam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlflow_aws_rds_iam-0.1.0.tar.gz tmp/mlflow_aws_rds_iam-0.2.0.tar.gz --markdown 20230520/m/mlflow-aws-rds-iam/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-20 12:42:22] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-stock-logistics-barcode]: success
+[2023-05-20 12:42:22] INFO root fetch - main [MainThread]: End processing [mlflow-aws-rds-iam]: success
+[2023-05-20 12:42:22] INFO root fetch - main [MainThread]: End processing [anjani]: success
+[2023-05-20 12:42:22] INFO root fetch - main [MainThread]: Store serial: [18181297]
