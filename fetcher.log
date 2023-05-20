@@ -7754,3 +7754,58 @@
 [2023-05-20 11:37:43] INFO root fetch - main [MainThread]: End processing [pyvrp]: success
 [2023-05-20 11:38:24] INFO root fetch - main [MainThread]: End processing [Pandora-Cloud]: success
 [2023-05-20 11:38:24] INFO root fetch - main [MainThread]: Store serial: [18180945]
+[2023-05-20 11:43:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180945]
+[2023-05-20 11:43:32] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-20 11:43:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-preprocessors
+[2023-05-20 11:43:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: weather-open-api
+[2023-05-20 11:43:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-impact
+[2023-05-20 11:43:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cpp-linter
+[2023-05-20 11:43:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-typomatic
+[2023-05-20 11:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nlpaf
+[2023-05-20 11:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: onnx2tf
+[2023-05-20 11:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mmigrator
+[2023-05-20 11:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: viper-lib
+[2023-05-20 11:43:33] INFO root fetch - processPackages [nonebot-plugin-impact]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-20 11:43:33] INFO root fetch - processPackages [mmigrator]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-20 11:43:33] INFO root fetch - processPackages [django-typomatic]: New version: [2.3.1] Old Version: [2.3.0]
+[2023-05-20 11:43:33] INFO root fetch - processPackages [cpp-linter]: New version: [1.6.0] Old Version: [1.5.1]
+[2023-05-20 11:43:33] INFO root fetch - processPackages [viper-lib]: New version: [0.5.5] Old Version: [0.5.4]
+[2023-05-20 11:43:33] INFO root fetch - processPackages [nlpaf]: New version: [2.8.8] Old Version: [2.8.7]
+[2023-05-20 11:43:33] INFO root fetch - processPackages [data-preprocessors]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-20 11:43:33] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-20 11:43:33] INFO root fetch - processPackages [nlpaf]: Downloading https://files.pythonhosted.org/packages/5d/da/1b92550f6bc1e7b62d9eca934cf2d4d57ebcc3fb29072424036f138d98af/nlpaf-2.8.7.tar.gz
+[2023-05-20 11:43:33] WARNING root fetch - processPackages [weather-open-api]: Skipping, unable to determine old version
+[2023-05-20 11:43:33] INFO root fetch - main [MainThread]: End processing [weather-open-api] error
+[2023-05-20 11:43:33] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2023-05-20 11:43:33] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.8.tar.gz tmp/onnx2tf-1.9.9.tar.gz --markdown 20230520/o/onnx2tf/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-20 11:43:33] INFO root fetch - processPackages [nonebot-plugin-impact]: Downloading https://files.pythonhosted.org/packages/aa/48/9080cc86e3a522e0967a4d53731baf87b3d84720a7a5b3fdfdf8f39af5d3/nonebot_plugin_impact-0.0.7.tar.gz
+[2023-05-20 11:43:33] INFO root fetch - processPackages [mmigrator]: Downloading https://files.pythonhosted.org/packages/cd/9a/8f0e051002d557145b63ab143779a5010db27d63f4fc18ed12c2b0f0f516/mmigrator-0.1.3.tar.gz
+[2023-05-20 11:43:33] WARNING root fetch - processPackages [nlpaf]: Skipping package: exceeds size limit 24324747>=10485760
+[2023-05-20 11:43:33] INFO root fetch - main [MainThread]: End processing [nlpaf] error
+[2023-05-20 11:43:33] INFO root fetch - processPackages [viper-lib]: Downloading https://files.pythonhosted.org/packages/bd/15/0396b54233aab391ae677c3a5757b25acf6aca2e00c8ef5f14a76470d760/viper_lib-0.5.4.tar.gz
+[2023-05-20 11:43:33] INFO root fetch - processPackages [cpp-linter]: Downloading https://files.pythonhosted.org/packages/c9/c5/029a9ce43e83acb54f9cef7d90d71be653e86fa6c756df16a43695bf9d30/cpp_linter-1.5.1-py3-none-any.whl
+[2023-05-20 11:43:33] INFO root fetch - processPackages [django-typomatic]: Downloading https://files.pythonhosted.org/packages/f6/51/41e1349d23fbd4e56e48716565f8123bc3ee281b155cbe2f9bf99f79c7fd/django-typomatic-2.3.0.tar.gz
+[2023-05-20 11:43:33] INFO root fetch - processPackages [mmigrator]: executing diffoscope
+[2023-05-20 11:43:33] INFO root fetch - processPackages [mmigrator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmigrator-0.1.2.tar.gz tmp/mmigrator-0.1.3.tar.gz --markdown 20230520/m/mmigrator/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-20 11:43:33] INFO root fetch - processPackages [data-preprocessors]: executing diffoscope
+[2023-05-20 11:43:33] INFO root fetch - processPackages [data-preprocessors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-preprocessors-0.8.0.tar.gz tmp/data-preprocessors-0.9.0.tar.gz --markdown 20230520/d/data-preprocessors/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-20 11:43:33] INFO root fetch - processPackages [nonebot-plugin-impact]: Downloading https://files.pythonhosted.org/packages/af/05/4038874046f2f42057ff958a1a16765a4a9f444eceb3f7808c4d9b41948a/nonebot_plugin_impact-0.0.8.tar.gz
+[2023-05-20 11:43:33] INFO root fetch - processPackages [viper-lib]: Downloading https://files.pythonhosted.org/packages/3d/d7/5bbaa6d2aa062fbee678a49305ab466c47fbe7c60e50cdf71f998aa443b2/viper_lib-0.5.5.tar.gz
+[2023-05-20 11:43:33] INFO root fetch - processPackages [cpp-linter]: Downloading https://files.pythonhosted.org/packages/36/26/488f6ef22b1ef7d83e68fb015b7f15aff328d72a0b189cfc604a0723eb87/cpp_linter-1.6.0-py3-none-any.whl
+[2023-05-20 11:43:33] INFO root fetch - processPackages [nonebot-plugin-impact]: executing diffoscope
+[2023-05-20 11:43:33] INFO root fetch - processPackages [django-typomatic]: Downloading https://files.pythonhosted.org/packages/21/a1/0475cba26f73998699b2d8f14b952c436193cc0a0974bb13dac09d313b77/django-typomatic-2.3.1.tar.gz
+[2023-05-20 11:43:33] INFO root fetch - processPackages [nonebot-plugin-impact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_impact-0.0.7.tar.gz tmp/nonebot_plugin_impact-0.0.8.tar.gz --markdown 20230520/n/nonebot-plugin-impact/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-20 11:43:33] INFO root fetch - processPackages [viper-lib]: executing diffoscope
+[2023-05-20 11:43:33] INFO root fetch - processPackages [viper-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viper_lib-0.5.4.tar.gz tmp/viper_lib-0.5.5.tar.gz --markdown 20230520/v/viper-lib/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2023-05-20 11:43:33] INFO root fetch - processPackages [cpp-linter]: executing diffoscope
+[2023-05-20 11:43:33] INFO root fetch - processPackages [cpp-linter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpp_linter-1.5.1-py3-none-any.whl.zip tmp/cpp_linter-1.6.0-py3-none-any.whl.zip --markdown 20230520/c/cpp-linter/1.5.1-1.6.0/diff.md --exclude *.pyd
+[2023-05-20 11:43:33] INFO root fetch - processPackages [django-typomatic]: executing diffoscope
+[2023-05-20 11:43:33] INFO root fetch - processPackages [django-typomatic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-typomatic-2.3.0.tar.gz tmp/django-typomatic-2.3.1.tar.gz --markdown 20230520/d/django-typomatic/2.3.0-2.3.1/diff.md --exclude *.pyd
+[2023-05-20 11:43:34] INFO root fetch - main [MainThread]: End processing [data-preprocessors]: success
+[2023-05-20 11:43:34] INFO root fetch - main [MainThread]: End processing [mmigrator]: success
+[2023-05-20 11:43:34] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-impact]: success
+[2023-05-20 11:43:35] INFO root fetch - main [MainThread]: End processing [django-typomatic]: success
+[2023-05-20 11:43:35] INFO root fetch - main [MainThread]: End processing [cpp-linter]: success
+[2023-05-20 11:43:35] INFO root fetch - main [MainThread]: End processing [viper-lib]: success
+[2023-05-20 11:43:35] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2023-05-20 11:43:35] INFO root fetch - main [MainThread]: Store serial: [18180973]
