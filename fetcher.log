@@ -5599,3 +5599,45 @@
 [2023-05-20 05:45:45] INFO root fetch - processPackages [polygon-finance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polygon_finance-1.0.0.tar.gz tmp/polygon_finance-1.0.2.tar.gz --markdown 20230520/p/polygon-finance/1.0.0-1.0.2/diff.md --exclude *.pyd
 [2023-05-20 05:45:46] INFO root fetch - main [MainThread]: End processing [polygon-finance]: success
 [2023-05-20 05:45:46] INFO root fetch - main [MainThread]: Store serial: [18179499]
+[2023-05-20 05:50:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179499]
+[2023-05-20 05:50:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 05:50:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: polygon-finance
+[2023-05-20 05:50:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kuto
+[2023-05-20 05:50:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: polygon-finance
+[2023-05-20 05:50:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: edl-mod
+[2023-05-20 05:50:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dicomsdl
+[2023-05-20 05:50:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: polygon-finance
+[2023-05-20 05:50:54] INFO root fetch - processPackages [polygon-finance]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-20 05:50:54] INFO root fetch - processPackages [polygon-finance]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-20 05:50:54] INFO root fetch - processPackages [kuto]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 05:50:54] INFO root fetch - processPackages [polygon-finance]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-20 05:50:54] INFO root fetch - processPackages [edl-mod]: New version: [0.0.35] Old Version: [0.0.34]
+[2023-05-20 05:50:55] INFO root fetch - processPackages [polygon-finance]: Downloading https://files.pythonhosted.org/packages/f5/dd/b3b1e4fb704eecfd11c8a1f804521ef6b1fcc57d1f930f74c12df2177c8b/polygon_finance-1.0.3.tar.gz
+[2023-05-20 05:50:55] INFO root fetch - processPackages [polygon-finance]: Downloading https://files.pythonhosted.org/packages/f5/dd/b3b1e4fb704eecfd11c8a1f804521ef6b1fcc57d1f930f74c12df2177c8b/polygon_finance-1.0.3.tar.gz
+[2023-05-20 05:50:55] INFO root fetch - processPackages [polygon-finance]: Downloading https://files.pythonhosted.org/packages/f5/dd/b3b1e4fb704eecfd11c8a1f804521ef6b1fcc57d1f930f74c12df2177c8b/polygon_finance-1.0.3.tar.gz
+[2023-05-20 05:50:55] INFO root fetch - processPackages [dicomsdl]: New version: [0.109.2] Old Version: [0.109.1]
+[2023-05-20 05:50:55] INFO root fetch - processPackages [edl-mod]: Downloading https://files.pythonhosted.org/packages/2c/f7/f4e8be0269d029fa906285d3f14fabed72802c28b82cb8d9407d854fa13c/edl-mod-0.0.35.tar.gz
+[2023-05-20 05:50:55] INFO root fetch - processPackages [kuto]: executing diffoscope
+[2023-05-20 05:50:55] INFO root fetch - processPackages [kuto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuto-0.0.8-py3-none-any.whl.zip tmp/kuto-0.0.9.tar.gz --markdown 20230520/k/kuto/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 05:50:55] INFO root fetch - processPackages [edl-mod]: executing diffoscope
+[2023-05-20 05:50:55] INFO root fetch - processPackages [edl-mod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edl-mod-0.0.34.tar.gz tmp/edl-mod-0.0.35.tar.gz --markdown 20230520/e/edl-mod/0.0.34-0.0.35/diff.md --exclude *.pyd
+[2023-05-20 05:50:55] INFO root fetch - processPackages [dicomsdl]: Downloading https://files.pythonhosted.org/packages/fb/58/410d676587d866eef7ce3a4526c53900f6d71257aab47000eb8bb3fcf2ee/dicomsdl-0.109.1-cp39-cp39-win_amd64.whl
+[2023-05-20 05:50:55] INFO root fetch - processPackages [polygon-finance]: Downloading https://files.pythonhosted.org/packages/bd/c3/30876fb20fc9f0b5b8dbd810725ebe3df5db7d72ae394ac65aa1d4b02bd5/polygon_finance-1.0.4.tar.gz
+[2023-05-20 05:50:55] INFO root fetch - processPackages [polygon-finance]: Downloading https://files.pythonhosted.org/packages/bd/c3/30876fb20fc9f0b5b8dbd810725ebe3df5db7d72ae394ac65aa1d4b02bd5/polygon_finance-1.0.4.tar.gz
+[2023-05-20 05:50:55] INFO root fetch - processPackages [polygon-finance]: Downloading https://files.pythonhosted.org/packages/bd/c3/30876fb20fc9f0b5b8dbd810725ebe3df5db7d72ae394ac65aa1d4b02bd5/polygon_finance-1.0.4.tar.gz
+[2023-05-20 05:50:55] INFO root fetch - processPackages [polygon-finance]: executing diffoscope
+[2023-05-20 05:50:55] INFO root fetch - processPackages [polygon-finance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polygon_finance-1.0.3.tar.gz tmp/polygon_finance-1.0.4.tar.gz --markdown 20230520/p/polygon-finance/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-20 05:50:55] INFO root fetch - processPackages [polygon-finance]: executing diffoscope
+[2023-05-20 05:50:55] INFO root fetch - processPackages [polygon-finance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polygon_finance-1.0.3.tar.gz tmp/polygon_finance-1.0.4.tar.gz --markdown 20230520/p/polygon-finance/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-20 05:50:55] INFO root fetch - processPackages [polygon-finance]: executing diffoscope
+[2023-05-20 05:50:55] INFO root fetch - processPackages [polygon-finance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polygon_finance-1.0.3.tar.gz tmp/polygon_finance-1.0.4.tar.gz --markdown 20230520/p/polygon-finance/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-20 05:50:55] INFO root fetch - processPackages [dicomsdl]: Downloading https://files.pythonhosted.org/packages/e1/28/0087f6e40a2acac4f8188686c1336348782ae2898a9cede8e0eb86b5350b/dicomsdl-0.109.2-cp311-cp311-musllinux_1_1_x86_64.whl
+[2023-05-20 05:50:56] INFO root fetch - main [MainThread]: End processing [kuto]: success
+[2023-05-20 05:50:56] INFO root fetch - main [MainThread]: End processing [edl-mod]: success
+[2023-05-20 05:50:56] INFO root fetch - main [MainThread]: End processing [polygon-finance]: success
+[2023-05-20 05:50:57] INFO root fetch - main [MainThread]: End processing [polygon-finance]: success
+[2023-05-20 05:50:57] INFO root fetch - main [MainThread]: End processing [polygon-finance]: success
+[2023-05-20 05:50:57] INFO root fetch - processPackages [dicomsdl]: executing diffoscope
+[2023-05-20 05:50:57] INFO root fetch - processPackages [dicomsdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dicomsdl-0.109.1-cp39-cp39-win_amd64.whl.zip tmp/dicomsdl-0.109.2-cp311-cp311-musllinux_1_1_x86_64.whl.zip --markdown 20230520/d/dicomsdl/0.109.1-0.109.2/diff.md --exclude *.pyd
+[2023-05-20 05:50:59] INFO root fetch - main [MainThread]: End processing [dicomsdl]: success
+[2023-05-20 05:50:59] INFO root fetch - main [MainThread]: Store serial: [18179531]
