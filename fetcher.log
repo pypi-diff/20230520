@@ -5748,3 +5748,20 @@
 [2023-05-20 06:19:54] INFO root fetch - main [MainThread]: End processing [Jvav]: success
 [2023-05-20 06:19:54] INFO root fetch - main [MainThread]: End processing [cell-gears]: success
 [2023-05-20 06:19:54] INFO root fetch - main [MainThread]: Store serial: [18179633]
+[2023-05-20 06:24:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179633]
+[2023-05-20 06:25:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 06:25:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pwrdrvr.microapps.cdk
+[2023-05-20 06:25:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: perfflowaspect
+[2023-05-20 06:25:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quickstart-vdk
+[2023-05-20 06:25:02] WARNING root fetch - processPackages [perfflowaspect]: Skipping, unable to determine old version
+[2023-05-20 06:25:02] INFO root fetch - main [MainThread]: End processing [perfflowaspect] error
+[2023-05-20 06:25:02] INFO root fetch - processPackages [pwrdrvr.microapps.cdk]: New version: [0.4.0a9] Old Version: [0.4.0a8]
+[2023-05-20 06:25:02] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.873309032.dev10605] Old Version: [0.2.871129662.dev10454]
+[2023-05-20 06:25:02] INFO root fetch - processPackages [pwrdrvr.microapps.cdk]: executing diffoscope
+[2023-05-20 06:25:02] INFO root fetch - processPackages [pwrdrvr.microapps.cdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pwrdrvr.microapps.cdk-0.4.0a8.tar.gz tmp/pwrdrvr.microapps.cdk-0.4.0a9.tar.gz --markdown 20230520/p/pwrdrvr.microapps.cdk/0.4.0a8-0.4.0a9/diff.md --exclude *.pyd
+[2023-05-20 06:25:03] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/ba/2d/471192286722c98747be33b6c5e2d1222f92635ff3166c6acdc9a0373939/quickstart-vdk-0.2.873309032.dev10605.tar.gz
+[2023-05-20 06:25:03] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2023-05-20 06:25:03] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.871129662.dev10454.tar.gz tmp/quickstart-vdk-0.2.873309032.dev10605.tar.gz --markdown 20230520/q/quickstart-vdk/0.2.871129662.dev10454-0.2.873309032.dev10605/diff.md --exclude *.pyd
+[2023-05-20 06:25:04] INFO root fetch - main [MainThread]: End processing [pwrdrvr.microapps.cdk]: success
+[2023-05-20 06:25:04] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2023-05-20 06:25:04] INFO root fetch - main [MainThread]: Store serial: [18179646]
