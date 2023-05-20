@@ -13485,3 +13485,29 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 23:21:47] INFO root fetch - main [MainThread]: End processing [ssid]: success
 [2023-05-20 23:21:48] INFO root fetch - main [MainThread]: End processing [bemb]: success
 [2023-05-20 23:21:48] INFO root fetch - main [MainThread]: Store serial: [18184344]
+[2023-05-20 23:26:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184344]
+[2023-05-20 23:26:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 23:26:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kynaylibs
+[2023-05-20 23:26:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shallowpavlov
+[2023-05-20 23:26:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: neurodeploy
+[2023-05-20 23:26:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytket-qir
+[2023-05-20 23:26:56] INFO root fetch - processPackages [shallowpavlov]: New version: [1.0.0rc1] Old Version: [0.0.2]
+[2023-05-20 23:26:56] INFO root fetch - processPackages [pytket-qir]: New version: [0.2.0rc2] Old Version: [0.2.0rc1]
+[2023-05-20 23:26:56] INFO root fetch - processPackages [neurodeploy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 23:26:56] INFO root fetch - processPackages [kynaylibs]: New version: [7.1.4] Old Version: [7.1.3]
+[2023-05-20 23:26:57] INFO root fetch - processPackages [pytket-qir]: executing diffoscope
+[2023-05-20 23:26:57] INFO root fetch - processPackages [pytket-qir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytket_qir-0.2.0rc1-py3-none-any.whl.zip tmp/pytket_qir-0.2.0rc2-py3-none-any.whl.zip --markdown 20230520/p/pytket-qir/0.2.0rc1-0.2.0rc2/diff.md --exclude *.pyd
+[2023-05-20 23:26:57] INFO root fetch - processPackages [kynaylibs]: executing diffoscope
+[2023-05-20 23:26:57] INFO root fetch - processPackages [kynaylibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kynaylibs-7.1.3.tar.gz tmp/kynaylibs-7.1.4.tar.gz --markdown 20230520/k/kynaylibs/7.1.3-7.1.4/diff.md --exclude *.pyd
+[2023-05-20 23:26:57] INFO root fetch - processPackages [shallowpavlov]: Downloading https://files.pythonhosted.org/packages/c9/70/862f429b7a3e8933cdd2bb332840200949a6599c040357366b6d91bb3339/shallowpavlov-0.0.2.tar.gz
+[2023-05-20 23:26:57] INFO root fetch - processPackages [neurodeploy]: Downloading https://files.pythonhosted.org/packages/a8/33/d2f85af349e39b4ddc5d3ebea27b2f17a622fe6b3426e3a2181d87b9ce56/neurodeploy-0.0.8.tar.gz
+[2023-05-20 23:26:57] INFO root fetch - processPackages [shallowpavlov]: executing diffoscope
+[2023-05-20 23:26:57] INFO root fetch - processPackages [shallowpavlov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shallowpavlov-0.0.2.tar.gz tmp/shallowpavlov-1.0.0rc1.tar.gz --markdown 20230520/s/shallowpavlov/0.0.2-1.0.0rc1/diff.md --exclude *.pyd
+[2023-05-20 23:26:57] INFO root fetch - processPackages [neurodeploy]: Downloading https://files.pythonhosted.org/packages/68/2d/2853ad9f83798b42039349c153b614f134362959147ca7340c0025617faa/neurodeploy-0.0.9.tar.gz
+[2023-05-20 23:26:57] INFO root fetch - processPackages [neurodeploy]: executing diffoscope
+[2023-05-20 23:26:57] INFO root fetch - processPackages [neurodeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neurodeploy-0.0.8.tar.gz tmp/neurodeploy-0.0.9.tar.gz --markdown 20230520/n/neurodeploy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 23:26:58] INFO root fetch - main [MainThread]: End processing [pytket-qir]: success
+[2023-05-20 23:26:58] INFO root fetch - main [MainThread]: End processing [kynaylibs]: success
+[2023-05-20 23:26:58] INFO root fetch - main [MainThread]: End processing [neurodeploy]: success
+[2023-05-20 23:27:00] INFO root fetch - main [MainThread]: End processing [shallowpavlov]: success
+[2023-05-20 23:27:00] INFO root fetch - main [MainThread]: Store serial: [18184356]
