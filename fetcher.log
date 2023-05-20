@@ -6141,3 +6141,18 @@
 [2023-05-20 07:25:55] INFO root fetch - main [MainThread]: End processing [PySimpleInput]: success
 [2023-05-20 07:25:55] INFO root fetch - main [MainThread]: End processing [BDXConverter]: success
 [2023-05-20 07:25:55] INFO root fetch - main [MainThread]: Store serial: [18179886]
+[2023-05-20 07:31:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179886]
+[2023-05-20 07:31:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-20 07:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hugchat
+[2023-05-20 07:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crazy-thursday
+[2023-05-20 07:31:05] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.5.9.1] Old Version: [2023.5.9.0]
+[2023-05-20 07:31:05] INFO root fetch - processPackages [hugchat]: New version: [0.0.6.2] Old Version: [0.0.6.1]
+[2023-05-20 07:31:05] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-05-20 07:31:05] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.5.9.0.tar.gz tmp/crazy-thursday-2023.5.9.1.tar.gz --markdown 20230520/c/crazy-thursday/2023.5.9.0-2023.5.9.1/diff.md --exclude *.pyd
+[2023-05-20 07:31:05] INFO root fetch - processPackages [hugchat]: Downloading https://files.pythonhosted.org/packages/4f/f2/f0e8026e0d54c0dbff2428b6e9c924a4f47c82004d02c60cc14d9c05fb83/hugchat-0.0.6.1.tar.gz
+[2023-05-20 07:31:05] INFO root fetch - processPackages [hugchat]: Downloading https://files.pythonhosted.org/packages/c6/ea/2629ccf123676245163a9670156bddbdec1c00a6a5009622b10917db67e8/hugchat-0.0.6.2.tar.gz
+[2023-05-20 07:31:05] INFO root fetch - processPackages [hugchat]: executing diffoscope
+[2023-05-20 07:31:05] INFO root fetch - processPackages [hugchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hugchat-0.0.6.1.tar.gz tmp/hugchat-0.0.6.2.tar.gz --markdown 20230520/h/hugchat/0.0.6.1-0.0.6.2/diff.md --exclude *.pyd
+[2023-05-20 07:31:06] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-05-20 07:31:07] INFO root fetch - main [MainThread]: End processing [hugchat]: success
+[2023-05-20 07:31:07] INFO root fetch - main [MainThread]: Store serial: [18179892]
