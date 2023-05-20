@@ -7824,3 +7824,18 @@
 [2023-05-20 11:48:46] INFO root fetch - main [MainThread]: End processing [Pandora-ChatGPT]: success
 [2023-05-20 11:48:46] INFO root fetch - main [MainThread]: End processing [xuanpolicy]: success
 [2023-05-20 11:48:46] INFO root fetch - main [MainThread]: Store serial: [18180979]
+[2023-05-20 11:53:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180979]
+[2023-05-20 11:53:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-20 11:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bosch-control-panel-cc880p
+[2023-05-20 11:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: memory-graph
+[2023-05-20 11:53:56] INFO root fetch - processPackages [memory-graph]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-20 11:53:56] INFO root fetch - processPackages [bosch-control-panel-cc880p]: New version: [3.1.0] Old Version: [3.0.0]
+[2023-05-20 11:53:56] INFO root fetch - processPackages [memory-graph]: executing diffoscope
+[2023-05-20 11:53:56] INFO root fetch - processPackages [memory-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memory_graph-0.1.0.tar.gz tmp/memory_graph-0.1.1.tar.gz --markdown 20230520/m/memory-graph/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-20 11:53:57] INFO root fetch - processPackages [bosch-control-panel-cc880p]: Downloading https://files.pythonhosted.org/packages/6b/db/54580fff5f9635353aec03afc680ff5b68fc6689f090c49670ced04ad0ee/bosch-control-panel-cc880p-3.0.0.tar.gz
+[2023-05-20 11:53:57] INFO root fetch - processPackages [bosch-control-panel-cc880p]: Downloading https://files.pythonhosted.org/packages/13/12/8b64ab7ad0a06ca6232534fe6d02e3dde4457e5ec03c8d9068b4924fa00d/bosch-control-panel-cc880p-3.1.0.tar.gz
+[2023-05-20 11:53:57] INFO root fetch - processPackages [bosch-control-panel-cc880p]: executing diffoscope
+[2023-05-20 11:53:57] INFO root fetch - processPackages [bosch-control-panel-cc880p]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bosch-control-panel-cc880p-3.0.0.tar.gz tmp/bosch-control-panel-cc880p-3.1.0.tar.gz --markdown 20230520/b/bosch-control-panel-cc880p/3.0.0-3.1.0/diff.md --exclude *.pyd
+[2023-05-20 11:53:58] INFO root fetch - main [MainThread]: End processing [memory-graph]: success
+[2023-05-20 11:53:58] INFO root fetch - main [MainThread]: End processing [bosch-control-panel-cc880p]: success
+[2023-05-20 11:53:58] INFO root fetch - main [MainThread]: Store serial: [18181000]
