@@ -9666,3 +9666,58 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 15:05:25] INFO root fetch - main [MainThread]: End processing [ezbeq]: success
 [2023-05-20 15:06:14] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2023-05-20 15:06:14] INFO root fetch - main [MainThread]: Store serial: [18182098]
+[2023-05-20 15:11:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182098]
+[2023-05-20 15:11:33] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-20 15:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev-stdlib
+[2023-05-20 15:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: st-lucas
+[2023-05-20 15:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: st-lucas
+[2023-05-20 15:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: st-lucas
+[2023-05-20 15:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xserializer
+[2023-05-20 15:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbdev-numpy
+[2023-05-20 15:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nbdev-pandas
+[2023-05-20 15:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: s27a-jbq
+[2023-05-20 15:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: shinherpro
+[2023-05-20 15:11:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nbdev-pytorch
+[2023-05-20 15:11:33] WARNING root fetch - processPackages [xserializer]: Skipping, unable to determine old version
+[2023-05-20 15:11:33] INFO root fetch - processPackages [xserializer]: Start processing: pyhtools
+[2023-05-20 15:11:33] INFO root fetch - main [MainThread]: End processing [xserializer] error
+[2023-05-20 15:11:33] INFO root fetch - processPackages [shinherpro]: New version: [1.5.7] Old Version: [1.5.6]
+[2023-05-20 15:11:33] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-20 15:11:33] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-20 15:11:33] INFO root fetch - processPackages [s27a-jbq]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-20 15:11:33] INFO root fetch - processPackages [pyhtools]: New version: [2.2.4] Old Version: [2.2.3]
+[2023-05-20 15:11:33] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-20 15:11:33] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-20 15:11:33] ERROR root fetch - processPackages [st-lucas]: Unable to get metadata: No such project 'st-lucas'
+[2023-05-20 15:11:33] ERROR root fetch - processPackages [st-lucas]: Unable to get metadata: No such project 'st-lucas'
+[2023-05-20 15:11:33] INFO root fetch - main [MainThread]: End processing [st-lucas] error
+[2023-05-20 15:11:33] INFO root fetch - main [MainThread]: End processing [st-lucas] error
+[2023-05-20 15:11:33] ERROR root fetch - processPackages [st-lucas]: Unable to get metadata: No such project 'st-lucas'
+[2023-05-20 15:11:33] INFO root fetch - main [MainThread]: End processing [st-lucas] error
+[2023-05-20 15:11:33] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-05-20 15:11:33] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230520/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-20 15:11:33] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-05-20 15:11:33] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230520/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-20 15:11:33] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-05-20 15:11:33] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230520/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-20 15:11:33] INFO root fetch - processPackages [shinherpro]: Downloading https://files.pythonhosted.org/packages/dd/d5/23f45ec0d10b8d62404d171668089a456a7927859a641cf5a1cec349094f/shinherpro-1.5.6.tar.gz
+[2023-05-20 15:11:33] INFO root fetch - processPackages [pyhtools]: Downloading https://files.pythonhosted.org/packages/d0/d7/fef5f78cdc2a267223e88035ad9e783d85ca26413b49a9b348cdd67b33df/pyhtools-2.2.4.tar.gz
+[2023-05-20 15:11:33] INFO root fetch - processPackages [s27a-jbq]: Downloading https://files.pythonhosted.org/packages/c8/85/2057b73cff25251ab43f493a0395240ec43088327960d42f8800c5ff77cf/s27a_jbq-1.0.0.tar.gz
+[2023-05-20 15:11:33] INFO root fetch - processPackages [pyhtools]: executing diffoscope
+[2023-05-20 15:11:33] INFO root fetch - processPackages [pyhtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhtools-2.2.3.tar.gz tmp/pyhtools-2.2.4.tar.gz --markdown 20230520/p/pyhtools/2.2.3-2.2.4/diff.md --exclude *.pyd
+[2023-05-20 15:11:33] INFO root fetch - processPackages [shinherpro]: Downloading https://files.pythonhosted.org/packages/24/fc/41fa9b0c07f7e86c83863a2789cf6e28a2f560db916b81de890b2dd435e4/shinherpro-1.5.7.tar.gz
+[2023-05-20 15:11:33] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-05-20 15:11:33] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230520/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-20 15:11:33] INFO root fetch - processPackages [shinherpro]: executing diffoscope
+[2023-05-20 15:11:33] INFO root fetch - processPackages [s27a-jbq]: Downloading https://files.pythonhosted.org/packages/0d/c0/d68d96d1d9df2ddc9d21fb25b47bf4088da95564eb2aecbf892a0e81b24c/s27a_jbq-1.0.1.tar.gz
+[2023-05-20 15:11:33] INFO root fetch - processPackages [shinherpro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shinherpro-1.5.6.tar.gz tmp/shinherpro-1.5.7.tar.gz --markdown 20230520/s/shinherpro/1.5.6-1.5.7/diff.md --exclude *.pyd
+[2023-05-20 15:11:33] INFO root fetch - processPackages [s27a-jbq]: executing diffoscope
+[2023-05-20 15:11:33] INFO root fetch - processPackages [s27a-jbq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/s27a_jbq-1.0.0.tar.gz tmp/s27a_jbq-1.0.1.tar.gz --markdown 20230520/s/s27a-jbq/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-20 15:11:34] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-05-20 15:11:34] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-05-20 15:11:34] INFO root fetch - main [MainThread]: End processing [shinherpro]: success
+[2023-05-20 15:11:34] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-05-20 15:11:35] INFO root fetch - main [MainThread]: End processing [s27a-jbq]: success
+[2023-05-20 15:11:35] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-05-20 15:11:36] INFO root fetch - main [MainThread]: End processing [pyhtools]: success
+[2023-05-20 15:11:36] INFO root fetch - main [MainThread]: Store serial: [18182140]
