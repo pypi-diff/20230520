@@ -6156,3 +6156,16 @@
 [2023-05-20 07:31:06] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
 [2023-05-20 07:31:07] INFO root fetch - main [MainThread]: End processing [hugchat]: success
 [2023-05-20 07:31:07] INFO root fetch - main [MainThread]: Store serial: [18179892]
+[2023-05-20 07:36:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179892]
+[2023-05-20 07:36:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-20 07:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mainnet
+[2023-05-20 07:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jira2json
+[2023-05-20 07:36:15] WARNING root fetch - processPackages [jira2json]: Skipping, unable to determine old version
+[2023-05-20 07:36:15] INFO root fetch - main [MainThread]: End processing [jira2json] error
+[2023-05-20 07:36:15] INFO root fetch - processPackages [mainnet]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-20 07:36:16] INFO root fetch - processPackages [mainnet]: Downloading https://files.pythonhosted.org/packages/6e/fa/89e5bbdfd3f6b3960ccd12b9cac6dc0e6ddce1a77335337e7db346953b7b/mainnet-1.1.8.tar.gz
+[2023-05-20 07:36:16] INFO root fetch - processPackages [mainnet]: Downloading https://files.pythonhosted.org/packages/6a/9f/2aecb608d2108426a0f241c5fb1e1f28fdb6d31e3210c05d53b96cf25507/mainnet-1.1.9.tar.gz
+[2023-05-20 07:36:16] INFO root fetch - processPackages [mainnet]: executing diffoscope
+[2023-05-20 07:36:16] INFO root fetch - processPackages [mainnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mainnet-1.1.8.tar.gz tmp/mainnet-1.1.9.tar.gz --markdown 20230520/m/mainnet/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-20 07:36:26] INFO root fetch - main [MainThread]: End processing [mainnet]: success
+[2023-05-20 07:36:26] INFO root fetch - main [MainThread]: Store serial: [18179901]
