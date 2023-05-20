@@ -2400,3 +2400,23 @@
 [2023-05-20 03:07:41] INFO root fetch - main [MainThread]: End processing [keepercommander]: success
 [2023-05-20 03:07:41] INFO root fetch - main [MainThread]: End processing [whylogs]: success
 [2023-05-20 03:07:41] INFO root fetch - main [MainThread]: Store serial: [18177499]
+[2023-05-20 03:12:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18177499]
+[2023-05-20 03:12:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 03:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seaplayer
+[2023-05-20 03:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-sops-secrets
+[2023-05-20 03:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: thedevilseye
+[2023-05-20 03:12:50] INFO root fetch - processPackages [seaplayer]: New version: [0.4a3] Old Version: [0.4a2]
+[2023-05-20 03:12:50] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-05-20 03:12:50] INFO root fetch - processPackages [thedevilseye]: New version: [2022.1.5.1] Old Version: [2022.1.4.0]
+[2023-05-20 03:12:50] INFO root fetch - processPackages [seaplayer]: executing diffoscope
+[2023-05-20 03:12:50] INFO root fetch - processPackages [seaplayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seaplayer-0.4a2.tar.gz tmp/seaplayer-0.4a3.tar.gz --markdown 20230520/s/seaplayer/0.4a2-0.4a3/diff.md --exclude *.pyd
+[2023-05-20 03:12:50] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2023-05-20 03:12:50] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.2.98.tar.gz tmp/cdk-sops-secrets-1.2.99.tar.gz --markdown 20230520/c/cdk-sops-secrets/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-05-20 03:12:50] INFO root fetch - processPackages [thedevilseye]: Downloading https://files.pythonhosted.org/packages/5a/df/c8c337aac89e9e81f40f1ca96b4c5d57c3d792478bc46a48158a1c0a6d3c/thedevilseye-2022.1.4.0.tar.gz
+[2023-05-20 03:12:50] INFO root fetch - processPackages [thedevilseye]: Downloading https://files.pythonhosted.org/packages/5c/10/d6cb39a88f8f11d89260f6399590dacf5371727ddd8a88ead8c169e9a352/thedevilseye-2022.1.5.1.tar.gz
+[2023-05-20 03:12:50] INFO root fetch - processPackages [thedevilseye]: executing diffoscope
+[2023-05-20 03:12:50] INFO root fetch - processPackages [thedevilseye]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thedevilseye-2022.1.4.0.tar.gz tmp/thedevilseye-2022.1.5.1.tar.gz --markdown 20230520/t/thedevilseye/2022.1.4.0-2022.1.5.1/diff.md --exclude *.pyd
+[2023-05-20 03:12:51] INFO root fetch - main [MainThread]: End processing [seaplayer]: success
+[2023-05-20 03:12:51] INFO root fetch - main [MainThread]: End processing [thedevilseye]: success
+[2023-05-20 03:12:52] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
+[2023-05-20 03:12:52] INFO root fetch - main [MainThread]: Store serial: [18177508]
