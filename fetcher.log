@@ -10806,3 +10806,74 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 17:22:56] INFO root fetch - main [MainThread]: End processing [mokkari]: success
 [2023-05-20 17:23:01] INFO root fetch - main [MainThread]: End processing [investor8-sdk]: success
 [2023-05-20 17:23:01] INFO root fetch - main [MainThread]: Store serial: [18182923]
+[2023-05-20 17:28:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182923]
+[2023-05-20 17:28:10] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-20 17:28:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: classy-imaginary
+[2023-05-20 17:28:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: twilix-python
+[2023-05-20 17:28:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: isoCycle
+[2023-05-20 17:28:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: batpy
+[2023-05-20 17:28:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: isoCycle
+[2023-05-20 17:28:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vit-pytorch
+[2023-05-20 17:28:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-tbase-post
+[2023-05-20 17:28:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PyEng
+[2023-05-20 17:28:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: freeGPT
+[2023-05-20 17:28:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: maturin
+[2023-05-20 17:28:10] INFO root fetch - processPackages [batpy]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-20 17:28:10] INFO root fetch - processPackages [twilix-python]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-20 17:28:10] INFO root fetch - processPackages [vit-pytorch]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-20 17:28:10] INFO root fetch - processPackages [PyEng]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-20 17:28:10] INFO root fetch - processPackages [isoCycle]: New version: [0.0.26] Old Version: [0.0.25]
+[2023-05-20 17:28:10] INFO root fetch - processPackages [django-tbase-post]: New version: [2023.5.2016845963] Old Version: [2023.5.2016845958]
+[2023-05-20 17:28:10] WARNING root fetch - processPackages [freeGPT]: Skipping, unable to determine old version
+[2023-05-20 17:28:10] INFO root fetch - processPackages [freeGPT]: Start processing: scratchattach
+[2023-05-20 17:28:10] INFO root fetch - main [MainThread]: End processing [freeGPT] error
+[2023-05-20 17:28:10] INFO root fetch - processPackages [isoCycle]: New version: [0.0.26] Old Version: [0.0.25]
+[2023-05-20 17:28:10] INFO root fetch - processPackages [classy-imaginary]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-05-20 17:28:10] INFO root fetch - processPackages [maturin]: New version: [1.0.0b9] Old Version: [1.0.0b8]
+[2023-05-20 17:28:11] INFO root fetch - processPackages [scratchattach]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-05-20 17:28:11] INFO root fetch - processPackages [isoCycle]: Downloading https://files.pythonhosted.org/packages/31/1c/4734f11b0c9e510980f1f88dc744398934c0a8bb884511b534fb09115337/isoCycle-0.0.25.tar.gz
+[2023-05-20 17:28:11] INFO root fetch - processPackages [django-tbase-post]: Downloading https://files.pythonhosted.org/packages/6a/22/586e247804ac34e654966219644fd3edbb62e211c708cfadbc440278704f/django_tbase_post-2023.5.2016845958.tar.gz
+[2023-05-20 17:28:11] INFO root fetch - processPackages [isoCycle]: Downloading https://files.pythonhosted.org/packages/31/1c/4734f11b0c9e510980f1f88dc744398934c0a8bb884511b534fb09115337/isoCycle-0.0.25.tar.gz
+[2023-05-20 17:28:11] INFO root fetch - processPackages [PyEng]: Downloading https://files.pythonhosted.org/packages/92/b3/d84eba930e4552744dc5a3fc94373b5feb1f9bfb866f61a86ad340ac7048/PyEng-1.0.0.tar.gz
+[2023-05-20 17:28:11] INFO root fetch - processPackages [vit-pytorch]: Downloading https://files.pythonhosted.org/packages/16/e2/2c2dd7759355938f5a2c608c6492bd4184b79cd7cd7489f277bf19cffe11/vit-pytorch-1.2.1.tar.gz
+[2023-05-20 17:28:11] WARNING root fetch - processPackages [isoCycle]: Skipping package: exceeds size limit 90316174>=10485760
+[2023-05-20 17:28:11] INFO root fetch - processPackages [classy-imaginary]: Downloading https://files.pythonhosted.org/packages/13/00/85be6186d835f4159a9baccfd770e6d82bc31166f87adce9a67a0a4b04b0/classy_imaginary-0.6.2.tar.gz
+[2023-05-20 17:28:11] INFO root fetch - main [MainThread]: End processing [isoCycle] error
+[2023-05-20 17:28:11] WARNING root fetch - processPackages [isoCycle]: Skipping package: exceeds size limit 90316174>=10485760
+[2023-05-20 17:28:11] INFO root fetch - main [MainThread]: End processing [isoCycle] error
+[2023-05-20 17:28:11] INFO root fetch - processPackages [batpy]: Downloading https://files.pythonhosted.org/packages/09/8a/ff530df86b878e14f868a867c6974d6f3ed3ff026d9430cd2a17b550a8b2/batpy-0.1.0.tar.gz
+[2023-05-20 17:28:11] INFO root fetch - processPackages [twilix-python]: Downloading https://files.pythonhosted.org/packages/7a/4c/cb5fb88be335400f8ce76f88cff5b96c4348ff65ca39fae556911ab380c5/twilix-python-0.0.3.tar.gz
+[2023-05-20 17:28:11] INFO root fetch - processPackages [scratchattach]: Downloading https://files.pythonhosted.org/packages/d6/cd/7a36cf6ebcf5d654edb9667c97d0d33b95a48076fab2f7fcdb56966c297c/scratchattach-1.1.5.tar.gz
+[2023-05-20 17:28:11] INFO root fetch - processPackages [maturin]: Downloading https://files.pythonhosted.org/packages/a5/ba/b84d3d3283ffeb04578d883e6fe5417ae25454e8178d77e1d8666bbd04d1/maturin-1.0.0b8.tar.gz
+[2023-05-20 17:28:11] INFO root fetch - processPackages [django-tbase-post]: Downloading https://files.pythonhosted.org/packages/cd/92/ce95183897b29fb1dd6168f40915d4fa2d584d0a3961a83ba591f507a2b0/django_tbase_post-2023.5.2016845963.tar.gz
+[2023-05-20 17:28:11] INFO root fetch - processPackages [twilix-python]: executing diffoscope
+[2023-05-20 17:28:11] INFO root fetch - processPackages [twilix-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twilix-python-0.0.2.tar.gz tmp/twilix-python-0.0.3.tar.gz --markdown 20230520/t/twilix-python/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-20 17:28:11] INFO root fetch - processPackages [django-tbase-post]: executing diffoscope
+[2023-05-20 17:28:11] INFO root fetch - processPackages [django-tbase-post]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_tbase_post-2023.5.2016845958.tar.gz tmp/django_tbase_post-2023.5.2016845963.tar.gz --markdown 20230520/d/django-tbase-post/2023.5.2016845958-2023.5.2016845963/diff.md --exclude *.pyd
+[2023-05-20 17:28:11] INFO root fetch - processPackages [vit-pytorch]: Downloading https://files.pythonhosted.org/packages/53/5b/f62d7074d9d71da86f346d9813279aee19cbef6640443939acfa39cec0ee/vit-pytorch-1.2.2.tar.gz
+[2023-05-20 17:28:11] INFO root fetch - processPackages [PyEng]: Downloading https://files.pythonhosted.org/packages/22/ea/f277db686c224cdb45f3f3215fdd944ee17283077c04a272d611f2032682/PyEng-1.0.1.tar.gz
+[2023-05-20 17:28:11] INFO root fetch - processPackages [batpy]: Downloading https://files.pythonhosted.org/packages/67/cd/603f216cfbe68df663e570e0aa6b5d18ddb1f1edbb4b45d0839229dc5806/batpy-0.2.0.tar.gz
+[2023-05-20 17:28:11] INFO root fetch - processPackages [scratchattach]: Downloading https://files.pythonhosted.org/packages/de/6e/71e4962a3fa2e653c56dda1cb1474286b01310f8273e7d346c0026dce237/scratchattach-1.1.6.tar.gz
+[2023-05-20 17:28:11] INFO root fetch - processPackages [vit-pytorch]: executing diffoscope
+[2023-05-20 17:28:11] INFO root fetch - processPackages [vit-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vit-pytorch-1.2.1.tar.gz tmp/vit-pytorch-1.2.2.tar.gz --markdown 20230520/v/vit-pytorch/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-20 17:28:11] INFO root fetch - processPackages [classy-imaginary]: Downloading https://files.pythonhosted.org/packages/1f/9e/1cd9fe5e1f928f0c6f4ab2e4ebf476e8df7cea4b0a248fbcbcc15f6ee1c6/classy_imaginary-0.6.3.tar.gz
+[2023-05-20 17:28:11] INFO root fetch - processPackages [batpy]: executing diffoscope
+[2023-05-20 17:28:11] INFO root fetch - processPackages [batpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/batpy-0.1.0.tar.gz tmp/batpy-0.2.0.tar.gz --markdown 20230520/b/batpy/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-20 17:28:11] INFO root fetch - processPackages [maturin]: Downloading https://files.pythonhosted.org/packages/08/0e/774c5b7935e8a4932a786ed23abdadd50663a54807939f95b3ce21f3f174/maturin-1.0.0b9.tar.gz
+[2023-05-20 17:28:11] INFO root fetch - processPackages [scratchattach]: executing diffoscope
+[2023-05-20 17:28:11] INFO root fetch - processPackages [scratchattach]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scratchattach-1.1.5.tar.gz tmp/scratchattach-1.1.6.tar.gz --markdown 20230520/s/scratchattach/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-05-20 17:28:11] INFO root fetch - processPackages [classy-imaginary]: executing diffoscope
+[2023-05-20 17:28:11] INFO root fetch - processPackages [classy-imaginary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/classy_imaginary-0.6.2.tar.gz tmp/classy_imaginary-0.6.3.tar.gz --markdown 20230520/c/classy-imaginary/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-05-20 17:28:11] INFO root fetch - processPackages [maturin]: executing diffoscope
+[2023-05-20 17:28:11] INFO root fetch - processPackages [maturin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maturin-1.0.0b8.tar.gz tmp/maturin-1.0.0b9.tar.gz --markdown 20230520/m/maturin/1.0.0b8-1.0.0b9/diff.md --exclude *.pyd
+[2023-05-20 17:28:12] INFO root fetch - main [MainThread]: End processing [django-tbase-post]: success
+[2023-05-20 17:28:12] INFO root fetch - main [MainThread]: End processing [twilix-python]: success
+[2023-05-20 17:28:12] INFO root fetch - processPackages [PyEng]: executing diffoscope
+[2023-05-20 17:28:12] INFO root fetch - processPackages [PyEng]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyEng-1.0.0.tar.gz tmp/PyEng-1.0.1.tar.gz --markdown 20230520/P/PyEng/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-20 17:28:13] INFO root fetch - main [MainThread]: End processing [batpy]: success
+[2023-05-20 17:28:13] INFO root fetch - main [MainThread]: End processing [vit-pytorch]: success
+[2023-05-20 17:28:13] INFO root fetch - main [MainThread]: End processing [scratchattach]: success
+[2023-05-20 17:28:13] INFO root fetch - main [MainThread]: End processing [maturin]: success
+[2023-05-20 17:28:14] INFO root fetch - main [MainThread]: End processing [classy-imaginary]: success
+[2023-05-20 17:28:15] INFO root fetch - main [MainThread]: End processing [PyEng]: success
+[2023-05-20 17:28:15] INFO root fetch - main [MainThread]: Store serial: [18182965]
