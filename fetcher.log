@@ -10317,3 +10317,28 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 16:15:18] INFO root fetch - main [MainThread]: End processing [do-py]: success
 [2023-05-20 16:15:19] INFO root fetch - main [MainThread]: End processing [nvm]: success
 [2023-05-20 16:15:19] INFO root fetch - main [MainThread]: Store serial: [18182603]
+[2023-05-20 16:20:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182603]
+[2023-05-20 16:20:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 16:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: archeSetup
+[2023-05-20 16:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: veilcord
+[2023-05-20 16:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: novadata-utils
+[2023-05-20 16:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyEng
+[2023-05-20 16:20:28] INFO root fetch - processPackages [veilcord]: New version: [0.0.0.5] Old Version: [0.0.0.40]
+[2023-05-20 16:20:28] INFO root fetch - processPackages [archeSetup]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-20 16:20:28] WARNING root fetch - processPackages [PyEng]: Skipping, unable to determine old version
+[2023-05-20 16:20:28] INFO root fetch - main [MainThread]: End processing [PyEng] error
+[2023-05-20 16:20:28] INFO root fetch - processPackages [novadata-utils]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-20 16:20:28] INFO root fetch - processPackages [veilcord]: Downloading https://files.pythonhosted.org/packages/73/bc/46958bb69bf31c35d9c25fd0fb9180d38af743f46275db818e695fe55209/veilcord-0.0.0.40.tar.gz
+[2023-05-20 16:20:28] INFO root fetch - processPackages [novadata-utils]: Downloading https://files.pythonhosted.org/packages/5b/9d/0844558c57e37c70cdd56d6f5032a3ed2fc63138588c274e0821c123d0d3/novadata_utils-0.2.4.tar.gz
+[2023-05-20 16:20:28] INFO root fetch - processPackages [archeSetup]: Downloading https://files.pythonhosted.org/packages/f4/ca/6c19180ff8222f5f611bf77c613c208449cf34eb5ecb9703914595483e93/archeSetup-0.0.5.tar.gz
+[2023-05-20 16:20:28] INFO root fetch - processPackages [archeSetup]: executing diffoscope
+[2023-05-20 16:20:28] INFO root fetch - processPackages [archeSetup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/archeSetup-0.0.4.tar.gz tmp/archeSetup-0.0.5.tar.gz --markdown 20230520/a/archeSetup/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-20 16:20:29] INFO root fetch - processPackages [novadata-utils]: Downloading https://files.pythonhosted.org/packages/f4/58/072df4c80f90e2c80569e80419b05fc8f5295c87401e9b71597f731fb9e3/novadata_utils-0.2.5.tar.gz
+[2023-05-20 16:20:29] INFO root fetch - processPackages [veilcord]: executing diffoscope
+[2023-05-20 16:20:29] INFO root fetch - processPackages [veilcord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/veilcord-0.0.0.40.tar.gz tmp/veilcord-0.0.0.5.tar.gz --markdown 20230520/v/veilcord/0.0.0.40-0.0.0.5/diff.md --exclude *.pyd
+[2023-05-20 16:20:29] INFO root fetch - processPackages [novadata-utils]: executing diffoscope
+[2023-05-20 16:20:29] INFO root fetch - processPackages [novadata-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novadata_utils-0.2.4.tar.gz tmp/novadata_utils-0.2.5.tar.gz --markdown 20230520/n/novadata-utils/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-20 16:20:30] INFO root fetch - main [MainThread]: End processing [veilcord]: success
+[2023-05-20 16:20:30] INFO root fetch - main [MainThread]: End processing [archeSetup]: success
+[2023-05-20 16:20:30] INFO root fetch - main [MainThread]: End processing [novadata-utils]: success
+[2023-05-20 16:20:30] INFO root fetch - main [MainThread]: Store serial: [18182617]
