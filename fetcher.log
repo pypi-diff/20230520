@@ -9064,3 +9064,40 @@
 [2023-05-20 14:01:13] INFO root fetch - main [MainThread]: End processing [acrod]: success
 [2023-05-20 14:01:16] INFO root fetch - main [MainThread]: End processing [spotPython]: success
 [2023-05-20 14:01:16] INFO root fetch - main [MainThread]: Store serial: [18181766]
+[2023-05-20 14:06:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18181766]
+[2023-05-20 14:06:25] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 14:06:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyDistances
+[2023-05-20 14:06:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ml-hyperparameters
+[2023-05-20 14:06:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: acrod
+[2023-05-20 14:06:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mimesis
+[2023-05-20 14:06:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: acrod
+[2023-05-20 14:06:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: irails
+[2023-05-20 14:06:25] INFO root fetch - processPackages [acrod]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-20 14:06:25] INFO root fetch - processPackages [acrod]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-20 14:06:25] INFO root fetch - processPackages [mimesis]: New version: [9.0.0] Old Version: [8.0.0]
+[2023-05-20 14:06:25] WARNING root fetch - processPackages [ml-hyperparameters]: Skipping, unable to determine old version
+[2023-05-20 14:06:25] INFO root fetch - main [MainThread]: End processing [ml-hyperparameters] error
+[2023-05-20 14:06:25] INFO root fetch - processPackages [PyDistances]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-20 14:06:26] INFO root fetch - processPackages [irails]: New version: [1.3.19] Old Version: [1.3.16]
+[2023-05-20 14:06:26] INFO root fetch - processPackages [PyDistances]: Downloading https://files.pythonhosted.org/packages/fa/86/07a3ebba39321edd615e9876501f3e3001249b2fa1f476765dbb51d6c5d3/PyDistances-0.0.6.tar.gz
+[2023-05-20 14:06:26] INFO root fetch - processPackages [acrod]: Downloading https://files.pythonhosted.org/packages/5f/0d/cc72861890cef9a0dce1aee3f60e1b440b42a2070eb5a33f1a219e7afa78/acrod-1.1.2.tar.gz
+[2023-05-20 14:06:26] INFO root fetch - processPackages [acrod]: Downloading https://files.pythonhosted.org/packages/5f/0d/cc72861890cef9a0dce1aee3f60e1b440b42a2070eb5a33f1a219e7afa78/acrod-1.1.2.tar.gz
+[2023-05-20 14:06:26] INFO root fetch - processPackages [mimesis]: Downloading https://files.pythonhosted.org/packages/11/c3/63f9ae346af2a23876aba1aab2b65934ac4b9c65ddf6af5e89c93c492cf4/mimesis-8.0.0.tar.gz
+[2023-05-20 14:06:26] INFO root fetch - processPackages [PyDistances]: executing diffoscope
+[2023-05-20 14:06:26] INFO root fetch - processPackages [PyDistances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyDistances-0.0.5.tar.gz tmp/PyDistances-0.0.6.tar.gz --markdown 20230520/P/PyDistances/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-20 14:06:26] INFO root fetch - processPackages [acrod]: executing diffoscope
+[2023-05-20 14:06:26] INFO root fetch - processPackages [acrod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acrod-1.1.1.tar.gz tmp/acrod-1.1.2.tar.gz --markdown 20230520/a/acrod/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-20 14:06:26] INFO root fetch - processPackages [acrod]: executing diffoscope
+[2023-05-20 14:06:26] INFO root fetch - processPackages [acrod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acrod-1.1.1.tar.gz tmp/acrod-1.1.2.tar.gz --markdown 20230520/a/acrod/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-20 14:06:26] INFO root fetch - processPackages [irails]: Downloading https://files.pythonhosted.org/packages/a1/fe/c2f5e9a5c9b8bd6e1bcb18e70fa1b0e8ecf6f255ba6433743f69f02c3153/irails-1.3.19.tar.gz
+[2023-05-20 14:06:26] INFO root fetch - processPackages [irails]: executing diffoscope
+[2023-05-20 14:06:26] INFO root fetch - processPackages [irails]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irails-1.3.16.tar.gz tmp/irails-1.3.19.tar.gz --markdown 20230520/i/irails/1.3.16-1.3.19/diff.md --exclude *.pyd
+[2023-05-20 14:06:27] INFO root fetch - main [MainThread]: End processing [PyDistances]: success
+[2023-05-20 14:06:27] INFO root fetch - main [MainThread]: End processing [acrod]: success
+[2023-05-20 14:06:27] INFO root fetch - main [MainThread]: End processing [acrod]: success
+[2023-05-20 14:06:27] INFO root fetch - processPackages [mimesis]: Downloading https://files.pythonhosted.org/packages/74/f4/34b8f193a24f5ed60e1c38836a3d3ff7fc7f321c0a3e00340f7070ea1a5c/mimesis-9.0.0.tar.gz
+[2023-05-20 14:06:27] INFO root fetch - processPackages [mimesis]: executing diffoscope
+[2023-05-20 14:06:27] INFO root fetch - processPackages [mimesis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimesis-8.0.0.tar.gz tmp/mimesis-9.0.0.tar.gz --markdown 20230520/m/mimesis/8.0.0-9.0.0/diff.md --exclude *.pyd
+[2023-05-20 14:06:28] INFO root fetch - main [MainThread]: End processing [irails]: success
+[2023-05-20 14:06:31] INFO root fetch - main [MainThread]: End processing [mimesis]: success
+[2023-05-20 14:06:31] INFO root fetch - main [MainThread]: Store serial: [18181789]
