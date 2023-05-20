@@ -13412,3 +13412,18 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 23:06:09] INFO root fetch - main [MainThread]: End processing [osconfiglib]: success
 [2023-05-20 23:06:12] INFO root fetch - main [MainThread]: End processing [ediri-scaleway]: success
 [2023-05-20 23:06:12] INFO root fetch - main [MainThread]: Store serial: [18184281]
+[2023-05-20 23:11:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184281]
+[2023-05-20 23:11:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-20 23:11:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wodoo
+[2023-05-20 23:11:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: low-index
+[2023-05-20 23:11:22] INFO root fetch - processPackages [low-index]: New version: [1.2] Old Version: [1.1.1]
+[2023-05-20 23:11:22] INFO root fetch - processPackages [wodoo]: New version: [0.3.99] Old Version: [0.3.96]
+[2023-05-20 23:11:23] INFO root fetch - processPackages [wodoo]: executing diffoscope
+[2023-05-20 23:11:23] INFO root fetch - processPackages [wodoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wodoo-0.3.96.tar.gz tmp/wodoo-0.3.99.tar.gz --markdown 20230520/w/wodoo/0.3.96-0.3.99/diff.md --exclude *.pyd
+[2023-05-20 23:11:23] INFO root fetch - processPackages [low-index]: Downloading https://files.pythonhosted.org/packages/a9/64/68b7074d85bec646cdf727ca17d5c4c5829b79bfb423e59f3f383617b502/low_index-1.1.1.tar.gz
+[2023-05-20 23:11:23] INFO root fetch - processPackages [low-index]: Downloading https://files.pythonhosted.org/packages/7a/72/589bc00aad6be3c162e1aff2d47ba0f3eb3a13b8a88a86d1a5798d41063e/low_index-1.2.tar.gz
+[2023-05-20 23:11:23] INFO root fetch - processPackages [low-index]: executing diffoscope
+[2023-05-20 23:11:23] INFO root fetch - processPackages [low-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/low_index-1.1.1.tar.gz tmp/low_index-1.2.tar.gz --markdown 20230520/l/low-index/1.1.1-1.2/diff.md --exclude *.pyd
+[2023-05-20 23:11:24] INFO root fetch - main [MainThread]: End processing [wodoo]: success
+[2023-05-20 23:11:24] INFO root fetch - main [MainThread]: End processing [low-index]: success
+[2023-05-20 23:11:24] INFO root fetch - main [MainThread]: Store serial: [18184318]
