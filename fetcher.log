@@ -7056,3 +7056,50 @@
 [2023-05-20 10:14:32] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-it-fatturapa]: success
 [2023-05-20 10:14:36] INFO root fetch - main [MainThread]: End processing [investor8-sdk]: success
 [2023-05-20 10:14:36] INFO root fetch - main [MainThread]: Store serial: [18180518]
+[2023-05-20 10:19:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180518]
+[2023-05-20 10:19:47] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-20 10:19:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nvfuser-cu121
+[2023-05-20 10:19:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nvfuser-cu118
+[2023-05-20 10:19:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nvfuser-cu117
+[2023-05-20 10:19:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: certora-cli-alpha-master
+[2023-05-20 10:19:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: asimov
+[2023-05-20 10:19:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: slskd-api
+[2023-05-20 10:19:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: simmon
+[2023-05-20 10:19:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: json-timeseries
+[2023-05-20 10:19:47] INFO root fetch - processPackages [nvfuser-cu118]: New version: [0.0.9.dev20230515] Old Version: [0.0.9.dev20230514]
+[2023-05-20 10:19:47] INFO root fetch - processPackages [nvfuser-cu121]: New version: [0.0.9.dev20230515] Old Version: [0.0.9.dev20230514]
+[2023-05-20 10:19:47] INFO root fetch - processPackages [nvfuser-cu117]: New version: [0.0.9.dev20230515] Old Version: [0.0.9.dev20230514]
+[2023-05-20 10:19:47] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230519.14.55.133670] Old Version: [20230518.9.17.425198]
+[2023-05-20 10:19:47] INFO root fetch - processPackages [simmon]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-20 10:19:47] INFO root fetch - processPackages [nvfuser-cu121]: executing diffoscope
+[2023-05-20 10:19:47] INFO root fetch - processPackages [nvfuser-cu121]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu121-0.0.9.dev20230514-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/nvfuser_cu121-0.0.9.dev20230515-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230520/n/nvfuser-cu121/0.0.9.dev20230514-0.0.9.dev20230515/diff.md --exclude *.pyd
+[2023-05-20 10:19:47] INFO root fetch - processPackages [asimov]: New version: [0.6.0a2] Old Version: [0.6.0a1]
+[2023-05-20 10:19:47] INFO root fetch - processPackages [slskd-api]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-20 10:19:47] INFO root fetch - processPackages [json-timeseries]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-20 10:19:47] INFO root fetch - processPackages [nvfuser-cu118]: executing diffoscope
+[2023-05-20 10:19:47] INFO root fetch - processPackages [nvfuser-cu118]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu118-0.0.9.dev20230514-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/nvfuser_cu118-0.0.9.dev20230515-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230520/n/nvfuser-cu118/0.0.9.dev20230514-0.0.9.dev20230515/diff.md --exclude *.pyd
+[2023-05-20 10:19:47] INFO root fetch - processPackages [nvfuser-cu117]: executing diffoscope
+[2023-05-20 10:19:47] INFO root fetch - processPackages [nvfuser-cu117]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu117-0.0.9.dev20230514-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/nvfuser_cu117-0.0.9.dev20230515-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230520/n/nvfuser-cu117/0.0.9.dev20230514-0.0.9.dev20230515/diff.md --exclude *.pyd
+[2023-05-20 10:19:47] INFO root fetch - processPackages [simmon]: executing diffoscope
+[2023-05-20 10:19:47] INFO root fetch - processPackages [simmon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simmon-0.0.3.tar.gz tmp/simmon-0.0.4.tar.gz --markdown 20230520/s/simmon/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-20 10:19:47] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/59/09/bfaf45acc289c4baf3f63cc479c97433df7ebe3b2cf1f2a0c66c53efdffd/certora-cli-alpha-master-20230518.9.17.425198.tar.gz
+[2023-05-20 10:19:47] INFO root fetch - processPackages [slskd-api]: Downloading https://files.pythonhosted.org/packages/92/80/6d3ca3c29907d6644b86048994ba0bf9986339faf40964afdb98d4c808d8/slskd-api-0.0.6.tar.gz
+[2023-05-20 10:19:47] INFO root fetch - processPackages [json-timeseries]: Downloading https://files.pythonhosted.org/packages/ee/52/8997ba9663d2f4b45f51c8a8b6d4a8cb2a9ae9f24d7225aa4e05a7324c1f/json_timeseries-0.1.2.tar.gz
+[2023-05-20 10:19:47] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38976614>=10485760
+[2023-05-20 10:19:47] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-20 10:19:47] INFO root fetch - processPackages [slskd-api]: Downloading https://files.pythonhosted.org/packages/c5/1f/8959750434681037ab699321578be1ac0ba7eb4fec7cb678f204c5119bde/slskd-api-0.0.7.tar.gz
+[2023-05-20 10:19:47] INFO root fetch - processPackages [asimov]: executing diffoscope
+[2023-05-20 10:19:47] INFO root fetch - processPackages [asimov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asimov-0.6.0a1-py2.py3-none-any.whl.zip tmp/asimov-0.6.0a2-py2.py3-none-any.whl.zip --markdown 20230520/a/asimov/0.6.0a1-0.6.0a2/diff.md --exclude *.pyd
+[2023-05-20 10:19:47] INFO root fetch - processPackages [json-timeseries]: Downloading https://files.pythonhosted.org/packages/7c/4e/02584ae40ab3ef3e7d63fd9412f507e7fe2b5419b7c48b176cd707a681cb/json_timeseries-0.1.3.tar.gz
+[2023-05-20 10:19:47] INFO root fetch - processPackages [slskd-api]: executing diffoscope
+[2023-05-20 10:19:47] INFO root fetch - processPackages [slskd-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slskd-api-0.0.6.tar.gz tmp/slskd-api-0.0.7.tar.gz --markdown 20230520/s/slskd-api/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-20 10:19:48] INFO root fetch - processPackages [json-timeseries]: executing diffoscope
+[2023-05-20 10:19:48] INFO root fetch - processPackages [json-timeseries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_timeseries-0.1.2.tar.gz tmp/json_timeseries-0.1.3.tar.gz --markdown 20230520/j/json-timeseries/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-20 10:19:48] INFO root fetch - main [MainThread]: End processing [simmon]: success
+[2023-05-20 10:19:49] INFO root fetch - main [MainThread]: End processing [slskd-api]: success
+[2023-05-20 10:19:49] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
+[2023-05-20 10:19:49] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
+[2023-05-20 10:19:49] INFO root fetch - main [MainThread]: End processing [json-timeseries]: success
+[2023-05-20 10:19:49] INFO root fetch - main [MainThread]: End processing [asimov]: success
+[2023-05-20 10:19:49] INFO root fetch - main [MainThread]: End processing [nvfuser-cu117]: success
+[2023-05-20 10:19:49] INFO root fetch - main [MainThread]: Store serial: [18180538]
