@@ -10975,3 +10975,43 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 17:38:41] INFO root fetch - main [MainThread]: End processing [django-tbase-post-product]: success
 [2023-05-20 17:38:43] INFO root fetch - main [MainThread]: End processing [cheroot]: success
 [2023-05-20 17:38:43] INFO root fetch - main [MainThread]: Store serial: [18183022]
+[2023-05-20 17:43:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183022]
+[2023-05-20 17:43:52] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-20 17:43:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: itkwasm-dicom-wasi
+[2023-05-20 17:43:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: isoCycle
+[2023-05-20 17:43:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: audiconnectpy
+[2023-05-20 17:43:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: paymobpy
+[2023-05-20 17:43:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: watchtower-browser-testing
+[2023-05-20 17:43:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: itkwasm-dicom-emscripten
+[2023-05-20 17:43:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: itkwasm-dicom
+[2023-05-20 17:43:52] INFO root fetch - processPackages [itkwasm-dicom-wasi]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-05-20 17:43:52] INFO root fetch - processPackages [isoCycle]: New version: [0.0.29] Old Version: [0.0.28]
+[2023-05-20 17:43:52] INFO root fetch - processPackages [audiconnectpy]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-05-20 17:43:52] WARNING root fetch - processPackages [paymobpy]: Skipping, unable to determine old version
+[2023-05-20 17:43:52] INFO root fetch - main [MainThread]: End processing [paymobpy] error
+[2023-05-20 17:43:52] INFO root fetch - processPackages [watchtower-browser-testing]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-20 17:43:52] INFO root fetch - processPackages [itkwasm-dicom]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-05-20 17:43:52] INFO root fetch - processPackages [itkwasm-dicom-emscripten]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-05-20 17:43:52] INFO root fetch - processPackages [isoCycle]: Downloading https://files.pythonhosted.org/packages/49/98/92b64ad91498540a931e27ac6d0eab079e5507d63e0f451d0aaafb8d7690/isoCycle-0.0.28.tar.gz
+[2023-05-20 17:43:52] INFO root fetch - processPackages [watchtower-browser-testing]: executing diffoscope
+[2023-05-20 17:43:52] INFO root fetch - processPackages [watchtower-browser-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watchtower_browser_testing-0.4.8.tar.gz tmp/watchtower_browser_testing-0.4.9.tar.gz --markdown 20230520/w/watchtower-browser-testing/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-20 17:43:52] WARNING root fetch - processPackages [isoCycle]: Skipping package: exceeds size limit 18493068>=10485760
+[2023-05-20 17:43:52] INFO root fetch - main [MainThread]: End processing [isoCycle] error
+[2023-05-20 17:43:52] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/7b/f8/dbaf1fe3b778dc02e9279dafa87ef76144e0eb52ce69f1c5ec0d0679c7fa/audiconnectpy-1.4.1.tar.gz
+[2023-05-20 17:43:53] INFO root fetch - processPackages [itkwasm-dicom-wasi]: Downloading https://files.pythonhosted.org/packages/5d/0c/7a9e7a65cbc8e8c18b111ba4bd54eb1f3489df0597d21198a4502a8fb510/itkwasm_dicom_wasi-2.0.3.tar.gz
+[2023-05-20 17:43:53] INFO root fetch - processPackages [itkwasm-dicom]: Downloading https://files.pythonhosted.org/packages/58/9a/a79b29f8119c2174c576d8d97f2b135934767f7525a3086671de379db642/itkwasm_dicom-2.0.3.tar.gz
+[2023-05-20 17:43:53] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2023-05-20 17:43:53] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-1.4.0.tar.gz tmp/audiconnectpy-1.4.1.tar.gz --markdown 20230520/a/audiconnectpy/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-05-20 17:43:53] INFO root fetch - processPackages [itkwasm-dicom-emscripten]: Downloading https://files.pythonhosted.org/packages/85/21/46f86670ad896411a01740952655951c8ab8a95e7218aa3a42805ce87a9f/itkwasm_dicom_emscripten-2.0.3.tar.gz
+[2023-05-20 17:43:53] INFO root fetch - processPackages [itkwasm-dicom-wasi]: executing diffoscope
+[2023-05-20 17:43:53] INFO root fetch - processPackages [itkwasm-dicom-wasi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm_dicom_wasi-2.0.2.tar.gz tmp/itkwasm_dicom_wasi-2.0.3.tar.gz --markdown 20230520/i/itkwasm-dicom-wasi/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-05-20 17:43:53] INFO root fetch - processPackages [itkwasm-dicom]: executing diffoscope
+[2023-05-20 17:43:53] INFO root fetch - processPackages [itkwasm-dicom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm_dicom-2.0.2.tar.gz tmp/itkwasm_dicom-2.0.3.tar.gz --markdown 20230520/i/itkwasm-dicom/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-05-20 17:43:53] INFO root fetch - processPackages [itkwasm-dicom-emscripten]: executing diffoscope
+[2023-05-20 17:43:53] INFO root fetch - processPackages [itkwasm-dicom-emscripten]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm_dicom_emscripten-2.0.2.tar.gz tmp/itkwasm_dicom_emscripten-2.0.3.tar.gz --markdown 20230520/i/itkwasm-dicom-emscripten/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-05-20 17:43:54] INFO root fetch - main [MainThread]: End processing [watchtower-browser-testing]: success
+[2023-05-20 17:43:54] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2023-05-20 17:43:54] INFO root fetch - main [MainThread]: End processing [itkwasm-dicom-emscripten]: success
+[2023-05-20 17:43:54] INFO root fetch - main [MainThread]: End processing [itkwasm-dicom]: success
+[2023-05-20 17:44:43] INFO root fetch - main [MainThread]: End processing [itkwasm-dicom-wasi]: success
+[2023-05-20 17:44:43] INFO root fetch - main [MainThread]: Store serial: [18183102]
