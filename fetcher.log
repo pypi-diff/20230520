@@ -6293,3 +6293,26 @@
 [2023-05-20 08:08:16] INFO root fetch - main [MainThread]: End processing [gwcelery]: success
 [2023-05-20 08:08:16] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2023-05-20 08:08:16] INFO root fetch - main [MainThread]: Store serial: [18180050]
+[2023-05-20 08:13:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180050]
+[2023-05-20 08:13:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 08:13:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cabinet
+[2023-05-20 08:13:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tastytrade
+[2023-05-20 08:13:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PatryksAutoAI
+[2023-05-20 08:13:26] INFO root fetch - processPackages [PatryksAutoAI]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-05-20 08:13:27] INFO root fetch - processPackages [cabinet]: New version: [2023.5.20.1] Old Version: [2023.4.9.1]
+[2023-05-20 08:13:27] INFO root fetch - processPackages [tastytrade]: New version: [5.0] Old Version: [1.0]
+[2023-05-20 08:13:27] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/15/fb/d9d6933bb54cb677b63df6f8089f4855d22950cb20ec96a8deaf10d93b45/PatryksAutoAI-1.5.2.tar.gz
+[2023-05-20 08:13:27] INFO root fetch - processPackages [cabinet]: Downloading https://files.pythonhosted.org/packages/25/2e/8a24fd5ff7eb020430a34daa1405a587f6dde75bc959553265ed25a6a14c/cabinet-2023.4.9.1.tar.gz
+[2023-05-20 08:13:27] INFO root fetch - processPackages [tastytrade]: Downloading https://files.pythonhosted.org/packages/6e/60/a135e76a5318bb46e63564374bcd050ee59ca9f75f329ce5e2c8bc09eb56/tastytrade-1.0.tar.gz
+[2023-05-20 08:13:27] INFO root fetch - processPackages [PatryksAutoAI]: executing diffoscope
+[2023-05-20 08:13:27] INFO root fetch - processPackages [PatryksAutoAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PatryksAutoAI-1.5.1.tar.gz tmp/PatryksAutoAI-1.5.2.tar.gz --markdown 20230520/P/PatryksAutoAI/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-05-20 08:13:27] INFO root fetch - processPackages [cabinet]: Downloading https://files.pythonhosted.org/packages/1e/7d/827a09f61b4f573afc853c2716334ddd6a1996c43943f9f8c181375b0021/cabinet-2023.5.20.1.tar.gz
+[2023-05-20 08:13:27] INFO root fetch - processPackages [tastytrade]: Downloading https://files.pythonhosted.org/packages/71/ee/254370f4003275e139bc4bc35841b2a3a98a89627022c53409c294749d9c/tastytrade-5.0.tar.gz
+[2023-05-20 08:13:27] INFO root fetch - processPackages [cabinet]: executing diffoscope
+[2023-05-20 08:13:27] INFO root fetch - processPackages [cabinet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cabinet-2023.4.9.1.tar.gz tmp/cabinet-2023.5.20.1.tar.gz --markdown 20230520/c/cabinet/2023.4.9.1-2023.5.20.1/diff.md --exclude *.pyd
+[2023-05-20 08:13:27] INFO root fetch - processPackages [tastytrade]: executing diffoscope
+[2023-05-20 08:13:27] INFO root fetch - processPackages [tastytrade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tastytrade-1.0.tar.gz tmp/tastytrade-5.0.tar.gz --markdown 20230520/t/tastytrade/1.0-5.0/diff.md --exclude *.pyd
+[2023-05-20 08:13:28] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
+[2023-05-20 08:13:28] INFO root fetch - main [MainThread]: End processing [tastytrade]: success
+[2023-05-20 08:13:28] INFO root fetch - main [MainThread]: End processing [cabinet]: success
+[2023-05-20 08:13:28] INFO root fetch - main [MainThread]: Store serial: [18180059]
