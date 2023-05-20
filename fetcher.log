@@ -6541,3 +6541,26 @@
 [2023-05-20 09:00:19] INFO root fetch - main [MainThread]: End processing [pysparse-array]: success
 [2023-05-20 09:00:19] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
 [2023-05-20 09:00:19] INFO root fetch - main [MainThread]: Store serial: [18180181]
+[2023-05-20 09:05:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180181]
+[2023-05-20 09:05:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 09:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zensvi
+[2023-05-20 09:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pokerrl-env
+[2023-05-20 09:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: seqio-nightly
+[2023-05-20 09:05:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: oerplib3
+[2023-05-20 09:05:28] INFO root fetch - processPackages [pokerrl-env]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-20 09:05:28] INFO root fetch - processPackages [zensvi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 09:05:28] WARNING root fetch - processPackages [oerplib3]: Skipping, unable to determine old version
+[2023-05-20 09:05:28] INFO root fetch - main [MainThread]: End processing [oerplib3] error
+[2023-05-20 09:05:28] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2023-05-20 09:05:28] INFO root fetch - processPackages [pokerrl-env]: Downloading https://files.pythonhosted.org/packages/db/8c/e0fffaa472f55ba4e23162e8f06ab826df7287857ecf2b45586db18e16fd/pokerrl_env-0.1.1.tar.gz
+[2023-05-20 09:05:28] INFO root fetch - processPackages [pokerrl-env]: Downloading https://files.pythonhosted.org/packages/a8/fd/c9a15572575ff76603e9ae45fd59184c60b91f2a8530eb72c5b5acfdbf1c/pokerrl_env-0.1.2.tar.gz
+[2023-05-20 09:05:28] INFO root fetch - processPackages [zensvi]: executing diffoscope
+[2023-05-20 09:05:28] INFO root fetch - processPackages [zensvi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zensvi-0.1.8.tar.gz tmp/zensvi-0.1.9.tar.gz --markdown 20230520/z/zensvi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 09:05:28] INFO root fetch - processPackages [pokerrl-env]: executing diffoscope
+[2023-05-20 09:05:28] INFO root fetch - processPackages [pokerrl-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pokerrl_env-0.1.1.tar.gz tmp/pokerrl_env-0.1.2.tar.gz --markdown 20230520/p/pokerrl-env/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-20 09:05:28] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2023-05-20 09:05:28] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20230520/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/diff.md --exclude *.pyd
+[2023-05-20 09:05:29] INFO root fetch - main [MainThread]: End processing [zensvi]: success
+[2023-05-20 09:05:29] INFO root fetch - main [MainThread]: End processing [pokerrl-env]: success
+[2023-05-20 09:05:30] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2023-05-20 09:05:30] INFO root fetch - main [MainThread]: Store serial: [18180199]
