@@ -4866,3 +4866,23 @@
 [2023-05-20 03:58:41] INFO root fetch - main [MainThread]: End processing [pioreactor-relay-plugin]: success
 [2023-05-20 03:58:41] INFO root fetch - main [MainThread]: End processing [irisml]: success
 [2023-05-20 03:58:41] INFO root fetch - main [MainThread]: Store serial: [18179004]
+[2023-05-20 04:03:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179004]
+[2023-05-20 04:03:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 04:03:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: denoising-diffusion-pytorch
+[2023-05-20 04:03:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: UliEngineering
+[2023-05-20 04:03:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: curvesim
+[2023-05-20 04:03:52] INFO root fetch - processPackages [UliEngineering]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-20 04:03:52] INFO root fetch - processPackages [curvesim]: New version: [0.4.0a2] Old Version: [0.4.0a1]
+[2023-05-20 04:03:52] INFO root fetch - processPackages [denoising-diffusion-pytorch]: New version: [1.6.0] Old Version: [1.5.8]
+[2023-05-20 04:03:52] INFO root fetch - processPackages [UliEngineering]: executing diffoscope
+[2023-05-20 04:03:52] INFO root fetch - processPackages [UliEngineering]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UliEngineering-0.4.0.tar.gz tmp/UliEngineering-0.4.1.tar.gz --markdown 20230520/U/UliEngineering/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-20 04:03:52] INFO root fetch - processPackages [curvesim]: executing diffoscope
+[2023-05-20 04:03:52] INFO root fetch - processPackages [curvesim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/curvesim-0.4.0a1.tar.gz tmp/curvesim-0.4.0a2.tar.gz --markdown 20230520/c/curvesim/0.4.0a1-0.4.0a2/diff.md --exclude *.pyd
+[2023-05-20 04:03:52] INFO root fetch - processPackages [denoising-diffusion-pytorch]: Downloading https://files.pythonhosted.org/packages/94/70/cbd8e5691fca846ba27554d407d599b337880b07317efa1f0dea2797d402/denoising-diffusion-pytorch-1.5.8.tar.gz
+[2023-05-20 04:03:52] INFO root fetch - processPackages [denoising-diffusion-pytorch]: Downloading https://files.pythonhosted.org/packages/a2/d5/94d3169982ddca4621b1e7504d29327be0ab4729fed84f8a140094ac4f82/denoising-diffusion-pytorch-1.6.0.tar.gz
+[2023-05-20 04:03:52] INFO root fetch - processPackages [denoising-diffusion-pytorch]: executing diffoscope
+[2023-05-20 04:03:52] INFO root fetch - processPackages [denoising-diffusion-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/denoising-diffusion-pytorch-1.5.8.tar.gz tmp/denoising-diffusion-pytorch-1.6.0.tar.gz --markdown 20230520/d/denoising-diffusion-pytorch/1.5.8-1.6.0/diff.md --exclude *.pyd
+[2023-05-20 04:03:53] INFO root fetch - main [MainThread]: End processing [UliEngineering]: success
+[2023-05-20 04:03:53] INFO root fetch - main [MainThread]: End processing [curvesim]: success
+[2023-05-20 04:03:53] INFO root fetch - main [MainThread]: End processing [denoising-diffusion-pytorch]: success
+[2023-05-20 04:03:53] INFO root fetch - main [MainThread]: Store serial: [18179017]
