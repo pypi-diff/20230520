@@ -10401,3 +10401,63 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 16:25:44] INFO root fetch - main [MainThread]: End processing [prodvana]: success
 [2023-05-20 16:26:22] INFO root fetch - main [MainThread]: End processing [LARRY-dataset]: success
 [2023-05-20 16:26:22] INFO root fetch - main [MainThread]: Store serial: [18182647]
+[2023-05-20 16:31:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182647]
+[2023-05-20 16:31:33] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-20 16:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: agixt
+[2023-05-20 16:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: snapstream
+[2023-05-20 16:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: starvote
+[2023-05-20 16:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: panoptic
+[2023-05-20 16:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sqlalchemy-os
+[2023-05-20 16:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cobib
+[2023-05-20 16:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: api-sap
+[2023-05-20 16:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vector-quantize-pytorch
+[2023-05-20 16:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: opencv-keras
+[2023-05-20 16:31:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: certora-cli-alpha-shelly-sanitybuiltin
+[2023-05-20 16:31:33] INFO root fetch - processPackages [panoptic]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-20 16:31:33] INFO root fetch - processPackages [cobib]: New version: [4.0.0] Old Version: [3.5.5]
+[2023-05-20 16:31:33] WARNING root fetch - processPackages [sqlalchemy-os]: Skipping, unable to determine old version
+[2023-05-20 16:31:33] INFO root fetch - main [MainThread]: End processing [sqlalchemy-os] error
+[2023-05-20 16:31:33] INFO root fetch - processPackages [starvote]: New version: [1.1] Old Version: [1.0]
+[2023-05-20 16:31:33] INFO root fetch - processPackages [agixt]: New version: [1.1.47b0] Old Version: [1.1.46b0]
+[2023-05-20 16:31:33] INFO root fetch - processPackages [snapstream]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-20 16:31:33] WARNING root fetch - processPackages [opencv-keras]: Skipping, unable to determine old version
+[2023-05-20 16:31:33] INFO root fetch - main [MainThread]: End processing [opencv-keras] error
+[2023-05-20 16:31:33] INFO root fetch - processPackages [api-sap]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-20 16:31:33] INFO root fetch - processPackages [vector-quantize-pytorch]: New version: [1.5.3] Old Version: [1.5.2]
+[2023-05-20 16:31:33] WARNING root fetch - processPackages [certora-cli-alpha-shelly-sanitybuiltin]: Skipping, unable to determine old version
+[2023-05-20 16:31:33] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shelly-sanitybuiltin] error
+[2023-05-20 16:31:33] INFO root fetch - processPackages [panoptic]: Downloading https://files.pythonhosted.org/packages/57/67/b1d5f783a98d4afb43274edfc0e9e066578f260ede3384f3b98588dc6a65/panoptic-0.0.5.tar.gz
+[2023-05-20 16:31:33] INFO root fetch - processPackages [starvote]: Downloading https://files.pythonhosted.org/packages/c6/a5/38bc3e9559a31b33d77f880f290e1bb41477655299b787612867c0ac1713/starvote-1.0.tar.gz
+[2023-05-20 16:31:33] INFO root fetch - processPackages [cobib]: Downloading https://files.pythonhosted.org/packages/63/9a/682aa9acc5972bfa6449d3eca525b6ab5e9720345482fb747576237f45dd/cobib-3.5.5.tar.gz
+[2023-05-20 16:31:33] INFO root fetch - processPackages [snapstream]: Downloading https://files.pythonhosted.org/packages/7e/11/60e078ad874dd87e3420a689fd2816dd5b9ed3c1199d6c9687ed436f9113/snapstream-0.0.4.tar.gz
+[2023-05-20 16:31:33] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/52/34/cda155936d4f372f59d01f1e2138d1328285b4d7aa667a0e8ce2ef0dcb6d/agixt-1.1.46b0.tar.gz
+[2023-05-20 16:31:33] INFO root fetch - processPackages [api-sap]: Downloading https://files.pythonhosted.org/packages/a0/14/6a66201406651c241e606cb0e25a1c701c19a39f40ce51e74796de05ff1c/api_sap-0.0.3.tar.gz
+[2023-05-20 16:31:33] INFO root fetch - processPackages [vector-quantize-pytorch]: Downloading https://files.pythonhosted.org/packages/85/f8/28f816ee440f78699e4f9679eabaa4bb42ce595734b33334a45389f75b57/vector_quantize_pytorch-1.5.2.tar.gz
+[2023-05-20 16:31:33] INFO root fetch - processPackages [api-sap]: executing diffoscope
+[2023-05-20 16:31:33] INFO root fetch - processPackages [api-sap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api_sap-0.0.2.tar.gz tmp/api_sap-0.0.3.tar.gz --markdown 20230520/a/api-sap/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-20 16:31:33] INFO root fetch - processPackages [panoptic]: Downloading https://files.pythonhosted.org/packages/dd/37/bc327f03b8f058f04286540bf19a33373a26bbba430026e91fab730e4a0c/panoptic-0.0.6.tar.gz
+[2023-05-20 16:31:33] INFO root fetch - processPackages [starvote]: Downloading https://files.pythonhosted.org/packages/10/d3/37f75fb146800e74974eff9ae365a282ab61fbf83d303459924b91c814b8/starvote-1.1.tar.gz
+[2023-05-20 16:31:33] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/51/8f/01b7c87c99920912e95f8a18ee2b9a916d48c275422883776340d030a2c0/agixt-1.1.47b0.tar.gz
+[2023-05-20 16:31:33] INFO root fetch - processPackages [vector-quantize-pytorch]: Downloading https://files.pythonhosted.org/packages/53/2f/ebb2772fbaf9fbac7667b5f155cbf6bd2b2a87457bf83c616c5e7b311bf1/vector_quantize_pytorch-1.5.3.tar.gz
+[2023-05-20 16:31:33] INFO root fetch - processPackages [cobib]: Downloading https://files.pythonhosted.org/packages/2c/a5/ac65b89cef5e7d1f8cefccb36837c08b18e55e546c4f7eee770344c1e3b9/cobib-4.0.0.tar.gz
+[2023-05-20 16:31:33] INFO root fetch - processPackages [panoptic]: executing diffoscope
+[2023-05-20 16:31:33] INFO root fetch - processPackages [panoptic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panoptic-0.0.5.tar.gz tmp/panoptic-0.0.6.tar.gz --markdown 20230520/p/panoptic/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-20 16:31:33] INFO root fetch - processPackages [snapstream]: Downloading https://files.pythonhosted.org/packages/54/b5/ace4255f0b870fd9d7833f53a5c286f885b6624904083c8e8c6c2c1ddea7/snapstream-0.0.5.tar.gz
+[2023-05-20 16:31:33] INFO root fetch - processPackages [cobib]: executing diffoscope
+[2023-05-20 16:31:33] INFO root fetch - processPackages [cobib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cobib-3.5.5.tar.gz tmp/cobib-4.0.0.tar.gz --markdown 20230520/c/cobib/3.5.5-4.0.0/diff.md --exclude *.pyd
+[2023-05-20 16:31:33] INFO root fetch - processPackages [starvote]: executing diffoscope
+[2023-05-20 16:31:33] INFO root fetch - processPackages [starvote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starvote-1.0.tar.gz tmp/starvote-1.1.tar.gz --markdown 20230520/s/starvote/1.0-1.1/diff.md --exclude *.pyd
+[2023-05-20 16:31:33] INFO root fetch - processPackages [vector-quantize-pytorch]: executing diffoscope
+[2023-05-20 16:31:33] INFO root fetch - processPackages [vector-quantize-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_quantize_pytorch-1.5.2.tar.gz tmp/vector_quantize_pytorch-1.5.3.tar.gz --markdown 20230520/v/vector-quantize-pytorch/1.5.2-1.5.3/diff.md --exclude *.pyd
+[2023-05-20 16:31:34] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-05-20 16:31:34] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.46b0.tar.gz tmp/agixt-1.1.47b0.tar.gz --markdown 20230520/a/agixt/1.1.46b0-1.1.47b0/diff.md --exclude *.pyd
+[2023-05-20 16:31:34] INFO root fetch - processPackages [snapstream]: executing diffoscope
+[2023-05-20 16:31:34] INFO root fetch - processPackages [snapstream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snapstream-0.0.4.tar.gz tmp/snapstream-0.0.5.tar.gz --markdown 20230520/s/snapstream/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-20 16:31:34] INFO root fetch - main [MainThread]: End processing [api-sap]: success
+[2023-05-20 16:31:35] INFO root fetch - main [MainThread]: End processing [vector-quantize-pytorch]: success
+[2023-05-20 16:31:35] INFO root fetch - main [MainThread]: End processing [starvote]: success
+[2023-05-20 16:31:35] INFO root fetch - main [MainThread]: End processing [snapstream]: success
+[2023-05-20 16:31:35] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-05-20 16:31:36] INFO root fetch - main [MainThread]: End processing [cobib]: success
+[2023-05-20 16:31:37] INFO root fetch - main [MainThread]: End processing [panoptic]: success
+[2023-05-20 16:31:37] INFO root fetch - main [MainThread]: Store serial: [18182689]
