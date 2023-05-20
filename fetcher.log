@@ -11986,3 +11986,63 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 19:38:25] INFO root fetch - main [MainThread]: End processing [pyrofork-dev]: success
 [2023-05-20 19:39:03] INFO root fetch - main [MainThread]: End processing [Misago]: success
 [2023-05-20 19:39:03] INFO root fetch - main [MainThread]: Store serial: [18183577]
+[2023-05-20 19:44:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183577]
+[2023-05-20 19:44:14] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-20 19:44:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bosch-control-panel-cc880p
+[2023-05-20 19:44:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TMDBTraktSyncer
+[2023-05-20 19:44:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ldimbenchmark
+[2023-05-20 19:44:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: envoy.base.utils
+[2023-05-20 19:44:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stimupy
+[2023-05-20 19:44:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PyroFork-dev
+[2023-05-20 19:44:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lokiunimore
+[2023-05-20 19:44:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kynaylibs
+[2023-05-20 19:44:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mac-cleanup
+[2023-05-20 19:44:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: requests-html2
+[2023-05-20 19:44:14] INFO root fetch - processPackages [ldimbenchmark]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-20 19:44:14] WARNING root fetch - processPackages [stimupy]: Skipping, unable to determine old version
+[2023-05-20 19:44:14] INFO root fetch - main [MainThread]: End processing [stimupy] error
+[2023-05-20 19:44:14] INFO root fetch - processPackages [TMDBTraktSyncer]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-20 19:44:14] INFO root fetch - processPackages [bosch-control-panel-cc880p]: New version: [3.1.4] Old Version: [3.1.3]
+[2023-05-20 19:44:14] INFO root fetch - processPackages [envoy.base.utils]: New version: [0.4.8] Old Version: [0.4.7]
+[2023-05-20 19:44:14] INFO root fetch - processPackages [PyroFork-dev]: New version: [2.1.8.dev202305201740] Old Version: [2.1.8.dev202305201733]
+[2023-05-20 19:44:14] INFO root fetch - processPackages [kynaylibs]: New version: [7.1.4] Old Version: [7.1.3]
+[2023-05-20 19:44:14] INFO root fetch - processPackages [mac-cleanup]: New version: [3.0.3] Old Version: [3.0.2]
+[2023-05-20 19:44:14] INFO root fetch - processPackages [requests-html2]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-20 19:44:14] INFO root fetch - processPackages [lokiunimore]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-20 19:44:14] INFO root fetch - processPackages [kynaylibs]: executing diffoscope
+[2023-05-20 19:44:14] INFO root fetch - processPackages [kynaylibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kynaylibs-7.1.3.tar.gz tmp/kynaylibs-7.1.4.tar.gz --markdown 20230520/k/kynaylibs/7.1.3-7.1.4/diff.md --exclude *.pyd
+[2023-05-20 19:44:14] INFO root fetch - processPackages [envoy.base.utils]: Downloading https://files.pythonhosted.org/packages/5a/79/11d19d2e999eceeb06ae8f0f7161c3948552d1a4ea9914e9affe21f66c6a/envoy.base.utils-0.4.7.tar.gz
+[2023-05-20 19:44:14] INFO root fetch - processPackages [PyroFork-dev]: Downloading https://files.pythonhosted.org/packages/87/5c/cef391d312e57885f7558d08292776c6d98d7a1b813b0a8edae1fb88b0ea/PyroFork-dev-2.1.8.dev202305201740.tar.gz
+[2023-05-20 19:44:14] INFO root fetch - processPackages [requests-html2]: Downloading https://files.pythonhosted.org/packages/37/46/6253d65570a05996296c78db5119a5cb4616711a0a35d0bffbd2ff50aa8c/requests_html2-1.0.4.tar.gz
+[2023-05-20 19:44:14] INFO root fetch - processPackages [mac-cleanup]: Downloading https://files.pythonhosted.org/packages/74/d5/e057bc4bb9b21c4b1786ec5bbbeeb4ba55ed35638bbff28ffc542d9db7fb/mac_cleanup-3.0.3.tar.gz
+[2023-05-20 19:44:14] INFO root fetch - processPackages [mac-cleanup]: executing diffoscope
+[2023-05-20 19:44:14] INFO root fetch - processPackages [mac-cleanup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mac_cleanup-3.0.2.tar.gz tmp/mac_cleanup-3.0.3.tar.gz --markdown 20230520/m/mac-cleanup/3.0.2-3.0.3/diff.md --exclude *.pyd
+[2023-05-20 19:44:14] INFO root fetch - processPackages [ldimbenchmark]: Downloading https://files.pythonhosted.org/packages/ee/87/3333ea8952fe71e088f369def5392e04403262d70e12c97253c18aa51ea0/ldimbenchmark-0.2.2.tar.gz
+[2023-05-20 19:44:14] INFO root fetch - processPackages [TMDBTraktSyncer]: Downloading https://files.pythonhosted.org/packages/a7/48/27ea9ea561b24bc75d26d22e8e11742a0ccc035d760ee962108e811ad882/TMDBTraktSyncer-1.0.9.tar.gz
+[2023-05-20 19:44:14] INFO root fetch - processPackages [bosch-control-panel-cc880p]: Downloading https://files.pythonhosted.org/packages/ec/96/93d9b9b4d98ffe901606a949e97b7911c0130abb18fef785258d13def87d/bosch-control-panel-cc880p-3.1.4.tar.gz
+[2023-05-20 19:44:14] INFO root fetch - processPackages [ldimbenchmark]: executing diffoscope
+[2023-05-20 19:44:14] INFO root fetch - processPackages [ldimbenchmark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ldimbenchmark-0.2.1.tar.gz tmp/ldimbenchmark-0.2.2.tar.gz --markdown 20230520/l/ldimbenchmark/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-20 19:44:14] INFO root fetch - processPackages [TMDBTraktSyncer]: executing diffoscope
+[2023-05-20 19:44:14] INFO root fetch - processPackages [TMDBTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TMDBTraktSyncer-1.0.8.tar.gz tmp/TMDBTraktSyncer-1.0.9.tar.gz --markdown 20230520/T/TMDBTraktSyncer/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-20 19:44:14] INFO root fetch - processPackages [lokiunimore]: Downloading https://files.pythonhosted.org/packages/f3/82/32d3c30ac67243e04fe85cfc20feb6cb3933308d4f0b17375732609d31aa/lokiunimore-0.7.1.tar.gz
+[2023-05-20 19:44:14] INFO root fetch - processPackages [bosch-control-panel-cc880p]: executing diffoscope
+[2023-05-20 19:44:14] INFO root fetch - processPackages [bosch-control-panel-cc880p]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bosch-control-panel-cc880p-3.1.3.tar.gz tmp/bosch-control-panel-cc880p-3.1.4.tar.gz --markdown 20230520/b/bosch-control-panel-cc880p/3.1.3-3.1.4/diff.md --exclude *.pyd
+[2023-05-20 19:44:14] INFO root fetch - processPackages [requests-html2]: executing diffoscope
+[2023-05-20 19:44:14] INFO root fetch - processPackages [requests-html2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/requests_html2-1.0.3.tar.gz tmp/requests_html2-1.0.4.tar.gz --markdown 20230520/r/requests-html2/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-20 19:44:14] INFO root fetch - processPackages [PyroFork-dev]: executing diffoscope
+[2023-05-20 19:44:14] INFO root fetch - processPackages [PyroFork-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrofork_dev-2.1.8.dev202305201733.tar.gz tmp/PyroFork-dev-2.1.8.dev202305201740.tar.gz --markdown 20230520/P/PyroFork-dev/2.1.8.dev202305201733-2.1.8.dev202305201740/diff.md --exclude *.pyd
+[2023-05-20 19:44:14] INFO root fetch - processPackages [lokiunimore]: executing diffoscope
+[2023-05-20 19:44:14] INFO root fetch - processPackages [lokiunimore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lokiunimore-0.7.0.tar.gz tmp/lokiunimore-0.7.1.tar.gz --markdown 20230520/l/lokiunimore/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-20 19:44:14] INFO root fetch - processPackages [envoy.base.utils]: Downloading https://files.pythonhosted.org/packages/84/ca/8ae19045cf4584c3b7d33a6f0b224851ce0caa37041db79596986d15540c/envoy.base.utils-0.4.8.tar.gz
+[2023-05-20 19:44:15] INFO root fetch - processPackages [envoy.base.utils]: executing diffoscope
+[2023-05-20 19:44:15] INFO root fetch - processPackages [envoy.base.utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/envoy.base.utils-0.4.7.tar.gz tmp/envoy.base.utils-0.4.8.tar.gz --markdown 20230520/e/envoy.base.utils/0.4.7-0.4.8/diff.md --exclude *.pyd
+[2023-05-20 19:44:16] INFO root fetch - main [MainThread]: End processing [kynaylibs]: success
+[2023-05-20 19:44:16] INFO root fetch - main [MainThread]: End processing [TMDBTraktSyncer]: success
+[2023-05-20 19:44:16] INFO root fetch - main [MainThread]: End processing [ldimbenchmark]: success
+[2023-05-20 19:44:16] INFO root fetch - main [MainThread]: End processing [requests-html2]: success
+[2023-05-20 19:44:16] INFO root fetch - main [MainThread]: End processing [bosch-control-panel-cc880p]: success
+[2023-05-20 19:44:16] INFO root fetch - main [MainThread]: End processing [lokiunimore]: success
+[2023-05-20 19:44:16] INFO root fetch - main [MainThread]: End processing [mac-cleanup]: success
+[2023-05-20 19:44:17] INFO root fetch - main [MainThread]: End processing [envoy.base.utils]: success
+[2023-05-20 19:44:30] INFO root fetch - main [MainThread]: End processing [PyroFork-dev]: success
+[2023-05-20 19:44:30] INFO root fetch - main [MainThread]: Store serial: [18183612]
