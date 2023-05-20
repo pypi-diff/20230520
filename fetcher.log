@@ -6236,3 +6236,28 @@
 [2023-05-20 07:57:50] INFO root fetch - processPackages [ez0th]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ez0th-0.0.1.tar.gz tmp/ez0th-0.0.2.tar.gz --markdown 20230520/e/ez0th/0.0.1-0.0.2/diff.md --exclude *.pyd
 [2023-05-20 07:57:51] INFO root fetch - main [MainThread]: End processing [ez0th]: success
 [2023-05-20 07:57:51] INFO root fetch - main [MainThread]: Store serial: [18180019]
+[2023-05-20 08:02:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180019]
+[2023-05-20 08:03:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 08:03:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llm-code
+[2023-05-20 08:03:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: twilix-python
+[2023-05-20 08:03:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: headless-ida
+[2023-05-20 08:03:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: onnx2tf
+[2023-05-20 08:03:00] INFO root fetch - processPackages [headless-ida]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-05-20 08:03:00] WARNING root fetch - processPackages [twilix-python]: Skipping, unable to determine old version
+[2023-05-20 08:03:00] INFO root fetch - main [MainThread]: End processing [twilix-python] error
+[2023-05-20 08:03:00] INFO root fetch - processPackages [llm-code]: New version: [0.2] Old Version: [0.1.2]
+[2023-05-20 08:03:00] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-20 08:03:00] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2023-05-20 08:03:00] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.8.tar.gz tmp/onnx2tf-1.9.9.tar.gz --markdown 20230520/o/onnx2tf/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-20 08:03:00] INFO root fetch - processPackages [headless-ida]: Downloading https://files.pythonhosted.org/packages/30/dd/6f5e60810e9835130e2bb975f7dda6e4bf7158205e7a76ed0a50f2c94229/headless-ida-0.3.4.tar.gz
+[2023-05-20 08:03:00] INFO root fetch - processPackages [llm-code]: Downloading https://files.pythonhosted.org/packages/56/03/3f66ab35e5ff9d41327cb565464987c1ef2a094c464945fcd23348a7a5a6/llm_code-0.1.2.tar.gz
+[2023-05-20 08:03:00] INFO root fetch - processPackages [headless-ida]: Downloading https://files.pythonhosted.org/packages/83/46/d6836c125de09ba205a09c30c74604fbe28fb3b9c37fe822a9ebf2befc97/headless-ida-0.3.5.tar.gz
+[2023-05-20 08:03:00] INFO root fetch - processPackages [headless-ida]: executing diffoscope
+[2023-05-20 08:03:00] INFO root fetch - processPackages [headless-ida]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/headless-ida-0.3.4.tar.gz tmp/headless-ida-0.3.5.tar.gz --markdown 20230520/h/headless-ida/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-05-20 08:03:01] INFO root fetch - processPackages [llm-code]: Downloading https://files.pythonhosted.org/packages/ae/9a/09fcad421f03689088d9d46c13cdc9e2a09b7b37f5ebe57e4dd9d8e5a12a/llm_code-0.2.tar.gz
+[2023-05-20 08:03:01] INFO root fetch - processPackages [llm-code]: executing diffoscope
+[2023-05-20 08:03:01] INFO root fetch - processPackages [llm-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_code-0.1.2.tar.gz tmp/llm_code-0.2.tar.gz --markdown 20230520/l/llm-code/0.1.2-0.2/diff.md --exclude *.pyd
+[2023-05-20 08:03:02] INFO root fetch - main [MainThread]: End processing [headless-ida]: success
+[2023-05-20 08:03:02] INFO root fetch - main [MainThread]: End processing [llm-code]: success
+[2023-05-20 08:03:02] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2023-05-20 08:03:02] INFO root fetch - main [MainThread]: Store serial: [18180034]
