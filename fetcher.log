@@ -12069,3 +12069,44 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 19:49:42] INFO root fetch - main [MainThread]: End processing [lmn]: success
 [2023-05-20 19:49:42] INFO root fetch - main [MainThread]: End processing [django-tbase-theme-tailwind]: success
 [2023-05-20 19:49:42] INFO root fetch - main [MainThread]: Store serial: [18183621]
+[2023-05-20 19:54:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183621]
+[2023-05-20 19:54:51] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 19:54:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: file-and-string-encryption
+[2023-05-20 19:54:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: absplit
+[2023-05-20 19:54:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spalah
+[2023-05-20 19:54:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyaipersonality
+[2023-05-20 19:54:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: q2terminal
+[2023-05-20 19:54:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: glaceon
+[2023-05-20 19:54:51] INFO root fetch - processPackages [absplit]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-20 19:54:51] INFO root fetch - processPackages [file-and-string-encryption]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-20 19:54:51] INFO root fetch - processPackages [spalah]: New version: [1.0.0] Old Version: [0.5.0]
+[2023-05-20 19:54:51] INFO root fetch - processPackages [q2terminal]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 19:54:51] INFO root fetch - processPackages [pyaipersonality]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 19:54:51] INFO root fetch - processPackages [glaceon]: New version: [1.5.0] Old Version: [1.4.0]
+[2023-05-20 19:54:51] INFO root fetch - processPackages [absplit]: Downloading https://files.pythonhosted.org/packages/a0/c9/60ba803f5196dd21a227c7b756fd6d54e936c9d604588f01f9f403484ace/absplit-0.1.4.tar.gz
+[2023-05-20 19:54:51] INFO root fetch - processPackages [spalah]: Downloading https://files.pythonhosted.org/packages/c0/88/8456468b179e79c1f70af1e9f820142b2415c40be85a59af9d9a5d455abe/spalah-0.5.0.tar.gz
+[2023-05-20 19:54:51] INFO root fetch - processPackages [q2terminal]: Downloading https://files.pythonhosted.org/packages/33/ef/18291a843e3b1add0ca60c5a03a131971edf3b22209f96b3dc79956d7d05/q2terminal-0.1.8.tar.gz
+[2023-05-20 19:54:51] INFO root fetch - processPackages [file-and-string-encryption]: Downloading https://files.pythonhosted.org/packages/b2/bd/82a9f85c41b1b26d5b01a958e876d6d4e459267d5cf93f5fcbce0f5161f6/file_and_string_encryption-0.0.5.tar.gz
+[2023-05-20 19:54:51] INFO root fetch - processPackages [pyaipersonality]: executing diffoscope
+[2023-05-20 19:54:51] INFO root fetch - processPackages [pyaipersonality]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaipersonality-0.0.8.tar.gz tmp/pyaipersonality-0.0.9.tar.gz --markdown 20230520/p/pyaipersonality/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 19:54:51] INFO root fetch - processPackages [absplit]: Downloading https://files.pythonhosted.org/packages/bf/57/0c1fa507f1cdebe8c7063d67b7ed13fb82fea0a48fe03f16e412c4a92cf5/absplit-0.1.5.tar.gz
+[2023-05-20 19:54:51] INFO root fetch - processPackages [file-and-string-encryption]: executing diffoscope
+[2023-05-20 19:54:51] INFO root fetch - processPackages [file-and-string-encryption]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/file_and_string_encryption-0.0.4.tar.gz tmp/file_and_string_encryption-0.0.5.tar.gz --markdown 20230520/f/file-and-string-encryption/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-20 19:54:51] INFO root fetch - processPackages [glaceon]: Downloading https://files.pythonhosted.org/packages/6b/21/543dec5fdcee62b4ecd66dd3a3a701e69215148baeaf36b0ea3c29cfa92e/glaceon-1.5.0.tar.gz
+[2023-05-20 19:54:51] INFO root fetch - processPackages [absplit]: executing diffoscope
+[2023-05-20 19:54:51] INFO root fetch - processPackages [absplit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/absplit-0.1.4.tar.gz tmp/absplit-0.1.5.tar.gz --markdown 20230520/a/absplit/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-20 19:54:51] INFO root fetch - processPackages [spalah]: Downloading https://files.pythonhosted.org/packages/e3/7a/30e877ae40a19c4de57501ee1527ebde6e2178caf08198f13b4df11b5203/spalah-1.0.0.tar.gz
+[2023-05-20 19:54:51] INFO root fetch - processPackages [q2terminal]: Downloading https://files.pythonhosted.org/packages/d1/ec/5e3907ca119d03ba490f2239217a9d8ab900e7555d6f019583e3bff232a9/q2terminal-0.1.9.tar.gz
+[2023-05-20 19:54:51] INFO root fetch - processPackages [glaceon]: executing diffoscope
+[2023-05-20 19:54:51] INFO root fetch - processPackages [glaceon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glaceon-1.4.0.tar.gz tmp/glaceon-1.5.0.tar.gz --markdown 20230520/g/glaceon/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2023-05-20 19:54:51] INFO root fetch - processPackages [spalah]: executing diffoscope
+[2023-05-20 19:54:51] INFO root fetch - processPackages [spalah]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spalah-0.5.0.tar.gz tmp/spalah-1.0.0.tar.gz --markdown 20230520/s/spalah/0.5.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-20 19:54:51] INFO root fetch - processPackages [q2terminal]: executing diffoscope
+[2023-05-20 19:54:51] INFO root fetch - processPackages [q2terminal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/q2terminal-0.1.8.tar.gz tmp/q2terminal-0.1.9.tar.gz --markdown 20230520/q/q2terminal/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 19:54:52] INFO root fetch - main [MainThread]: End processing [pyaipersonality]: success
+[2023-05-20 19:54:53] INFO root fetch - main [MainThread]: End processing [file-and-string-encryption]: success
+[2023-05-20 19:54:53] INFO root fetch - main [MainThread]: End processing [glaceon]: success
+[2023-05-20 19:54:53] INFO root fetch - main [MainThread]: End processing [spalah]: success
+[2023-05-20 19:54:53] INFO root fetch - main [MainThread]: End processing [q2terminal]: success
+[2023-05-20 19:54:53] INFO root fetch - main [MainThread]: End processing [absplit]: success
+[2023-05-20 19:54:53] INFO root fetch - main [MainThread]: Store serial: [18183641]
