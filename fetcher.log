@@ -6316,3 +6316,18 @@
 [2023-05-20 08:13:28] INFO root fetch - main [MainThread]: End processing [tastytrade]: success
 [2023-05-20 08:13:28] INFO root fetch - main [MainThread]: End processing [cabinet]: success
 [2023-05-20 08:13:28] INFO root fetch - main [MainThread]: Store serial: [18180059]
+[2023-05-20 08:18:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180059]
+[2023-05-20 08:18:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-20 08:18:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ScriptCollection
+[2023-05-20 08:18:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xia-api
+[2023-05-20 08:18:37] INFO root fetch - processPackages [ScriptCollection]: New version: [3.3.9] Old Version: [3.3.86]
+[2023-05-20 08:18:37] INFO root fetch - processPackages [xia-api]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 08:18:37] INFO root fetch - processPackages [ScriptCollection]: executing diffoscope
+[2023-05-20 08:18:37] INFO root fetch - processPackages [ScriptCollection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ScriptCollection-3.3.86-py3-none-any.whl.zip tmp/ScriptCollection-3.3.9-py3-none-any.whl.zip --markdown 20230520/S/ScriptCollection/3.3.86-3.3.9/diff.md --exclude *.pyd
+[2023-05-20 08:18:38] INFO root fetch - processPackages [xia-api]: Downloading https://files.pythonhosted.org/packages/03/34/ab780d6d5347efe87e347bee4b874eece57adcc318fee6ee9099cd87cfb6/xia_api-0.1.8-cp39-none-win_amd64.whl
+[2023-05-20 08:18:38] INFO root fetch - processPackages [xia-api]: Downloading https://files.pythonhosted.org/packages/b7/11/b0e6b74b74dc6c80180d6725511c9582793a237ccd42ad7173ef316fbd68/xia_api-0.1.9-cp39-none-win_amd64.whl
+[2023-05-20 08:18:38] INFO root fetch - processPackages [xia-api]: executing diffoscope
+[2023-05-20 08:18:38] INFO root fetch - processPackages [xia-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_api-0.1.8-cp39-none-win_amd64.whl.zip tmp/xia_api-0.1.9-cp39-none-win_amd64.whl.zip --markdown 20230520/x/xia-api/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 08:18:39] INFO root fetch - main [MainThread]: End processing [ScriptCollection]: success
+[2023-05-20 08:18:39] INFO root fetch - main [MainThread]: End processing [xia-api]: success
+[2023-05-20 08:18:39] INFO root fetch - main [MainThread]: Store serial: [18180064]
