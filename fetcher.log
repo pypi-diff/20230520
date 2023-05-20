@@ -12566,3 +12566,21 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 20:58:01] INFO root fetch - main [MainThread]: End processing [IMDBTraktSyncer]: success
 [2023-05-20 20:58:02] INFO root fetch - main [MainThread]: End processing [trogon]: success
 [2023-05-20 20:58:02] INFO root fetch - main [MainThread]: Store serial: [18183883]
+[2023-05-20 21:03:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183883]
+[2023-05-20 21:03:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 21:03:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: memory-graph
+[2023-05-20 21:03:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seaplayer
+[2023-05-20 21:03:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SportStatIQ-DataCollectors
+[2023-05-20 21:03:11] INFO root fetch - processPackages [memory-graph]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-20 21:03:11] WARNING root fetch - processPackages [SportStatIQ-DataCollectors]: Skipping, unable to determine old version
+[2023-05-20 21:03:11] INFO root fetch - main [MainThread]: End processing [SportStatIQ-DataCollectors] error
+[2023-05-20 21:03:11] INFO root fetch - processPackages [seaplayer]: New version: [0.4a3] Old Version: [0.4a2]
+[2023-05-20 21:03:11] INFO root fetch - processPackages [seaplayer]: executing diffoscope
+[2023-05-20 21:03:11] INFO root fetch - processPackages [seaplayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seaplayer-0.4a2.tar.gz tmp/seaplayer-0.4a3.tar.gz --markdown 20230520/s/seaplayer/0.4a2-0.4a3/diff.md --exclude *.pyd
+[2023-05-20 21:03:11] INFO root fetch - processPackages [memory-graph]: Downloading https://files.pythonhosted.org/packages/0d/53/2f319944cf6e2a8641176c0a2299510066bf9d2c731feecda6b6ed869d9d/memory_graph-0.1.5.tar.gz
+[2023-05-20 21:03:11] INFO root fetch - processPackages [memory-graph]: Downloading https://files.pythonhosted.org/packages/a4/5b/77c0190176e81f7e537d7198769905745e29b0c70baa1025c928c516ed9a/memory_graph-0.1.6.tar.gz
+[2023-05-20 21:03:11] INFO root fetch - processPackages [memory-graph]: executing diffoscope
+[2023-05-20 21:03:11] INFO root fetch - processPackages [memory-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memory_graph-0.1.5.tar.gz tmp/memory_graph-0.1.6.tar.gz --markdown 20230520/m/memory-graph/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-20 21:03:12] INFO root fetch - main [MainThread]: End processing [seaplayer]: success
+[2023-05-20 21:03:12] INFO root fetch - main [MainThread]: End processing [memory-graph]: success
+[2023-05-20 21:03:12] INFO root fetch - main [MainThread]: Store serial: [18183893]
