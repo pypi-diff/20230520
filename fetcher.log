@@ -6037,3 +6037,62 @@
 [2023-05-20 07:07:15] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2023-05-20 07:09:36] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
 [2023-05-20 07:09:36] INFO root fetch - main [MainThread]: Store serial: [18179826]
+[2023-05-20 07:14:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179826]
+[2023-05-20 07:14:50] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-20 07:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jira2json
+[2023-05-20 07:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spatialdata
+[2023-05-20 07:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: neighborly
+[2023-05-20 07:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tflite-model-maker-nightly
+[2023-05-20 07:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chromaviz
+[2023-05-20 07:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: reactivated
+[2023-05-20 07:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-gesha
+[2023-05-20 07:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PySimpleInput
+[2023-05-20 07:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: glycowork
+[2023-05-20 07:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tflite-support-nightly
+[2023-05-20 07:14:50] INFO root fetch - processPackages [tflite-support-nightly]: New version: [0.4.4.dev20230518] Old Version: [0.4.4.dev20230517]
+[2023-05-20 07:14:50] INFO root fetch - processPackages [PySimpleInput]: New version: [0.0.5] Old Version: [0.0.4.post1]
+[2023-05-20 07:14:50] INFO root fetch - processPackages [spatialdata]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-20 07:14:50] WARNING root fetch - processPackages [jira2json]: Skipping, unable to determine old version
+[2023-05-20 07:14:50] INFO root fetch - main [MainThread]: End processing [jira2json] error
+[2023-05-20 07:14:50] WARNING root fetch - processPackages [chromaviz]: Skipping, unable to determine old version
+[2023-05-20 07:14:50] INFO root fetch - main [MainThread]: End processing [chromaviz] error
+[2023-05-20 07:14:50] INFO root fetch - processPackages [neighborly]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-20 07:14:50] INFO root fetch - processPackages [django-gesha]: New version: [0.1a3] Old Version: [0.1a2]
+[2023-05-20 07:14:50] INFO root fetch - processPackages [glycowork]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-05-20 07:14:50] INFO root fetch - processPackages [reactivated]: New version: [3.0.0a64] Old Version: [0.9.0]
+[2023-05-20 07:14:50] INFO root fetch - processPackages [tflite-model-maker-nightly]: New version: [0.4.3.dev202305200508] Old Version: [0.4.3.dev202305190506]
+[2023-05-20 07:14:50] INFO root fetch - processPackages [tflite-support-nightly]: Downloading https://files.pythonhosted.org/packages/d2/a4/8c925fdc7fd84e014a9912b8efbf5342eec9bf5eeecebce18e622acc9ff3/tflite_support_nightly-0.4.4.dev20230517-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-20 07:14:50] INFO root fetch - processPackages [spatialdata]: Downloading https://files.pythonhosted.org/packages/e7/e7/5f79c07bab1002ee644700f4f90502652cd6d0fae41d3d9c9b98f6ed0953/spatialdata-0.0.6.tar.gz
+[2023-05-20 07:14:50] WARNING root fetch - processPackages [tflite-support-nightly]: Skipping package: exceeds size limit 60850718>=10485760
+[2023-05-20 07:14:50] INFO root fetch - processPackages [PySimpleInput]: Downloading https://files.pythonhosted.org/packages/21/84/0640a7a44c4c36e12146013fccded3b1a2690af43b2817797d1a4f7d735f/PySimpleInput-0.0.4.post1.tar.gz
+[2023-05-20 07:14:50] INFO root fetch - main [MainThread]: End processing [tflite-support-nightly] error
+[2023-05-20 07:14:50] INFO root fetch - processPackages [django-gesha]: Downloading https://files.pythonhosted.org/packages/a3/13/31941320ddc8526059b1e95d064fc7de434137faf9902768a4ed7a9f87d2/django-gesha-0.1a2.tar.gz
+[2023-05-20 07:14:50] INFO root fetch - processPackages [neighborly]: Downloading https://files.pythonhosted.org/packages/5b/fd/415d07d6e8bee1c448ffc8c0fd6be8559eac4042b5b67c8c6ca8050f267c/neighborly-0.9.3.tar.gz
+[2023-05-20 07:14:50] INFO root fetch - processPackages [glycowork]: Downloading https://files.pythonhosted.org/packages/f8/05/40060f4d194533ba0436aef5eac3ea1f063473e99a7b7378a19d5cc22e44/glycowork-0.6.0.tar.gz
+[2023-05-20 07:14:50] INFO root fetch - processPackages [tflite-model-maker-nightly]: Downloading https://files.pythonhosted.org/packages/f4/bf/48789528047d9bea5874dcc4c4ff8998ef52f0dab3bad2b8dbf0d6108d0d/tflite-model-maker-nightly-0.4.3.dev202305200508.tar.gz
+[2023-05-20 07:14:50] INFO root fetch - processPackages [reactivated]: executing diffoscope
+[2023-05-20 07:14:50] INFO root fetch - processPackages [reactivated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reactivated-0.9.0.tar.gz tmp/reactivated-3.0.0a64.tar.gz --markdown 20230520/r/reactivated/0.9.0-3.0.0a64/diff.md --exclude *.pyd
+[2023-05-20 07:14:50] INFO root fetch - processPackages [PySimpleInput]: Downloading https://files.pythonhosted.org/packages/0d/22/0eec380d78545d18d0976effb73da109642edd8c6b2b35cac0c0bb85b66a/PySimpleInput-0.0.5.tar.gz
+[2023-05-20 07:14:50] INFO root fetch - processPackages [django-gesha]: Downloading https://files.pythonhosted.org/packages/4e/e4/655e4257d709e0d816b8f1bdd72910ec9e4e00a8e018da6248a843029585/django-gesha-0.1a3.tar.gz
+[2023-05-20 07:14:50] INFO root fetch - processPackages [glycowork]: Downloading https://files.pythonhosted.org/packages/2d/e4/de9e149ccd5e207048d86ad273735c801487a44447bba8c434a513a5eba7/glycowork-0.7.0.tar.gz
+[2023-05-20 07:14:50] INFO root fetch - processPackages [spatialdata]: Downloading https://files.pythonhosted.org/packages/4b/8e/735d39e356bc3f86a7fda2a8ffaa5f1de94f9a3874c33b2f1145ec897e70/spatialdata-0.0.7.tar.gz
+[2023-05-20 07:14:50] INFO root fetch - processPackages [tflite-model-maker-nightly]: executing diffoscope
+[2023-05-20 07:14:50] INFO root fetch - processPackages [tflite-model-maker-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite-model-maker-nightly-0.4.3.dev202305190506.tar.gz tmp/tflite-model-maker-nightly-0.4.3.dev202305200508.tar.gz --markdown 20230520/t/tflite-model-maker-nightly/0.4.3.dev202305190506-0.4.3.dev202305200508/diff.md --exclude *.pyd
+[2023-05-20 07:14:50] WARNING root fetch - processPackages [glycowork]: Skipping package: exceeds size limit 74649938>=10485760
+[2023-05-20 07:14:50] INFO root fetch - main [MainThread]: End processing [glycowork] error
+[2023-05-20 07:14:50] INFO root fetch - processPackages [PySimpleInput]: executing diffoscope
+[2023-05-20 07:14:50] INFO root fetch - processPackages [PySimpleInput]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySimpleInput-0.0.4.post1.tar.gz tmp/PySimpleInput-0.0.5.tar.gz --markdown 20230520/P/PySimpleInput/0.0.4.post1-0.0.5/diff.md --exclude *.pyd
+[2023-05-20 07:14:50] INFO root fetch - processPackages [neighborly]: Downloading https://files.pythonhosted.org/packages/f7/e8/f5e6f61bab822fd2f75e305949ac5ea3a54a996f83317d9a3e7f207228d3/neighborly-0.9.4.tar.gz
+[2023-05-20 07:14:50] INFO root fetch - processPackages [django-gesha]: executing diffoscope
+[2023-05-20 07:14:50] INFO root fetch - processPackages [django-gesha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-gesha-0.1a2.tar.gz tmp/django-gesha-0.1a3.tar.gz --markdown 20230520/d/django-gesha/0.1a2-0.1a3/diff.md --exclude *.pyd
+[2023-05-20 07:14:50] INFO root fetch - processPackages [spatialdata]: executing diffoscope
+[2023-05-20 07:14:50] INFO root fetch - processPackages [spatialdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spatialdata-0.0.6.tar.gz tmp/spatialdata-0.0.7.tar.gz --markdown 20230520/s/spatialdata/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-20 07:14:51] INFO root fetch - processPackages [neighborly]: executing diffoscope
+[2023-05-20 07:14:51] INFO root fetch - processPackages [neighborly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neighborly-0.9.3.tar.gz tmp/neighborly-0.9.4.tar.gz --markdown 20230520/n/neighborly/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-20 07:14:52] INFO root fetch - main [MainThread]: End processing [reactivated]: success
+[2023-05-20 07:14:52] INFO root fetch - main [MainThread]: End processing [PySimpleInput]: success
+[2023-05-20 07:14:52] INFO root fetch - main [MainThread]: End processing [neighborly]: success
+[2023-05-20 07:14:52] INFO root fetch - main [MainThread]: End processing [spatialdata]: success
+[2023-05-20 07:14:55] INFO root fetch - main [MainThread]: End processing [tflite-model-maker-nightly]: success
+[2023-05-20 07:15:33] INFO root fetch - main [MainThread]: End processing [django-gesha]: success
+[2023-05-20 07:15:33] INFO root fetch - main [MainThread]: Store serial: [18179859]
