@@ -13427,3 +13427,22 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 23:11:24] INFO root fetch - main [MainThread]: End processing [wodoo]: success
 [2023-05-20 23:11:24] INFO root fetch - main [MainThread]: End processing [low-index]: success
 [2023-05-20 23:11:24] INFO root fetch - main [MainThread]: Store serial: [18184318]
+[2023-05-20 23:16:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184318]
+[2023-05-20 23:16:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 23:16:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pipe21
+[2023-05-20 23:16:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BTKSorgu
+[2023-05-20 23:16:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dorado
+[2023-05-20 23:16:34] INFO root fetch - processPackages [BTKSorgu]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-20 23:16:34] INFO root fetch - processPackages [pipe21]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-20 23:16:34] INFO root fetch - processPackages [dorado]: New version: [2.0.6.dev99] Old Version: [2.0.6.dev97]
+[2023-05-20 23:16:35] INFO root fetch - processPackages [BTKSorgu]: Downloading https://files.pythonhosted.org/packages/81/43/f2d3bdef056f3576db66641ee99b5369633f6918afb419185d06b7cda426/BTKSorgu-1.2.9.tar.gz
+[2023-05-20 23:16:35] INFO root fetch - processPackages [BTKSorgu]: executing diffoscope
+[2023-05-20 23:16:35] INFO root fetch - processPackages [BTKSorgu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BTKSorgu-1.2.8.tar.gz tmp/BTKSorgu-1.2.9.tar.gz --markdown 20230520/B/BTKSorgu/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-20 23:16:35] INFO root fetch - processPackages [dorado]: executing diffoscope
+[2023-05-20 23:16:35] INFO root fetch - processPackages [dorado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dorado-2.0.6.dev97.tar.gz tmp/dorado-2.0.6.dev99.tar.gz --markdown 20230520/d/dorado/2.0.6.dev97-2.0.6.dev99/diff.md --exclude *.pyd
+[2023-05-20 23:16:35] INFO root fetch - processPackages [pipe21]: executing diffoscope
+[2023-05-20 23:16:35] INFO root fetch - processPackages [pipe21]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipe21-1.8.0.tar.gz tmp/pipe21-1.9.0.tar.gz --markdown 20230520/p/pipe21/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-20 23:16:36] INFO root fetch - main [MainThread]: End processing [BTKSorgu]: success
+[2023-05-20 23:16:36] INFO root fetch - main [MainThread]: End processing [pipe21]: success
+[2023-05-20 23:16:36] INFO root fetch - main [MainThread]: End processing [dorado]: success
+[2023-05-20 23:16:36] INFO root fetch - main [MainThread]: Store serial: [18184327]
