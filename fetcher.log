@@ -8631,3 +8631,123 @@
 [2023-05-20 13:19:26] INFO root fetch - main [MainThread]: End processing [anjani]: success
 [2023-05-20 13:19:27] INFO root fetch - main [MainThread]: End processing [polyaxon-sdk]: success
 [2023-05-20 13:19:27] INFO root fetch - main [MainThread]: Store serial: [18181485]
+[2023-05-20 13:24:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18181485]
+[2023-05-20 13:24:37] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-05-20 13:24:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: denmune
+[2023-05-20 13:24:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tb-nightly
+[2023-05-20 13:24:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: noise2read
+[2023-05-20 13:24:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rnsh
+[2023-05-20 13:24:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hybrid-example
+[2023-05-20 13:24:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: digital-experiments
+[2023-05-20 13:24:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: memory-graph
+[2023-05-20 13:24:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ejelabs
+[2023-05-20 13:24:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tensordict-nightly
+[2023-05-20 13:24:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: torchtnt-nightly
+[2023-05-20 13:24:37] INFO root fetch - processPackages [rnsh]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-20 13:24:37] INFO root fetch - processPackages [noise2read]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-20 13:24:37] INFO root fetch - processPackages [hybrid-example]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-20 13:24:37] INFO root fetch - processPackages [denmune]: New version: [1.16.5] Old Version: [1.16.4]
+[2023-05-20 13:24:37] INFO root fetch - processPackages [ejelabs]: New version: [0.2] Old Version: [0.1]
+[2023-05-20 13:24:37] INFO root fetch - processPackages [memory-graph]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-20 13:24:37] INFO root fetch - processPackages [digital-experiments]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-20 13:24:37] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-20 13:24:37] INFO root fetch - processPackages [tensordict-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-20 13:24:37] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2023-05-20 13:24:37] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2023.5.8-py39-none-any.whl.zip tmp/tensordict_nightly-2023.5.9-py39-none-any.whl.zip --markdown 20230520/t/tensordict-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-20 13:24:37] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2023-05-20 13:24:37] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt-nightly-2023.5.8.tar.gz tmp/torchtnt-nightly-2023.5.9.tar.gz --markdown 20230520/t/torchtnt-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-20 13:24:37] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2023-05-20 13:24:37] INFO root fetch - processPackages [ejelabs]: Downloading https://files.pythonhosted.org/packages/47/5c/d185e8fada3bde7b36dd6facf8591ed70a4343003f26c73ffda1e5307019/ejelabs-0.1.tar.gz
+[2023-05-20 13:24:37] INFO root fetch - processPackages [noise2read]: Downloading https://files.pythonhosted.org/packages/2c/9b/a6bd432ace99ec77304d7be8f67c43b9ce9d041b7391d46746df69da571b/noise2read-0.0.98.tar.gz
+[2023-05-20 13:24:37] INFO root fetch - processPackages [rnsh]: Downloading https://files.pythonhosted.org/packages/96/fb/4a04a83ef834fb6b79b5f69fc4ccff15e7e28e88229804db05bcea342528/rnsh-0.1.0.tar.gz
+[2023-05-20 13:24:37] INFO root fetch - processPackages [denmune]: Downloading https://files.pythonhosted.org/packages/1b/15/be570338468c1accfbe1a156bc8676217aac39b10eced0fbae85b70a2d87/denmune-1.16.4.tar.gz
+[2023-05-20 13:24:37] INFO root fetch - processPackages [hybrid-example]: Downloading https://files.pythonhosted.org/packages/40/ff/72d349977d4534d430efa6e631f29f651aa7c744618dfa918ef8a7b35ead/hybrid_example-0.1.0.tar.gz
+[2023-05-20 13:24:37] INFO root fetch - processPackages [memory-graph]: Downloading https://files.pythonhosted.org/packages/c5/55/c9832af02930c6d309fb8ab4f536e5d9a2cdf83ab0265b93ccbc0618b5de/memory_graph-0.1.2.tar.gz
+[2023-05-20 13:24:37] INFO root fetch - processPackages [digital-experiments]: Downloading https://files.pythonhosted.org/packages/3e/5f/02e9f22ccf12f1ec6a4cb7dbf5c663570a6025106ffdee85ef69b827e86d/digital-experiments-1.2.1.tar.gz
+[2023-05-20 13:24:37] INFO root fetch - processPackages [rnsh]: Downloading https://files.pythonhosted.org/packages/90/a5/8a7decec621b3f770fe70ad52353e591044435b1f1b89c278138be524107/rnsh-0.1.1.tar.gz
+[2023-05-20 13:24:37] INFO root fetch - processPackages [noise2read]: Downloading https://files.pythonhosted.org/packages/39/a9/1034ac8d7a0b3ee3c5ed6f0181da149be594f4868d2b8a8c912c41306ed9/noise2read-0.0.99.tar.gz
+[2023-05-20 13:24:37] INFO root fetch - processPackages [denmune]: Downloading https://files.pythonhosted.org/packages/af/62/caff9db0c960eb3f06d0beb5e106f97146e6e8b728d329da55ae625fbfdf/denmune-1.16.5.tar.gz
+[2023-05-20 13:24:37] INFO root fetch - processPackages [digital-experiments]: executing diffoscope
+[2023-05-20 13:24:37] INFO root fetch - processPackages [digital-experiments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/digital-experiments-1.2.0.tar.gz tmp/digital-experiments-1.2.1.tar.gz --markdown 20230520/d/digital-experiments/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-20 13:24:37] INFO root fetch - processPackages [memory-graph]: Downloading https://files.pythonhosted.org/packages/2b/a4/2a1744ec87a59c6087607137d7628c95d896aedc419ae433d72fb7a712da/memory_graph-0.1.3.tar.gz
+[2023-05-20 13:24:37] INFO root fetch - processPackages [rnsh]: executing diffoscope
+[2023-05-20 13:24:37] INFO root fetch - processPackages [rnsh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rnsh-0.1.0.tar.gz tmp/rnsh-0.1.1.tar.gz --markdown 20230520/r/rnsh/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-20 13:24:37] INFO root fetch - processPackages [ejelabs]: Downloading https://files.pythonhosted.org/packages/60/41/eaf4b3e20a1e775ecd5f43e0496fcdce0d4a5c111ac6f626798c79d4129c/ejelabs-0.2.tar.gz
+[2023-05-20 13:24:37] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2023-05-20 13:24:37] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20230520/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/diff.md --exclude *.pyd
+[2023-05-20 13:24:37] INFO root fetch - processPackages [noise2read]: executing diffoscope
+[2023-05-20 13:24:37] INFO root fetch - processPackages [noise2read]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noise2read-0.0.98.tar.gz tmp/noise2read-0.0.99.tar.gz --markdown 20230520/n/noise2read/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-20 13:24:37] INFO root fetch - processPackages [denmune]: executing diffoscope
+[2023-05-20 13:24:37] INFO root fetch - processPackages [denmune]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/denmune-1.16.4.tar.gz tmp/denmune-1.16.5.tar.gz --markdown 20230520/d/denmune/1.16.4-1.16.5/diff.md --exclude *.pyd
+[2023-05-20 13:24:37] INFO root fetch - processPackages [memory-graph]: executing diffoscope
+[2023-05-20 13:24:37] INFO root fetch - processPackages [memory-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memory_graph-0.1.2.tar.gz tmp/memory_graph-0.1.3.tar.gz --markdown 20230520/m/memory-graph/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-20 13:24:37] INFO root fetch - processPackages [hybrid-example]: Downloading https://files.pythonhosted.org/packages/4a/8a/1c615266a39a870f67fa8cfef6d42406764d790ab9b50d9083a3a466489f/hybrid_example-0.1.1.tar.gz
+[2023-05-20 13:24:37] INFO root fetch - processPackages [ejelabs]: executing diffoscope
+[2023-05-20 13:24:37] INFO root fetch - processPackages [ejelabs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ejelabs-0.1.tar.gz tmp/ejelabs-0.2.tar.gz --markdown 20230520/e/ejelabs/0.1-0.2/diff.md --exclude *.pyd
+[2023-05-20 13:24:38] INFO root fetch - processPackages [hybrid-example]: executing diffoscope
+[2023-05-20 13:24:38] INFO root fetch - processPackages [hybrid-example]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hybrid_example-0.1.0.tar.gz tmp/hybrid_example-0.1.1.tar.gz --markdown 20230520/h/hybrid-example/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-20 13:24:39] INFO root fetch - processPackages [digital-experiments]: Start processing: karrio.server.graph
+[2023-05-20 13:24:39] INFO root fetch - main [MainThread]: End processing [digital-experiments]: success
+[2023-05-20 13:24:39] INFO root fetch - processPackages [karrio.server.graph]: New version: [2023.4.4] Old Version: [2023.4.1]
+[2023-05-20 13:24:39] INFO root fetch - processPackages [rnsh]: Start processing: karrio.server
+[2023-05-20 13:24:39] INFO root fetch - main [MainThread]: End processing [rnsh]: success
+[2023-05-20 13:24:39] INFO root fetch - processPackages [karrio.server]: New version: [2023.4.4] Old Version: [2023.4.2]
+[2023-05-20 13:24:39] INFO root fetch - processPackages [tensordict-nightly]: Start processing: karrio.server.core
+[2023-05-20 13:24:39] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2023-05-20 13:24:39] INFO root fetch - processPackages [karrio.server.core]: New version: [2023.4.4] Old Version: [2023.4.2]
+[2023-05-20 13:24:39] INFO root fetch - processPackages [karrio.server.graph]: Downloading https://files.pythonhosted.org/packages/a5/9a/2514496d23bb007d1956d72ad60907aa2c527ff7ad6ae46d42b3c48539cb/karrio.server.graph-2023.4.1-py3-none-any.whl
+[2023-05-20 13:24:39] INFO root fetch - processPackages [karrio.server]: Downloading https://files.pythonhosted.org/packages/8c/77/40ff1889186a61e5027a87fa6c0d75fe9d06b010a5052e1a93ac66b776ca/karrio.server-2023.4.2-py3-none-any.whl
+[2023-05-20 13:24:39] INFO root fetch - processPackages [karrio.server.core]: Downloading https://files.pythonhosted.org/packages/56/d7/888c5a56dcf2382d3fa73af9f00fab2267edfafb7bd6473f6d1b75974730/karrio.server.core-2023.4.2-py3-none-any.whl
+[2023-05-20 13:24:39] INFO root fetch - processPackages [ejelabs]: Start processing: karrio.server.events
+[2023-05-20 13:24:39] INFO root fetch - main [MainThread]: End processing [ejelabs]: success
+[2023-05-20 13:24:39] INFO root fetch - processPackages [karrio.server.events]: New version: [2023.4.4] Old Version: [2023.4]
+[2023-05-20 13:24:39] INFO root fetch - processPackages [denmune]: Start processing: karrio.server.manager
+[2023-05-20 13:24:39] INFO root fetch - main [MainThread]: End processing [denmune]: success
+[2023-05-20 13:24:39] INFO root fetch - processPackages [karrio.server.graph]: Downloading https://files.pythonhosted.org/packages/af/ef/9182c087a902418d9a1f4d4e26e2d91559e18182583fee692be60e204e26/karrio.server.graph-2023.4.4-py3-none-any.whl
+[2023-05-20 13:24:39] INFO root fetch - processPackages [karrio.server.manager]: New version: [2023.4.4] Old Version: [2023.4.1]
+[2023-05-20 13:24:39] INFO root fetch - processPackages [noise2read]: Start processing: rl-zoo3
+[2023-05-20 13:24:39] INFO root fetch - main [MainThread]: End processing [noise2read]: success
+[2023-05-20 13:24:39] INFO root fetch - processPackages [rl-zoo3]: New version: [2.0.0a9] Old Version: [2.0.0a4]
+[2023-05-20 13:24:39] INFO root fetch - processPackages [torchtnt-nightly]: Start processing: hermescloud
+[2023-05-20 13:24:39] INFO root fetch - main [MainThread]: End processing [torchtnt-nightly]: success
+[2023-05-20 13:24:39] INFO root fetch - processPackages [hermescloud]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-20 13:24:39] INFO root fetch - processPackages [karrio.server.graph]: executing diffoscope
+[2023-05-20 13:24:39] INFO root fetch - processPackages [karrio.server.graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karrio.server.graph-2023.4.1-py3-none-any.whl.zip tmp/karrio.server.graph-2023.4.4-py3-none-any.whl.zip --markdown 20230520/k/karrio.server.graph/2023.4.1-2023.4.4/diff.md --exclude *.pyd
+[2023-05-20 13:24:39] INFO root fetch - processPackages [memory-graph]: Start processing: hybrid-example
+[2023-05-20 13:24:39] INFO root fetch - main [MainThread]: End processing [memory-graph]: success
+[2023-05-20 13:24:40] INFO root fetch - processPackages [hybrid-example]: New version: [0.2.2] Old Version: [0.1.1]
+[2023-05-20 13:24:40] INFO root fetch - processPackages [karrio.server.core]: Downloading https://files.pythonhosted.org/packages/8d/38/c0e48b22b3333c95ae9a99e185ac3597f65a151f9839d47a161112b2a3d2/karrio.server.core-2023.4.4-py3-none-any.whl
+[2023-05-20 13:24:40] INFO root fetch - processPackages [karrio.server]: Downloading https://files.pythonhosted.org/packages/e4/d2/97dba9710615f207f1be7f06c1050d044cf07c00620d629dde90d70856e1/karrio.server-2023.4.4-py3-none-any.whl
+[2023-05-20 13:24:40] INFO root fetch - processPackages [karrio.server.manager]: Downloading https://files.pythonhosted.org/packages/bf/62/3e1a1b9bc920e8ec5c9dc335f70ff3ee0da39d6b73b0bb779ffb614e8766/karrio.server.manager-2023.4.1-py3-none-any.whl
+[2023-05-20 13:24:40] INFO root fetch - processPackages [rl-zoo3]: Downloading https://files.pythonhosted.org/packages/8f/e2/9e35077248854215ba3e419840bdd7ca16de727071bc34aa2b8bda55b73a/rl_zoo3-2.0.0a4.tar.gz
+[2023-05-20 13:24:40] INFO root fetch - processPackages [karrio.server.core]: executing diffoscope
+[2023-05-20 13:24:40] INFO root fetch - processPackages [karrio.server.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karrio.server.core-2023.4.2-py3-none-any.whl.zip tmp/karrio.server.core-2023.4.4-py3-none-any.whl.zip --markdown 20230520/k/karrio.server.core/2023.4.2-2023.4.4/diff.md --exclude *.pyd
+[2023-05-20 13:24:40] INFO root fetch - processPackages [hermescloud]: Downloading https://files.pythonhosted.org/packages/81/e8/c9e8f42bedbb7ad3c514a24884591f86155577b6b556551fc2db84179dee/hermescloud-0.0.6.tar.gz
+[2023-05-20 13:24:40] INFO root fetch - processPackages [karrio.server]: executing diffoscope
+[2023-05-20 13:24:40] INFO root fetch - processPackages [karrio.server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karrio.server-2023.4.2-py3-none-any.whl.zip tmp/karrio.server-2023.4.4-py3-none-any.whl.zip --markdown 20230520/k/karrio.server/2023.4.2-2023.4.4/diff.md --exclude *.pyd
+[2023-05-20 13:24:40] INFO root fetch - processPackages [hybrid-example]: Downloading https://files.pythonhosted.org/packages/5d/c5/7dff4763606bfa0c767322d239cebcf5ca41692a73832d462e3140ccd89b/hybrid_example-0.2.2.tar.gz
+[2023-05-20 13:24:40] INFO root fetch - processPackages [karrio.server.events]: Downloading https://files.pythonhosted.org/packages/7c/87/569a3c1def6bf20e259eb9b05a7d1d38775a1770be13b04b7e652ab8a6f7/karrio.server.events-2023.4-py3-none-any.whl
+[2023-05-20 13:24:40] INFO root fetch - processPackages [hermescloud]: executing diffoscope
+[2023-05-20 13:24:40] INFO root fetch - processPackages [hermescloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hermescloud-0.0.5.tar.gz tmp/hermescloud-0.0.6.tar.gz --markdown 20230520/h/hermescloud/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-20 13:24:40] INFO root fetch - processPackages [karrio.server.manager]: Downloading https://files.pythonhosted.org/packages/0a/ee/dbd4a538dd765b55e4ec13fd653b95552a8985179ab83f527d6d0df1d72b/karrio.server.manager-2023.4.4-py3-none-any.whl
+[2023-05-20 13:24:40] INFO root fetch - processPackages [rl-zoo3]: Downloading https://files.pythonhosted.org/packages/ba/d3/76867234d06ff281546c369e9d745069f724dbfac202ac55210c89fb3664/rl_zoo3-2.0.0a9.tar.gz
+[2023-05-20 13:24:40] INFO root fetch - processPackages [karrio.server.manager]: executing diffoscope
+[2023-05-20 13:24:40] INFO root fetch - processPackages [karrio.server.manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karrio.server.manager-2023.4.1-py3-none-any.whl.zip tmp/karrio.server.manager-2023.4.4-py3-none-any.whl.zip --markdown 20230520/k/karrio.server.manager/2023.4.1-2023.4.4/diff.md --exclude *.pyd
+[2023-05-20 13:24:40] INFO root fetch - processPackages [rl-zoo3]: executing diffoscope
+[2023-05-20 13:24:40] INFO root fetch - processPackages [rl-zoo3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rl_zoo3-2.0.0a4.tar.gz tmp/rl_zoo3-2.0.0a9.tar.gz --markdown 20230520/r/rl-zoo3/2.0.0a4-2.0.0a9/diff.md --exclude *.pyd
+[2023-05-20 13:24:40] INFO root fetch - processPackages [karrio.server.events]: Downloading https://files.pythonhosted.org/packages/27/d7/e3e3c4aba3e16742a47db76937adca5060dec267f634ee8a8ed83ae7a1ea/karrio.server.events-2023.4.4-py3-none-any.whl
+[2023-05-20 13:24:40] INFO root fetch - processPackages [karrio.server.events]: executing diffoscope
+[2023-05-20 13:24:40] INFO root fetch - processPackages [karrio.server.events]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karrio.server.events-2023.4-py3-none-any.whl.zip tmp/karrio.server.events-2023.4.4-py3-none-any.whl.zip --markdown 20230520/k/karrio.server.events/2023.4-2023.4.4/diff.md --exclude *.pyd
+[2023-05-20 13:24:40] INFO root fetch - processPackages [hybrid-example]: executing diffoscope
+[2023-05-20 13:24:40] INFO root fetch - processPackages [hybrid-example]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hybrid_example-0.1.1.tar.gz tmp/hybrid_example-0.2.2.tar.gz --markdown 20230520/h/hybrid-example/0.1.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-20 13:24:41] INFO root fetch - main [MainThread]: End processing [karrio.server.graph]: success
+[2023-05-20 13:24:41] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2023-05-20 13:24:42] INFO root fetch - main [MainThread]: End processing [karrio.server]: success
+[2023-05-20 13:24:42] INFO root fetch - main [MainThread]: End processing [hermescloud]: success
+[2023-05-20 13:24:42] INFO root fetch - main [MainThread]: End processing [rl-zoo3]: success
+[2023-05-20 13:24:42] INFO root fetch - main [MainThread]: End processing [karrio.server.events]: success
+[2023-05-20 13:24:42] INFO root fetch - main [MainThread]: End processing [karrio.server.manager]: success
+[2023-05-20 13:24:42] INFO root fetch - main [MainThread]: End processing [karrio.server.core]: success
+[2023-05-20 13:24:44] INFO root fetch - main [MainThread]: End processing [hybrid-example]: success
+[2023-05-20 13:24:48] INFO root fetch - main [MainThread]: End processing [hybrid-example]: success
+[2023-05-20 13:24:48] INFO root fetch - main [MainThread]: Store serial: [18181532]
