@@ -7572,3 +7572,76 @@
 [2023-05-20 11:16:05] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
 [2023-05-20 11:16:07] INFO root fetch - main [MainThread]: End processing [ens-normalize]: success
 [2023-05-20 11:16:07] INFO root fetch - main [MainThread]: Store serial: [18180830]
+[2023-05-20 11:21:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180830]
+[2023-05-20 11:21:15] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-20 11:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: myfuncs
+[2023-05-20 11:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqlalchemy-orm
+[2023-05-20 11:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-05-20 11:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo12-addon-l10n-br-fiscal
+[2023-05-20 11:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spanishconjugator
+[2023-05-20 11:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wbteampropy
+[2023-05-20 11:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sftp-uploader
+[2023-05-20 11:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mmigrator
+[2023-05-20 11:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyqt-openai
+[2023-05-20 11:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tbp-nightly
+[2023-05-20 11:21:15] WARNING root fetch - processPackages [wbteampropy]: Skipping, unable to determine old version
+[2023-05-20 11:21:15] INFO root fetch - processPackages [wbteampropy]: Start processing: odoo-addons-oca-operating-unit
+[2023-05-20 11:21:15] INFO root fetch - main [MainThread]: End processing [wbteampropy] error
+[2023-05-20 11:21:15] INFO root fetch - processPackages [sqlalchemy-orm]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-20 11:21:15] INFO root fetch - processPackages [myfuncs]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-20 11:21:15] INFO root fetch - processPackages [mmigrator]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-20 11:21:15] INFO root fetch - processPackages [pyqt-openai]: New version: [0.1.5] Old Version: [0.1.3]
+[2023-05-20 11:21:15] INFO root fetch - processPackages [sftp-uploader]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-20 11:21:15] INFO root fetch - processPackages [odoo12-addon-l10n-br-fiscal]: New version: [12.0.9.0.0] Old Version: [12.0.8.0.0.99.dev3]
+[2023-05-20 11:21:16] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2023-05-20 11:21:16] INFO root fetch - processPackages [odoo-addons-oca-operating-unit]: New version: [16.0.20230412.0] Old Version: [15.0.20230519.1]
+[2023-05-20 11:21:16] INFO root fetch - processPackages [pyqt-openai]: executing diffoscope
+[2023-05-20 11:21:16] INFO root fetch - processPackages [pyqt-openai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqt-openai-0.1.3.tar.gz tmp/pyqt-openai-0.1.5.tar.gz --markdown 20230520/p/pyqt-openai/0.1.3-0.1.5/diff.md --exclude *.pyd
+[2023-05-20 11:21:16] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2023-05-20 11:21:16] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20230520/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/diff.md --exclude *.pyd
+[2023-05-20 11:21:16] INFO root fetch - processPackages [mmigrator]: Downloading https://files.pythonhosted.org/packages/72/76/84c5f30b3c2c78390f95d65724785f2f29df01c138f69fa297b61931534a/mmigrator-0.1.0.tar.gz
+[2023-05-20 11:21:16] INFO root fetch - processPackages [sqlalchemy-orm]: Downloading https://files.pythonhosted.org/packages/a4/3e/4b759693790147992a39df48ad84127a05883d048b0d682fe20bd5a8dc9e/sqlalchemy-orm-1.2.8.tar.gz
+[2023-05-20 11:21:16] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-20 11:21:16] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-20 11:21:16] INFO root fetch - processPackages [odoo-addons-oca-operating-unit]: Downloading https://files.pythonhosted.org/packages/e0/03/04204665f165b185fed7a74f125a76e6e6d0d68b88dd5fb98094ecf3c27d/odoo_addons_oca_operating_unit-15.0.20230519.1-py3-none-any.whl
+[2023-05-20 11:21:16] INFO root fetch - processPackages [odoo12-addon-l10n-br-fiscal]: Downloading https://files.pythonhosted.org/packages/08/a3/f6425a364d6c7326499a78a8d4470153d9d31656db1d0b26423dfbad2e33/odoo12_addon_l10n_br_fiscal-12.0.8.0.0.99.dev3-py3-none-any.whl
+[2023-05-20 11:21:16] INFO root fetch - processPackages [myfuncs]: Downloading https://files.pythonhosted.org/packages/ac/20/296fb5db96de585b4f2c251789fa6c0c9fc5899fa5c6ddfbb80ee95e4c77/myfuncs-0.1.6.tar.gz
+[2023-05-20 11:21:16] INFO root fetch - processPackages [sftp-uploader]: Downloading https://files.pythonhosted.org/packages/ee/e8/403b7b179f9aedf21a473d1b2c196a0c3145d32c3ec1431ce5f96c8dce38/sftp_uploader-0.1.4.tar.gz
+[2023-05-20 11:21:16] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-20 11:21:16] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230520/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-20 11:21:16] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-20 11:21:16] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230520/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-20 11:21:16] INFO root fetch - processPackages [myfuncs]: executing diffoscope
+[2023-05-20 11:21:16] INFO root fetch - processPackages [myfuncs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myfuncs-0.1.5.tar.gz tmp/myfuncs-0.1.6.tar.gz --markdown 20230520/m/myfuncs/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-20 11:21:16] INFO root fetch - processPackages [sftp-uploader]: executing diffoscope
+[2023-05-20 11:21:16] INFO root fetch - processPackages [sftp-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sftp_uploader-0.1.3.tar.gz tmp/sftp_uploader-0.1.4.tar.gz --markdown 20230520/s/sftp-uploader/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-20 11:21:16] INFO root fetch - processPackages [mmigrator]: Downloading https://files.pythonhosted.org/packages/f3/36/081f8c3d9f6dec9ac46dd423dcb8abc33e9cc0a9f59e03128bb3f0ec92b8/mmigrator-0.1.1.tar.gz
+[2023-05-20 11:21:16] INFO root fetch - processPackages [sqlalchemy-orm]: Downloading https://files.pythonhosted.org/packages/f6/ff/31626858c75ef7b1529806f30381bd3a57d9878cbf2cda3b49dacdb0c83e/sqlalchemy-orm-1.2.9.tar.gz
+[2023-05-20 11:21:16] INFO root fetch - processPackages [mmigrator]: executing diffoscope
+[2023-05-20 11:21:16] INFO root fetch - processPackages [mmigrator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmigrator-0.1.0.tar.gz tmp/mmigrator-0.1.1.tar.gz --markdown 20230520/m/mmigrator/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-20 11:21:16] INFO root fetch - processPackages [odoo-addons-oca-operating-unit]: executing diffoscope
+[2023-05-20 11:21:16] INFO root fetch - processPackages [odoo-addons-oca-operating-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_operating_unit-15.0.20230519.1-py3-none-any.whl.zip tmp/odoo_addons_oca_operating_unit-16.0.20230412.0-py3-none-any.whl.zip --markdown 20230520/o/odoo-addons-oca-operating-unit/15.0.20230519.1-16.0.20230412.0/diff.md --exclude *.pyd
+[2023-05-20 11:21:16] INFO root fetch - processPackages [sqlalchemy-orm]: executing diffoscope
+[2023-05-20 11:21:16] INFO root fetch - processPackages [sqlalchemy-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy-orm-1.2.8.tar.gz tmp/sqlalchemy-orm-1.2.9.tar.gz --markdown 20230520/s/sqlalchemy-orm/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-20 11:21:16] INFO root fetch - processPackages [odoo12-addon-l10n-br-fiscal]: Downloading https://files.pythonhosted.org/packages/c5/f9/b53bf0c3db3456a6e89d7b5b44a07026de1de4272ffa3ced344e1be9c634/odoo12_addon_l10n_br_fiscal-12.0.9.0.0-py3-none-any.whl
+[2023-05-20 11:21:16] INFO root fetch - processPackages [odoo12-addon-l10n-br-fiscal]: executing diffoscope
+[2023-05-20 11:21:16] INFO root fetch - processPackages [odoo12-addon-l10n-br-fiscal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_l10n_br_fiscal-12.0.8.0.0.99.dev3-py3-none-any.whl.zip tmp/odoo12_addon_l10n_br_fiscal-12.0.9.0.0-py3-none-any.whl.zip --markdown 20230520/o/odoo12-addon-l10n-br-fiscal/12.0.8.0.0.99.dev3-12.0.9.0.0/diff.md --exclude *.pyd
+[2023-05-20 11:21:17] INFO root fetch - processPackages [spanishconjugator]: Start processing: certora-cli-alpha-master
+[2023-05-20 11:21:17] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-20 11:21:18] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230520.8.16.965969] Old Version: [20230519.14.55.133670]
+[2023-05-20 11:21:18] INFO root fetch - processPackages [spanishconjugator]: Start processing: adsystem
+[2023-05-20 11:21:18] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-20 11:21:18] WARNING root fetch - processPackages [adsystem]: Skipping, unable to determine old version
+[2023-05-20 11:21:18] INFO root fetch - main [MainThread]: End processing [adsystem] error
+[2023-05-20 11:21:18] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/a9/11/1fee9992b96d1f17576370cab5bc652a90e55bb9e26dccf050bce9518060/certora-cli-alpha-master-20230519.14.55.133670.tar.gz
+[2023-05-20 11:21:18] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-operating-unit]: success
+[2023-05-20 11:21:18] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38978765>=10485760
+[2023-05-20 11:21:18] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-20 11:21:18] INFO root fetch - main [MainThread]: End processing [sftp-uploader]: success
+[2023-05-20 11:21:18] INFO root fetch - main [MainThread]: End processing [sqlalchemy-orm]: success
+[2023-05-20 11:21:18] INFO root fetch - main [MainThread]: End processing [myfuncs]: success
+[2023-05-20 11:21:18] INFO root fetch - main [MainThread]: End processing [mmigrator]: success
+[2023-05-20 11:21:18] INFO root fetch - main [MainThread]: End processing [pyqt-openai]: success
+[2023-05-20 11:21:21] INFO root fetch - main [MainThread]: End processing [odoo12-addon-l10n-br-fiscal]: success
+[2023-05-20 11:21:23] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2023-05-20 11:21:23] INFO root fetch - main [MainThread]: Store serial: [18180871]
