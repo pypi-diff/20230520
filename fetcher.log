@@ -4614,3 +4614,57 @@
 [2023-05-20 03:37:49] INFO root fetch - main [MainThread]: End processing [claudia]: success
 [2023-05-20 03:37:49] INFO root fetch - main [MainThread]: End processing [lineagex]: success
 [2023-05-20 03:37:49] INFO root fetch - main [MainThread]: Store serial: [18178867]
+[2023-05-20 03:42:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18178867]
+[2023-05-20 03:42:58] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-20 03:42:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lineagex
+[2023-05-20 03:42:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nbdev-pytorch
+[2023-05-20 03:42:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdev-scipy
+[2023-05-20 03:42:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev-sphinx
+[2023-05-20 03:42:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: langkit
+[2023-05-20 03:42:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: np-session
+[2023-05-20 03:42:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nbdev-django
+[2023-05-20 03:42:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pytest-yaml-yoyo
+[2023-05-20 03:42:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nonebot-plugin-aitx
+[2023-05-20 03:42:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nbdev-apl
+[2023-05-20 03:42:58] INFO root fetch - processPackages [langkit]: New version: [0.0.1b0] Old Version: [0.0.1.dev3]
+[2023-05-20 03:42:58] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.782] Old Version: [0.0.781]
+[2023-05-20 03:42:58] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-20 03:42:58] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-20 03:42:58] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-20 03:42:58] INFO root fetch - processPackages [np-session]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-05-20 03:42:58] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-20 03:42:58] WARNING root fetch - processPackages [nonebot-plugin-aitx]: Skipping, unable to determine old version
+[2023-05-20 03:42:58] INFO root fetch - processPackages [lineagex]: New version: [0.0.3a2] Old Version: [0.0.3a1]
+[2023-05-20 03:42:58] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-aitx] error
+[2023-05-20 03:42:58] INFO root fetch - processPackages [pytest-yaml-yoyo]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-20 03:42:58] INFO root fetch - processPackages [langkit]: executing diffoscope
+[2023-05-20 03:42:58] INFO root fetch - processPackages [langkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langkit-0.0.1.dev3.tar.gz tmp/langkit-0.0.1b0.tar.gz --markdown 20230520/l/langkit/0.0.1.dev3-0.0.1b0/diff.md --exclude *.pyd
+[2023-05-20 03:42:58] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-05-20 03:42:58] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230520/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-20 03:42:58] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-05-20 03:42:58] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.781.tar.gz tmp/nbdev-apl-0.0.782.tar.gz --markdown 20230520/n/nbdev-apl/0.0.781-0.0.782/diff.md --exclude *.pyd
+[2023-05-20 03:42:58] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-05-20 03:42:58] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230520/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-20 03:42:58] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-05-20 03:42:58] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-05-20 03:42:58] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230520/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-20 03:42:58] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230520/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-20 03:42:59] INFO root fetch - processPackages [np-session]: Downloading https://files.pythonhosted.org/packages/04/e1/a1de4b97de93b5b4309f7132b40b9235c59bd1856514346fa16e52dacf0a/np-session-0.6.9.tar.gz
+[2023-05-20 03:42:59] INFO root fetch - processPackages [pytest-yaml-yoyo]: Downloading https://files.pythonhosted.org/packages/b3/12/0126e9ef548e4cd60180314cfccb3cd3e6452ba266ee2aaf79d49a6f075d/pytest-yaml-yoyo-1.2.0.tar.gz
+[2023-05-20 03:42:59] INFO root fetch - processPackages [np-session]: executing diffoscope
+[2023-05-20 03:42:59] INFO root fetch - processPackages [np-session]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np-session-0.6.8.tar.gz tmp/np-session-0.6.9.tar.gz --markdown 20230520/n/np-session/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-05-20 03:42:59] INFO root fetch - processPackages [lineagex]: executing diffoscope
+[2023-05-20 03:42:59] INFO root fetch - processPackages [lineagex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lineagex-0.0.3a1.tar.gz tmp/lineagex-0.0.3a2.tar.gz --markdown 20230520/l/lineagex/0.0.3a1-0.0.3a2/diff.md --exclude *.pyd
+[2023-05-20 03:42:59] INFO root fetch - processPackages [pytest-yaml-yoyo]: Downloading https://files.pythonhosted.org/packages/04/43/079e046cac4cbcef7c589fd802ad5c0956a91bf93f795aabb1d633c42782/pytest-yaml-yoyo-1.2.1.tar.gz
+[2023-05-20 03:42:59] INFO root fetch - processPackages [pytest-yaml-yoyo]: executing diffoscope
+[2023-05-20 03:42:59] INFO root fetch - processPackages [pytest-yaml-yoyo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-yaml-yoyo-1.2.0.tar.gz tmp/pytest-yaml-yoyo-1.2.1.tar.gz --markdown 20230520/p/pytest-yaml-yoyo/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-20 03:43:00] INFO root fetch - main [MainThread]: End processing [langkit]: success
+[2023-05-20 03:43:00] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-05-20 03:43:00] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-05-20 03:43:00] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-05-20 03:43:00] INFO root fetch - main [MainThread]: End processing [np-session]: success
+[2023-05-20 03:43:01] INFO root fetch - main [MainThread]: End processing [pytest-yaml-yoyo]: success
+[2023-05-20 03:43:01] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-05-20 03:43:01] INFO root fetch - main [MainThread]: End processing [lineagex]: success
+[2023-05-20 03:43:01] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-05-20 03:43:01] INFO root fetch - main [MainThread]: Store serial: [18178902]
