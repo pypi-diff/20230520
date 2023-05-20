@@ -12736,3 +12736,18 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 21:24:44] INFO root fetch - main [MainThread]: End processing [click-web]: success
 [2023-05-20 21:24:44] INFO root fetch - main [MainThread]: End processing [krakenci-server]: success
 [2023-05-20 21:24:44] INFO root fetch - main [MainThread]: Store serial: [18183953]
+[2023-05-20 21:29:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183953]
+[2023-05-20 21:29:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-20 21:29:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bovine
+[2023-05-20 21:29:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SplatStats
+[2023-05-20 21:29:53] INFO root fetch - processPackages [SplatStats]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-20 21:29:53] INFO root fetch - processPackages [bovine]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-20 21:29:53] INFO root fetch - processPackages [bovine]: Downloading https://files.pythonhosted.org/packages/93/76/8198fc40a12aeb923b403fea4dee484a5495d113a97c24c3b45cac714cbd/bovine-0.2.1.tar.gz
+[2023-05-20 21:29:53] INFO root fetch - processPackages [bovine]: executing diffoscope
+[2023-05-20 21:29:53] INFO root fetch - processPackages [bovine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bovine-0.2.0.tar.gz tmp/bovine-0.2.1.tar.gz --markdown 20230520/b/bovine/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-20 21:29:54] INFO root fetch - processPackages [SplatStats]: Downloading https://files.pythonhosted.org/packages/77/5e/0b2bf55de79b8a257160cd6857df4ae81d76204d55d383490c4f69cff8f0/SplatStats-2.0.4.tar.gz
+[2023-05-20 21:29:54] INFO root fetch - processPackages [SplatStats]: executing diffoscope
+[2023-05-20 21:29:54] INFO root fetch - processPackages [SplatStats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SplatStats-2.0.3.tar.gz tmp/SplatStats-2.0.4.tar.gz --markdown 20230520/S/SplatStats/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-05-20 21:29:55] INFO root fetch - main [MainThread]: End processing [bovine]: success
+[2023-05-20 21:29:55] INFO root fetch - main [MainThread]: End processing [SplatStats]: success
+[2023-05-20 21:29:55] INFO root fetch - main [MainThread]: Store serial: [18183959]
