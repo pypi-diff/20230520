@@ -4782,3 +4782,87 @@
 [2023-05-20 03:53:27] INFO root fetch - main [MainThread]: End processing [bytez]: success
 [2023-05-20 03:53:28] INFO root fetch - main [MainThread]: End processing [django-unicorn]: success
 [2023-05-20 03:53:28] INFO root fetch - main [MainThread]: Store serial: [18178963]
+[2023-05-20 03:58:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18178963]
+[2023-05-20 03:58:37] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-20 03:58:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pioreactor-relay-plugin
+[2023-05-20 03:58:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: np-workflows
+[2023-05-20 03:58:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bytez
+[2023-05-20 03:58:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lineagex
+[2023-05-20 03:58:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bytez
+[2023-05-20 03:58:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: econuker
+[2023-05-20 03:58:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: arxivai
+[2023-05-20 03:58:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: webint-code
+[2023-05-20 03:58:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nonebot-plugin-aitx
+[2023-05-20 03:58:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: betfair-parser
+[2023-05-20 03:58:37] INFO root fetch - processPackages [pioreactor-relay-plugin]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-20 03:58:37] INFO root fetch - processPackages [bytez]: New version: [0.1.93] Old Version: [0.1.92]
+[2023-05-20 03:58:37] INFO root fetch - processPackages [nonebot-plugin-aitx]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-20 03:58:37] INFO root fetch - processPackages [econuker]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-20 03:58:37] INFO root fetch - processPackages [arxivai]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 03:58:37] INFO root fetch - processPackages [webint-code]: New version: [0.0.21] Old Version: [0.0.20]
+[2023-05-20 03:58:37] INFO root fetch - processPackages [lineagex]: New version: [0.0.4] Old Version: [0.0.3a2]
+[2023-05-20 03:58:37] INFO root fetch - processPackages [bytez]: New version: [0.1.93] Old Version: [0.1.92]
+[2023-05-20 03:58:37] INFO root fetch - processPackages [np-workflows]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-05-20 03:58:37] INFO root fetch - processPackages [betfair-parser]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-20 03:58:37] INFO root fetch - processPackages [bytez]: Downloading https://files.pythonhosted.org/packages/22/62/a1c2608ddba7f0ed20f876bc0b46f6ffc8ceaee727d94097c9c1a25d3518/bytez-0.1.92.tar.gz
+[2023-05-20 03:58:37] INFO root fetch - processPackages [bytez]: Downloading https://files.pythonhosted.org/packages/22/62/a1c2608ddba7f0ed20f876bc0b46f6ffc8ceaee727d94097c9c1a25d3518/bytez-0.1.92.tar.gz
+[2023-05-20 03:58:37] INFO root fetch - processPackages [arxivai]: executing diffoscope
+[2023-05-20 03:58:37] INFO root fetch - processPackages [pioreactor-relay-plugin]: Downloading https://files.pythonhosted.org/packages/ad/d7/b889d6592cb58cef462fb5d5702054d0e79c29deea5ad3a5e8b6da61c3b6/pioreactor_relay_plugin-0.3.0-py3-none-any.whl
+[2023-05-20 03:58:38] INFO root fetch - processPackages [arxivai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arxivai-0.0.8.tar.gz tmp/arxivai-0.0.9.tar.gz --markdown 20230520/a/arxivai/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 03:58:38] INFO root fetch - processPackages [econuker]: Downloading https://files.pythonhosted.org/packages/b7/0e/d746e5e6903264ce59334a7948a7457e42b30676d664fcb7b1095730f3cd/econuker-1.0.4.tar.gz
+[2023-05-20 03:58:38] INFO root fetch - processPackages [nonebot-plugin-aitx]: Downloading https://files.pythonhosted.org/packages/ca/a4/f6e5ebeee2f116538dfc33a0f9d8a7e1f086a07144d98cf081b36f2bfae6/nonebot_plugin_aitx-0.1.1.tar.gz
+[2023-05-20 03:58:38] INFO root fetch - processPackages [lineagex]: Downloading https://files.pythonhosted.org/packages/75/b4/8978a93442b49d66c249e034f9cd85ece80bfb54e3c31c8a18205ed3a0a0/lineagex-0.0.4.tar.gz
+[2023-05-20 03:58:38] INFO root fetch - processPackages [webint-code]: Downloading https://files.pythonhosted.org/packages/04/88/693440c855993c37e39ed1801c64ed01ee50f9823affb31e7d4aab3ae7d5/webint_code-0.0.20.tar.gz
+[2023-05-20 03:58:38] INFO root fetch - processPackages [betfair-parser]: Downloading https://files.pythonhosted.org/packages/e5/29/a912178f9aadd2b6ed2d52f2e39322b096c8e546b5de16d264932f1dfff1/betfair_parser-0.1.9.tar.gz
+[2023-05-20 03:58:38] INFO root fetch - processPackages [pioreactor-relay-plugin]: Downloading https://files.pythonhosted.org/packages/f1/5e/4e35b84edb624c687e24694433366d26616a0ddc6d3b122dda924e1b994f/pioreactor_relay_plugin-0.3.1-py3-none-any.whl
+[2023-05-20 03:58:38] INFO root fetch - processPackages [lineagex]: executing diffoscope
+[2023-05-20 03:58:38] INFO root fetch - processPackages [lineagex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lineagex-0.0.3a2.tar.gz tmp/lineagex-0.0.4.tar.gz --markdown 20230520/l/lineagex/0.0.3a2-0.0.4/diff.md --exclude *.pyd
+[2023-05-20 03:58:38] INFO root fetch - processPackages [bytez]: Downloading https://files.pythonhosted.org/packages/b5/6b/7d8ed17e559f81c89a9318c2ac62a787678afa0331b1581f13ad13cef6d1/bytez-0.1.93.tar.gz
+[2023-05-20 03:58:38] INFO root fetch - processPackages [bytez]: Downloading https://files.pythonhosted.org/packages/b5/6b/7d8ed17e559f81c89a9318c2ac62a787678afa0331b1581f13ad13cef6d1/bytez-0.1.93.tar.gz
+[2023-05-20 03:58:38] INFO root fetch - processPackages [np-workflows]: executing diffoscope
+[2023-05-20 03:58:38] INFO root fetch - processPackages [np-workflows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_workflows-1.4.8.tar.gz tmp/np_workflows-1.4.9.tar.gz --markdown 20230520/n/np-workflows/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-05-20 03:58:38] INFO root fetch - processPackages [betfair-parser]: Downloading https://files.pythonhosted.org/packages/2a/1b/12bc2f29d6d70cc20fce141a063d2e7621d2a8ceb75ff0106555ac0ce979/betfair_parser-0.2.0.tar.gz
+[2023-05-20 03:58:38] INFO root fetch - processPackages [econuker]: Downloading https://files.pythonhosted.org/packages/20/5a/b048eeded0c630bbfb7535a3959bd0838be2c2614443931a1c009cdeb371/econuker-1.0.5.tar.gz
+[2023-05-20 03:58:38] INFO root fetch - processPackages [pioreactor-relay-plugin]: executing diffoscope
+[2023-05-20 03:58:38] INFO root fetch - processPackages [pioreactor-relay-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pioreactor_relay_plugin-0.3.0-py3-none-any.whl.zip tmp/pioreactor_relay_plugin-0.3.1-py3-none-any.whl.zip --markdown 20230520/p/pioreactor-relay-plugin/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-20 03:58:38] INFO root fetch - processPackages [webint-code]: Downloading https://files.pythonhosted.org/packages/e2/a8/ebb2c6231a48f38339379bc285d64de89e4db19227e2eae987c91c2ea078/webint_code-0.0.21.tar.gz
+[2023-05-20 03:58:38] INFO root fetch - processPackages [nonebot-plugin-aitx]: Downloading https://files.pythonhosted.org/packages/89/1d/65ba48bc25734ab9f223dc0b105b549f4e7158964fcac214803fabbea501/nonebot_plugin_aitx-0.1.2.tar.gz
+[2023-05-20 03:58:38] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-20 03:58:38] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.92.tar.gz tmp/bytez-0.1.93.tar.gz --markdown 20230520/b/bytez/0.1.92-0.1.93/diff.md --exclude *.pyd
+[2023-05-20 03:58:38] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-20 03:58:38] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.92.tar.gz tmp/bytez-0.1.93.tar.gz --markdown 20230520/b/bytez/0.1.92-0.1.93/diff.md --exclude *.pyd
+[2023-05-20 03:58:38] INFO root fetch - processPackages [econuker]: executing diffoscope
+[2023-05-20 03:58:38] INFO root fetch - processPackages [econuker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/econuker-1.0.4.tar.gz tmp/econuker-1.0.5.tar.gz --markdown 20230520/e/econuker/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-20 03:58:38] INFO root fetch - processPackages [betfair-parser]: executing diffoscope
+[2023-05-20 03:58:38] INFO root fetch - processPackages [betfair-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betfair_parser-0.1.9.tar.gz tmp/betfair_parser-0.2.0.tar.gz --markdown 20230520/b/betfair-parser/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-05-20 03:58:38] INFO root fetch - processPackages [nonebot-plugin-aitx]: executing diffoscope
+[2023-05-20 03:58:38] INFO root fetch - processPackages [nonebot-plugin-aitx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_aitx-0.1.1.tar.gz tmp/nonebot_plugin_aitx-0.1.2.tar.gz --markdown 20230520/n/nonebot-plugin-aitx/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-20 03:58:38] INFO root fetch - processPackages [webint-code]: executing diffoscope
+[2023-05-20 03:58:38] INFO root fetch - processPackages [webint-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint_code-0.0.20.tar.gz tmp/webint_code-0.0.21.tar.gz --markdown 20230520/w/webint-code/0.0.20-0.0.21/diff.md --exclude *.pyd
+[2023-05-20 03:58:39] INFO root fetch - processPackages [arxivai]: Start processing: webint-code
+[2023-05-20 03:58:39] INFO root fetch - main [MainThread]: End processing [arxivai]: success
+[2023-05-20 03:58:39] INFO root fetch - processPackages [webint-code]: New version: [0.0.21] Old Version: [0.0.20]
+[2023-05-20 03:58:39] INFO root fetch - processPackages [webint-code]: executing diffoscope
+[2023-05-20 03:58:39] INFO root fetch - processPackages [webint-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint_code-0.0.20.tar.gz tmp/webint_code-0.0.21.tar.gz --markdown 20230520/w/webint-code/0.0.20-0.0.21/diff.md --exclude *.pyd
+[2023-05-20 03:58:40] INFO root fetch - processPackages [lineagex]: Start processing: irisml
+[2023-05-20 03:58:40] INFO root fetch - main [MainThread]: End processing [lineagex]: success
+[2023-05-20 03:58:40] INFO root fetch - processPackages [pioreactor-relay-plugin]: Start processing: pioreactor-relay-plugin
+[2023-05-20 03:58:40] INFO root fetch - main [MainThread]: End processing [pioreactor-relay-plugin]: success
+[2023-05-20 03:58:40] INFO root fetch - processPackages [pioreactor-relay-plugin]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-05-20 03:58:40] INFO root fetch - processPackages [irisml]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 03:58:40] INFO root fetch - processPackages [pioreactor-relay-plugin]: Downloading https://files.pythonhosted.org/packages/f6/9c/b84d3d43f2ec884a445c77d8b88f28c8c48a9f6969f0ae72d631c3f99873/pioreactor_relay_plugin-0.4.0-py3-none-any.whl
+[2023-05-20 03:58:40] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-20 03:58:40] INFO root fetch - main [MainThread]: End processing [np-workflows]: success
+[2023-05-20 03:58:40] INFO root fetch - main [MainThread]: End processing [webint-code]: success
+[2023-05-20 03:58:40] INFO root fetch - processPackages [pioreactor-relay-plugin]: executing diffoscope
+[2023-05-20 03:58:40] INFO root fetch - processPackages [pioreactor-relay-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pioreactor_relay_plugin-0.3.1-py3-none-any.whl.zip tmp/pioreactor_relay_plugin-0.4.0-py3-none-any.whl.zip --markdown 20230520/p/pioreactor-relay-plugin/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-05-20 03:58:40] INFO root fetch - main [MainThread]: End processing [econuker]: success
+[2023-05-20 03:58:40] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-aitx]: success
+[2023-05-20 03:58:40] INFO root fetch - processPackages [irisml]: executing diffoscope
+[2023-05-20 03:58:40] INFO root fetch - processPackages [irisml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irisml-0.0.8.tar.gz tmp/irisml-0.0.9.tar.gz --markdown 20230520/i/irisml/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 03:58:40] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-20 03:58:40] INFO root fetch - main [MainThread]: End processing [betfair-parser]: success
+[2023-05-20 03:58:40] INFO root fetch - main [MainThread]: End processing [webint-code]: success
+[2023-05-20 03:58:41] INFO root fetch - main [MainThread]: End processing [pioreactor-relay-plugin]: success
+[2023-05-20 03:58:41] INFO root fetch - main [MainThread]: End processing [irisml]: success
+[2023-05-20 03:58:41] INFO root fetch - main [MainThread]: Store serial: [18179004]
