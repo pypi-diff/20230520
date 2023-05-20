@@ -10020,3 +10020,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 15:48:30] INFO root fetch - main [MainThread]: End processing [statml]: success
 [2023-05-20 15:48:30] INFO root fetch - main [MainThread]: End processing [wgd]: success
 [2023-05-20 15:48:30] INFO root fetch - main [MainThread]: Store serial: [18182312]
+[2023-05-20 15:53:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182312]
+[2023-05-20 15:53:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 15:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygame-Print
+[2023-05-20 15:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: splight-lib
+[2023-05-20 15:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tira
+[2023-05-20 15:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gitlab-watchman
+[2023-05-20 15:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: keras-beautifulsoup
+[2023-05-20 15:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: veilcord
+[2023-05-20 15:53:38] WARNING root fetch - processPackages [pygame-Print]: Skipping, unable to determine old version
+[2023-05-20 15:53:38] INFO root fetch - main [MainThread]: End processing [pygame-Print] error
+[2023-05-20 15:53:38] INFO root fetch - processPackages [splight-lib]: New version: [3.0.0.dev0] Old Version: [2.3.9]
+[2023-05-20 15:53:38] INFO root fetch - processPackages [tira]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 15:53:38] WARNING root fetch - processPackages [keras-beautifulsoup]: Skipping, unable to determine old version
+[2023-05-20 15:53:38] INFO root fetch - processPackages [veilcord]: New version: [0.0.0.7] Old Version: [0.0.0.6]
+[2023-05-20 15:53:38] INFO root fetch - processPackages [gitlab-watchman]: New version: [3.0.0] Old Version: [2.0.0]
+[2023-05-20 15:53:38] INFO root fetch - main [MainThread]: End processing [keras-beautifulsoup] error
+[2023-05-20 15:53:39] INFO root fetch - processPackages [veilcord]: executing diffoscope
+[2023-05-20 15:53:39] INFO root fetch - processPackages [veilcord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/veilcord-0.0.0.6.tar.gz tmp/veilcord-0.0.0.7.tar.gz --markdown 20230520/v/veilcord/0.0.0.6-0.0.0.7/diff.md --exclude *.pyd
+[2023-05-20 15:53:39] INFO root fetch - processPackages [gitlab-watchman]: Downloading https://files.pythonhosted.org/packages/f2/d6/c476059ce0a6a325045d0046150d2fd4712e22cf126a8302646de01fc6de/gitlab_watchman-2.0.0-py3-none-any.whl
+[2023-05-20 15:53:39] INFO root fetch - processPackages [splight-lib]: Downloading https://files.pythonhosted.org/packages/bb/ff/ed0cd2310d1197aa003ad5453f2fa69d373176927915bc77e824d64dcfe8/splight-lib-2.3.9.tar.gz
+[2023-05-20 15:53:39] INFO root fetch - processPackages [gitlab-watchman]: Downloading https://files.pythonhosted.org/packages/bb/81/1d42c14ef2887c435556812ae6c3cdf34c0d10ce56c08e4604016919d330/gitlab-watchman-3.0.0.tar.gz
+[2023-05-20 15:53:39] INFO root fetch - processPackages [gitlab-watchman]: executing diffoscope
+[2023-05-20 15:53:39] INFO root fetch - processPackages [gitlab-watchman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitlab_watchman-2.0.0-py3-none-any.whl.zip tmp/gitlab-watchman-3.0.0.tar.gz --markdown 20230520/g/gitlab-watchman/2.0.0-3.0.0/diff.md --exclude *.pyd
+[2023-05-20 15:53:39] INFO root fetch - processPackages [splight-lib]: Downloading https://files.pythonhosted.org/packages/df/33/ff6b41f9ef3b0caea1363377e03c2f35d48a518cab31209a55c4fb9c0430/splight-lib-3.0.0.dev0.tar.gz
+[2023-05-20 15:53:39] INFO root fetch - processPackages [tira]: executing diffoscope
+[2023-05-20 15:53:39] INFO root fetch - processPackages [tira]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tira-0.0.8.tar.gz tmp/tira-0.0.9.tar.gz --markdown 20230520/t/tira/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 15:53:39] INFO root fetch - processPackages [splight-lib]: executing diffoscope
+[2023-05-20 15:53:39] INFO root fetch - processPackages [splight-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-lib-2.3.9.tar.gz tmp/splight-lib-3.0.0.dev0.tar.gz --markdown 20230520/s/splight-lib/2.3.9-3.0.0.dev0/diff.md --exclude *.pyd
+[2023-05-20 15:53:40] INFO root fetch - main [MainThread]: End processing [veilcord]: success
+[2023-05-20 15:53:40] INFO root fetch - main [MainThread]: End processing [gitlab-watchman]: success
+[2023-05-20 15:53:40] INFO root fetch - main [MainThread]: End processing [tira]: success
+[2023-05-20 15:53:40] INFO root fetch - main [MainThread]: End processing [splight-lib]: success
+[2023-05-20 15:53:40] INFO root fetch - main [MainThread]: Store serial: [18182335]
