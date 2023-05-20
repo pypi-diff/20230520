@@ -6583,3 +6583,14 @@
 [2023-05-20 09:10:41] INFO root fetch - main [MainThread]: End processing [xtlsapi]: success
 [2023-05-20 09:10:55] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2023-05-20 09:10:55] INFO root fetch - main [MainThread]: Store serial: [18180205]
+[2023-05-20 09:15:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180205]
+[2023-05-20 09:16:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-20 09:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anaouder
+[2023-05-20 09:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tfq-nightly
+[2023-05-20 09:16:04] INFO root fetch - processPackages [tfq-nightly]: New version: [0.7.3.dev20230519] Old Version: [0.7.3.dev20230518]
+[2023-05-20 09:16:04] WARNING root fetch - processPackages [anaouder]: Skipping, unable to determine old version
+[2023-05-20 09:16:04] INFO root fetch - main [MainThread]: End processing [anaouder] error
+[2023-05-20 09:16:04] INFO root fetch - processPackages [tfq-nightly]: Downloading https://files.pythonhosted.org/packages/67/af/e1e3bcb470cf53ad796d5b5ae9fd50e5b3150007c92638c8411d4686cbc5/tfq_nightly-0.7.3.dev20230518-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-20 09:16:04] WARNING root fetch - processPackages [tfq-nightly]: Skipping package: exceeds size limit 10819848>=10485760
+[2023-05-20 09:16:04] INFO root fetch - main [MainThread]: End processing [tfq-nightly] error
+[2023-05-20 09:16:04] INFO root fetch - main [MainThread]: Store serial: [18180213]
