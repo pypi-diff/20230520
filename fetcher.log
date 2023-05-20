@@ -9004,3 +9004,63 @@
 [2023-05-20 13:56:00] INFO root fetch - main [MainThread]: End processing [PyDistances]: success
 [2023-05-20 13:56:00] INFO root fetch - main [MainThread]: End processing [OWSLib]: success
 [2023-05-20 13:56:00] INFO root fetch - main [MainThread]: Store serial: [18181660]
+[2023-05-20 14:01:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18181660]
+[2023-05-20 14:01:09] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-20 14:01:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PySciMath
+[2023-05-20 14:01:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hyperparameter-finder
+[2023-05-20 14:01:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mkdocs-toc-md
+[2023-05-20 14:01:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: acrod
+[2023-05-20 14:01:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: acrod
+[2023-05-20 14:01:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spotPython
+[2023-05-20 14:01:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: inverter-connect
+[2023-05-20 14:01:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: torchimize
+[2023-05-20 14:01:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: audiconnectpy
+[2023-05-20 14:01:09] INFO root fetch - processPackages [PySciMath]: New version: [1.5.4] Old Version: [1.5.3]
+[2023-05-20 14:01:09] INFO root fetch - processPackages [mkdocs-toc-md]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-20 14:01:09] INFO root fetch - processPackages [hyperparameter-finder]: New version: [1.0.0] Old Version: [0.0.1]
+[2023-05-20 14:01:09] INFO root fetch - processPackages [acrod]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-20 14:01:09] INFO root fetch - processPackages [audiconnectpy]: New version: [1.3.8] Old Version: [1.3.7]
+[2023-05-20 14:01:09] INFO root fetch - processPackages [spotPython]: New version: [0.1.5] Old Version: [0.1.3]
+[2023-05-20 14:01:09] INFO root fetch - processPackages [torchimize]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 14:01:09] INFO root fetch - processPackages [inverter-connect]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-20 14:01:09] INFO root fetch - processPackages [acrod]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-20 14:01:09] INFO root fetch - processPackages [PySciMath]: Downloading https://files.pythonhosted.org/packages/dc/44/a5efda5c0f23fec0230cf3a6a5e521f2f76d7210f6f05d115c75a79825e6/PySciMath-1.5.3.tar.gz
+[2023-05-20 14:01:09] ERROR root fetch - processPackages [hyperparameter-finder]: Unable to fetch info: No such project/version 'hyperparameter-finder' 0.0.1
+[2023-05-20 14:01:09] INFO root fetch - main [MainThread]: End processing [hyperparameter-finder] error
+[2023-05-20 14:01:09] INFO root fetch - processPackages [acrod]: Downloading https://files.pythonhosted.org/packages/42/8a/b32bfda2a90c4a3049ea0d3767b3f26a719db6d984b10818be147674796f/acrod-1.1.0.tar.gz
+[2023-05-20 14:01:09] INFO root fetch - processPackages [acrod]: Downloading https://files.pythonhosted.org/packages/42/8a/b32bfda2a90c4a3049ea0d3767b3f26a719db6d984b10818be147674796f/acrod-1.1.0.tar.gz
+[2023-05-20 14:01:09] INFO root fetch - processPackages [inverter-connect]: executing diffoscope
+[2023-05-20 14:01:09] INFO root fetch - processPackages [inverter-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inverter-connect-0.8.0.tar.gz tmp/inverter-connect-0.9.0.tar.gz --markdown 20230520/i/inverter-connect/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-20 14:01:09] INFO root fetch - processPackages [spotPython]: Downloading https://files.pythonhosted.org/packages/69/f7/85e980a4695304513459eda06255d26b05a95b14aee34eee9284ec4c440f/spotPython-0.1.3.tar.gz
+[2023-05-20 14:01:09] INFO root fetch - processPackages [mkdocs-toc-md]: Downloading https://files.pythonhosted.org/packages/8b/a4/f72cd63655791de985e262d8d5b5b0b946f43f8c04891571867c558d90cc/mkdocs-toc-md-0.0.5.tar.gz
+[2023-05-20 14:01:09] INFO root fetch - processPackages [torchimize]: Downloading https://files.pythonhosted.org/packages/e5/7c/e975a8878f45d4bae5dee4f1a48a68b59d3fa539943e22f7eac15fab9c89/torchimize-0.0.8.tar.gz
+[2023-05-20 14:01:10] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/a2/0c/a5e4c0a15f98bbf3aab31e55211776aa9ee2d8306c350cdda0090d5377f3/audiconnectpy-1.3.8.tar.gz
+[2023-05-20 14:01:10] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2023-05-20 14:01:10] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-1.3.7.tar.gz tmp/audiconnectpy-1.3.8.tar.gz --markdown 20230520/a/audiconnectpy/1.3.7-1.3.8/diff.md --exclude *.pyd
+[2023-05-20 14:01:10] INFO root fetch - processPackages [mkdocs-toc-md]: Downloading https://files.pythonhosted.org/packages/5f/7e/883ded6f12f67394f820416253a6092c2ce4299772f72273680d9c5bc8ad/mkdocs-toc-md-0.0.6.tar.gz
+[2023-05-20 14:01:10] INFO root fetch - processPackages [PySciMath]: Downloading https://files.pythonhosted.org/packages/7b/c5/07c5b31292f6e72d3be20a8247e98b9b50c8efc426dff9076ded5494f554/PySciMath-1.5.4.tar.gz
+[2023-05-20 14:01:10] INFO root fetch - processPackages [spotPython]: Downloading https://files.pythonhosted.org/packages/08/ae/17aa2bcd17ee79d5f0a013750007d1148cc90dded1db4802223cba75a01e/spotPython-0.1.5.tar.gz
+[2023-05-20 14:01:10] INFO root fetch - processPackages [acrod]: Downloading https://files.pythonhosted.org/packages/f4/34/d5ddf9a84062a5ee82b9377191225a7604f907f034f5439489a95c2ce31b/acrod-1.1.1.tar.gz
+[2023-05-20 14:01:10] INFO root fetch - processPackages [acrod]: Downloading https://files.pythonhosted.org/packages/f4/34/d5ddf9a84062a5ee82b9377191225a7604f907f034f5439489a95c2ce31b/acrod-1.1.1.tar.gz
+[2023-05-20 14:01:10] INFO root fetch - processPackages [PySciMath]: executing diffoscope
+[2023-05-20 14:01:10] INFO root fetch - processPackages [PySciMath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySciMath-1.5.3.tar.gz tmp/PySciMath-1.5.4.tar.gz --markdown 20230520/P/PySciMath/1.5.3-1.5.4/diff.md --exclude *.pyd
+[2023-05-20 14:01:10] INFO root fetch - processPackages [torchimize]: Downloading https://files.pythonhosted.org/packages/33/17/2f09d1322565aababc58a811c382bf94c99211a0728747edf08101c28a02/torchimize-0.0.9.tar.gz
+[2023-05-20 14:01:10] INFO root fetch - processPackages [acrod]: executing diffoscope
+[2023-05-20 14:01:10] INFO root fetch - processPackages [acrod]: executing diffoscope
+[2023-05-20 14:01:10] INFO root fetch - processPackages [acrod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acrod-1.1.0.tar.gz tmp/acrod-1.1.1.tar.gz --markdown 20230520/a/acrod/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-20 14:01:10] INFO root fetch - processPackages [acrod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acrod-1.1.0.tar.gz tmp/acrod-1.1.1.tar.gz --markdown 20230520/a/acrod/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-20 14:01:10] INFO root fetch - processPackages [mkdocs-toc-md]: executing diffoscope
+[2023-05-20 14:01:10] INFO root fetch - processPackages [mkdocs-toc-md]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-toc-md-0.0.5.tar.gz tmp/mkdocs-toc-md-0.0.6.tar.gz --markdown 20230520/m/mkdocs-toc-md/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-20 14:01:10] INFO root fetch - processPackages [torchimize]: executing diffoscope
+[2023-05-20 14:01:10] INFO root fetch - processPackages [torchimize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchimize-0.0.8.tar.gz tmp/torchimize-0.0.9.tar.gz --markdown 20230520/t/torchimize/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 14:01:10] INFO root fetch - processPackages [spotPython]: executing diffoscope
+[2023-05-20 14:01:10] INFO root fetch - processPackages [spotPython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotPython-0.1.3.tar.gz tmp/spotPython-0.1.5.tar.gz --markdown 20230520/s/spotPython/0.1.3-0.1.5/diff.md --exclude *.pyd
+[2023-05-20 14:01:11] INFO root fetch - main [MainThread]: End processing [inverter-connect]: success
+[2023-05-20 14:01:11] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2023-05-20 14:01:11] INFO root fetch - main [MainThread]: End processing [PySciMath]: success
+[2023-05-20 14:01:11] INFO root fetch - main [MainThread]: End processing [mkdocs-toc-md]: success
+[2023-05-20 14:01:12] INFO root fetch - main [MainThread]: End processing [torchimize]: success
+[2023-05-20 14:01:13] INFO root fetch - main [MainThread]: End processing [acrod]: success
+[2023-05-20 14:01:13] INFO root fetch - main [MainThread]: End processing [acrod]: success
+[2023-05-20 14:01:16] INFO root fetch - main [MainThread]: End processing [spotPython]: success
+[2023-05-20 14:01:16] INFO root fetch - main [MainThread]: Store serial: [18181766]
