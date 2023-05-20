@@ -13352,3 +13352,31 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 22:55:03] INFO root fetch - main [MainThread]: End processing [circuitpython-gauge]: success
 [2023-05-20 22:55:05] INFO root fetch - main [MainThread]: End processing [discovery-transition-ds]: success
 [2023-05-20 22:55:05] INFO root fetch - main [MainThread]: Store serial: [18184256]
+[2023-05-20 23:00:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184256]
+[2023-05-20 23:00:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 23:00:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: czapi
+[2023-05-20 23:00:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyfracgen
+[2023-05-20 23:00:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hyundai-kia-connect-api
+[2023-05-20 23:00:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: agixt
+[2023-05-20 23:00:14] INFO root fetch - processPackages [agixt]: New version: [1.1.50b0] Old Version: [1.1.49b0]
+[2023-05-20 23:00:14] INFO root fetch - processPackages [czapi]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 23:00:14] INFO root fetch - processPackages [pyfracgen]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 23:00:14] INFO root fetch - processPackages [hyundai-kia-connect-api]: New version: [3.3.6] Old Version: [3.3.5]
+[2023-05-20 23:00:14] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/86/90/28caa2ec25529af8559eef4e6b8bc06d08c72a1acf3716e5e81f5c7f1fc7/agixt-1.1.49b0.tar.gz
+[2023-05-20 23:00:14] INFO root fetch - processPackages [pyfracgen]: Downloading https://files.pythonhosted.org/packages/eb/fa/64aa9ed885aaff72f24799b37407ddc90c35b76455d22a06931bd20b55ab/pyfracgen-0.0.8.tar.gz
+[2023-05-20 23:00:14] INFO root fetch - processPackages [hyundai-kia-connect-api]: Downloading https://files.pythonhosted.org/packages/11/54/ff0ad886f5a695467fa2b0116a4877f0680f4159a4ea531e3685dd0f93ac/hyundai_kia_connect_api-3.3.5.tar.gz
+[2023-05-20 23:00:14] INFO root fetch - processPackages [czapi]: Downloading https://files.pythonhosted.org/packages/22/0d/ba15dec7d7ac400939b5faebe5407c8c4f00126ce4470220f73a7af77fef/czapi-0.1.9.tar.gz
+[2023-05-20 23:00:14] WARNING root fetch - processPackages [pyfracgen]: Skipping package: exceeds size limit 13120851>=10485760
+[2023-05-20 23:00:14] INFO root fetch - main [MainThread]: End processing [pyfracgen] error
+[2023-05-20 23:00:14] INFO root fetch - processPackages [agixt]: Downloading https://files.pythonhosted.org/packages/46/ed/07390c4b7e59145470e5853d5269a928d638f86e95b797be04f8b95f090d/agixt-1.1.50b0.tar.gz
+[2023-05-20 23:00:14] INFO root fetch - processPackages [czapi]: executing diffoscope
+[2023-05-20 23:00:14] INFO root fetch - processPackages [czapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czapi-0.1.8.tar.gz tmp/czapi-0.1.9.tar.gz --markdown 20230520/c/czapi/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 23:00:14] INFO root fetch - processPackages [hyundai-kia-connect-api]: Downloading https://files.pythonhosted.org/packages/b4/09/0ebc14f4478e9534ccfef28fbd573ea9f95b259b158c0d59dfd32b55eb44/hyundai_kia_connect_api-3.3.6.tar.gz
+[2023-05-20 23:00:15] INFO root fetch - processPackages [hyundai-kia-connect-api]: executing diffoscope
+[2023-05-20 23:00:15] INFO root fetch - processPackages [hyundai-kia-connect-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyundai_kia_connect_api-3.3.5.tar.gz tmp/hyundai_kia_connect_api-3.3.6.tar.gz --markdown 20230520/h/hyundai-kia-connect-api/3.3.5-3.3.6/diff.md --exclude *.pyd
+[2023-05-20 23:00:15] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-05-20 23:00:15] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.49b0.tar.gz tmp/agixt-1.1.50b0.tar.gz --markdown 20230520/a/agixt/1.1.49b0-1.1.50b0/diff.md --exclude *.pyd
+[2023-05-20 23:00:16] INFO root fetch - main [MainThread]: End processing [czapi]: success
+[2023-05-20 23:00:16] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-05-20 23:00:58] INFO root fetch - main [MainThread]: End processing [hyundai-kia-connect-api]: success
+[2023-05-20 23:00:58] INFO root fetch - main [MainThread]: Store serial: [18184268]
