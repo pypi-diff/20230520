@@ -2204,3 +2204,45 @@
 [2023-05-20 02:45:19] INFO root fetch - main [MainThread]: End processing [matchmeta]: success
 [2023-05-20 02:45:31] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2023-05-20 02:45:31] INFO root fetch - main [MainThread]: Store serial: [18177370]
+[2023-05-20 02:50:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18177370]
+[2023-05-20 02:50:40] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-20 02:50:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airunner
+[2023-05-20 02:50:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lightweight-charts
+[2023-05-20 02:50:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kubric-nightly
+[2023-05-20 02:50:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: streamlit-reveal-slides
+[2023-05-20 02:50:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-databrew-cicd
+[2023-05-20 02:50:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: eot
+[2023-05-20 02:50:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: projen
+[2023-05-20 02:50:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hls_tools
+[2023-05-20 02:50:40] INFO root fetch - processPackages [eot]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-20 02:50:40] INFO root fetch - processPackages [lightweight-charts]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-20 02:50:40] WARNING root fetch - processPackages [streamlit-reveal-slides]: Skipping, unable to determine old version
+[2023-05-20 02:50:40] INFO root fetch - main [MainThread]: End processing [streamlit-reveal-slides] error
+[2023-05-20 02:50:40] WARNING root fetch - processPackages [hls_tools]: Skipping, unable to determine old version
+[2023-05-20 02:50:40] INFO root fetch - main [MainThread]: End processing [hls_tools] error
+[2023-05-20 02:50:40] INFO root fetch - processPackages [airunner]: New version: [1.9.5] Old Version: [1.9.4]
+[2023-05-20 02:50:40] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-20 02:50:40] INFO root fetch - processPackages [projen]: New version: [0.71.9] Old Version: [0.71.8]
+[2023-05-20 02:50:40] INFO root fetch - processPackages [kubric-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-20 02:50:40] INFO root fetch - processPackages [airunner]: executing diffoscope
+[2023-05-20 02:50:40] INFO root fetch - processPackages [airunner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airunner-1.9.4.tar.gz tmp/airunner-1.9.5.tar.gz --markdown 20230520/a/airunner/1.9.4-1.9.5/diff.md --exclude *.pyd
+[2023-05-20 02:50:40] INFO root fetch - processPackages [eot]: Downloading https://files.pythonhosted.org/packages/2a/32/8dae73791e1fe28177615b8de149f16fc6c2386370515bb63305a8674a45/eot-0.0.6.tar.gz
+[2023-05-20 02:50:40] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2023-05-20 02:50:40] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20230520/c/cdk-databrew-cicd/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-20 02:50:40] INFO root fetch - processPackages [lightweight-charts]: Downloading https://files.pythonhosted.org/packages/87/10/ec7faac4152dd037228d02967d40a4836c42479a772ea678bec9705b8fe0/lightweight_charts-1.0.6.tar.gz
+[2023-05-20 02:50:40] INFO root fetch - processPackages [projen]: executing diffoscope
+[2023-05-20 02:50:40] INFO root fetch - processPackages [projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projen-0.71.8.tar.gz tmp/projen-0.71.9.tar.gz --markdown 20230520/p/projen/0.71.8-0.71.9/diff.md --exclude *.pyd
+[2023-05-20 02:50:40] INFO root fetch - processPackages [lightweight-charts]: executing diffoscope
+[2023-05-20 02:50:40] INFO root fetch - processPackages [lightweight-charts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightweight_charts-1.0.5.tar.gz tmp/lightweight_charts-1.0.6.tar.gz --markdown 20230520/l/lightweight-charts/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-20 02:50:40] INFO root fetch - processPackages [eot]: Downloading https://files.pythonhosted.org/packages/08/79/cdb0ed1aa3047e291dc22ae1ee1e39e81203a71728440556c871d341fbdc/eot-0.0.7.tar.gz
+[2023-05-20 02:50:40] INFO root fetch - processPackages [kubric-nightly]: executing diffoscope
+[2023-05-20 02:50:40] INFO root fetch - processPackages [kubric-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kubric-nightly-2023.5.8.tar.gz tmp/kubric-nightly-2023.5.9.tar.gz --markdown 20230520/k/kubric-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-20 02:50:40] INFO root fetch - processPackages [eot]: executing diffoscope
+[2023-05-20 02:50:40] INFO root fetch - processPackages [eot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eot-0.0.6.tar.gz tmp/eot-0.0.7.tar.gz --markdown 20230520/e/eot/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-20 02:50:41] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
+[2023-05-20 02:50:42] INFO root fetch - main [MainThread]: End processing [lightweight-charts]: success
+[2023-05-20 02:50:42] INFO root fetch - main [MainThread]: End processing [eot]: success
+[2023-05-20 02:50:42] INFO root fetch - main [MainThread]: End processing [airunner]: success
+[2023-05-20 02:50:42] INFO root fetch - main [MainThread]: End processing [kubric-nightly]: success
+[2023-05-20 02:50:42] INFO root fetch - main [MainThread]: End processing [projen]: success
+[2023-05-20 02:50:42] INFO root fetch - main [MainThread]: Store serial: [18177399]
