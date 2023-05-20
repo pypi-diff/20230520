@@ -9789,3 +9789,28 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 15:16:47] INFO root fetch - main [MainThread]: End processing [NuMeTriS]: success
 [2023-05-20 15:16:50] INFO root fetch - main [MainThread]: End processing [fern-belvo]: success
 [2023-05-20 15:16:50] INFO root fetch - main [MainThread]: Store serial: [18182179]
+[2023-05-20 15:21:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182179]
+[2023-05-20 15:21:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 15:21:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tkdev5
+[2023-05-20 15:21:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: atmoswing-vigicrues
+[2023-05-20 15:21:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: easy-post-twitter
+[2023-05-20 15:21:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: conjuring
+[2023-05-20 15:21:59] WARNING root fetch - processPackages [tkdev5]: Skipping, unable to determine old version
+[2023-05-20 15:21:59] INFO root fetch - main [MainThread]: End processing [tkdev5] error
+[2023-05-20 15:21:59] INFO root fetch - processPackages [conjuring]: New version: [0.2.1] Old Version: [0.1.0]
+[2023-05-20 15:21:59] INFO root fetch - processPackages [atmoswing-vigicrues]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-20 15:21:59] INFO root fetch - processPackages [easy-post-twitter]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-20 15:21:59] INFO root fetch - processPackages [conjuring]: executing diffoscope
+[2023-05-20 15:21:59] INFO root fetch - processPackages [conjuring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conjuring-0.1.0.tar.gz tmp/conjuring-0.2.1.tar.gz --markdown 20230520/c/conjuring/0.1.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-20 15:21:59] INFO root fetch - processPackages [atmoswing-vigicrues]: Downloading https://files.pythonhosted.org/packages/7b/6d/a2143dc2604e89cd7f6c598fb53f297912819c23e7fa6e0e25a05052d685/atmoswing-vigicrues-1.1.2.tar.gz
+[2023-05-20 15:21:59] INFO root fetch - processPackages [easy-post-twitter]: Downloading https://files.pythonhosted.org/packages/cf/68/8536985c611e171659cee749fa09493b8a0d9563e5b7ee1f8749271f575c/easy_post_twitter-1.0.5.tar.gz
+[2023-05-20 15:21:59] INFO root fetch - processPackages [atmoswing-vigicrues]: Downloading https://files.pythonhosted.org/packages/0f/e7/992240248d36af6180ccc6bb5411a833217bd0e3624a3a481a341194b956/atmoswing-vigicrues-1.1.3.tar.gz
+[2023-05-20 15:21:59] INFO root fetch - processPackages [easy-post-twitter]: Downloading https://files.pythonhosted.org/packages/a9/e1/8dd8959dd6605ac5cc949ea181a9ce4bd6d1a0449dd9067f79a294f2f7cc/easy_post_twitter-1.0.6.tar.gz
+[2023-05-20 15:21:59] INFO root fetch - processPackages [atmoswing-vigicrues]: executing diffoscope
+[2023-05-20 15:21:59] INFO root fetch - processPackages [atmoswing-vigicrues]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atmoswing-vigicrues-1.1.2.tar.gz tmp/atmoswing-vigicrues-1.1.3.tar.gz --markdown 20230520/a/atmoswing-vigicrues/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-20 15:21:59] INFO root fetch - processPackages [easy-post-twitter]: executing diffoscope
+[2023-05-20 15:21:59] INFO root fetch - processPackages [easy-post-twitter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_post_twitter-1.0.5.tar.gz tmp/easy_post_twitter-1.0.6.tar.gz --markdown 20230520/e/easy-post-twitter/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-20 15:22:00] INFO root fetch - main [MainThread]: End processing [conjuring]: success
+[2023-05-20 15:22:00] INFO root fetch - main [MainThread]: End processing [easy-post-twitter]: success
+[2023-05-20 15:22:01] INFO root fetch - main [MainThread]: End processing [atmoswing-vigicrues]: success
+[2023-05-20 15:22:01] INFO root fetch - main [MainThread]: Store serial: [18182198]
