@@ -11337,3 +11337,49 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 18:22:05] INFO root fetch - main [MainThread]: End processing [textagon]: success
 [2023-05-20 18:22:11] INFO root fetch - main [MainThread]: End processing [ezbeq]: success
 [2023-05-20 18:22:11] INFO root fetch - main [MainThread]: Store serial: [18183246]
+[2023-05-20 18:27:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183246]
+[2023-05-20 18:27:22] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-20 18:27:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ScriptCollection
+[2023-05-20 18:27:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kivy-widgets
+[2023-05-20 18:27:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dbtdocgen-rutryk
+[2023-05-20 18:27:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: langchain
+[2023-05-20 18:27:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kcli
+[2023-05-20 18:27:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: requests-html2
+[2023-05-20 18:27:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kfish
+[2023-05-20 18:27:22] INFO root fetch - processPackages [kivy-widgets]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 18:27:22] INFO root fetch - processPackages [requests-html2]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-20 18:27:22] INFO root fetch - processPackages [ScriptCollection]: New version: [3.3.90] Old Version: [3.3.9]
+[2023-05-20 18:27:22] INFO root fetch - processPackages [dbtdocgen-rutryk]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-20 18:27:22] INFO root fetch - processPackages [kfish]: New version: [99.0.202305201626] Old Version: [99.0.202305200905]
+[2023-05-20 18:27:22] INFO root fetch - processPackages [langchain]: New version: [0.0.99rc0] Old Version: [0.0.99]
+[2023-05-20 18:27:22] INFO root fetch - processPackages [kcli]: New version: [99.0.202305201624] Old Version: [99.0.202305200903]
+[2023-05-20 18:27:22] INFO root fetch - processPackages [langchain]: executing diffoscope
+[2023-05-20 18:27:22] INFO root fetch - processPackages [langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-0.0.99.tar.gz tmp/langchain-0.0.99rc0.tar.gz --markdown 20230520/l/langchain/0.0.99-0.0.99rc0/diff.md --exclude *.pyd
+[2023-05-20 18:27:22] INFO root fetch - processPackages [requests-html2]: Downloading https://files.pythonhosted.org/packages/17/06/a67f8b9f6df907b6d2d67132a0b20c44c70d25d71eb465116e2f3640f6dd/requests_html2-1.0.1.tar.gz
+[2023-05-20 18:27:22] INFO root fetch - processPackages [ScriptCollection]: Downloading https://files.pythonhosted.org/packages/b4/92/7a13f848f4f7c85210fb059e7977952f1353370bc372ef9b95b708fe8874/ScriptCollection-3.3.90-py3-none-any.whl
+[2023-05-20 18:27:22] INFO root fetch - processPackages [kivy-widgets]: Downloading https://files.pythonhosted.org/packages/ba/77/d0831aaf74db6bb7700d90bf1802fc16c95ea83cbd4420977a7c2faf6b4a/kivy_widgets-0.1.8.tar.gz
+[2023-05-20 18:27:23] INFO root fetch - processPackages [dbtdocgen-rutryk]: Downloading https://files.pythonhosted.org/packages/70/16/0c279744409c380305e586401ead33d0728ca9c640f2593b5d92bc1f2332/dbtdocgen_rutryk-0.0.6.tar.gz
+[2023-05-20 18:27:23] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/3c/c2/bb5d47e66bf34759ec4eb7dacfce9d1e45a948ed602058448a884ed173e0/kfish-99.0.202305201626-py3-none-any.whl
+[2023-05-20 18:27:23] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/ac/5d/868146c5ac4e6cfe67f0dac899aebfcfa8f1ef9f045cf4ff1ae9d5f09fca/kcli-99.0.202305201624-py3-none-any.whl
+[2023-05-20 18:27:23] INFO root fetch - processPackages [ScriptCollection]: executing diffoscope
+[2023-05-20 18:27:23] INFO root fetch - processPackages [ScriptCollection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ScriptCollection-3.3.9-py3-none-any.whl.zip tmp/ScriptCollection-3.3.90-py3-none-any.whl.zip --markdown 20230520/S/ScriptCollection/3.3.9-3.3.90/diff.md --exclude *.pyd
+[2023-05-20 18:27:23] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-20 18:27:23] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305200903-py3-none-any.whl.zip tmp/kcli-99.0.202305201624-py3-none-any.whl.zip --markdown 20230520/k/kcli/99.0.202305200903-99.0.202305201624/diff.md --exclude *.pyd
+[2023-05-20 18:27:23] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-05-20 18:27:23] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202305200905-py3-none-any.whl.zip tmp/kfish-99.0.202305201626-py3-none-any.whl.zip --markdown 20230520/k/kfish/99.0.202305200905-99.0.202305201626/diff.md --exclude *.pyd
+[2023-05-20 18:27:23] INFO root fetch - processPackages [dbtdocgen-rutryk]: executing diffoscope
+[2023-05-20 18:27:23] INFO root fetch - processPackages [requests-html2]: Downloading https://files.pythonhosted.org/packages/49/7c/46a4897cf83f2f72416191323e69ac6a5d68f15879257a5fa93ba08434bc/requests_html2-1.0.2.tar.gz
+[2023-05-20 18:27:23] INFO root fetch - processPackages [dbtdocgen-rutryk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbtdocgen_rutryk-0.0.5.tar.gz tmp/dbtdocgen_rutryk-0.0.6.tar.gz --markdown 20230520/d/dbtdocgen-rutryk/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-20 18:27:23] INFO root fetch - processPackages [kivy-widgets]: Downloading https://files.pythonhosted.org/packages/38/38/53a21b4b9d5cd65e2352d0cc2474d9d9338321bee81b2f0d37645f0519de/kivy_widgets-0.1.9.tar.gz
+[2023-05-20 18:27:23] INFO root fetch - processPackages [kivy-widgets]: executing diffoscope
+[2023-05-20 18:27:23] INFO root fetch - processPackages [kivy-widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kivy_widgets-0.1.8.tar.gz tmp/kivy_widgets-0.1.9.tar.gz --markdown 20230520/k/kivy-widgets/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 18:27:23] INFO root fetch - processPackages [requests-html2]: executing diffoscope
+[2023-05-20 18:27:23] INFO root fetch - processPackages [requests-html2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/requests_html2-1.0.1.tar.gz tmp/requests_html2-1.0.2.tar.gz --markdown 20230520/r/requests-html2/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-20 18:27:24] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-05-20 18:27:24] INFO root fetch - main [MainThread]: End processing [dbtdocgen-rutryk]: success
+[2023-05-20 18:27:24] INFO root fetch - main [MainThread]: End processing [requests-html2]: success
+[2023-05-20 18:27:24] INFO root fetch - main [MainThread]: End processing [kivy-widgets]: success
+[2023-05-20 18:27:25] INFO root fetch - main [MainThread]: End processing [ScriptCollection]: success
+[2023-05-20 18:27:25] INFO root fetch - main [MainThread]: End processing [langchain]: success
+[2023-05-20 18:27:30] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-20 18:27:30] INFO root fetch - main [MainThread]: Store serial: [18183264]
