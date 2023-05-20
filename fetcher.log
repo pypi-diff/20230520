@@ -13446,3 +13446,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 23:16:36] INFO root fetch - main [MainThread]: End processing [pipe21]: success
 [2023-05-20 23:16:36] INFO root fetch - main [MainThread]: End processing [dorado]: success
 [2023-05-20 23:16:36] INFO root fetch - main [MainThread]: Store serial: [18184327]
+[2023-05-20 23:21:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184327]
+[2023-05-20 23:21:45] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 23:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pipe21
+[2023-05-20 23:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bemb
+[2023-05-20 23:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gaphas
+[2023-05-20 23:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: certora-cli-alpha-master
+[2023-05-20 23:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ssid
+[2023-05-20 23:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pysparse-array
+[2023-05-20 23:21:45] INFO root fetch - processPackages [pipe21]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-20 23:21:45] INFO root fetch - processPackages [gaphas]: New version: [3.9.2] Old Version: [3.9.1]
+[2023-05-20 23:21:45] INFO root fetch - processPackages [pysparse-array]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-20 23:21:45] INFO root fetch - processPackages [bemb]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-20 23:21:45] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230520.9.20.792154] Old Version: [20230520.8.16.965969]
+[2023-05-20 23:21:45] INFO root fetch - processPackages [pipe21]: executing diffoscope
+[2023-05-20 23:21:45] INFO root fetch - processPackages [pipe21]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipe21-1.8.0.tar.gz tmp/pipe21-1.9.0.tar.gz --markdown 20230520/p/pipe21/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-20 23:21:46] INFO root fetch - processPackages [ssid]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-20 23:21:46] INFO root fetch - processPackages [pysparse-array]: executing diffoscope
+[2023-05-20 23:21:46] INFO root fetch - processPackages [pysparse-array]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysparse-array-1.0.0.tar.gz tmp/pysparse-array-1.0.1.tar.gz --markdown 20230520/p/pysparse-array/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-20 23:21:46] INFO root fetch - processPackages [bemb]: Downloading https://files.pythonhosted.org/packages/0c/58/bd29515727ad64fee5039271ff07b481f3fb6a53e6f4c7df0b8a1403d5fd/bemb-0.1.5.tar.gz
+[2023-05-20 23:21:46] INFO root fetch - processPackages [gaphas]: Downloading https://files.pythonhosted.org/packages/fd/11/0574a6be87dfe4b0cae6b6f55559c1f51b49707882f1cc81ed9c4ecc762b/gaphas-3.9.1.tar.gz
+[2023-05-20 23:21:46] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/5a/7b/28c4e2dbb4636d6d074086dc294b4bf6cb806bd92571dd8330da241403d7/certora-cli-alpha-master-20230520.8.16.965969.tar.gz
+[2023-05-20 23:21:46] INFO root fetch - processPackages [ssid]: Downloading https://files.pythonhosted.org/packages/52/3f/0876e44c539917b0d692902ad57afb3b7e5fa77f03fe6561f199c398241b/ssid-0.0.2.tar.gz
+[2023-05-20 23:21:46] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 38978979>=10485760
+[2023-05-20 23:21:46] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-20 23:21:46] INFO root fetch - processPackages [bemb]: Downloading https://files.pythonhosted.org/packages/b3/77/482339f3a3100169d3d84c2e7c85039306c4c11a673292c7520c87dafcb0/bemb-0.1.6.tar.gz
+[2023-05-20 23:21:46] INFO root fetch - processPackages [ssid]: Downloading https://files.pythonhosted.org/packages/0d/e0/23c2379af68ed4d2bd8121a3f16839b21cecf87a7ab85043fc98517c6f8c/ssid-0.0.3.tar.gz
+[2023-05-20 23:21:46] INFO root fetch - processPackages [gaphas]: Downloading https://files.pythonhosted.org/packages/80/0f/dcc31633a6a03d83c3b22c03f01e1ad0a8bf2ec50ed567202709ebe43cee/gaphas-3.9.2.tar.gz
+[2023-05-20 23:21:46] INFO root fetch - processPackages [bemb]: executing diffoscope
+[2023-05-20 23:21:46] INFO root fetch - processPackages [bemb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bemb-0.1.5.tar.gz tmp/bemb-0.1.6.tar.gz --markdown 20230520/b/bemb/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-20 23:21:46] INFO root fetch - processPackages [ssid]: executing diffoscope
+[2023-05-20 23:21:46] INFO root fetch - processPackages [ssid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssid-0.0.2.tar.gz tmp/ssid-0.0.3.tar.gz --markdown 20230520/s/ssid/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-20 23:21:46] INFO root fetch - processPackages [gaphas]: executing diffoscope
+[2023-05-20 23:21:46] INFO root fetch - processPackages [gaphas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gaphas-3.9.1.tar.gz tmp/gaphas-3.9.2.tar.gz --markdown 20230520/g/gaphas/3.9.1-3.9.2/diff.md --exclude *.pyd
+[2023-05-20 23:21:47] INFO root fetch - main [MainThread]: End processing [pipe21]: success
+[2023-05-20 23:21:47] INFO root fetch - main [MainThread]: End processing [pysparse-array]: success
+[2023-05-20 23:21:47] INFO root fetch - main [MainThread]: End processing [gaphas]: success
+[2023-05-20 23:21:47] INFO root fetch - main [MainThread]: End processing [ssid]: success
+[2023-05-20 23:21:48] INFO root fetch - main [MainThread]: End processing [bemb]: success
+[2023-05-20 23:21:48] INFO root fetch - main [MainThread]: Store serial: [18184344]
