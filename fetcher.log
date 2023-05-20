@@ -10461,3 +10461,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 16:31:36] INFO root fetch - main [MainThread]: End processing [cobib]: success
 [2023-05-20 16:31:37] INFO root fetch - main [MainThread]: End processing [panoptic]: success
 [2023-05-20 16:31:37] INFO root fetch - main [MainThread]: Store serial: [18182689]
+[2023-05-20 16:36:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182689]
+[2023-05-20 16:36:47] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 16:36:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyxllib
+[2023-05-20 16:36:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: transaction-accounts
+[2023-05-20 16:36:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bcsfe-discord
+[2023-05-20 16:36:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyDistances
+[2023-05-20 16:36:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pythonargslol
+[2023-05-20 16:36:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: keksik-api
+[2023-05-20 16:36:47] INFO root fetch - processPackages [transaction-accounts]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-05-20 16:36:47] INFO root fetch - processPackages [pyxllib]: New version: [0.3.9] Old Version: [0.3.8.1]
+[2023-05-20 16:36:47] WARNING root fetch - processPackages [pythonargslol]: Skipping, unable to determine old version
+[2023-05-20 16:36:47] INFO root fetch - processPackages [PyDistances]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 16:36:47] INFO root fetch - processPackages [bcsfe-discord]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-05-20 16:36:47] INFO root fetch - main [MainThread]: End processing [pythonargslol] error
+[2023-05-20 16:36:47] WARNING root fetch - processPackages [keksik-api]: Skipping, unable to determine old version
+[2023-05-20 16:36:47] INFO root fetch - main [MainThread]: End processing [keksik-api] error
+[2023-05-20 16:36:47] INFO root fetch - processPackages [transaction-accounts]: Downloading https://files.pythonhosted.org/packages/6a/ae/681e3170895d7815ea16db34156ad8d1489a2d72468e4737eda1108c0104/transaction-accounts-0.1.3.tar.gz
+[2023-05-20 16:36:47] INFO root fetch - processPackages [pyxllib]: Downloading https://files.pythonhosted.org/packages/92/b3/63c0f112ecbc647b12359588e1a5e43868ba4542e1fdb6d0f037c3b00b1f/pyxllib-0.3.8.1.tar.gz
+[2023-05-20 16:36:47] INFO root fetch - processPackages [bcsfe-discord]: Downloading https://files.pythonhosted.org/packages/f8/96/06f4955f5ebb27d0ed680efed29e921b6e1f4ae17e0d472c868864782b93/bcsfe-discord-2.7.8.tar.gz
+[2023-05-20 16:36:47] INFO root fetch - processPackages [PyDistances]: Downloading https://files.pythonhosted.org/packages/22/f4/ca04b65abf85cbdbe00c6c8a14db69dc1579cd2f50a1fd890a2e0d0764d1/PyDistances-0.0.9.tar.gz
+[2023-05-20 16:36:47] INFO root fetch - processPackages [PyDistances]: executing diffoscope
+[2023-05-20 16:36:47] INFO root fetch - processPackages [PyDistances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyDistances-0.0.8.tar.gz tmp/PyDistances-0.0.9.tar.gz --markdown 20230520/P/PyDistances/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 16:36:47] INFO root fetch - processPackages [transaction-accounts]: Downloading https://files.pythonhosted.org/packages/c0/18/626dd3416785f33a689f9493ba18ba7acec29678817e4d204d0792cc0ca3/transaction-accounts-0.2.0.tar.gz
+[2023-05-20 16:36:48] INFO root fetch - processPackages [pyxllib]: Downloading https://files.pythonhosted.org/packages/13/39/f5a231f530fcc02e172ed8ed86feec98a3adf3989fabedaeb988e624cefa/pyxllib-0.3.9.tar.gz
+[2023-05-20 16:36:48] INFO root fetch - processPackages [transaction-accounts]: executing diffoscope
+[2023-05-20 16:36:48] INFO root fetch - processPackages [transaction-accounts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transaction-accounts-0.1.3.tar.gz tmp/transaction-accounts-0.2.0.tar.gz --markdown 20230520/t/transaction-accounts/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-05-20 16:36:48] INFO root fetch - processPackages [bcsfe-discord]: Downloading https://files.pythonhosted.org/packages/0a/a8/407cf9aa5ac882cd61a9b30eeaaa35a3a56f727904ad9cdaeb2dc2587e46/bcsfe-discord-2.7.9.tar.gz
+[2023-05-20 16:36:48] INFO root fetch - processPackages [bcsfe-discord]: executing diffoscope
+[2023-05-20 16:36:48] INFO root fetch - processPackages [bcsfe-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bcsfe-discord-2.7.8.tar.gz tmp/bcsfe-discord-2.7.9.tar.gz --markdown 20230520/b/bcsfe-discord/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-05-20 16:36:48] INFO root fetch - processPackages [pyxllib]: executing diffoscope
+[2023-05-20 16:36:48] INFO root fetch - processPackages [pyxllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxllib-0.3.8.1.tar.gz tmp/pyxllib-0.3.9.tar.gz --markdown 20230520/p/pyxllib/0.3.8.1-0.3.9/diff.md --exclude *.pyd
+[2023-05-20 16:36:49] INFO root fetch - main [MainThread]: End processing [PyDistances]: success
+[2023-05-20 16:36:49] INFO root fetch - main [MainThread]: End processing [transaction-accounts]: success
+[2023-05-20 16:36:49] INFO root fetch - main [MainThread]: End processing [bcsfe-discord]: success
+[2023-05-20 16:36:51] INFO root fetch - main [MainThread]: End processing [pyxllib]: success
+[2023-05-20 16:36:51] INFO root fetch - main [MainThread]: Store serial: [18182711]
