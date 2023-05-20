@@ -9928,3 +9928,26 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 15:32:44] INFO root fetch - main [MainThread]: End processing [lusid-sdk]: success
 [2023-05-20 15:32:56] INFO root fetch - main [MainThread]: End processing [lusid-sdk-preview]: success
 [2023-05-20 15:32:56] INFO root fetch - main [MainThread]: Store serial: [18182257]
+[2023-05-20 15:38:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182257]
+[2023-05-20 15:38:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 15:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mkdocs-flavorwheel-plugin
+[2023-05-20 15:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: reait
+[2023-05-20 15:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bilibili-api-python
+[2023-05-20 15:38:06] INFO root fetch - processPackages [mkdocs-flavorwheel-plugin]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-20 15:38:06] INFO root fetch - processPackages [reait]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-05-20 15:38:06] INFO root fetch - processPackages [reait]: Downloading https://files.pythonhosted.org/packages/7f/87/665f6bac14c5c6df45250307ae5ea8dfea541be395c67f96a141c1a7a439/reait-0.0.7.tar.gz
+[2023-05-20 15:38:06] INFO root fetch - processPackages [mkdocs-flavorwheel-plugin]: Downloading https://files.pythonhosted.org/packages/81/6f/bd0dabf507138eb413ba3550efd976a25cbf6de54b50d007526bd6af2673/mkdocs-flavorwheel-plugin-0.0.6.tar.gz
+[2023-05-20 15:38:06] INFO root fetch - processPackages [bilibili-api-python]: New version: [9.3.1] Old Version: [9.3.0]
+[2023-05-20 15:38:06] INFO root fetch - processPackages [mkdocs-flavorwheel-plugin]: executing diffoscope
+[2023-05-20 15:38:06] INFO root fetch - processPackages [mkdocs-flavorwheel-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-flavorwheel-plugin-0.0.5.tar.gz tmp/mkdocs-flavorwheel-plugin-0.0.6.tar.gz --markdown 20230520/m/mkdocs-flavorwheel-plugin/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-20 15:38:06] INFO root fetch - processPackages [reait]: Downloading https://files.pythonhosted.org/packages/0a/36/ab1b06079efd25b6853fd18daa75f12e1f5bf061d8643bf2618754056dfc/reait-0.0.9.tar.gz
+[2023-05-20 15:38:06] INFO root fetch - processPackages [bilibili-api-python]: Downloading https://files.pythonhosted.org/packages/9b/6f/75134e680907dfeb54d18a424acea23668915105b48d0818cd2ea3a871c4/bilibili-api-python-9.3.0.tar.gz
+[2023-05-20 15:38:07] INFO root fetch - processPackages [bilibili-api-python]: Downloading https://files.pythonhosted.org/packages/f7/75/9cefa953040943e97416ee886cdcf25f91aaf4cd46c2beb8648b84e60415/bilibili-api-python-9.3.1.tar.gz
+[2023-05-20 15:38:07] INFO root fetch - processPackages [bilibili-api-python]: executing diffoscope
+[2023-05-20 15:38:07] INFO root fetch - processPackages [bilibili-api-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bilibili-api-python-9.3.0.tar.gz tmp/bilibili-api-python-9.3.1.tar.gz --markdown 20230520/b/bilibili-api-python/9.3.0-9.3.1/diff.md --exclude *.pyd
+[2023-05-20 15:38:07] INFO root fetch - processPackages [reait]: executing diffoscope
+[2023-05-20 15:38:07] INFO root fetch - processPackages [reait]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reait-0.0.7.tar.gz tmp/reait-0.0.9.tar.gz --markdown 20230520/r/reait/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 15:38:07] INFO root fetch - main [MainThread]: End processing [mkdocs-flavorwheel-plugin]: success
+[2023-05-20 15:38:08] INFO root fetch - main [MainThread]: End processing [reait]: success
+[2023-05-20 15:38:08] INFO root fetch - main [MainThread]: End processing [bilibili-api-python]: success
+[2023-05-20 15:38:08] INFO root fetch - main [MainThread]: Store serial: [18182270]
