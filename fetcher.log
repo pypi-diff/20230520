@@ -5683,3 +5683,46 @@
 [2023-05-20 06:09:32] WARNING root fetch - processPackages [khuvirgagch]: Skipping, unable to determine old version
 [2023-05-20 06:09:32] INFO root fetch - main [MainThread]: End processing [khuvirgagch] error
 [2023-05-20 06:09:32] INFO root fetch - main [MainThread]: Store serial: [18179603]
+[2023-05-20 06:14:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179603]
+[2023-05-20 06:14:40] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-trackmodels-ritual
+[2023-05-20 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-trackmodels-xls-ritual
+[2023-05-20 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-dynsettings-ritual
+[2023-05-20 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-xmail-ritual
+[2023-05-20 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: references-parser
+[2023-05-20 06:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nonebot-plugin-bottle
+[2023-05-20 06:14:41] INFO root fetch - processPackages [django-trackmodels-xls-ritual]: New version: [1.0.0] Old Version: [0.0.3]
+[2023-05-20 06:14:41] INFO root fetch - processPackages [django-dynsettings-ritual]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-20 06:14:41] INFO root fetch - processPackages [nonebot-plugin-bottle]: New version: [1.0.1.1] Old Version: [1.0.1.0]
+[2023-05-20 06:14:41] INFO root fetch - processPackages [references-parser]: New version: [1.2.0] Old Version: [1.1.2]
+[2023-05-20 06:14:41] INFO root fetch - processPackages [django-trackmodels-ritual]: New version: [1.1.1] Old Version: [1.0.0]
+[2023-05-20 06:14:41] INFO root fetch - processPackages [django-trackmodels-xls-ritual]: Downloading https://files.pythonhosted.org/packages/5c/3c/b48ea92c060e20eb3ad5c596c1659da250dd869c1c1a9f8eff4137ad66c7/django-trackmodels-xls-ritual-0.0.3.tar.gz
+[2023-05-20 06:14:41] INFO root fetch - processPackages [django-dynsettings-ritual]: Downloading https://files.pythonhosted.org/packages/0b/20/5a4df13662017fbeb4e61871a4ea992612c355747bec0692dbabfc82d7b6/django-dynsettings-ritual-1.0.0.tar.gz
+[2023-05-20 06:14:41] INFO root fetch - processPackages [nonebot-plugin-bottle]: Downloading https://files.pythonhosted.org/packages/a0/e9/5272a60466117d177505e39508e48fc675e60a7e0784c1934e34acbf2f90/nonebot_plugin_bottle-1.0.1.1.tar.gz
+[2023-05-20 06:14:41] INFO root fetch - processPackages [django-xmail-ritual]: New version: [1.1.1] Old Version: [1.0.1]
+[2023-05-20 06:14:41] INFO root fetch - processPackages [references-parser]: Downloading https://files.pythonhosted.org/packages/6c/0e/e0fc529f01a29198ccee5034e202a7e177121e898ec5aa6a16cd5288a143/references_parser-1.2.0.tar.gz
+[2023-05-20 06:14:41] INFO root fetch - processPackages [django-trackmodels-ritual]: Downloading https://files.pythonhosted.org/packages/e2/da/af3519bf7c4a2d6b8f46426b02c9ef743dc1f0d642b7ef9131294578bcda/django-trackmodels-ritual-1.0.0.tar.gz
+[2023-05-20 06:14:41] INFO root fetch - processPackages [nonebot-plugin-bottle]: executing diffoscope
+[2023-05-20 06:14:41] INFO root fetch - processPackages [nonebot-plugin-bottle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_bottle-1.0.1.0.tar.gz tmp/nonebot_plugin_bottle-1.0.1.1.tar.gz --markdown 20230520/n/nonebot-plugin-bottle/1.0.1.0-1.0.1.1/diff.md --exclude *.pyd
+[2023-05-20 06:14:41] INFO root fetch - processPackages [references-parser]: executing diffoscope
+[2023-05-20 06:14:41] INFO root fetch - processPackages [references-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/references_parser-1.1.2.tar.gz tmp/references_parser-1.2.0.tar.gz --markdown 20230520/r/references-parser/1.1.2-1.2.0/diff.md --exclude *.pyd
+[2023-05-20 06:14:41] INFO root fetch - processPackages [django-dynsettings-ritual]: Downloading https://files.pythonhosted.org/packages/c7/be/6baca7ea7b97aecfa6e996d2ecb071ece18ad608ac881113d98a132a6d4b/django-dynsettings-ritual-1.0.1.tar.gz
+[2023-05-20 06:14:41] INFO root fetch - processPackages [django-xmail-ritual]: Downloading https://files.pythonhosted.org/packages/a3/2c/ff6b7b24a1052a2a132f51739c033b60b40bf0a6ea81e350d6699e5b3e00/django-xmail-ritual-1.0.1.tar.gz
+[2023-05-20 06:14:41] INFO root fetch - processPackages [django-trackmodels-ritual]: Downloading https://files.pythonhosted.org/packages/cd/c4/17ef53c1e028e7d10f14a1f34d13e2bd44ff443851f1ddb4e6354cb9f680/django-trackmodels-ritual-1.1.1.tar.gz
+[2023-05-20 06:14:41] INFO root fetch - processPackages [django-trackmodels-xls-ritual]: Downloading https://files.pythonhosted.org/packages/05/83/d62ad789e56119401906d87bd6c02e28c334cf50615f088162e27ba440c0/django-trackmodels-xls-ritual-1.0.0.tar.gz
+[2023-05-20 06:14:41] INFO root fetch - processPackages [django-dynsettings-ritual]: executing diffoscope
+[2023-05-20 06:14:41] INFO root fetch - processPackages [django-dynsettings-ritual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-dynsettings-ritual-1.0.0.tar.gz tmp/django-dynsettings-ritual-1.0.1.tar.gz --markdown 20230520/d/django-dynsettings-ritual/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-20 06:14:41] INFO root fetch - processPackages [django-trackmodels-ritual]: executing diffoscope
+[2023-05-20 06:14:41] INFO root fetch - processPackages [django-trackmodels-ritual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-trackmodels-ritual-1.0.0.tar.gz tmp/django-trackmodels-ritual-1.1.1.tar.gz --markdown 20230520/d/django-trackmodels-ritual/1.0.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-20 06:14:41] INFO root fetch - processPackages [django-trackmodels-xls-ritual]: executing diffoscope
+[2023-05-20 06:14:41] INFO root fetch - processPackages [django-trackmodels-xls-ritual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-trackmodels-xls-ritual-0.0.3.tar.gz tmp/django-trackmodels-xls-ritual-1.0.0.tar.gz --markdown 20230520/d/django-trackmodels-xls-ritual/0.0.3-1.0.0/diff.md --exclude *.pyd
+[2023-05-20 06:14:41] INFO root fetch - processPackages [django-xmail-ritual]: Downloading https://files.pythonhosted.org/packages/7e/2f/5730eef860fd60196468f1063b41866c1b6acc840d990e7daf0cca6c36f4/django-xmail-ritual-1.1.1.tar.gz
+[2023-05-20 06:14:41] INFO root fetch - processPackages [django-xmail-ritual]: executing diffoscope
+[2023-05-20 06:14:41] INFO root fetch - processPackages [django-xmail-ritual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-xmail-ritual-1.0.1.tar.gz tmp/django-xmail-ritual-1.1.1.tar.gz --markdown 20230520/d/django-xmail-ritual/1.0.1-1.1.1/diff.md --exclude *.pyd
+[2023-05-20 06:14:42] INFO root fetch - main [MainThread]: End processing [references-parser]: success
+[2023-05-20 06:14:42] INFO root fetch - main [MainThread]: End processing [django-dynsettings-ritual]: success
+[2023-05-20 06:14:42] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bottle]: success
+[2023-05-20 06:14:42] INFO root fetch - main [MainThread]: End processing [django-trackmodels-xls-ritual]: success
+[2023-05-20 06:14:43] INFO root fetch - main [MainThread]: End processing [django-xmail-ritual]: success
+[2023-05-20 06:14:43] INFO root fetch - main [MainThread]: End processing [django-trackmodels-ritual]: success
+[2023-05-20 06:14:43] INFO root fetch - main [MainThread]: Store serial: [18179621]
