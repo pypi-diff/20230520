@@ -13590,3 +13590,17 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 23:42:38] INFO root fetch - main [MainThread]: End processing [pyrovskite]: success
 [2023-05-20 23:42:38] INFO root fetch - main [MainThread]: End processing [hotbox]: success
 [2023-05-20 23:42:38] INFO root fetch - main [MainThread]: Store serial: [18184392]
+[2023-05-20 23:47:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184392]
+[2023-05-20 23:47:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-20 23:47:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TMDBTraktSyncer
+[2023-05-20 23:47:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: comicbox
+[2023-05-20 23:47:46] INFO root fetch - processPackages [TMDBTraktSyncer]: New version: [1.1.6] Old Version: [1.1.4]
+[2023-05-20 23:47:46] INFO root fetch - processPackages [comicbox]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-20 23:47:47] INFO root fetch - processPackages [comicbox]: Downloading https://files.pythonhosted.org/packages/bd/ed/63aa9756f8f44ae37d80b98f2912ba1a84803871b1c03cbf80b41e0603bb/comicbox-0.9.0.tar.gz
+[2023-05-20 23:47:47] INFO root fetch - processPackages [TMDBTraktSyncer]: Downloading https://files.pythonhosted.org/packages/88/48/58017dea3ce2a1c740d2ca19431842d5066b0d4e01d9ccdf549849ca9d4e/TMDBTraktSyncer-1.1.6.tar.gz
+[2023-05-20 23:47:47] INFO root fetch - processPackages [TMDBTraktSyncer]: executing diffoscope
+[2023-05-20 23:47:47] INFO root fetch - processPackages [TMDBTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TMDBTraktSyncer-1.1.4.tar.gz tmp/TMDBTraktSyncer-1.1.6.tar.gz --markdown 20230520/T/TMDBTraktSyncer/1.1.4-1.1.6/diff.md --exclude *.pyd
+[2023-05-20 23:47:47] WARNING root fetch - processPackages [comicbox]: Skipping package: exceeds size limit 78948885>=10485760
+[2023-05-20 23:47:47] INFO root fetch - main [MainThread]: End processing [comicbox] error
+[2023-05-20 23:47:48] INFO root fetch - main [MainThread]: End processing [TMDBTraktSyncer]: success
+[2023-05-20 23:47:48] INFO root fetch - main [MainThread]: Store serial: [18184399]
