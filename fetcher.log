@@ -8357,3 +8357,12 @@
 [2023-05-20 12:58:09] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2023-05-20 12:58:32] INFO root fetch - main [MainThread]: End processing [gfs-dynamical-core]: success
 [2023-05-20 12:58:32] INFO root fetch - main [MainThread]: Store serial: [18181373]
+[2023-05-20 13:03:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18181373]
+[2023-05-20 13:03:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-20 13:03:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ak-pynn
+[2023-05-20 13:03:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pickled-carrots
+[2023-05-20 13:03:43] WARNING root fetch - processPackages [pickled-carrots]: Skipping, unable to determine old version
+[2023-05-20 13:03:43] INFO root fetch - main [MainThread]: End processing [pickled-carrots] error
+[2023-05-20 13:03:43] WARNING root fetch - processPackages [ak-pynn]: Skipping, unable to determine old version
+[2023-05-20 13:03:43] INFO root fetch - main [MainThread]: End processing [ak-pynn] error
+[2023-05-20 13:03:43] INFO root fetch - main [MainThread]: Store serial: [18181378]
