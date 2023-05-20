@@ -12634,3 +12634,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 21:08:23] INFO root fetch - main [MainThread]: End processing [typing-aliases]: success
 [2023-05-20 21:09:05] INFO root fetch - main [MainThread]: End processing [devcellpy]: success
 [2023-05-20 21:09:05] INFO root fetch - main [MainThread]: Store serial: [18183918]
+[2023-05-20 21:14:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183918]
+[2023-05-20 21:14:14] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-20 21:14:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: threadsnake
+[2023-05-20 21:14:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mianutils
+[2023-05-20 21:14:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-beta
+[2023-05-20 21:14:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: discovery-transition-ds
+[2023-05-20 21:14:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mianutils
+[2023-05-20 21:14:15] INFO root fetch - processPackages [mianutils]: New version: [0.94] Old Version: [0.4]
+[2023-05-20 21:14:15] INFO root fetch - processPackages [threadsnake]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-20 21:14:15] INFO root fetch - processPackages [certora-cli-beta]: New version: [4.0.4] Old Version: [4.0.3]
+[2023-05-20 21:14:15] INFO root fetch - processPackages [mianutils]: New version: [0.94] Old Version: [0.4]
+[2023-05-20 21:14:15] INFO root fetch - processPackages [discovery-transition-ds]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-05-20 21:14:15] INFO root fetch - processPackages [mianutils]: Downloading https://files.pythonhosted.org/packages/6d/33/5bb3284002f40ed3f8e47c28309d2d8d9d96a402c5cadc79f39cccf3a41d/mianutils-0.4.tar.gz
+[2023-05-20 21:14:15] INFO root fetch - processPackages [mianutils]: Downloading https://files.pythonhosted.org/packages/6d/33/5bb3284002f40ed3f8e47c28309d2d8d9d96a402c5cadc79f39cccf3a41d/mianutils-0.4.tar.gz
+[2023-05-20 21:14:15] INFO root fetch - processPackages [threadsnake]: Downloading https://files.pythonhosted.org/packages/f3/d0/1a098531d1dce5fbf702e5eeac8f5e1761ae94a43a6d6d0d96144b712358/threadsnake-1.0.8.tar.gz
+[2023-05-20 21:14:15] INFO root fetch - processPackages [certora-cli-beta]: Downloading https://files.pythonhosted.org/packages/8b/b6/463b3e820c1933f12effcbb58397eae122feb6e0770d87b562f9a8df23ff/certora-cli-beta-4.0.3.tar.gz
+[2023-05-20 21:14:15] INFO root fetch - processPackages [discovery-transition-ds]: Downloading https://files.pythonhosted.org/packages/cc/ca/dd90c3d50a2ad721c7d5c68f5fd4ee0e6e77dc44837a32cecf9e80f276da/discovery-transition-ds-4.9.8.tar.gz
+[2023-05-20 21:14:15] WARNING root fetch - processPackages [certora-cli-beta]: Skipping package: exceeds size limit 39439837>=10485760
+[2023-05-20 21:14:15] INFO root fetch - main [MainThread]: End processing [certora-cli-beta] error
+[2023-05-20 21:14:15] INFO root fetch - processPackages [mianutils]: Downloading https://files.pythonhosted.org/packages/91/01/aeb3ac8297a6267d149f9b994f1bf9787044062cf65a60ad60e040379b3c/mianutils-0.94.tar.gz
+[2023-05-20 21:14:15] INFO root fetch - processPackages [mianutils]: Downloading https://files.pythonhosted.org/packages/91/01/aeb3ac8297a6267d149f9b994f1bf9787044062cf65a60ad60e040379b3c/mianutils-0.94.tar.gz
+[2023-05-20 21:14:15] INFO root fetch - processPackages [threadsnake]: Downloading https://files.pythonhosted.org/packages/f4/5d/62ea5d3fe0b425052269ee146a081aea076505110bb62c05c9ef9db06cdd/threadsnake-1.0.9.tar.gz
+[2023-05-20 21:14:15] INFO root fetch - processPackages [mianutils]: executing diffoscope
+[2023-05-20 21:14:15] INFO root fetch - processPackages [mianutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mianutils-0.4.tar.gz tmp/mianutils-0.94.tar.gz --markdown 20230520/m/mianutils/0.4-0.94/diff.md --exclude *.pyd
+[2023-05-20 21:14:15] INFO root fetch - processPackages [mianutils]: executing diffoscope
+[2023-05-20 21:14:15] INFO root fetch - processPackages [mianutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mianutils-0.4.tar.gz tmp/mianutils-0.94.tar.gz --markdown 20230520/m/mianutils/0.4-0.94/diff.md --exclude *.pyd
+[2023-05-20 21:14:15] INFO root fetch - processPackages [threadsnake]: executing diffoscope
+[2023-05-20 21:14:15] INFO root fetch - processPackages [threadsnake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/threadsnake-1.0.8.tar.gz tmp/threadsnake-1.0.9.tar.gz --markdown 20230520/t/threadsnake/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-20 21:14:15] ERROR root fetch - processPackages [mianutils]: Diffoscope failed: Error: error creating container storage: the container name "epic_zhukovsky" is already in use by "77fcf6ab0faa5149bd8b3ce1ba0a4d0f7709819724deeb3033707a8a13e6b398". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-20 21:14:15] INFO root fetch - main [MainThread]: End processing [mianutils] error
+[2023-05-20 21:14:16] INFO root fetch - processPackages [discovery-transition-ds]: Downloading https://files.pythonhosted.org/packages/ec/52/fe97bc1465aa4a0bde7a751272ca25b751fd275a83e912c56ca6a544332e/discovery-transition-ds-4.9.9.tar.gz
+[2023-05-20 21:14:16] INFO root fetch - main [MainThread]: End processing [mianutils]: success
+[2023-05-20 21:14:17] INFO root fetch - main [MainThread]: End processing [threadsnake]: success
+[2023-05-20 21:14:18] INFO root fetch - processPackages [discovery-transition-ds]: executing diffoscope
+[2023-05-20 21:14:18] INFO root fetch - processPackages [discovery-transition-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discovery-transition-ds-4.9.8.tar.gz tmp/discovery-transition-ds-4.9.9.tar.gz --markdown 20230520/d/discovery-transition-ds/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-05-20 21:14:22] INFO root fetch - main [MainThread]: End processing [discovery-transition-ds]: success
+[2023-05-20 21:14:22] INFO root fetch - main [MainThread]: Store serial: [18183932]
