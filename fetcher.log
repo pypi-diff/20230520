@@ -7192,3 +7192,53 @@
 [2023-05-20 10:30:22] INFO root fetch - main [MainThread]: End processing [ezdxf]: success
 [2023-05-20 10:30:34] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-05-20 10:30:34] INFO root fetch - main [MainThread]: Store serial: [18180594]
+[2023-05-20 10:35:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180594]
+[2023-05-20 10:35:43] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-20 10:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ma-fi
+[2023-05-20 10:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: graph-attention-student
+[2023-05-20 10:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stable-baselines3
+[2023-05-20 10:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-payment-redsys
+[2023-05-20 10:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sarf
+[2023-05-20 10:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: certora-cli-alpha-jtoman-cert-2226
+[2023-05-20 10:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: arxiv-dl
+[2023-05-20 10:35:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: openai-pygenerator
+[2023-05-20 10:35:43] INFO root fetch - processPackages [ma-fi]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-05-20 10:35:43] INFO root fetch - processPackages [sarf]: New version: [1.0.0rc1] Old Version: [0.3.0]
+[2023-05-20 10:35:43] WARNING root fetch - processPackages [odoo-addon-payment-redsys]: Skipping, unable to determine old version
+[2023-05-20 10:35:43] INFO root fetch - main [MainThread]: End processing [odoo-addon-payment-redsys] error
+[2023-05-20 10:35:43] INFO root fetch - processPackages [openai-pygenerator]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-20 10:35:43] INFO root fetch - processPackages [certora-cli-alpha-jtoman-cert-2226]: New version: [20230520.3.41.683791] Old Version: [20230520.2.40.617633]
+[2023-05-20 10:35:43] INFO root fetch - processPackages [graph-attention-student]: New version: [0.9.0] Old Version: [0.7.2]
+[2023-05-20 10:35:43] INFO root fetch - processPackages [ma-fi]: Downloading https://files.pythonhosted.org/packages/4d/a3/9900fd66e0d5b067f16e917951a037eec1fbde54bf50d6dd40c82f61294c/ma_fi-0.1.0-py3-none-any.whl
+[2023-05-20 10:35:43] INFO root fetch - processPackages [arxiv-dl]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-20 10:35:43] INFO root fetch - processPackages [stable-baselines3]: New version: [2.0.0a9] Old Version: [2.0.0a5]
+[2023-05-20 10:35:43] INFO root fetch - processPackages [sarf]: executing diffoscope
+[2023-05-20 10:35:43] INFO root fetch - processPackages [sarf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sarf-0.3.0.tar.gz tmp/sarf-1.0.0rc1-py3-none-any.whl.zip --markdown 20230520/s/sarf/0.3.0-1.0.0rc1/diff.md --exclude *.pyd
+[2023-05-20 10:35:43] INFO root fetch - processPackages [certora-cli-alpha-jtoman-cert-2226]: Downloading https://files.pythonhosted.org/packages/91/f0/a7a1e5d5616a1ed60995149da63a6cfac0dbdb69d3e1b97d5e83cd23853d/certora-cli-alpha-jtoman-cert-2226-20230520.2.40.617633.tar.gz
+[2023-05-20 10:35:43] INFO root fetch - processPackages [stable-baselines3]: Downloading https://files.pythonhosted.org/packages/38/7a/01a08eadaf0ce57f2f75a7f02a8d89aa7ff16b6652d3fe3b5172c52d00bf/stable_baselines3-2.0.0a5.tar.gz
+[2023-05-20 10:35:43] INFO root fetch - processPackages [graph-attention-student]: Downloading https://files.pythonhosted.org/packages/82/08/65e22c56ee2fb243d98aa8bb8717340eae962b1a44b165cfe7fb7d1f1287/graph_attention_student-0.7.2.tar.gz
+[2023-05-20 10:35:43] WARNING root fetch - processPackages [certora-cli-alpha-jtoman-cert-2226]: Skipping package: exceeds size limit 38979601>=10485760
+[2023-05-20 10:35:43] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-jtoman-cert-2226] error
+[2023-05-20 10:35:43] INFO root fetch - processPackages [openai-pygenerator]: Downloading https://files.pythonhosted.org/packages/41/f3/903c41e76bb3509e426d67e2aceadd75008f292c5bee858fb618b4e6a65d/openai-pygenerator-0.1.1.tar.gz
+[2023-05-20 10:35:43] INFO root fetch - processPackages [arxiv-dl]: Downloading https://files.pythonhosted.org/packages/d6/66/63e9b86516463c507356d1ed691574f7b71e59a1a8ae6350dc06bd9da571/arxiv-dl-1.1.2.tar.gz
+[2023-05-20 10:35:43] INFO root fetch - processPackages [openai-pygenerator]: executing diffoscope
+[2023-05-20 10:35:43] INFO root fetch - processPackages [openai-pygenerator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai_pygenerator-0.1.0.tar.gz tmp/openai-pygenerator-0.1.1.tar.gz --markdown 20230520/o/openai-pygenerator/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-20 10:35:43] INFO root fetch - processPackages [ma-fi]: Downloading https://files.pythonhosted.org/packages/c4/dd/11904ddf669309763927292ebcd62cea112d5e14fc27abf1ab3e42925c43/ma_fi-1.0.0-py3-none-any.whl
+[2023-05-20 10:35:43] INFO root fetch - processPackages [ma-fi]: executing diffoscope
+[2023-05-20 10:35:43] INFO root fetch - processPackages [ma-fi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ma_fi-0.1.0-py3-none-any.whl.zip tmp/ma_fi-1.0.0-py3-none-any.whl.zip --markdown 20230520/m/ma-fi/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-20 10:35:43] INFO root fetch - processPackages [stable-baselines3]: Downloading https://files.pythonhosted.org/packages/bc/d3/eb4c38b5296da9c189efb25a3ef9d9e43f8cf5a12d1a02c4967ab04ed52d/stable_baselines3-2.0.0a9.tar.gz
+[2023-05-20 10:35:43] INFO root fetch - processPackages [arxiv-dl]: Downloading https://files.pythonhosted.org/packages/95/15/1a3fc8abdfc1c534eee4ca27aaac2f2345aa3eef7f39e89eeffc79e88a7d/arxiv-dl-1.1.3.tar.gz
+[2023-05-20 10:35:43] INFO root fetch - processPackages [graph-attention-student]: Downloading https://files.pythonhosted.org/packages/f6/af/03d655f11e0bb93ad8111eafae9bc42e3da6529c716a97511dd8ff1fd673/graph_attention_student-0.9.0.tar.gz
+[2023-05-20 10:35:43] INFO root fetch - processPackages [stable-baselines3]: executing diffoscope
+[2023-05-20 10:35:43] INFO root fetch - processPackages [stable-baselines3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stable_baselines3-2.0.0a5.tar.gz tmp/stable_baselines3-2.0.0a9.tar.gz --markdown 20230520/s/stable-baselines3/2.0.0a5-2.0.0a9/diff.md --exclude *.pyd
+[2023-05-20 10:35:43] INFO root fetch - processPackages [arxiv-dl]: executing diffoscope
+[2023-05-20 10:35:43] INFO root fetch - processPackages [arxiv-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arxiv-dl-1.1.2.tar.gz tmp/arxiv-dl-1.1.3.tar.gz --markdown 20230520/a/arxiv-dl/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-20 10:35:43] INFO root fetch - processPackages [graph-attention-student]: executing diffoscope
+[2023-05-20 10:35:43] INFO root fetch - processPackages [graph-attention-student]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graph_attention_student-0.7.2.tar.gz tmp/graph_attention_student-0.9.0.tar.gz --markdown 20230520/g/graph-attention-student/0.7.2-0.9.0/diff.md --exclude *.pyd
+[2023-05-20 10:35:44] INFO root fetch - main [MainThread]: End processing [sarf]: success
+[2023-05-20 10:35:44] INFO root fetch - main [MainThread]: End processing [openai-pygenerator]: success
+[2023-05-20 10:35:44] INFO root fetch - main [MainThread]: End processing [ma-fi]: success
+[2023-05-20 10:35:45] INFO root fetch - main [MainThread]: End processing [arxiv-dl]: success
+[2023-05-20 10:35:45] INFO root fetch - main [MainThread]: End processing [graph-attention-student]: success
+[2023-05-20 10:35:45] INFO root fetch - main [MainThread]: End processing [stable-baselines3]: success
+[2023-05-20 10:35:45] INFO root fetch - main [MainThread]: Store serial: [18180630]
