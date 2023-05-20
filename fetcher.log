@@ -13209,3 +13209,59 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 22:34:00] INFO root fetch - main [MainThread]: End processing [crossmark-jotform-api]: success
 [2023-05-20 22:34:08] INFO root fetch - main [MainThread]: End processing [py-lav]: success
 [2023-05-20 22:34:08] INFO root fetch - main [MainThread]: Store serial: [18184183]
+[2023-05-20 22:39:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184183]
+[2023-05-20 22:39:17] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-20 22:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kcli
+[2023-05-20 22:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pylivedev
+[2023-05-20 22:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: example-haskell-wheel
+[2023-05-20 22:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: home-assistant-streamdeck-yaml
+[2023-05-20 22:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: passagerole
+[2023-05-20 22:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jrnl
+[2023-05-20 22:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kfish
+[2023-05-20 22:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: honeybee-ies
+[2023-05-20 22:39:17] INFO root fetch - processPackages [pylivedev]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-20 22:39:17] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: New version: [2023.5.0] Old Version: [2023.4.9]
+[2023-05-20 22:39:17] INFO root fetch - processPackages [kfish]: New version: [99.0.202305202036] Old Version: [99.0.202305201946]
+[2023-05-20 22:39:17] INFO root fetch - processPackages [example-haskell-wheel]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-20 22:39:17] INFO root fetch - processPackages [passagerole]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-20 22:39:17] INFO root fetch - processPackages [jrnl]: New version: [4.0b3] Old Version: [4.0b2]
+[2023-05-20 22:39:17] INFO root fetch - processPackages [kcli]: New version: [99.0.202305202033] Old Version: [99.0.202305201944]
+[2023-05-20 22:39:17] INFO root fetch - processPackages [honeybee-ies]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-20 22:39:18] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: Downloading https://files.pythonhosted.org/packages/87/06/6fb186402d6f246896e5e6548e1b9f6fd28011d4f66dccd6343fc243553b/home_assistant_streamdeck_yaml-2023.4.9.tar.gz
+[2023-05-20 22:39:18] INFO root fetch - processPackages [pylivedev]: Downloading https://files.pythonhosted.org/packages/7d/fe/fb3432f3b0c262af37932b81df93533bd51d099ed340acaedd4664b7b225/pylivedev-1.1.0.tar.gz
+[2023-05-20 22:39:18] INFO root fetch - processPackages [passagerole]: Downloading https://files.pythonhosted.org/packages/3a/ed/b1ffafdb59620bbe53161d9f314f7193bf4da1358031902abd267d0bb617/passagerole-0.0.1.tar.gz
+[2023-05-20 22:39:18] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/01/70/d1c40d1605529255110bd662ed47009da7b598e94d82cf964409f793b44e/kfish-99.0.202305202036-py3-none-any.whl
+[2023-05-20 22:39:18] INFO root fetch - processPackages [jrnl]: Downloading https://files.pythonhosted.org/packages/d0/58/d5ad1533f81ddca23c7dc2e0a4dbe08b59a51a119c5995e49825e21287bd/jrnl-4.0b2.tar.gz
+[2023-05-20 22:39:18] INFO root fetch - processPackages [example-haskell-wheel]: Downloading https://files.pythonhosted.org/packages/54/53/817ac6902d748676f1618dd3e28fc45e385cf05129c99ed994484d577f3b/example_haskell_wheel-1.0.1-cp39-cp39-win_amd64.whl
+[2023-05-20 22:39:18] INFO root fetch - processPackages [honeybee-ies]: Downloading https://files.pythonhosted.org/packages/59/e6/8c8c23cde71d50f3f39bee9d51a1bc3c634389d70109045a0cd698a67682/honeybee-ies-0.7.0.tar.gz
+[2023-05-20 22:39:18] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-05-20 22:39:18] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202305201946-py3-none-any.whl.zip tmp/kfish-99.0.202305202036-py3-none-any.whl.zip --markdown 20230520/k/kfish/99.0.202305201946-99.0.202305202036/diff.md --exclude *.pyd
+[2023-05-20 22:39:18] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/38/ba/03c16613b9815ab0f565d6521cba8064236dfc3d698e1ce176395bfa11b5/kcli-99.0.202305202033-py3-none-any.whl
+[2023-05-20 22:39:18] INFO root fetch - processPackages [pylivedev]: Downloading https://files.pythonhosted.org/packages/32/e4/6e8c3c8a0664ae66c661a3fdd64ab48cc56d14a10c7b2c829d0c706d6264/pylivedev-1.2.0.tar.gz
+[2023-05-20 22:39:18] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-20 22:39:18] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305201944-py3-none-any.whl.zip tmp/kcli-99.0.202305202033-py3-none-any.whl.zip --markdown 20230520/k/kcli/99.0.202305201944-99.0.202305202033/diff.md --exclude *.pyd
+[2023-05-20 22:39:18] INFO root fetch - processPackages [pylivedev]: executing diffoscope
+[2023-05-20 22:39:18] INFO root fetch - processPackages [pylivedev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylivedev-1.1.0.tar.gz tmp/pylivedev-1.2.0.tar.gz --markdown 20230520/p/pylivedev/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-20 22:39:18] INFO root fetch - processPackages [passagerole]: Downloading https://files.pythonhosted.org/packages/5e/ba/cf8f0f57a41b802f1564b132d5850d12a7d2aa4e207cf75bb7c47ca7924b/passagerole-0.0.2.tar.gz
+[2023-05-20 22:39:18] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: Downloading https://files.pythonhosted.org/packages/8a/5f/0494923c9640b3a84a6eaf2b4ea4f5f9f53dd56eff3d08af604d314bcd1c/home_assistant_streamdeck_yaml-2023.5.0.tar.gz
+[2023-05-20 22:39:18] INFO root fetch - processPackages [passagerole]: executing diffoscope
+[2023-05-20 22:39:18] INFO root fetch - processPackages [passagerole]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/passagerole-0.0.1.tar.gz tmp/passagerole-0.0.2.tar.gz --markdown 20230520/p/passagerole/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-20 22:39:18] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: executing diffoscope
+[2023-05-20 22:39:18] INFO root fetch - processPackages [home-assistant-streamdeck-yaml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/home_assistant_streamdeck_yaml-2023.4.9.tar.gz tmp/home_assistant_streamdeck_yaml-2023.5.0.tar.gz --markdown 20230520/h/home-assistant-streamdeck-yaml/2023.4.9-2023.5.0/diff.md --exclude *.pyd
+[2023-05-20 22:39:18] INFO root fetch - processPackages [jrnl]: Downloading https://files.pythonhosted.org/packages/d8/8c/ff75fc3a4fe0ce6139039431b615ae60413e6661772e5360b7f0f708a69d/jrnl-4.0b3.tar.gz
+[2023-05-20 22:39:18] INFO root fetch - processPackages [honeybee-ies]: Downloading https://files.pythonhosted.org/packages/f6/a5/e6958c92f17796d5e82445802b940a5e53e759d0a372ce7e89c27de803e9/honeybee-ies-0.7.1.tar.gz
+[2023-05-20 22:39:18] INFO root fetch - processPackages [jrnl]: executing diffoscope
+[2023-05-20 22:39:18] INFO root fetch - processPackages [jrnl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jrnl-4.0b2.tar.gz tmp/jrnl-4.0b3.tar.gz --markdown 20230520/j/jrnl/4.0b2-4.0b3/diff.md --exclude *.pyd
+[2023-05-20 22:39:18] INFO root fetch - processPackages [honeybee-ies]: executing diffoscope
+[2023-05-20 22:39:18] INFO root fetch - processPackages [honeybee-ies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-ies-0.7.0.tar.gz tmp/honeybee-ies-0.7.1.tar.gz --markdown 20230520/h/honeybee-ies/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-20 22:39:18] INFO root fetch - processPackages [example-haskell-wheel]: executing diffoscope
+[2023-05-20 22:39:18] INFO root fetch - processPackages [example-haskell-wheel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/example_haskell_wheel-1.0.0-cp39-cp39-win_amd64.whl.zip tmp/example_haskell_wheel-1.0.1-cp39-cp39-win_amd64.whl.zip --markdown 20230520/e/example-haskell-wheel/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-20 22:39:19] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-05-20 22:39:19] INFO root fetch - main [MainThread]: End processing [pylivedev]: success
+[2023-05-20 22:39:20] INFO root fetch - main [MainThread]: End processing [passagerole]: success
+[2023-05-20 22:39:20] INFO root fetch - main [MainThread]: End processing [home-assistant-streamdeck-yaml]: success
+[2023-05-20 22:39:20] INFO root fetch - main [MainThread]: End processing [example-haskell-wheel]: success
+[2023-05-20 22:39:20] INFO root fetch - main [MainThread]: End processing [honeybee-ies]: success
+[2023-05-20 22:39:20] INFO root fetch - main [MainThread]: End processing [jrnl]: success
+[2023-05-20 22:39:27] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-20 22:39:27] INFO root fetch - main [MainThread]: Store serial: [18184217]
