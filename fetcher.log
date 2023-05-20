@@ -2339,3 +2339,33 @@
 [2023-05-20 02:55:58] INFO root fetch - main [MainThread]: End processing [degirum]: success
 [2023-05-20 02:56:13] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2023-05-20 02:56:13] INFO root fetch - main [MainThread]: Store serial: [18177450]
+[2023-05-20 03:01:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18177450]
+[2023-05-20 03:01:22] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 03:01:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aemcmc-nightly
+[2023-05-20 03:01:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-reveal-slides
+[2023-05-20 03:01:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-lambda-layer-curl
+[2023-05-20 03:01:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SQLAlchemy
+[2023-05-20 03:01:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pointstorm
+[2023-05-20 03:01:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hls_tools
+[2023-05-20 03:01:22] INFO root fetch - processPackages [pointstorm]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-20 03:01:22] WARNING root fetch - processPackages [streamlit-reveal-slides]: Skipping, unable to determine old version
+[2023-05-20 03:01:22] INFO root fetch - main [MainThread]: End processing [streamlit-reveal-slides] error
+[2023-05-20 03:01:22] INFO root fetch - processPackages [SQLAlchemy]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-20 03:01:22] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-20 03:01:22] WARNING root fetch - processPackages [hls_tools]: Skipping, unable to determine old version
+[2023-05-20 03:01:22] INFO root fetch - main [MainThread]: End processing [hls_tools] error
+[2023-05-20 03:01:22] INFO root fetch - processPackages [aemcmc-nightly]: New version: [0.0.8.dev20230520] Old Version: [0.0.8.dev20230519]
+[2023-05-20 03:01:22] INFO root fetch - processPackages [pointstorm]: executing diffoscope
+[2023-05-20 03:01:22] INFO root fetch - processPackages [pointstorm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pointstorm-1.1.0.tar.gz tmp/pointstorm-1.1.1.tar.gz --markdown 20230520/p/pointstorm/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-20 03:01:23] INFO root fetch - processPackages [SQLAlchemy]: executing diffoscope
+[2023-05-20 03:01:23] INFO root fetch - processPackages [SQLAlchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SQLAlchemy-2.0.8.tar.gz tmp/SQLAlchemy-2.0.9.tar.gz --markdown 20230520/S/SQLAlchemy/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-20 03:01:23] INFO root fetch - processPackages [aemcmc-nightly]: Downloading https://files.pythonhosted.org/packages/1f/d1/09d9e242efd72388b3f981f2eaf89433c55d708c047cebc1409477f01c61/aemcmc-nightly-0.0.8.dev20230520.tar.gz
+[2023-05-20 03:01:23] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-05-20 03:01:23] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230520/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-20 03:01:23] INFO root fetch - processPackages [aemcmc-nightly]: executing diffoscope
+[2023-05-20 03:01:23] INFO root fetch - processPackages [aemcmc-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aemcmc-nightly-0.0.8.dev20230519.tar.gz tmp/aemcmc-nightly-0.0.8.dev20230520.tar.gz --markdown 20230520/a/aemcmc-nightly/0.0.8.dev20230519-0.0.8.dev20230520/diff.md --exclude *.pyd
+[2023-05-20 03:01:23] INFO root fetch - main [MainThread]: End processing [pointstorm]: success
+[2023-05-20 03:01:24] INFO root fetch - main [MainThread]: End processing [aemcmc-nightly]: success
+[2023-05-20 03:01:24] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-05-20 03:02:28] INFO root fetch - main [MainThread]: End processing [SQLAlchemy]: success
+[2023-05-20 03:02:28] INFO root fetch - main [MainThread]: Store serial: [18177483]
