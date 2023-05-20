@@ -12286,3 +12286,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 20:21:33] INFO root fetch - main [MainThread]: End processing [dragonfly-core]: success
 [2023-05-20 20:21:33] INFO root fetch - main [MainThread]: End processing [lazi]: success
 [2023-05-20 20:21:33] INFO root fetch - main [MainThread]: Store serial: [18183750]
+[2023-05-20 20:26:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183750]
+[2023-05-20 20:26:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 20:26:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ScriptCollection
+[2023-05-20 20:26:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spothinta
+[2023-05-20 20:26:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyalarmdotcomajax
+[2023-05-20 20:26:42] INFO root fetch - processPackages [spothinta]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-20 20:26:42] INFO root fetch - processPackages [ScriptCollection]: New version: [3.3.91] Old Version: [3.3.90]
+[2023-05-20 20:26:42] INFO root fetch - processPackages [pyalarmdotcomajax]: New version: [0.5.0b4] Old Version: [0.5.0b3]
+[2023-05-20 20:26:42] INFO root fetch - processPackages [ScriptCollection]: Downloading https://files.pythonhosted.org/packages/b0/b0/b5ec9a94f3c9f27eaec4d2eab2e54f761c30d2a12a2fc4b288d522a6df23/ScriptCollection-3.3.91-py3-none-any.whl
+[2023-05-20 20:26:43] INFO root fetch - processPackages [ScriptCollection]: executing diffoscope
+[2023-05-20 20:26:43] INFO root fetch - processPackages [ScriptCollection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ScriptCollection-3.3.90-py3-none-any.whl.zip tmp/ScriptCollection-3.3.91-py3-none-any.whl.zip --markdown 20230520/S/ScriptCollection/3.3.90-3.3.91/diff.md --exclude *.pyd
+[2023-05-20 20:26:43] INFO root fetch - processPackages [spothinta]: Downloading https://files.pythonhosted.org/packages/36/9f/6e2f2fee6affc0414fdb3a606abc2e1acb2cd9cc4141d9381801a6dcd44f/spothinta-0.1.1.tar.gz
+[2023-05-20 20:26:43] INFO root fetch - processPackages [spothinta]: executing diffoscope
+[2023-05-20 20:26:43] INFO root fetch - processPackages [spothinta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spothinta-0.1.0.tar.gz tmp/spothinta-0.1.1.tar.gz --markdown 20230520/s/spothinta/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-20 20:26:43] INFO root fetch - processPackages [pyalarmdotcomajax]: Downloading https://files.pythonhosted.org/packages/1d/aa/d02d30b3cd79c2abe7b69fc270a3697194bc29dbd36d7a4cd8e89645ec4b/pyalarmdotcomajax-0.5.0b4.tar.gz
+[2023-05-20 20:26:43] INFO root fetch - processPackages [pyalarmdotcomajax]: executing diffoscope
+[2023-05-20 20:26:43] INFO root fetch - processPackages [pyalarmdotcomajax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyalarmdotcomajax-0.5.0b3.tar.gz tmp/pyalarmdotcomajax-0.5.0b4.tar.gz --markdown 20230520/p/pyalarmdotcomajax/0.5.0b3-0.5.0b4/diff.md --exclude *.pyd
+[2023-05-20 20:26:44] INFO root fetch - main [MainThread]: End processing [spothinta]: success
+[2023-05-20 20:26:44] INFO root fetch - main [MainThread]: End processing [ScriptCollection]: success
+[2023-05-20 20:26:44] INFO root fetch - main [MainThread]: End processing [pyalarmdotcomajax]: success
+[2023-05-20 20:26:44] INFO root fetch - main [MainThread]: Store serial: [18183762]
