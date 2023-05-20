@@ -10521,3 +10521,55 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 16:42:01] INFO root fetch - main [MainThread]: End processing [qdls]: success
 [2023-05-20 16:42:01] INFO root fetch - main [MainThread]: End processing [dbm-agent]: success
 [2023-05-20 16:42:01] INFO root fetch - main [MainThread]: Store serial: [18182719]
+[2023-05-20 16:47:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182719]
+[2023-05-20 16:47:10] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-20 16:47:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dumbo-asp
+[2023-05-20 16:47:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: colortextpy
+[2023-05-20 16:47:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: circuitpython-uplot
+[2023-05-20 16:47:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: baguette-verse
+[2023-05-20 16:47:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: alacorder
+[2023-05-20 16:47:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dev-gpt
+[2023-05-20 16:47:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ddadevops
+[2023-05-20 16:47:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sorobn
+[2023-05-20 16:47:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ml-structure
+[2023-05-20 16:47:10] INFO root fetch - processPackages [dumbo-asp]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 16:47:10] INFO root fetch - processPackages [circuitpython-uplot]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-20 16:47:10] WARNING root fetch - processPackages [ml-structure]: Skipping, unable to determine old version
+[2023-05-20 16:47:10] INFO root fetch - main [MainThread]: End processing [ml-structure] error
+[2023-05-20 16:47:10] INFO root fetch - processPackages [colortextpy]: New version: [0.0.3.2] Old Version: [0.0.3.1]
+[2023-05-20 16:47:10] INFO root fetch - processPackages [baguette-verse]: New version: [1.0.5] Old Version: [1.0.0]
+[2023-05-20 16:47:10] WARNING root fetch - processPackages [sorobn]: Skipping, unable to determine old version
+[2023-05-20 16:47:10] INFO root fetch - main [MainThread]: End processing [sorobn] error
+[2023-05-20 16:47:10] INFO root fetch - processPackages [ddadevops]: New version: [4.0.0.dev9] Old Version: [4.0.0.dev8]
+[2023-05-20 16:47:10] INFO root fetch - processPackages [dev-gpt]: New version: [0.18.41.dev9] Old Version: [0.18.41.dev8]
+[2023-05-20 16:47:10] INFO root fetch - processPackages [alacorder]: New version: [80.6.9] Old Version: [80.6.8]
+[2023-05-20 16:47:11] INFO root fetch - processPackages [dumbo-asp]: executing diffoscope
+[2023-05-20 16:47:11] INFO root fetch - processPackages [dumbo-asp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dumbo_asp-0.0.8.tar.gz tmp/dumbo_asp-0.0.9.tar.gz --markdown 20230520/d/dumbo-asp/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 16:47:11] INFO root fetch - processPackages [colortextpy]: Downloading https://files.pythonhosted.org/packages/b7/e4/2a2d04e3d88caf3fd94db417e2ecbc1d628d982670543fb4d8b944da6a68/colortextpy-0.0.3.1.tar.gz
+[2023-05-20 16:47:11] INFO root fetch - processPackages [ddadevops]: executing diffoscope
+[2023-05-20 16:47:11] INFO root fetch - processPackages [ddadevops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddadevops-4.0.0.dev8.tar.gz tmp/ddadevops-4.0.0.dev9.tar.gz --markdown 20230520/d/ddadevops/4.0.0.dev8-4.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-20 16:47:11] INFO root fetch - processPackages [circuitpython-uplot]: Downloading https://files.pythonhosted.org/packages/1d/57/734bb4fe2a5f70070960b2cb8cd2200d924a82d4e0a6fa215e3e95a2122d/circuitpython-uplot-0.9.3.tar.gz
+[2023-05-20 16:47:11] INFO root fetch - processPackages [baguette-verse]: Downloading https://files.pythonhosted.org/packages/66/dc/ad522c79c134027ce8e2e5ecde8a31ded99f103da614607ba85fa268e360/baguette_verse-1.0.0.tar.gz
+[2023-05-20 16:47:11] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/f7/28/89149c2c9b083ab50b3c5ac2f17feb35f28ef0fe7104d50040b5dfcc39e0/alacorder-80.6.8.tar.gz
+[2023-05-20 16:47:11] INFO root fetch - processPackages [colortextpy]: Downloading https://files.pythonhosted.org/packages/80/1b/7816f7fc6557cd4d55d580c62b124bff67f829603194ad37663b55d7aa86/colortextpy-0.0.3.2.tar.gz
+[2023-05-20 16:47:11] INFO root fetch - processPackages [dev-gpt]: executing diffoscope
+[2023-05-20 16:47:11] INFO root fetch - processPackages [dev-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dev-gpt-0.18.41.dev8.tar.gz tmp/dev-gpt-0.18.41.dev9.tar.gz --markdown 20230520/d/dev-gpt/0.18.41.dev8-0.18.41.dev9/diff.md --exclude *.pyd
+[2023-05-20 16:47:11] INFO root fetch - processPackages [circuitpython-uplot]: Downloading https://files.pythonhosted.org/packages/d9/0f/137307a70ee54fe6b12bf2685f8d7c1a95d4488a5bed4c0ae82f1c3bda38/circuitpython-uplot-0.9.4.tar.gz
+[2023-05-20 16:47:11] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/7a/03/7d6b7376e4f68357b06621079e2f408ae1ad5efdba5e96aad3a6f214fdb3/alacorder-80.6.9.tar.gz
+[2023-05-20 16:47:11] INFO root fetch - processPackages [baguette-verse]: Downloading https://files.pythonhosted.org/packages/81/eb/b478571a8d39ffe65ea03428bf90b47913657721029243962ae38545e2e4/baguette_verse-1.0.5.tar.gz
+[2023-05-20 16:47:11] INFO root fetch - processPackages [colortextpy]: executing diffoscope
+[2023-05-20 16:47:11] INFO root fetch - processPackages [colortextpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colortextpy-0.0.3.1.tar.gz tmp/colortextpy-0.0.3.2.tar.gz --markdown 20230520/c/colortextpy/0.0.3.1-0.0.3.2/diff.md --exclude *.pyd
+[2023-05-20 16:47:11] INFO root fetch - processPackages [circuitpython-uplot]: executing diffoscope
+[2023-05-20 16:47:11] INFO root fetch - processPackages [circuitpython-uplot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circuitpython-uplot-0.9.3.tar.gz tmp/circuitpython-uplot-0.9.4.tar.gz --markdown 20230520/c/circuitpython-uplot/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-20 16:47:11] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-05-20 16:47:11] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-80.6.8.tar.gz tmp/alacorder-80.6.9.tar.gz --markdown 20230520/a/alacorder/80.6.8-80.6.9/diff.md --exclude *.pyd
+[2023-05-20 16:47:12] INFO root fetch - main [MainThread]: End processing [dumbo-asp]: success
+[2023-05-20 16:47:12] INFO root fetch - main [MainThread]: End processing [ddadevops]: success
+[2023-05-20 16:47:12] INFO root fetch - processPackages [baguette-verse]: executing diffoscope
+[2023-05-20 16:47:12] INFO root fetch - processPackages [baguette-verse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baguette_verse-1.0.0.tar.gz tmp/baguette_verse-1.0.5.tar.gz --markdown 20230520/b/baguette-verse/1.0.0-1.0.5/diff.md --exclude *.pyd
+[2023-05-20 16:47:12] INFO root fetch - main [MainThread]: End processing [dev-gpt]: success
+[2023-05-20 16:47:12] INFO root fetch - main [MainThread]: End processing [colortextpy]: success
+[2023-05-20 16:47:13] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-05-20 16:47:14] INFO root fetch - main [MainThread]: End processing [circuitpython-uplot]: success
+[2023-05-20 16:47:14] INFO root fetch - main [MainThread]: End processing [baguette-verse]: success
+[2023-05-20 16:47:14] INFO root fetch - main [MainThread]: Store serial: [18182752]
