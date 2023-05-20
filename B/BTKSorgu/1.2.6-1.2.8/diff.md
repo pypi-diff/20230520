@@ -1,0 +1,215 @@
+# Comparing `tmp/BTKSorgu-1.2.6.tar.gz` & `tmp/BTKSorgu-1.2.8.tar.gz`
+
+## filetype from file(1)
+
+```diff
+@@ -1 +1 @@
+-gzip compressed data, was "BTKSorgu-1.2.6.tar", last modified: Sat May 20 19:05:07 2023, max compression
++gzip compressed data, was "BTKSorgu-1.2.8.tar", last modified: Sat May 20 19:31:22 2023, max compression
+```
+
+## Comparing `BTKSorgu-1.2.6.tar` & `BTKSorgu-1.2.8.tar`
+
+### file list
+
+```diff
+@@ -1,26 +1,26 @@
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-20 19:05:07.246817 BTKSorgu-1.2.6/
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-20 19:05:07.242817 BTKSorgu-1.2.6/BTKSorgu/
+--rw-r--r--   0 runner    (1001) docker     (123)     3332 2023-05-20 19:04:16.000000 BTKSorgu-1.2.6/BTKSorgu/Erisim_Engeli.py
+--rw-r--r--   0 runner    (1001) docker     (123)     4043 2023-05-20 19:04:16.000000 BTKSorgu-1.2.6/BTKSorgu/KekikGUI.py
+--rw-r--r--   0 runner    (1001) docker     (123)      121 2023-05-20 19:04:16.000000 BTKSorgu-1.2.6/BTKSorgu/__init__.py
+--rw-r--r--   0 runner    (1001) docker     (123)      168 2023-05-20 19:04:16.000000 BTKSorgu-1.2.6/BTKSorgu/arayuz.py
+--rw-r--r--   0 runner    (1001) docker     (123)      278 2023-05-20 19:04:16.000000 BTKSorgu-1.2.6/BTKSorgu/ekstra.py
+--rw-r--r--   0 runner    (1001) docker     (123)      602 2023-05-20 19:04:16.000000 BTKSorgu-1.2.6/BTKSorgu/konsol.py
+--rw-r--r--   0 runner    (1001) docker     (123)    10945 2023-05-20 19:04:16.000000 BTKSorgu-1.2.6/BTKSorgu/logo.png
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-20 19:05:07.246817 BTKSorgu-1.2.6/BTKSorgu.egg-info/
+--rw-r--r--   0 runner    (1001) docker     (123)     9061 2023-05-20 19:04:41.000000 BTKSorgu-1.2.6/BTKSorgu.egg-info/PKG-INFO
+--rw-r--r--   0 runner    (1001) docker     (123)      498 2023-05-20 19:04:41.000000 BTKSorgu-1.2.6/BTKSorgu.egg-info/SOURCES.txt
+--rw-r--r--   0 runner    (1001) docker     (123)        1 2023-05-20 19:04:41.000000 BTKSorgu-1.2.6/BTKSorgu.egg-info/dependency_links.txt
+--rw-r--r--   0 runner    (1001) docker     (123)       87 2023-05-20 19:04:41.000000 BTKSorgu-1.2.6/BTKSorgu.egg-info/entry_points.txt
+--rw-r--r--   0 runner    (1001) docker     (123)      100 2023-05-20 19:04:41.000000 BTKSorgu-1.2.6/BTKSorgu.egg-info/requires.txt
+--rw-r--r--   0 runner    (1001) docker     (123)        9 2023-05-20 19:04:41.000000 BTKSorgu-1.2.6/BTKSorgu.egg-info/top_level.txt
+--rw-r--r--   0 runner    (1001) docker     (123)    35149 2023-05-20 19:04:16.000000 BTKSorgu-1.2.6/LICENSE
+--rw-r--r--   0 runner    (1001) docker     (123)       28 2023-05-20 19:04:16.000000 BTKSorgu-1.2.6/MANIFEST.in
+--rw-r--r--   0 runner    (1001) docker     (123)     9061 2023-05-20 19:05:07.246817 BTKSorgu-1.2.6/PKG-INFO
+--rw-r--r--   0 runner    (1001) docker     (123)     8489 2023-05-20 19:04:16.000000 BTKSorgu-1.2.6/README.md
+-drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-20 19:05:07.246817 BTKSorgu-1.2.6/Shared/
+--rw-r--r--   0 runner    (1001) docker     (123)     3090 2023-05-20 19:04:16.000000 BTKSorgu-1.2.6/Shared/org.KekikAkademi.BTKSorgu.appdata.xml
+--rw-r--r--   0 runner    (1001) docker     (123)      315 2023-05-20 19:04:16.000000 BTKSorgu-1.2.6/Shared/org.KekikAkademi.BTKSorgu.desktop
+--rw-r--r--   0 runner    (1001) docker     (123)     1858 2023-05-20 19:04:16.000000 BTKSorgu-1.2.6/Shared/org.KekikAkademi.BTKSorgu.svg
+--rw-r--r--   0 runner    (1001) docker     (123)       38 2023-05-20 19:05:07.246817 BTKSorgu-1.2.6/setup.cfg
+--rw-r--r--   0 runner    (1001) docker     (123)     2045 2023-05-20 19:04:16.000000 BTKSorgu-1.2.6/setup.py
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-20 19:31:22.152994 BTKSorgu-1.2.8/
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-20 19:31:22.152994 BTKSorgu-1.2.8/BTKSorgu/
++-rw-r--r--   0 runner    (1001) docker     (123)     3332 2023-05-20 19:30:35.000000 BTKSorgu-1.2.8/BTKSorgu/Erisim_Engeli.py
++-rw-r--r--   0 runner    (1001) docker     (123)     4043 2023-05-20 19:30:35.000000 BTKSorgu-1.2.8/BTKSorgu/KekikGUI.py
++-rw-r--r--   0 runner    (1001) docker     (123)      121 2023-05-20 19:30:35.000000 BTKSorgu-1.2.8/BTKSorgu/__init__.py
++-rw-r--r--   0 runner    (1001) docker     (123)      168 2023-05-20 19:30:35.000000 BTKSorgu-1.2.8/BTKSorgu/arayuz.py
++-rw-r--r--   0 runner    (1001) docker     (123)      278 2023-05-20 19:30:35.000000 BTKSorgu-1.2.8/BTKSorgu/ekstra.py
++-rw-r--r--   0 runner    (1001) docker     (123)      602 2023-05-20 19:30:35.000000 BTKSorgu-1.2.8/BTKSorgu/konsol.py
++-rw-r--r--   0 runner    (1001) docker     (123)    10945 2023-05-20 19:30:35.000000 BTKSorgu-1.2.8/BTKSorgu/logo.png
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-20 19:31:22.152994 BTKSorgu-1.2.8/BTKSorgu.egg-info/
++-rw-r--r--   0 runner    (1001) docker     (123)     9061 2023-05-20 19:30:57.000000 BTKSorgu-1.2.8/BTKSorgu.egg-info/PKG-INFO
++-rw-r--r--   0 runner    (1001) docker     (123)      498 2023-05-20 19:30:57.000000 BTKSorgu-1.2.8/BTKSorgu.egg-info/SOURCES.txt
++-rw-r--r--   0 runner    (1001) docker     (123)        1 2023-05-20 19:30:57.000000 BTKSorgu-1.2.8/BTKSorgu.egg-info/dependency_links.txt
++-rw-r--r--   0 runner    (1001) docker     (123)       87 2023-05-20 19:30:57.000000 BTKSorgu-1.2.8/BTKSorgu.egg-info/entry_points.txt
++-rw-r--r--   0 runner    (1001) docker     (123)      100 2023-05-20 19:30:57.000000 BTKSorgu-1.2.8/BTKSorgu.egg-info/requires.txt
++-rw-r--r--   0 runner    (1001) docker     (123)        9 2023-05-20 19:30:57.000000 BTKSorgu-1.2.8/BTKSorgu.egg-info/top_level.txt
++-rw-r--r--   0 runner    (1001) docker     (123)    35149 2023-05-20 19:30:35.000000 BTKSorgu-1.2.8/LICENSE
++-rw-r--r--   0 runner    (1001) docker     (123)       28 2023-05-20 19:30:35.000000 BTKSorgu-1.2.8/MANIFEST.in
++-rw-r--r--   0 runner    (1001) docker     (123)     9061 2023-05-20 19:31:22.152994 BTKSorgu-1.2.8/PKG-INFO
++-rw-r--r--   0 runner    (1001) docker     (123)     8489 2023-05-20 19:30:35.000000 BTKSorgu-1.2.8/README.md
++drwxr-xr-x   0 runner    (1001) docker     (123)        0 2023-05-20 19:31:22.152994 BTKSorgu-1.2.8/Shared/
++-rw-r--r--   0 runner    (1001) docker     (123)     3090 2023-05-20 19:30:35.000000 BTKSorgu-1.2.8/Shared/org.KekikAkademi.BTKSorgu.appdata.xml
++-rw-r--r--   0 runner    (1001) docker     (123)      315 2023-05-20 19:30:35.000000 BTKSorgu-1.2.8/Shared/org.KekikAkademi.BTKSorgu.desktop
++-rw-r--r--   0 runner    (1001) docker     (123)     1858 2023-05-20 19:30:35.000000 BTKSorgu-1.2.8/Shared/org.KekikAkademi.BTKSorgu.svg
++-rw-r--r--   0 runner    (1001) docker     (123)       38 2023-05-20 19:31:22.152994 BTKSorgu-1.2.8/setup.cfg
++-rw-r--r--   0 runner    (1001) docker     (123)     2045 2023-05-20 19:30:35.000000 BTKSorgu-1.2.8/setup.py
+```
+
+### Comparing `BTKSorgu-1.2.6/BTKSorgu/Erisim_Engeli.py` & `BTKSorgu-1.2.8/BTKSorgu/Erisim_Engeli.py`
+
+ * *Files identical despite different names*
+
+### Comparing `BTKSorgu-1.2.6/BTKSorgu/KekikGUI.py` & `BTKSorgu-1.2.8/BTKSorgu/KekikGUI.py`
+
+ * *Files identical despite different names*
+
+### Comparing `BTKSorgu-1.2.6/BTKSorgu/konsol.py` & `BTKSorgu-1.2.8/BTKSorgu/konsol.py`
+
+ * *Files identical despite different names*
+
+### Comparing `BTKSorgu-1.2.6/BTKSorgu/logo.png` & `BTKSorgu-1.2.8/BTKSorgu/logo.png`
+
+ * *Files identical despite different names*
+
+### Comparing `BTKSorgu-1.2.6/BTKSorgu.egg-info/PKG-INFO` & `BTKSorgu-1.2.8/BTKSorgu.egg-info/PKG-INFO`
+
+ * *Files 1% similar despite different names*
+
+```diff
+@@ -1,10 +1,10 @@
+ Metadata-Version: 2.1
+ Name: BTKSorgu
+-Version: 1.2.6
++Version: 1.2.8
+ Summary: Hedef websitesinin BTK Tarafından Erişim Engeli Sorgusu
+ Home-page: https://github.com/keyiflerolsun/BTKSorgu
+ Author: keyiflerolsun
+ Author-email: keyiflerolsun@gmail.com
+ License: GPLv3+
+ Keywords: BTKSorgu,KekikAkademi,keyiflerolsun
+ Classifier: Development Status :: 5 - Production/Stable
+```
+
+#### html2text {}
+
+```diff
+@@ -1,8 +1,8 @@
+-Metadata-Version: 2.1 Name: BTKSorgu Version: 1.2.6 Summary: Hedef websitesinin
++Metadata-Version: 2.1 Name: BTKSorgu Version: 1.2.8 Summary: Hedef websitesinin
+ BTK TarafÄ±ndan EriÅim Engeli Sorgusu Home-page: https://github.com/
+ keyiflerolsun/BTKSorgu Author: keyiflerolsun Author-email:
+ keyiflerolsun@gmail.com License: GPLv3+ Keywords:
+ BTKSorgu,KekikAkademi,keyiflerolsun Classifier: Development Status :: 5 -
+ Production/Stable Classifier: License :: OSI Approved :: GNU General Public
+ License v3 or later (GPLv3+) Classifier: Programming Language :: Python :: 3
+ Requires-Python: >=3.10 Description-Content-Type: text/markdown License-File:
+```
+
+### Comparing `BTKSorgu-1.2.6/LICENSE` & `BTKSorgu-1.2.8/LICENSE`
+
+ * *Files identical despite different names*
+
+### Comparing `BTKSorgu-1.2.6/PKG-INFO` & `BTKSorgu-1.2.8/PKG-INFO`
+
+ * *Files 1% similar despite different names*
+
+```diff
+@@ -1,10 +1,10 @@
+ Metadata-Version: 2.1
+ Name: BTKSorgu
+-Version: 1.2.6
++Version: 1.2.8
+ Summary: Hedef websitesinin BTK Tarafından Erişim Engeli Sorgusu
+ Home-page: https://github.com/keyiflerolsun/BTKSorgu
+ Author: keyiflerolsun
+ Author-email: keyiflerolsun@gmail.com
+ License: GPLv3+
+ Keywords: BTKSorgu,KekikAkademi,keyiflerolsun
+ Classifier: Development Status :: 5 - Production/Stable
+```
+
+#### html2text {}
+
+```diff
+@@ -1,8 +1,8 @@
+-Metadata-Version: 2.1 Name: BTKSorgu Version: 1.2.6 Summary: Hedef websitesinin
++Metadata-Version: 2.1 Name: BTKSorgu Version: 1.2.8 Summary: Hedef websitesinin
+ BTK TarafÄ±ndan EriÅim Engeli Sorgusu Home-page: https://github.com/
+ keyiflerolsun/BTKSorgu Author: keyiflerolsun Author-email:
+ keyiflerolsun@gmail.com License: GPLv3+ Keywords:
+ BTKSorgu,KekikAkademi,keyiflerolsun Classifier: Development Status :: 5 -
+ Production/Stable Classifier: License :: OSI Approved :: GNU General Public
+ License v3 or later (GPLv3+) Classifier: Programming Language :: Python :: 3
+ Requires-Python: >=3.10 Description-Content-Type: text/markdown License-File:
+```
+
+### Comparing `BTKSorgu-1.2.6/README.md` & `BTKSorgu-1.2.8/README.md`
+
+ * *Files identical despite different names*
+
+### Comparing `BTKSorgu-1.2.6/Shared/org.KekikAkademi.BTKSorgu.appdata.xml` & `BTKSorgu-1.2.8/Shared/org.KekikAkademi.BTKSorgu.appdata.xml`
+
+ * *Files 1% similar despite different names*
+
+#### Comparing `BTKSorgu-1.2.6/Shared/org.KekikAkademi.BTKSorgu.appdata.xml` & `BTKSorgu-1.2.8/Shared/org.KekikAkademi.BTKSorgu.appdata.xml`
+
+```diff
+@@ -28,15 +28,15 @@
+       <image>https://raw.githubusercontent.com/keyiflerolsun/BTKSorgu/main/.github/icons/SS.png</image>
+     </screenshot>
+   </screenshots>
+   <categories>
+     <category>Education</category>
+   </categories>
+   <releases>
+-    <release version="1.2.6" date="2023-5-20">
++    <release version="1.2.8" date="2023-5-20">
+       <description>
+         <p>`tess_yukle()` fonksiyonu eklendi..</p>
+       </description>
+     </release>
+     <release version="1.2.2" date="2023-5-20">
+       <description>
+         <p>Tk Tabanı Güncellendi..</p>
+```
+
+### Comparing `BTKSorgu-1.2.6/Shared/org.KekikAkademi.BTKSorgu.svg` & `BTKSorgu-1.2.8/Shared/org.KekikAkademi.BTKSorgu.svg`
+
+ * *Files identical despite different names*
+
+### Comparing `BTKSorgu-1.2.6/setup.py` & `BTKSorgu-1.2.8/setup.py`
+
+ * *Files 0% similar despite different names*
+
+```diff
+@@ -3,15 +3,15 @@
+ from setuptools import setup
+ from io         import open
+ from tess_yukle import TesseractYukle
+ 
+ setup(
+     # ? Genel Bilgiler
+     name         = "BTKSorgu",
+-    version      = "1.2.6",
++    version      = "1.2.8",
+     url          = "https://github.com/keyiflerolsun/BTKSorgu",
+     description  = "Hedef websitesinin BTK Tarafından Erişim Engeli Sorgusu",
+     keywords     = ["BTKSorgu", "KekikAkademi", "keyiflerolsun"],
+ 
+     author       = "keyiflerolsun",
+     author_email = "keyiflerolsun@gmail.com",
+```
+

@@ -12751,3 +12751,18 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 21:29:55] INFO root fetch - main [MainThread]: End processing [bovine]: success
 [2023-05-20 21:29:55] INFO root fetch - main [MainThread]: End processing [SplatStats]: success
 [2023-05-20 21:29:55] INFO root fetch - main [MainThread]: Store serial: [18183959]
+[2023-05-20 21:35:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183959]
+[2023-05-20 21:35:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-20 21:35:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BTKSorgu
+[2023-05-20 21:35:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uoy-assessment-uploader
+[2023-05-20 21:35:05] INFO root fetch - processPackages [uoy-assessment-uploader]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-20 21:35:05] INFO root fetch - processPackages [BTKSorgu]: New version: [1.2.8] Old Version: [1.2.6]
+[2023-05-20 21:35:05] INFO root fetch - processPackages [uoy-assessment-uploader]: Downloading https://files.pythonhosted.org/packages/5e/3c/4e00e27cdad7a9a8382b8af905c5799482e0d8fc2048788531afb9cc3654/uoy_assessment_uploader-0.5.1.tar.gz
+[2023-05-20 21:35:05] INFO root fetch - processPackages [BTKSorgu]: Downloading https://files.pythonhosted.org/packages/63/f9/fcd743b09656119f079fb114a65fb9db13c8e87cf0ddbeee25548aaf3a00/BTKSorgu-1.2.8.tar.gz
+[2023-05-20 21:35:05] INFO root fetch - processPackages [BTKSorgu]: executing diffoscope
+[2023-05-20 21:35:05] INFO root fetch - processPackages [BTKSorgu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BTKSorgu-1.2.6.tar.gz tmp/BTKSorgu-1.2.8.tar.gz --markdown 20230520/B/BTKSorgu/1.2.6-1.2.8/diff.md --exclude *.pyd
+[2023-05-20 21:35:05] INFO root fetch - processPackages [uoy-assessment-uploader]: executing diffoscope
+[2023-05-20 21:35:05] INFO root fetch - processPackages [uoy-assessment-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uoy_assessment_uploader-0.5.0.tar.gz tmp/uoy_assessment_uploader-0.5.1.tar.gz --markdown 20230520/u/uoy-assessment-uploader/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-20 21:35:06] INFO root fetch - main [MainThread]: End processing [uoy-assessment-uploader]: success
+[2023-05-20 21:35:06] INFO root fetch - main [MainThread]: End processing [BTKSorgu]: success
+[2023-05-20 21:35:06] INFO root fetch - main [MainThread]: Store serial: [18183965]
