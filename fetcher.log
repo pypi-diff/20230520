@@ -10709,3 +10709,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 17:08:52] INFO root fetch - main [MainThread]: End processing [tensorflow-text-nightly]: success
 [2023-05-20 17:09:32] INFO root fetch - main [MainThread]: End processing [cmrseq]: success
 [2023-05-20 17:09:32] INFO root fetch - main [MainThread]: Store serial: [18182828]
+[2023-05-20 17:14:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182828]
+[2023-05-20 17:14:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-20 17:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlcreateproject
+[2023-05-20 17:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: urllib3-ext-hface
+[2023-05-20 17:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: easyFermi
+[2023-05-20 17:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: denoising-diffusion-pytorch
+[2023-05-20 17:14:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: drools-jpy
+[2023-05-20 17:14:41] INFO root fetch - processPackages [drools-jpy]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-20 17:14:41] INFO root fetch - processPackages [denoising-diffusion-pytorch]: New version: [1.6.0] Old Version: [1.5.8]
+[2023-05-20 17:14:41] INFO root fetch - processPackages [urllib3-ext-hface]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-20 17:14:41] WARNING root fetch - processPackages [mlcreateproject]: Skipping, unable to determine old version
+[2023-05-20 17:14:41] INFO root fetch - processPackages [easyFermi]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-20 17:14:41] INFO root fetch - main [MainThread]: End processing [mlcreateproject] error
+[2023-05-20 17:14:41] INFO root fetch - processPackages [denoising-diffusion-pytorch]: executing diffoscope
+[2023-05-20 17:14:41] INFO root fetch - processPackages [denoising-diffusion-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/denoising-diffusion-pytorch-1.5.8.tar.gz tmp/denoising-diffusion-pytorch-1.6.0.tar.gz --markdown 20230520/d/denoising-diffusion-pytorch/1.5.8-1.6.0/diff.md --exclude *.pyd
+[2023-05-20 17:14:41] INFO root fetch - processPackages [drools-jpy]: Downloading https://files.pythonhosted.org/packages/04/88/41c18752b2ad077a91f221438cab1afe8f54cef68312088262034dededfd/drools_jpy-0.3.0.tar.gz
+[2023-05-20 17:14:41] INFO root fetch - processPackages [urllib3-ext-hface]: Downloading https://files.pythonhosted.org/packages/b4/8d/24d111f69005075fea6c8471ea80e9a2316f6b444f024ced5a15dba00b74/urllib3_ext_hface-0.2.3.tar.gz
+[2023-05-20 17:14:41] INFO root fetch - processPackages [easyFermi]: Downloading https://files.pythonhosted.org/packages/17/8d/fbfc1eca30e001acc26d6b766653196c39f8d64fabb9035ea7c1c21ff988/easyFermi-1.1.0.tar.gz
+[2023-05-20 17:14:41] INFO root fetch - processPackages [easyFermi]: Downloading https://files.pythonhosted.org/packages/d8/0d/75e6834b0fec138146ce60b14fe5d77cc488153c6a86e6ed0cafdf37819b/easyFermi-1.1.1.tar.gz
+[2023-05-20 17:14:41] INFO root fetch - processPackages [urllib3-ext-hface]: Downloading https://files.pythonhosted.org/packages/e4/6e/2bf783c70cc838b7cc51e1baf27ea35d72ac6477dc26f75462462b9c12a2/urllib3_ext_hface-0.2.4.tar.gz
+[2023-05-20 17:14:41] INFO root fetch - processPackages [easyFermi]: executing diffoscope
+[2023-05-20 17:14:41] INFO root fetch - processPackages [easyFermi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easyFermi-1.1.0.tar.gz tmp/easyFermi-1.1.1.tar.gz --markdown 20230520/e/easyFermi/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-20 17:14:41] INFO root fetch - processPackages [urllib3-ext-hface]: executing diffoscope
+[2023-05-20 17:14:41] INFO root fetch - processPackages [urllib3-ext-hface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/urllib3_ext_hface-0.2.3.tar.gz tmp/urllib3_ext_hface-0.2.4.tar.gz --markdown 20230520/u/urllib3-ext-hface/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-20 17:14:42] INFO root fetch - processPackages [drools-jpy]: Downloading https://files.pythonhosted.org/packages/c9/d6/f3c4e6dfb1ee3e3b629fe2f7092ab0fb5b37f6ccc25234488add009417d4/drools_jpy-0.3.1.tar.gz
+[2023-05-20 17:14:42] INFO root fetch - main [MainThread]: End processing [denoising-diffusion-pytorch]: success
+[2023-05-20 17:14:42] INFO root fetch - processPackages [drools-jpy]: executing diffoscope
+[2023-05-20 17:14:42] INFO root fetch - processPackages [drools-jpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drools_jpy-0.3.0.tar.gz tmp/drools_jpy-0.3.1.tar.gz --markdown 20230520/d/drools-jpy/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-20 17:14:42] INFO root fetch - main [MainThread]: End processing [easyFermi]: success
+[2023-05-20 17:14:43] INFO root fetch - main [MainThread]: End processing [urllib3-ext-hface]: success
+[2023-05-20 17:17:42] ERROR root fetch - processPackages [drools-jpy]: Timeout during execution of pkgdiff
+[2023-05-20 17:17:42] INFO root fetch - main [MainThread]: End processing [drools-jpy] error
+[2023-05-20 17:17:42] INFO root fetch - main [MainThread]: Store serial: [18182867]
