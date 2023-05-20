@@ -10573,3 +10573,20 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 16:47:14] INFO root fetch - main [MainThread]: End processing [circuitpython-uplot]: success
 [2023-05-20 16:47:14] INFO root fetch - main [MainThread]: End processing [baguette-verse]: success
 [2023-05-20 16:47:14] INFO root fetch - main [MainThread]: Store serial: [18182752]
+[2023-05-20 16:52:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182752]
+[2023-05-20 16:52:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 16:52:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Glances
+[2023-05-20 16:52:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ma-fy
+[2023-05-20 16:52:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apysc
+[2023-05-20 16:52:23] INFO root fetch - processPackages [Glances]: New version: [3.4.0.3] Old Version: [3.4.0.2]
+[2023-05-20 16:52:23] INFO root fetch - processPackages [apysc]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-05-20 16:52:23] WARNING root fetch - processPackages [ma-fy]: Skipping, unable to determine old version
+[2023-05-20 16:52:23] INFO root fetch - main [MainThread]: End processing [ma-fy] error
+[2023-05-20 16:52:23] INFO root fetch - processPackages [apysc]: executing diffoscope
+[2023-05-20 16:52:23] INFO root fetch - processPackages [apysc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apysc-2.7.8.tar.gz tmp/apysc-2.7.9.tar.gz --markdown 20230520/a/apysc/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-05-20 16:52:23] INFO root fetch - processPackages [Glances]: Downloading https://files.pythonhosted.org/packages/15/0f/826df6c12110de8bfa9357be60be38bf93230103a9f39fdfa46708ef9200/Glances-3.4.0.3.tar.gz
+[2023-05-20 16:52:24] INFO root fetch - processPackages [Glances]: executing diffoscope
+[2023-05-20 16:52:24] INFO root fetch - processPackages [Glances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Glances-3.4.0.2.tar.gz tmp/Glances-3.4.0.3.tar.gz --markdown 20230520/G/Glances/3.4.0.2-3.4.0.3/diff.md --exclude *.pyd
+[2023-05-20 16:52:31] INFO root fetch - main [MainThread]: End processing [Glances]: success
+[2023-05-20 16:52:32] INFO root fetch - main [MainThread]: End processing [apysc]: success
+[2023-05-20 16:52:32] INFO root fetch - main [MainThread]: Store serial: [18182767]
