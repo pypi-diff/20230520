@@ -6497,3 +6497,31 @@
 [2023-05-20 08:49:56] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
 [2023-05-20 08:49:58] INFO root fetch - main [MainThread]: End processing [Appium-Python-Client]: success
 [2023-05-20 08:49:58] INFO root fetch - main [MainThread]: Store serial: [18180157]
+[2023-05-20 08:55:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180157]
+[2023-05-20 08:55:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 08:55:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mathtranslate
+[2023-05-20 08:55:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyhtools
+[2023-05-20 08:55:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: data-preprocessors
+[2023-05-20 08:55:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pystools
+[2023-05-20 08:55:06] INFO root fetch - processPackages [pystools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 08:55:06] INFO root fetch - processPackages [data-preprocessors]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-20 08:55:06] INFO root fetch - processPackages [pyhtools]: New version: [2.2.3] Old Version: [2.2.2]
+[2023-05-20 08:55:06] INFO root fetch - processPackages [mathtranslate]: New version: [2.3.1] Old Version: [2.3.0]
+[2023-05-20 08:55:07] INFO root fetch - processPackages [pystools]: executing diffoscope
+[2023-05-20 08:55:07] INFO root fetch - processPackages [pystools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystools-0.0.8.tar.gz tmp/pystools-0.0.9.tar.gz --markdown 20230520/p/pystools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 08:55:07] INFO root fetch - processPackages [data-preprocessors]: Downloading https://files.pythonhosted.org/packages/a9/79/923b76795b89dc377c1ec6ada5a05cfd4937dd0fbe6f107cf3e3e8d7cec4/data-preprocessors-0.8.0.tar.gz
+[2023-05-20 08:55:07] INFO root fetch - processPackages [pyhtools]: Downloading https://files.pythonhosted.org/packages/ee/f2/eb355fc8f4d1595845d7064479d2a4c34eca9e9ff54ff5b503801e0d61cb/pyhtools-2.2.2.tar.gz
+[2023-05-20 08:55:07] INFO root fetch - processPackages [mathtranslate]: Downloading https://files.pythonhosted.org/packages/5c/2c/8f0a78412d5d742405e3b162d7de65f7380ff4e925492f1afb596a598d06/mathtranslate-2.3.1.tar.gz
+[2023-05-20 08:55:07] INFO root fetch - processPackages [mathtranslate]: executing diffoscope
+[2023-05-20 08:55:07] INFO root fetch - processPackages [mathtranslate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mathtranslate-2.3.0.tar.gz tmp/mathtranslate-2.3.1.tar.gz --markdown 20230520/m/mathtranslate/2.3.0-2.3.1/diff.md --exclude *.pyd
+[2023-05-20 08:55:07] INFO root fetch - processPackages [pyhtools]: Downloading https://files.pythonhosted.org/packages/cd/0f/c7d73a4a00b6a99a7e56a025e8672f539ad45fa95ae7a6f288194f358d58/pyhtools-2.2.3.tar.gz
+[2023-05-20 08:55:07] INFO root fetch - processPackages [data-preprocessors]: Downloading https://files.pythonhosted.org/packages/fe/41/9fc72fe65775721ec3d7fbded27924fd1f1bad021768e5868d557223a1f1/data-preprocessors-0.9.0.tar.gz
+[2023-05-20 08:55:07] INFO root fetch - processPackages [pyhtools]: executing diffoscope
+[2023-05-20 08:55:07] INFO root fetch - processPackages [pyhtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhtools-2.2.2.tar.gz tmp/pyhtools-2.2.3.tar.gz --markdown 20230520/p/pyhtools/2.2.2-2.2.3/diff.md --exclude *.pyd
+[2023-05-20 08:55:07] INFO root fetch - processPackages [data-preprocessors]: executing diffoscope
+[2023-05-20 08:55:07] INFO root fetch - processPackages [data-preprocessors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-preprocessors-0.8.0.tar.gz tmp/data-preprocessors-0.9.0.tar.gz --markdown 20230520/d/data-preprocessors/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-20 08:55:08] INFO root fetch - main [MainThread]: End processing [pystools]: success
+[2023-05-20 08:55:08] INFO root fetch - main [MainThread]: End processing [mathtranslate]: success
+[2023-05-20 08:55:08] INFO root fetch - main [MainThread]: End processing [data-preprocessors]: success
+[2023-05-20 08:55:08] INFO root fetch - main [MainThread]: End processing [pyhtools]: success
+[2023-05-20 08:55:08] INFO root fetch - main [MainThread]: Store serial: [18180171]
