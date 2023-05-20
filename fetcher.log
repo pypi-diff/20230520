@@ -6766,3 +6766,37 @@
 [2023-05-20 09:42:39] INFO root fetch - main [MainThread]: End processing [ghananews-scraper]: success
 [2023-05-20 09:42:39] INFO root fetch - main [MainThread]: End processing [ml-starter]: success
 [2023-05-20 09:42:39] INFO root fetch - main [MainThread]: Store serial: [18180355]
+[2023-05-20 09:47:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180355]
+[2023-05-20 09:47:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 09:47:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyMAdot2
+[2023-05-20 09:47:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pravo-api
+[2023-05-20 09:47:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tknodesystem
+[2023-05-20 09:47:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sftp-uploader
+[2023-05-20 09:47:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: keras-nightly
+[2023-05-20 09:47:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vector-vault
+[2023-05-20 09:47:48] INFO root fetch - processPackages [vector-vault]: New version: [0.1.1] Old Version: [0.1]
+[2023-05-20 09:47:48] WARNING root fetch - processPackages [pyMAdot2]: Skipping, unable to determine old version
+[2023-05-20 09:47:48] INFO root fetch - main [MainThread]: End processing [pyMAdot2] error
+[2023-05-20 09:47:48] INFO root fetch - processPackages [keras-nightly]: New version: [2.9.0.dev2022033107] Old Version: [2.9.0.dev2022033007]
+[2023-05-20 09:47:48] INFO root fetch - processPackages [tknodesystem]: New version: [0.3] Old Version: [0.1]
+[2023-05-20 09:47:48] WARNING root fetch - processPackages [sftp-uploader]: Skipping, unable to determine old version
+[2023-05-20 09:47:48] INFO root fetch - main [MainThread]: End processing [sftp-uploader] error
+[2023-05-20 09:47:48] INFO root fetch - processPackages [pravo-api]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 09:47:48] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/07/5e/3876f92b2ee64b48312924c659c8425eb94232ab578b337098a1a95d6486/vector_vault-0.1.tar.gz
+[2023-05-20 09:47:48] INFO root fetch - processPackages [pravo-api]: Downloading https://files.pythonhosted.org/packages/53/8d/dd62ce6cb375efe8b14fba9cefd5f3a4a7ed0ab455f1bd958e6255afbf72/pravo-api-0.0.8.tar.gz
+[2023-05-20 09:47:49] INFO root fetch - processPackages [tknodesystem]: Downloading https://files.pythonhosted.org/packages/2d/8c/d55e64aaf9eaa7031934e9ec0595266d8c0d04d20274e74091709b4102e9/tknodesystem-0.3.tar.gz
+[2023-05-20 09:47:49] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2023-05-20 09:47:49] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-2.9.0.dev2022033007-py2.py3-none-any.whl.zip tmp/keras_nightly-2.9.0.dev2022033107-py2.py3-none-any.whl.zip --markdown 20230520/k/keras-nightly/2.9.0.dev2022033007-2.9.0.dev2022033107/diff.md --exclude *.pyd
+[2023-05-20 09:47:49] INFO root fetch - processPackages [pravo-api]: Downloading https://files.pythonhosted.org/packages/e0/c2/e0aaacecdb009137b1c83dce03f20bcac5ff796abbe7ab64c67606240e06/pravo-api-0.0.9.tar.gz
+[2023-05-20 09:47:49] INFO root fetch - processPackages [vector-vault]: Downloading https://files.pythonhosted.org/packages/ce/4a/3aaacc9996a03da482938ac61bd55a375dc633d89a126c2a80229d5eaf78/vector_vault-0.1.1.tar.gz
+[2023-05-20 09:47:49] INFO root fetch - processPackages [tknodesystem]: executing diffoscope
+[2023-05-20 09:47:49] INFO root fetch - processPackages [tknodesystem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tknodesystem-0.1.tar.gz tmp/tknodesystem-0.3.tar.gz --markdown 20230520/t/tknodesystem/0.1-0.3/diff.md --exclude *.pyd
+[2023-05-20 09:47:49] INFO root fetch - processPackages [pravo-api]: executing diffoscope
+[2023-05-20 09:47:49] INFO root fetch - processPackages [pravo-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pravo-api-0.0.8.tar.gz tmp/pravo-api-0.0.9.tar.gz --markdown 20230520/p/pravo-api/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 09:47:49] INFO root fetch - processPackages [vector-vault]: executing diffoscope
+[2023-05-20 09:47:49] INFO root fetch - processPackages [vector-vault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vector_vault-0.1.tar.gz tmp/vector_vault-0.1.1.tar.gz --markdown 20230520/v/vector-vault/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-05-20 09:47:50] INFO root fetch - main [MainThread]: End processing [tknodesystem]: success
+[2023-05-20 09:47:50] INFO root fetch - main [MainThread]: End processing [pravo-api]: success
+[2023-05-20 09:47:50] INFO root fetch - main [MainThread]: End processing [vector-vault]: success
+[2023-05-20 09:47:58] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2023-05-20 09:47:58] INFO root fetch - main [MainThread]: Store serial: [18180374]
