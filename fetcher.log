@@ -5907,3 +5907,18 @@
 [2023-05-20 06:45:51] INFO root fetch - main [MainThread]: End processing [pylint-plugin-utils]: success
 [2023-05-20 06:45:54] INFO root fetch - main [MainThread]: End processing [covalent]: success
 [2023-05-20 06:45:54] INFO root fetch - main [MainThread]: Store serial: [18179752]
+[2023-05-20 06:51:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179752]
+[2023-05-20 06:51:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-20 06:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: textagon
+[2023-05-20 06:51:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ssgpy
+[2023-05-20 06:51:07] INFO root fetch - processPackages [ssgpy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 06:51:07] INFO root fetch - processPackages [textagon]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 06:51:07] INFO root fetch - processPackages [ssgpy]: executing diffoscope
+[2023-05-20 06:51:07] INFO root fetch - processPackages [ssgpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssgpy-0.1.8.tar.gz tmp/ssgpy-0.1.9.tar.gz --markdown 20230520/s/ssgpy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 06:51:07] INFO root fetch - processPackages [textagon]: Downloading https://files.pythonhosted.org/packages/88/4d/2d5f09166368e60abedcf4646f65e33bf31c0ab90e1c9885ef9d7d3442ba/textagon-0.1.8.tar.gz
+[2023-05-20 06:51:08] INFO root fetch - main [MainThread]: End processing [ssgpy]: success
+[2023-05-20 06:51:08] INFO root fetch - processPackages [textagon]: Downloading https://files.pythonhosted.org/packages/e4/68/d1c90e6adc86cacbfe0462b18c56a693c8db1218e832df35da32b9601119/textagon-0.1.9.tar.gz
+[2023-05-20 06:51:09] INFO root fetch - processPackages [textagon]: executing diffoscope
+[2023-05-20 06:51:09] INFO root fetch - processPackages [textagon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textagon-0.1.8.tar.gz tmp/textagon-0.1.9.tar.gz --markdown 20230520/t/textagon/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 06:51:11] INFO root fetch - main [MainThread]: End processing [textagon]: success
+[2023-05-20 06:51:11] INFO root fetch - main [MainThread]: Store serial: [18179758]
