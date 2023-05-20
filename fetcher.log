@@ -10742,3 +10742,67 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 17:17:42] ERROR root fetch - processPackages [drools-jpy]: Timeout during execution of pkgdiff
 [2023-05-20 17:17:42] INFO root fetch - main [MainThread]: End processing [drools-jpy] error
 [2023-05-20 17:17:42] INFO root fetch - main [MainThread]: Store serial: [18182867]
+[2023-05-20 17:22:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182867]
+[2023-05-20 17:22:52] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-20 17:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mokkari
+[2023-05-20 17:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: atproto
+[2023-05-20 17:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: beewi-smartclim-ble
+[2023-05-20 17:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SciAssist
+[2023-05-20 17:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tree-parsing
+[2023-05-20 17:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-tbase-post
+[2023-05-20 17:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: investor8-sdk
+[2023-05-20 17:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: business-profile-yelp-local
+[2023-05-20 17:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mkdocs-placeholder-plugin
+[2023-05-20 17:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sluyspy
+[2023-05-20 17:22:52] INFO root fetch - processPackages [atproto]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-20 17:22:52] INFO root fetch - processPackages [beewi-smartclim-ble]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-20 17:22:52] INFO root fetch - processPackages [mokkari]: New version: [2.5.0] Old Version: [2.4.0]
+[2023-05-20 17:22:52] INFO root fetch - processPackages [SciAssist]: New version: [0.0.38] Old Version: [0.0.37]
+[2023-05-20 17:22:52] INFO root fetch - processPackages [sluyspy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 17:22:52] WARNING root fetch - processPackages [django-tbase-post]: Skipping, unable to determine old version
+[2023-05-20 17:22:52] INFO root fetch - processPackages [mkdocs-placeholder-plugin]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-05-20 17:22:52] INFO root fetch - processPackages [django-tbase-post]: Start processing: sorobn
+[2023-05-20 17:22:52] INFO root fetch - main [MainThread]: End processing [django-tbase-post] error
+[2023-05-20 17:22:52] INFO root fetch - processPackages [business-profile-yelp-local]: New version: [0.0.6] Old Version: [0.0.3]
+[2023-05-20 17:22:52] INFO root fetch - processPackages [investor8-sdk]: New version: [1.1.9] Old Version: [1.1.82]
+[2023-05-20 17:22:52] WARNING root fetch - processPackages [tree-parsing]: Skipping, unable to determine old version
+[2023-05-20 17:22:52] INFO root fetch - processPackages [tree-parsing]: Start processing: django-tbase-post-product
+[2023-05-20 17:22:52] INFO root fetch - main [MainThread]: End processing [tree-parsing] error
+[2023-05-20 17:22:52] WARNING root fetch - processPackages [sorobn]: Skipping, unable to determine old version
+[2023-05-20 17:22:52] INFO root fetch - main [MainThread]: End processing [sorobn] error
+[2023-05-20 17:22:52] INFO root fetch - processPackages [sluyspy]: executing diffoscope
+[2023-05-20 17:22:52] INFO root fetch - processPackages [sluyspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sluyspy-0.0.8.tar.gz tmp/sluyspy-0.0.9.tar.gz --markdown 20230520/s/sluyspy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 17:22:52] WARNING root fetch - processPackages [django-tbase-post-product]: Skipping, unable to determine old version
+[2023-05-20 17:22:52] INFO root fetch - main [MainThread]: End processing [django-tbase-post-product] error
+[2023-05-20 17:22:52] INFO root fetch - processPackages [investor8-sdk]: Downloading https://files.pythonhosted.org/packages/0c/a2/3375f01ee37ff9582770315ec7133b5314e7b88a3e188ce3389a63f40c9f/investor8-sdk-1.1.82.tar.gz
+[2023-05-20 17:22:52] INFO root fetch - processPackages [SciAssist]: Downloading https://files.pythonhosted.org/packages/fc/60/3f11c5e82e0d3d2eb808de121e775588ce34b3ce343284231e69fb5a5d5b/SciAssist-0.0.38.tar.gz
+[2023-05-20 17:22:52] INFO root fetch - processPackages [mkdocs-placeholder-plugin]: Downloading https://files.pythonhosted.org/packages/39/55/4318e2b87fda7d51b42e26ea26e60fc7e06179e161c2f2754fed5f57d24a/mkdocs-placeholder-plugin-0.3.1.tar.gz
+[2023-05-20 17:22:52] INFO root fetch - processPackages [business-profile-yelp-local]: Downloading https://files.pythonhosted.org/packages/9b/e6/231ef96a80f45e576cc4fd1f914461ed56f6537af4d81ed626262100cbb9/business-profile-yelp-local-0.0.3.tar.gz
+[2023-05-20 17:22:52] INFO root fetch - processPackages [SciAssist]: executing diffoscope
+[2023-05-20 17:22:52] INFO root fetch - processPackages [SciAssist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SciAssist-0.0.37.tar.gz tmp/SciAssist-0.0.38.tar.gz --markdown 20230520/S/SciAssist/0.0.37-0.0.38/diff.md --exclude *.pyd
+[2023-05-20 17:22:52] INFO root fetch - processPackages [investor8-sdk]: executing diffoscope
+[2023-05-20 17:22:52] INFO root fetch - processPackages [investor8-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/investor8-sdk-1.1.82.tar.gz tmp/investor8-sdk-1.1.9.tar.gz --markdown 20230520/i/investor8-sdk/1.1.82-1.1.9/diff.md --exclude *.pyd
+[2023-05-20 17:22:52] INFO root fetch - processPackages [atproto]: Downloading https://files.pythonhosted.org/packages/0b/34/fb08777f3729c7afba62de139a9bce0c72ad0b9406631cfb494c347cd3ed/atproto-0.0.7.tar.gz
+[2023-05-20 17:22:52] INFO root fetch - processPackages [mokkari]: Downloading https://files.pythonhosted.org/packages/d1/0b/f128441878b7d36368841d62eed3153645e1cf790dacfb34d6ad84e4540e/mokkari-2.5.0.tar.gz
+[2023-05-20 17:22:52] INFO root fetch - processPackages [atproto]: executing diffoscope
+[2023-05-20 17:22:52] INFO root fetch - processPackages [atproto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atproto-0.0.6.tar.gz tmp/atproto-0.0.7.tar.gz --markdown 20230520/a/atproto/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-20 17:22:52] INFO root fetch - processPackages [beewi-smartclim-ble]: Downloading https://files.pythonhosted.org/packages/c2/73/c52bcdd9c0b7e102578969057fb89546926c8f717a907d7374ee4991e691/beewi_smartclim_ble-0.2.0.tar.gz
+[2023-05-20 17:22:52] INFO root fetch - processPackages [mokkari]: executing diffoscope
+[2023-05-20 17:22:52] INFO root fetch - processPackages [mokkari]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mokkari-2.4.0.tar.gz tmp/mokkari-2.5.0.tar.gz --markdown 20230520/m/mokkari/2.4.0-2.5.0/diff.md --exclude *.pyd
+[2023-05-20 17:22:52] INFO root fetch - processPackages [business-profile-yelp-local]: Downloading https://files.pythonhosted.org/packages/19/1e/a742cd50b5eb9621c7eafcd3e5a3cb15bc47cc635a283557f286535cc739/business_profile_yelp_local-0.0.6.tar.gz
+[2023-05-20 17:22:52] INFO root fetch - processPackages [mkdocs-placeholder-plugin]: Downloading https://files.pythonhosted.org/packages/5f/4d/dd13507228e5d3d389fef78be5630a2085aac39b6d0047c68b8157214fa8/mkdocs-placeholder-plugin-0.4.0.tar.gz
+[2023-05-20 17:22:52] INFO root fetch - processPackages [beewi-smartclim-ble]: executing diffoscope
+[2023-05-20 17:22:52] INFO root fetch - processPackages [beewi-smartclim-ble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beewi_smartclim_ble-0.1.1.tar.gz tmp/beewi_smartclim_ble-0.2.0.tar.gz --markdown 20230520/b/beewi-smartclim-ble/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-20 17:22:52] INFO root fetch - processPackages [business-profile-yelp-local]: executing diffoscope
+[2023-05-20 17:22:52] INFO root fetch - processPackages [business-profile-yelp-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/business-profile-yelp-local-0.0.3.tar.gz tmp/business_profile_yelp_local-0.0.6.tar.gz --markdown 20230520/b/business-profile-yelp-local/0.0.3-0.0.6/diff.md --exclude *.pyd
+[2023-05-20 17:22:53] INFO root fetch - processPackages [mkdocs-placeholder-plugin]: executing diffoscope
+[2023-05-20 17:22:53] INFO root fetch - processPackages [mkdocs-placeholder-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-placeholder-plugin-0.3.1.tar.gz tmp/mkdocs-placeholder-plugin-0.4.0.tar.gz --markdown 20230520/m/mkdocs-placeholder-plugin/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-05-20 17:22:53] INFO root fetch - main [MainThread]: End processing [sluyspy]: success
+[2023-05-20 17:22:54] INFO root fetch - main [MainThread]: End processing [beewi-smartclim-ble]: success
+[2023-05-20 17:22:54] INFO root fetch - main [MainThread]: End processing [business-profile-yelp-local]: success
+[2023-05-20 17:22:54] INFO root fetch - main [MainThread]: End processing [SciAssist]: success
+[2023-05-20 17:22:55] INFO root fetch - main [MainThread]: End processing [mkdocs-placeholder-plugin]: success
+[2023-05-20 17:22:55] INFO root fetch - main [MainThread]: End processing [atproto]: success
+[2023-05-20 17:22:56] INFO root fetch - main [MainThread]: End processing [mokkari]: success
+[2023-05-20 17:23:01] INFO root fetch - main [MainThread]: End processing [investor8-sdk]: success
+[2023-05-20 17:23:01] INFO root fetch - main [MainThread]: Store serial: [18182923]
