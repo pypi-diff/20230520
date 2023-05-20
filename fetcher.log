@@ -9619,3 +9619,50 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 15:00:07] INFO root fetch - main [MainThread]: End processing [ansible-navigator]: success
 [2023-05-20 15:00:07] INFO root fetch - main [MainThread]: End processing [llama-cpp-python]: success
 [2023-05-20 15:00:07] INFO root fetch - main [MainThread]: Store serial: [18182059]
+[2023-05-20 15:05:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182059]
+[2023-05-20 15:05:16] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-20 15:05:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ezbeq
+[2023-05-20 15:05:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NuMeTriS
+[2023-05-20 15:05:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fbgemm-gpu-nightly-cpu
+[2023-05-20 15:05:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyqrack
+[2023-05-20 15:05:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ercotutils
+[2023-05-20 15:05:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mkdocs-flavorwheel-plugin
+[2023-05-20 15:05:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: uuyoupinapi
+[2023-05-20 15:05:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: shinherpro
+[2023-05-20 15:05:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: command-line-loom
+[2023-05-20 15:05:16] INFO root fetch - processPackages [mkdocs-flavorwheel-plugin]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-20 15:05:16] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2023.5.19] Old Version: [2023.5.18]
+[2023-05-20 15:05:16] INFO root fetch - processPackages [uuyoupinapi]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-20 15:05:16] WARNING root fetch - processPackages [ercotutils]: Skipping, unable to determine old version
+[2023-05-20 15:05:16] INFO root fetch - processPackages [shinherpro]: New version: [1.5.5] Old Version: [1.5.4]
+[2023-05-20 15:05:16] INFO root fetch - main [MainThread]: End processing [ercotutils] error
+[2023-05-20 15:05:16] INFO root fetch - processPackages [command-line-loom]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-20 15:05:16] WARNING root fetch - processPackages [NuMeTriS]: Skipping, unable to determine old version
+[2023-05-20 15:05:16] INFO root fetch - main [MainThread]: End processing [NuMeTriS] error
+[2023-05-20 15:05:16] INFO root fetch - processPackages [ezbeq]: New version: [1.0.0b9] Old Version: [1.0.0b8]
+[2023-05-20 15:05:16] INFO root fetch - processPackages [pyqrack]: New version: [1.9.6] Old Version: [1.9.5]
+[2023-05-20 15:05:16] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2023-05-20 15:05:16] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2023.5.18-cp39-cp39-manylinux1_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2023.5.19-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20230520/f/fbgemm-gpu-nightly-cpu/2023.5.18-2023.5.19/diff.md --exclude *.pyd
+[2023-05-20 15:05:16] INFO root fetch - processPackages [command-line-loom]: executing diffoscope
+[2023-05-20 15:05:16] INFO root fetch - processPackages [command-line-loom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/command_line_loom-0.0.4.tar.gz tmp/command_line_loom-0.0.5.tar.gz --markdown 20230520/c/command-line-loom/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-20 15:05:16] INFO root fetch - processPackages [mkdocs-flavorwheel-plugin]: Downloading https://files.pythonhosted.org/packages/e2/01/9ab83847acda463646dce8b09d3def035ae03988c2b00f94f8bebdaeef7b/mkdocs-flavorwheel-plugin-0.0.3.tar.gz
+[2023-05-20 15:05:16] INFO root fetch - processPackages [uuyoupinapi]: Downloading https://files.pythonhosted.org/packages/7f/b4/4ec1f84d318ac8644de62af4b970dee64e98c950c8819790e46a65787e6e/uuyoupinapi-0.1.2.tar.gz
+[2023-05-20 15:05:16] INFO root fetch - processPackages [pyqrack]: executing diffoscope
+[2023-05-20 15:05:16] INFO root fetch - processPackages [pyqrack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqrack-1.9.5.tar.gz tmp/pyqrack-1.9.6.tar.gz --markdown 20230520/p/pyqrack/1.9.5-1.9.6/diff.md --exclude *.pyd
+[2023-05-20 15:05:16] INFO root fetch - processPackages [shinherpro]: Downloading https://files.pythonhosted.org/packages/43/03/c23a05cdab4b1d785b5d2842cb3a9d7d49d6113e8c73edc9b97092ccb027/shinherpro-1.5.4-py3-none-any.whl
+[2023-05-20 15:05:16] INFO root fetch - processPackages [uuyoupinapi]: executing diffoscope
+[2023-05-20 15:05:16] INFO root fetch - processPackages [uuyoupinapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uuyoupinapi-0.1.1.tar.gz tmp/uuyoupinapi-0.1.2.tar.gz --markdown 20230520/u/uuyoupinapi/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-20 15:05:16] WARNING root fetch - processPackages [shinherpro]: Skipping package: exceeds size limit 98030735>=10485760
+[2023-05-20 15:05:16] INFO root fetch - main [MainThread]: End processing [shinherpro] error
+[2023-05-20 15:05:16] INFO root fetch - processPackages [ezbeq]: executing diffoscope
+[2023-05-20 15:05:16] INFO root fetch - processPackages [ezbeq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezbeq-1.0.0b8.tar.gz tmp/ezbeq-1.0.0b9.tar.gz --markdown 20230520/e/ezbeq/1.0.0b8-1.0.0b9/diff.md --exclude *.pyd
+[2023-05-20 15:05:16] INFO root fetch - processPackages [mkdocs-flavorwheel-plugin]: Downloading https://files.pythonhosted.org/packages/b0/df/a7d9737fc42505a78aade664b99c38752872607e3412a85cd123ad9aedd8/mkdocs-flavorwheel-plugin-0.0.4.tar.gz
+[2023-05-20 15:05:17] INFO root fetch - processPackages [mkdocs-flavorwheel-plugin]: executing diffoscope
+[2023-05-20 15:05:17] INFO root fetch - processPackages [mkdocs-flavorwheel-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-flavorwheel-plugin-0.0.3.tar.gz tmp/mkdocs-flavorwheel-plugin-0.0.4.tar.gz --markdown 20230520/m/mkdocs-flavorwheel-plugin/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-20 15:05:17] INFO root fetch - main [MainThread]: End processing [command-line-loom]: success
+[2023-05-20 15:05:17] INFO root fetch - main [MainThread]: End processing [pyqrack]: success
+[2023-05-20 15:05:18] INFO root fetch - main [MainThread]: End processing [uuyoupinapi]: success
+[2023-05-20 15:05:18] INFO root fetch - main [MainThread]: End processing [mkdocs-flavorwheel-plugin]: success
+[2023-05-20 15:05:25] INFO root fetch - main [MainThread]: End processing [ezbeq]: success
+[2023-05-20 15:06:14] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2023-05-20 15:06:14] INFO root fetch - main [MainThread]: Store serial: [18182098]
