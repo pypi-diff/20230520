@@ -12672,3 +12672,38 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 21:14:18] INFO root fetch - processPackages [discovery-transition-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discovery-transition-ds-4.9.8.tar.gz tmp/discovery-transition-ds-4.9.9.tar.gz --markdown 20230520/d/discovery-transition-ds/4.9.8-4.9.9/diff.md --exclude *.pyd
 [2023-05-20 21:14:22] INFO root fetch - main [MainThread]: End processing [discovery-transition-ds]: success
 [2023-05-20 21:14:22] INFO root fetch - main [MainThread]: Store serial: [18183932]
+[2023-05-20 21:19:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183932]
+[2023-05-20 21:19:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-20 21:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycalaos
+[2023-05-20 21:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ffpack
+[2023-05-20 21:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cs-models
+[2023-05-20 21:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: krakenci-client
+[2023-05-20 21:19:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sshclick
+[2023-05-20 21:19:30] INFO root fetch - processPackages [ffpack]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-20 21:19:30] INFO root fetch - processPackages [pycalaos]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 21:19:30] INFO root fetch - processPackages [cs-models]: New version: [0.0.99.dev4] Old Version: [0.0.99.dev3]
+[2023-05-20 21:19:31] INFO root fetch - processPackages [krakenci-client]: New version: [1.2.2] Old Version: [1.1.45]
+[2023-05-20 21:19:31] INFO root fetch - processPackages [sshclick]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-20 21:19:31] INFO root fetch - processPackages [ffpack]: Downloading https://files.pythonhosted.org/packages/75/15/26a3379e2e8806f0796af6e552f802c80a59f7277690e78d21a96bd619ec/ffpack-0.3.3.tar.gz
+[2023-05-20 21:19:31] INFO root fetch - processPackages [cs-models]: Downloading https://files.pythonhosted.org/packages/0e/4f/33efc921aa3ee23f877dda213d1b962dac83a38135b32d2850eb48c2c6a8/cs-models-0.0.99.dev3.tar.gz
+[2023-05-20 21:19:31] INFO root fetch - processPackages [krakenci-client]: Downloading https://files.pythonhosted.org/packages/9e/1b/6fef8f89f0969252cc3693a159f13506e2279713ccf7fb1ee45d00f25165/krakenci_client-1.1.45.tar.gz
+[2023-05-20 21:19:31] INFO root fetch - processPackages [ffpack]: executing diffoscope
+[2023-05-20 21:19:31] INFO root fetch - processPackages [ffpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ffpack-0.3.2.tar.gz tmp/ffpack-0.3.3.tar.gz --markdown 20230520/f/ffpack/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-20 21:19:31] INFO root fetch - processPackages [sshclick]: Downloading https://files.pythonhosted.org/packages/d0/e9/5f1368c47f7af98e9b6df3b3c024ddc87142cee5ff6d125ab78456c10b78/sshclick-0.5.0.tar.gz
+[2023-05-20 21:19:31] INFO root fetch - processPackages [pycalaos]: executing diffoscope
+[2023-05-20 21:19:31] INFO root fetch - processPackages [pycalaos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycalaos-0.0.8.tar.gz tmp/pycalaos-0.0.9.tar.gz --markdown 20230520/p/pycalaos/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 21:19:31] INFO root fetch - processPackages [cs-models]: Downloading https://files.pythonhosted.org/packages/8c/4c/e48ab48e00c2dd2f9799da4f76632085fd545ef18606abde256a640ffa7a/cs-models-0.0.99.dev4.tar.gz
+[2023-05-20 21:19:31] INFO root fetch - processPackages [sshclick]: Downloading https://files.pythonhosted.org/packages/bc/ba/a13ebe6574fcd5620b51071f50ecf3a92653a2e1470f5afd60b633d486ca/sshclick-0.6.0.tar.gz
+[2023-05-20 21:19:31] INFO root fetch - processPackages [krakenci-client]: Downloading https://files.pythonhosted.org/packages/24/06/ca3c33c7e90a575a1ef233afcefbb0451252c0287cf369d265742c2857fe/krakenci_client-1.2.2.tar.gz
+[2023-05-20 21:19:31] INFO root fetch - processPackages [cs-models]: executing diffoscope
+[2023-05-20 21:19:31] INFO root fetch - processPackages [cs-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs-models-0.0.99.dev3.tar.gz tmp/cs-models-0.0.99.dev4.tar.gz --markdown 20230520/c/cs-models/0.0.99.dev3-0.0.99.dev4/diff.md --exclude *.pyd
+[2023-05-20 21:19:31] INFO root fetch - processPackages [krakenci-client]: executing diffoscope
+[2023-05-20 21:19:31] INFO root fetch - processPackages [krakenci-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krakenci_client-1.1.45.tar.gz tmp/krakenci_client-1.2.2.tar.gz --markdown 20230520/k/krakenci-client/1.1.45-1.2.2/diff.md --exclude *.pyd
+[2023-05-20 21:19:32] INFO root fetch - processPackages [sshclick]: executing diffoscope
+[2023-05-20 21:19:32] INFO root fetch - processPackages [sshclick]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sshclick-0.5.0.tar.gz tmp/sshclick-0.6.0.tar.gz --markdown 20230520/s/sshclick/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-20 21:19:32] INFO root fetch - main [MainThread]: End processing [pycalaos]: success
+[2023-05-20 21:19:32] INFO root fetch - main [MainThread]: End processing [ffpack]: success
+[2023-05-20 21:19:32] INFO root fetch - main [MainThread]: End processing [krakenci-client]: success
+[2023-05-20 21:19:33] INFO root fetch - main [MainThread]: End processing [sshclick]: success
+[2023-05-20 21:19:33] INFO root fetch - main [MainThread]: End processing [cs-models]: success
+[2023-05-20 21:19:33] INFO root fetch - main [MainThread]: Store serial: [18183942]
