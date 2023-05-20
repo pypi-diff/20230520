@@ -10261,3 +10261,59 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 16:09:25] INFO root fetch - main [MainThread]: End processing [mitmproxy2swagger]: success
 [2023-05-20 16:10:06] INFO root fetch - main [MainThread]: End processing [neopolitan]: success
 [2023-05-20 16:10:06] INFO root fetch - main [MainThread]: Store serial: [18182570]
+[2023-05-20 16:15:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182570]
+[2023-05-20 16:15:15] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-20 16:15:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: file-and-string-encryption
+[2023-05-20 16:15:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xpanther
+[2023-05-20 16:15:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: molecule-multipass
+[2023-05-20 16:15:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nvm
+[2023-05-20 16:15:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: statml
+[2023-05-20 16:15:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PyDistances
+[2023-05-20 16:15:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: do-py
+[2023-05-20 16:15:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: audiconnectpy
+[2023-05-20 16:15:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pseudocerastes
+[2023-05-20 16:15:15] INFO root fetch - processPackages [molecule-multipass]: New version: [0.4.0] Old Version: [0.3.5]
+[2023-05-20 16:15:15] INFO root fetch - processPackages [audiconnectpy]: New version: [1.4.0] Old Version: [1.3.9]
+[2023-05-20 16:15:15] INFO root fetch - processPackages [nvm]: New version: [1.0.7] Old Version: [1.0.5]
+[2023-05-20 16:15:15] INFO root fetch - processPackages [xpanther]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-20 16:15:15] INFO root fetch - processPackages [PyDistances]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-20 16:15:15] INFO root fetch - processPackages [file-and-string-encryption]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-05-20 16:15:15] INFO root fetch - processPackages [statml]: New version: [0.0.3] Old Version: [0.0.1]
+[2023-05-20 16:15:15] WARNING root fetch - processPackages [pseudocerastes]: Skipping, unable to determine old version
+[2023-05-20 16:15:15] INFO root fetch - processPackages [do-py]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-20 16:15:15] INFO root fetch - main [MainThread]: End processing [pseudocerastes] error
+[2023-05-20 16:15:16] INFO root fetch - processPackages [nvm]: executing diffoscope
+[2023-05-20 16:15:16] INFO root fetch - processPackages [nvm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvm-1.0.5.tar.gz tmp/nvm-1.0.7.tar.gz --markdown 20230520/n/nvm/1.0.5-1.0.7/diff.md --exclude *.pyd
+[2023-05-20 16:15:16] INFO root fetch - processPackages [molecule-multipass]: Downloading https://files.pythonhosted.org/packages/c6/65/9793576c0d514c483d74d1be877e868115fb7a796b6dc20a074689cb4558/molecule_multipass-0.3.5.tar.gz
+[2023-05-20 16:15:16] INFO root fetch - processPackages [PyDistances]: Downloading https://files.pythonhosted.org/packages/a3/30/a231ff87f3f81a5d7f6305419c222c113d8d61ac4033b2cb42a08346ff2c/PyDistances-0.0.8.tar.gz
+[2023-05-20 16:15:16] INFO root fetch - processPackages [xpanther]: Downloading https://files.pythonhosted.org/packages/0c/be/409d964bf4b04239ba5e99d2fa1d28dde7a74934b38272f8f1694865392a/xpanther-1.0.9.tar.gz
+[2023-05-20 16:15:16] INFO root fetch - processPackages [file-and-string-encryption]: Downloading https://files.pythonhosted.org/packages/bf/4e/d5011f083aee762a0fde8feb2af2aca2f88247fd5ce018ddd2b563a0fae3/file_and_string_encryption-0.0.0.tar.gz
+[2023-05-20 16:15:16] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/44/76/895ff6adbfcbc608596f4f4817c933a2a47cd3fe12975142b50354ea00cf/audiconnectpy-1.4.0.tar.gz
+[2023-05-20 16:15:16] INFO root fetch - processPackages [do-py]: Downloading https://files.pythonhosted.org/packages/26/20/2d79294b25e94e41ba0a942511ab96a71da6667bddd7641492b7e593f8b0/do-py-0.4.0.tar.gz
+[2023-05-20 16:15:16] INFO root fetch - processPackages [statml]: Downloading https://files.pythonhosted.org/packages/20/f2/3b60fc69882f803fbe7cb1c95b8028db5bb8db1d6e5080329c20527f4529/statml-0.0.3.tar.gz
+[2023-05-20 16:15:16] INFO root fetch - processPackages [xpanther]: executing diffoscope
+[2023-05-20 16:15:16] INFO root fetch - processPackages [xpanther]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xpanther-1.0.8.tar.gz tmp/xpanther-1.0.9.tar.gz --markdown 20230520/x/xpanther/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-20 16:15:16] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2023-05-20 16:15:16] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-1.3.9.tar.gz tmp/audiconnectpy-1.4.0.tar.gz --markdown 20230520/a/audiconnectpy/1.3.9-1.4.0/diff.md --exclude *.pyd
+[2023-05-20 16:15:16] INFO root fetch - processPackages [PyDistances]: executing diffoscope
+[2023-05-20 16:15:16] INFO root fetch - processPackages [PyDistances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyDistances-0.0.7.tar.gz tmp/PyDistances-0.0.8.tar.gz --markdown 20230520/P/PyDistances/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-20 16:15:16] INFO root fetch - processPackages [molecule-multipass]: Downloading https://files.pythonhosted.org/packages/be/9a/f7e6252318a8f6dbf540fbb7b0f95a051c7f968c8de284e637bed05e946e/molecule_multipass-0.4.0.tar.gz
+[2023-05-20 16:15:16] INFO root fetch - processPackages [file-and-string-encryption]: Downloading https://files.pythonhosted.org/packages/22/1f/2f791f86c26f505c8acfb3abe7d874478f40aec05e9518598c9592ed0545/file_and_string_encryption-0.0.1.tar.gz
+[2023-05-20 16:15:16] INFO root fetch - processPackages [statml]: executing diffoscope
+[2023-05-20 16:15:16] INFO root fetch - processPackages [statml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statml-0.0.1.tar.gz tmp/statml-0.0.3.tar.gz --markdown 20230520/s/statml/0.0.1-0.0.3/diff.md --exclude *.pyd
+[2023-05-20 16:15:16] INFO root fetch - processPackages [do-py]: Downloading https://files.pythonhosted.org/packages/e3/82/ab7853338419f8bcdf4e994f9856c552f356a9c55239226e4ab693ef518a/do-py-0.4.1.tar.gz
+[2023-05-20 16:15:16] INFO root fetch - processPackages [molecule-multipass]: executing diffoscope
+[2023-05-20 16:15:16] INFO root fetch - processPackages [molecule-multipass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/molecule_multipass-0.3.5.tar.gz tmp/molecule_multipass-0.4.0.tar.gz --markdown 20230520/m/molecule-multipass/0.3.5-0.4.0/diff.md --exclude *.pyd
+[2023-05-20 16:15:16] INFO root fetch - processPackages [file-and-string-encryption]: executing diffoscope
+[2023-05-20 16:15:16] INFO root fetch - processPackages [file-and-string-encryption]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/file_and_string_encryption-0.0.0.tar.gz tmp/file_and_string_encryption-0.0.1.tar.gz --markdown 20230520/f/file-and-string-encryption/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-05-20 16:15:16] INFO root fetch - processPackages [do-py]: executing diffoscope
+[2023-05-20 16:15:16] INFO root fetch - processPackages [do-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/do-py-0.4.0.tar.gz tmp/do-py-0.4.1.tar.gz --markdown 20230520/d/do-py/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-20 16:15:17] INFO root fetch - main [MainThread]: End processing [xpanther]: success
+[2023-05-20 16:15:17] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2023-05-20 16:15:17] INFO root fetch - main [MainThread]: End processing [PyDistances]: success
+[2023-05-20 16:15:17] INFO root fetch - main [MainThread]: End processing [statml]: success
+[2023-05-20 16:15:17] INFO root fetch - main [MainThread]: End processing [file-and-string-encryption]: success
+[2023-05-20 16:15:18] INFO root fetch - main [MainThread]: End processing [molecule-multipass]: success
+[2023-05-20 16:15:18] INFO root fetch - main [MainThread]: End processing [do-py]: success
+[2023-05-20 16:15:19] INFO root fetch - main [MainThread]: End processing [nvm]: success
+[2023-05-20 16:15:19] INFO root fetch - main [MainThread]: Store serial: [18182603]
