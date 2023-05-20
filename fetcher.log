@@ -7295,3 +7295,47 @@
 [2023-05-20 10:40:58] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
 [2023-05-20 10:41:06] INFO root fetch - main [MainThread]: End processing [Kivy-examples]: success
 [2023-05-20 10:41:06] INFO root fetch - main [MainThread]: Store serial: [18180662]
+[2023-05-20 10:46:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180662]
+[2023-05-20 10:46:15] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-20 10:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: etsy-apiv3
+[2023-05-20 10:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kcli
+[2023-05-20 10:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tfp-nightly
+[2023-05-20 10:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kfish
+[2023-05-20 10:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: apache-tvm
+[2023-05-20 10:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mkdocs-material
+[2023-05-20 10:46:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: geomagpy
+[2023-05-20 10:46:15] INFO root fetch - processPackages [kfish]: New version: [99.0.202305192204] Old Version: [99.0.202305191815]
+[2023-05-20 10:46:15] INFO root fetch - processPackages [apache-tvm]: New version: [0.9.0] Old Version: [0.13.dev74]
+[2023-05-20 10:46:15] INFO root fetch - processPackages [etsy-apiv3]: New version: [1.7.9] Old Version: [1.7.8]
+[2023-05-20 10:46:15] INFO root fetch - processPackages [kcli]: New version: [99.0.202305192200] Old Version: [99.0.202305191812]
+[2023-05-20 10:46:15] INFO root fetch - processPackages [apache-tvm]: Downloading https://files.pythonhosted.org/packages/57/7a/0e255cdf4cdfcca6b5e06c1ebe9b4c9178b3919cfeb0251f35b0977d59c3/apache_tvm-0.13.dev74-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-20 10:46:15] INFO root fetch - processPackages [geomagpy]: New version: [v0.3.93] Old Version: [v0.3.92]
+[2023-05-20 10:46:15] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2023-05-20 10:46:15] INFO root fetch - processPackages [mkdocs-material]: New version: [9.1.9] Old Version: [9.1.8]
+[2023-05-20 10:46:15] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-05-20 10:46:15] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202305191815-py3-none-any.whl.zip tmp/kfish-99.0.202305192204-py3-none-any.whl.zip --markdown 20230520/k/kfish/99.0.202305191815-99.0.202305192204/diff.md --exclude *.pyd
+[2023-05-20 10:46:15] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-20 10:46:15] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305191812-py3-none-any.whl.zip tmp/kcli-99.0.202305192200-py3-none-any.whl.zip --markdown 20230520/k/kcli/99.0.202305191812-99.0.202305192200/diff.md --exclude *.pyd
+[2023-05-20 10:46:15] INFO root fetch - processPackages [etsy-apiv3]: Downloading https://files.pythonhosted.org/packages/60/d3/f10cfefe78403b0b30a522d4c508e7311fa810be6314e1fa25190360f101/etsy-apiv3-1.7.9.tar.gz
+[2023-05-20 10:46:15] INFO root fetch - processPackages [mkdocs-material]: Downloading https://files.pythonhosted.org/packages/a9/6c/057f38f3d460bbdad4acffee8121fcfaa86df945bf77636803f770925c31/mkdocs_material-9.1.8.tar.gz
+[2023-05-20 10:46:15] INFO root fetch - processPackages [etsy-apiv3]: executing diffoscope
+[2023-05-20 10:46:15] INFO root fetch - processPackages [etsy-apiv3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etsy-apiv3-1.7.8.tar.gz tmp/etsy-apiv3-1.7.9.tar.gz --markdown 20230520/e/etsy-apiv3/1.7.8-1.7.9/diff.md --exclude *.pyd
+[2023-05-20 10:46:15] INFO root fetch - processPackages [geomagpy]: Downloading https://files.pythonhosted.org/packages/77/d0/d8eb1aee93304a36703de212a15ad0fe7aa3b58d798e2f4a670d09daf331/GeomagPy-v0.3.92.tar.gz
+[2023-05-20 10:46:15] WARNING root fetch - processPackages [apache-tvm]: Skipping package: exceeds size limit 48354866>=10485760
+[2023-05-20 10:46:15] INFO root fetch - main [MainThread]: End processing [apache-tvm] error
+[2023-05-20 10:46:16] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2023-05-20 10:46:16] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20230520/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/diff.md --exclude *.pyd
+[2023-05-20 10:46:16] INFO root fetch - processPackages [geomagpy]: Downloading https://files.pythonhosted.org/packages/f6/5c/a671546f60311c207c752e82f60875d2fa5f0f5c0fd684f3a9bd3b015398/GeomagPy-v0.3.93.tar.gz
+[2023-05-20 10:46:16] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-05-20 10:46:16] INFO root fetch - processPackages [geomagpy]: executing diffoscope
+[2023-05-20 10:46:16] INFO root fetch - processPackages [geomagpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GeomagPy-v0.3.92.tar.gz tmp/GeomagPy-v0.3.93.tar.gz --markdown 20230520/g/geomagpy/v0.3.92-v0.3.93/diff.md --exclude *.pyd
+[2023-05-20 10:46:16] INFO root fetch - processPackages [mkdocs-material]: Downloading https://files.pythonhosted.org/packages/07/ae/ccd917452bc195e979cf3dbe4ec95f54e72e925fa8234b66e126b57a6a07/mkdocs_material-9.1.9.tar.gz
+[2023-05-20 10:46:17] INFO root fetch - main [MainThread]: End processing [etsy-apiv3]: success
+[2023-05-20 10:46:18] INFO root fetch - processPackages [mkdocs-material]: executing diffoscope
+[2023-05-20 10:46:18] INFO root fetch - processPackages [mkdocs-material]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_material-9.1.8.tar.gz tmp/mkdocs_material-9.1.9.tar.gz --markdown 20230520/m/mkdocs-material/9.1.8-9.1.9/diff.md --exclude *.pyd
+[2023-05-20 10:46:19] INFO root fetch - main [MainThread]: End processing [geomagpy]: success
+[2023-05-20 10:46:23] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-20 10:46:30] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2023-05-20 10:49:18] ERROR root fetch - processPackages [mkdocs-material]: Timeout during execution of pkgdiff
+[2023-05-20 10:49:18] INFO root fetch - main [MainThread]: End processing [mkdocs-material] error
+[2023-05-20 10:49:18] INFO root fetch - main [MainThread]: Store serial: [18180688]
