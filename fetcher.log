@@ -12473,3 +12473,53 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 20:47:35] INFO root fetch - main [MainThread]: End processing [discord-qalib]: success
 [2023-05-20 20:47:36] INFO root fetch - main [MainThread]: End processing [psyke]: success
 [2023-05-20 20:47:36] INFO root fetch - main [MainThread]: Store serial: [18183839]
+[2023-05-20 20:52:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183839]
+[2023-05-20 20:52:45] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-20 20:52:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: soral-data-test
+[2023-05-20 20:52:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MakerToolbox
+[2023-05-20 20:52:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cli-command-parser
+[2023-05-20 20:52:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: resend
+[2023-05-20 20:52:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cjm-pytorch-utils
+[2023-05-20 20:52:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: BTKSorgu
+[2023-05-20 20:52:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cloudflare
+[2023-05-20 20:52:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: absbox
+[2023-05-20 20:52:45] INFO root fetch - processPackages [resend]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-20 20:52:45] WARNING root fetch - processPackages [MakerToolbox]: Skipping, unable to determine old version
+[2023-05-20 20:52:45] INFO root fetch - processPackages [soral-data-test]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-20 20:52:45] INFO root fetch - main [MainThread]: End processing [MakerToolbox] error
+[2023-05-20 20:52:45] INFO root fetch - processPackages [cjm-pytorch-utils]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-20 20:52:45] INFO root fetch - processPackages [cli-command-parser]: New version: [2023.5.8] Old Version: [2023.5.20]
+[2023-05-20 20:52:45] INFO root fetch - processPackages [BTKSorgu]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-05-20 20:52:45] INFO root fetch - processPackages [cloudflare]: New version: [2.9.9] Old Version: [2.9.8]
+[2023-05-20 20:52:45] INFO root fetch - processPackages [cloudflare]: executing diffoscope
+[2023-05-20 20:52:45] INFO root fetch - processPackages [cloudflare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudflare-2.9.8.tar.gz tmp/cloudflare-2.9.9.tar.gz --markdown 20230520/c/cloudflare/2.9.8-2.9.9/diff.md --exclude *.pyd
+[2023-05-20 20:52:45] INFO root fetch - processPackages [cli-command-parser]: Downloading https://files.pythonhosted.org/packages/6c/d8/f0082976eddee7ecd9e5b653514d8e2cffb243b60ca0031ba8221c08a7e0/cli_command_parser-2023.5.20.tar.gz
+[2023-05-20 20:52:45] INFO root fetch - processPackages [absbox]: New version: [0.9.3] Old Version: [0.8.9]
+[2023-05-20 20:52:45] INFO root fetch - processPackages [resend]: Downloading https://files.pythonhosted.org/packages/e8/84/6a678d2b576df838f092c03c2fd41404014f59d7f2db74816cd252ec497b/resend-0.3.0.tar.gz
+[2023-05-20 20:52:45] INFO root fetch - processPackages [cjm-pytorch-utils]: Downloading https://files.pythonhosted.org/packages/ae/58/d21062c8a483766848a2b3f38b7d4238daef7589ed456cc57f3e1f06b115/cjm-pytorch-utils-0.0.4.tar.gz
+[2023-05-20 20:52:45] INFO root fetch - processPackages [BTKSorgu]: Downloading https://files.pythonhosted.org/packages/85/71/bb11e942d425710894705a0e713db4ae1709a0669a5d6a5e3b183f9f450e/BTKSorgu-1.2.4.tar.gz
+[2023-05-20 20:52:45] INFO root fetch - processPackages [soral-data-test]: Downloading https://files.pythonhosted.org/packages/d7/aa/94e634edf3c63084a99d070c8593a9827376f5dbc304c772bf4d4242ab01/soral-data-test-0.0.4.tar.gz
+[2023-05-20 20:52:45] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/f2/f5/d913079148fbe1aebd6fc56849f3245eda346886eb6d2488747d9a978493/AbsBox-0.8.9.tar.gz
+[2023-05-20 20:52:45] INFO root fetch - processPackages [cli-command-parser]: executing diffoscope
+[2023-05-20 20:52:45] INFO root fetch - processPackages [cli-command-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli_command_parser-2023.5.20.tar.gz tmp/cli_command_parser-2023.5.8.tar.gz --markdown 20230520/c/cli-command-parser/2023.5.20-2023.5.8/diff.md --exclude *.pyd
+[2023-05-20 20:52:45] INFO root fetch - processPackages [BTKSorgu]: executing diffoscope
+[2023-05-20 20:52:45] INFO root fetch - processPackages [BTKSorgu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BTKSorgu-1.2.3.tar.gz tmp/BTKSorgu-1.2.4.tar.gz --markdown 20230520/B/BTKSorgu/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-05-20 20:52:45] INFO root fetch - processPackages [cjm-pytorch-utils]: Downloading https://files.pythonhosted.org/packages/f7/16/13d739b2c799dafa77bf24123ef0acd275572d69d7e37ddc33f4e6d360d6/cjm-pytorch-utils-0.0.5.tar.gz
+[2023-05-20 20:52:45] INFO root fetch - processPackages [soral-data-test]: executing diffoscope
+[2023-05-20 20:52:45] INFO root fetch - processPackages [soral-data-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soral-data-test-0.0.3.tar.gz tmp/soral-data-test-0.0.4.tar.gz --markdown 20230520/s/soral-data-test/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-20 20:52:46] INFO root fetch - processPackages [resend]: Downloading https://files.pythonhosted.org/packages/76/b6/73035313503922a7ea4c8c414f738f7ac5b8712b95e3c351f531213d0318/resend-0.4.0.tar.gz
+[2023-05-20 20:52:46] INFO root fetch - processPackages [cjm-pytorch-utils]: executing diffoscope
+[2023-05-20 20:52:46] INFO root fetch - processPackages [cjm-pytorch-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cjm-pytorch-utils-0.0.4.tar.gz tmp/cjm-pytorch-utils-0.0.5.tar.gz --markdown 20230520/c/cjm-pytorch-utils/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-20 20:52:46] INFO root fetch - processPackages [resend]: executing diffoscope
+[2023-05-20 20:52:46] INFO root fetch - processPackages [resend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resend-0.3.0.tar.gz tmp/resend-0.4.0.tar.gz --markdown 20230520/r/resend/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-20 20:52:46] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/63/df/8bc5a95a40d1cc98f7aa27a8baf79a5df19fa8dc2f6836ff02171d21c08a/AbsBox-0.9.3.tar.gz
+[2023-05-20 20:52:46] INFO root fetch - processPackages [absbox]: executing diffoscope
+[2023-05-20 20:52:46] INFO root fetch - processPackages [absbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AbsBox-0.8.9.tar.gz tmp/AbsBox-0.9.3.tar.gz --markdown 20230520/a/absbox/0.8.9-0.9.3/diff.md --exclude *.pyd
+[2023-05-20 20:52:47] INFO root fetch - main [MainThread]: End processing [cloudflare]: success
+[2023-05-20 20:52:47] INFO root fetch - main [MainThread]: End processing [BTKSorgu]: success
+[2023-05-20 20:52:47] INFO root fetch - main [MainThread]: End processing [soral-data-test]: success
+[2023-05-20 20:52:47] INFO root fetch - main [MainThread]: End processing [cjm-pytorch-utils]: success
+[2023-05-20 20:52:47] INFO root fetch - main [MainThread]: End processing [resend]: success
+[2023-05-20 20:52:48] INFO root fetch - main [MainThread]: End processing [absbox]: success
+[2023-05-20 20:52:49] INFO root fetch - main [MainThread]: End processing [cli-command-parser]: success
+[2023-05-20 20:52:49] INFO root fetch - main [MainThread]: Store serial: [18183863]
