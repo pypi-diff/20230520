@@ -11097,3 +11097,57 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 17:50:00] INFO root fetch - main [MainThread]: End processing [memory-graph]: success
 [2023-05-20 17:50:40] INFO root fetch - main [MainThread]: End processing [django-tbase-post]: success
 [2023-05-20 17:50:40] INFO root fetch - main [MainThread]: Store serial: [18183139]
+[2023-05-20 17:55:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183139]
+[2023-05-20 17:55:49] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-20 17:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sql-face
+[2023-05-20 17:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: audiconnectpy
+[2023-05-20 17:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bimmer-connected
+[2023-05-20 17:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dbtdocgen-rutryk
+[2023-05-20 17:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyselector
+[2023-05-20 17:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-tbase-post-product
+[2023-05-20 17:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wikiscrape
+[2023-05-20 17:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rpy2
+[2023-05-20 17:55:49] INFO root fetch - processPackages [audiconnectpy]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-05-20 17:55:49] INFO root fetch - processPackages [wikiscrape]: New version: [0.2.1] Old Version: [0.1.0]
+[2023-05-20 17:55:49] INFO root fetch - processPackages [django-tbase-post-product]: New version: [2023.5.2016845980] Old Version: [2023.5.2016845970]
+[2023-05-20 17:55:49] INFO root fetch - processPackages [bimmer-connected]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-20 17:55:49] INFO root fetch - processPackages [dbtdocgen-rutryk]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-20 17:55:49] INFO root fetch - processPackages [sql-face]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 17:55:49] INFO root fetch - processPackages [pyselector]: New version: [0.0.9] Old Version: [0.0.8b0]
+[2023-05-20 17:55:49] INFO root fetch - processPackages [rpy2]: New version: [3.5.9] Old Version: [3.5.8]
+[2023-05-20 17:55:49] INFO root fetch - processPackages [wikiscrape]: Downloading https://files.pythonhosted.org/packages/97/e4/0a799f08d5f6b9328a0f6cf58dbec09cae1ad2810114bc99df3c448c9c12/wikiscrape-0.1.0.tar.gz
+[2023-05-20 17:55:49] INFO root fetch - processPackages [django-tbase-post-product]: Downloading https://files.pythonhosted.org/packages/84/ef/ec420bc9650309cab7785b79b5926e4695bf3e175a2a7dbb465f322f72c3/django_tbase_post_product-2023.5.2016845980.tar.gz
+[2023-05-20 17:55:49] INFO root fetch - processPackages [sql-face]: Downloading https://files.pythonhosted.org/packages/44/27/ae06868c7c58403c38b06e533a4e6d084e9d82192b6b2266d8e6706e2d6f/sql-face-0.1.8.tar.gz
+[2023-05-20 17:55:49] INFO root fetch - processPackages [dbtdocgen-rutryk]: Downloading https://files.pythonhosted.org/packages/d5/44/8f2de7e55d9e69e4799535d383ab7ff4ffac96fa16e46aa3d46568aa3fe8/dbtdocgen_rutryk-0.0.3.tar.gz
+[2023-05-20 17:55:49] INFO root fetch - processPackages [bimmer-connected]: Downloading https://files.pythonhosted.org/packages/7c/aa/46a3e536f963dd4b99f0fa5e5e99e187586a44cd1708628848fda21dd74c/bimmer_connected-0.9.5.tar.gz
+[2023-05-20 17:55:49] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/ef/8b/b09c4d1d8714ccf8514fcb20c8bdb56d671acb679681d3ddebbc9a4fab1d/audiconnectpy-1.4.2.tar.gz
+[2023-05-20 17:55:49] INFO root fetch - processPackages [rpy2]: Downloading https://files.pythonhosted.org/packages/a2/63/442160f69e1f163c24a73a3796b9ebd63c217b73941e4888734687e225d4/rpy2-3.5.8.tar.gz
+[2023-05-20 17:55:49] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2023-05-20 17:55:49] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-1.4.1.tar.gz tmp/audiconnectpy-1.4.2.tar.gz --markdown 20230520/a/audiconnectpy/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-05-20 17:55:49] INFO root fetch - processPackages [django-tbase-post-product]: executing diffoscope
+[2023-05-20 17:55:49] INFO root fetch - processPackages [django-tbase-post-product]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_tbase_post_product-2023.5.2016845970.tar.gz tmp/django_tbase_post_product-2023.5.2016845980.tar.gz --markdown 20230520/d/django-tbase-post-product/2023.5.2016845970-2023.5.2016845980/diff.md --exclude *.pyd
+[2023-05-20 17:55:49] INFO root fetch - processPackages [dbtdocgen-rutryk]: executing diffoscope
+[2023-05-20 17:55:49] INFO root fetch - processPackages [dbtdocgen-rutryk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbtdocgen_rutryk-0.0.2.tar.gz tmp/dbtdocgen_rutryk-0.0.3.tar.gz --markdown 20230520/d/dbtdocgen-rutryk/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-20 17:55:49] INFO root fetch - processPackages [pyselector]: executing diffoscope
+[2023-05-20 17:55:49] INFO root fetch - processPackages [pyselector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyselector-0.0.8b0.tar.gz tmp/pyselector-0.0.9.tar.gz --markdown 20230520/p/pyselector/0.0.8b0-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 17:55:50] INFO root fetch - processPackages [wikiscrape]: Downloading https://files.pythonhosted.org/packages/a5/00/b305996bc8dadc04a16a4157c3198a3e94a3056521fe76882f7c943b5b5c/wikiscrape-0.2.1.tar.gz
+[2023-05-20 17:55:50] INFO root fetch - processPackages [sql-face]: Downloading https://files.pythonhosted.org/packages/e1/07/7e2a3cff377a6298ee04111ec538bd27daef5c0f541e58f3a5e25822127a/sql-face-0.1.9.tar.gz
+[2023-05-20 17:55:50] INFO root fetch - processPackages [wikiscrape]: executing diffoscope
+[2023-05-20 17:55:50] INFO root fetch - processPackages [wikiscrape]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wikiscrape-0.1.0.tar.gz tmp/wikiscrape-0.2.1.tar.gz --markdown 20230520/w/wikiscrape/0.1.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-20 17:55:50] INFO root fetch - processPackages [rpy2]: Downloading https://files.pythonhosted.org/packages/f9/d4/f817a523c4168c826a816f89a5a080fa2fd7ad939dbfece5eb5d01235070/rpy2-3.5.9.tar.gz
+[2023-05-20 17:55:50] INFO root fetch - processPackages [sql-face]: executing diffoscope
+[2023-05-20 17:55:50] INFO root fetch - processPackages [sql-face]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sql-face-0.1.8.tar.gz tmp/sql-face-0.1.9.tar.gz --markdown 20230520/s/sql-face/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 17:55:50] INFO root fetch - processPackages [rpy2]: executing diffoscope
+[2023-05-20 17:55:50] INFO root fetch - processPackages [rpy2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rpy2-3.5.8.tar.gz tmp/rpy2-3.5.9.tar.gz --markdown 20230520/r/rpy2/3.5.8-3.5.9/diff.md --exclude *.pyd
+[2023-05-20 17:55:51] INFO root fetch - main [MainThread]: End processing [dbtdocgen-rutryk]: success
+[2023-05-20 17:55:51] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2023-05-20 17:55:51] INFO root fetch - main [MainThread]: End processing [wikiscrape]: success
+[2023-05-20 17:55:51] INFO root fetch - processPackages [bimmer-connected]: Downloading https://files.pythonhosted.org/packages/f0/5b/7c1571b36dc97d1164dee2b34b947abbb48769488c33d9204d82aaee852d/bimmer_connected-0.9.6.tar.gz
+[2023-05-20 17:55:51] INFO root fetch - main [MainThread]: End processing [django-tbase-post-product]: success
+[2023-05-20 17:55:51] INFO root fetch - main [MainThread]: End processing [sql-face]: success
+[2023-05-20 17:55:52] INFO root fetch - main [MainThread]: End processing [pyselector]: success
+[2023-05-20 17:55:52] INFO root fetch - main [MainThread]: End processing [rpy2]: success
+[2023-05-20 17:55:52] INFO root fetch - processPackages [bimmer-connected]: executing diffoscope
+[2023-05-20 17:55:52] INFO root fetch - processPackages [bimmer-connected]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bimmer_connected-0.9.5.tar.gz tmp/bimmer_connected-0.9.6.tar.gz --markdown 20230520/b/bimmer-connected/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-20 17:55:55] INFO root fetch - main [MainThread]: End processing [bimmer-connected]: success
+[2023-05-20 17:55:55] INFO root fetch - main [MainThread]: Store serial: [18183167]
