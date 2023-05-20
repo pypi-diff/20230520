@@ -6654,3 +6654,56 @@
 [2023-05-20 09:26:28] INFO root fetch - main [MainThread]: End processing [django-common-task-system]: success
 [2023-05-20 09:26:45] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2023-05-20 09:26:45] INFO root fetch - main [MainThread]: Store serial: [18180260]
+[2023-05-20 09:31:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180260]
+[2023-05-20 09:31:54] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-20 09:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shinherpro
+[2023-05-20 09:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CSwitch
+[2023-05-20 09:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tknodesystem
+[2023-05-20 09:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: embedbase
+[2023-05-20 09:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: volsite-postgres-common
+[2023-05-20 09:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pglast
+[2023-05-20 09:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odc-geo
+[2023-05-20 09:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ScriptCollection
+[2023-05-20 09:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyxdi
+[2023-05-20 09:31:54] INFO root fetch - processPackages [shinherpro]: New version: [1.5.5] Old Version: [1.5.4]
+[2023-05-20 09:31:54] WARNING root fetch - processPackages [CSwitch]: Skipping, unable to determine old version
+[2023-05-20 09:31:54] INFO root fetch - main [MainThread]: End processing [CSwitch] error
+[2023-05-20 09:31:54] WARNING root fetch - processPackages [tknodesystem]: Skipping, unable to determine old version
+[2023-05-20 09:31:54] INFO root fetch - main [MainThread]: End processing [tknodesystem] error
+[2023-05-20 09:31:54] INFO root fetch - processPackages [ScriptCollection]: New version: [3.3.9] Old Version: [3.3.88]
+[2023-05-20 09:31:54] INFO root fetch - processPackages [volsite-postgres-common]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 09:31:54] INFO root fetch - processPackages [odc-geo]: New version: [0.4.0rc1] Old Version: [0.4.0a3]
+[2023-05-20 09:31:54] INFO root fetch - processPackages [embedbase]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-05-20 09:31:54] INFO root fetch - processPackages [pyxdi]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-20 09:31:54] INFO root fetch - processPackages [shinherpro]: Downloading https://files.pythonhosted.org/packages/43/03/c23a05cdab4b1d785b5d2842cb3a9d7d49d6113e8c73edc9b97092ccb027/shinherpro-1.5.4-py3-none-any.whl
+[2023-05-20 09:31:54] INFO root fetch - processPackages [ScriptCollection]: Downloading https://files.pythonhosted.org/packages/61/5e/efde529052121d20009f7a8bea7ea39bc00b9844403177330c8031c58a7b/ScriptCollection-3.3.88-py3-none-any.whl
+[2023-05-20 09:31:54] INFO root fetch - processPackages [pglast]: New version: [5.2] Old Version: [5.1]
+[2023-05-20 09:31:54] INFO root fetch - processPackages [volsite-postgres-common]: Downloading https://files.pythonhosted.org/packages/a9/48/ece41cdd1f36d5b821f07299b965387a375ef3ddd0556318e57ad9018c7c/volsite_postgres_common-0.1.8.tar.gz
+[2023-05-20 09:31:54] WARNING root fetch - processPackages [shinherpro]: Skipping package: exceeds size limit 98030735>=10485760
+[2023-05-20 09:31:54] INFO root fetch - main [MainThread]: End processing [shinherpro] error
+[2023-05-20 09:31:54] INFO root fetch - processPackages [odc-geo]: Downloading https://files.pythonhosted.org/packages/c7/32/98733fbc2da92417e1c78ceab9b99457e4275e4893f05c65eff6757834c0/odc-geo-0.4.0a3.tar.gz
+[2023-05-20 09:31:54] INFO root fetch - processPackages [pyxdi]: Downloading https://files.pythonhosted.org/packages/35/d0/d7f47f282bd060c3329acec77ca2b7e3c82658406503d58ac50d045ea3ee/pyxdi-0.9.0.tar.gz
+[2023-05-20 09:31:54] INFO root fetch - processPackages [ScriptCollection]: executing diffoscope
+[2023-05-20 09:31:54] INFO root fetch - processPackages [ScriptCollection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ScriptCollection-3.3.88-py3-none-any.whl.zip tmp/ScriptCollection-3.3.9-py3-none-any.whl.zip --markdown 20230520/S/ScriptCollection/3.3.88-3.3.9/diff.md --exclude *.pyd
+[2023-05-20 09:31:54] INFO root fetch - processPackages [pglast]: Downloading https://files.pythonhosted.org/packages/7e/4c/b3b6d66d1eddcd04adb39f4a0cede4c6c943f4036e970bcacea960325583/pglast-5.1.tar.gz
+[2023-05-20 09:31:54] INFO root fetch - processPackages [embedbase]: Downloading https://files.pythonhosted.org/packages/3e/99/14f4cde5b77f399d20b92970c3ab1be0c638f60e74d3a751b29b6550960a/embedbase-1.1.8.tar.gz
+[2023-05-20 09:31:54] INFO root fetch - processPackages [volsite-postgres-common]: Downloading https://files.pythonhosted.org/packages/ff/03/668bfd84cd84ef92e37f65f495239d8be55d05abd92dc4bd35f340822fce/volsite_postgres_common-0.1.9.tar.gz
+[2023-05-20 09:31:54] INFO root fetch - processPackages [pyxdi]: executing diffoscope
+[2023-05-20 09:31:54] INFO root fetch - processPackages [pyxdi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxdi-0.8.0.tar.gz tmp/pyxdi-0.9.0.tar.gz --markdown 20230520/p/pyxdi/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-20 09:31:54] INFO root fetch - processPackages [embedbase]: executing diffoscope
+[2023-05-20 09:31:54] INFO root fetch - processPackages [embedbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedbase-1.1.7.tar.gz tmp/embedbase-1.1.8.tar.gz --markdown 20230520/e/embedbase/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-05-20 09:31:54] INFO root fetch - processPackages [volsite-postgres-common]: executing diffoscope
+[2023-05-20 09:31:54] INFO root fetch - processPackages [volsite-postgres-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/volsite_postgres_common-0.1.8.tar.gz tmp/volsite_postgres_common-0.1.9.tar.gz --markdown 20230520/v/volsite-postgres-common/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 09:31:54] INFO root fetch - processPackages [odc-geo]: Downloading https://files.pythonhosted.org/packages/35/34/ac720601c582270bd5404be0b212b7e53c96d15dc21f9e557f3ba7cd6078/odc-geo-0.4.0rc1.tar.gz
+[2023-05-20 09:31:55] INFO root fetch - processPackages [odc-geo]: executing diffoscope
+[2023-05-20 09:31:55] INFO root fetch - processPackages [odc-geo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odc-geo-0.4.0a3.tar.gz tmp/odc-geo-0.4.0rc1.tar.gz --markdown 20230520/o/odc-geo/0.4.0a3-0.4.0rc1/diff.md --exclude *.pyd
+[2023-05-20 09:31:55] INFO root fetch - processPackages [pglast]: Downloading https://files.pythonhosted.org/packages/21/16/aa61b70559747030cdb9534ff3816cd275d76d48c07d3cdb4b0490297626/pglast-5.2.tar.gz
+[2023-05-20 09:31:55] INFO root fetch - processPackages [pglast]: executing diffoscope
+[2023-05-20 09:31:55] INFO root fetch - processPackages [pglast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pglast-5.1.tar.gz tmp/pglast-5.2.tar.gz --markdown 20230520/p/pglast/5.1-5.2/diff.md --exclude *.pyd
+[2023-05-20 09:31:56] INFO root fetch - main [MainThread]: End processing [ScriptCollection]: success
+[2023-05-20 09:31:56] INFO root fetch - main [MainThread]: End processing [pyxdi]: success
+[2023-05-20 09:31:56] INFO root fetch - main [MainThread]: End processing [embedbase]: success
+[2023-05-20 09:31:56] INFO root fetch - main [MainThread]: End processing [volsite-postgres-common]: success
+[2023-05-20 09:31:56] INFO root fetch - main [MainThread]: End processing [odc-geo]: success
+[2023-05-20 09:32:09] INFO root fetch - main [MainThread]: End processing [pglast]: success
+[2023-05-20 09:32:09] INFO root fetch - main [MainThread]: Store serial: [18180284]
