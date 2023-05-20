@@ -6331,3 +6331,33 @@
 [2023-05-20 08:18:39] INFO root fetch - main [MainThread]: End processing [ScriptCollection]: success
 [2023-05-20 08:18:39] INFO root fetch - main [MainThread]: End processing [xia-api]: success
 [2023-05-20 08:18:39] INFO root fetch - main [MainThread]: Store serial: [18180064]
+[2023-05-20 08:23:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180064]
+[2023-05-20 08:23:47] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-20 08:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tcev-transformation
+[2023-05-20 08:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vector-vault
+[2023-05-20 08:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: copper-bem
+[2023-05-20 08:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: GenomicRanges
+[2023-05-20 08:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-marina
+[2023-05-20 08:23:47] INFO root fetch - processPackages [copper-bem]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-20 08:23:47] WARNING root fetch - processPackages [vector-vault]: Skipping, unable to determine old version
+[2023-05-20 08:23:47] WARNING root fetch - processPackages [tcev-transformation]: Skipping, unable to determine old version
+[2023-05-20 08:23:47] INFO root fetch - main [MainThread]: End processing [vector-vault] error
+[2023-05-20 08:23:47] INFO root fetch - main [MainThread]: End processing [tcev-transformation] error
+[2023-05-20 08:23:47] INFO root fetch - processPackages [django-marina]: New version: [23.4] Old Version: [23.3]
+[2023-05-20 08:23:47] INFO root fetch - processPackages [GenomicRanges]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-20 08:23:48] INFO root fetch - processPackages [django-marina]: Downloading https://files.pythonhosted.org/packages/48/4a/5120eb83c2e239ab33329adcaf7d6c1ae3801a24f999627b9382d51e5dda/django-marina-23.3.tar.gz
+[2023-05-20 08:23:48] INFO root fetch - processPackages [copper-bem]: Downloading https://files.pythonhosted.org/packages/aa/2c/8692b1a88c591d1bfcc92a8bcbcf4e7878205733b7d200e3eaaf26729ff4/copper-bem-0.1.7.tar.gz
+[2023-05-20 08:23:48] INFO root fetch - processPackages [GenomicRanges]: Downloading https://files.pythonhosted.org/packages/85/e3/6ac353ad06297035fba0c7d26f03d62ae31a0d30804a60e5a1bf9e9b8103/GenomicRanges-0.2.8.tar.gz
+[2023-05-20 08:23:48] INFO root fetch - processPackages [django-marina]: Downloading https://files.pythonhosted.org/packages/86/e1/4904e56778784a69e32a97e1a988785cfac94bf071804e869c0dfac57472/django_marina-23.4.tar.gz
+[2023-05-20 08:23:48] INFO root fetch - processPackages [copper-bem]: Downloading https://files.pythonhosted.org/packages/85/83/307c5f04aac7c2652c0fa50877a96614242b2e0ee448264c16a96c701f43/copper-bem-0.1.8.tar.gz
+[2023-05-20 08:23:48] INFO root fetch - processPackages [GenomicRanges]: Downloading https://files.pythonhosted.org/packages/1e/88/e667c037a2eaab66e1a647d6cb65d0bf569d34bbff8666278606c916c0fc/GenomicRanges-0.2.9.tar.gz
+[2023-05-20 08:23:48] INFO root fetch - processPackages [django-marina]: executing diffoscope
+[2023-05-20 08:23:48] INFO root fetch - processPackages [django-marina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-marina-23.3.tar.gz tmp/django_marina-23.4.tar.gz --markdown 20230520/d/django-marina/23.3-23.4/diff.md --exclude *.pyd
+[2023-05-20 08:23:48] INFO root fetch - processPackages [copper-bem]: executing diffoscope
+[2023-05-20 08:23:48] INFO root fetch - processPackages [copper-bem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copper-bem-0.1.7.tar.gz tmp/copper-bem-0.1.8.tar.gz --markdown 20230520/c/copper-bem/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-20 08:23:48] INFO root fetch - processPackages [GenomicRanges]: executing diffoscope
+[2023-05-20 08:23:48] INFO root fetch - processPackages [GenomicRanges]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GenomicRanges-0.2.8.tar.gz tmp/GenomicRanges-0.2.9.tar.gz --markdown 20230520/G/GenomicRanges/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-20 08:23:49] INFO root fetch - main [MainThread]: End processing [django-marina]: success
+[2023-05-20 08:23:50] INFO root fetch - main [MainThread]: End processing [GenomicRanges]: success
+[2023-05-20 08:23:50] INFO root fetch - main [MainThread]: End processing [copper-bem]: success
+[2023-05-20 08:23:50] INFO root fetch - main [MainThread]: Store serial: [18180087]
