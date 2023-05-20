@@ -10931,3 +10931,47 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 17:33:27] INFO root fetch - main [MainThread]: End processing [osgiservicebridge]: success
 [2023-05-20 17:33:30] INFO root fetch - main [MainThread]: End processing [foliolib]: success
 [2023-05-20 17:33:30] INFO root fetch - main [MainThread]: Store serial: [18182996]
+[2023-05-20 17:38:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182996]
+[2023-05-20 17:38:40] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-20 17:38:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cheroot
+[2023-05-20 17:38:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: isoCycle
+[2023-05-20 17:38:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-tbase-page
+[2023-05-20 17:38:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: utility-alpha
+[2023-05-20 17:38:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-tbase-post
+[2023-05-20 17:38:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PyDistances
+[2023-05-20 17:38:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sluyspy
+[2023-05-20 17:38:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-tbase-post-product
+[2023-05-20 17:38:40] INFO root fetch - processPackages [isoCycle]: New version: [0.0.28] Old Version: [0.0.27]
+[2023-05-20 17:38:40] WARNING root fetch - processPackages [utility-alpha]: Skipping, unable to determine old version
+[2023-05-20 17:38:40] INFO root fetch - main [MainThread]: End processing [utility-alpha] error
+[2023-05-20 17:38:40] INFO root fetch - processPackages [sluyspy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 17:38:40] WARNING root fetch - processPackages [django-tbase-page]: Skipping, unable to determine old version
+[2023-05-20 17:38:40] INFO root fetch - processPackages [django-tbase-post]: New version: [2023.5.2016845969] Old Version: [2023.5.2016845963]
+[2023-05-20 17:38:40] INFO root fetch - main [MainThread]: End processing [django-tbase-page] error
+[2023-05-20 17:38:40] INFO root fetch - processPackages [cheroot]: New version: [9.0.0] Old Version: [8.6.0]
+[2023-05-20 17:38:40] INFO root fetch - processPackages [django-tbase-post-product]: New version: [2023.5.2016845970] Old Version: [2023.5.2016845961]
+[2023-05-20 17:38:40] INFO root fetch - processPackages [PyDistances]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 17:38:40] INFO root fetch - processPackages [sluyspy]: executing diffoscope
+[2023-05-20 17:38:40] INFO root fetch - processPackages [sluyspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sluyspy-0.0.8.tar.gz tmp/sluyspy-0.0.9.tar.gz --markdown 20230520/s/sluyspy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 17:38:40] INFO root fetch - processPackages [isoCycle]: Downloading https://files.pythonhosted.org/packages/6b/21/0eba0f6e8edc484ae7db98508063bee140381eb6cb919a2ca4fc5cf8c156/isoCycle-0.0.27.tar.gz
+[2023-05-20 17:38:40] INFO root fetch - processPackages [PyDistances]: executing diffoscope
+[2023-05-20 17:38:40] INFO root fetch - processPackages [PyDistances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyDistances-0.0.8.tar.gz tmp/PyDistances-0.0.9.tar.gz --markdown 20230520/P/PyDistances/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 17:38:40] INFO root fetch - processPackages [django-tbase-post]: Downloading https://files.pythonhosted.org/packages/25/f1/5d4d88d541af5c1bb0d223e3cf564b69f12df4fa50a075cf4e95eff688eb/django_tbase_post-2023.5.2016845969.tar.gz
+[2023-05-20 17:38:40] INFO root fetch - processPackages [django-tbase-post-product]: Downloading https://files.pythonhosted.org/packages/fc/cf/7f8ca7629560e0aacd9a7705eb24270c4a079c2163f373193e4de9a3bc77/django_tbase_post_product-2023.5.2016845961.tar.gz
+[2023-05-20 17:38:40] WARNING root fetch - processPackages [isoCycle]: Skipping package: exceeds size limit 18493063>=10485760
+[2023-05-20 17:38:40] INFO root fetch - main [MainThread]: End processing [isoCycle] error
+[2023-05-20 17:38:40] INFO root fetch - processPackages [cheroot]: Downloading https://files.pythonhosted.org/packages/99/c4/9b5ca09208047f2689c24ee63e195aa01ceffb7857d715cabc046559ddd6/cheroot-8.6.0.tar.gz
+[2023-05-20 17:38:40] INFO root fetch - processPackages [django-tbase-post]: executing diffoscope
+[2023-05-20 17:38:40] INFO root fetch - processPackages [django-tbase-post]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_tbase_post-2023.5.2016845963.tar.gz tmp/django_tbase_post-2023.5.2016845969.tar.gz --markdown 20230520/d/django-tbase-post/2023.5.2016845963-2023.5.2016845969/diff.md --exclude *.pyd
+[2023-05-20 17:38:40] INFO root fetch - processPackages [django-tbase-post-product]: Downloading https://files.pythonhosted.org/packages/af/ae/7e0caa14466e5fc8cdc4b66819165dc2e3ac4dd603e6f1b9c565474877c7/django_tbase_post_product-2023.5.2016845970.tar.gz
+[2023-05-20 17:38:40] INFO root fetch - processPackages [django-tbase-post-product]: executing diffoscope
+[2023-05-20 17:38:40] INFO root fetch - processPackages [django-tbase-post-product]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_tbase_post_product-2023.5.2016845961.tar.gz tmp/django_tbase_post_product-2023.5.2016845970.tar.gz --markdown 20230520/d/django-tbase-post-product/2023.5.2016845961-2023.5.2016845970/diff.md --exclude *.pyd
+[2023-05-20 17:38:40] INFO root fetch - processPackages [cheroot]: Downloading https://files.pythonhosted.org/packages/8c/e7/8e6387d59a352c5799e917a23e7b76771a8bb97322c1ce7e42934d0066c3/cheroot-9.0.0.tar.gz
+[2023-05-20 17:38:40] INFO root fetch - processPackages [cheroot]: executing diffoscope
+[2023-05-20 17:38:40] INFO root fetch - processPackages [cheroot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cheroot-8.6.0.tar.gz tmp/cheroot-9.0.0.tar.gz --markdown 20230520/c/cheroot/8.6.0-9.0.0/diff.md --exclude *.pyd
+[2023-05-20 17:38:41] INFO root fetch - main [MainThread]: End processing [sluyspy]: success
+[2023-05-20 17:38:41] INFO root fetch - main [MainThread]: End processing [PyDistances]: success
+[2023-05-20 17:38:41] INFO root fetch - main [MainThread]: End processing [django-tbase-post]: success
+[2023-05-20 17:38:41] INFO root fetch - main [MainThread]: End processing [django-tbase-post-product]: success
+[2023-05-20 17:38:43] INFO root fetch - main [MainThread]: End processing [cheroot]: success
+[2023-05-20 17:38:43] INFO root fetch - main [MainThread]: Store serial: [18183022]
