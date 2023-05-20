@@ -2127,3 +2127,30 @@
 [2023-05-20 02:34:56] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
 [2023-05-20 02:34:56] INFO root fetch - main [MainThread]: End processing [tldextract]: success
 [2023-05-20 02:34:56] INFO root fetch - main [MainThread]: Store serial: [18177328]
+[2023-05-20 02:40:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18177328]
+[2023-05-20 02:40:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 02:40:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: heaobject
+[2023-05-20 02:40:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: veilcord
+[2023-05-20 02:40:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hf-hub-ctranslate2
+[2023-05-20 02:40:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: seaplayer
+[2023-05-20 02:40:05] INFO root fetch - processPackages [hf-hub-ctranslate2]: New version: [2.0.8] Old Version: [2.0.7]
+[2023-05-20 02:40:05] INFO root fetch - processPackages [seaplayer]: New version: [0.4a3] Old Version: [0.4a2]
+[2023-05-20 02:40:05] INFO root fetch - processPackages [veilcord]: New version: [0.0.0.7] Old Version: [0.0.0.6]
+[2023-05-20 02:40:05] INFO root fetch - processPackages [heaobject]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-20 02:40:06] INFO root fetch - processPackages [seaplayer]: executing diffoscope
+[2023-05-20 02:40:06] INFO root fetch - processPackages [seaplayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seaplayer-0.4a2.tar.gz tmp/seaplayer-0.4a3.tar.gz --markdown 20230520/s/seaplayer/0.4a2-0.4a3/diff.md --exclude *.pyd
+[2023-05-20 02:40:06] INFO root fetch - processPackages [veilcord]: Downloading https://files.pythonhosted.org/packages/5b/b6/3fa632db92966dba57c4b01fec4414b58f42ef30120ef781ba4ffa79e2ba/veilcord-0.0.0.7.tar.gz
+[2023-05-20 02:40:06] INFO root fetch - processPackages [hf-hub-ctranslate2]: Downloading https://files.pythonhosted.org/packages/1a/01/7925cca22218c0402491066244cc28a3526941c2498bc62f295e8d4b49ae/hf_hub_ctranslate2-2.0.8.tar.gz
+[2023-05-20 02:40:06] INFO root fetch - processPackages [heaobject]: Downloading https://files.pythonhosted.org/packages/17/38/f2cd981268a2f1ba60928e8adca3b88331abfa27ca5bc770488ced4f0a18/heaobject-1.0.0a8.tar.gz
+[2023-05-20 02:40:06] INFO root fetch - processPackages [hf-hub-ctranslate2]: executing diffoscope
+[2023-05-20 02:40:06] INFO root fetch - processPackages [hf-hub-ctranslate2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hf_hub_ctranslate2-2.0.7.tar.gz tmp/hf_hub_ctranslate2-2.0.8.tar.gz --markdown 20230520/h/hf-hub-ctranslate2/2.0.7-2.0.8/diff.md --exclude *.pyd
+[2023-05-20 02:40:06] INFO root fetch - processPackages [veilcord]: executing diffoscope
+[2023-05-20 02:40:06] INFO root fetch - processPackages [veilcord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/veilcord-0.0.0.6.tar.gz tmp/veilcord-0.0.0.7.tar.gz --markdown 20230520/v/veilcord/0.0.0.6-0.0.0.7/diff.md --exclude *.pyd
+[2023-05-20 02:40:06] INFO root fetch - processPackages [heaobject]: Downloading https://files.pythonhosted.org/packages/b8/16/d3d81d41e49df90146c58d742bd80cbadc210dc2060460f1d3dadc571a9c/heaobject-1.0.0a9.tar.gz
+[2023-05-20 02:40:06] INFO root fetch - processPackages [heaobject]: executing diffoscope
+[2023-05-20 02:40:06] INFO root fetch - processPackages [heaobject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaobject-1.0.0a8.tar.gz tmp/heaobject-1.0.0a9.tar.gz --markdown 20230520/h/heaobject/1.0.0a8-1.0.0a9/diff.md --exclude *.pyd
+[2023-05-20 02:40:07] INFO root fetch - main [MainThread]: End processing [seaplayer]: success
+[2023-05-20 02:40:07] INFO root fetch - main [MainThread]: End processing [hf-hub-ctranslate2]: success
+[2023-05-20 02:40:07] INFO root fetch - main [MainThread]: End processing [veilcord]: success
+[2023-05-20 02:40:07] INFO root fetch - main [MainThread]: End processing [heaobject]: success
+[2023-05-20 02:40:07] INFO root fetch - main [MainThread]: Store serial: [18177341]
