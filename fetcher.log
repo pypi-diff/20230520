@@ -7151,3 +7151,44 @@
 [2023-05-20 10:25:01] INFO root fetch - main [MainThread]: End processing [dinohub-seedwork-be]: success
 [2023-05-20 10:25:02] INFO root fetch - main [MainThread]: End processing [xtlsapi]: success
 [2023-05-20 10:25:02] INFO root fetch - main [MainThread]: Store serial: [18180561]
+[2023-05-20 10:30:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180561]
+[2023-05-20 10:30:11] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-20 10:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pravo-api
+[2023-05-20 10:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ezdxf
+[2023-05-20 10:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SerializerKiSSel3
+[2023-05-20 10:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: betterdataclass
+[2023-05-20 10:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: etsy-apiv3
+[2023-05-20 10:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hiddifypanel
+[2023-05-20 10:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ma-fi
+[2023-05-20 10:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cmeel
+[2023-05-20 10:30:11] WARNING root fetch - processPackages [SerializerKiSSel3]: Skipping, unable to determine old version
+[2023-05-20 10:30:11] INFO root fetch - main [MainThread]: End processing [SerializerKiSSel3] error
+[2023-05-20 10:30:11] INFO root fetch - processPackages [cmeel]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-20 10:30:11] INFO root fetch - processPackages [pravo-api]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 10:30:11] WARNING root fetch - processPackages [betterdataclass]: Skipping, unable to determine old version
+[2023-05-20 10:30:11] INFO root fetch - main [MainThread]: End processing [betterdataclass] error
+[2023-05-20 10:30:11] INFO root fetch - processPackages [hiddifypanel]: New version: [7.0.0.dev9] Old Version: [7.0.0.dev8]
+[2023-05-20 10:30:11] INFO root fetch - processPackages [ezdxf]: New version: [1.1.0b2] Old Version: [1.1.0b1]
+[2023-05-20 10:30:11] WARNING root fetch - processPackages [ma-fi]: Skipping, unable to determine old version
+[2023-05-20 10:30:11] INFO root fetch - main [MainThread]: End processing [ma-fi] error
+[2023-05-20 10:30:11] INFO root fetch - processPackages [etsy-apiv3]: New version: [1.7.8] Old Version: [1.7.7]
+[2023-05-20 10:30:12] INFO root fetch - processPackages [cmeel]: executing diffoscope
+[2023-05-20 10:30:12] INFO root fetch - processPackages [cmeel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmeel-0.8.0.tar.gz tmp/cmeel-0.9.0.tar.gz --markdown 20230520/c/cmeel/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-20 10:30:12] INFO root fetch - processPackages [pravo-api]: executing diffoscope
+[2023-05-20 10:30:12] INFO root fetch - processPackages [pravo-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pravo-api-0.0.8.tar.gz tmp/pravo-api-0.0.9.tar.gz --markdown 20230520/p/pravo-api/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 10:30:12] INFO root fetch - processPackages [etsy-apiv3]: Downloading https://files.pythonhosted.org/packages/4c/cb/082334995da47d335c5448640d3ddca9b85843e634e586892f731c925072/etsy-apiv3-1.7.7.tar.gz
+[2023-05-20 10:30:12] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2023-05-20 10:30:12] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-7.0.0.dev8-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/hiddifypanel-7.0.0.dev9-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230520/h/hiddifypanel/7.0.0.dev8-7.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-20 10:30:12] INFO root fetch - processPackages [ezdxf]: Downloading https://files.pythonhosted.org/packages/ab/e1/9409a59fa5b7d6571de629749c4111cf31e3a1c77ad2e9e5fed5610955e4/ezdxf-1.1.0b1.zip
+[2023-05-20 10:30:12] INFO root fetch - processPackages [etsy-apiv3]: Downloading https://files.pythonhosted.org/packages/1c/30/f0e4d79ce53761485892e3cc072169d7287ae31bed3b4a045ed12848f8f7/etsy-apiv3-1.7.8.tar.gz
+[2023-05-20 10:30:12] INFO root fetch - processPackages [etsy-apiv3]: executing diffoscope
+[2023-05-20 10:30:12] INFO root fetch - processPackages [etsy-apiv3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etsy-apiv3-1.7.7.tar.gz tmp/etsy-apiv3-1.7.8.tar.gz --markdown 20230520/e/etsy-apiv3/1.7.7-1.7.8/diff.md --exclude *.pyd
+[2023-05-20 10:30:12] INFO root fetch - processPackages [ezdxf]: Downloading https://files.pythonhosted.org/packages/c0/cc/8dd7dac506dce4befb9b09afaafceb3afb61bf94f184811aef6ffb257902/ezdxf-1.1.0b2.zip
+[2023-05-20 10:30:12] INFO root fetch - processPackages [ezdxf]: executing diffoscope
+[2023-05-20 10:30:12] INFO root fetch - processPackages [ezdxf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezdxf-1.1.0b1.zip tmp/ezdxf-1.1.0b2.zip --markdown 20230520/e/ezdxf/1.1.0b1-1.1.0b2/diff.md --exclude *.pyd
+[2023-05-20 10:30:13] INFO root fetch - main [MainThread]: End processing [cmeel]: success
+[2023-05-20 10:30:13] INFO root fetch - main [MainThread]: End processing [pravo-api]: success
+[2023-05-20 10:30:13] INFO root fetch - main [MainThread]: End processing [etsy-apiv3]: success
+[2023-05-20 10:30:22] INFO root fetch - main [MainThread]: End processing [ezdxf]: success
+[2023-05-20 10:30:34] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2023-05-20 10:30:34] INFO root fetch - main [MainThread]: Store serial: [18180594]
