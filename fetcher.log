@@ -6117,3 +6117,27 @@
 [2023-05-20 07:20:44] INFO root fetch - main [MainThread]: End processing [agixt]: success
 [2023-05-20 07:20:44] INFO root fetch - main [MainThread]: End processing [regexexercises]: success
 [2023-05-20 07:20:44] INFO root fetch - main [MainThread]: Store serial: [18179869]
+[2023-05-20 07:25:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179869]
+[2023-05-20 07:25:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 07:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: caqui
+[2023-05-20 07:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kynaylibs
+[2023-05-20 07:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PySimpleInput
+[2023-05-20 07:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: BDXConverter
+[2023-05-20 07:25:53] INFO root fetch - processPackages [kynaylibs]: New version: [7.1.4] Old Version: [7.1.3]
+[2023-05-20 07:25:53] WARNING root fetch - processPackages [caqui]: Skipping, unable to determine old version
+[2023-05-20 07:25:53] INFO root fetch - main [MainThread]: End processing [caqui] error
+[2023-05-20 07:25:53] INFO root fetch - processPackages [PySimpleInput]: New version: [0.0.5.post1] Old Version: [0.0.4.post1]
+[2023-05-20 07:25:53] INFO root fetch - processPackages [BDXConverter]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-20 07:25:53] INFO root fetch - processPackages [kynaylibs]: executing diffoscope
+[2023-05-20 07:25:53] INFO root fetch - processPackages [kynaylibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kynaylibs-7.1.3.tar.gz tmp/kynaylibs-7.1.4.tar.gz --markdown 20230520/k/kynaylibs/7.1.3-7.1.4/diff.md --exclude *.pyd
+[2023-05-20 07:25:53] INFO root fetch - processPackages [BDXConverter]: Downloading https://files.pythonhosted.org/packages/0d/71/d5037227457536d8ff456b899432f8185586adfc45b0a93e9104864f53ed/BDXConverter-1.1.8.tar.gz
+[2023-05-20 07:25:53] INFO root fetch - processPackages [PySimpleInput]: Downloading https://files.pythonhosted.org/packages/43/52/59adc73e5714389596120943f3378b5da3703e9fc163fa0da12861819d29/PySimpleInput-0.0.5.post1.tar.gz
+[2023-05-20 07:25:54] INFO root fetch - processPackages [PySimpleInput]: executing diffoscope
+[2023-05-20 07:25:54] INFO root fetch - processPackages [PySimpleInput]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySimpleInput-0.0.4.post1.tar.gz tmp/PySimpleInput-0.0.5.post1.tar.gz --markdown 20230520/P/PySimpleInput/0.0.4.post1-0.0.5.post1/diff.md --exclude *.pyd
+[2023-05-20 07:25:54] INFO root fetch - processPackages [BDXConverter]: Downloading https://files.pythonhosted.org/packages/46/e6/ea0aaffd1a99797dffeafad847a61e7a1d009376bcd8c3bccfefcb7d24f6/BDXConverter-1.1.9.tar.gz
+[2023-05-20 07:25:54] INFO root fetch - processPackages [BDXConverter]: executing diffoscope
+[2023-05-20 07:25:54] INFO root fetch - processPackages [BDXConverter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BDXConverter-1.1.8.tar.gz tmp/BDXConverter-1.1.9.tar.gz --markdown 20230520/B/BDXConverter/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-20 07:25:54] INFO root fetch - main [MainThread]: End processing [kynaylibs]: success
+[2023-05-20 07:25:55] INFO root fetch - main [MainThread]: End processing [PySimpleInput]: success
+[2023-05-20 07:25:55] INFO root fetch - main [MainThread]: End processing [BDXConverter]: success
+[2023-05-20 07:25:55] INFO root fetch - main [MainThread]: Store serial: [18179886]
