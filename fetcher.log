@@ -8188,3 +8188,13 @@
 [2023-05-20 12:31:59] INFO root fetch - main [MainThread]: End processing [textual]: success
 [2023-05-20 12:31:59] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
 [2023-05-20 12:31:59] INFO root fetch - main [MainThread]: Store serial: [18181237]
+[2023-05-20 12:37:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18181237]
+[2023-05-20 12:37:08] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-20 12:37:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sharedutils
+[2023-05-20 12:37:08] INFO root fetch - processPackages [sharedutils]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-20 12:37:08] INFO root fetch - processPackages [sharedutils]: Downloading https://files.pythonhosted.org/packages/a5/08/36f3d968db53450bb62fcac356ff34e4e396b5e9e830198c175d07f5b167/sharedutils-0.0.6.tar.gz
+[2023-05-20 12:37:09] INFO root fetch - processPackages [sharedutils]: Downloading https://files.pythonhosted.org/packages/e7/25/b5484069694873301973b77ba4fe29427fd24f47ccced210a902b1207859/sharedutils-0.0.7.tar.gz
+[2023-05-20 12:37:09] INFO root fetch - processPackages [sharedutils]: executing diffoscope
+[2023-05-20 12:37:09] INFO root fetch - processPackages [sharedutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharedutils-0.0.6.tar.gz tmp/sharedutils-0.0.7.tar.gz --markdown 20230520/s/sharedutils/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-20 12:37:10] INFO root fetch - main [MainThread]: End processing [sharedutils]: success
+[2023-05-20 12:37:10] INFO root fetch - main [MainThread]: Store serial: [18181241]
