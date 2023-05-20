@@ -11945,3 +11945,44 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 19:32:26] INFO root fetch - main [MainThread]: End processing [teenstudy]: success
 [2023-05-20 19:32:48] INFO root fetch - main [MainThread]: End processing [pyrofork-dev]: success
 [2023-05-20 19:32:48] INFO root fetch - main [MainThread]: Store serial: [18183554]
+[2023-05-20 19:37:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183554]
+[2023-05-20 19:37:57] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 19:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: QuasarCode
+[2023-05-20 19:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyrofork-dev
+[2023-05-20 19:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xia-login-flask
+[2023-05-20 19:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Misago
+[2023-05-20 19:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: opensees
+[2023-05-20 19:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pg-bulk-ingest
+[2023-05-20 19:37:57] INFO root fetch - processPackages [QuasarCode]: New version: [0.8.0] Old Version: [0.7.7]
+[2023-05-20 19:37:57] INFO root fetch - processPackages [pyrofork-dev]: New version: [2.1.8.dev202305201733] Old Version: [2.1.8.dev202305201726]
+[2023-05-20 19:37:57] INFO root fetch - processPackages [Misago]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-20 19:37:57] INFO root fetch - processPackages [xia-login-flask]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-20 19:37:57] INFO root fetch - processPackages [pg-bulk-ingest]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-20 19:37:57] INFO root fetch - processPackages [opensees]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 19:37:57] INFO root fetch - processPackages [Misago]: Downloading https://files.pythonhosted.org/packages/cc/98/d3fe39d4ca97400f5af7476e79de3405a557fc2c1f8b12488758cf133115/Misago-0.8.0.tar.gz
+[2023-05-20 19:37:57] INFO root fetch - processPackages [QuasarCode]: Downloading https://files.pythonhosted.org/packages/af/52/fb431f97b4e4e7ad20a4607a593dbaa49d4dccbfa267262f3f1c366c8c13/QuasarCode-0.7.7.tar.gz
+[2023-05-20 19:37:57] INFO root fetch - processPackages [opensees]: Downloading https://files.pythonhosted.org/packages/9a/43/b05787ae2e998169aa8db75ce509317ccef535b7a914658c612cef7ec841/opensees-0.0.8.tar.gz
+[2023-05-20 19:37:57] INFO root fetch - processPackages [xia-login-flask]: Downloading https://files.pythonhosted.org/packages/f1/ad/88229cc8139934063ce1c54d1766b33babb2fb4ee107dc769492e4130cf0/xia_login_flask-0.2.3-cp39-none-win_amd64.whl
+[2023-05-20 19:37:57] INFO root fetch - processPackages [pyrofork-dev]: Downloading https://files.pythonhosted.org/packages/75/de/60502c970664e7c1391812c82430daf1ef60f2a892b6f9392cbd6d4b7a81/pyrofork_dev-2.1.8.dev202305201733.tar.gz
+[2023-05-20 19:37:57] INFO root fetch - processPackages [xia-login-flask]: executing diffoscope
+[2023-05-20 19:37:57] INFO root fetch - processPackages [xia-login-flask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_login_flask-0.2.2-cp39-none-win_amd64.whl.zip tmp/xia_login_flask-0.2.3-cp39-none-win_amd64.whl.zip --markdown 20230520/x/xia-login-flask/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-20 19:37:57] INFO root fetch - processPackages [pg-bulk-ingest]: Downloading https://files.pythonhosted.org/packages/e7/4c/79370bd20a6c816fde6c364043a829acf317c47786fa13893e26ccd005f6/pg_bulk_ingest-0.0.8.tar.gz
+[2023-05-20 19:37:57] INFO root fetch - processPackages [QuasarCode]: Downloading https://files.pythonhosted.org/packages/4b/f9/b2d8ee96804291c82aa8544413344aeff5d171030de7fca251a7887f43b4/QuasarCode-0.8.0.tar.gz
+[2023-05-20 19:37:57] INFO root fetch - processPackages [pg-bulk-ingest]: executing diffoscope
+[2023-05-20 19:37:57] INFO root fetch - processPackages [pg-bulk-ingest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_bulk_ingest-0.0.7.tar.gz tmp/pg_bulk_ingest-0.0.8.tar.gz --markdown 20230520/p/pg-bulk-ingest/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-20 19:37:58] INFO root fetch - processPackages [QuasarCode]: executing diffoscope
+[2023-05-20 19:37:58] INFO root fetch - processPackages [QuasarCode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuasarCode-0.7.7.tar.gz tmp/QuasarCode-0.8.0.tar.gz --markdown 20230520/Q/QuasarCode/0.7.7-0.8.0/diff.md --exclude *.pyd
+[2023-05-20 19:37:58] INFO root fetch - processPackages [opensees]: Downloading https://files.pythonhosted.org/packages/89/07/b8f08c9d4567b2986131cfb7613ef5601c16b2a3c0ac5f22dd8e82eec99d/opensees-0.0.9.tar.gz
+[2023-05-20 19:37:58] INFO root fetch - processPackages [pyrofork-dev]: executing diffoscope
+[2023-05-20 19:37:58] INFO root fetch - processPackages [pyrofork-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrofork_dev-2.1.8.dev202305201726.tar.gz tmp/pyrofork_dev-2.1.8.dev202305201733.tar.gz --markdown 20230520/p/pyrofork-dev/2.1.8.dev202305201726-2.1.8.dev202305201733/diff.md --exclude *.pyd
+[2023-05-20 19:37:58] WARNING root fetch - processPackages [opensees]: Skipping package: exceeds size limit 22392766>=10485760
+[2023-05-20 19:37:58] INFO root fetch - main [MainThread]: End processing [opensees] error
+[2023-05-20 19:37:58] INFO root fetch - main [MainThread]: End processing [xia-login-flask]: success
+[2023-05-20 19:37:58] INFO root fetch - main [MainThread]: End processing [pg-bulk-ingest]: success
+[2023-05-20 19:37:59] INFO root fetch - main [MainThread]: End processing [QuasarCode]: success
+[2023-05-20 19:38:00] INFO root fetch - processPackages [Misago]: Downloading https://files.pythonhosted.org/packages/fe/e3/560d3254eccd20f6047cd162313b17de554d21c908ad9e05af971c4edbc3/Misago-0.9.0.tar.gz
+[2023-05-20 19:38:02] INFO root fetch - processPackages [Misago]: executing diffoscope
+[2023-05-20 19:38:02] INFO root fetch - processPackages [Misago]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Misago-0.8.0.tar.gz tmp/Misago-0.9.0.tar.gz --markdown 20230520/M/Misago/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-20 19:38:25] INFO root fetch - main [MainThread]: End processing [pyrofork-dev]: success
+[2023-05-20 19:39:03] INFO root fetch - main [MainThread]: End processing [Misago]: success
+[2023-05-20 19:39:03] INFO root fetch - main [MainThread]: Store serial: [18183577]
