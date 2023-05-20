@@ -12707,3 +12707,32 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 21:19:33] INFO root fetch - main [MainThread]: End processing [sshclick]: success
 [2023-05-20 21:19:33] INFO root fetch - main [MainThread]: End processing [cs-models]: success
 [2023-05-20 21:19:33] INFO root fetch - main [MainThread]: Store serial: [18183942]
+[2023-05-20 21:24:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183942]
+[2023-05-20 21:24:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 21:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sshclick
+[2023-05-20 21:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: krakenci-server
+[2023-05-20 21:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: click-web
+[2023-05-20 21:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: uoy-assessment-uploader
+[2023-05-20 21:24:42] INFO root fetch - processPackages [sshclick]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-20 21:24:42] INFO root fetch - processPackages [krakenci-server]: New version: [1.2.2] Old Version: [1.1.45]
+[2023-05-20 21:24:42] INFO root fetch - processPackages [uoy-assessment-uploader]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-20 21:24:42] INFO root fetch - processPackages [click-web]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-05-20 21:24:42] INFO root fetch - processPackages [krakenci-server]: Downloading https://files.pythonhosted.org/packages/a2/7d/c2e93b6ea91e07dda2f6422f88845004c5e2dcd98e0749e94c8b9a8ea73c/krakenci_server-1.1.45.tar.gz
+[2023-05-20 21:24:42] INFO root fetch - processPackages [uoy-assessment-uploader]: Downloading https://files.pythonhosted.org/packages/06/7c/471741b675da14a1f03baf59238c597e1f5516590067fbc6d143a370d90b/uoy-assessment-uploader-0.4.0.tar.gz
+[2023-05-20 21:24:42] INFO root fetch - processPackages [click-web]: Downloading https://files.pythonhosted.org/packages/fa/46/c3c4fd8f40d94a65a49d03a555541e535d1ba04a3198fc27ffd91ef0a5e4/click-web-0.8.1.tar.gz
+[2023-05-20 21:24:42] INFO root fetch - processPackages [krakenci-server]: Downloading https://files.pythonhosted.org/packages/92/e2/b01a017283d47b65bc05dde7957e07633a36f6a9224e87f6b93a523ecda3/krakenci_server-1.2.2.tar.gz
+[2023-05-20 21:24:42] INFO root fetch - processPackages [sshclick]: executing diffoscope
+[2023-05-20 21:24:42] INFO root fetch - processPackages [sshclick]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sshclick-0.5.0.tar.gz tmp/sshclick-0.6.0.tar.gz --markdown 20230520/s/sshclick/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-20 21:24:42] INFO root fetch - processPackages [krakenci-server]: executing diffoscope
+[2023-05-20 21:24:42] INFO root fetch - processPackages [krakenci-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krakenci_server-1.1.45.tar.gz tmp/krakenci_server-1.2.2.tar.gz --markdown 20230520/k/krakenci-server/1.1.45-1.2.2/diff.md --exclude *.pyd
+[2023-05-20 21:24:42] INFO root fetch - processPackages [uoy-assessment-uploader]: Downloading https://files.pythonhosted.org/packages/f5/3c/3b4e6d850952159601bbfda60e7bec3062eb13bd1a79262576052d775104/uoy_assessment_uploader-0.5.0.tar.gz
+[2023-05-20 21:24:42] INFO root fetch - processPackages [click-web]: Downloading https://files.pythonhosted.org/packages/fa/b8/db35e0e2781d7775ff3e651483e5c38036ebbdbd15ae52ab16b37b265c0f/click-web-0.8.2.tar.gz
+[2023-05-20 21:24:42] INFO root fetch - processPackages [click-web]: executing diffoscope
+[2023-05-20 21:24:42] INFO root fetch - processPackages [click-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/click-web-0.8.1.tar.gz tmp/click-web-0.8.2.tar.gz --markdown 20230520/c/click-web/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-05-20 21:24:43] INFO root fetch - processPackages [uoy-assessment-uploader]: executing diffoscope
+[2023-05-20 21:24:43] INFO root fetch - processPackages [uoy-assessment-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uoy-assessment-uploader-0.4.0.tar.gz tmp/uoy_assessment_uploader-0.5.0.tar.gz --markdown 20230520/u/uoy-assessment-uploader/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-20 21:24:44] INFO root fetch - main [MainThread]: End processing [sshclick]: success
+[2023-05-20 21:24:44] INFO root fetch - main [MainThread]: End processing [uoy-assessment-uploader]: success
+[2023-05-20 21:24:44] INFO root fetch - main [MainThread]: End processing [click-web]: success
+[2023-05-20 21:24:44] INFO root fetch - main [MainThread]: End processing [krakenci-server]: success
+[2023-05-20 21:24:44] INFO root fetch - main [MainThread]: Store serial: [18183953]
