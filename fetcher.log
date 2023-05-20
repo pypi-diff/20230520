@@ -6169,3 +6169,20 @@
 [2023-05-20 07:36:16] INFO root fetch - processPackages [mainnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mainnet-1.1.8.tar.gz tmp/mainnet-1.1.9.tar.gz --markdown 20230520/m/mainnet/1.1.8-1.1.9/diff.md --exclude *.pyd
 [2023-05-20 07:36:26] INFO root fetch - main [MainThread]: End processing [mainnet]: success
 [2023-05-20 07:36:26] INFO root fetch - main [MainThread]: Store serial: [18179901]
+[2023-05-20 07:41:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179901]
+[2023-05-20 07:41:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 07:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypura
+[2023-05-20 07:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-aitx
+[2023-05-20 07:41:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hanz
+[2023-05-20 07:41:35] INFO root fetch - processPackages [pypura]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-20 07:41:35] WARNING root fetch - processPackages [hanz]: Skipping, unable to determine old version
+[2023-05-20 07:41:35] INFO root fetch - main [MainThread]: End processing [hanz] error
+[2023-05-20 07:41:35] INFO root fetch - processPackages [nonebot-plugin-aitx]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-20 07:41:35] INFO root fetch - processPackages [pypura]: executing diffoscope
+[2023-05-20 07:41:35] INFO root fetch - processPackages [pypura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypura-0.1.2.tar.gz tmp/pypura-0.1.3.tar.gz --markdown 20230520/p/pypura/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-20 07:41:35] INFO root fetch - processPackages [nonebot-plugin-aitx]: Downloading https://files.pythonhosted.org/packages/42/f8/647c44f95acb0ef8fcfe0c46936b12080000d247dc2560363582850a79f8/nonebot_plugin_aitx-0.1.3.tar.gz
+[2023-05-20 07:41:35] INFO root fetch - processPackages [nonebot-plugin-aitx]: executing diffoscope
+[2023-05-20 07:41:35] INFO root fetch - processPackages [nonebot-plugin-aitx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_aitx-0.1.2.tar.gz tmp/nonebot_plugin_aitx-0.1.3.tar.gz --markdown 20230520/n/nonebot-plugin-aitx/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-20 07:41:36] INFO root fetch - main [MainThread]: End processing [pypura]: success
+[2023-05-20 07:42:18] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-aitx]: success
+[2023-05-20 07:42:18] INFO root fetch - main [MainThread]: Store serial: [18179916]
