@@ -5832,3 +5832,56 @@
 [2023-05-20 06:35:27] INFO root fetch - main [MainThread]: End processing [flanautils]: success
 [2023-05-20 06:35:27] INFO root fetch - main [MainThread]: End processing [lolpop]: success
 [2023-05-20 06:35:27] INFO root fetch - main [MainThread]: Store serial: [18179687]
+[2023-05-20 06:40:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179687]
+[2023-05-20 06:40:36] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-20 06:40:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kserve
+[2023-05-20 06:40:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Jvav
+[2023-05-20 06:40:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: coconut-develop
+[2023-05-20 06:40:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: timer-module
+[2023-05-20 06:40:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-ga4-serverside
+[2023-05-20 06:40:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flanabot
+[2023-05-20 06:40:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: flanaapis
+[2023-05-20 06:40:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: scikit-build-core
+[2023-05-20 06:40:36] INFO root fetch - processPackages [kserve]: New version: [0.9.0rc0] Old Version: [0.9.0]
+[2023-05-20 06:40:36] INFO root fetch - processPackages [timer-module]: New version: [1.1.0] Old Version: [1.0.4]
+[2023-05-20 06:40:36] INFO root fetch - processPackages [Jvav]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-20 06:40:36] INFO root fetch - processPackages [coconut-develop]: New version: [3.0.0a0.dev9] Old Version: [3.0.0a0.dev8]
+[2023-05-20 06:40:36] INFO root fetch - processPackages [django-ga4-serverside]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-20 06:40:36] INFO root fetch - processPackages [flanabot]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-05-20 06:40:36] INFO root fetch - processPackages [scikit-build-core]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-20 06:40:36] INFO root fetch - processPackages [flanaapis]: New version: [1.6.2] Old Version: [1.6.1]
+[2023-05-20 06:40:36] INFO root fetch - processPackages [coconut-develop]: executing diffoscope
+[2023-05-20 06:40:36] INFO root fetch - processPackages [coconut-develop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coconut-develop-3.0.0a0.dev8.tar.gz tmp/coconut-develop-3.0.0a0.dev9.tar.gz --markdown 20230520/c/coconut-develop/3.0.0a0.dev8-3.0.0a0.dev9/diff.md --exclude *.pyd
+[2023-05-20 06:40:36] INFO root fetch - processPackages [Jvav]: executing diffoscope
+[2023-05-20 06:40:36] INFO root fetch - processPackages [Jvav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jvav-1.2.8.tar.gz tmp/Jvav-1.2.9.tar.gz --markdown 20230520/J/Jvav/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-20 06:40:36] INFO root fetch - processPackages [scikit-build-core]: executing diffoscope
+[2023-05-20 06:40:36] INFO root fetch - processPackages [scikit-build-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit_build_core-0.4.0.tar.gz tmp/scikit_build_core-0.4.1.tar.gz --markdown 20230520/s/scikit-build-core/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-20 06:40:36] INFO root fetch - processPackages [timer-module]: Downloading https://files.pythonhosted.org/packages/b6/e4/efd8b73b43cfbeb434b4ffc8c3ab0525bb07a23a578ebe0601ca75221460/timer-module-1.0.4.tar.gz
+[2023-05-20 06:40:36] INFO root fetch - processPackages [kserve]: Downloading https://files.pythonhosted.org/packages/cd/9d/18d0d09ed43c55f8028b5e56156fe8230b5cd752c769b6a55b2549ff0a96/kserve-0.9.0.tar.gz
+[2023-05-20 06:40:36] INFO root fetch - processPackages [flanabot]: Downloading https://files.pythonhosted.org/packages/2d/3c/0bc75ef6b31e34f914d3e5e257381e808140c1b4f70ed64c83adb600cfd2/flanabot-1.5.1.tar.gz
+[2023-05-20 06:40:36] INFO root fetch - processPackages [django-ga4-serverside]: Downloading https://files.pythonhosted.org/packages/a8/01/4ae66a4bcd62430e4790f86cc4023c49138c4b174dba046c3fd76ed05bfd/django_ga4_serverside-0.0.1.tar.gz
+[2023-05-20 06:40:36] INFO root fetch - processPackages [flanaapis]: Downloading https://files.pythonhosted.org/packages/01/d9/25049a001b5f71f8ecebcc99280cb80ce55c533ca9d2d134209197f2d89a/flanaapis-1.6.1.tar.gz
+[2023-05-20 06:40:36] INFO root fetch - processPackages [timer-module]: Downloading https://files.pythonhosted.org/packages/d2/fc/9d9312bd05aa3d913a8ec17505da7be36e4221268d0859dc920bb3ed7a08/timer-module-1.1.0.tar.gz
+[2023-05-20 06:40:36] INFO root fetch - processPackages [timer-module]: executing diffoscope
+[2023-05-20 06:40:36] INFO root fetch - processPackages [timer-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/timer-module-1.0.4.tar.gz tmp/timer-module-1.1.0.tar.gz --markdown 20230520/t/timer-module/1.0.4-1.1.0/diff.md --exclude *.pyd
+[2023-05-20 06:40:36] INFO root fetch - processPackages [flanabot]: Downloading https://files.pythonhosted.org/packages/39/6d/70cefb2e908d59d9a2d48fbea606a7622e87f606955e485cafcec0d892cb/flanabot-1.5.2.tar.gz
+[2023-05-20 06:40:36] INFO root fetch - processPackages [flanaapis]: Downloading https://files.pythonhosted.org/packages/25/0b/f58e6ea763d82153bbf838df90cdddd1320b592f28a917b6ba58562fbfd0/flanaapis-1.6.2.tar.gz
+[2023-05-20 06:40:36] INFO root fetch - processPackages [django-ga4-serverside]: Downloading https://files.pythonhosted.org/packages/15/98/0973f95016110ddf04bb83992d30f454161750676e0c04eec0c9e987d1a4/django_ga4_serverside-0.0.2.tar.gz
+[2023-05-20 06:40:36] INFO root fetch - processPackages [flanabot]: executing diffoscope
+[2023-05-20 06:40:36] INFO root fetch - processPackages [flanabot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flanabot-1.5.1.tar.gz tmp/flanabot-1.5.2.tar.gz --markdown 20230520/f/flanabot/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-05-20 06:40:36] INFO root fetch - processPackages [django-ga4-serverside]: executing diffoscope
+[2023-05-20 06:40:36] INFO root fetch - processPackages [django-ga4-serverside]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_ga4_serverside-0.0.1.tar.gz tmp/django_ga4_serverside-0.0.2.tar.gz --markdown 20230520/d/django-ga4-serverside/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-20 06:40:37] INFO root fetch - processPackages [flanaapis]: executing diffoscope
+[2023-05-20 06:40:37] INFO root fetch - processPackages [flanaapis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flanaapis-1.6.1.tar.gz tmp/flanaapis-1.6.2.tar.gz --markdown 20230520/f/flanaapis/1.6.1-1.6.2/diff.md --exclude *.pyd
+[2023-05-20 06:40:37] INFO root fetch - processPackages [kserve]: Downloading https://files.pythonhosted.org/packages/4b/c5/9aee0855711e0c852e47edfa1c3a5c26db52f9f2e8e07d9a6681cc1a5451/kserve-0.9.0rc0.tar.gz
+[2023-05-20 06:40:37] INFO root fetch - processPackages [kserve]: executing diffoscope
+[2023-05-20 06:40:37] INFO root fetch - processPackages [kserve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kserve-0.9.0.tar.gz tmp/kserve-0.9.0rc0.tar.gz --markdown 20230520/k/kserve/0.9.0-0.9.0rc0/diff.md --exclude *.pyd
+[2023-05-20 06:40:37] INFO root fetch - main [MainThread]: End processing [Jvav]: success
+[2023-05-20 06:40:38] INFO root fetch - main [MainThread]: End processing [timer-module]: success
+[2023-05-20 06:40:38] INFO root fetch - main [MainThread]: End processing [flanabot]: success
+[2023-05-20 06:40:38] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
+[2023-05-20 06:40:38] INFO root fetch - main [MainThread]: End processing [flanaapis]: success
+[2023-05-20 06:40:38] INFO root fetch - main [MainThread]: End processing [django-ga4-serverside]: success
+[2023-05-20 06:40:40] INFO root fetch - main [MainThread]: End processing [kserve]: success
+[2023-05-20 06:40:41] INFO root fetch - main [MainThread]: End processing [scikit-build-core]: success
+[2023-05-20 06:40:41] INFO root fetch - main [MainThread]: Store serial: [18179738]
