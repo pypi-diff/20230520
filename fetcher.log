@@ -5726,3 +5726,25 @@
 [2023-05-20 06:14:43] INFO root fetch - main [MainThread]: End processing [django-xmail-ritual]: success
 [2023-05-20 06:14:43] INFO root fetch - main [MainThread]: End processing [django-trackmodels-ritual]: success
 [2023-05-20 06:14:43] INFO root fetch - main [MainThread]: Store serial: [18179621]
+[2023-05-20 06:19:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179621]
+[2023-05-20 06:19:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 06:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdktf-cdktf-provider-azurerm
+[2023-05-20 06:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Jvav
+[2023-05-20 06:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cell-gears
+[2023-05-20 06:19:52] INFO root fetch - processPackages [Jvav]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-20 06:19:52] INFO root fetch - processPackages [cell-gears]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-20 06:19:52] INFO root fetch - processPackages [cdktf-cdktf-provider-azurerm]: New version: [7.0.5] Old Version: [7.0.4]
+[2023-05-20 06:19:52] INFO root fetch - processPackages [cell-gears]: Downloading https://files.pythonhosted.org/packages/bc/76/93a2848c9283e87f470b277fb20ab0258d6741749550e3d4f1f563e5b560/cell-gears-0.0.3.tar.gz
+[2023-05-20 06:19:52] INFO root fetch - processPackages [Jvav]: Downloading https://files.pythonhosted.org/packages/e4/19/fd8453c2be90de302e0df861fa40ad860fddcd28d237a848cd851b6de81e/Jvav-1.2.8.tar.gz
+[2023-05-20 06:19:52] INFO root fetch - processPackages [cdktf-cdktf-provider-azurerm]: Downloading https://files.pythonhosted.org/packages/a3/88/ccc42b5c251b255ba6c4e953ade3452ca7648d8b02650065c50fb040e69c/cdktf_cdktf_provider_azurerm-7.0.4-py3-none-any.whl
+[2023-05-20 06:19:52] WARNING root fetch - processPackages [cdktf-cdktf-provider-azurerm]: Skipping package: exceeds size limit 31414553>=10485760
+[2023-05-20 06:19:52] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-azurerm] error
+[2023-05-20 06:19:52] INFO root fetch - processPackages [cell-gears]: Downloading https://files.pythonhosted.org/packages/09/45/250465e651d124ec27c05c58d602c41cfd31a50db47864f606f3f3c7ce0f/cell-gears-0.0.4.tar.gz
+[2023-05-20 06:19:52] INFO root fetch - processPackages [Jvav]: Downloading https://files.pythonhosted.org/packages/f9/d8/985496f4218c5bdccc1241dc6b685e82caf449b8c39e0e9dfdba699b4b21/Jvav-1.2.9.tar.gz
+[2023-05-20 06:19:52] INFO root fetch - processPackages [cell-gears]: executing diffoscope
+[2023-05-20 06:19:52] INFO root fetch - processPackages [cell-gears]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cell-gears-0.0.3.tar.gz tmp/cell-gears-0.0.4.tar.gz --markdown 20230520/c/cell-gears/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-20 06:19:53] INFO root fetch - processPackages [Jvav]: executing diffoscope
+[2023-05-20 06:19:53] INFO root fetch - processPackages [Jvav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jvav-1.2.8.tar.gz tmp/Jvav-1.2.9.tar.gz --markdown 20230520/J/Jvav/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-20 06:19:54] INFO root fetch - main [MainThread]: End processing [Jvav]: success
+[2023-05-20 06:19:54] INFO root fetch - main [MainThread]: End processing [cell-gears]: success
+[2023-05-20 06:19:54] INFO root fetch - main [MainThread]: Store serial: [18179633]
