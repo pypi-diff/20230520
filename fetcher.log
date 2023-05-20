@@ -5585,3 +5585,17 @@
 [2023-05-20 05:40:35] INFO root fetch - main [MainThread]: End processing [pydflow]: success
 [2023-05-20 05:40:35] INFO root fetch - main [MainThread]: End processing [pydisadm]: success
 [2023-05-20 05:40:35] INFO root fetch - main [MainThread]: Store serial: [18179492]
+[2023-05-20 05:45:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179492]
+[2023-05-20 05:45:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-20 05:45:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: certora-cli-alpha-jtoman-cert-2226
+[2023-05-20 05:45:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: polygon-finance
+[2023-05-20 05:45:44] INFO root fetch - processPackages [certora-cli-alpha-jtoman-cert-2226]: New version: [20230520.2.40.617633] Old Version: [20230520.1.47.623439]
+[2023-05-20 05:45:44] INFO root fetch - processPackages [polygon-finance]: New version: [1.0.2] Old Version: [1.0.0]
+[2023-05-20 05:45:44] INFO root fetch - processPackages [certora-cli-alpha-jtoman-cert-2226]: Downloading https://files.pythonhosted.org/packages/e9/14/61d4ce5fe2f6a5746cf60feb454dd06253d8f1f6972f697834aaebf1d440/certora-cli-alpha-jtoman-cert-2226-20230520.1.47.623439.tar.gz
+[2023-05-20 05:45:44] WARNING root fetch - processPackages [certora-cli-alpha-jtoman-cert-2226]: Skipping package: exceeds size limit 38979625>=10485760
+[2023-05-20 05:45:44] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-jtoman-cert-2226] error
+[2023-05-20 05:45:45] INFO root fetch - processPackages [polygon-finance]: Downloading https://files.pythonhosted.org/packages/0b/e4/cf93bf9b3142bdf9c90aa4f1160a57f48300de2a4166fb716d48d802e94a/polygon_finance-1.0.2.tar.gz
+[2023-05-20 05:45:45] INFO root fetch - processPackages [polygon-finance]: executing diffoscope
+[2023-05-20 05:45:45] INFO root fetch - processPackages [polygon-finance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polygon_finance-1.0.0.tar.gz tmp/polygon_finance-1.0.2.tar.gz --markdown 20230520/p/polygon-finance/1.0.0-1.0.2/diff.md --exclude *.pyd
+[2023-05-20 05:45:46] INFO root fetch - main [MainThread]: End processing [polygon-finance]: success
+[2023-05-20 05:45:46] INFO root fetch - main [MainThread]: Store serial: [18179499]
