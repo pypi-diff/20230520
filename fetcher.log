@@ -12196,3 +12196,21 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 20:05:20] INFO root fetch - main [MainThread]: End processing [TMDBTraktSyncer]: success
 [2023-05-20 20:05:20] INFO root fetch - main [MainThread]: End processing [ejtraderMT]: success
 [2023-05-20 20:05:20] INFO root fetch - main [MainThread]: Store serial: [18183694]
+[2023-05-20 20:10:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183694]
+[2023-05-20 20:10:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 20:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stringtokenizer
+[2023-05-20 20:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arkprts
+[2023-05-20 20:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: capabilities
+[2023-05-20 20:10:28] INFO root fetch - processPackages [arkprts]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-20 20:10:28] INFO root fetch - processPackages [stringtokenizer]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-05-20 20:10:28] INFO root fetch - processPackages [capabilities]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-20 20:10:28] INFO root fetch - processPackages [capabilities]: executing diffoscope
+[2023-05-20 20:10:28] INFO root fetch - processPackages [capabilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/capabilities-0.3.8.tar.gz tmp/capabilities-0.3.9.tar.gz --markdown 20230520/c/capabilities/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-20 20:10:29] INFO root fetch - processPackages [arkprts]: Downloading https://files.pythonhosted.org/packages/89/a7/b02ecaa596175ccca01682525ff085da00775d1f104ca8881bdef32a029b/arkprts-0.1.1.tar.gz
+[2023-05-20 20:10:29] ERROR root fetch - processPackages [stringtokenizer]: Unable to fetch info: No such project/version 'stringtokenizer' 1.1.0
+[2023-05-20 20:10:29] INFO root fetch - main [MainThread]: End processing [stringtokenizer] error
+[2023-05-20 20:10:29] INFO root fetch - processPackages [arkprts]: executing diffoscope
+[2023-05-20 20:10:29] INFO root fetch - processPackages [arkprts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkprts-0.1.0.tar.gz tmp/arkprts-0.1.1.tar.gz --markdown 20230520/a/arkprts/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-20 20:10:30] INFO root fetch - main [MainThread]: End processing [arkprts]: success
+[2023-05-20 20:10:30] INFO root fetch - main [MainThread]: End processing [capabilities]: success
+[2023-05-20 20:10:30] INFO root fetch - main [MainThread]: Store serial: [18183714]
