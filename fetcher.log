@@ -2369,3 +2369,34 @@
 [2023-05-20 03:01:24] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
 [2023-05-20 03:02:28] INFO root fetch - main [MainThread]: End processing [SQLAlchemy]: success
 [2023-05-20 03:02:28] INFO root fetch - main [MainThread]: Store serial: [18177483]
+[2023-05-20 03:07:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18177483]
+[2023-05-20 03:07:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-20 03:07:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eot
+[2023-05-20 03:07:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keepercommander
+[2023-05-20 03:07:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-hugo-deploy
+[2023-05-20 03:07:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: econuker
+[2023-05-20 03:07:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: whylogs
+[2023-05-20 03:07:38] INFO root fetch - processPackages [econuker]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-20 03:07:38] INFO root fetch - processPackages [cdk-hugo-deploy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-20 03:07:38] INFO root fetch - processPackages [whylogs]: New version: [1.1.9.dev0] Old Version: [1.1.9]
+[2023-05-20 03:07:38] INFO root fetch - processPackages [eot]: New version: [0.1.0] Old Version: [0.0.7]
+[2023-05-20 03:07:38] INFO root fetch - processPackages [econuker]: executing diffoscope
+[2023-05-20 03:07:38] INFO root fetch - processPackages [econuker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/econuker-1.0.0.tar.gz tmp/econuker-1.0.1.tar.gz --markdown 20230520/e/econuker/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-20 03:07:38] INFO root fetch - processPackages [keepercommander]: New version: [4.9] Old Version: [4.88]
+[2023-05-20 03:07:38] INFO root fetch - processPackages [whylogs]: executing diffoscope
+[2023-05-20 03:07:38] INFO root fetch - processPackages [whylogs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whylogs-1.1.9.tar.gz tmp/whylogs-1.1.9.dev0.tar.gz --markdown 20230520/w/whylogs/1.1.9-1.1.9.dev0/diff.md --exclude *.pyd
+[2023-05-20 03:07:38] INFO root fetch - processPackages [cdk-hugo-deploy]: executing diffoscope
+[2023-05-20 03:07:38] INFO root fetch - processPackages [cdk-hugo-deploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-hugo-deploy-0.0.98.tar.gz tmp/cdk-hugo-deploy-0.0.99.tar.gz --markdown 20230520/c/cdk-hugo-deploy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-20 03:07:39] INFO root fetch - processPackages [keepercommander]: Downloading https://files.pythonhosted.org/packages/16/91/5a24b372408888daef4a70bb214157f171e35ef268f1a3904fd190336343/keepercommander-4.88.tar.gz
+[2023-05-20 03:07:39] INFO root fetch - processPackages [eot]: Downloading https://files.pythonhosted.org/packages/d0/1c/dcb4040df46ca99e5a2853c255c3294a4fc2e79e9d957a2862112439e1aa/eot-0.1.0.tar.gz
+[2023-05-20 03:07:39] INFO root fetch - processPackages [eot]: executing diffoscope
+[2023-05-20 03:07:39] INFO root fetch - processPackages [eot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eot-0.0.7.tar.gz tmp/eot-0.1.0.tar.gz --markdown 20230520/e/eot/0.0.7-0.1.0/diff.md --exclude *.pyd
+[2023-05-20 03:07:39] INFO root fetch - processPackages [keepercommander]: Downloading https://files.pythonhosted.org/packages/81/36/49b1c4234938830448040dbce4a33041541130d80e9ff959c80a7863be75/keepercommander-4.9.tar.gz
+[2023-05-20 03:07:39] INFO root fetch - processPackages [keepercommander]: executing diffoscope
+[2023-05-20 03:07:39] INFO root fetch - processPackages [keepercommander]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keepercommander-4.88.tar.gz tmp/keepercommander-4.9.tar.gz --markdown 20230520/k/keepercommander/4.88-4.9/diff.md --exclude *.pyd
+[2023-05-20 03:07:40] INFO root fetch - main [MainThread]: End processing [econuker]: success
+[2023-05-20 03:07:40] INFO root fetch - main [MainThread]: End processing [eot]: success
+[2023-05-20 03:07:40] INFO root fetch - main [MainThread]: End processing [cdk-hugo-deploy]: success
+[2023-05-20 03:07:41] INFO root fetch - main [MainThread]: End processing [keepercommander]: success
+[2023-05-20 03:07:41] INFO root fetch - main [MainThread]: End processing [whylogs]: success
+[2023-05-20 03:07:41] INFO root fetch - main [MainThread]: Store serial: [18177499]
