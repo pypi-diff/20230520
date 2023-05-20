@@ -12345,3 +12345,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 20:31:57] INFO root fetch - main [MainThread]: End processing [minio]: success
 [2023-05-20 20:31:58] INFO root fetch - main [MainThread]: End processing [web3cli]: success
 [2023-05-20 20:31:58] INFO root fetch - main [MainThread]: Store serial: [18183779]
+[2023-05-20 20:37:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183779]
+[2023-05-20 20:37:07] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-20 20:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dragonfly-energy
+[2023-05-20 20:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dragonfly-uwg
+[2023-05-20 20:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: finalcif
+[2023-05-20 20:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kynaylibs
+[2023-05-20 20:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: etm-dgraham
+[2023-05-20 20:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: textagon
+[2023-05-20 20:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: align4d
+[2023-05-20 20:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lbt-dragonfly
+[2023-05-20 20:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: svgpathtools
+[2023-05-20 20:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: agixt
+[2023-05-20 20:37:07] INFO root fetch - processPackages [align4d]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-20 20:37:07] INFO root fetch - processPackages [textagon]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 20:37:07] INFO root fetch - processPackages [agixt]: New version: [1.1.48b0] Old Version: [1.1.47b0]
+[2023-05-20 20:37:07] INFO root fetch - processPackages [align4d]: executing diffoscope
+[2023-05-20 20:37:07] INFO root fetch - processPackages [align4d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/align4d-1.1.2.tar.gz tmp/align4d-1.1.3.tar.gz --markdown 20230520/a/align4d/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-20 20:37:07] INFO root fetch - processPackages [textagon]: executing diffoscope
+[2023-05-20 20:37:07] INFO root fetch - processPackages [textagon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textagon-0.1.8.tar.gz tmp/textagon-0.1.9.tar.gz --markdown 20230520/t/textagon/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 20:37:07] INFO root fetch - processPackages [finalcif]: New version: [120] Old Version: [119]
+[2023-05-20 20:37:07] INFO root fetch - processPackages [kynaylibs]: New version: [7.1.4] Old Version: [7.1.3]
+[2023-05-20 20:37:07] INFO root fetch - processPackages [dragonfly-uwg]: New version: [0.5.99] Old Version: [0.5.98]
+[2023-05-20 20:37:07] INFO root fetch - processPackages [svgpathtools]: New version: [1.6.1] Old Version: [1.6.0]
+[2023-05-20 20:37:07] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-05-20 20:37:07] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.47b0.tar.gz tmp/agixt-1.1.48b0.tar.gz --markdown 20230520/a/agixt/1.1.47b0-1.1.48b0/diff.md --exclude *.pyd
+[2023-05-20 20:37:07] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2023-05-20 20:37:07] INFO root fetch - processPackages [etm-dgraham]: New version: [4.9.7] Old Version: [4.9.6]
+[2023-05-20 20:37:07] INFO root fetch - processPackages [kynaylibs]: executing diffoscope
+[2023-05-20 20:37:07] INFO root fetch - processPackages [kynaylibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kynaylibs-7.1.3.tar.gz tmp/kynaylibs-7.1.4.tar.gz --markdown 20230520/k/kynaylibs/7.1.3-7.1.4/diff.md --exclude *.pyd
+[2023-05-20 20:37:07] INFO root fetch - processPackages [dragonfly-energy]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-20 20:37:07] INFO root fetch - processPackages [finalcif]: Downloading https://files.pythonhosted.org/packages/e8/2f/2239009f2e493a144695473320a9298bd18f63ed272d52f8edf4b47a6c8a/finalcif-119.tar.gz
+[2023-05-20 20:37:07] INFO root fetch - processPackages [svgpathtools]: Downloading https://files.pythonhosted.org/packages/85/84/1218dbaef20f9228b61aeee7f28d2438c09727676033c6aefde8320e0f24/svgpathtools-1.6.0.tar.gz
+[2023-05-20 20:37:08] INFO root fetch - processPackages [dragonfly-uwg]: executing diffoscope
+[2023-05-20 20:37:08] INFO root fetch - processPackages [dragonfly-uwg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-uwg-0.5.98.tar.gz tmp/dragonfly-uwg-0.5.99.tar.gz --markdown 20230520/d/dragonfly-uwg/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2023-05-20 20:37:08] INFO root fetch - processPackages [finalcif]: Downloading https://files.pythonhosted.org/packages/39/09/3c34229862796cbc5e82155dfb6b133ef753c2dc4c82ccf54636572e644b/finalcif-120.tar.gz
+[2023-05-20 20:37:08] INFO root fetch - processPackages [etm-dgraham]: executing diffoscope
+[2023-05-20 20:37:08] INFO root fetch - processPackages [etm-dgraham]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etm-dgraham-4.9.6.tar.gz tmp/etm-dgraham-4.9.7.tar.gz --markdown 20230520/e/etm-dgraham/4.9.6-4.9.7/diff.md --exclude *.pyd
+[2023-05-20 20:37:08] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2023-05-20 20:37:08] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20230520/l/lbt-dragonfly/0.9.98-0.9.99/diff.md --exclude *.pyd
+[2023-05-20 20:37:08] INFO root fetch - processPackages [dragonfly-energy]: executing diffoscope
+[2023-05-20 20:37:08] INFO root fetch - processPackages [dragonfly-energy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-energy-1.9.8.tar.gz tmp/dragonfly-energy-1.9.9.tar.gz --markdown 20230520/d/dragonfly-energy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-20 20:37:08] INFO root fetch - processPackages [finalcif]: executing diffoscope
+[2023-05-20 20:37:08] INFO root fetch - processPackages [finalcif]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finalcif-119.tar.gz tmp/finalcif-120.tar.gz --markdown 20230520/f/finalcif/119-120/diff.md --exclude *.pyd
+[2023-05-20 20:37:08] INFO root fetch - processPackages [svgpathtools]: Downloading https://files.pythonhosted.org/packages/ac/cc/4eefc59e5fef22fef58cc3a38c56930432fbfa79e6865e8382c5ed1ccc9a/svgpathtools-1.6.1.tar.gz
+[2023-05-20 20:37:09] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-05-20 20:37:09] INFO root fetch - processPackages [svgpathtools]: executing diffoscope
+[2023-05-20 20:37:09] INFO root fetch - processPackages [svgpathtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/svgpathtools-1.6.0.tar.gz tmp/svgpathtools-1.6.1.tar.gz --markdown 20230520/s/svgpathtools/1.6.0-1.6.1/diff.md --exclude *.pyd
+[2023-05-20 20:37:09] INFO root fetch - main [MainThread]: End processing [textagon]: success
+[2023-05-20 20:37:09] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2023-05-20 20:37:09] INFO root fetch - main [MainThread]: End processing [kynaylibs]: success
+[2023-05-20 20:37:10] INFO root fetch - main [MainThread]: End processing [dragonfly-energy]: success
+[2023-05-20 20:37:10] INFO root fetch - main [MainThread]: End processing [dragonfly-uwg]: success
+[2023-05-20 20:37:10] INFO root fetch - main [MainThread]: End processing [finalcif]: success
+[2023-05-20 20:37:11] INFO root fetch - main [MainThread]: End processing [svgpathtools]: success
+[2023-05-20 20:37:12] INFO root fetch - main [MainThread]: End processing [align4d]: success
+[2023-05-20 20:37:12] INFO root fetch - main [MainThread]: End processing [etm-dgraham]: success
+[2023-05-20 20:37:12] INFO root fetch - main [MainThread]: Store serial: [18183809]
