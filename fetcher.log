@@ -8751,3 +8751,84 @@
 [2023-05-20 13:24:44] INFO root fetch - main [MainThread]: End processing [hybrid-example]: success
 [2023-05-20 13:24:48] INFO root fetch - main [MainThread]: End processing [hybrid-example]: success
 [2023-05-20 13:24:48] INFO root fetch - main [MainThread]: Store serial: [18181532]
+[2023-05-20 13:29:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18181532]
+[2023-05-20 13:29:56] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-20 13:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchrl-nightly
+[2023-05-20 13:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arabica
+[2023-05-20 13:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: leuci-pol
+[2023-05-20 13:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchx-nightly
+[2023-05-20 13:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyhOn
+[2023-05-20 13:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PyDistances
+[2023-05-20 13:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PyDistances
+[2023-05-20 13:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: runcitadel
+[2023-05-20 13:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: torchserve-nightly
+[2023-05-20 13:29:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: torch-model-archiver-nightly
+[2023-05-20 13:29:57] INFO root fetch - processPackages [arabica]: New version: [1.5.2] Old Version: [1.5.0]
+[2023-05-20 13:29:57] INFO root fetch - processPackages [pyhOn]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-20 13:29:57] INFO root fetch - processPackages [leuci-pol]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 13:29:57] INFO root fetch - processPackages [PyDistances]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-20 13:29:57] INFO root fetch - processPackages [torchx-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-20 13:29:57] INFO root fetch - processPackages [runcitadel]: New version: [1.0.0a0] Old Version: [0.1.0]
+[2023-05-20 13:29:57] INFO root fetch - processPackages [PyDistances]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-20 13:29:57] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-20 13:29:57] INFO root fetch - processPackages [torchserve-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-20 13:29:57] INFO root fetch - processPackages [torchrl-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-20 13:29:57] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/84/1f/9485a72320b2c7f49d6a9304acfbc2bd5fe71c25e0e7a3844ce81a1ed180/torchserve_nightly-2023.5.8-py3-none-any.whl
+[2023-05-20 13:29:57] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2023-05-20 13:29:57] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2023.5.8-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230520/t/torch-model-archiver-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-20 13:29:57] INFO root fetch - processPackages [torchrl-nightly]: executing diffoscope
+[2023-05-20 13:29:57] INFO root fetch - processPackages [torchrl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrl_nightly-2023.5.8-cp39-cp39-win_amd64.whl.zip tmp/torchrl_nightly-2023.5.9-cp39-cp39-win_amd64.whl.zip --markdown 20230520/t/torchrl-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-20 13:29:57] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2023-05-20 13:29:57] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2023.5.8-py3-none-any.whl.zip tmp/torchx_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230520/t/torchx-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-20 13:29:57] INFO root fetch - processPackages [PyDistances]: Downloading https://files.pythonhosted.org/packages/58/5d/3af4da28e674b020bd743dfd3d2c2e8ee36afc417d0e4979da064c5c2ce6/PyDistances-0.0.2.tar.gz
+[2023-05-20 13:29:57] INFO root fetch - processPackages [PyDistances]: Downloading https://files.pythonhosted.org/packages/58/5d/3af4da28e674b020bd743dfd3d2c2e8ee36afc417d0e4979da064c5c2ce6/PyDistances-0.0.2.tar.gz
+[2023-05-20 13:29:57] INFO root fetch - processPackages [leuci-pol]: Downloading https://files.pythonhosted.org/packages/5f/d1/4957f96d594b9f52a647954d2f395b95a9f663e993976b1dd95ca28695dd/leuci-pol-0.0.8.tar.gz
+[2023-05-20 13:29:57] INFO root fetch - processPackages [runcitadel]: Downloading https://files.pythonhosted.org/packages/11/5d/458da4648e44bc8a31be5039012f3ac0603c3b43bff876da4099601d751d/runcitadel-0.1.0.tar.gz
+[2023-05-20 13:29:57] INFO root fetch - processPackages [arabica]: Downloading https://files.pythonhosted.org/packages/f1/35/5078a9653eb727c2c52197c3e65f89f79157d6c94e980d29c366861cbe6a/arabica-1.5.2.tar.gz
+[2023-05-20 13:29:57] INFO root fetch - processPackages [arabica]: executing diffoscope
+[2023-05-20 13:29:57] INFO root fetch - processPackages [arabica]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arabica-1.5.0.tar.gz tmp/arabica-1.5.2.tar.gz --markdown 20230520/a/arabica/1.5.0-1.5.2/diff.md --exclude *.pyd
+[2023-05-20 13:29:57] INFO root fetch - processPackages [runcitadel]: Downloading https://files.pythonhosted.org/packages/18/f5/76f873011f1397c5c4c232e25d4cd60f2d57742d4883c011734c408a9b54/runcitadel-1.0.0a0.tar.gz
+[2023-05-20 13:29:57] INFO root fetch - processPackages [pyhOn]: executing diffoscope
+[2023-05-20 13:29:57] INFO root fetch - processPackages [pyhOn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhOn-0.9.0.tar.gz tmp/pyhOn-0.9.1.tar.gz --markdown 20230520/p/pyhOn/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-20 13:29:57] INFO root fetch - processPackages [leuci-pol]: Downloading https://files.pythonhosted.org/packages/ba/52/0e8b23909efc0e5b7a78f5704e0a10943de0379212ca92d48c2feb9607d8/leuci-pol-0.0.9.tar.gz
+[2023-05-20 13:29:57] INFO root fetch - processPackages [PyDistances]: Downloading https://files.pythonhosted.org/packages/ce/6b/c0bc70b46576cf5ca53f84bfd28937a1a3ae00ff94fa024daf88420ea37e/PyDistances-0.0.3.tar.gz
+[2023-05-20 13:29:57] INFO root fetch - processPackages [PyDistances]: Downloading https://files.pythonhosted.org/packages/ce/6b/c0bc70b46576cf5ca53f84bfd28937a1a3ae00ff94fa024daf88420ea37e/PyDistances-0.0.3.tar.gz
+[2023-05-20 13:29:57] INFO root fetch - processPackages [leuci-pol]: executing diffoscope
+[2023-05-20 13:29:57] INFO root fetch - processPackages [leuci-pol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leuci-pol-0.0.8.tar.gz tmp/leuci-pol-0.0.9.tar.gz --markdown 20230520/l/leuci-pol/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 13:29:57] INFO root fetch - processPackages [PyDistances]: executing diffoscope
+[2023-05-20 13:29:57] INFO root fetch - processPackages [PyDistances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyDistances-0.0.2.tar.gz tmp/PyDistances-0.0.3.tar.gz --markdown 20230520/P/PyDistances/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-20 13:29:57] INFO root fetch - processPackages [PyDistances]: executing diffoscope
+[2023-05-20 13:29:57] INFO root fetch - processPackages [PyDistances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyDistances-0.0.2.tar.gz tmp/PyDistances-0.0.3.tar.gz --markdown 20230520/P/PyDistances/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-20 13:29:57] INFO root fetch - processPackages [runcitadel]: executing diffoscope
+[2023-05-20 13:29:57] INFO root fetch - processPackages [runcitadel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runcitadel-0.1.0.tar.gz tmp/runcitadel-1.0.0a0.tar.gz --markdown 20230520/r/runcitadel/0.1.0-1.0.0a0/diff.md --exclude *.pyd
+[2023-05-20 13:29:57] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 23716791>=10485760
+[2023-05-20 13:29:57] INFO root fetch - processPackages [torchserve-nightly]: Start processing: torch-workflow-archiver-nightly
+[2023-05-20 13:29:57] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2023-05-20 13:29:57] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-20 13:29:57] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2023-05-20 13:29:57] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2023.5.8-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230520/t/torch-workflow-archiver-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-20 13:29:58] INFO root fetch - processPackages [torch-model-archiver-nightly]: Start processing: PatryksAutoAI
+[2023-05-20 13:29:58] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2023-05-20 13:29:58] INFO root fetch - processPackages [PatryksAutoAI]: New version: [1.6.1] Old Version: [1.6.0]
+[2023-05-20 13:29:58] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/8b/9d/382ae4da249d4e2a4e78a852d1abda86540abd21c99abeebfd732e83233c/PatryksAutoAI-1.6.0.tar.gz
+[2023-05-20 13:29:58] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/9d/c8/a3bc7a3fec7d5e524edc1f2fc3d8d90248bea591bbb3e6fe55cceef48425/PatryksAutoAI-1.6.1.tar.gz
+[2023-05-20 13:29:59] INFO root fetch - processPackages [PyDistances]: Start processing: pygeometa
+[2023-05-20 13:29:59] INFO root fetch - main [MainThread]: End processing [PyDistances]: success
+[2023-05-20 13:29:59] INFO root fetch - processPackages [PatryksAutoAI]: executing diffoscope
+[2023-05-20 13:29:59] INFO root fetch - processPackages [PatryksAutoAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PatryksAutoAI-1.6.0.tar.gz tmp/PatryksAutoAI-1.6.1.tar.gz --markdown 20230520/P/PatryksAutoAI/1.6.0-1.6.1/diff.md --exclude *.pyd
+[2023-05-20 13:29:59] INFO root fetch - processPackages [pygeometa]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-20 13:29:59] INFO root fetch - main [MainThread]: End processing [leuci-pol]: success
+[2023-05-20 13:29:59] INFO root fetch - processPackages [pygeometa]: Downloading https://files.pythonhosted.org/packages/1c/f0/a475bfa5037252400749ca948b23830968cccf39a47400c9651f6e010c50/pygeometa-0.9.0.tar.gz
+[2023-05-20 13:29:59] INFO root fetch - main [MainThread]: End processing [PyDistances]: success
+[2023-05-20 13:29:59] INFO root fetch - processPackages [pygeometa]: Downloading https://files.pythonhosted.org/packages/2e/38/90b14001ab1629765103fc7f53291a6e526a87fb7cad7efa9e32eb228eb3/pygeometa-0.9.1.tar.gz
+[2023-05-20 13:29:59] INFO root fetch - main [MainThread]: End processing [runcitadel]: success
+[2023-05-20 13:29:59] INFO root fetch - main [MainThread]: End processing [arabica]: success
+[2023-05-20 13:29:59] INFO root fetch - processPackages [pygeometa]: executing diffoscope
+[2023-05-20 13:29:59] INFO root fetch - processPackages [pygeometa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygeometa-0.9.0.tar.gz tmp/pygeometa-0.9.1.tar.gz --markdown 20230520/p/pygeometa/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-20 13:29:59] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2023-05-20 13:29:59] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2023-05-20 13:29:59] INFO root fetch - main [MainThread]: End processing [pyhOn]: success
+[2023-05-20 13:29:59] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
+[2023-05-20 13:30:00] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
+[2023-05-20 13:30:00] INFO root fetch - main [MainThread]: End processing [pygeometa]: success
+[2023-05-20 13:30:00] INFO root fetch - main [MainThread]: Store serial: [18181573]
