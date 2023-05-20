@@ -7986,3 +7986,70 @@
 [2023-05-20 12:10:17] ERROR root fetch - processPackages [sage-conf]: Timeout during execution of pkgdiff
 [2023-05-20 12:10:17] INFO root fetch - main [MainThread]: End processing [sage-conf] error
 [2023-05-20 12:10:17] INFO root fetch - main [MainThread]: Store serial: [18181106]
+[2023-05-20 12:15:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18181106]
+[2023-05-20 12:15:27] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-20 12:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: easydock
+[2023-05-20 12:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dm-reverb-nightly
+[2023-05-20 12:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PatryksAutoAI
+[2023-05-20 12:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hummuspy
+[2023-05-20 12:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bus-station
+[2023-05-20 12:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: weathering
+[2023-05-20 12:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pypcapkit
+[2023-05-20 12:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: extr-ds
+[2023-05-20 12:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: solid-backend
+[2023-05-20 12:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: hummuspy
+[2023-05-20 12:15:27] WARNING root fetch - processPackages [easydock]: Skipping, unable to determine old version
+[2023-05-20 12:15:27] INFO root fetch - processPackages [easydock]: Start processing: simplebox
+[2023-05-20 12:15:27] INFO root fetch - main [MainThread]: End processing [easydock] error
+[2023-05-20 12:15:27] INFO root fetch - processPackages [extr-ds]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 12:15:27] INFO root fetch - processPackages [pypcapkit]: New version: [1.0.1.post1] Old Version: [1.0.1]
+[2023-05-20 12:15:27] INFO root fetch - processPackages [hummuspy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 12:15:27] INFO root fetch - processPackages [PatryksAutoAI]: New version: [1.5.6] Old Version: [1.5.5]
+[2023-05-20 12:15:27] INFO root fetch - processPackages [simplebox]: New version: [0.0.1a150] Old Version: [0.0.1a149]
+[2023-05-20 12:15:27] INFO root fetch - processPackages [hummuspy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 12:15:27] INFO root fetch - processPackages [extr-ds]: executing diffoscope
+[2023-05-20 12:15:27] INFO root fetch - processPackages [extr-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extr-ds-0.0.8.tar.gz tmp/extr-ds-0.0.9.tar.gz --markdown 20230520/e/extr-ds/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 12:15:27] INFO root fetch - processPackages [bus-station]: New version: [6.0.1] Old Version: [6.0.0]
+[2023-05-20 12:15:27] INFO root fetch - processPackages [solid-backend]: New version: [0.3a2] Old Version: [0.3.0a5]
+[2023-05-20 12:15:27] INFO root fetch - processPackages [simplebox]: executing diffoscope
+[2023-05-20 12:15:27] INFO root fetch - processPackages [simplebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplebox-0.0.1a149-py3-none-any.whl.zip tmp/simplebox-0.0.1a150-py3-none-any.whl.zip --markdown 20230520/s/simplebox/0.0.1a149-0.0.1a150/diff.md --exclude *.pyd
+[2023-05-20 12:15:27] WARNING root fetch - processPackages [weathering]: Skipping, unable to determine old version
+[2023-05-20 12:15:27] INFO root fetch - processPackages [weathering]: Start processing: nlpaf
+[2023-05-20 12:15:27] INFO root fetch - main [MainThread]: End processing [weathering] error
+[2023-05-20 12:15:27] INFO root fetch - processPackages [nlpaf]: New version: [2.8.8] Old Version: [2.8.7]
+[2023-05-20 12:15:28] INFO root fetch - processPackages [nlpaf]: Downloading https://files.pythonhosted.org/packages/5d/da/1b92550f6bc1e7b62d9eca934cf2d4d57ebcc3fb29072424036f138d98af/nlpaf-2.8.7.tar.gz
+[2023-05-20 12:15:28] INFO root fetch - processPackages [hummuspy]: Downloading https://files.pythonhosted.org/packages/6c/38/cc3cd3dbc914c44f6c121a1d2dc8cc7c16f0eb80a555fbed15b589b98fd9/hummuspy-0.0.8.tar.gz
+[2023-05-20 12:15:28] INFO root fetch - processPackages [hummuspy]: Downloading https://files.pythonhosted.org/packages/6c/38/cc3cd3dbc914c44f6c121a1d2dc8cc7c16f0eb80a555fbed15b589b98fd9/hummuspy-0.0.8.tar.gz
+[2023-05-20 12:15:28] INFO root fetch - processPackages [dm-reverb-nightly]: New version: [0.9.0.dev20221207] Old Version: [0.9.0.dev20221206]
+[2023-05-20 12:15:28] WARNING root fetch - processPackages [nlpaf]: Skipping package: exceeds size limit 24324747>=10485760
+[2023-05-20 12:15:28] INFO root fetch - main [MainThread]: End processing [nlpaf] error
+[2023-05-20 12:15:28] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/9a/12/c86b3f5d6ff71d0523fc96f1da68a4435f459ac55f98a5db601eda116b87/PatryksAutoAI-1.5.6.tar.gz
+[2023-05-20 12:15:28] INFO root fetch - processPackages [solid-backend]: Downloading https://files.pythonhosted.org/packages/dc/0d/85ce830c7b5d23ea3539c908e06820b78961201d418becbb566cc30499d2/solid_backend-0.3.0a5.tar.gz
+[2023-05-20 12:15:28] INFO root fetch - processPackages [PatryksAutoAI]: executing diffoscope
+[2023-05-20 12:15:28] INFO root fetch - processPackages [PatryksAutoAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PatryksAutoAI-1.5.5.tar.gz tmp/PatryksAutoAI-1.5.6.tar.gz --markdown 20230520/P/PatryksAutoAI/1.5.5-1.5.6/diff.md --exclude *.pyd
+[2023-05-20 12:15:28] INFO root fetch - processPackages [pypcapkit]: executing diffoscope
+[2023-05-20 12:15:28] INFO root fetch - processPackages [pypcapkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypcapkit-1.0.1.tar.gz tmp/pypcapkit-1.0.1.post1.tar.gz --markdown 20230520/p/pypcapkit/1.0.1-1.0.1.post1/diff.md --exclude *.pyd
+[2023-05-20 12:15:28] INFO root fetch - processPackages [bus-station]: Downloading https://files.pythonhosted.org/packages/40/2a/95e70216fdce8175aa50aaf34585b60c313e65bcf209c1e398c3951aac32/bus_station-6.0.1.tar.gz
+[2023-05-20 12:15:28] INFO root fetch - processPackages [hummuspy]: Downloading https://files.pythonhosted.org/packages/6d/57/482759401474404ddc4fb988e458704c3095fcbb65a042242874ee732cc6/hummuspy-0.0.9.tar.gz
+[2023-05-20 12:15:28] INFO root fetch - processPackages [hummuspy]: Downloading https://files.pythonhosted.org/packages/6d/57/482759401474404ddc4fb988e458704c3095fcbb65a042242874ee732cc6/hummuspy-0.0.9.tar.gz
+[2023-05-20 12:15:28] INFO root fetch - processPackages [bus-station]: executing diffoscope
+[2023-05-20 12:15:28] INFO root fetch - processPackages [bus-station]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bus_station-6.0.0.tar.gz tmp/bus_station-6.0.1.tar.gz --markdown 20230520/b/bus-station/6.0.0-6.0.1/diff.md --exclude *.pyd
+[2023-05-20 12:15:28] INFO root fetch - processPackages [hummuspy]: executing diffoscope
+[2023-05-20 12:15:28] INFO root fetch - processPackages [hummuspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hummuspy-0.0.8.tar.gz tmp/hummuspy-0.0.9.tar.gz --markdown 20230520/h/hummuspy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 12:15:28] INFO root fetch - processPackages [hummuspy]: executing diffoscope
+[2023-05-20 12:15:28] INFO root fetch - processPackages [hummuspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hummuspy-0.0.8.tar.gz tmp/hummuspy-0.0.9.tar.gz --markdown 20230520/h/hummuspy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 12:15:28] INFO root fetch - processPackages [dm-reverb-nightly]: executing diffoscope
+[2023-05-20 12:15:28] INFO root fetch - processPackages [dm-reverb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dm_reverb_nightly-0.9.0.dev20221206-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/dm_reverb_nightly-0.9.0.dev20221207-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230520/d/dm-reverb-nightly/0.9.0.dev20221206-0.9.0.dev20221207/diff.md --exclude *.pyd
+[2023-05-20 12:15:28] INFO root fetch - processPackages [solid-backend]: Downloading https://files.pythonhosted.org/packages/07/07/8ba8601db1255c25754ad7cd3a48eec64325baeec5b3e0133a5e2bc916e6/solid_backend-0.3a2.tar.gz
+[2023-05-20 12:15:28] INFO root fetch - processPackages [solid-backend]: executing diffoscope
+[2023-05-20 12:15:28] INFO root fetch - processPackages [solid-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solid_backend-0.3.0a5.tar.gz tmp/solid_backend-0.3a2.tar.gz --markdown 20230520/s/solid-backend/0.3.0a5-0.3a2/diff.md --exclude *.pyd
+[2023-05-20 12:15:29] INFO root fetch - main [MainThread]: End processing [extr-ds]: success
+[2023-05-20 12:15:29] INFO root fetch - main [MainThread]: End processing [simplebox]: success
+[2023-05-20 12:15:29] INFO root fetch - main [MainThread]: End processing [hummuspy]: success
+[2023-05-20 12:15:30] INFO root fetch - main [MainThread]: End processing [hummuspy]: success
+[2023-05-20 12:15:30] INFO root fetch - main [MainThread]: End processing [bus-station]: success
+[2023-05-20 12:15:30] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
+[2023-05-20 12:15:33] INFO root fetch - main [MainThread]: End processing [pypcapkit]: success
+[2023-05-20 12:16:06] INFO root fetch - main [MainThread]: End processing [solid-backend]: success
+[2023-05-20 12:16:24] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
+[2023-05-20 12:16:24] INFO root fetch - main [MainThread]: Store serial: [18181151]
