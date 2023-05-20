@@ -5982,3 +5982,58 @@
 [2023-05-20 07:01:32] INFO root fetch - main [MainThread]: End processing [requirements-detector]: success
 [2023-05-20 07:01:34] INFO root fetch - main [MainThread]: End processing [pytplot-mpl-temp]: success
 [2023-05-20 07:01:34] INFO root fetch - main [MainThread]: Store serial: [18179790]
+[2023-05-20 07:06:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179790]
+[2023-05-20 07:06:44] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-20 07:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tflite-runtime-nightly
+[2023-05-20 07:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spellbot
+[2023-05-20 07:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: andebox
+[2023-05-20 07:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dask-cuda
+[2023-05-20 07:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Bigsansar
+[2023-05-20 07:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lamda
+[2023-05-20 07:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gcode-helpers
+[2023-05-20 07:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rapid-pe
+[2023-05-20 07:06:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: multi-model-server
+[2023-05-20 07:06:44] INFO root fetch - processPackages [andebox]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-20 07:06:44] INFO root fetch - processPackages [Bigsansar]: New version: [1.5.0] Old Version: [1.4.9]
+[2023-05-20 07:06:44] WARNING root fetch - processPackages [gcode-helpers]: Skipping, unable to determine old version
+[2023-05-20 07:06:44] INFO root fetch - processPackages [spellbot]: New version: [8.9.4] Old Version: [8.9.3]
+[2023-05-20 07:06:44] INFO root fetch - main [MainThread]: End processing [gcode-helpers] error
+[2023-05-20 07:06:44] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.1.dev20230519] Old Version: [0.1.1.dev20230518]
+[2023-05-20 07:06:44] INFO root fetch - processPackages [dask-cuda]: New version: [23.6.0a230520] Old Version: [23.6.0a230519]
+[2023-05-20 07:06:44] INFO root fetch - processPackages [lamda]: New version: [3.98] Old Version: [3.95]
+[2023-05-20 07:06:44] INFO root fetch - processPackages [multi-model-server]: New version: [1.1.8b20230520] Old Version: [1.1.8b20230519]
+[2023-05-20 07:06:44] INFO root fetch - processPackages [spellbot]: executing diffoscope
+[2023-05-20 07:06:44] INFO root fetch - processPackages [spellbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spellbot-8.9.3.tar.gz tmp/spellbot-8.9.4.tar.gz --markdown 20230520/s/spellbot/8.9.3-8.9.4/diff.md --exclude *.pyd
+[2023-05-20 07:06:44] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.14.0.dev20230519] Old Version: [2.14.0.dev20230518]
+[2023-05-20 07:06:44] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-05-20 07:06:44] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.1.dev20230518.tar.gz tmp/rapid_pe-0.1.1.dev20230519.tar.gz --markdown 20230520/r/rapid-pe/0.1.1.dev20230518-0.1.1.dev20230519/diff.md --exclude *.pyd
+[2023-05-20 07:06:44] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/8c/7d/d9e623a96c9e9a022231083eb542e739f233d6c53f6b06d9372ab899d02b/Bigsansar-1.4.9.tar.gz
+[2023-05-20 07:06:44] INFO root fetch - processPackages [andebox]: Downloading https://files.pythonhosted.org/packages/73/0c/a30ac91dc2347d59b5de4a2301b6ddb35d130cbdbd2075cc6b55687159ec/andebox-0.8.0.tar.gz
+[2023-05-20 07:06:44] INFO root fetch - processPackages [lamda]: Downloading https://files.pythonhosted.org/packages/55/ce/d37b8e98e7f5d7d6224c924a71c3c700cbebdc43ca21d463645b70f2f71b/lamda-3.95.tar.gz
+[2023-05-20 07:06:44] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/9a/59/5fae9f318e7e1fd485ac2be59a0144271b334f6c3eb2dd6525911adf2b49/Bigsansar-1.5.0.tar.gz
+[2023-05-20 07:06:44] INFO root fetch - processPackages [dask-cuda]: Downloading https://files.pythonhosted.org/packages/fb/46/67c902b367253affbfe3dc8ba30bf8d4b643a1a1a9272939e00f53501f7d/dask-cuda-23.6.0a230520.tar.gz
+[2023-05-20 07:06:44] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2023-05-20 07:06:44] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bigsansar-1.4.9.tar.gz tmp/Bigsansar-1.5.0.tar.gz --markdown 20230520/B/Bigsansar/1.4.9-1.5.0/diff.md --exclude *.pyd
+[2023-05-20 07:06:44] INFO root fetch - processPackages [multi-model-server]: Downloading https://files.pythonhosted.org/packages/c1/56/112a2148d48ddcf0846956de244f523308c6bee1144bd89668d196a033d0/multi_model_server-1.1.8b20230520-py2.py3-none-any.whl
+[2023-05-20 07:06:44] INFO root fetch - processPackages [andebox]: Downloading https://files.pythonhosted.org/packages/a2/13/65a290136562e18a323be2b14d1a98bad06f48b5838b9362a32ded10ff17/andebox-0.9.0.tar.gz
+[2023-05-20 07:06:44] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/c8/27/da15a6d5d688e0fda2b40b4ff179298484ce9933a7caedeb1f52bcddb04a/tflite_runtime_nightly-2.14.0.dev20230519-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-20 07:06:45] INFO root fetch - processPackages [andebox]: executing diffoscope
+[2023-05-20 07:06:45] INFO root fetch - processPackages [andebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/andebox-0.8.0.tar.gz tmp/andebox-0.9.0.tar.gz --markdown 20230520/a/andebox/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-20 07:06:45] INFO root fetch - processPackages [lamda]: Downloading https://files.pythonhosted.org/packages/00/9b/1b904a0fab1729c8362cf8016753b8bf51ff43c84e928412aa6c5fcc6eb2/lamda-3.98.tar.gz
+[2023-05-20 07:06:45] INFO root fetch - processPackages [dask-cuda]: executing diffoscope
+[2023-05-20 07:06:45] INFO root fetch - processPackages [dask-cuda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dask-cuda-23.6.0a230519.tar.gz tmp/dask-cuda-23.6.0a230520.tar.gz --markdown 20230520/d/dask-cuda/23.6.0a230519-23.6.0a230520/diff.md --exclude *.pyd
+[2023-05-20 07:06:45] INFO root fetch - processPackages [lamda]: executing diffoscope
+[2023-05-20 07:06:45] INFO root fetch - processPackages [lamda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamda-3.95.tar.gz tmp/lamda-3.98.tar.gz --markdown 20230520/l/lamda/3.95-3.98/diff.md --exclude *.pyd
+[2023-05-20 07:06:45] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2023-05-20 07:06:45] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.14.0.dev20230518-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/tflite_runtime_nightly-2.14.0.dev20230519-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230520/t/tflite-runtime-nightly/2.14.0.dev20230518-2.14.0.dev20230519/diff.md --exclude *.pyd
+[2023-05-20 07:06:45] INFO root fetch - processPackages [multi-model-server]: executing diffoscope
+[2023-05-20 07:06:45] INFO root fetch - processPackages [multi-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_model_server-1.1.8b20230519-py2.py3-none-any.whl.zip tmp/multi_model_server-1.1.8b20230520-py2.py3-none-any.whl.zip --markdown 20230520/m/multi-model-server/1.1.8b20230519-1.1.8b20230520/diff.md --exclude *.pyd
+[2023-05-20 07:06:46] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2023-05-20 07:06:46] INFO root fetch - main [MainThread]: End processing [spellbot]: success
+[2023-05-20 07:06:46] INFO root fetch - main [MainThread]: End processing [andebox]: success
+[2023-05-20 07:06:46] INFO root fetch - main [MainThread]: End processing [lamda]: success
+[2023-05-20 07:06:47] INFO root fetch - main [MainThread]: End processing [dask-cuda]: success
+[2023-05-20 07:06:48] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2023-05-20 07:07:15] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2023-05-20 07:09:36] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
+[2023-05-20 07:09:36] INFO root fetch - main [MainThread]: Store serial: [18179826]
