@@ -12260,3 +12260,29 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 20:15:41] INFO root fetch - main [MainThread]: End processing [kynaylibs]: success
 [2023-05-20 20:16:23] INFO root fetch - main [MainThread]: End processing [constrainedlr]: success
 [2023-05-20 20:16:23] INFO root fetch - main [MainThread]: Store serial: [18183737]
+[2023-05-20 20:21:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183737]
+[2023-05-20 20:21:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 20:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lazi
+[2023-05-20 20:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: glaceon
+[2023-05-20 20:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dragonfly-core
+[2023-05-20 20:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: latch-postgres
+[2023-05-20 20:21:31] INFO root fetch - processPackages [glaceon]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-05-20 20:21:31] INFO root fetch - processPackages [lazi]: New version: [1.9.156] Old Version: [1.9.140]
+[2023-05-20 20:21:31] INFO root fetch - processPackages [latch-postgres]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 20:21:31] INFO root fetch - processPackages [dragonfly-core]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-05-20 20:21:31] INFO root fetch - processPackages [latch-postgres]: executing diffoscope
+[2023-05-20 20:21:31] INFO root fetch - processPackages [latch-postgres]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch_postgres-0.1.8.tar.gz tmp/latch_postgres-0.1.9.tar.gz --markdown 20230520/l/latch-postgres/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 20:21:32] INFO root fetch - processPackages [lazi]: Downloading https://files.pythonhosted.org/packages/dc/8e/0a4a787422d77b9e1b5e3108a3b0614822be5822e1f9ff57114ccd2e7374/lazi-1.9.140.tar.gz
+[2023-05-20 20:21:32] INFO root fetch - processPackages [glaceon]: Downloading https://files.pythonhosted.org/packages/16/df/11ee4dac6738aadf2412fd464757c98fa4c181fabc764cc37ff2634faf63/glaceon-1.2.0.tar.gz
+[2023-05-20 20:21:32] INFO root fetch - processPackages [dragonfly-core]: executing diffoscope
+[2023-05-20 20:21:32] INFO root fetch - processPackages [dragonfly-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-core-1.8.1.tar.gz tmp/dragonfly-core-1.9.0.tar.gz --markdown 20230520/d/dragonfly-core/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-05-20 20:21:32] INFO root fetch - processPackages [glaceon]: executing diffoscope
+[2023-05-20 20:21:32] INFO root fetch - processPackages [glaceon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glaceon-1.2.0.tar.gz tmp/glaceon-1.3.0.tar.gz --markdown 20230520/g/glaceon/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-05-20 20:21:32] INFO root fetch - processPackages [lazi]: Downloading https://files.pythonhosted.org/packages/40/da/2c3a6fbfbf6d84308137f7bfe2521bde4ffcd383f1222c29ca9ab4024cb7/lazi-1.9.156.tar.gz
+[2023-05-20 20:21:32] INFO root fetch - processPackages [lazi]: executing diffoscope
+[2023-05-20 20:21:32] INFO root fetch - processPackages [lazi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazi-1.9.140.tar.gz tmp/lazi-1.9.156.tar.gz --markdown 20230520/l/lazi/1.9.140-1.9.156/diff.md --exclude *.pyd
+[2023-05-20 20:21:33] INFO root fetch - main [MainThread]: End processing [latch-postgres]: success
+[2023-05-20 20:21:33] INFO root fetch - main [MainThread]: End processing [glaceon]: success
+[2023-05-20 20:21:33] INFO root fetch - main [MainThread]: End processing [dragonfly-core]: success
+[2023-05-20 20:21:33] INFO root fetch - main [MainThread]: End processing [lazi]: success
+[2023-05-20 20:21:33] INFO root fetch - main [MainThread]: Store serial: [18183750]
