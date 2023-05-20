@@ -5142,3 +5142,21 @@
 [2023-05-20 04:44:08] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
 [2023-05-20 04:44:10] INFO root fetch - main [MainThread]: End processing [apysc]: success
 [2023-05-20 04:44:10] INFO root fetch - main [MainThread]: Store serial: [18179275]
+[2023-05-20 04:49:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179275]
+[2023-05-20 04:49:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 04:49:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webint
+[2023-05-20 04:49:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: heaserver-files-aws-s3
+[2023-05-20 04:49:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ats-case
+[2023-05-20 04:49:20] INFO root fetch - processPackages [ats-case]: New version: [0.7.5] Old Version: [0.7.4]
+[2023-05-20 04:49:20] INFO root fetch - processPackages [heaserver-files-aws-s3]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-20 04:49:20] INFO root fetch - processPackages [webint]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 04:49:20] INFO root fetch - processPackages [ats-case]: executing diffoscope
+[2023-05-20 04:49:20] INFO root fetch - processPackages [ats-case]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ats_case-0.7.4.tar.gz tmp/ats_case-0.7.5.tar.gz --markdown 20230520/a/ats-case/0.7.4-0.7.5/diff.md --exclude *.pyd
+[2023-05-20 04:49:20] INFO root fetch - processPackages [heaserver-files-aws-s3]: Downloading https://files.pythonhosted.org/packages/4b/9b/73f33a94f4aff25bff8a0100e7c9f7d239d27c6bb47e91c553f03fccfde2/heaserver-files-aws-s3-1.0.0a8.tar.gz
+[2023-05-20 04:49:20] WARNING root fetch - processPackages [heaserver-files-aws-s3]: Skipping package: exceeds size limit 18398734>=10485760
+[2023-05-20 04:49:20] INFO root fetch - main [MainThread]: End processing [heaserver-files-aws-s3] error
+[2023-05-20 04:49:20] INFO root fetch - processPackages [webint]: executing diffoscope
+[2023-05-20 04:49:20] INFO root fetch - processPackages [webint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint-0.1.8.tar.gz tmp/webint-0.1.9.tar.gz --markdown 20230520/w/webint/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 04:49:21] INFO root fetch - main [MainThread]: End processing [ats-case]: success
+[2023-05-20 04:49:27] INFO root fetch - main [MainThread]: End processing [webint]: success
+[2023-05-20 04:49:27] INFO root fetch - main [MainThread]: Store serial: [18179284]
