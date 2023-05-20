@@ -8946,3 +8946,37 @@
 [2023-05-20 13:45:37] INFO root fetch - main [MainThread]: End processing [tailwiz]: success
 [2023-05-20 13:45:37] INFO root fetch - main [MainThread]: End processing [xpypact]: success
 [2023-05-20 13:45:37] INFO root fetch - main [MainThread]: Store serial: [18181630]
+[2023-05-20 13:50:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18181630]
+[2023-05-20 13:50:47] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-20 13:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scrapeanything
+[2023-05-20 13:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyDistances
+[2023-05-20 13:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyShoreVolume
+[2023-05-20 13:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: watchtower-browser-testing
+[2023-05-20 13:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: uptrace
+[2023-05-20 13:50:47] INFO root fetch - processPackages [PyDistances]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-20 13:50:47] INFO root fetch - processPackages [scrapeanything]: New version: [0.9.99] Old Version: [0.9.98]
+[2023-05-20 13:50:47] INFO root fetch - processPackages [PyShoreVolume]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-20 13:50:47] INFO root fetch - processPackages [uptrace]: New version: [1.9.1] Old Version: [1.8.0]
+[2023-05-20 13:50:47] INFO root fetch - processPackages [watchtower-browser-testing]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-20 13:50:47] INFO root fetch - processPackages [scrapeanything]: executing diffoscope
+[2023-05-20 13:50:47] INFO root fetch - processPackages [scrapeanything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapeanything-0.9.98.tar.gz tmp/scrapeanything-0.9.99.tar.gz --markdown 20230520/s/scrapeanything/0.9.98-0.9.99/diff.md --exclude *.pyd
+[2023-05-20 13:50:47] INFO root fetch - processPackages [watchtower-browser-testing]: Downloading https://files.pythonhosted.org/packages/71/ea/e35e232987afa308faf21e0b3f2bfc679d119a01642a1485e4f266aa18e3/watchtower_browser_testing-0.4.8.tar.gz
+[2023-05-20 13:50:47] INFO root fetch - processPackages [PyDistances]: Downloading https://files.pythonhosted.org/packages/a9/b5/284cb211f44a4187cf9f5db4ec042e0aa7d2b7a0351b06f83e169793c84d/PyDistances-0.0.4.tar.gz
+[2023-05-20 13:50:47] INFO root fetch - processPackages [PyShoreVolume]: Downloading https://files.pythonhosted.org/packages/c9/7c/68bde1a28a75f4d4888c50698cdd3ecd575ca57bbadeff00a22b8f438c05/PyShoreVolume-1.0.2.tar.gz
+[2023-05-20 13:50:47] INFO root fetch - processPackages [uptrace]: Downloading https://files.pythonhosted.org/packages/90/25/a88a8169a333cadb6289f293903f84e0f84b43aac803cb62067cc5dde920/uptrace-1.8.0.tar.gz
+[2023-05-20 13:50:47] INFO root fetch - processPackages [PyDistances]: executing diffoscope
+[2023-05-20 13:50:47] INFO root fetch - processPackages [PyDistances]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyDistances-0.0.3.tar.gz tmp/PyDistances-0.0.4.tar.gz --markdown 20230520/P/PyDistances/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-20 13:50:47] INFO root fetch - processPackages [PyShoreVolume]: executing diffoscope
+[2023-05-20 13:50:47] INFO root fetch - processPackages [PyShoreVolume]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyShoreVolume-1.0.1.tar.gz tmp/PyShoreVolume-1.0.2.tar.gz --markdown 20230520/P/PyShoreVolume/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-20 13:50:47] INFO root fetch - processPackages [watchtower-browser-testing]: Downloading https://files.pythonhosted.org/packages/32/58/9e07c9bb59cebf2058ba347cee4308dbfb7843967f22410623d3d41d45ab/watchtower_browser_testing-0.4.9.tar.gz
+[2023-05-20 13:50:47] INFO root fetch - processPackages [uptrace]: Downloading https://files.pythonhosted.org/packages/ee/60/f823a2780543e27ba6d84f37dade514ec486fe3eb39ae626a435fde8a11b/uptrace-1.9.1.tar.gz
+[2023-05-20 13:50:47] INFO root fetch - processPackages [watchtower-browser-testing]: executing diffoscope
+[2023-05-20 13:50:47] INFO root fetch - processPackages [watchtower-browser-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watchtower_browser_testing-0.4.8.tar.gz tmp/watchtower_browser_testing-0.4.9.tar.gz --markdown 20230520/w/watchtower-browser-testing/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-20 13:50:47] INFO root fetch - processPackages [uptrace]: executing diffoscope
+[2023-05-20 13:50:47] INFO root fetch - processPackages [uptrace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uptrace-1.8.0.tar.gz tmp/uptrace-1.9.1.tar.gz --markdown 20230520/u/uptrace/1.8.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-20 13:50:48] INFO root fetch - main [MainThread]: End processing [scrapeanything]: success
+[2023-05-20 13:50:48] INFO root fetch - main [MainThread]: End processing [PyDistances]: success
+[2023-05-20 13:50:48] INFO root fetch - main [MainThread]: End processing [uptrace]: success
+[2023-05-20 13:50:48] INFO root fetch - main [MainThread]: End processing [PyShoreVolume]: success
+[2023-05-20 13:50:48] INFO root fetch - main [MainThread]: End processing [watchtower-browser-testing]: success
+[2023-05-20 13:50:48] INFO root fetch - main [MainThread]: Store serial: [18181649]
