@@ -6373,3 +6373,24 @@
 [2023-05-20 08:28:59] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake-bpy-module-latest-20230519.tar.gz tmp/fake-bpy-module-latest-20230520.tar.gz --markdown 20230520/f/fake-bpy-module-latest/20230519-20230520/diff.md --exclude *.pyd
 [2023-05-20 08:29:06] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
 [2023-05-20 08:29:06] INFO root fetch - main [MainThread]: Store serial: [18180095]
+[2023-05-20 08:34:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180095]
+[2023-05-20 08:34:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 08:34:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cabinet
+[2023-05-20 08:34:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Pandora-ChatGPT
+[2023-05-20 08:34:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: logicgate
+[2023-05-20 08:34:18] INFO root fetch - processPackages [cabinet]: New version: [2023.5.20.1] Old Version: [2023.4.9.1]
+[2023-05-20 08:34:18] INFO root fetch - processPackages [Pandora-ChatGPT]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-20 08:34:18] INFO root fetch - processPackages [logicgate]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-20 08:34:18] INFO root fetch - processPackages [cabinet]: executing diffoscope
+[2023-05-20 08:34:18] INFO root fetch - processPackages [cabinet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cabinet-2023.4.9.1.tar.gz tmp/cabinet-2023.5.20.1.tar.gz --markdown 20230520/c/cabinet/2023.4.9.1-2023.5.20.1/diff.md --exclude *.pyd
+[2023-05-20 08:34:18] INFO root fetch - processPackages [Pandora-ChatGPT]: Downloading https://files.pythonhosted.org/packages/3d/15/d51864bcaf48cf7a22b358701a9f1f09506dc6e0cba96843079eb8f5be18/Pandora-ChatGPT-1.1.4.tar.gz
+[2023-05-20 08:34:18] INFO root fetch - processPackages [logicgate]: Downloading https://files.pythonhosted.org/packages/38/7b/c246c03cec40aa97439578cf02d967cf344688b6424d9aef502aa3ba1b4f/LogicGate-0.2.5.tar.gz
+[2023-05-20 08:34:19] INFO root fetch - main [MainThread]: End processing [cabinet]: success
+[2023-05-20 08:34:20] INFO root fetch - processPackages [logicgate]: Downloading https://files.pythonhosted.org/packages/67/64/4cf2c96675bf33350f11b725cc360d794ce4fa472a0c2e2321f272de913f/logicgate-0.2.6.tar.gz
+[2023-05-20 08:34:20] INFO root fetch - processPackages [Pandora-ChatGPT]: executing diffoscope
+[2023-05-20 08:34:20] INFO root fetch - processPackages [Pandora-ChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pandora-ChatGPT-1.1.3.tar.gz tmp/Pandora-ChatGPT-1.1.4.tar.gz --markdown 20230520/P/Pandora-ChatGPT/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-20 08:34:20] INFO root fetch - processPackages [logicgate]: executing diffoscope
+[2023-05-20 08:34:20] INFO root fetch - processPackages [logicgate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LogicGate-0.2.5.tar.gz tmp/logicgate-0.2.6.tar.gz --markdown 20230520/l/logicgate/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-20 08:34:21] INFO root fetch - main [MainThread]: End processing [logicgate]: success
+[2023-05-20 08:34:22] INFO root fetch - main [MainThread]: End processing [Pandora-ChatGPT]: success
+[2023-05-20 08:34:22] INFO root fetch - main [MainThread]: Store serial: [18180101]
