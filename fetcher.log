@@ -2045,3 +2045,85 @@
 [2023-05-20 02:29:41] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
 [2023-05-20 02:29:42] INFO root fetch - main [MainThread]: End processing [Pint]: success
 [2023-05-20 02:29:42] INFO root fetch - main [MainThread]: Store serial: [18177284]
+[2023-05-20 02:34:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18177284]
+[2023-05-20 02:34:52] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-20 02:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: everdrop-aws-cdk-constructs
+[2023-05-20 02:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flaskosql
+[2023-05-20 02:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: psyke
+[2023-05-20 02:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flaskosql
+[2023-05-20 02:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdklabs.cdk-enterprise-iac
+[2023-05-20 02:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-smart-media
+[2023-05-20 02:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: np-session
+[2023-05-20 02:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: TruMusic
+[2023-05-20 02:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sentry-kafka-schemas
+[2023-05-20 02:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pointstorm-dev
+[2023-05-20 02:34:52] INFO root fetch - processPackages [flaskosql]: New version: [1.2.10] Old Version: [1.1.10]
+[2023-05-20 02:34:52] INFO root fetch - processPackages [flaskosql]: New version: [1.2.10] Old Version: [1.1.10]
+[2023-05-20 02:34:52] INFO root fetch - processPackages [django-smart-media]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-05-20 02:34:52] INFO root fetch - processPackages [TruMusic]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-05-20 02:34:52] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 02:34:52] WARNING root fetch - processPackages [pointstorm-dev]: Skipping, unable to determine old version
+[2023-05-20 02:34:52] INFO root fetch - processPackages [pointstorm-dev]: Start processing: conjuring
+[2023-05-20 02:34:52] INFO root fetch - processPackages [psyke]: New version: [0.3.4.dev1] Old Version: [0.3.3.dev9]
+[2023-05-20 02:34:52] INFO root fetch - main [MainThread]: End processing [pointstorm-dev] error
+[2023-05-20 02:34:52] INFO root fetch - processPackages [sentry-kafka-schemas]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 02:34:52] INFO root fetch - processPackages [np-session]: New version: [0.6.7] Old Version: [0.6.6]
+[2023-05-20 02:34:52] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-20 02:34:52] INFO root fetch - processPackages [conjuring]: New version: [0.2.1] Old Version: [0.1.0]
+[2023-05-20 02:34:52] INFO root fetch - processPackages [flaskosql]: Downloading https://files.pythonhosted.org/packages/e4/b3/dbe37e00e16fa9b408e5178dd57b60af64790c80ebd8653ea5b3f596314f/flaskosql-1.1.10.tar.gz
+[2023-05-20 02:34:52] INFO root fetch - processPackages [flaskosql]: Downloading https://files.pythonhosted.org/packages/e4/b3/dbe37e00e16fa9b408e5178dd57b60af64790c80ebd8653ea5b3f596314f/flaskosql-1.1.10.tar.gz
+[2023-05-20 02:34:53] INFO root fetch - processPackages [np-session]: Downloading https://files.pythonhosted.org/packages/68/8c/e4e017603c8410a0ce2c73cab24a42eca16006e07027b6b6ba9ecd4dcfab/np-session-0.6.7.tar.gz
+[2023-05-20 02:34:53] INFO root fetch - processPackages [conjuring]: Downloading https://files.pythonhosted.org/packages/a4/de/a75e4ee8ab44004712d83ddb7fafa5250d1963d413cb934dc46024008f1e/conjuring-0.1.0.tar.gz
+[2023-05-20 02:34:53] INFO root fetch - processPackages [TruMusic]: Downloading https://files.pythonhosted.org/packages/bc/c1/d7b1e14cc5ce0e59dccb51099463e546408f349523c3f49e16b333bc733a/TruMusic-1.1.6.tar.gz
+[2023-05-20 02:34:53] INFO root fetch - processPackages [django-smart-media]: Downloading https://files.pythonhosted.org/packages/fa/37/957f4c2cdb323ca0dd8f355098949fea10f614ecd143d78d33be447fec3d/django-smart-media-0.2.2.tar.gz
+[2023-05-20 02:34:53] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/0d/2f/8afea845ec96e5d16388f169cd924855bf4a09b7b50f076c7ca9580ba75f/psyke-0.3.3.dev9.tar.gz
+[2023-05-20 02:34:53] INFO root fetch - processPackages [sentry-kafka-schemas]: Downloading https://files.pythonhosted.org/packages/2b/48/bbeeac72148365973154839f814e1ba50d53dc1cc3b85a44df13d7e96aea/sentry-kafka-schemas-0.1.8.tar.gz
+[2023-05-20 02:34:53] INFO root fetch - processPackages [np-session]: executing diffoscope
+[2023-05-20 02:34:53] INFO root fetch - processPackages [np-session]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np-session-0.6.6.tar.gz tmp/np-session-0.6.7.tar.gz --markdown 20230520/n/np-session/0.6.6-0.6.7/diff.md --exclude *.pyd
+[2023-05-20 02:34:53] INFO root fetch - processPackages [TruMusic]: executing diffoscope
+[2023-05-20 02:34:53] INFO root fetch - processPackages [TruMusic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TruMusic-1.1.5.tar.gz tmp/TruMusic-1.1.6.tar.gz --markdown 20230520/T/TruMusic/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-05-20 02:34:53] INFO root fetch - processPackages [flaskosql]: Downloading https://files.pythonhosted.org/packages/69/88/4bb4288e138e865572d4804426b7c5d22b902a98d403584106cf6074bb00/flaskosql-1.2.10.tar.gz
+[2023-05-20 02:34:53] INFO root fetch - processPackages [flaskosql]: Downloading https://files.pythonhosted.org/packages/69/88/4bb4288e138e865572d4804426b7c5d22b902a98d403584106cf6074bb00/flaskosql-1.2.10.tar.gz
+[2023-05-20 02:34:53] INFO root fetch - processPackages [flaskosql]: executing diffoscope
+[2023-05-20 02:34:53] INFO root fetch - processPackages [flaskosql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flaskosql-1.1.10.tar.gz tmp/flaskosql-1.2.10.tar.gz --markdown 20230520/f/flaskosql/1.1.10-1.2.10/diff.md --exclude *.pyd
+[2023-05-20 02:34:53] INFO root fetch - processPackages [flaskosql]: executing diffoscope
+[2023-05-20 02:34:53] INFO root fetch - processPackages [flaskosql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flaskosql-1.1.10.tar.gz tmp/flaskosql-1.2.10.tar.gz --markdown 20230520/f/flaskosql/1.1.10-1.2.10/diff.md --exclude *.pyd
+[2023-05-20 02:34:53] INFO root fetch - processPackages [sentry-kafka-schemas]: Downloading https://files.pythonhosted.org/packages/8c/08/409be3a73bf2aa8f7b06bf6ede1250b42df881c326dd39800fb5c7d79d1a/sentry-kafka-schemas-0.1.9.tar.gz
+[2023-05-20 02:34:53] INFO root fetch - processPackages [psyke]: Downloading https://files.pythonhosted.org/packages/3e/fb/caf5e68c4eb167c7e57cdba7c47bdd14a46c9fb7c0ce1a876ae77936b4f7/psyke-0.3.4.dev1.tar.gz
+[2023-05-20 02:34:53] INFO root fetch - processPackages [conjuring]: Downloading https://files.pythonhosted.org/packages/e3/d8/805f8b4d6cce08477e42ce9544688c5504f54f91587baa40f1ce685d3ada/conjuring-0.2.1.tar.gz
+[2023-05-20 02:34:53] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2023-05-20 02:34:53] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20230520/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-20 02:34:53] INFO root fetch - processPackages [django-smart-media]: Downloading https://files.pythonhosted.org/packages/19/7c/add5f0d4fe8a0dc22188491c83ec2eba910a3f3750e39b98026566c486a8/django-smart-media-0.3.0.tar.gz
+[2023-05-20 02:34:53] INFO root fetch - processPackages [sentry-kafka-schemas]: executing diffoscope
+[2023-05-20 02:34:53] INFO root fetch - processPackages [sentry-kafka-schemas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sentry-kafka-schemas-0.1.8.tar.gz tmp/sentry-kafka-schemas-0.1.9.tar.gz --markdown 20230520/s/sentry-kafka-schemas/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 02:34:53] INFO root fetch - processPackages [conjuring]: executing diffoscope
+[2023-05-20 02:34:53] INFO root fetch - processPackages [conjuring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conjuring-0.1.0.tar.gz tmp/conjuring-0.2.1.tar.gz --markdown 20230520/c/conjuring/0.1.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-20 02:34:53] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: executing diffoscope
+[2023-05-20 02:34:53] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/everdrop-aws-cdk-constructs-0.0.8.tar.gz tmp/everdrop-aws-cdk-constructs-0.0.9.tar.gz --markdown 20230520/e/everdrop-aws-cdk-constructs/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 02:34:53] INFO root fetch - processPackages [django-smart-media]: executing diffoscope
+[2023-05-20 02:34:53] INFO root fetch - processPackages [django-smart-media]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-smart-media-0.2.2.tar.gz tmp/django-smart-media-0.3.0.tar.gz --markdown 20230520/d/django-smart-media/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-05-20 02:34:53] INFO root fetch - processPackages [psyke]: executing diffoscope
+[2023-05-20 02:34:53] INFO root fetch - processPackages [psyke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psyke-0.3.3.dev9.tar.gz tmp/psyke-0.3.4.dev1.tar.gz --markdown 20230520/p/psyke/0.3.3.dev9-0.3.4.dev1/diff.md --exclude *.pyd
+[2023-05-20 02:34:54] INFO root fetch - processPackages [TruMusic]: Start processing: state-machine-semaphore
+[2023-05-20 02:34:54] INFO root fetch - main [MainThread]: End processing [TruMusic]: success
+[2023-05-20 02:34:54] INFO root fetch - processPackages [state-machine-semaphore]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-20 02:34:54] INFO root fetch - processPackages [flaskosql]: Start processing: tldextract
+[2023-05-20 02:34:54] INFO root fetch - main [MainThread]: End processing [flaskosql]: success
+[2023-05-20 02:34:54] INFO root fetch - processPackages [state-machine-semaphore]: executing diffoscope
+[2023-05-20 02:34:54] INFO root fetch - processPackages [state-machine-semaphore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state-machine-semaphore-0.1.98.tar.gz tmp/state-machine-semaphore-0.1.99.tar.gz --markdown 20230520/s/state-machine-semaphore/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-20 02:34:55] INFO root fetch - main [MainThread]: End processing [flaskosql]: success
+[2023-05-20 02:34:55] INFO root fetch - processPackages [tldextract]: New version: [3.4.4] Old Version: [3.4.3]
+[2023-05-20 02:34:55] INFO root fetch - processPackages [tldextract]: Downloading https://files.pythonhosted.org/packages/f6/c6/31e43b2ba3c21421c0d3beb5c6a616d649fcb008054c770b594dcd7c7805/tldextract-3.4.3.tar.gz
+[2023-05-20 02:34:55] INFO root fetch - main [MainThread]: End processing [conjuring]: success
+[2023-05-20 02:34:55] INFO root fetch - processPackages [tldextract]: Downloading https://files.pythonhosted.org/packages/80/90/d294a3f69b4143cf56c326064086236bc8157c389497893d940968e6cda2/tldextract-3.4.4.tar.gz
+[2023-05-20 02:34:55] INFO root fetch - main [MainThread]: End processing [everdrop-aws-cdk-constructs]: success
+[2023-05-20 02:34:55] INFO root fetch - main [MainThread]: End processing [sentry-kafka-schemas]: success
+[2023-05-20 02:34:55] INFO root fetch - processPackages [tldextract]: executing diffoscope
+[2023-05-20 02:34:55] INFO root fetch - processPackages [tldextract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tldextract-3.4.3.tar.gz tmp/tldextract-3.4.4.tar.gz --markdown 20230520/t/tldextract/3.4.3-3.4.4/diff.md --exclude *.pyd
+[2023-05-20 02:34:55] INFO root fetch - main [MainThread]: End processing [django-smart-media]: success
+[2023-05-20 02:34:55] INFO root fetch - main [MainThread]: End processing [np-session]: success
+[2023-05-20 02:34:55] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2023-05-20 02:34:56] INFO root fetch - main [MainThread]: End processing [psyke]: success
+[2023-05-20 02:34:56] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
+[2023-05-20 02:34:56] INFO root fetch - main [MainThread]: End processing [tldextract]: success
+[2023-05-20 02:34:56] INFO root fetch - main [MainThread]: Store serial: [18177328]
