@@ -13380,3 +13380,35 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 23:00:16] INFO root fetch - main [MainThread]: End processing [agixt]: success
 [2023-05-20 23:00:58] INFO root fetch - main [MainThread]: End processing [hyundai-kia-connect-api]: success
 [2023-05-20 23:00:58] INFO root fetch - main [MainThread]: Store serial: [18184268]
+[2023-05-20 23:06:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184268]
+[2023-05-20 23:06:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-20 23:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ediri-scaleway
+[2023-05-20 23:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dorado
+[2023-05-20 23:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: textagon
+[2023-05-20 23:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: capabilities
+[2023-05-20 23:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: osconfiglib
+[2023-05-20 23:06:07] INFO root fetch - processPackages [ediri-scaleway]: New version: [2.19.0] Old Version: [2.18.0]
+[2023-05-20 23:06:07] INFO root fetch - processPackages [textagon]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 23:06:07] INFO root fetch - processPackages [dorado]: New version: [2.0.6.dev99] Old Version: [2.0.6.dev97]
+[2023-05-20 23:06:07] INFO root fetch - processPackages [capabilities]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-20 23:06:07] INFO root fetch - processPackages [textagon]: executing diffoscope
+[2023-05-20 23:06:07] INFO root fetch - processPackages [textagon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textagon-0.1.8.tar.gz tmp/textagon-0.1.9.tar.gz --markdown 20230520/t/textagon/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 23:06:07] INFO root fetch - processPackages [dorado]: executing diffoscope
+[2023-05-20 23:06:07] INFO root fetch - processPackages [dorado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dorado-2.0.6.dev97.tar.gz tmp/dorado-2.0.6.dev99.tar.gz --markdown 20230520/d/dorado/2.0.6.dev97-2.0.6.dev99/diff.md --exclude *.pyd
+[2023-05-20 23:06:07] INFO root fetch - processPackages [osconfiglib]: New version: [0.2.0] Old Version: [0.1.5]
+[2023-05-20 23:06:07] INFO root fetch - processPackages [capabilities]: executing diffoscope
+[2023-05-20 23:06:07] INFO root fetch - processPackages [capabilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/capabilities-0.3.8.tar.gz tmp/capabilities-0.3.9.tar.gz --markdown 20230520/c/capabilities/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-20 23:06:07] INFO root fetch - processPackages [ediri-scaleway]: Downloading https://files.pythonhosted.org/packages/3d/8b/3ba856b95da2c423adf39e07bfe13d853c2c2f3719611e3e795fd24dab84/ediri_scaleway-2.18.0.tar.gz
+[2023-05-20 23:06:07] INFO root fetch - processPackages [osconfiglib]: Downloading https://files.pythonhosted.org/packages/78/f0/4f40e4617c515b0274786284bb3737d1c8b2fe4753f7737918c9b87a7c38/osconfiglib-0.1.5.tar.gz
+[2023-05-20 23:06:07] INFO root fetch - processPackages [ediri-scaleway]: Downloading https://files.pythonhosted.org/packages/11/b7/75246271d9bdc2c1293b10c1a28d5b14af8594e539311ca557128714b70f/ediri_scaleway-2.19.0.tar.gz
+[2023-05-20 23:06:07] INFO root fetch - processPackages [osconfiglib]: Downloading https://files.pythonhosted.org/packages/2c/62/d90fcf7b3bdfdd9ec437719d2c3a4ce87b78a4ed38811623f2a5bbea9be7/osconfiglib-0.2.0.tar.gz
+[2023-05-20 23:06:07] INFO root fetch - processPackages [ediri-scaleway]: executing diffoscope
+[2023-05-20 23:06:07] INFO root fetch - processPackages [ediri-scaleway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ediri_scaleway-2.18.0.tar.gz tmp/ediri_scaleway-2.19.0.tar.gz --markdown 20230520/e/ediri-scaleway/2.18.0-2.19.0/diff.md --exclude *.pyd
+[2023-05-20 23:06:07] INFO root fetch - processPackages [osconfiglib]: executing diffoscope
+[2023-05-20 23:06:07] INFO root fetch - processPackages [osconfiglib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osconfiglib-0.1.5.tar.gz tmp/osconfiglib-0.2.0.tar.gz --markdown 20230520/o/osconfiglib/0.1.5-0.2.0/diff.md --exclude *.pyd
+[2023-05-20 23:06:08] INFO root fetch - main [MainThread]: End processing [dorado]: success
+[2023-05-20 23:06:08] INFO root fetch - main [MainThread]: End processing [capabilities]: success
+[2023-05-20 23:06:08] INFO root fetch - main [MainThread]: End processing [textagon]: success
+[2023-05-20 23:06:09] INFO root fetch - main [MainThread]: End processing [osconfiglib]: success
+[2023-05-20 23:06:12] INFO root fetch - main [MainThread]: End processing [ediri-scaleway]: success
+[2023-05-20 23:06:12] INFO root fetch - main [MainThread]: Store serial: [18184281]
