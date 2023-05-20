@@ -1487,3 +1487,84 @@
 [2023-05-20 02:01:37] INFO root fetch - main [MainThread]: End processing [dingtalk-stream]: success
 [2023-05-20 02:01:39] INFO root fetch - main [MainThread]: End processing [cbra]: success
 [2023-05-20 02:01:39] INFO root fetch - main [MainThread]: Store serial: [18176962]
+[2023-05-20 02:06:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18176962]
+[2023-05-20 02:06:49] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-20 02:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: freeplane-io
+[2023-05-20 02:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Shimarin
+[2023-05-20 02:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torchdatasets-nightly
+[2023-05-20 02:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cellmaps-image-embedding
+[2023-05-20 02:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: great-expectations-experimental
+[2023-05-20 02:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mct-nightly
+[2023-05-20 02:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: osgiservicebridge
+[2023-05-20 02:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: jaxkern-nightly
+[2023-05-20 02:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: maccarone
+[2023-05-20 02:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: prompt-generator
+[2023-05-20 02:06:49] INFO root fetch - processPackages [freeplane-io]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-05-20 02:06:49] INFO root fetch - processPackages [cellmaps-image-embedding]: New version: [0.1.0a4] Old Version: [0.1.0a3]
+[2023-05-20 02:06:49] INFO root fetch - processPackages [osgiservicebridge]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-05-20 02:06:49] WARNING root fetch - processPackages [prompt-generator]: Skipping, unable to determine old version
+[2023-05-20 02:06:49] INFO root fetch - processPackages [Shimarin]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-20 02:06:49] INFO root fetch - processPackages [prompt-generator]: Start processing: jaxutils-nightly
+[2023-05-20 02:06:49] INFO root fetch - main [MainThread]: End processing [prompt-generator] error
+[2023-05-20 02:06:49] WARNING root fetch - processPackages [maccarone]: Skipping, unable to determine old version
+[2023-05-20 02:06:49] INFO root fetch - processPackages [maccarone]: Start processing: pydefect
+[2023-05-20 02:06:49] INFO root fetch - main [MainThread]: End processing [maccarone] error
+[2023-05-20 02:06:49] INFO root fetch - processPackages [great-expectations-experimental]: New version: [0.1.20230519093] Old Version: [0.1.20230519080]
+[2023-05-20 02:06:49] INFO root fetch - processPackages [pydefect]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-20 02:06:49] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2023-05-20 02:06:49] INFO root fetch - processPackages [torchdatasets-nightly]: New version: [1684540990] Old Version: [1684454599]
+[2023-05-20 02:06:49] INFO root fetch - processPackages [mct-nightly]: New version: [1.8.0.9052023.post348] Old Version: [1.8.0.9042023.post411]
+[2023-05-20 02:06:49] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20230520] Old Version: [0.0.8.dev20230519]
+[2023-05-20 02:06:50] INFO root fetch - processPackages [Shimarin]: Downloading https://files.pythonhosted.org/packages/19/9a/6864a010b5be74dd777ceaebfbabbfb336b4df25fab1dcbf63cdecfbd4ec/Shimarin-0.0.6.tar.gz
+[2023-05-20 02:06:50] INFO root fetch - processPackages [freeplane-io]: Downloading https://files.pythonhosted.org/packages/2f/f0/6e3034091776bc8b7c3044067a0435e8e18346d6aac6a47a30c963a7ff7d/freeplane_io-0.7.2-py3-none-any.whl
+[2023-05-20 02:06:50] INFO root fetch - processPackages [osgiservicebridge]: Downloading https://files.pythonhosted.org/packages/e4/e0/c5b0c580bd5518acd41a0762664a058ea43e64bb673e44af5e6d9e4b0625/osgiservicebridge-1.5.1.tar.gz
+[2023-05-20 02:06:50] INFO root fetch - processPackages [great-expectations-experimental]: Downloading https://files.pythonhosted.org/packages/da/52/88c3676b345a1be251824ad82b217323f3fdc2a91ccfd64df477c2f5e66d/great_expectations_experimental-0.1.20230519093.tar.gz
+[2023-05-20 02:06:50] INFO root fetch - processPackages [freeplane-io]: executing diffoscope
+[2023-05-20 02:06:50] INFO root fetch - processPackages [freeplane-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freeplane-io-0.7.1.tar.gz tmp/freeplane_io-0.7.2-py3-none-any.whl.zip --markdown 20230520/f/freeplane-io/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-05-20 02:06:50] INFO root fetch - processPackages [Shimarin]: executing diffoscope
+[2023-05-20 02:06:50] INFO root fetch - processPackages [Shimarin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Shimarin-0.0.5.tar.gz tmp/Shimarin-0.0.6.tar.gz --markdown 20230520/S/Shimarin/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-20 02:06:50] INFO root fetch - processPackages [pydefect]: Downloading https://files.pythonhosted.org/packages/cd/72/3c0ce1cb57a2a56a1b89b97b91d1af311588e3e2d482b30087677892bec4/pydefect-0.7.0.tar.gz
+[2023-05-20 02:06:50] INFO root fetch - processPackages [cellmaps-image-embedding]: Downloading https://files.pythonhosted.org/packages/11/5d/e62b5389e5443f8559df6e232dfa727f54b057396d4ba6b383214c38e0c6/cellmaps_image_embedding-0.1.0a4.tar.gz
+[2023-05-20 02:06:50] INFO root fetch - processPackages [great-expectations-experimental]: executing diffoscope
+[2023-05-20 02:06:50] INFO root fetch - processPackages [great-expectations-experimental]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/great_expectations_experimental-0.1.20230519080.tar.gz tmp/great_expectations_experimental-0.1.20230519093.tar.gz --markdown 20230520/g/great-expectations-experimental/0.1.20230519080-0.1.20230519093/diff.md --exclude *.pyd
+[2023-05-20 02:06:50] INFO root fetch - processPackages [torchdatasets-nightly]: Downloading https://files.pythonhosted.org/packages/ee/ba/6c89d5d9552b3ae49baa7ae06fd6a720b2a2c5b5f9e5c9aa450c16a8a258/torchdatasets-nightly-1684540990.tar.gz
+[2023-05-20 02:06:50] INFO root fetch - processPackages [cellmaps-image-embedding]: executing diffoscope
+[2023-05-20 02:06:50] INFO root fetch - processPackages [cellmaps-image-embedding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmaps_image_embedding-0.1.0a3.tar.gz tmp/cellmaps_image_embedding-0.1.0a4.tar.gz --markdown 20230520/c/cellmaps-image-embedding/0.1.0a3-0.1.0a4/diff.md --exclude *.pyd
+[2023-05-20 02:06:50] INFO root fetch - processPackages [osgiservicebridge]: Downloading https://files.pythonhosted.org/packages/69/be/1e48a65913eab5e51be2a1a6bf292e32d168297eacfc496fca63912ae308/osgiservicebridge-1.5.2.tar.gz
+[2023-05-20 02:06:50] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2023-05-20 02:06:50] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20230520/j/jaxkern-nightly/0.dev20221221-0.dev20221222/diff.md --exclude *.pyd
+[2023-05-20 02:06:50] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/37/25/d406f9c89f0c402a1e19ae2f880366b9f5b2e1f9d5d9dacaac86071c36e7/jaxutils-nightly-0.0.8.dev20230520.tar.gz
+[2023-05-20 02:06:50] INFO root fetch - processPackages [pydefect]: Downloading https://files.pythonhosted.org/packages/0f/b5/571a5cb1e6cecd5381681763614fb91a305c600aa707ec00d47ed4c582fd/pydefect-0.7.1.tar.gz
+[2023-05-20 02:06:50] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2023-05-20 02:06:50] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-1.8.0.9042023.post411.tar.gz tmp/mct-nightly-1.8.0.9052023.post348.tar.gz --markdown 20230520/m/mct-nightly/1.8.0.9042023.post411-1.8.0.9052023.post348/diff.md --exclude *.pyd
+[2023-05-20 02:06:50] INFO root fetch - processPackages [pydefect]: executing diffoscope
+[2023-05-20 02:06:50] INFO root fetch - processPackages [pydefect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydefect-0.7.0.tar.gz tmp/pydefect-0.7.1.tar.gz --markdown 20230520/p/pydefect/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-20 02:06:50] INFO root fetch - processPackages [torchdatasets-nightly]: executing diffoscope
+[2023-05-20 02:06:50] INFO root fetch - processPackages [torchdatasets-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchdatasets-nightly-1684454599.tar.gz tmp/torchdatasets-nightly-1684540990.tar.gz --markdown 20230520/t/torchdatasets-nightly/1684454599-1684540990/diff.md --exclude *.pyd
+[2023-05-20 02:06:50] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2023-05-20 02:06:50] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20230519.tar.gz tmp/jaxutils-nightly-0.0.8.dev20230520.tar.gz --markdown 20230520/j/jaxutils-nightly/0.0.8.dev20230519-0.0.8.dev20230520/diff.md --exclude *.pyd
+[2023-05-20 02:06:50] INFO root fetch - processPackages [osgiservicebridge]: executing diffoscope
+[2023-05-20 02:06:50] INFO root fetch - processPackages [osgiservicebridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osgiservicebridge-1.5.1.tar.gz tmp/osgiservicebridge-1.5.2.tar.gz --markdown 20230520/o/osgiservicebridge/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-05-20 02:06:51] INFO root fetch - processPackages [freeplane-io]: Start processing: hf-hub-ctranslate2
+[2023-05-20 02:06:51] INFO root fetch - main [MainThread]: End processing [freeplane-io]: success
+[2023-05-20 02:06:51] INFO root fetch - processPackages [hf-hub-ctranslate2]: New version: [2.0.6] Old Version: [2.0.5]
+[2023-05-20 02:06:51] INFO root fetch - processPackages [hf-hub-ctranslate2]: executing diffoscope
+[2023-05-20 02:06:51] INFO root fetch - processPackages [hf-hub-ctranslate2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hf_hub_ctranslate2-2.0.5.tar.gz tmp/hf_hub_ctranslate2-2.0.6.tar.gz --markdown 20230520/h/hf-hub-ctranslate2/2.0.5-2.0.6/diff.md --exclude *.pyd
+[2023-05-20 02:06:51] INFO root fetch - processPackages [Shimarin]: Start processing: cellmaps-ppi-embedding
+[2023-05-20 02:06:51] INFO root fetch - main [MainThread]: End processing [Shimarin]: success
+[2023-05-20 02:06:51] INFO root fetch - processPackages [cellmaps-ppi-embedding]: New version: [0.1.0a3] Old Version: [0.1.0a2]
+[2023-05-20 02:06:52] INFO root fetch - processPackages [cellmaps-ppi-embedding]: Downloading https://files.pythonhosted.org/packages/b2/71/a9c4068ff519b8f43577cc6bfe41c0d5a73ac20e503e54883ab8f6ea972e/cellmaps_ppi_embedding-0.1.0a2.tar.gz
+[2023-05-20 02:06:52] INFO root fetch - main [MainThread]: End processing [great-expectations-experimental]: success
+[2023-05-20 02:06:52] INFO root fetch - main [MainThread]: End processing [torchdatasets-nightly]: success
+[2023-05-20 02:06:52] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2023-05-20 02:06:52] INFO root fetch - processPackages [cellmaps-ppi-embedding]: Downloading https://files.pythonhosted.org/packages/b8/58/518d6aae7c579dc1e3139b430e9a933c30e6c10d372cace04889ad144aa7/cellmaps_ppi_embedding-0.1.0a3.tar.gz
+[2023-05-20 02:06:52] INFO root fetch - main [MainThread]: End processing [osgiservicebridge]: success
+[2023-05-20 02:06:52] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2023-05-20 02:06:52] INFO root fetch - main [MainThread]: End processing [cellmaps-image-embedding]: success
+[2023-05-20 02:06:52] INFO root fetch - main [MainThread]: End processing [hf-hub-ctranslate2]: success
+[2023-05-20 02:06:52] INFO root fetch - processPackages [cellmaps-ppi-embedding]: executing diffoscope
+[2023-05-20 02:06:52] INFO root fetch - processPackages [cellmaps-ppi-embedding]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmaps_ppi_embedding-0.1.0a2.tar.gz tmp/cellmaps_ppi_embedding-0.1.0a3.tar.gz --markdown 20230520/c/cellmaps-ppi-embedding/0.1.0a2-0.1.0a3/diff.md --exclude *.pyd
+[2023-05-20 02:06:53] INFO root fetch - main [MainThread]: End processing [pydefect]: success
+[2023-05-20 02:06:54] INFO root fetch - main [MainThread]: End processing [cellmaps-ppi-embedding]: success
+[2023-05-20 02:06:59] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2023-05-20 02:06:59] INFO root fetch - main [MainThread]: Store serial: [18177002]
