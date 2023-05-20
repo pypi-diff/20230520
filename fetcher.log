@@ -6394,3 +6394,36 @@
 [2023-05-20 08:34:21] INFO root fetch - main [MainThread]: End processing [logicgate]: success
 [2023-05-20 08:34:22] INFO root fetch - main [MainThread]: End processing [Pandora-ChatGPT]: success
 [2023-05-20 08:34:22] INFO root fetch - main [MainThread]: Store serial: [18180101]
+[2023-05-20 08:39:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180101]
+[2023-05-20 08:39:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 08:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: logicgate
+[2023-05-20 08:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: RI-Corrector
+[2023-05-20 08:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyserde
+[2023-05-20 08:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: camset
+[2023-05-20 08:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addons-oca-e-commerce
+[2023-05-20 08:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tcev-transformation
+[2023-05-20 08:39:30] INFO root fetch - processPackages [odoo-addons-oca-e-commerce]: New version: [16.0.20230405.0] Old Version: [16.0.20230223.0]
+[2023-05-20 08:39:30] WARNING root fetch - processPackages [tcev-transformation]: Skipping, unable to determine old version
+[2023-05-20 08:39:30] INFO root fetch - main [MainThread]: End processing [tcev-transformation] error
+[2023-05-20 08:39:30] INFO root fetch - processPackages [camset]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 08:39:30] INFO root fetch - processPackages [pyserde]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-05-20 08:39:30] WARNING root fetch - processPackages [RI-Corrector]: Skipping, unable to determine old version
+[2023-05-20 08:39:30] INFO root fetch - main [MainThread]: End processing [RI-Corrector] error
+[2023-05-20 08:39:30] INFO root fetch - processPackages [logicgate]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-20 08:39:31] INFO root fetch - processPackages [camset]: executing diffoscope
+[2023-05-20 08:39:31] INFO root fetch - processPackages [camset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camset-0.0.8-py3-none-any.whl.zip tmp/camset-0.0.9-py3-none-any.whl.zip --markdown 20230520/c/camset/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 08:39:31] INFO root fetch - processPackages [odoo-addons-oca-e-commerce]: Downloading https://files.pythonhosted.org/packages/e9/ad/f965cfc19f394f5d9ad23ed68926067fdf55ff73fa44a6bcec91b3f41baf/odoo_addons_oca_e_commerce-16.0.20230223.0-py3-none-any.whl
+[2023-05-20 08:39:31] INFO root fetch - processPackages [pyserde]: Downloading https://files.pythonhosted.org/packages/c6/fd/8a6d9967aa1ca3450ce7bf8b1556359e7801a809e354b85682ed16481fb5/pyserde-0.9.7.tar.gz
+[2023-05-20 08:39:31] INFO root fetch - processPackages [logicgate]: executing diffoscope
+[2023-05-20 08:39:31] INFO root fetch - processPackages [logicgate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LogicGate-0.2.5.tar.gz tmp/logicgate-0.2.6.tar.gz --markdown 20230520/l/logicgate/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-20 08:39:31] INFO root fetch - processPackages [odoo-addons-oca-e-commerce]: Downloading https://files.pythonhosted.org/packages/dd/d0/f8729ee61534b6ebe8c2d812b1f3af06f1afb2add724de1d4bae61466685/odoo_addons_oca_e_commerce-16.0.20230405.0-py3-none-any.whl
+[2023-05-20 08:39:31] INFO root fetch - processPackages [pyserde]: Downloading https://files.pythonhosted.org/packages/08/1d/65f8f49d7df9b9326fb7de9ae0bb1dae880de85e2ae08ee6d850014f4b7d/pyserde-0.9.8.tar.gz
+[2023-05-20 08:39:31] INFO root fetch - processPackages [odoo-addons-oca-e-commerce]: executing diffoscope
+[2023-05-20 08:39:31] INFO root fetch - processPackages [odoo-addons-oca-e-commerce]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_e_commerce-16.0.20230223.0-py3-none-any.whl.zip tmp/odoo_addons_oca_e_commerce-16.0.20230405.0-py3-none-any.whl.zip --markdown 20230520/o/odoo-addons-oca-e-commerce/16.0.20230223.0-16.0.20230405.0/diff.md --exclude *.pyd
+[2023-05-20 08:39:31] INFO root fetch - processPackages [pyserde]: executing diffoscope
+[2023-05-20 08:39:31] INFO root fetch - processPackages [pyserde]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyserde-0.9.7.tar.gz tmp/pyserde-0.9.8.tar.gz --markdown 20230520/p/pyserde/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-05-20 08:39:32] INFO root fetch - main [MainThread]: End processing [camset]: success
+[2023-05-20 08:39:32] INFO root fetch - main [MainThread]: End processing [logicgate]: success
+[2023-05-20 08:39:32] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-e-commerce]: success
+[2023-05-20 08:39:32] INFO root fetch - main [MainThread]: End processing [pyserde]: success
+[2023-05-20 08:39:32] INFO root fetch - main [MainThread]: Store serial: [18180122]
