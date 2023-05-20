@@ -13128,3 +13128,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 22:17:48] INFO root fetch - main [MainThread]: End processing [crosscompute-analytics]: success
 [2023-05-20 22:17:48] INFO root fetch - main [MainThread]: End processing [matflow-new]: success
 [2023-05-20 22:17:48] INFO root fetch - main [MainThread]: Store serial: [18184134]
+[2023-05-20 22:22:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184134]
+[2023-05-20 22:22:57] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-20 22:22:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seaplayer
+[2023-05-20 22:22:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: molecule-multipass
+[2023-05-20 22:22:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-05-20 22:22:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2023-05-20 22:22:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ghananews-scraper
+[2023-05-20 22:22:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ediri-azapi
+[2023-05-20 22:22:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyskroutz
+[2023-05-20 22:22:57] INFO root fetch - processPackages [molecule-multipass]: New version: [0.4.9] Old Version: [0.4.7]
+[2023-05-20 22:22:57] INFO root fetch - processPackages [ghananews-scraper]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-20 22:22:57] INFO root fetch - processPackages [seaplayer]: New version: [0.4a3] Old Version: [0.4a2]
+[2023-05-20 22:22:57] INFO root fetch - processPackages [ediri-azapi]: New version: [1.5.0] Old Version: [1.4.0]
+[2023-05-20 22:22:57] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-20 22:22:57] INFO root fetch - processPackages [pyskroutz]: New version: [0.2.0] Old Version: [0.1.8]
+[2023-05-20 22:22:58] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-20 22:22:58] INFO root fetch - processPackages [molecule-multipass]: executing diffoscope
+[2023-05-20 22:22:58] INFO root fetch - processPackages [molecule-multipass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/molecule_multipass-0.4.7.tar.gz tmp/molecule_multipass-0.4.9.tar.gz --markdown 20230520/m/molecule-multipass/0.4.7-0.4.9/diff.md --exclude *.pyd
+[2023-05-20 22:22:58] INFO root fetch - processPackages [seaplayer]: executing diffoscope
+[2023-05-20 22:22:58] INFO root fetch - processPackages [seaplayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seaplayer-0.4a2.tar.gz tmp/seaplayer-0.4a3.tar.gz --markdown 20230520/s/seaplayer/0.4a2-0.4a3/diff.md --exclude *.pyd
+[2023-05-20 22:22:58] INFO root fetch - processPackages [ediri-azapi]: Downloading https://files.pythonhosted.org/packages/86/f8/9d692f9656c4e98523c623918697b0e7f19b2ed7ea9a0e9772576c117061/ediri_azapi-1.4.0.tar.gz
+[2023-05-20 22:22:58] INFO root fetch - processPackages [ghananews-scraper]: executing diffoscope
+[2023-05-20 22:22:58] INFO root fetch - processPackages [ghananews-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ghananews-scraper-1.0.8.tar.gz tmp/ghananews-scraper-1.0.9.tar.gz --markdown 20230520/g/ghananews-scraper/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-20 22:22:58] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-20 22:22:58] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230520/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-20 22:22:58] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-20 22:22:58] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230520/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-20 22:22:58] INFO root fetch - processPackages [pyskroutz]: Downloading https://files.pythonhosted.org/packages/6b/d4/3ede185504a99e3283dc7aed04203319839622642ad0ec6bbe8fd5baa505/pyskroutz-0.1.8.tar.gz
+[2023-05-20 22:22:58] INFO root fetch - processPackages [ediri-azapi]: Downloading https://files.pythonhosted.org/packages/b1/23/d2130dfa8b1628d6d63f9fd6c39272ade3f8876cef9f3891fd7690e000e8/ediri_azapi-1.5.0.tar.gz
+[2023-05-20 22:22:58] INFO root fetch - processPackages [pyskroutz]: Downloading https://files.pythonhosted.org/packages/5f/e1/eb0c6dcf905ddc062a817a56aba8bb346b10d99c3cdcfac5155d648bae8a/pyskroutz-0.2.0.tar.gz
+[2023-05-20 22:22:58] INFO root fetch - processPackages [ediri-azapi]: executing diffoscope
+[2023-05-20 22:22:58] INFO root fetch - processPackages [ediri-azapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ediri_azapi-1.4.0.tar.gz tmp/ediri_azapi-1.5.0.tar.gz --markdown 20230520/e/ediri-azapi/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2023-05-20 22:22:58] INFO root fetch - processPackages [pyskroutz]: executing diffoscope
+[2023-05-20 22:22:58] INFO root fetch - processPackages [pyskroutz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyskroutz-0.1.8.tar.gz tmp/pyskroutz-0.2.0.tar.gz --markdown 20230520/p/pyskroutz/0.1.8-0.2.0/diff.md --exclude *.pyd
+[2023-05-20 22:22:59] INFO root fetch - main [MainThread]: End processing [molecule-multipass]: success
+[2023-05-20 22:22:59] INFO root fetch - main [MainThread]: End processing [ghananews-scraper]: success
+[2023-05-20 22:22:59] INFO root fetch - main [MainThread]: End processing [seaplayer]: success
+[2023-05-20 22:22:59] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-20 22:23:00] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-20 22:23:00] INFO root fetch - main [MainThread]: End processing [ediri-azapi]: success
+[2023-05-20 22:23:00] INFO root fetch - main [MainThread]: End processing [pyskroutz]: success
+[2023-05-20 22:23:00] INFO root fetch - main [MainThread]: Store serial: [18184160]
