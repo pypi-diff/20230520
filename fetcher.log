@@ -10342,3 +10342,62 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 16:20:30] INFO root fetch - main [MainThread]: End processing [archeSetup]: success
 [2023-05-20 16:20:30] INFO root fetch - main [MainThread]: End processing [novadata-utils]: success
 [2023-05-20 16:20:30] INFO root fetch - main [MainThread]: Store serial: [18182617]
+[2023-05-20 16:25:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182617]
+[2023-05-20 16:25:38] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-20 16:25:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2023-05-20 16:25:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kayle
+[2023-05-20 16:25:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-05-20 16:25:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fuefpyco
+[2023-05-20 16:25:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: api-sap
+[2023-05-20 16:25:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: prodvana
+[2023-05-20 16:25:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: req-flask
+[2023-05-20 16:25:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: LARRY-dataset
+[2023-05-20 16:25:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: channel2pdf
+[2023-05-20 16:25:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ddadevops
+[2023-05-20 16:25:38] INFO root fetch - processPackages [api-sap]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-20 16:25:38] INFO root fetch - processPackages [prodvana]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-20 16:25:38] INFO root fetch - processPackages [fuefpyco]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-20 16:25:38] WARNING root fetch - processPackages [req-flask]: Skipping, unable to determine old version
+[2023-05-20 16:25:38] INFO root fetch - processPackages [kayle]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-20 16:25:38] INFO root fetch - processPackages [LARRY-dataset]: New version: [0.0.2rc0] Old Version: [0.0.1]
+[2023-05-20 16:25:38] INFO root fetch - main [MainThread]: End processing [req-flask] error
+[2023-05-20 16:25:38] INFO root fetch - processPackages [ddadevops]: New version: [4.0.0.dev9] Old Version: [4.0.0.dev8]
+[2023-05-20 16:25:38] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-20 16:25:38] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-20 16:25:39] INFO root fetch - processPackages [channel2pdf]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 16:25:39] INFO root fetch - processPackages [api-sap]: Downloading https://files.pythonhosted.org/packages/c1/e5/f17ac9cf80c79c0e46dbdf421a5cab89a3c2c75b041890d365e3effcd979/api_sap-0.0.1.tar.gz
+[2023-05-20 16:25:39] INFO root fetch - processPackages [ddadevops]: executing diffoscope
+[2023-05-20 16:25:39] INFO root fetch - processPackages [ddadevops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddadevops-4.0.0.dev8.tar.gz tmp/ddadevops-4.0.0.dev9.tar.gz --markdown 20230520/d/ddadevops/4.0.0.dev8-4.0.0.dev9/diff.md --exclude *.pyd
+[2023-05-20 16:25:39] INFO root fetch - processPackages [LARRY-dataset]: Downloading https://files.pythonhosted.org/packages/b4/83/8b27b81f16eafbb327604487babe28922f8248040166563b85993d290db9/LARRY-dataset-0.0.1.tar.gz
+[2023-05-20 16:25:39] INFO root fetch - processPackages [kayle]: executing diffoscope
+[2023-05-20 16:25:39] INFO root fetch - processPackages [kayle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kayle-0.5.8-py3-none-any.whl.zip tmp/kayle-0.5.9-py3-none-any.whl.zip --markdown 20230520/k/kayle/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-20 16:25:39] INFO root fetch - processPackages [prodvana]: Downloading https://files.pythonhosted.org/packages/15/a4/cba4a0172fb04fe2a77caba4cc6ad82983e12182d2c1c110a70289464b74/prodvana-0.1.4.tar.gz
+[2023-05-20 16:25:39] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-20 16:25:39] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230520/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-20 16:25:39] INFO root fetch - processPackages [fuefpyco]: Downloading https://files.pythonhosted.org/packages/c1/d8/2313a101eca056914cd6636e0ad38a0ebb0657d57f8dfeede444fe00c983/fuefpyco-0.3.0.tar.gz
+[2023-05-20 16:25:39] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-20 16:25:39] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230520/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-20 16:25:39] INFO root fetch - processPackages [fuefpyco]: executing diffoscope
+[2023-05-20 16:25:39] INFO root fetch - processPackages [fuefpyco]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fuefpyco-0.2.0.tar.gz tmp/fuefpyco-0.3.0.tar.gz --markdown 20230520/f/fuefpyco/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-20 16:25:39] INFO root fetch - processPackages [channel2pdf]: Downloading https://files.pythonhosted.org/packages/73/82/6b34d6f2de3cf7af51de9c4454f40a851b0c680af29ba1701ce6c4417d8c/channel2pdf-0.0.8.tar.gz
+[2023-05-20 16:25:39] INFO root fetch - processPackages [prodvana]: executing diffoscope
+[2023-05-20 16:25:39] INFO root fetch - processPackages [prodvana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prodvana-0.1.3.tar.gz tmp/prodvana-0.1.4.tar.gz --markdown 20230520/p/prodvana/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-20 16:25:39] INFO root fetch - processPackages [api-sap]: Downloading https://files.pythonhosted.org/packages/77/9c/39940de84ab0fb98449df24451d7a6ab14547019cfeed7a609ee7c342677/api_sap-0.0.2.tar.gz
+[2023-05-20 16:25:39] INFO root fetch - processPackages [LARRY-dataset]: Downloading https://files.pythonhosted.org/packages/b9/6a/744ac283d6714db2ed6c1b40a24be38b7716bb57c2922d750afeece2bcfd/LARRY-dataset-0.0.2rc0.tar.gz
+[2023-05-20 16:25:39] INFO root fetch - processPackages [api-sap]: executing diffoscope
+[2023-05-20 16:25:39] INFO root fetch - processPackages [api-sap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api_sap-0.0.1.tar.gz tmp/api_sap-0.0.2.tar.gz --markdown 20230520/a/api-sap/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-20 16:25:39] INFO root fetch - processPackages [LARRY-dataset]: executing diffoscope
+[2023-05-20 16:25:39] INFO root fetch - processPackages [LARRY-dataset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LARRY-dataset-0.0.1.tar.gz tmp/LARRY-dataset-0.0.2rc0.tar.gz --markdown 20230520/L/LARRY-dataset/0.0.1-0.0.2rc0/diff.md --exclude *.pyd
+[2023-05-20 16:25:39] INFO root fetch - processPackages [channel2pdf]: Downloading https://files.pythonhosted.org/packages/e6/62/8e1fdfc93adfbeef056b948a1dacc4c05790aa5ca5c51fd65ee75f440994/channel2pdf-0.0.9.tar.gz
+[2023-05-20 16:25:39] INFO root fetch - processPackages [channel2pdf]: executing diffoscope
+[2023-05-20 16:25:39] INFO root fetch - processPackages [channel2pdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/channel2pdf-0.0.8.tar.gz tmp/channel2pdf-0.0.9.tar.gz --markdown 20230520/c/channel2pdf/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 16:25:40] INFO root fetch - main [MainThread]: End processing [ddadevops]: success
+[2023-05-20 16:25:40] INFO root fetch - main [MainThread]: End processing [kayle]: success
+[2023-05-20 16:25:40] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-20 16:25:40] INFO root fetch - main [MainThread]: End processing [fuefpyco]: success
+[2023-05-20 16:25:41] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-20 16:25:41] INFO root fetch - main [MainThread]: End processing [api-sap]: success
+[2023-05-20 16:25:41] INFO root fetch - main [MainThread]: End processing [channel2pdf]: success
+[2023-05-20 16:25:44] INFO root fetch - main [MainThread]: End processing [prodvana]: success
+[2023-05-20 16:26:22] INFO root fetch - main [MainThread]: End processing [LARRY-dataset]: success
+[2023-05-20 16:26:22] INFO root fetch - main [MainThread]: Store serial: [18182647]
