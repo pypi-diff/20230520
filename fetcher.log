@@ -6564,3 +6564,22 @@
 [2023-05-20 09:05:29] INFO root fetch - main [MainThread]: End processing [pokerrl-env]: success
 [2023-05-20 09:05:30] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
 [2023-05-20 09:05:30] INFO root fetch - main [MainThread]: Store serial: [18180199]
+[2023-05-20 09:10:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180199]
+[2023-05-20 09:10:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 09:10:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shinherpro
+[2023-05-20 09:10:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-models-nightly
+[2023-05-20 09:10:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xtlsapi
+[2023-05-20 09:10:39] INFO root fetch - processPackages [shinherpro]: New version: [1.5.3] Old Version: [1.5.1]
+[2023-05-20 09:10:39] INFO root fetch - processPackages [xtlsapi]: New version: [3.1.0] Old Version: [3.0.4]
+[2023-05-20 09:10:39] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2023-05-20 09:10:39] INFO root fetch - processPackages [shinherpro]: Downloading https://files.pythonhosted.org/packages/bc/76/bbfe51c07c31d25436f3eb0b2bf2ebba01c6537045bcd2c18f5ffaafddef/shinherpro-1.5.3.tar.gz
+[2023-05-20 09:10:39] WARNING root fetch - processPackages [shinherpro]: Skipping package: exceeds size limit 96986359>=10485760
+[2023-05-20 09:10:39] INFO root fetch - main [MainThread]: End processing [shinherpro] error
+[2023-05-20 09:10:39] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2023-05-20 09:10:39] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20230520/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/diff.md --exclude *.pyd
+[2023-05-20 09:10:39] INFO root fetch - processPackages [xtlsapi]: Downloading https://files.pythonhosted.org/packages/f2/73/04c0de093c5536c955700bf768057743479456d2babf0036bf7915fc70a3/xtlsapi-3.1.0.tar.gz
+[2023-05-20 09:10:39] INFO root fetch - processPackages [xtlsapi]: executing diffoscope
+[2023-05-20 09:10:39] INFO root fetch - processPackages [xtlsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xtlsapi-3.0.4.tar.gz tmp/xtlsapi-3.1.0.tar.gz --markdown 20230520/x/xtlsapi/3.0.4-3.1.0/diff.md --exclude *.pyd
+[2023-05-20 09:10:41] INFO root fetch - main [MainThread]: End processing [xtlsapi]: success
+[2023-05-20 09:10:55] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
+[2023-05-20 09:10:55] INFO root fetch - main [MainThread]: Store serial: [18180205]
