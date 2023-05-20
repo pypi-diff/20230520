@@ -6732,3 +6732,37 @@
 [2023-05-20 09:37:23] INFO root fetch - main [MainThread]: End processing [crop-utils]: success
 [2023-05-20 09:37:27] INFO root fetch - main [MainThread]: End processing [ndcurves]: success
 [2023-05-20 09:37:27] INFO root fetch - main [MainThread]: Store serial: [18180308]
+[2023-05-20 09:42:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180308]
+[2023-05-20 09:42:37] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-20 09:42:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-preprocessors
+[2023-05-20 09:42:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fling-hub
+[2023-05-20 09:42:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ghananews-scraper
+[2023-05-20 09:42:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ml-starter
+[2023-05-20 09:42:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ScrapPyJS
+[2023-05-20 09:42:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: licensio
+[2023-05-20 09:42:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nonebot-plugin-acm-monitor
+[2023-05-20 09:42:37] INFO root fetch - processPackages [data-preprocessors]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-20 09:42:37] WARNING root fetch - processPackages [fling-hub]: Skipping, unable to determine old version
+[2023-05-20 09:42:37] INFO root fetch - main [MainThread]: End processing [fling-hub] error
+[2023-05-20 09:42:37] WARNING root fetch - processPackages [nonebot-plugin-acm-monitor]: Skipping, unable to determine old version
+[2023-05-20 09:42:37] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-acm-monitor] error
+[2023-05-20 09:42:37] WARNING root fetch - processPackages [ScrapPyJS]: Skipping, unable to determine old version
+[2023-05-20 09:42:37] INFO root fetch - main [MainThread]: End processing [ScrapPyJS] error
+[2023-05-20 09:42:37] INFO root fetch - processPackages [ml-starter]: New version: [0.0.41] Old Version: [0.0.40]
+[2023-05-20 09:42:37] INFO root fetch - processPackages [ghananews-scraper]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-20 09:42:37] WARNING root fetch - processPackages [licensio]: Skipping, unable to determine old version
+[2023-05-20 09:42:37] INFO root fetch - main [MainThread]: End processing [licensio] error
+[2023-05-20 09:42:37] INFO root fetch - processPackages [ml-starter]: Downloading https://files.pythonhosted.org/packages/bc/36/6694a255b810bb0717874dd5b34e111fcc44162b50ecd7c58d3a448788b7/ml-starter-0.0.40.tar.gz
+[2023-05-20 09:42:37] INFO root fetch - processPackages [ghananews-scraper]: Downloading https://files.pythonhosted.org/packages/83/2d/d094b0c80c03ed4ddc4544a63140d47a1193dfc55f5489eb9b0b68a3e8d7/ghananews-scraper-1.0.8.tar.gz
+[2023-05-20 09:42:38] INFO root fetch - processPackages [ghananews-scraper]: Downloading https://files.pythonhosted.org/packages/e0/b6/878f5dbca6bf8dae7e132e857d785abcef5601d293dc4ce6a8ffe5e61655/ghananews-scraper-1.0.9.tar.gz
+[2023-05-20 09:42:38] INFO root fetch - processPackages [ml-starter]: Downloading https://files.pythonhosted.org/packages/97/81/10b2d164b8e55c292cd5a373ca1d7ec4a17dd56d63a78e266975fed680d7/ml-starter-0.0.41.tar.gz
+[2023-05-20 09:42:38] INFO root fetch - processPackages [data-preprocessors]: executing diffoscope
+[2023-05-20 09:42:38] INFO root fetch - processPackages [data-preprocessors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-preprocessors-0.8.0.tar.gz tmp/data-preprocessors-0.9.0.tar.gz --markdown 20230520/d/data-preprocessors/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-20 09:42:38] INFO root fetch - processPackages [ghananews-scraper]: executing diffoscope
+[2023-05-20 09:42:38] INFO root fetch - processPackages [ghananews-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ghananews-scraper-1.0.8.tar.gz tmp/ghananews-scraper-1.0.9.tar.gz --markdown 20230520/g/ghananews-scraper/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-20 09:42:38] INFO root fetch - processPackages [ml-starter]: executing diffoscope
+[2023-05-20 09:42:38] INFO root fetch - processPackages [ml-starter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-starter-0.0.40.tar.gz tmp/ml-starter-0.0.41.tar.gz --markdown 20230520/m/ml-starter/0.0.40-0.0.41/diff.md --exclude *.pyd
+[2023-05-20 09:42:39] INFO root fetch - main [MainThread]: End processing [data-preprocessors]: success
+[2023-05-20 09:42:39] INFO root fetch - main [MainThread]: End processing [ghananews-scraper]: success
+[2023-05-20 09:42:39] INFO root fetch - main [MainThread]: End processing [ml-starter]: success
+[2023-05-20 09:42:39] INFO root fetch - main [MainThread]: Store serial: [18180355]
