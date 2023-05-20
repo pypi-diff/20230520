@@ -5497,3 +5497,24 @@
 [2023-05-20 05:25:03] INFO root fetch - main [MainThread]: End processing [comex]: success
 [2023-05-20 05:25:03] INFO root fetch - main [MainThread]: End processing [comex]: success
 [2023-05-20 05:25:03] INFO root fetch - main [MainThread]: Store serial: [18179450]
+[2023-05-20 05:30:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179450]
+[2023-05-20 05:30:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 05:30:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dingtalk-stream
+[2023-05-20 05:30:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dingtalk-stream
+[2023-05-20 05:30:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crosscompute
+[2023-05-20 05:30:12] INFO root fetch - processPackages [dingtalk-stream]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-20 05:30:12] INFO root fetch - processPackages [dingtalk-stream]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-20 05:30:12] INFO root fetch - processPackages [crosscompute]: New version: [0.9.4.9] Old Version: [0.9.4.8]
+[2023-05-20 05:30:12] INFO root fetch - processPackages [crosscompute]: Downloading https://files.pythonhosted.org/packages/5e/6b/76b623828c08bad0f8b9f610453656bea206e68fa627e8a9ce08af87a7a3/crosscompute-0.9.4.9.tar.gz
+[2023-05-20 05:30:12] INFO root fetch - processPackages [dingtalk-stream]: Downloading https://files.pythonhosted.org/packages/4a/e7/9300bc9f712a47c67dfd89f1c2becd3d9baa09aa82eb73072a848783a5a0/dingtalk-stream-0.2.0.tar.gz
+[2023-05-20 05:30:12] INFO root fetch - processPackages [dingtalk-stream]: Downloading https://files.pythonhosted.org/packages/4a/e7/9300bc9f712a47c67dfd89f1c2becd3d9baa09aa82eb73072a848783a5a0/dingtalk-stream-0.2.0.tar.gz
+[2023-05-20 05:30:12] INFO root fetch - processPackages [crosscompute]: executing diffoscope
+[2023-05-20 05:30:12] INFO root fetch - processPackages [crosscompute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crosscompute-0.9.4.8.tar.gz tmp/crosscompute-0.9.4.9.tar.gz --markdown 20230520/c/crosscompute/0.9.4.8-0.9.4.9/diff.md --exclude *.pyd
+[2023-05-20 05:30:12] INFO root fetch - processPackages [dingtalk-stream]: executing diffoscope
+[2023-05-20 05:30:12] INFO root fetch - processPackages [dingtalk-stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dingtalk-stream-0.1.9.tar.gz tmp/dingtalk-stream-0.2.0.tar.gz --markdown 20230520/d/dingtalk-stream/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-05-20 05:30:12] INFO root fetch - processPackages [dingtalk-stream]: executing diffoscope
+[2023-05-20 05:30:12] INFO root fetch - processPackages [dingtalk-stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dingtalk-stream-0.1.9.tar.gz tmp/dingtalk-stream-0.2.0.tar.gz --markdown 20230520/d/dingtalk-stream/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-05-20 05:30:13] INFO root fetch - main [MainThread]: End processing [dingtalk-stream]: success
+[2023-05-20 05:30:13] INFO root fetch - main [MainThread]: End processing [dingtalk-stream]: success
+[2023-05-20 05:30:14] INFO root fetch - main [MainThread]: End processing [crosscompute]: success
+[2023-05-20 05:30:14] INFO root fetch - main [MainThread]: Store serial: [18179459]
