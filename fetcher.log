@@ -6456,3 +6456,44 @@
 [2023-05-20 08:44:44] INFO root fetch - main [MainThread]: End processing [paper-qa]: success
 [2023-05-20 08:44:44] INFO root fetch - main [MainThread]: End processing [tknodesystem]: success
 [2023-05-20 08:44:44] INFO root fetch - main [MainThread]: Store serial: [18180136]
+[2023-05-20 08:49:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180136]
+[2023-05-20 08:49:53] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-20 08:49:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pystools
+[2023-05-20 08:49:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fast-poisson-solver
+[2023-05-20 08:49:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ScriptCollection
+[2023-05-20 08:49:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mosek-license-server
+[2023-05-20 08:49:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Appium-Python-Client
+[2023-05-20 08:49:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hu-neuro-pipeline
+[2023-05-20 08:49:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: onnx2tf
+[2023-05-20 08:49:53] WARNING root fetch - processPackages [fast-poisson-solver]: Skipping, unable to determine old version
+[2023-05-20 08:49:53] INFO root fetch - main [MainThread]: End processing [fast-poisson-solver] error
+[2023-05-20 08:49:53] INFO root fetch - processPackages [ScriptCollection]: New version: [3.3.9] Old Version: [3.3.87]
+[2023-05-20 08:49:53] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-20 08:49:53] WARNING root fetch - processPackages [mosek-license-server]: Skipping, unable to determine old version
+[2023-05-20 08:49:53] INFO root fetch - main [MainThread]: End processing [mosek-license-server] error
+[2023-05-20 08:49:53] INFO root fetch - processPackages [hu-neuro-pipeline]: New version: [0.6.5] Old Version: [0.6.4]
+[2023-05-20 08:49:53] INFO root fetch - processPackages [pystools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 08:49:53] INFO root fetch - processPackages [Appium-Python-Client]: New version: [2.9.0] Old Version: [2.8.1]
+[2023-05-20 08:49:53] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2023-05-20 08:49:53] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.8.tar.gz tmp/onnx2tf-1.9.9.tar.gz --markdown 20230520/o/onnx2tf/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-20 08:49:53] INFO root fetch - processPackages [ScriptCollection]: Downloading https://files.pythonhosted.org/packages/24/aa/4a426e06dfd5aed67e51ffa6c07eb2c4b4daa79023d2f11c373311197484/ScriptCollection-3.3.87-py3-none-any.whl
+[2023-05-20 08:49:53] INFO root fetch - processPackages [pystools]: Downloading https://files.pythonhosted.org/packages/d3/f1/f6fef6b574bd57970579f257d2f3b2adf9f6b87b20d9dc2c11e18d2a4a47/pystools-0.0.8.tar.gz
+[2023-05-20 08:49:53] INFO root fetch - processPackages [Appium-Python-Client]: Downloading https://files.pythonhosted.org/packages/d8/be/c517d6b438a842f66a8685d02d7a379345af11c11b986659bec185c1759a/Appium-Python-Client-2.8.1.tar.gz
+[2023-05-20 08:49:53] INFO root fetch - processPackages [hu-neuro-pipeline]: Downloading https://files.pythonhosted.org/packages/08/5f/77ddff754422ee6f971db7af458dd98ab7812d5601829278bc195e7cd004/hu-neuro-pipeline-0.6.4.tar.gz
+[2023-05-20 08:49:53] INFO root fetch - processPackages [ScriptCollection]: executing diffoscope
+[2023-05-20 08:49:53] INFO root fetch - processPackages [ScriptCollection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ScriptCollection-3.3.87-py3-none-any.whl.zip tmp/ScriptCollection-3.3.9-py3-none-any.whl.zip --markdown 20230520/S/ScriptCollection/3.3.87-3.3.9/diff.md --exclude *.pyd
+[2023-05-20 08:49:54] INFO root fetch - processPackages [Appium-Python-Client]: Downloading https://files.pythonhosted.org/packages/e3/bd/ed36966337d80d66fb2b794320b765b065a6656befa5c4e9232728fd15cd/Appium-Python-Client-2.9.0.tar.gz
+[2023-05-20 08:49:54] INFO root fetch - processPackages [hu-neuro-pipeline]: Downloading https://files.pythonhosted.org/packages/d2/78/bc5e4b30fc703234e8986e605a0ca452060b7a5d85bf4fffdf27eb5beed6/hu-neuro-pipeline-0.6.5.tar.gz
+[2023-05-20 08:49:54] INFO root fetch - processPackages [pystools]: Downloading https://files.pythonhosted.org/packages/9b/5a/9f2cf38e22565c5aa2ecb7be3dbecb7a44f7d23efbd86fd532eacd613f62/pystools-0.0.9.tar.gz
+[2023-05-20 08:49:54] INFO root fetch - processPackages [hu-neuro-pipeline]: executing diffoscope
+[2023-05-20 08:49:54] INFO root fetch - processPackages [hu-neuro-pipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hu-neuro-pipeline-0.6.4.tar.gz tmp/hu-neuro-pipeline-0.6.5.tar.gz --markdown 20230520/h/hu-neuro-pipeline/0.6.4-0.6.5/diff.md --exclude *.pyd
+[2023-05-20 08:49:54] INFO root fetch - processPackages [Appium-Python-Client]: executing diffoscope
+[2023-05-20 08:49:54] INFO root fetch - processPackages [Appium-Python-Client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Appium-Python-Client-2.8.1.tar.gz tmp/Appium-Python-Client-2.9.0.tar.gz --markdown 20230520/A/Appium-Python-Client/2.8.1-2.9.0/diff.md --exclude *.pyd
+[2023-05-20 08:49:54] INFO root fetch - processPackages [pystools]: executing diffoscope
+[2023-05-20 08:49:54] INFO root fetch - processPackages [pystools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystools-0.0.8.tar.gz tmp/pystools-0.0.9.tar.gz --markdown 20230520/p/pystools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 08:49:55] INFO root fetch - main [MainThread]: End processing [ScriptCollection]: success
+[2023-05-20 08:49:55] INFO root fetch - main [MainThread]: End processing [hu-neuro-pipeline]: success
+[2023-05-20 08:49:55] INFO root fetch - main [MainThread]: End processing [pystools]: success
+[2023-05-20 08:49:56] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2023-05-20 08:49:58] INFO root fetch - main [MainThread]: End processing [Appium-Python-Client]: success
+[2023-05-20 08:49:58] INFO root fetch - main [MainThread]: Store serial: [18180157]
