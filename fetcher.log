@@ -8832,3 +8832,37 @@
 [2023-05-20 13:30:00] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
 [2023-05-20 13:30:00] INFO root fetch - main [MainThread]: End processing [pygeometa]: success
 [2023-05-20 13:30:00] INFO root fetch - main [MainThread]: Store serial: [18181573]
+[2023-05-20 13:35:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18181573]
+[2023-05-20 13:35:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-20 13:35:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: z4d-certified-devices
+[2023-05-20 13:35:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Orange3-Tools
+[2023-05-20 13:35:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: NodeGraphQt
+[2023-05-20 13:35:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scrapeanything
+[2023-05-20 13:35:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: beetcamp
+[2023-05-20 13:35:09] INFO root fetch - processPackages [Orange3-Tools]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-20 13:35:09] INFO root fetch - processPackages [z4d-certified-devices]: New version: [2.63] Old Version: [2.62]
+[2023-05-20 13:35:09] INFO root fetch - processPackages [beetcamp]: New version: [0.9.3] Old Version: [0.9.1]
+[2023-05-20 13:35:09] INFO root fetch - processPackages [NodeGraphQt]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-20 13:35:10] INFO root fetch - processPackages [scrapeanything]: New version: [0.9.99] Old Version: [0.9.98]
+[2023-05-20 13:35:10] INFO root fetch - processPackages [beetcamp]: executing diffoscope
+[2023-05-20 13:35:10] INFO root fetch - processPackages [beetcamp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beetcamp-0.9.1.tar.gz tmp/beetcamp-0.9.3.tar.gz --markdown 20230520/b/beetcamp/0.9.1-0.9.3/diff.md --exclude *.pyd
+[2023-05-20 13:35:10] INFO root fetch - processPackages [z4d-certified-devices]: Downloading https://files.pythonhosted.org/packages/de/ac/55cf5b6e41c4cd4116cbccc405c90098aba9f1bbee54a55f97b8869552c8/z4d-certified-devices-2.62.tar.gz
+[2023-05-20 13:35:10] INFO root fetch - processPackages [Orange3-Tools]: Downloading https://files.pythonhosted.org/packages/11/36/18c7a35c5cfddf8da8b435abb6b5f1c9ec5df01a5aaec72d6bb957da130f/Orange3-Tools-0.0.4.tar.gz
+[2023-05-20 13:35:10] INFO root fetch - processPackages [scrapeanything]: Downloading https://files.pythonhosted.org/packages/4f/79/76c6a500556ca5614632771b87138c903ffe2040ba0d41724a81bb2f4ace/scrapeanything-0.9.98.tar.gz
+[2023-05-20 13:35:10] INFO root fetch - processPackages [NodeGraphQt]: Downloading https://files.pythonhosted.org/packages/1f/af/3cd502be2a4c8c7b2cf34e9888ae52c294f5ea72e138bacc187727d4ccc4/NodeGraphQt-0.6.1.tar.gz
+[2023-05-20 13:35:10] INFO root fetch - processPackages [Orange3-Tools]: executing diffoscope
+[2023-05-20 13:35:10] INFO root fetch - processPackages [Orange3-Tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Orange3-Tools-0.0.3.tar.gz tmp/Orange3-Tools-0.0.4.tar.gz --markdown 20230520/O/Orange3-Tools/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-20 13:35:10] INFO root fetch - processPackages [z4d-certified-devices]: Downloading https://files.pythonhosted.org/packages/17/a8/c377a362e7db402270b12331270b36619fb593a05908fe93229828dc75a4/z4d-certified-devices-2.63.tar.gz
+[2023-05-20 13:35:10] INFO root fetch - processPackages [NodeGraphQt]: executing diffoscope
+[2023-05-20 13:35:10] INFO root fetch - processPackages [NodeGraphQt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NodeGraphQt-0.6.0.tar.gz tmp/NodeGraphQt-0.6.1.tar.gz --markdown 20230520/N/NodeGraphQt/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-20 13:35:10] INFO root fetch - processPackages [z4d-certified-devices]: executing diffoscope
+[2023-05-20 13:35:10] INFO root fetch - processPackages [z4d-certified-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z4d-certified-devices-2.62.tar.gz tmp/z4d-certified-devices-2.63.tar.gz --markdown 20230520/z/z4d-certified-devices/2.62-2.63/diff.md --exclude *.pyd
+[2023-05-20 13:35:10] INFO root fetch - processPackages [scrapeanything]: Downloading https://files.pythonhosted.org/packages/fa/e4/773f04000d2184a28c8617fbe3df7fe93b181902a2ddb0a0e5f61f67c158/scrapeanything-0.9.99.tar.gz
+[2023-05-20 13:35:10] INFO root fetch - processPackages [scrapeanything]: executing diffoscope
+[2023-05-20 13:35:10] INFO root fetch - processPackages [scrapeanything]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapeanything-0.9.98.tar.gz tmp/scrapeanything-0.9.99.tar.gz --markdown 20230520/s/scrapeanything/0.9.98-0.9.99/diff.md --exclude *.pyd
+[2023-05-20 13:35:11] INFO root fetch - main [MainThread]: End processing [beetcamp]: success
+[2023-05-20 13:35:11] INFO root fetch - main [MainThread]: End processing [Orange3-Tools]: success
+[2023-05-20 13:35:12] INFO root fetch - main [MainThread]: End processing [NodeGraphQt]: success
+[2023-05-20 13:35:12] INFO root fetch - main [MainThread]: End processing [scrapeanything]: success
+[2023-05-20 13:35:14] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
+[2023-05-20 13:35:14] INFO root fetch - main [MainThread]: Store serial: [18181590]
