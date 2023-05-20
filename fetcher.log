@@ -5079,3 +5079,27 @@
 [2023-05-20 04:33:38] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-25]: success
 [2023-05-20 04:33:38] INFO root fetch - main [MainThread]: End processing [gstorm]: success
 [2023-05-20 04:33:38] INFO root fetch - main [MainThread]: Store serial: [18179156]
+[2023-05-20 04:38:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179156]
+[2023-05-20 04:38:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 04:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flarespy
+[2023-05-20 04:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: webint
+[2023-05-20 04:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: LANDMarkClassifier
+[2023-05-20 04:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mlflow-tmp
+[2023-05-20 04:38:47] INFO root fetch - processPackages [mlflow-tmp]: New version: [2.3.3.dev0] Old Version: [2.2.3]
+[2023-05-20 04:38:47] INFO root fetch - processPackages [LANDMarkClassifier]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-05-20 04:38:47] INFO root fetch - processPackages [mlflow-tmp]: executing diffoscope
+[2023-05-20 04:38:47] INFO root fetch - processPackages [mlflow-tmp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlflow_tmp-2.2.3.tar.gz tmp/mlflow_tmp-2.3.3.dev0.tar.gz --markdown 20230520/m/mlflow-tmp/2.2.3-2.3.3.dev0/diff.md --exclude *.pyd
+[2023-05-20 04:38:47] INFO root fetch - processPackages [flarespy]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-05-20 04:38:47] INFO root fetch - processPackages [webint]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 04:38:47] INFO root fetch - processPackages [LANDMarkClassifier]: Downloading https://files.pythonhosted.org/packages/a5/ce/a58f85f27a3ceba848b1bd474e99269ddbcca28da2c2b37c933801aa22f1/landmarkclassifier-2.0.3.tar.gz
+[2023-05-20 04:38:47] INFO root fetch - processPackages [LANDMarkClassifier]: executing diffoscope
+[2023-05-20 04:38:47] INFO root fetch - processPackages [LANDMarkClassifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/landmarkclassifier-2.0.2.tar.gz tmp/landmarkclassifier-2.0.3.tar.gz --markdown 20230520/L/LANDMarkClassifier/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-05-20 04:38:47] INFO root fetch - processPackages [flarespy]: executing diffoscope
+[2023-05-20 04:38:47] INFO root fetch - processPackages [flarespy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flarespy-0.9.7.tar.gz tmp/flarespy-0.9.8.tar.gz --markdown 20230520/f/flarespy/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-05-20 04:38:47] INFO root fetch - processPackages [webint]: executing diffoscope
+[2023-05-20 04:38:47] INFO root fetch - processPackages [webint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webint-0.1.8.tar.gz tmp/webint-0.1.9.tar.gz --markdown 20230520/w/webint/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 04:38:48] INFO root fetch - main [MainThread]: End processing [LANDMarkClassifier]: success
+[2023-05-20 04:38:48] INFO root fetch - main [MainThread]: End processing [flarespy]: success
+[2023-05-20 04:38:53] INFO root fetch - main [MainThread]: End processing [mlflow-tmp]: success
+[2023-05-20 04:38:54] INFO root fetch - main [MainThread]: End processing [webint]: success
+[2023-05-20 04:38:54] INFO root fetch - main [MainThread]: Store serial: [18179165]
