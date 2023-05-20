@@ -6261,3 +6261,35 @@
 [2023-05-20 08:03:02] INFO root fetch - main [MainThread]: End processing [llm-code]: success
 [2023-05-20 08:03:02] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
 [2023-05-20 08:03:02] INFO root fetch - main [MainThread]: Store serial: [18180034]
+[2023-05-20 08:08:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180034]
+[2023-05-20 08:08:11] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-20 08:08:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: decision-boundary-mapper
+[2023-05-20 08:08:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyg-nightly
+[2023-05-20 08:08:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sampleproject-prashant
+[2023-05-20 08:08:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: instagpy
+[2023-05-20 08:08:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gwcelery
+[2023-05-20 08:08:11] WARNING root fetch - processPackages [instagpy]: Skipping, unable to determine old version
+[2023-05-20 08:08:11] INFO root fetch - main [MainThread]: End processing [instagpy] error
+[2023-05-20 08:08:11] INFO root fetch - processPackages [decision-boundary-mapper]: New version: [0.5.0] Old Version: [0.4.3]
+[2023-05-20 08:08:11] INFO root fetch - processPackages [gwcelery]: New version: [2.1.0] Old Version: [2.0.6]
+[2023-05-20 08:08:11] INFO root fetch - processPackages [sampleproject-prashant]: New version: [9.0.0] Old Version: [8.0.0]
+[2023-05-20 08:08:11] INFO root fetch - processPackages [pyg-nightly]: New version: [2.4.0.dev20230520] Old Version: [2.4.0.dev20230519]
+[2023-05-20 08:08:11] INFO root fetch - processPackages [decision-boundary-mapper]: Downloading https://files.pythonhosted.org/packages/0c/c6/b86b1993321d567c68330362f2e2a48d07cc4d9126ab0147a28348cda641/decision-boundary-mapper-0.4.3.tar.gz
+[2023-05-20 08:08:11] INFO root fetch - processPackages [sampleproject-prashant]: Downloading https://files.pythonhosted.org/packages/79/13/f314182aa8adb1b3d791f5c356698351a977d9b822747c0223ce78cb325b/sampleproject-prashant-9.0.0.tar.gz
+[2023-05-20 08:08:11] INFO root fetch - processPackages [gwcelery]: Downloading https://files.pythonhosted.org/packages/4a/4d/86f863dc740b358a11bde0f0343570be7debc03d744f9a55edc8a4cc019c/gwcelery-2.0.6.tar.gz
+[2023-05-20 08:08:12] INFO root fetch - processPackages [sampleproject-prashant]: executing diffoscope
+[2023-05-20 08:08:12] INFO root fetch - processPackages [sampleproject-prashant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sampleproject-prashant-8.0.0.tar.gz tmp/sampleproject-prashant-9.0.0.tar.gz --markdown 20230520/s/sampleproject-prashant/8.0.0-9.0.0/diff.md --exclude *.pyd
+[2023-05-20 08:08:12] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/0e/20/d9402bd28773ed9bee36eca82f95a90e29f804d1f5db3bd16617b097e55d/pyg_nightly-2.4.0.dev20230520.tar.gz
+[2023-05-20 08:08:12] INFO root fetch - processPackages [decision-boundary-mapper]: Downloading https://files.pythonhosted.org/packages/fa/02/c13421ffa3d9a6ea23e8cd99e6f53998b514ea60449e2ec027875dcb91ab/decision-boundary-mapper-0.5.0.tar.gz
+[2023-05-20 08:08:12] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2023-05-20 08:08:12] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg_nightly-2.4.0.dev20230519.tar.gz tmp/pyg_nightly-2.4.0.dev20230520.tar.gz --markdown 20230520/p/pyg-nightly/2.4.0.dev20230519-2.4.0.dev20230520/diff.md --exclude *.pyd
+[2023-05-20 08:08:12] INFO root fetch - processPackages [decision-boundary-mapper]: executing diffoscope
+[2023-05-20 08:08:12] INFO root fetch - processPackages [decision-boundary-mapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decision-boundary-mapper-0.4.3.tar.gz tmp/decision-boundary-mapper-0.5.0.tar.gz --markdown 20230520/d/decision-boundary-mapper/0.4.3-0.5.0/diff.md --exclude *.pyd
+[2023-05-20 08:08:12] INFO root fetch - processPackages [gwcelery]: Downloading https://files.pythonhosted.org/packages/bb/4f/0474a0133460e234c3fcdaf184c670a31ed5008f23a00825ba31de027b98/gwcelery-2.1.0.tar.gz
+[2023-05-20 08:08:12] INFO root fetch - processPackages [gwcelery]: executing diffoscope
+[2023-05-20 08:08:12] INFO root fetch - processPackages [gwcelery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gwcelery-2.0.6.tar.gz tmp/gwcelery-2.1.0.tar.gz --markdown 20230520/g/gwcelery/2.0.6-2.1.0/diff.md --exclude *.pyd
+[2023-05-20 08:08:13] INFO root fetch - main [MainThread]: End processing [sampleproject-prashant]: success
+[2023-05-20 08:08:13] INFO root fetch - main [MainThread]: End processing [decision-boundary-mapper]: success
+[2023-05-20 08:08:16] INFO root fetch - main [MainThread]: End processing [gwcelery]: success
+[2023-05-20 08:08:16] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2023-05-20 08:08:16] INFO root fetch - main [MainThread]: Store serial: [18180050]
