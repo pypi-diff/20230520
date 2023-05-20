@@ -7839,3 +7839,25 @@
 [2023-05-20 11:53:58] INFO root fetch - main [MainThread]: End processing [memory-graph]: success
 [2023-05-20 11:53:58] INFO root fetch - main [MainThread]: End processing [bosch-control-panel-cc880p]: success
 [2023-05-20 11:53:58] INFO root fetch - main [MainThread]: Store serial: [18181000]
+[2023-05-20 11:59:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18181000]
+[2023-05-20 11:59:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 11:59:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addons-oca-purchase-workflow
+[2023-05-20 11:59:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iqrfpy
+[2023-05-20 11:59:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crocoddyl
+[2023-05-20 11:59:07] INFO root fetch - processPackages [odoo14-addons-oca-purchase-workflow]: New version: [14.0.20230519.0] Old Version: [14.0.20230512.0]
+[2023-05-20 11:59:07] INFO root fetch - processPackages [iqrfpy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 11:59:07] INFO root fetch - processPackages [crocoddyl]: New version: [2.0.0] Old Version: [1.9.0.2]
+[2023-05-20 11:59:07] INFO root fetch - processPackages [odoo14-addons-oca-purchase-workflow]: Downloading https://files.pythonhosted.org/packages/f0/8e/2f17f86dbf6a0445da93c0763f99ce63eaceaee3af10a73fddb9c2c7783c/odoo14_addons_oca_purchase_workflow-14.0.20230512.0-py3-none-any.whl
+[2023-05-20 11:59:08] INFO root fetch - processPackages [crocoddyl]: Downloading https://files.pythonhosted.org/packages/bb/7c/c3c61fb04535aea0f5bfee3f70461913947d14fd28297a020b0b6e4a53b5/crocoddyl-1.9.0.2-0-cp39-cp39-manylinux_2_17_x86_64.whl
+[2023-05-20 11:59:08] INFO root fetch - processPackages [odoo14-addons-oca-purchase-workflow]: Downloading https://files.pythonhosted.org/packages/9e/72/9abe717bd763694b6a2a34fb2533c7ebd695e8f98013bf2c4d80eddbed1f/odoo14_addons_oca_purchase_workflow-14.0.20230519.0-py3-none-any.whl
+[2023-05-20 11:59:08] INFO root fetch - processPackages [iqrfpy]: executing diffoscope
+[2023-05-20 11:59:08] INFO root fetch - processPackages [iqrfpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iqrfpy-0.1.8.tar.gz tmp/iqrfpy-0.1.9.tar.gz --markdown 20230520/i/iqrfpy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 11:59:08] INFO root fetch - processPackages [odoo14-addons-oca-purchase-workflow]: executing diffoscope
+[2023-05-20 11:59:08] INFO root fetch - processPackages [odoo14-addons-oca-purchase-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_purchase_workflow-14.0.20230512.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_purchase_workflow-14.0.20230519.0-py3-none-any.whl.zip --markdown 20230520/o/odoo14-addons-oca-purchase-workflow/14.0.20230512.0-14.0.20230519.0/diff.md --exclude *.pyd
+[2023-05-20 11:59:09] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-purchase-workflow]: success
+[2023-05-20 11:59:09] INFO root fetch - processPackages [crocoddyl]: Downloading https://files.pythonhosted.org/packages/c4/cf/3946481028edc36b401cf6b3f824fdac8e34e82fa5f18b6acb4eefdc7478/crocoddyl-2.0.0-7-cp39-cp39-manylinux_2_28_x86_64.whl
+[2023-05-20 11:59:10] INFO root fetch - main [MainThread]: End processing [iqrfpy]: success
+[2023-05-20 11:59:10] INFO root fetch - processPackages [crocoddyl]: executing diffoscope
+[2023-05-20 11:59:10] INFO root fetch - processPackages [crocoddyl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crocoddyl-1.9.0.2-0-cp39-cp39-manylinux_2_17_x86_64.whl.zip tmp/crocoddyl-2.0.0-7-cp39-cp39-manylinux_2_28_x86_64.whl.zip --markdown 20230520/c/crocoddyl/1.9.0.2-2.0.0/diff.md --exclude *.pyd
+[2023-05-20 12:01:42] INFO root fetch - main [MainThread]: End processing [crocoddyl]: success
+[2023-05-20 12:01:42] INFO root fetch - main [MainThread]: Store serial: [18181025]
