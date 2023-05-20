@@ -6361,3 +6361,15 @@
 [2023-05-20 08:23:50] INFO root fetch - main [MainThread]: End processing [GenomicRanges]: success
 [2023-05-20 08:23:50] INFO root fetch - main [MainThread]: End processing [copper-bem]: success
 [2023-05-20 08:23:50] INFO root fetch - main [MainThread]: Store serial: [18180087]
+[2023-05-20 08:28:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180087]
+[2023-05-20 08:28:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-20 08:28:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spida
+[2023-05-20 08:28:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fake-bpy-module-latest
+[2023-05-20 08:28:59] WARNING root fetch - processPackages [spida]: Skipping, unable to determine old version
+[2023-05-20 08:28:59] INFO root fetch - main [MainThread]: End processing [spida] error
+[2023-05-20 08:28:59] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20230520] Old Version: [20230519]
+[2023-05-20 08:28:59] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/c6/5c/55e100db7f6f240f5bd27692630714c0243b6c5dac984c83f2fc7a3ffcf4/fake-bpy-module-latest-20230520.tar.gz
+[2023-05-20 08:28:59] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2023-05-20 08:28:59] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake-bpy-module-latest-20230519.tar.gz tmp/fake-bpy-module-latest-20230520.tar.gz --markdown 20230520/f/fake-bpy-module-latest/20230519-20230520/diff.md --exclude *.pyd
+[2023-05-20 08:29:06] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
+[2023-05-20 08:29:06] INFO root fetch - main [MainThread]: Store serial: [18180095]
