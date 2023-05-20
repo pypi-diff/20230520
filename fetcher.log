@@ -5324,3 +5324,61 @@
 [2023-05-20 05:02:55] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
 [2023-05-20 05:02:55] INFO root fetch - main [MainThread]: End processing [netron] error
 [2023-05-20 05:02:55] INFO root fetch - main [MainThread]: Store serial: [18179356]
+[2023-05-20 05:07:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179356]
+[2023-05-20 05:08:04] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-20 05:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Hunabku-openscienti
+[2023-05-20 05:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dingtalk-stream
+[2023-05-20 05:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cirro
+[2023-05-20 05:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: slim-id
+[2023-05-20 05:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: slim-id
+[2023-05-20 05:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: heaserver-files-aws-s3
+[2023-05-20 05:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: py-helper-mod
+[2023-05-20 05:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dingtalk-stream
+[2023-05-20 05:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dingtalk-stream
+[2023-05-20 05:08:04] INFO root fetch - processPackages [py-helper-mod]: New version: [0.0.26] Old Version: [0.0.25]
+[2023-05-20 05:08:04] INFO root fetch - processPackages [heaserver-files-aws-s3]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-20 05:08:04] INFO root fetch - processPackages [heaserver-files-aws-s3]: Downloading https://files.pythonhosted.org/packages/4b/9b/73f33a94f4aff25bff8a0100e7c9f7d239d27c6bb47e91c553f03fccfde2/heaserver-files-aws-s3-1.0.0a8.tar.gz
+[2023-05-20 05:08:04] INFO root fetch - processPackages [py-helper-mod]: executing diffoscope
+[2023-05-20 05:08:04] INFO root fetch - processPackages [py-helper-mod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-helper-mod-0.0.25.tar.gz tmp/py-helper-mod-0.0.26.tar.gz --markdown 20230520/p/py-helper-mod/0.0.25-0.0.26/diff.md --exclude *.pyd
+[2023-05-20 05:08:04] INFO root fetch - processPackages [Hunabku-openscienti]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-20 05:08:04] INFO root fetch - processPackages [dingtalk-stream]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 05:08:04] INFO root fetch - processPackages [dingtalk-stream]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 05:08:04] INFO root fetch - processPackages [dingtalk-stream]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 05:08:04] INFO root fetch - processPackages [slim-id]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-20 05:08:04] INFO root fetch - processPackages [cirro]: New version: [0.7.0] Old Version: [0.6.9]
+[2023-05-20 05:08:04] INFO root fetch - processPackages [slim-id]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-20 05:08:04] WARNING root fetch - processPackages [heaserver-files-aws-s3]: Skipping package: exceeds size limit 18398734>=10485760
+[2023-05-20 05:08:04] INFO root fetch - main [MainThread]: End processing [heaserver-files-aws-s3] error
+[2023-05-20 05:08:05] INFO root fetch - processPackages [slim-id]: Downloading https://files.pythonhosted.org/packages/21/64/a9e9d3d87a071e7c6d66f453ca21f7811c900cd8e46844e9273a6320a497/slim-id-0.0.1.tar.gz
+[2023-05-20 05:08:05] INFO root fetch - processPackages [slim-id]: Downloading https://files.pythonhosted.org/packages/21/64/a9e9d3d87a071e7c6d66f453ca21f7811c900cd8e46844e9273a6320a497/slim-id-0.0.1.tar.gz
+[2023-05-20 05:08:05] INFO root fetch - processPackages [Hunabku-openscienti]: Downloading https://files.pythonhosted.org/packages/ab/a2/adb10061dff2b7cfd1b8b71d76a53977ff93168d618ef1153306fd4e79d0/Hunabku_openscienti-0.0.1.tar.gz
+[2023-05-20 05:08:05] INFO root fetch - processPackages [Hunabku-openscienti]: Downloading https://files.pythonhosted.org/packages/a8/0a/da6e4617f02ec0e7658851aa7726868c10685c7e6f45ec56a23ce15526fa/Hunabku_openscienti-0.0.2.tar.gz
+[2023-05-20 05:08:05] INFO root fetch - processPackages [dingtalk-stream]: Downloading https://files.pythonhosted.org/packages/0b/d6/48ff67578786d643dda86e098e73c28c905f7f96e0ad1552157fbd6a51f8/dingtalk-stream-0.1.9.tar.gz
+[2023-05-20 05:08:05] INFO root fetch - processPackages [cirro]: Downloading https://files.pythonhosted.org/packages/5f/90/dbd688fc3e5fd4d91cb7e7ee6256f54f35c7e8c7cd05299865f4a7fc4c06/cirro-0.7.0.tar.gz
+[2023-05-20 05:08:05] INFO root fetch - processPackages [dingtalk-stream]: Downloading https://files.pythonhosted.org/packages/0b/d6/48ff67578786d643dda86e098e73c28c905f7f96e0ad1552157fbd6a51f8/dingtalk-stream-0.1.9.tar.gz
+[2023-05-20 05:08:05] INFO root fetch - processPackages [dingtalk-stream]: Downloading https://files.pythonhosted.org/packages/0b/d6/48ff67578786d643dda86e098e73c28c905f7f96e0ad1552157fbd6a51f8/dingtalk-stream-0.1.9.tar.gz
+[2023-05-20 05:08:05] INFO root fetch - processPackages [slim-id]: Downloading https://files.pythonhosted.org/packages/b0/1d/5e225c7448272406620e15a097bcec84201dab6277113d95a9655ccd33f7/slim-id-0.0.2.tar.gz
+[2023-05-20 05:08:05] INFO root fetch - processPackages [slim-id]: Downloading https://files.pythonhosted.org/packages/b0/1d/5e225c7448272406620e15a097bcec84201dab6277113d95a9655ccd33f7/slim-id-0.0.2.tar.gz
+[2023-05-20 05:08:05] INFO root fetch - processPackages [Hunabku-openscienti]: executing diffoscope
+[2023-05-20 05:08:05] INFO root fetch - processPackages [Hunabku-openscienti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Hunabku_openscienti-0.0.1.tar.gz tmp/Hunabku_openscienti-0.0.2.tar.gz --markdown 20230520/H/Hunabku-openscienti/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-20 05:08:05] INFO root fetch - processPackages [dingtalk-stream]: executing diffoscope
+[2023-05-20 05:08:05] INFO root fetch - processPackages [dingtalk-stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dingtalk-stream-0.1.8.tar.gz tmp/dingtalk-stream-0.1.9.tar.gz --markdown 20230520/d/dingtalk-stream/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 05:08:05] INFO root fetch - processPackages [dingtalk-stream]: executing diffoscope
+[2023-05-20 05:08:05] INFO root fetch - processPackages [dingtalk-stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dingtalk-stream-0.1.8.tar.gz tmp/dingtalk-stream-0.1.9.tar.gz --markdown 20230520/d/dingtalk-stream/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 05:08:05] INFO root fetch - processPackages [cirro]: executing diffoscope
+[2023-05-20 05:08:05] INFO root fetch - processPackages [cirro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirro-0.6.9.tar.gz tmp/cirro-0.7.0.tar.gz --markdown 20230520/c/cirro/0.6.9-0.7.0/diff.md --exclude *.pyd
+[2023-05-20 05:08:05] INFO root fetch - processPackages [dingtalk-stream]: executing diffoscope
+[2023-05-20 05:08:05] INFO root fetch - processPackages [dingtalk-stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dingtalk-stream-0.1.8.tar.gz tmp/dingtalk-stream-0.1.9.tar.gz --markdown 20230520/d/dingtalk-stream/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 05:08:05] INFO root fetch - processPackages [slim-id]: executing diffoscope
+[2023-05-20 05:08:05] INFO root fetch - processPackages [slim-id]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slim-id-0.0.1.tar.gz tmp/slim-id-0.0.2.tar.gz --markdown 20230520/s/slim-id/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-20 05:08:05] INFO root fetch - processPackages [slim-id]: executing diffoscope
+[2023-05-20 05:08:05] INFO root fetch - processPackages [slim-id]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slim-id-0.0.1.tar.gz tmp/slim-id-0.0.2.tar.gz --markdown 20230520/s/slim-id/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-20 05:08:06] INFO root fetch - main [MainThread]: End processing [py-helper-mod]: success
+[2023-05-20 05:08:06] INFO root fetch - main [MainThread]: End processing [Hunabku-openscienti]: success
+[2023-05-20 05:08:06] INFO root fetch - main [MainThread]: End processing [dingtalk-stream]: success
+[2023-05-20 05:08:07] INFO root fetch - main [MainThread]: End processing [slim-id]: success
+[2023-05-20 05:08:07] INFO root fetch - main [MainThread]: End processing [dingtalk-stream]: success
+[2023-05-20 05:08:07] INFO root fetch - main [MainThread]: End processing [dingtalk-stream]: success
+[2023-05-20 05:08:07] INFO root fetch - main [MainThread]: End processing [slim-id]: success
+[2023-05-20 05:08:08] INFO root fetch - main [MainThread]: End processing [cirro]: success
+[2023-05-20 05:08:08] INFO root fetch - main [MainThread]: Store serial: [18179391]
