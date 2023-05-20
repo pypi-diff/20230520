@@ -13565,3 +13565,28 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 23:37:27] INFO root fetch - main [MainThread]: End processing [neurodeploy]: success
 [2023-05-20 23:37:27] INFO root fetch - main [MainThread]: End processing [lmo]: success
 [2023-05-20 23:37:27] INFO root fetch - main [MainThread]: Store serial: [18184380]
+[2023-05-20 23:42:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184380]
+[2023-05-20 23:42:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 23:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hotbox
+[2023-05-20 23:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyrovskite
+[2023-05-20 23:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TMDBTraktSyncer
+[2023-05-20 23:42:36] INFO root fetch - processPackages [pyrovskite]: New version: [0.9.0] Old Version: [0.0.1]
+[2023-05-20 23:42:36] INFO root fetch - processPackages [hotbox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 23:42:36] INFO root fetch - processPackages [TMDBTraktSyncer]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-20 23:42:36] INFO root fetch - processPackages [pyrovskite]: Downloading https://files.pythonhosted.org/packages/82/bd/96a9a938e29cab6710dccdd66f9d5e1eb8e92092890b7b8b1c633e79fc77/pyrovskite-0.0.1.tar.gz
+[2023-05-20 23:42:36] INFO root fetch - processPackages [hotbox]: Downloading https://files.pythonhosted.org/packages/bc/bd/ba2f8994446a8e86458c66c5b618b6096951a13228371314de100a0d9a63/hotbox-0.0.8.tar.gz
+[2023-05-20 23:42:36] INFO root fetch - processPackages [TMDBTraktSyncer]: Downloading https://files.pythonhosted.org/packages/53/4d/62f7eeec23bb7c69ebb41d80d75c71b88250542a926e8bfb70037d6fdf9e/TMDBTraktSyncer-1.1.4.tar.gz
+[2023-05-20 23:42:36] INFO root fetch - processPackages [TMDBTraktSyncer]: executing diffoscope
+[2023-05-20 23:42:36] INFO root fetch - processPackages [TMDBTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TMDBTraktSyncer-1.1.3.tar.gz tmp/TMDBTraktSyncer-1.1.4.tar.gz --markdown 20230520/T/TMDBTraktSyncer/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-20 23:42:36] INFO root fetch - processPackages [pyrovskite]: Downloading https://files.pythonhosted.org/packages/76/70/0ae4ad5e1ddbeae4a99a07342e14aa3d417d0017051d152ba6e387d7618e/pyrovskite-0.9.0.tar.gz
+[2023-05-20 23:42:36] INFO root fetch - processPackages [hotbox]: Downloading https://files.pythonhosted.org/packages/59/15/3b73e9614ba377c60f5a7e76fc196687ac82ac09ca8c3909a099ea4a0bf8/hotbox-0.0.9.tar.gz
+[2023-05-20 23:42:37] INFO root fetch - processPackages [pyrovskite]: executing diffoscope
+[2023-05-20 23:42:37] INFO root fetch - processPackages [pyrovskite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrovskite-0.0.1.tar.gz tmp/pyrovskite-0.9.0.tar.gz --markdown 20230520/p/pyrovskite/0.0.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-20 23:42:37] ERROR root fetch - processPackages [TMDBTraktSyncer]: Diffoscope failed: Error: error creating container storage: the container name "agitated_zhukovsky" is already in use by "79b62fb017323a9ad6a8ec56ef168595069e8805c71f8328e22835ad6dd933ef". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-20 23:42:37] INFO root fetch - main [MainThread]: End processing [TMDBTraktSyncer] error
+[2023-05-20 23:42:37] INFO root fetch - processPackages [hotbox]: executing diffoscope
+[2023-05-20 23:42:37] INFO root fetch - processPackages [hotbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotbox-0.0.8.tar.gz tmp/hotbox-0.0.9.tar.gz --markdown 20230520/h/hotbox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 23:42:38] INFO root fetch - main [MainThread]: End processing [pyrovskite]: success
+[2023-05-20 23:42:38] INFO root fetch - main [MainThread]: End processing [hotbox]: success
+[2023-05-20 23:42:38] INFO root fetch - main [MainThread]: Store serial: [18184392]
