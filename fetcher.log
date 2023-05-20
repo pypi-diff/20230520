@@ -9265,3 +9265,105 @@
 [2023-05-20 14:27:22] INFO root fetch - main [MainThread]: End processing [EDFlib-Python]: success
 [2023-05-20 14:27:22] INFO root fetch - main [MainThread]: End processing [bedrockpy]: success
 [2023-05-20 14:27:22] INFO root fetch - main [MainThread]: Store serial: [18181888]
+[2023-05-20 14:32:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18181888]
+[2023-05-20 14:32:32] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-20 14:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: servestatic
+[2023-05-20 14:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arouteserver
+[2023-05-20 14:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: command-line-loom
+[2023-05-20 14:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: holos
+[2023-05-20 14:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: einsumt
+[2023-05-20 14:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: archeSetup
+[2023-05-20 14:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: inverter-connect
+[2023-05-20 14:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: iphack
+[2023-05-20 14:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: django-medialogue
+[2023-05-20 14:32:32] WARNING root fetch - processPackages [servestatic]: Skipping, unable to determine old version
+[2023-05-20 14:32:32] INFO root fetch - processPackages [command-line-loom]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-20 14:32:32] INFO root fetch - main [MainThread]: End processing [servestatic] error
+[2023-05-20 14:32:32] WARNING root fetch - processPackages [holos]: Skipping, unable to determine old version
+[2023-05-20 14:32:32] INFO root fetch - main [MainThread]: End processing [holos] error
+[2023-05-20 14:32:32] INFO root fetch - processPackages [arouteserver]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-20 14:32:32] INFO root fetch - processPackages [einsumt]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-20 14:32:32] WARNING root fetch - processPackages [archeSetup]: Skipping, unable to determine old version
+[2023-05-20 14:32:32] INFO root fetch - main [MainThread]: End processing [archeSetup] error
+[2023-05-20 14:32:32] INFO root fetch - processPackages [django-medialogue]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-20 14:32:32] INFO root fetch - processPackages [inverter-connect]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-20 14:32:32] INFO root fetch - processPackages [iphack]: New version: [1.3.7] Old Version: [1.3.6]
+[2023-05-20 14:32:33] INFO root fetch - processPackages [arouteserver]: Downloading https://files.pythonhosted.org/packages/ff/30/167ffd820a3db47d39327ce1fb32f3c3354558c2fe430a9ce585fb37942c/arouteserver-1.8.0.tar.gz
+[2023-05-20 14:32:33] INFO root fetch - processPackages [inverter-connect]: executing diffoscope
+[2023-05-20 14:32:33] INFO root fetch - processPackages [inverter-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inverter-connect-0.8.0.tar.gz tmp/inverter-connect-0.9.0.tar.gz --markdown 20230520/i/inverter-connect/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-20 14:32:33] INFO root fetch - processPackages [command-line-loom]: Downloading https://files.pythonhosted.org/packages/3a/44/91b8100641f3ec46da00069d9127c278e610ad6d7e7bf475d57842b94862/command_line_loom-0.0.4.tar.gz
+[2023-05-20 14:32:33] INFO root fetch - processPackages [einsumt]: Downloading https://files.pythonhosted.org/packages/3c/04/83719b6d8e73cd0edbfa649a47f0476e001524ad252489ccd72517a434d2/einsumt-0.9.3.tar.gz
+[2023-05-20 14:32:33] INFO root fetch - processPackages [django-medialogue]: Downloading https://files.pythonhosted.org/packages/1c/2c/cceeb94f62c0e5831df99a4cd278f610acd0d741da0cec4e84911b8c1cb6/django-medialogue-2.0.8.tar.gz
+[2023-05-20 14:32:33] INFO root fetch - processPackages [command-line-loom]: executing diffoscope
+[2023-05-20 14:32:33] INFO root fetch - processPackages [command-line-loom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/command_line_loom-0.0.3.tar.gz tmp/command_line_loom-0.0.4.tar.gz --markdown 20230520/c/command-line-loom/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-20 14:32:33] INFO root fetch - processPackages [iphack]: Downloading https://files.pythonhosted.org/packages/43/5d/b13ca6106d75fb77386a29ca0b33e9c663695f3cd85ea5ee5f1c0c4deb3b/iphack-1.3.7.tar.gz
+[2023-05-20 14:32:33] INFO root fetch - processPackages [arouteserver]: Downloading https://files.pythonhosted.org/packages/73/60/4a5568dafabf9239e3f02324815da6278f459acab70919df8345b99c61ce/arouteserver-1.9.0.tar.gz
+[2023-05-20 14:32:33] INFO root fetch - processPackages [einsumt]: Downloading https://files.pythonhosted.org/packages/06/1f/c049bd0fa7073bc0400404cc2a2b98852ae5e3c0d96b6290671629033bfd/einsumt-0.9.4.tar.gz
+[2023-05-20 14:32:33] INFO root fetch - processPackages [einsumt]: executing diffoscope
+[2023-05-20 14:32:33] INFO root fetch - processPackages [einsumt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/einsumt-0.9.3.tar.gz tmp/einsumt-0.9.4.tar.gz --markdown 20230520/e/einsumt/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-20 14:32:33] INFO root fetch - processPackages [arouteserver]: executing diffoscope
+[2023-05-20 14:32:33] INFO root fetch - processPackages [arouteserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arouteserver-1.8.0.tar.gz tmp/arouteserver-1.9.0.tar.gz --markdown 20230520/a/arouteserver/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-20 14:32:33] INFO root fetch - processPackages [django-medialogue]: Downloading https://files.pythonhosted.org/packages/80/d5/13501f808816581425120d0167c58fc20b8d8a076cc4f8e03fbcb2f9b34b/django-medialogue-2.0.9.tar.gz
+[2023-05-20 14:32:33] INFO root fetch - processPackages [iphack]: executing diffoscope
+[2023-05-20 14:32:33] INFO root fetch - processPackages [iphack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iphack-1.3.6.tar.gz tmp/iphack-1.3.7.tar.gz --markdown 20230520/i/iphack/1.3.6-1.3.7/diff.md --exclude *.pyd
+[2023-05-20 14:32:33] INFO root fetch - processPackages [django-medialogue]: executing diffoscope
+[2023-05-20 14:32:33] INFO root fetch - processPackages [django-medialogue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-medialogue-2.0.8.tar.gz tmp/django-medialogue-2.0.9.tar.gz --markdown 20230520/d/django-medialogue/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-20 14:32:34] INFO root fetch - main [MainThread]: End processing [einsumt]: success
+[2023-05-20 14:32:34] INFO root fetch - main [MainThread]: End processing [inverter-connect]: success
+[2023-05-20 14:32:34] INFO root fetch - main [MainThread]: End processing [command-line-loom]: success
+[2023-05-20 14:32:34] INFO root fetch - main [MainThread]: End processing [iphack]: success
+[2023-05-20 14:32:34] ERROR root fetch - processPackages [django-medialogue]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+SystemError: ../Objects/codeobject.c:250: bad argument to internal function
+
+[2023-05-20 14:32:34] INFO root fetch - main [MainThread]: End processing [django-medialogue] error
+[2023-05-20 14:32:35] INFO root fetch - main [MainThread]: End processing [arouteserver]: success
+[2023-05-20 14:32:35] INFO root fetch - main [MainThread]: Store serial: [18181915]
