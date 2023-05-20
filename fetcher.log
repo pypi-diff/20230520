@@ -13313,3 +13313,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 22:44:40] INFO root fetch - main [MainThread]: End processing [tidytcells]: success
 [2023-05-20 22:44:44] INFO root fetch - main [MainThread]: End processing [discovery-transition-ds]: success
 [2023-05-20 22:44:44] INFO root fetch - main [MainThread]: Store serial: [18184238]
+[2023-05-20 22:49:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184238]
+[2023-05-20 22:49:53] INFO root fetch - main [MainThread]: No changed packages found
+[2023-05-20 22:54:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184238]
+[2023-05-20 22:55:00] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 22:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: discovery-transition-ds
+[2023-05-20 22:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cq-filter
+[2023-05-20 22:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dorado
+[2023-05-20 22:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: IMDBTraktSyncer
+[2023-05-20 22:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nlpia2
+[2023-05-20 22:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: circuitpython-gauge
+[2023-05-20 22:55:01] INFO root fetch - processPackages [nlpia2]: New version: [0.0.27] Old Version: [0.0.26]
+[2023-05-20 22:55:01] INFO root fetch - processPackages [cq-filter]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-20 22:55:01] INFO root fetch - processPackages [IMDBTraktSyncer]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-20 22:55:01] INFO root fetch - processPackages [circuitpython-gauge]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-20 22:55:01] INFO root fetch - processPackages [discovery-transition-ds]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-05-20 22:55:01] INFO root fetch - processPackages [dorado]: New version: [2.0.6.dev99] Old Version: [2.0.6.dev97]
+[2023-05-20 22:55:01] INFO root fetch - processPackages [nlpia2]: Downloading https://files.pythonhosted.org/packages/d4/4f/0962b892b000b333e8b1aab4fde6eb26d945d527c1440e61c908f5b78ca0/nlpia2-0.0.26.tar.gz
+[2023-05-20 22:55:01] INFO root fetch - processPackages [dorado]: executing diffoscope
+[2023-05-20 22:55:01] INFO root fetch - processPackages [dorado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dorado-2.0.6.dev97.tar.gz tmp/dorado-2.0.6.dev99.tar.gz --markdown 20230520/d/dorado/2.0.6.dev97-2.0.6.dev99/diff.md --exclude *.pyd
+[2023-05-20 22:55:01] INFO root fetch - processPackages [IMDBTraktSyncer]: Downloading https://files.pythonhosted.org/packages/ac/a8/29d28d1b9af8be9a9c3b33bef395690800258e4f06caf8f686f1b179e10d/IMDBTraktSyncer-1.2.2.tar.gz
+[2023-05-20 22:55:01] INFO root fetch - processPackages [circuitpython-gauge]: Downloading https://files.pythonhosted.org/packages/1d/a0/5d476d966b26c542410b9dc6c0ab3fb0d3095fe1ce7ccca30356a4d8ed5e/circuitpython-gauge-0.1.0.tar.gz
+[2023-05-20 22:55:01] INFO root fetch - processPackages [discovery-transition-ds]: executing diffoscope
+[2023-05-20 22:55:01] INFO root fetch - processPackages [discovery-transition-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discovery-transition-ds-4.9.8.tar.gz tmp/discovery-transition-ds-4.9.9.tar.gz --markdown 20230520/d/discovery-transition-ds/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-05-20 22:55:01] WARNING root fetch - processPackages [nlpia2]: Skipping package: exceeds size limit 28529444>=10485760
+[2023-05-20 22:55:01] INFO root fetch - main [MainThread]: End processing [nlpia2] error
+[2023-05-20 22:55:01] INFO root fetch - processPackages [IMDBTraktSyncer]: executing diffoscope
+[2023-05-20 22:55:01] INFO root fetch - processPackages [IMDBTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IMDBTraktSyncer-1.2.1.tar.gz tmp/IMDBTraktSyncer-1.2.2.tar.gz --markdown 20230520/I/IMDBTraktSyncer/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-20 22:55:01] INFO root fetch - processPackages [cq-filter]: Downloading https://files.pythonhosted.org/packages/36/1f/f99704b929a5464363f6f858d577ff45767ddda2df1ee1b60f49ffca2f17/cq-filter-0.0.3.tar.gz
+[2023-05-20 22:55:01] INFO root fetch - processPackages [cq-filter]: executing diffoscope
+[2023-05-20 22:55:01] INFO root fetch - processPackages [cq-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cq-filter-0.0.2.tar.gz tmp/cq-filter-0.0.3.tar.gz --markdown 20230520/c/cq-filter/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-20 22:55:01] INFO root fetch - processPackages [circuitpython-gauge]: Downloading https://files.pythonhosted.org/packages/45/51/3ce6ab5f3b167177f4eeeffad3a9c3101da3d1bbf0ff6642b3d1c5130146/circuitpython-gauge-0.2.0.tar.gz
+[2023-05-20 22:55:01] INFO root fetch - processPackages [circuitpython-gauge]: executing diffoscope
+[2023-05-20 22:55:01] INFO root fetch - processPackages [circuitpython-gauge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circuitpython-gauge-0.1.0.tar.gz tmp/circuitpython-gauge-0.2.0.tar.gz --markdown 20230520/c/circuitpython-gauge/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-20 22:55:02] INFO root fetch - main [MainThread]: End processing [IMDBTraktSyncer]: success
+[2023-05-20 22:55:02] INFO root fetch - main [MainThread]: End processing [cq-filter]: success
+[2023-05-20 22:55:03] INFO root fetch - main [MainThread]: End processing [dorado]: success
+[2023-05-20 22:55:03] INFO root fetch - main [MainThread]: End processing [circuitpython-gauge]: success
+[2023-05-20 22:55:05] INFO root fetch - main [MainThread]: End processing [discovery-transition-ds]: success
+[2023-05-20 22:55:05] INFO root fetch - main [MainThread]: Store serial: [18184256]
