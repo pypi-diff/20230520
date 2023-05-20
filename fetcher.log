@@ -10053,3 +10053,67 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 15:53:40] INFO root fetch - main [MainThread]: End processing [tira]: success
 [2023-05-20 15:53:40] INFO root fetch - main [MainThread]: End processing [splight-lib]: success
 [2023-05-20 15:53:40] INFO root fetch - main [MainThread]: Store serial: [18182335]
+[2023-05-20 15:58:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182335]
+[2023-05-20 15:58:51] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-20 15:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: install-pytest
+[2023-05-20 15:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytest-pandas
+[2023-05-20 15:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Print-requests
+[2023-05-20 15:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: matplotlib-flask
+[2023-05-20 15:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: install-crypto
+[2023-05-20 15:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: netbox-ddns
+[2023-05-20 15:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sys-scikit-learn
+[2023-05-20 15:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: matplotlib-requests
+[2023-05-20 15:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: keras-arg
+[2023-05-20 15:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: archetesting
+[2023-05-20 15:58:51] WARNING root fetch - processPackages [Print-requests]: Skipping, unable to determine old version
+[2023-05-20 15:58:51] INFO root fetch - processPackages [Print-requests]: Start processing: sys-selenium
+[2023-05-20 15:58:51] INFO root fetch - main [MainThread]: End processing [Print-requests] error
+[2023-05-20 15:58:51] WARNING root fetch - processPackages [pytest-pandas]: Skipping, unable to determine old version
+[2023-05-20 15:58:51] INFO root fetch - processPackages [pytest-pandas]: Start processing: dan-build
+[2023-05-20 15:58:51] INFO root fetch - main [MainThread]: End processing [pytest-pandas] error
+[2023-05-20 15:58:51] WARNING root fetch - processPackages [install-pytest]: Skipping, unable to determine old version
+[2023-05-20 15:58:51] WARNING root fetch - processPackages [install-crypto]: Skipping, unable to determine old version
+[2023-05-20 15:58:51] INFO root fetch - processPackages [install-pytest]: Start processing: pylint-sys
+[2023-05-20 15:58:51] INFO root fetch - main [MainThread]: End processing [install-pytest] error
+[2023-05-20 15:58:51] WARNING root fetch - processPackages [matplotlib-flask]: Skipping, unable to determine old version
+[2023-05-20 15:58:51] WARNING root fetch - processPackages [keras-arg]: Skipping, unable to determine old version
+[2023-05-20 15:58:51] INFO root fetch - processPackages [install-crypto]: Start processing: beautifulsoup-requests
+[2023-05-20 15:58:51] WARNING root fetch - processPackages [sys-scikit-learn]: Skipping, unable to determine old version
+[2023-05-20 15:58:51] INFO root fetch - processPackages [archetesting]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-20 15:58:51] WARNING root fetch - processPackages [matplotlib-requests]: Skipping, unable to determine old version
+[2023-05-20 15:58:51] INFO root fetch - main [MainThread]: End processing [install-crypto] error
+[2023-05-20 15:58:51] INFO root fetch - processPackages [netbox-ddns]: New version: [1.2.7] Old Version: [1.2.6]
+[2023-05-20 15:58:51] INFO root fetch - processPackages [matplotlib-flask]: Start processing: requests-flask
+[2023-05-20 15:58:51] INFO root fetch - processPackages [keras-arg]: Start processing: kayle
+[2023-05-20 15:58:51] INFO root fetch - main [MainThread]: End processing [matplotlib-flask] error
+[2023-05-20 15:58:51] INFO root fetch - main [MainThread]: End processing [keras-arg] error
+[2023-05-20 15:58:51] INFO root fetch - main [MainThread]: End processing [sys-scikit-learn] error
+[2023-05-20 15:58:51] INFO root fetch - main [MainThread]: End processing [matplotlib-requests] error
+[2023-05-20 15:58:51] INFO root fetch - processPackages [dan-build]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-20 15:58:51] WARNING root fetch - processPackages [sys-selenium]: Skipping, unable to determine old version
+[2023-05-20 15:58:51] INFO root fetch - main [MainThread]: End processing [sys-selenium] error
+[2023-05-20 15:58:51] WARNING root fetch - processPackages [requests-flask]: Skipping, unable to determine old version
+[2023-05-20 15:58:51] INFO root fetch - main [MainThread]: End processing [requests-flask] error
+[2023-05-20 15:58:51] WARNING root fetch - processPackages [pylint-sys]: Skipping, unable to determine old version
+[2023-05-20 15:58:51] INFO root fetch - main [MainThread]: End processing [pylint-sys] error
+[2023-05-20 15:58:51] WARNING root fetch - processPackages [beautifulsoup-requests]: Skipping, unable to determine old version
+[2023-05-20 15:58:51] INFO root fetch - main [MainThread]: End processing [beautifulsoup-requests] error
+[2023-05-20 15:58:51] INFO root fetch - processPackages [kayle]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-20 15:58:51] INFO root fetch - processPackages [archetesting]: Downloading https://files.pythonhosted.org/packages/6e/11/43dc8ee1b9a6d166ede3f6f5bd25a7262acb651c54f096936992e3298dfd/archetesting-0.0.2.tar.gz
+[2023-05-20 15:58:51] INFO root fetch - processPackages [netbox-ddns]: Downloading https://files.pythonhosted.org/packages/e7/7a/8940f665987bad16efbf0454b81eb25a53aaf493c3e8b648cce44b75d270/netbox-ddns-1.2.6.tar.gz
+[2023-05-20 15:58:52] INFO root fetch - processPackages [dan-build]: Downloading https://files.pythonhosted.org/packages/97/aa/1702abbbe9134f061cc717c27cf546bef5853b867cfd4aebc93af13debff/dan-build-0.2.3.tar.gz
+[2023-05-20 15:58:52] INFO root fetch - processPackages [archetesting]: Downloading https://files.pythonhosted.org/packages/03/35/eb79ab7193601a2ecf4c0e1c4792099e671ae365eccfea981a6199f5d9c6/archetesting-0.0.3.tar.gz
+[2023-05-20 15:58:52] INFO root fetch - processPackages [netbox-ddns]: Downloading https://files.pythonhosted.org/packages/43/77/2af9e615ce512c712180b3dcbded4c43655f4fdbb8cf27de2a9fafb3493b/netbox-ddns-1.2.7.tar.gz
+[2023-05-20 15:58:52] INFO root fetch - processPackages [dan-build]: executing diffoscope
+[2023-05-20 15:58:52] INFO root fetch - processPackages [dan-build]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dan-build-0.2.2.tar.gz tmp/dan-build-0.2.3.tar.gz --markdown 20230520/d/dan-build/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-20 15:58:52] INFO root fetch - processPackages [kayle]: executing diffoscope
+[2023-05-20 15:58:52] INFO root fetch - processPackages [kayle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kayle-0.5.8-py3-none-any.whl.zip tmp/kayle-0.5.9-py3-none-any.whl.zip --markdown 20230520/k/kayle/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-20 15:58:52] INFO root fetch - processPackages [netbox-ddns]: executing diffoscope
+[2023-05-20 15:58:52] INFO root fetch - processPackages [netbox-ddns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbox-ddns-1.2.6.tar.gz tmp/netbox-ddns-1.2.7.tar.gz --markdown 20230520/n/netbox-ddns/1.2.6-1.2.7/diff.md --exclude *.pyd
+[2023-05-20 15:58:52] INFO root fetch - processPackages [archetesting]: executing diffoscope
+[2023-05-20 15:58:52] INFO root fetch - processPackages [archetesting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/archetesting-0.0.2.tar.gz tmp/archetesting-0.0.3.tar.gz --markdown 20230520/a/archetesting/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-20 15:58:53] INFO root fetch - main [MainThread]: End processing [kayle]: success
+[2023-05-20 15:58:53] INFO root fetch - main [MainThread]: End processing [archetesting]: success
+[2023-05-20 15:58:53] INFO root fetch - main [MainThread]: End processing [netbox-ddns]: success
+[2023-05-20 15:58:53] INFO root fetch - main [MainThread]: End processing [dan-build]: success
+[2023-05-20 15:58:53] INFO root fetch - main [MainThread]: Store serial: [18182406]
