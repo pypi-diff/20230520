@@ -8394,3 +8394,33 @@
 [2023-05-20 13:08:53] INFO root fetch - main [MainThread]: End processing [pickled-carrots]: success
 [2023-05-20 13:08:53] INFO root fetch - main [MainThread]: End processing [protobuf-decoder]: success
 [2023-05-20 13:08:53] INFO root fetch - main [MainThread]: Store serial: [18181392]
+[2023-05-20 13:13:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18181392]
+[2023-05-20 13:14:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 13:14:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mqttasgi
+[2023-05-20 13:14:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastai-datasets
+[2023-05-20 13:14:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: faster-coco-eval
+[2023-05-20 13:14:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: similarity-learning
+[2023-05-20 13:14:02] INFO root fetch - processPackages [faster-coco-eval]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-05-20 13:14:02] INFO root fetch - processPackages [mqttasgi]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-20 13:14:02] INFO root fetch - processPackages [fastai-datasets]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-20 13:14:02] INFO root fetch - processPackages [similarity-learning]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-20 13:14:02] INFO root fetch - processPackages [faster-coco-eval]: Downloading https://files.pythonhosted.org/packages/76/ee/596cf78126b122f42817fff07866264f858d34e65e883f6efeaf267480fb/faster-coco-eval-1.3.1.tar.gz
+[2023-05-20 13:14:02] INFO root fetch - processPackages [mqttasgi]: Downloading https://files.pythonhosted.org/packages/a7/22/9fd1df7e4cb830e505b931ba0054da6c3a5412c6e2813b9ffe484a447ec1/mqttasgi-1.2.1.tar.gz
+[2023-05-20 13:14:02] INFO root fetch - processPackages [similarity-learning]: Downloading https://files.pythonhosted.org/packages/86/ba/30b001179c3061906c11c48b9a6775fedbfeb1a2790a63164ca9aade225b/similarity-learning-0.0.1.tar.gz
+[2023-05-20 13:14:03] INFO root fetch - processPackages [fastai-datasets]: Downloading https://files.pythonhosted.org/packages/45/c4/b9d3224ef9b9f88593796e62063c65b80b6dbedd86e584d10b7567556fa3/fastai-datasets-0.0.6.tar.gz
+[2023-05-20 13:14:03] INFO root fetch - processPackages [faster-coco-eval]: Downloading https://files.pythonhosted.org/packages/bd/4d/95693430750e379c6bf9680cfbe773f7e2d42ddb2520d4e24b6789f95138/faster-coco-eval-1.3.2.tar.gz
+[2023-05-20 13:14:03] INFO root fetch - processPackages [mqttasgi]: Downloading https://files.pythonhosted.org/packages/01/f8/bd8934d41728ccec2c32ce45e6f34f046c6ea63ead6768a263bac3457a0b/mqttasgi-1.2.2.tar.gz
+[2023-05-20 13:14:03] INFO root fetch - processPackages [faster-coco-eval]: executing diffoscope
+[2023-05-20 13:14:03] INFO root fetch - processPackages [faster-coco-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faster-coco-eval-1.3.1.tar.gz tmp/faster-coco-eval-1.3.2.tar.gz --markdown 20230520/f/faster-coco-eval/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-05-20 13:14:03] INFO root fetch - processPackages [similarity-learning]: Downloading https://files.pythonhosted.org/packages/28/99/8e2fd6770c8da844ddcc1ba9fcb54912ac29b43cfb5719296dd112fff3be/similarity-learning-0.0.2.tar.gz
+[2023-05-20 13:14:03] INFO root fetch - processPackages [fastai-datasets]: executing diffoscope
+[2023-05-20 13:14:03] INFO root fetch - processPackages [fastai-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastai-datasets-0.0.5.tar.gz tmp/fastai-datasets-0.0.6.tar.gz --markdown 20230520/f/fastai-datasets/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-20 13:14:03] INFO root fetch - processPackages [similarity-learning]: executing diffoscope
+[2023-05-20 13:14:03] INFO root fetch - processPackages [similarity-learning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/similarity-learning-0.0.1.tar.gz tmp/similarity-learning-0.0.2.tar.gz --markdown 20230520/s/similarity-learning/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-20 13:14:03] INFO root fetch - processPackages [mqttasgi]: executing diffoscope
+[2023-05-20 13:14:03] INFO root fetch - processPackages [mqttasgi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mqttasgi-1.2.1.tar.gz tmp/mqttasgi-1.2.2.tar.gz --markdown 20230520/m/mqttasgi/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-20 13:14:04] INFO root fetch - main [MainThread]: End processing [fastai-datasets]: success
+[2023-05-20 13:14:04] INFO root fetch - main [MainThread]: End processing [mqttasgi]: success
+[2023-05-20 13:14:04] INFO root fetch - main [MainThread]: End processing [similarity-learning]: success
+[2023-05-20 13:14:06] INFO root fetch - main [MainThread]: End processing [faster-coco-eval]: success
+[2023-05-20 13:14:06] INFO root fetch - main [MainThread]: Store serial: [18181409]
