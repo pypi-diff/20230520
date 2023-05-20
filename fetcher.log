@@ -13604,3 +13604,29 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 23:47:47] INFO root fetch - main [MainThread]: End processing [comicbox] error
 [2023-05-20 23:47:48] INFO root fetch - main [MainThread]: End processing [TMDBTraktSyncer]: success
 [2023-05-20 23:47:48] INFO root fetch - main [MainThread]: Store serial: [18184399]
+[2023-05-20 23:52:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184399]
+[2023-05-20 23:52:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 23:52:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: capabilities
+[2023-05-20 23:52:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: agixt
+[2023-05-20 23:52:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: paracrine
+[2023-05-20 23:52:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gamut
+[2023-05-20 23:52:57] INFO root fetch - processPackages [agixt]: New version: [1.1.50b0] Old Version: [1.1.49b0]
+[2023-05-20 23:52:57] INFO root fetch - processPackages [capabilities]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-20 23:52:57] INFO root fetch - processPackages [paracrine]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-20 23:52:57] INFO root fetch - processPackages [gamut]: New version: [1.2.0] Old Version: [1.1.6]
+[2023-05-20 23:52:57] INFO root fetch - processPackages [agixt]: executing diffoscope
+[2023-05-20 23:52:57] INFO root fetch - processPackages [agixt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agixt-1.1.49b0.tar.gz tmp/agixt-1.1.50b0.tar.gz --markdown 20230520/a/agixt/1.1.49b0-1.1.50b0/diff.md --exclude *.pyd
+[2023-05-20 23:52:57] INFO root fetch - processPackages [capabilities]: executing diffoscope
+[2023-05-20 23:52:57] INFO root fetch - processPackages [capabilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/capabilities-0.3.8.tar.gz tmp/capabilities-0.3.9.tar.gz --markdown 20230520/c/capabilities/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-20 23:52:57] INFO root fetch - processPackages [gamut]: Downloading https://files.pythonhosted.org/packages/16/34/c5f47336ea2b03c7bbf2efffba7970f031cd356d24f46e023c3745d2aaf9/gamut-1.1.6.tar.gz
+[2023-05-20 23:52:57] INFO root fetch - processPackages [paracrine]: Downloading https://files.pythonhosted.org/packages/30/27/057087766546cb5984c76b7015297ae51e177e8c9d144ba2b99ede866ca2/paracrine-0.0.7.tar.gz
+[2023-05-20 23:52:57] INFO root fetch - processPackages [gamut]: Downloading https://files.pythonhosted.org/packages/8b/06/d92d4eb8c58ee4182feeb60bdfcbe26ba81a06d02365b536460a73aff307/gamut-1.2.0.tar.gz
+[2023-05-20 23:52:57] INFO root fetch - processPackages [paracrine]: executing diffoscope
+[2023-05-20 23:52:57] INFO root fetch - processPackages [paracrine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paracrine-0.0.6.tar.gz tmp/paracrine-0.0.7.tar.gz --markdown 20230520/p/paracrine/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-20 23:52:58] INFO root fetch - processPackages [gamut]: executing diffoscope
+[2023-05-20 23:52:58] INFO root fetch - processPackages [gamut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gamut-1.1.6.tar.gz tmp/gamut-1.2.0.tar.gz --markdown 20230520/g/gamut/1.1.6-1.2.0/diff.md --exclude *.pyd
+[2023-05-20 23:52:58] INFO root fetch - main [MainThread]: End processing [agixt]: success
+[2023-05-20 23:52:59] INFO root fetch - main [MainThread]: End processing [capabilities]: success
+[2023-05-20 23:52:59] INFO root fetch - main [MainThread]: End processing [paracrine]: success
+[2023-05-20 23:52:59] INFO root fetch - main [MainThread]: End processing [gamut]: success
+[2023-05-20 23:52:59] INFO root fetch - main [MainThread]: Store serial: [18184408]
