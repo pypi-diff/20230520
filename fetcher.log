@@ -12584,3 +12584,53 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 21:03:12] INFO root fetch - main [MainThread]: End processing [seaplayer]: success
 [2023-05-20 21:03:12] INFO root fetch - main [MainThread]: End processing [memory-graph]: success
 [2023-05-20 21:03:12] INFO root fetch - main [MainThread]: Store serial: [18183893]
+[2023-05-20 21:08:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183893]
+[2023-05-20 21:08:21] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-20 21:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bedrockpy
+[2023-05-20 21:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pseudocerastes
+[2023-05-20 21:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: devcellpy
+[2023-05-20 21:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: BTKSorgu
+[2023-05-20 21:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: typing-aliases
+[2023-05-20 21:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: SportStatIQ-DataCollectors
+[2023-05-20 21:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wsgi_lithium
+[2023-05-20 21:08:21] INFO root fetch - processPackages [wsgi_lithium]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-20 21:08:21] INFO root fetch - processPackages [BTKSorgu]: New version: [1.2.6] Old Version: [1.2.5]
+[2023-05-20 21:08:21] INFO root fetch - processPackages [bedrockpy]: New version: [1.0.0a0.post1] Old Version: [1.0.0a0]
+[2023-05-20 21:08:21] INFO root fetch - processPackages [pseudocerastes]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-20 21:08:21] INFO root fetch - processPackages [devcellpy]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-20 21:08:21] INFO root fetch - processPackages [SportStatIQ-DataCollectors]: New version: [1.0.3] Old Version: [0.0.0]
+[2023-05-20 21:08:21] INFO root fetch - processPackages [typing-aliases]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-20 21:08:21] INFO root fetch - processPackages [SportStatIQ-DataCollectors]: Downloading https://files.pythonhosted.org/packages/0d/72/fb4a6ede91d6524378d865a00f60926e8a89baebca2d0df878904c45c106/SportStatIQ-DataCollectors-0.0.0.tar.gz
+[2023-05-20 21:08:21] INFO root fetch - processPackages [wsgi_lithium]: Downloading https://files.pythonhosted.org/packages/f9/a6/9af49a59a037307d8d9f195ce51339013ababbe9085acb6a377fabae8b37/wsgi_lithium-0.1.0.tar.gz
+[2023-05-20 21:08:21] INFO root fetch - processPackages [pseudocerastes]: Downloading https://files.pythonhosted.org/packages/2b/a3/61ab886c45926d827fccc831f58a8c541cc4cec2191b29b2f17327616a48/pseudocerastes-0.0.1.tar.gz
+[2023-05-20 21:08:21] INFO root fetch - processPackages [BTKSorgu]: Downloading https://files.pythonhosted.org/packages/a1/da/8116bf097e62af272b81e07f73120def7fd7824c10479d666604a001cd6c/BTKSorgu-1.2.6.tar.gz
+[2023-05-20 21:08:21] INFO root fetch - processPackages [devcellpy]: Downloading https://files.pythonhosted.org/packages/b3/1a/ffc565c52087179dcc2ea50d59d014436bf507fd899947ae11ce6bee4cb8/devcellpy-1.1.1.tar.gz
+[2023-05-20 21:08:21] INFO root fetch - processPackages [bedrockpy]: Downloading https://files.pythonhosted.org/packages/78/d8/ac36ae748d4d1cb262817ba8c9c92c14485c6acba42657a9f9ce488ea721/bedrockpy-1.0.0a0.post1.tar.gz
+[2023-05-20 21:08:21] INFO root fetch - processPackages [typing-aliases]: Downloading https://files.pythonhosted.org/packages/f7/15/f34696496464eb943cff602922c09716e07bbec338ae2383b9bcb815dbff/typing_aliases-1.0.0.tar.gz
+[2023-05-20 21:08:21] INFO root fetch - processPackages [BTKSorgu]: executing diffoscope
+[2023-05-20 21:08:21] INFO root fetch - processPackages [BTKSorgu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BTKSorgu-1.2.5.tar.gz tmp/BTKSorgu-1.2.6.tar.gz --markdown 20230520/B/BTKSorgu/1.2.5-1.2.6/diff.md --exclude *.pyd
+[2023-05-20 21:08:21] INFO root fetch - processPackages [bedrockpy]: executing diffoscope
+[2023-05-20 21:08:21] INFO root fetch - processPackages [bedrockpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bedrockpy-1.0.0a0.tar.gz tmp/bedrockpy-1.0.0a0.post1.tar.gz --markdown 20230520/b/bedrockpy/1.0.0a0-1.0.0a0.post1/diff.md --exclude *.pyd
+[2023-05-20 21:08:21] INFO root fetch - processPackages [SportStatIQ-DataCollectors]: Downloading https://files.pythonhosted.org/packages/58/53/470d9b85cf643e453e1d28bf31513cd2e0ba1f1932091e46ef4082a7523b/SportStatIQ-DataCollectors-1.0.3.tar.gz
+[2023-05-20 21:08:21] INFO root fetch - processPackages [wsgi_lithium]: Downloading https://files.pythonhosted.org/packages/69/4c/2fcd8f6b29b84bdaad2e4d28c0d0cbaa1e242d00b6436c6d6cb6695d39ec/wsgi_lithium-0.2.0.tar.gz
+[2023-05-20 21:08:21] INFO root fetch - processPackages [pseudocerastes]: Downloading https://files.pythonhosted.org/packages/ae/d6/c4203c2d078b210bcf8ccaa30ef5a9845e67b97496a45241bff9c2e11c16/pseudocerastes-0.0.2.tar.gz
+[2023-05-20 21:08:22] INFO root fetch - processPackages [SportStatIQ-DataCollectors]: executing diffoscope
+[2023-05-20 21:08:22] INFO root fetch - processPackages [SportStatIQ-DataCollectors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SportStatIQ-DataCollectors-0.0.0.tar.gz tmp/SportStatIQ-DataCollectors-1.0.3.tar.gz --markdown 20230520/S/SportStatIQ-DataCollectors/0.0.0-1.0.3/diff.md --exclude *.pyd
+[2023-05-20 21:08:22] INFO root fetch - processPackages [pseudocerastes]: executing diffoscope
+[2023-05-20 21:08:22] INFO root fetch - processPackages [pseudocerastes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pseudocerastes-0.0.1.tar.gz tmp/pseudocerastes-0.0.2.tar.gz --markdown 20230520/p/pseudocerastes/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-20 21:08:22] INFO root fetch - processPackages [devcellpy]: Downloading https://files.pythonhosted.org/packages/83/7f/6fc0871ef606dbd230ff97ea6156c96bfd4f95a56d9357a17803600ffa11/devcellpy-1.1.2.tar.gz
+[2023-05-20 21:08:22] INFO root fetch - processPackages [typing-aliases]: Downloading https://files.pythonhosted.org/packages/d7/db/ea0aa9a99a4bd1c0ea54bc86917e3829ae30acb0aad7e129f6046b479b63/typing_aliases-1.1.0.tar.gz
+[2023-05-20 21:08:22] INFO root fetch - processPackages [wsgi_lithium]: executing diffoscope
+[2023-05-20 21:08:22] INFO root fetch - processPackages [wsgi_lithium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wsgi_lithium-0.1.0.tar.gz tmp/wsgi_lithium-0.2.0.tar.gz --markdown 20230520/w/wsgi_lithium/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-20 21:08:22] INFO root fetch - processPackages [typing-aliases]: executing diffoscope
+[2023-05-20 21:08:22] INFO root fetch - processPackages [typing-aliases]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typing_aliases-1.0.0.tar.gz tmp/typing_aliases-1.1.0.tar.gz --markdown 20230520/t/typing-aliases/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-20 21:08:22] INFO root fetch - processPackages [devcellpy]: executing diffoscope
+[2023-05-20 21:08:22] INFO root fetch - processPackages [devcellpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devcellpy-1.1.1.tar.gz tmp/devcellpy-1.1.2.tar.gz --markdown 20230520/d/devcellpy/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-20 21:08:23] INFO root fetch - main [MainThread]: End processing [BTKSorgu]: success
+[2023-05-20 21:08:23] INFO root fetch - main [MainThread]: End processing [bedrockpy]: success
+[2023-05-20 21:08:23] INFO root fetch - main [MainThread]: End processing [pseudocerastes]: success
+[2023-05-20 21:08:23] INFO root fetch - main [MainThread]: End processing [SportStatIQ-DataCollectors]: success
+[2023-05-20 21:08:23] INFO root fetch - main [MainThread]: End processing [wsgi_lithium]: success
+[2023-05-20 21:08:23] INFO root fetch - main [MainThread]: End processing [typing-aliases]: success
+[2023-05-20 21:09:05] INFO root fetch - main [MainThread]: End processing [devcellpy]: success
+[2023-05-20 21:09:05] INFO root fetch - main [MainThread]: Store serial: [18183918]
