@@ -8115,3 +8115,38 @@
 [2023-05-20 12:21:36] INFO root fetch - main [MainThread]: End processing [opensoar]: success
 [2023-05-20 12:21:37] INFO root fetch - main [MainThread]: End processing [glitter-sdk]: success
 [2023-05-20 12:21:37] INFO root fetch - main [MainThread]: Store serial: [18181186]
+[2023-05-20 12:26:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18181186]
+[2023-05-20 12:26:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-20 12:26:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plone.app.locales
+[2023-05-20 12:26:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plugget
+[2023-05-20 12:26:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: beetcamp
+[2023-05-20 12:26:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: QtLogger
+[2023-05-20 12:26:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: subsonic-connector
+[2023-05-20 12:26:46] INFO root fetch - processPackages [plone.app.locales]: New version: [6.0.9] Old Version: [6.0.8]
+[2023-05-20 12:26:46] INFO root fetch - processPackages [QtLogger]: New version: [1.0.2] Old Version: [1.0.0]
+[2023-05-20 12:26:46] INFO root fetch - processPackages [plugget]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-20 12:26:46] INFO root fetch - processPackages [subsonic-connector]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 12:26:46] INFO root fetch - processPackages [beetcamp]: New version: [0.9.3] Old Version: [0.9.1]
+[2023-05-20 12:26:46] INFO root fetch - processPackages [QtLogger]: Downloading https://files.pythonhosted.org/packages/47/f4/46de316e5c243c96ab86e81b8cc85ebc00681201e028c946fd7c596e5a91/QtLogger-1.0.0-py3-none-any.whl
+[2023-05-20 12:26:46] INFO root fetch - processPackages [subsonic-connector]: Downloading https://files.pythonhosted.org/packages/62/c3/d7e967847031d71c9ff4b684e65ba838cea50eb70ebf0a8283f15ee04357/subsonic_connector-0.1.8.tar.gz
+[2023-05-20 12:26:46] INFO root fetch - processPackages [plone.app.locales]: Downloading https://files.pythonhosted.org/packages/07/57/7616573ed7e1e4246344ae71d2964888db7ce02be744df3f588daa4f8ba5/plone.app.locales-6.0.8.tar.gz
+[2023-05-20 12:26:46] INFO root fetch - processPackages [beetcamp]: Downloading https://files.pythonhosted.org/packages/8d/72/69a66df34b9fc327228941ed7c279c73c6ca846f58c9688451900aa5cb8b/beetcamp-0.9.1.tar.gz
+[2023-05-20 12:26:46] WARNING root fetch - processPackages [plone.app.locales]: Skipping package: exceeds size limit 10880771>=10485760
+[2023-05-20 12:26:46] INFO root fetch - main [MainThread]: End processing [plone.app.locales] error
+[2023-05-20 12:26:46] INFO root fetch - processPackages [plugget]: Downloading https://files.pythonhosted.org/packages/c4/2a/a63a64ec1613870fb6aeb3b97a49b9386ef5ea211146a120a5b32a779660/plugget-0.0.6.tar.gz
+[2023-05-20 12:26:47] INFO root fetch - processPackages [QtLogger]: Downloading https://files.pythonhosted.org/packages/9b/d3/e06e8407c0fe22aa31bced2cc3734775bdaffddbbff633499703442db63c/QtLogger-1.0.2-py3-none-any.whl
+[2023-05-20 12:26:47] INFO root fetch - processPackages [plugget]: executing diffoscope
+[2023-05-20 12:26:47] INFO root fetch - processPackages [plugget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plugget-0.0.5.tar.gz tmp/plugget-0.0.6.tar.gz --markdown 20230520/p/plugget/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-20 12:26:47] INFO root fetch - processPackages [QtLogger]: executing diffoscope
+[2023-05-20 12:26:47] INFO root fetch - processPackages [QtLogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QtLogger-1.0.0-py3-none-any.whl.zip tmp/QtLogger-1.0.2-py3-none-any.whl.zip --markdown 20230520/Q/QtLogger/1.0.0-1.0.2/diff.md --exclude *.pyd
+[2023-05-20 12:26:47] INFO root fetch - processPackages [subsonic-connector]: Downloading https://files.pythonhosted.org/packages/03/f4/6d165d761196dedf218646d3c156f5c0e28a005d8a41d2e573abd6b34728/subsonic_connector-0.1.9.tar.gz
+[2023-05-20 12:26:47] INFO root fetch - processPackages [subsonic-connector]: executing diffoscope
+[2023-05-20 12:26:47] INFO root fetch - processPackages [subsonic-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/subsonic_connector-0.1.8.tar.gz tmp/subsonic_connector-0.1.9.tar.gz --markdown 20230520/s/subsonic-connector/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 12:26:47] INFO root fetch - processPackages [beetcamp]: Downloading https://files.pythonhosted.org/packages/29/a1/5edf652073c11c6e3a53ea79dc85e1201b64f9522ef0e6a380b0aa41c27f/beetcamp-0.9.3.tar.gz
+[2023-05-20 12:26:47] INFO root fetch - processPackages [beetcamp]: executing diffoscope
+[2023-05-20 12:26:47] INFO root fetch - processPackages [beetcamp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beetcamp-0.9.1.tar.gz tmp/beetcamp-0.9.3.tar.gz --markdown 20230520/b/beetcamp/0.9.1-0.9.3/diff.md --exclude *.pyd
+[2023-05-20 12:26:48] INFO root fetch - main [MainThread]: End processing [QtLogger]: success
+[2023-05-20 12:26:48] INFO root fetch - main [MainThread]: End processing [plugget]: success
+[2023-05-20 12:26:48] INFO root fetch - main [MainThread]: End processing [subsonic-connector]: success
+[2023-05-20 12:26:48] INFO root fetch - main [MainThread]: End processing [beetcamp]: success
+[2023-05-20 12:26:48] INFO root fetch - main [MainThread]: Store serial: [18181208]
