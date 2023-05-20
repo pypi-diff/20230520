@@ -9884,3 +9884,47 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 15:27:13] INFO root fetch - main [MainThread]: End processing [molecule-multipass]: success
 [2023-05-20 15:27:14] INFO root fetch - main [MainThread]: End processing [naruno]: success
 [2023-05-20 15:27:14] INFO root fetch - main [MainThread]: Store serial: [18182229]
+[2023-05-20 15:32:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182229]
+[2023-05-20 15:32:22] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-20 15:32:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mkdocs-flavorwheel-plugin
+[2023-05-20 15:32:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tkfly
+[2023-05-20 15:32:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: syscoloringsextensionV2
+[2023-05-20 15:32:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lusid-sdk-preview
+[2023-05-20 15:32:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lusid-sdk
+[2023-05-20 15:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: utype
+[2023-05-20 15:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: geetiles
+[2023-05-20 15:32:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: syscoloringsextensionV2
+[2023-05-20 15:32:23] INFO root fetch - processPackages [tkfly]: New version: [0.1.0a9] Old Version: [0.1.0a8]
+[2023-05-20 15:32:23] INFO root fetch - processPackages [utype]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-20 15:32:23] WARNING root fetch - processPackages [syscoloringsextensionV2]: Skipping, unable to determine old version
+[2023-05-20 15:32:23] INFO root fetch - main [MainThread]: End processing [syscoloringsextensionV2] error
+[2023-05-20 15:32:23] WARNING root fetch - processPackages [syscoloringsextensionV2]: Skipping, unable to determine old version
+[2023-05-20 15:32:23] INFO root fetch - processPackages [mkdocs-flavorwheel-plugin]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-20 15:32:23] INFO root fetch - main [MainThread]: End processing [syscoloringsextensionV2] error
+[2023-05-20 15:32:23] INFO root fetch - processPackages [lusid-sdk-preview]: New version: [1.0.98] Old Version: [1.0.91]
+[2023-05-20 15:32:23] INFO root fetch - processPackages [geetiles]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-20 15:32:23] INFO root fetch - processPackages [lusid-sdk]: New version: [1.0.98] Old Version: [1.0.91]
+[2023-05-20 15:32:23] INFO root fetch - processPackages [utype]: Downloading https://files.pythonhosted.org/packages/45/a6/de0b20354f113478e2cd5daa4723ab93be674d5f3e31d833ab834fe13551/utype-0.3.1.tar.gz
+[2023-05-20 15:32:23] INFO root fetch - processPackages [tkfly]: Downloading https://files.pythonhosted.org/packages/e6/27/26dd345bcb5781cf4877d6df80afc0fe0bbdff49c5204e947e76d017b627/tkfly-0.1.0a8.tar.gz
+[2023-05-20 15:32:23] WARNING root fetch - processPackages [tkfly]: Skipping package: exceeds size limit 99352320>=10485760
+[2023-05-20 15:32:23] INFO root fetch - main [MainThread]: End processing [tkfly] error
+[2023-05-20 15:32:23] INFO root fetch - processPackages [geetiles]: Downloading https://files.pythonhosted.org/packages/62/65/c03bbe4dc74ed544334e2b88b029f143e6a5d3788f43e1db0cf4081c07d0/geetiles-0.1.4.tar.gz
+[2023-05-20 15:32:23] INFO root fetch - processPackages [mkdocs-flavorwheel-plugin]: Downloading https://files.pythonhosted.org/packages/d5/46/07d669babe9f4f2f7b5d0be3b2669fd7a1f9883b38f87570baa1c58228aa/mkdocs-flavorwheel-plugin-0.0.5.tar.gz
+[2023-05-20 15:32:23] INFO root fetch - processPackages [lusid-sdk-preview]: executing diffoscope
+[2023-05-20 15:32:23] INFO root fetch - processPackages [lusid-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-sdk-preview-1.0.91.tar.gz tmp/lusid-sdk-preview-1.0.98.tar.gz --markdown 20230520/l/lusid-sdk-preview/1.0.91-1.0.98/diff.md --exclude *.pyd
+[2023-05-20 15:32:23] INFO root fetch - processPackages [utype]: Downloading https://files.pythonhosted.org/packages/59/a6/903b31e62fda229592b55bd0812f23569da441eb87c3304bbb9dede18184/utype-0.3.2.tar.gz
+[2023-05-20 15:32:23] INFO root fetch - processPackages [mkdocs-flavorwheel-plugin]: executing diffoscope
+[2023-05-20 15:32:23] INFO root fetch - processPackages [mkdocs-flavorwheel-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-flavorwheel-plugin-0.0.4.tar.gz tmp/mkdocs-flavorwheel-plugin-0.0.5.tar.gz --markdown 20230520/m/mkdocs-flavorwheel-plugin/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-20 15:32:23] INFO root fetch - processPackages [utype]: executing diffoscope
+[2023-05-20 15:32:23] INFO root fetch - processPackages [utype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utype-0.3.1.tar.gz tmp/utype-0.3.2.tar.gz --markdown 20230520/u/utype/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-20 15:32:23] INFO root fetch - processPackages [lusid-sdk]: executing diffoscope
+[2023-05-20 15:32:23] INFO root fetch - processPackages [lusid-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-sdk-1.0.91.tar.gz tmp/lusid-sdk-1.0.98.tar.gz --markdown 20230520/l/lusid-sdk/1.0.91-1.0.98/diff.md --exclude *.pyd
+[2023-05-20 15:32:24] INFO root fetch - main [MainThread]: End processing [mkdocs-flavorwheel-plugin]: success
+[2023-05-20 15:32:25] INFO root fetch - main [MainThread]: End processing [utype]: success
+[2023-05-20 15:32:25] INFO root fetch - processPackages [geetiles]: Downloading https://files.pythonhosted.org/packages/ce/b1/6ca182e98870bbd2a884c3facac1e4311d8bab9050e0769473d653f56cf0/geetiles-0.1.5.tar.gz
+[2023-05-20 15:32:26] INFO root fetch - processPackages [geetiles]: executing diffoscope
+[2023-05-20 15:32:26] INFO root fetch - processPackages [geetiles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geetiles-0.1.4.tar.gz tmp/geetiles-0.1.5.tar.gz --markdown 20230520/g/geetiles/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-20 15:32:28] INFO root fetch - main [MainThread]: End processing [geetiles]: success
+[2023-05-20 15:32:44] INFO root fetch - main [MainThread]: End processing [lusid-sdk]: success
+[2023-05-20 15:32:56] INFO root fetch - main [MainThread]: End processing [lusid-sdk-preview]: success
+[2023-05-20 15:32:56] INFO root fetch - main [MainThread]: Store serial: [18182257]
