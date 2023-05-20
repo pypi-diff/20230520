@@ -11624,3 +11624,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 19:04:00] INFO root fetch - main [MainThread]: End processing [pacup]: success
 [2023-05-20 19:04:10] INFO root fetch - main [MainThread]: End processing [pyrofork-dev]: success
 [2023-05-20 19:04:10] INFO root fetch - main [MainThread]: Store serial: [18183410]
+[2023-05-20 19:09:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183410]
+[2023-05-20 19:09:19] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-20 19:09:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiorobonect
+[2023-05-20 19:09:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mac-cleanup
+[2023-05-20 19:09:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: neopolitan
+[2023-05-20 19:09:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyrofork-dev
+[2023-05-20 19:09:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-tbase-post-product
+[2023-05-20 19:09:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: reactivated
+[2023-05-20 19:09:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-tbase-post
+[2023-05-20 19:09:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-tbase-page
+[2023-05-20 19:09:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pymap-admin
+[2023-05-20 19:09:19] INFO root fetch - processPackages [mac-cleanup]: New version: [3.0.2] Old Version: [3.0.1]
+[2023-05-20 19:09:19] INFO root fetch - processPackages [aiorobonect]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 19:09:19] INFO root fetch - processPackages [django-tbase-post-product]: New version: [2023.5.2116846023] Old Version: [2023.5.2016845980]
+[2023-05-20 19:09:19] INFO root fetch - processPackages [django-tbase-post]: New version: [2023.5.2116846024] Old Version: [2023.5.2116845988]
+[2023-05-20 19:09:19] INFO root fetch - processPackages [neopolitan]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 19:09:19] INFO root fetch - processPackages [django-tbase-page]: New version: [2023.5.2116846025] Old Version: [2023.5.2016845968]
+[2023-05-20 19:09:19] INFO root fetch - processPackages [pyrofork-dev]: New version: [2.1.8.dev202305201705] Old Version: [2.1.8.dev202305201658]
+[2023-05-20 19:09:19] INFO root fetch - processPackages [pymap-admin]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-20 19:09:19] INFO root fetch - processPackages [reactivated]: New version: [3.0.0a64] Old Version: [0.9.0]
+[2023-05-20 19:09:20] INFO root fetch - processPackages [neopolitan]: executing diffoscope
+[2023-05-20 19:09:20] INFO root fetch - processPackages [neopolitan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neopolitan-0.1.8.tar.gz tmp/neopolitan-0.1.9.tar.gz --markdown 20230520/n/neopolitan/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 19:09:20] INFO root fetch - processPackages [mac-cleanup]: Downloading https://files.pythonhosted.org/packages/c0/6f/5f0704ca4c4aaba728dc82642ca7ff212d820e2799ff58ee2b7a29e7d15b/mac_cleanup-3.0.1.tar.gz
+[2023-05-20 19:09:20] INFO root fetch - processPackages [django-tbase-page]: Downloading https://files.pythonhosted.org/packages/6a/40/42ca4320f6f44c688306ca794daaad30c971fa298e64ea24af737cf1afa4/django_tbase_page-2023.5.2016845968.tar.gz
+[2023-05-20 19:09:20] INFO root fetch - processPackages [django-tbase-post]: Downloading https://files.pythonhosted.org/packages/82/4b/de52597049879c9b96a2e114c70ffbefb7e530236e0cdb773bc1ae09a1ec/django_tbase_post-2023.5.2116846024.tar.gz
+[2023-05-20 19:09:20] INFO root fetch - processPackages [pymap-admin]: Downloading https://files.pythonhosted.org/packages/2a/6a/3f4b8c2e3b9977dd9a8d9c0d38e4e0a6208976b8d8cb40893f45ff4a06ac/pymap_admin-0.9.1.tar.gz
+[2023-05-20 19:09:20] INFO root fetch - processPackages [django-tbase-post-product]: Downloading https://files.pythonhosted.org/packages/7d/e0/be7629d494049b0b4dd3b66581b22bb869c74f315531c8b5a61d0032d2e5/django_tbase_post_product-2023.5.2116846023.tar.gz
+[2023-05-20 19:09:20] INFO root fetch - processPackages [reactivated]: executing diffoscope
+[2023-05-20 19:09:20] INFO root fetch - processPackages [reactivated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reactivated-0.9.0.tar.gz tmp/reactivated-3.0.0a64.tar.gz --markdown 20230520/r/reactivated/0.9.0-3.0.0a64/diff.md --exclude *.pyd
+[2023-05-20 19:09:20] INFO root fetch - processPackages [pyrofork-dev]: Downloading https://files.pythonhosted.org/packages/6b/62/12b02c3c19986ee636fbf027fb57ac43b73260cb016d16e270de04aa8c47/pyrofork_dev-2.1.8.dev202305201705.tar.gz
+[2023-05-20 19:09:20] INFO root fetch - processPackages [django-tbase-post]: executing diffoscope
+[2023-05-20 19:09:20] INFO root fetch - processPackages [django-tbase-post]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_tbase_post-2023.5.2116845988.tar.gz tmp/django_tbase_post-2023.5.2116846024.tar.gz --markdown 20230520/d/django-tbase-post/2023.5.2116845988-2023.5.2116846024/diff.md --exclude *.pyd
+[2023-05-20 19:09:20] INFO root fetch - processPackages [aiorobonect]: executing diffoscope
+[2023-05-20 19:09:20] INFO root fetch - processPackages [aiorobonect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiorobonect-0.1.8.tar.gz tmp/aiorobonect-0.1.9.tar.gz --markdown 20230520/a/aiorobonect/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 19:09:20] INFO root fetch - processPackages [django-tbase-post-product]: executing diffoscope
+[2023-05-20 19:09:20] INFO root fetch - processPackages [django-tbase-post-product]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_tbase_post_product-2023.5.2016845980.tar.gz tmp/django_tbase_post_product-2023.5.2116846023.tar.gz --markdown 20230520/d/django-tbase-post-product/2023.5.2016845980-2023.5.2116846023/diff.md --exclude *.pyd
+[2023-05-20 19:09:20] INFO root fetch - processPackages [django-tbase-page]: Downloading https://files.pythonhosted.org/packages/45/d9/6a80f2e948cb64592090d34f14a1873043af6dcf63c4f3c91f5c1528b7ca/django_tbase_page-2023.5.2116846025.tar.gz
+[2023-05-20 19:09:20] INFO root fetch - processPackages [pyrofork-dev]: executing diffoscope
+[2023-05-20 19:09:20] INFO root fetch - processPackages [pyrofork-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrofork_dev-2.1.8.dev202305201658.tar.gz tmp/pyrofork_dev-2.1.8.dev202305201705.tar.gz --markdown 20230520/p/pyrofork-dev/2.1.8.dev202305201658-2.1.8.dev202305201705/diff.md --exclude *.pyd
+[2023-05-20 19:09:20] INFO root fetch - processPackages [django-tbase-page]: executing diffoscope
+[2023-05-20 19:09:20] INFO root fetch - processPackages [django-tbase-page]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_tbase_page-2023.5.2016845968.tar.gz tmp/django_tbase_page-2023.5.2116846025.tar.gz --markdown 20230520/d/django-tbase-page/2023.5.2016845968-2023.5.2116846025/diff.md --exclude *.pyd
+[2023-05-20 19:09:20] INFO root fetch - processPackages [mac-cleanup]: Downloading https://files.pythonhosted.org/packages/d8/40/05fac88670e90b90b44288e75730504529a2ef5886ad51b12b9f12be2c82/mac_cleanup-3.0.2.tar.gz
+[2023-05-20 19:09:20] INFO root fetch - processPackages [pymap-admin]: Downloading https://files.pythonhosted.org/packages/9e/02/7f793741b3d8a5c8f25f7075c659cdeb2e784e4b3516ce3d578c17f750eb/pymap_admin-0.9.2.tar.gz
+[2023-05-20 19:09:20] INFO root fetch - processPackages [mac-cleanup]: executing diffoscope
+[2023-05-20 19:09:20] INFO root fetch - processPackages [mac-cleanup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mac_cleanup-3.0.1.tar.gz tmp/mac_cleanup-3.0.2.tar.gz --markdown 20230520/m/mac-cleanup/3.0.1-3.0.2/diff.md --exclude *.pyd
+[2023-05-20 19:09:20] INFO root fetch - processPackages [pymap-admin]: executing diffoscope
+[2023-05-20 19:09:20] INFO root fetch - processPackages [pymap-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymap_admin-0.9.1.tar.gz tmp/pymap_admin-0.9.2.tar.gz --markdown 20230520/p/pymap-admin/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-20 19:09:21] INFO root fetch - main [MainThread]: End processing [aiorobonect]: success
+[2023-05-20 19:09:21] INFO root fetch - main [MainThread]: End processing [reactivated]: success
+[2023-05-20 19:09:21] INFO root fetch - main [MainThread]: End processing [django-tbase-post-product]: success
+[2023-05-20 19:09:22] INFO root fetch - main [MainThread]: End processing [neopolitan]: success
+[2023-05-20 19:09:22] INFO root fetch - main [MainThread]: End processing [mac-cleanup]: success
+[2023-05-20 19:09:22] INFO root fetch - main [MainThread]: End processing [django-tbase-post]: success
+[2023-05-20 19:09:22] INFO root fetch - main [MainThread]: End processing [django-tbase-page]: success
+[2023-05-20 19:09:22] INFO root fetch - main [MainThread]: End processing [pymap-admin]: success
+[2023-05-20 19:09:47] INFO root fetch - main [MainThread]: End processing [pyrofork-dev]: success
+[2023-05-20 19:09:47] INFO root fetch - main [MainThread]: Store serial: [18183434]
