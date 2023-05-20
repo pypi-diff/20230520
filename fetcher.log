@@ -7242,3 +7242,56 @@
 [2023-05-20 10:35:45] INFO root fetch - main [MainThread]: End processing [graph-attention-student]: success
 [2023-05-20 10:35:45] INFO root fetch - main [MainThread]: End processing [stable-baselines3]: success
 [2023-05-20 10:35:45] INFO root fetch - main [MainThread]: Store serial: [18180630]
+[2023-05-20 10:40:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180630]
+[2023-05-20 10:40:54] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-20 10:40:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-preprocessors
+[2023-05-20 10:40:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-estimator-nightly
+[2023-05-20 10:40:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: splashlab
+[2023-05-20 10:40:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: visual-graph-datasets
+[2023-05-20 10:40:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pravo-api
+[2023-05-20 10:40:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Kivy
+[2023-05-20 10:40:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: resolwe
+[2023-05-20 10:40:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Kivy-examples
+[2023-05-20 10:40:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tff-nightly
+[2023-05-20 10:40:55] INFO root fetch - processPackages [data-preprocessors]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-20 10:40:55] INFO root fetch - processPackages [pravo-api]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 10:40:55] INFO root fetch - processPackages [resolwe]: New version: [9.0.0a4] Old Version: [9.0.0a3]
+[2023-05-20 10:40:55] INFO root fetch - processPackages [pravo-api]: executing diffoscope
+[2023-05-20 10:40:55] INFO root fetch - processPackages [pravo-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pravo-api-0.0.8.tar.gz tmp/pravo-api-0.0.9.tar.gz --markdown 20230520/p/pravo-api/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 10:40:55] INFO root fetch - processPackages [visual-graph-datasets]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-20 10:40:55] INFO root fetch - processPackages [splashlab]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 10:40:55] INFO root fetch - processPackages [Kivy-examples]: New version: [2.2.0rc1] Old Version: [2.2.0.dev0]
+[2023-05-20 10:40:55] INFO root fetch - processPackages [data-preprocessors]: executing diffoscope
+[2023-05-20 10:40:55] INFO root fetch - processPackages [data-preprocessors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-preprocessors-0.8.0.tar.gz tmp/data-preprocessors-0.9.0.tar.gz --markdown 20230520/d/data-preprocessors/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-20 10:40:55] INFO root fetch - processPackages [tf-estimator-nightly]: New version: [2.9.0.dev2022033108] Old Version: [2.9.0.dev2022033008]
+[2023-05-20 10:40:55] INFO root fetch - processPackages [tff-nightly]: New version: [0.0.1.dev20230520] Old Version: [0.0.1.dev20230519]
+[2023-05-20 10:40:55] INFO root fetch - processPackages [resolwe]: executing diffoscope
+[2023-05-20 10:40:55] INFO root fetch - processPackages [resolwe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resolwe-9.0.0a3.tar.gz tmp/resolwe-9.0.0a4.tar.gz --markdown 20230520/r/resolwe/9.0.0a3-9.0.0a4/diff.md --exclude *.pyd
+[2023-05-20 10:40:55] INFO root fetch - processPackages [Kivy]: New version: [2.2.0rc1] Old Version: [2.2.0.dev0]
+[2023-05-20 10:40:55] INFO root fetch - processPackages [visual-graph-datasets]: Downloading https://files.pythonhosted.org/packages/8b/aa/c11553474bc6abcbf2c78890f6579b242ab68a2c302c40a668fd39cef3c9/visual_graph_datasets-0.8.0.tar.gz
+[2023-05-20 10:40:55] INFO root fetch - processPackages [Kivy-examples]: Downloading https://files.pythonhosted.org/packages/07/3a/1155c8889ec2d2f106ffeca353c27a08d76e4dff6690fbce8ffe4b3aef83/Kivy_examples-2.2.0.dev0-py2.py3-none-any.whl
+[2023-05-20 10:40:55] INFO root fetch - processPackages [Kivy]: Downloading https://files.pythonhosted.org/packages/d5/21/7b27b7f9a01449040d0582b64267290631c5e9e0352e4dc419f730b0ba15/Kivy-2.2.0.dev0.tar.gz
+[2023-05-20 10:40:55] INFO root fetch - processPackages [splashlab]: executing diffoscope
+[2023-05-20 10:40:55] INFO root fetch - processPackages [splashlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splashlab-0.0.8.tar.gz tmp/splashlab-0.0.9.tar.gz --markdown 20230520/s/splashlab/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 10:40:55] INFO root fetch - processPackages [tf-estimator-nightly]: executing diffoscope
+[2023-05-20 10:40:55] INFO root fetch - processPackages [tf-estimator-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_estimator_nightly-2.9.0.dev2022033008-py2.py3-none-any.whl.zip tmp/tf_estimator_nightly-2.9.0.dev2022033108-py2.py3-none-any.whl.zip --markdown 20230520/t/tf-estimator-nightly/2.9.0.dev2022033008-2.9.0.dev2022033108/diff.md --exclude *.pyd
+[2023-05-20 10:40:55] INFO root fetch - processPackages [tff-nightly]: Downloading https://files.pythonhosted.org/packages/59/69/2303ba9318e32f7eeb39dd3c10c8943f473885bf915f5760daf193562278/tff_nightly-0.0.1.dev20230520-py2.py3-none-any.whl
+[2023-05-20 10:40:55] INFO root fetch - processPackages [visual-graph-datasets]: Downloading https://files.pythonhosted.org/packages/f7/24/21b8065eddaf1f2aebcb3c1ab99a567eafabd40743647beb7ef80955b8a8/visual_graph_datasets-0.9.0.tar.gz
+[2023-05-20 10:40:55] WARNING root fetch - processPackages [Kivy]: Skipping package: exceeds size limit 23966869>=10485760
+[2023-05-20 10:40:55] INFO root fetch - main [MainThread]: End processing [Kivy] error
+[2023-05-20 10:40:55] INFO root fetch - processPackages [tff-nightly]: executing diffoscope
+[2023-05-20 10:40:55] INFO root fetch - processPackages [tff-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tff_nightly-0.0.1.dev20230519-py2.py3-none-any.whl.zip tmp/tff_nightly-0.0.1.dev20230520-py2.py3-none-any.whl.zip --markdown 20230520/t/tff-nightly/0.0.1.dev20230519-0.0.1.dev20230520/diff.md --exclude *.pyd
+[2023-05-20 10:40:56] INFO root fetch - main [MainThread]: End processing [pravo-api]: success
+[2023-05-20 10:40:56] INFO root fetch - processPackages [visual-graph-datasets]: executing diffoscope
+[2023-05-20 10:40:56] INFO root fetch - processPackages [visual-graph-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/visual_graph_datasets-0.8.0.tar.gz tmp/visual_graph_datasets-0.9.0.tar.gz --markdown 20230520/v/visual-graph-datasets/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-20 10:40:56] INFO root fetch - main [MainThread]: End processing [data-preprocessors]: success
+[2023-05-20 10:40:56] INFO root fetch - main [MainThread]: End processing [splashlab]: success
+[2023-05-20 10:40:57] INFO root fetch - main [MainThread]: End processing [tf-estimator-nightly]: success
+[2023-05-20 10:40:57] INFO root fetch - processPackages [Kivy-examples]: Downloading https://files.pythonhosted.org/packages/2a/cd/37f057d7436776e10f37015e14d5adb6c85b2faa826482da8352ac43fb36/Kivy_examples-2.2.0rc1-py2.py3-none-any.whl
+[2023-05-20 10:40:57] INFO root fetch - processPackages [Kivy-examples]: executing diffoscope
+[2023-05-20 10:40:57] INFO root fetch - processPackages [Kivy-examples]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Kivy_examples-2.2.0.dev0-py2.py3-none-any.whl.zip tmp/Kivy_examples-2.2.0rc1-py2.py3-none-any.whl.zip --markdown 20230520/K/Kivy-examples/2.2.0.dev0-2.2.0rc1/diff.md --exclude *.pyd
+[2023-05-20 10:40:57] INFO root fetch - main [MainThread]: End processing [visual-graph-datasets]: success
+[2023-05-20 10:40:58] INFO root fetch - main [MainThread]: End processing [resolwe]: success
+[2023-05-20 10:40:58] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
+[2023-05-20 10:41:06] INFO root fetch - main [MainThread]: End processing [Kivy-examples]: success
+[2023-05-20 10:41:06] INFO root fetch - main [MainThread]: Store serial: [18180662]
