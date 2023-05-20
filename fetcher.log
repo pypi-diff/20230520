@@ -11276,3 +11276,32 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 18:11:35] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
 [2023-05-20 18:11:42] INFO root fetch - main [MainThread]: End processing [ezbeq]: success
 [2023-05-20 18:11:42] INFO root fetch - main [MainThread]: Store serial: [18183219]
+[2023-05-20 18:16:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183219]
+[2023-05-20 18:16:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 18:16:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trogon
+[2023-05-20 18:16:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hpcflow-new2
+[2023-05-20 18:16:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: haloop
+[2023-05-20 18:16:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: on-rails
+[2023-05-20 18:16:51] INFO root fetch - processPackages [on-rails]: New version: [4.2.0] Old Version: [4.1.0]
+[2023-05-20 18:16:51] INFO root fetch - processPackages [trogon]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-20 18:16:51] INFO root fetch - processPackages [haloop]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-20 18:16:51] INFO root fetch - processPackages [hpcflow-new2]: New version: [0.2.0a9] Old Version: [0.2.0a8]
+[2023-05-20 18:16:51] INFO root fetch - processPackages [on-rails]: Downloading https://files.pythonhosted.org/packages/53/bd/85d39a02856f6d3e80c3c7b9bf8aaef59521cf40e735cedab73b3b5d1940/on_rails-4.1.0.tar.gz
+[2023-05-20 18:16:51] INFO root fetch - processPackages [haloop]: Downloading https://files.pythonhosted.org/packages/5b/61/e8b84f2b21b31c2e0700514c296f15c84c0c316f62b5629943d02c255f9f/haloop-0.0.7.tar.gz
+[2023-05-20 18:16:51] INFO root fetch - processPackages [trogon]: Downloading https://files.pythonhosted.org/packages/13/4e/14f083f0f4f8cefb8bfc88286f7f28a63e25a3640f152e05f66569c2e57c/trogon-0.1.0.tar.gz
+[2023-05-20 18:16:51] INFO root fetch - processPackages [hpcflow-new2]: executing diffoscope
+[2023-05-20 18:16:51] INFO root fetch - processPackages [hpcflow-new2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hpcflow_new2-0.2.0a8.tar.gz tmp/hpcflow_new2-0.2.0a9.tar.gz --markdown 20230520/h/hpcflow-new2/0.2.0a8-0.2.0a9/diff.md --exclude *.pyd
+[2023-05-20 18:16:51] INFO root fetch - processPackages [trogon]: Downloading https://files.pythonhosted.org/packages/3f/cf/2b2c305168df63928bec38cf1f4b81a60b4ac62ee9139892832fd7c3bf29/trogon-0.2.0.tar.gz
+[2023-05-20 18:16:51] INFO root fetch - processPackages [haloop]: Downloading https://files.pythonhosted.org/packages/70/7e/86b3039a321cd844b12e05a205bb4e7faf435027d6cdbee87ce9c24ff48e/haloop-0.0.8.tar.gz
+[2023-05-20 18:16:52] INFO root fetch - processPackages [trogon]: executing diffoscope
+[2023-05-20 18:16:52] INFO root fetch - processPackages [trogon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trogon-0.1.0.tar.gz tmp/trogon-0.2.0.tar.gz --markdown 20230520/t/trogon/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-20 18:16:52] INFO root fetch - processPackages [on-rails]: Downloading https://files.pythonhosted.org/packages/c5/34/adcebd712553669590d774e8bc432eca87f7e0fc2826aabb5746d62dcc3a/on_rails-4.2.0.tar.gz
+[2023-05-20 18:16:52] INFO root fetch - processPackages [haloop]: executing diffoscope
+[2023-05-20 18:16:52] INFO root fetch - processPackages [haloop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haloop-0.0.7.tar.gz tmp/haloop-0.0.8.tar.gz --markdown 20230520/h/haloop/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-20 18:16:52] INFO root fetch - processPackages [on-rails]: executing diffoscope
+[2023-05-20 18:16:52] INFO root fetch - processPackages [on-rails]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/on_rails-4.1.0.tar.gz tmp/on_rails-4.2.0.tar.gz --markdown 20230520/o/on-rails/4.1.0-4.2.0/diff.md --exclude *.pyd
+[2023-05-20 18:16:53] INFO root fetch - main [MainThread]: End processing [trogon]: success
+[2023-05-20 18:16:53] INFO root fetch - main [MainThread]: End processing [haloop]: success
+[2023-05-20 18:16:53] INFO root fetch - main [MainThread]: End processing [hpcflow-new2]: success
+[2023-05-20 18:16:53] INFO root fetch - main [MainThread]: End processing [on-rails]: success
+[2023-05-20 18:16:53] INFO root fetch - main [MainThread]: Store serial: [18183231]
