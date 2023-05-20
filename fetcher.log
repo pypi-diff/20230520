@@ -5641,3 +5641,24 @@
 [2023-05-20 05:50:57] INFO root fetch - processPackages [dicomsdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dicomsdl-0.109.1-cp39-cp39-win_amd64.whl.zip tmp/dicomsdl-0.109.2-cp311-cp311-musllinux_1_1_x86_64.whl.zip --markdown 20230520/d/dicomsdl/0.109.1-0.109.2/diff.md --exclude *.pyd
 [2023-05-20 05:50:59] INFO root fetch - main [MainThread]: End processing [dicomsdl]: success
 [2023-05-20 05:50:59] INFO root fetch - main [MainThread]: Store serial: [18179531]
+[2023-05-20 05:56:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179531]
+[2023-05-20 05:56:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-20 05:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: baiduads-sdk-auto
+[2023-05-20 05:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wsgi_lithium
+[2023-05-20 05:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: baiduads-sdk
+[2023-05-20 05:56:08] INFO root fetch - processPackages [baiduads-sdk-auto]: New version: [2023.1.0] Old Version: [2023.0.0]
+[2023-05-20 05:56:08] WARNING root fetch - processPackages [wsgi_lithium]: Skipping, unable to determine old version
+[2023-05-20 05:56:08] INFO root fetch - main [MainThread]: End processing [wsgi_lithium] error
+[2023-05-20 05:56:08] INFO root fetch - processPackages [baiduads-sdk]: New version: [2023.1.0] Old Version: [2023.0.0]
+[2023-05-20 05:56:09] INFO root fetch - processPackages [baiduads-sdk-auto]: Downloading https://files.pythonhosted.org/packages/51/96/8610f7233ff447c55383ea588406c4326fc62e73a30b3e5a90d387b492ed/baiduads-sdk-auto-2023.0.0.tar.gz
+[2023-05-20 05:56:09] INFO root fetch - processPackages [baiduads-sdk]: Downloading https://files.pythonhosted.org/packages/ad/3a/6b524cc1ffbb35dc3c2f9714486449590a354681498bd0297883a497f3e5/baiduads-sdk-2023.0.0.tar.gz
+[2023-05-20 05:56:09] INFO root fetch - processPackages [baiduads-sdk]: Downloading https://files.pythonhosted.org/packages/4b/e9/90c617d11297c4a1bbf5230f67084862dc7cf3c22ee709cfcb5e31c0ec6f/baiduads-sdk-2023.1.0.tar.gz
+[2023-05-20 05:56:09] INFO root fetch - processPackages [baiduads-sdk-auto]: Downloading https://files.pythonhosted.org/packages/12/68/f8ad943f6c9a30f09e1f2aa6aedadbe83ca4195cbc8ff3ce1f73260b2a22/baiduads-sdk-auto-2023.1.0.tar.gz
+[2023-05-20 05:56:09] INFO root fetch - processPackages [baiduads-sdk]: executing diffoscope
+[2023-05-20 05:56:09] INFO root fetch - processPackages [baiduads-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baiduads-sdk-2023.0.0.tar.gz tmp/baiduads-sdk-2023.1.0.tar.gz --markdown 20230520/b/baiduads-sdk/2023.0.0-2023.1.0/diff.md --exclude *.pyd
+[2023-05-20 05:56:10] INFO root fetch - processPackages [baiduads-sdk-auto]: executing diffoscope
+[2023-05-20 05:56:10] INFO root fetch - processPackages [baiduads-sdk-auto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baiduads-sdk-auto-2023.0.0.tar.gz tmp/baiduads-sdk-auto-2023.1.0.tar.gz --markdown 20230520/b/baiduads-sdk-auto/2023.0.0-2023.1.0/diff.md --exclude *.pyd
+[2023-05-20 05:56:10] INFO root fetch - main [MainThread]: End processing [baiduads-sdk]: success
+[2023-05-20 05:59:10] ERROR root fetch - processPackages [baiduads-sdk-auto]: Timeout during execution of pkgdiff
+[2023-05-20 05:59:10] INFO root fetch - main [MainThread]: End processing [baiduads-sdk-auto] error
+[2023-05-20 05:59:10] INFO root fetch - main [MainThread]: Store serial: [18179575]
