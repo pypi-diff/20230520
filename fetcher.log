@@ -7522,3 +7522,26 @@
 [2023-05-20 11:05:39] INFO root fetch - main [MainThread]: End processing [autogluon.cloud]: success
 [2023-05-20 11:05:44] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-20 11:05:44] INFO root fetch - main [MainThread]: Store serial: [18180791]
+[2023-05-20 11:10:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18180791]
+[2023-05-20 11:10:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 11:10:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kfish
+[2023-05-20 11:10:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-redisdb
+[2023-05-20 11:10:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: RI-Corrector
+[2023-05-20 11:10:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mmigrator
+[2023-05-20 11:10:53] INFO root fetch - processPackages [kfish]: New version: [99.0.202305200905] Old Version: [99.0.202305200845]
+[2023-05-20 11:10:53] WARNING root fetch - processPackages [mmigrator]: Skipping, unable to determine old version
+[2023-05-20 11:10:53] INFO root fetch - processPackages [cdk-redisdb]: New version: [0.0.23] Old Version: [0.0.22]
+[2023-05-20 11:10:53] INFO root fetch - main [MainThread]: End processing [mmigrator] error
+[2023-05-20 11:10:53] WARNING root fetch - processPackages [RI-Corrector]: Skipping, unable to determine old version
+[2023-05-20 11:10:53] INFO root fetch - main [MainThread]: End processing [RI-Corrector] error
+[2023-05-20 11:10:53] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/6d/af/dc9f2953b90bdca1b0aeb02ff8bd433aaba79088aace80223dab1dfe84e6/kfish-99.0.202305200845-py3-none-any.whl
+[2023-05-20 11:10:53] INFO root fetch - processPackages [cdk-redisdb]: Downloading https://files.pythonhosted.org/packages/f6/ba/606b3107743ba7cb5b9a02f37497c8d729b319145962c87d071a15ab9238/cdk-redisdb-0.0.22.tar.gz
+[2023-05-20 11:10:53] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/84/28/59deeb413626e284f82c7333d6e7111f6e2fc4c4cdbde299ff507072460d/kfish-99.0.202305200905-py3-none-any.whl
+[2023-05-20 11:10:53] INFO root fetch - processPackages [cdk-redisdb]: Downloading https://files.pythonhosted.org/packages/81/a9/81d65c1ce082b28cb72e120cd0afc2720e9ecdb76c85d2c00db450ce8413/cdk-redisdb-0.0.23.tar.gz
+[2023-05-20 11:10:53] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-05-20 11:10:53] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202305200845-py3-none-any.whl.zip tmp/kfish-99.0.202305200905-py3-none-any.whl.zip --markdown 20230520/k/kfish/99.0.202305200845-99.0.202305200905/diff.md --exclude *.pyd
+[2023-05-20 11:10:53] INFO root fetch - processPackages [cdk-redisdb]: executing diffoscope
+[2023-05-20 11:10:53] INFO root fetch - processPackages [cdk-redisdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-redisdb-0.0.22.tar.gz tmp/cdk-redisdb-0.0.23.tar.gz --markdown 20230520/c/cdk-redisdb/0.0.22-0.0.23/diff.md --exclude *.pyd
+[2023-05-20 11:10:54] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-05-20 11:10:55] INFO root fetch - main [MainThread]: End processing [cdk-redisdb]: success
+[2023-05-20 11:10:55] INFO root fetch - main [MainThread]: Store serial: [18180804]
