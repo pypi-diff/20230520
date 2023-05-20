@@ -11015,3 +11015,85 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 17:43:54] INFO root fetch - main [MainThread]: End processing [itkwasm-dicom]: success
 [2023-05-20 17:44:43] INFO root fetch - main [MainThread]: End processing [itkwasm-dicom-wasi]: success
 [2023-05-20 17:44:43] INFO root fetch - main [MainThread]: Store serial: [18183102]
+[2023-05-20 17:49:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183102]
+[2023-05-20 17:49:55] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-20 17:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-tbase-config
+[2023-05-20 17:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: db-able
+[2023-05-20 17:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dbtdocgen-rutryk
+[2023-05-20 17:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: playsoundsimple.py
+[2023-05-20 17:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-tbase-config
+[2023-05-20 17:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hazm
+[2023-05-20 17:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bosch-control-panel-cc880p
+[2023-05-20 17:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: econuker
+[2023-05-20 17:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sluyspy
+[2023-05-20 17:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: jestspectation
+[2023-05-20 17:49:55] INFO root fetch - processPackages [django-tbase-config]: New version: [2023.5.2016845975] Old Version: [2023.5.2016845974]
+[2023-05-20 17:49:55] INFO root fetch - processPackages [db-able]: New version: [2.1.6] Old Version: [2.1.5]
+[2023-05-20 17:49:55] INFO root fetch - processPackages [dbtdocgen-rutryk]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-20 17:49:55] INFO root fetch - processPackages [econuker]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-20 17:49:56] INFO root fetch - processPackages [sluyspy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-20 17:49:56] INFO root fetch - processPackages [django-tbase-config]: New version: [2023.5.2016845975] Old Version: [2023.5.2016845974]
+[2023-05-20 17:49:56] INFO root fetch - processPackages [playsoundsimple.py]: New version: [0.7.0] Old Version: [0.6.3]
+[2023-05-20 17:49:56] INFO root fetch - processPackages [jestspectation]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-20 17:49:56] INFO root fetch - processPackages [hazm]: New version: [0.9.0] Old Version: [0.7.0]
+[2023-05-20 17:49:56] INFO root fetch - processPackages [bosch-control-panel-cc880p]: New version: [3.1.2] Old Version: [3.1.1]
+[2023-05-20 17:49:56] INFO root fetch - processPackages [sluyspy]: executing diffoscope
+[2023-05-20 17:49:56] INFO root fetch - processPackages [sluyspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sluyspy-0.0.8.tar.gz tmp/sluyspy-0.0.9.tar.gz --markdown 20230520/s/sluyspy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-20 17:49:56] INFO root fetch - processPackages [django-tbase-config]: Downloading https://files.pythonhosted.org/packages/ec/fa/810783d50c8ecfd0d8e10982c75ea11d0d180716e53bd269c00ae5510564/django_tbase_config-2023.5.2016845974.tar.gz
+[2023-05-20 17:49:56] INFO root fetch - processPackages [django-tbase-config]: Downloading https://files.pythonhosted.org/packages/ec/fa/810783d50c8ecfd0d8e10982c75ea11d0d180716e53bd269c00ae5510564/django_tbase_config-2023.5.2016845974.tar.gz
+[2023-05-20 17:49:56] INFO root fetch - processPackages [dbtdocgen-rutryk]: Downloading https://files.pythonhosted.org/packages/b9/07/78b72f0b64f70bcb611854e559a58f6cfec668cd5f14dcec5715c2895335/dbtdocgen_rutryk-0.0.1.tar.gz
+[2023-05-20 17:49:56] INFO root fetch - processPackages [db-able]: Downloading https://files.pythonhosted.org/packages/14/4e/bcc7eb103cb3cf494308775acee38724cf2a173c67bbad6eaf42223f103f/db-able-2.1.5.tar.gz
+[2023-05-20 17:49:56] INFO root fetch - processPackages [jestspectation]: Downloading https://files.pythonhosted.org/packages/f8/74/9c2960790ab19f7a6530fd74f0722b098d04740e0e438361d2f85cf985fc/jestspectation-1.0.0.tar.gz
+[2023-05-20 17:49:56] INFO root fetch - processPackages [econuker]: Downloading https://files.pythonhosted.org/packages/9a/25/661b87a575e4932d236657087a3133561b8849c506f946896899432b7993/econuker-1.0.6.tar.gz
+[2023-05-20 17:49:56] INFO root fetch - processPackages [bosch-control-panel-cc880p]: Downloading https://files.pythonhosted.org/packages/95/61/5c4e69876138574d6d2fcb186f1b6f27333cf99b0992b461519a6f199f06/bosch-control-panel-cc880p-3.1.1.tar.gz
+[2023-05-20 17:49:56] INFO root fetch - processPackages [playsoundsimple.py]: Downloading https://files.pythonhosted.org/packages/dc/6d/101d4c32f964987fd5ed701cc6f8b43211bcc60fa3cb7b65f26a478b49ec/playsoundsimple.py-0.6.3-py3-none-any.whl
+[2023-05-20 17:49:56] INFO root fetch - processPackages [hazm]: Downloading https://files.pythonhosted.org/packages/70/3e/df5da64eabfcb25f3e58e45bdeca3b806c18d57800fb94d584c5608fca07/hazm-0.7.0.tar.gz
+[2023-05-20 17:49:56] INFO root fetch - processPackages [econuker]: executing diffoscope
+[2023-05-20 17:49:56] INFO root fetch - processPackages [econuker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/econuker-1.0.5.tar.gz tmp/econuker-1.0.6.tar.gz --markdown 20230520/e/econuker/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-20 17:49:56] INFO root fetch - processPackages [django-tbase-config]: Downloading https://files.pythonhosted.org/packages/8f/a4/49ab0baea15a3c5897bbb0fe926ab497dfee7ce557441f411dc8b3942789/django_tbase_config-2023.5.2016845975.tar.gz
+[2023-05-20 17:49:56] INFO root fetch - processPackages [django-tbase-config]: Downloading https://files.pythonhosted.org/packages/8f/a4/49ab0baea15a3c5897bbb0fe926ab497dfee7ce557441f411dc8b3942789/django_tbase_config-2023.5.2016845975.tar.gz
+[2023-05-20 17:49:56] INFO root fetch - processPackages [jestspectation]: Downloading https://files.pythonhosted.org/packages/38/30/319fe08dd035dde47ca4199a1d386908753186818091d96f8917397a1b46/jestspectation-1.1.0.tar.gz
+[2023-05-20 17:49:56] INFO root fetch - processPackages [dbtdocgen-rutryk]: Downloading https://files.pythonhosted.org/packages/84/37/43ae90f7624337e449ec80f5d3324bbdb605473522305afa994a29af54f0/dbtdocgen_rutryk-0.0.2.tar.gz
+[2023-05-20 17:49:56] INFO root fetch - processPackages [bosch-control-panel-cc880p]: Downloading https://files.pythonhosted.org/packages/67/02/561c9283e147543ba0b83f8695cd4ae65369ce99c9a2e66ec85d31c0383f/bosch-control-panel-cc880p-3.1.2.tar.gz
+[2023-05-20 17:49:56] INFO root fetch - processPackages [db-able]: Downloading https://files.pythonhosted.org/packages/c8/fe/948906c153afc51b74415e263cac8bf5d59f23997d3910e35afbd3df6d0c/db-able-2.1.6.tar.gz
+[2023-05-20 17:49:56] INFO root fetch - processPackages [jestspectation]: executing diffoscope
+[2023-05-20 17:49:56] INFO root fetch - processPackages [jestspectation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jestspectation-1.0.0.tar.gz tmp/jestspectation-1.1.0.tar.gz --markdown 20230520/j/jestspectation/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-20 17:49:56] INFO root fetch - processPackages [playsoundsimple.py]: Downloading https://files.pythonhosted.org/packages/b8/a6/dff70c4c81e253b203a5d996c9289e451c0e408133754e6e76db07c4959f/playsoundsimple.py-0.7.0-py3-none-any.whl
+[2023-05-20 17:49:56] INFO root fetch - processPackages [hazm]: Downloading https://files.pythonhosted.org/packages/92/a2/165800629f61f121de2fb0ff988a328747442eb259f755d499dd09734c05/hazm-0.9.0.tar.gz
+[2023-05-20 17:49:56] INFO root fetch - processPackages [django-tbase-config]: executing diffoscope
+[2023-05-20 17:49:56] INFO root fetch - processPackages [django-tbase-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_tbase_config-2023.5.2016845974.tar.gz tmp/django_tbase_config-2023.5.2016845975.tar.gz --markdown 20230520/d/django-tbase-config/2023.5.2016845974-2023.5.2016845975/diff.md --exclude *.pyd
+[2023-05-20 17:49:56] INFO root fetch - processPackages [dbtdocgen-rutryk]: executing diffoscope
+[2023-05-20 17:49:56] INFO root fetch - processPackages [dbtdocgen-rutryk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbtdocgen_rutryk-0.0.1.tar.gz tmp/dbtdocgen_rutryk-0.0.2.tar.gz --markdown 20230520/d/dbtdocgen-rutryk/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-20 17:49:56] INFO root fetch - processPackages [django-tbase-config]: executing diffoscope
+[2023-05-20 17:49:56] INFO root fetch - processPackages [django-tbase-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_tbase_config-2023.5.2016845974.tar.gz tmp/django_tbase_config-2023.5.2016845975.tar.gz --markdown 20230520/d/django-tbase-config/2023.5.2016845974-2023.5.2016845975/diff.md --exclude *.pyd
+[2023-05-20 17:49:56] INFO root fetch - processPackages [bosch-control-panel-cc880p]: executing diffoscope
+[2023-05-20 17:49:56] INFO root fetch - processPackages [bosch-control-panel-cc880p]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bosch-control-panel-cc880p-3.1.1.tar.gz tmp/bosch-control-panel-cc880p-3.1.2.tar.gz --markdown 20230520/b/bosch-control-panel-cc880p/3.1.1-3.1.2/diff.md --exclude *.pyd
+[2023-05-20 17:49:56] INFO root fetch - processPackages [db-able]: executing diffoscope
+[2023-05-20 17:49:56] INFO root fetch - processPackages [db-able]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/db-able-2.1.5.tar.gz tmp/db-able-2.1.6.tar.gz --markdown 20230520/d/db-able/2.1.5-2.1.6/diff.md --exclude *.pyd
+[2023-05-20 17:49:56] INFO root fetch - processPackages [hazm]: executing diffoscope
+[2023-05-20 17:49:56] INFO root fetch - processPackages [hazm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hazm-0.7.0.tar.gz tmp/hazm-0.9.0.tar.gz --markdown 20230520/h/hazm/0.7.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-20 17:49:56] INFO root fetch - processPackages [playsoundsimple.py]: executing diffoscope
+[2023-05-20 17:49:56] INFO root fetch - processPackages [playsoundsimple.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/playsoundsimple.py-0.6.3-py3-none-any.whl.zip tmp/playsoundsimple.py-0.7.0-py3-none-any.whl.zip --markdown 20230520/p/playsoundsimple.py/0.6.3-0.7.0/diff.md --exclude *.pyd
+[2023-05-20 17:49:57] INFO root fetch - processPackages [sluyspy]: Start processing: django-tbase-post
+[2023-05-20 17:49:57] INFO root fetch - main [MainThread]: End processing [sluyspy]: success
+[2023-05-20 17:49:57] INFO root fetch - processPackages [django-tbase-post]: New version: [2023.5.2016845976] Old Version: [2023.5.2016845969]
+[2023-05-20 17:49:57] INFO root fetch - processPackages [econuker]: Start processing: memory-graph
+[2023-05-20 17:49:57] INFO root fetch - main [MainThread]: End processing [econuker]: success
+[2023-05-20 17:49:57] INFO root fetch - processPackages [memory-graph]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-20 17:49:57] INFO root fetch - processPackages [django-tbase-post]: Downloading https://files.pythonhosted.org/packages/b4/28/ced7afa07411d0eb6e8fabd4d76424d96530212cafd2e3c9b48ab8f26354/django_tbase_post-2023.5.2016845976.tar.gz
+[2023-05-20 17:49:58] INFO root fetch - processPackages [memory-graph]: Downloading https://files.pythonhosted.org/packages/65/40/1a01c09db34769c22f3eebabfbcbf1d01505dcaec93c99cc2901e0d4c58a/memory_graph-0.1.4.tar.gz
+[2023-05-20 17:49:58] INFO root fetch - processPackages [django-tbase-post]: executing diffoscope
+[2023-05-20 17:49:58] INFO root fetch - processPackages [django-tbase-post]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_tbase_post-2023.5.2016845969.tar.gz tmp/django_tbase_post-2023.5.2016845976.tar.gz --markdown 20230520/d/django-tbase-post/2023.5.2016845969-2023.5.2016845976/diff.md --exclude *.pyd
+[2023-05-20 17:49:58] INFO root fetch - main [MainThread]: End processing [django-tbase-config]: success
+[2023-05-20 17:49:58] INFO root fetch - processPackages [memory-graph]: executing diffoscope
+[2023-05-20 17:49:58] INFO root fetch - processPackages [memory-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memory_graph-0.1.3.tar.gz tmp/memory_graph-0.1.4.tar.gz --markdown 20230520/m/memory-graph/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-20 17:49:58] INFO root fetch - main [MainThread]: End processing [dbtdocgen-rutryk]: success
+[2023-05-20 17:49:58] INFO root fetch - main [MainThread]: End processing [django-tbase-config]: success
+[2023-05-20 17:49:58] INFO root fetch - main [MainThread]: End processing [jestspectation]: success
+[2023-05-20 17:49:58] INFO root fetch - main [MainThread]: End processing [hazm]: success
+[2023-05-20 17:49:59] INFO root fetch - main [MainThread]: End processing [bosch-control-panel-cc880p]: success
+[2023-05-20 17:49:59] INFO root fetch - main [MainThread]: End processing [playsoundsimple.py]: success
+[2023-05-20 17:49:59] INFO root fetch - main [MainThread]: End processing [db-able]: success
+[2023-05-20 17:50:00] INFO root fetch - main [MainThread]: End processing [memory-graph]: success
+[2023-05-20 17:50:40] INFO root fetch - main [MainThread]: End processing [django-tbase-post]: success
+[2023-05-20 17:50:40] INFO root fetch - main [MainThread]: Store serial: [18183139]
