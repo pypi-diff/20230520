@@ -10221,3 +10221,43 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 16:04:06] INFO root fetch - main [MainThread]: End processing [gpt-term]: success
 [2023-05-20 16:04:13] INFO root fetch - main [MainThread]: End processing [alexandria3k]: success
 [2023-05-20 16:04:13] INFO root fetch - main [MainThread]: Store serial: [18182552]
+[2023-05-20 16:09:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182552]
+[2023-05-20 16:09:22] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-20 16:09:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oarepo-model-builder-files
+[2023-05-20 16:09:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pylint-beautifulsoup
+[2023-05-20 16:09:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mitmproxy2swagger
+[2023-05-20 16:09:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: archeSetup
+[2023-05-20 16:09:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: neopolitan
+[2023-05-20 16:09:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: requests-html2
+[2023-05-20 16:09:23] WARNING root fetch - processPackages [requests-html2]: Skipping, unable to determine old version
+[2023-05-20 16:09:23] INFO root fetch - main [MainThread]: End processing [requests-html2] error
+[2023-05-20 16:09:23] INFO root fetch - processPackages [pylint-beautifulsoup]: New version: [3.12.3] Old Version: [17.10.12]
+[2023-05-20 16:09:23] INFO root fetch - processPackages [archeSetup]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-20 16:09:23] INFO root fetch - processPackages [oarepo-model-builder-files]: New version: [4.0.0] Old Version: [3.1.5]
+[2023-05-20 16:09:23] INFO root fetch - processPackages [mitmproxy2swagger]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-05-20 16:09:23] INFO root fetch - processPackages [neopolitan]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 16:09:23] INFO root fetch - processPackages [pylint-beautifulsoup]: Downloading https://files.pythonhosted.org/packages/8b/1f/03040b70d1d7c24e304b1cc9109e89593650e49f7381ddec14526624584c/pylint-beautifulsoup-17.10.12.tar.gz
+[2023-05-20 16:09:23] INFO root fetch - processPackages [mitmproxy2swagger]: Downloading https://files.pythonhosted.org/packages/ae/d4/9b90cb1d434d3d1b19bc78dfff263cb67b96ad775ef432ce1b5a2080bd28/mitmproxy2swagger-0.8.2.tar.gz
+[2023-05-20 16:09:23] INFO root fetch - processPackages [archeSetup]: Downloading https://files.pythonhosted.org/packages/55/0a/76589f9df4846437e5e307cac92a2ad9bdabce1ba5f8be370c7a396afd28/archeSetup-0.0.4.tar.gz
+[2023-05-20 16:09:23] INFO root fetch - processPackages [oarepo-model-builder-files]: Downloading https://files.pythonhosted.org/packages/a8/47/ffab8dac68b09a6c4bd1be18d8e79a6542fcdac4691487f4ecf88774adc6/oarepo-model-builder-files-3.1.5.tar.gz
+[2023-05-20 16:09:23] INFO root fetch - processPackages [neopolitan]: Downloading https://files.pythonhosted.org/packages/82/fd/cfe7abfc0a0fc620899bdb1731b862dbd2ed1adefd5c647417f24efd5294/neopolitan-0.1.8.tar.gz
+[2023-05-20 16:09:23] INFO root fetch - processPackages [archeSetup]: executing diffoscope
+[2023-05-20 16:09:23] INFO root fetch - processPackages [archeSetup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/archeSetup-0.0.3.tar.gz tmp/archeSetup-0.0.4.tar.gz --markdown 20230520/a/archeSetup/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-20 16:09:23] INFO root fetch - processPackages [pylint-beautifulsoup]: Downloading https://files.pythonhosted.org/packages/23/33/14aa43f54798720d7f2e9371de69e9e02b906ddefdf245e2e00a24b7f784/pylint-beautifulsoup-3.12.3.tar.gz
+[2023-05-20 16:09:23] INFO root fetch - processPackages [oarepo-model-builder-files]: Downloading https://files.pythonhosted.org/packages/e8/f0/6efdab81bad57603bd241729bda0d79d886308bd949fc8da4d562abdc936/oarepo-model-builder-files-4.0.0.tar.gz
+[2023-05-20 16:09:23] INFO root fetch - processPackages [mitmproxy2swagger]: Downloading https://files.pythonhosted.org/packages/e6/c6/305a4bd276e70544277e661267892502b38651a292b4d6b8b49a09065e7a/mitmproxy2swagger-0.9.0.tar.gz
+[2023-05-20 16:09:23] INFO root fetch - processPackages [pylint-beautifulsoup]: executing diffoscope
+[2023-05-20 16:09:23] INFO root fetch - processPackages [pylint-beautifulsoup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylint-beautifulsoup-17.10.12.tar.gz tmp/pylint-beautifulsoup-3.12.3.tar.gz --markdown 20230520/p/pylint-beautifulsoup/17.10.12-3.12.3/diff.md --exclude *.pyd
+[2023-05-20 16:09:23] INFO root fetch - processPackages [oarepo-model-builder-files]: executing diffoscope
+[2023-05-20 16:09:23] INFO root fetch - processPackages [oarepo-model-builder-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oarepo-model-builder-files-3.1.5.tar.gz tmp/oarepo-model-builder-files-4.0.0.tar.gz --markdown 20230520/o/oarepo-model-builder-files/3.1.5-4.0.0/diff.md --exclude *.pyd
+[2023-05-20 16:09:23] INFO root fetch - processPackages [neopolitan]: Downloading https://files.pythonhosted.org/packages/00/65/b41ff523baaf805c0854f263e01e6607c4304683730b1e063ca7deb47d55/neopolitan-0.1.9.tar.gz
+[2023-05-20 16:09:23] INFO root fetch - processPackages [mitmproxy2swagger]: executing diffoscope
+[2023-05-20 16:09:23] INFO root fetch - processPackages [mitmproxy2swagger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mitmproxy2swagger-0.8.2.tar.gz tmp/mitmproxy2swagger-0.9.0.tar.gz --markdown 20230520/m/mitmproxy2swagger/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-05-20 16:09:23] INFO root fetch - processPackages [neopolitan]: executing diffoscope
+[2023-05-20 16:09:23] INFO root fetch - processPackages [neopolitan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neopolitan-0.1.8.tar.gz tmp/neopolitan-0.1.9.tar.gz --markdown 20230520/n/neopolitan/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 16:09:24] INFO root fetch - main [MainThread]: End processing [archeSetup]: success
+[2023-05-20 16:09:24] INFO root fetch - main [MainThread]: End processing [pylint-beautifulsoup]: success
+[2023-05-20 16:09:25] INFO root fetch - main [MainThread]: End processing [oarepo-model-builder-files]: success
+[2023-05-20 16:09:25] INFO root fetch - main [MainThread]: End processing [mitmproxy2swagger]: success
+[2023-05-20 16:10:06] INFO root fetch - main [MainThread]: End processing [neopolitan]: success
+[2023-05-20 16:10:06] INFO root fetch - main [MainThread]: Store serial: [18182570]
