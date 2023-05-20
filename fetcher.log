@@ -11891,3 +11891,57 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 19:27:10] INFO root fetch - main [MainThread]: End processing [chap]: success
 [2023-05-20 19:27:10] INFO root fetch - main [MainThread]: End processing [lokiunimore]: success
 [2023-05-20 19:27:10] INFO root fetch - main [MainThread]: Store serial: [18183530]
+[2023-05-20 19:32:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18183530]
+[2023-05-20 19:32:21] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-20 19:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyrofork-dev
+[2023-05-20 19:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crazy-thursday
+[2023-05-20 19:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytket-qir
+[2023-05-20 19:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mlm8s
+[2023-05-20 19:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: teenstudy
+[2023-05-20 19:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-simplewebsite-deploy
+[2023-05-20 19:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: align4d
+[2023-05-20 19:32:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: MoskaEngine
+[2023-05-20 19:32:21] INFO root fetch - processPackages [pytket-qir]: New version: [0.2.0rc2] Old Version: [0.2.0rc1]
+[2023-05-20 19:32:21] INFO root fetch - processPackages [mlm8s]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-20 19:32:21] INFO root fetch - processPackages [teenstudy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 19:32:21] INFO root fetch - processPackages [MoskaEngine]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-20 19:32:21] INFO root fetch - processPackages [align4d]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-20 19:32:21] INFO root fetch - processPackages [pyrofork-dev]: New version: [2.1.8.dev202305201726] Old Version: [2.1.8.dev202305201705]
+[2023-05-20 19:32:21] INFO root fetch - processPackages [cdk-simplewebsite-deploy]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-20 19:32:21] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.5.9.1] Old Version: [2023.5.9.0]
+[2023-05-20 19:32:21] INFO root fetch - processPackages [pytket-qir]: Downloading https://files.pythonhosted.org/packages/59/f4/b397f36a950f674cd1124b48ca88abf469bf17b16ef7041d90d0636256f9/pytket_qir-0.2.0rc1-py3-none-any.whl
+[2023-05-20 19:32:21] INFO root fetch - processPackages [MoskaEngine]: Downloading https://files.pythonhosted.org/packages/75/39/7aafba2be3015b15736f1dd60537af34ce0c7ae4567e1edf9877a580d834/MoskaEngine-0.1.4.tar.gz
+[2023-05-20 19:32:21] INFO root fetch - processPackages [align4d]: Downloading https://files.pythonhosted.org/packages/57/66/570a8b21860cb00ffd1ed15981dd70be5c7bd3ed0496b1f01a5092db4524/align4d-1.1.3.tar.gz
+[2023-05-20 19:32:21] INFO root fetch - processPackages [pyrofork-dev]: Downloading https://files.pythonhosted.org/packages/cd/6f/11c5ce6d2c4b3d8c358d25bd213fa93e5db2cf2966a60816de8470436e80/pyrofork_dev-2.1.8.dev202305201726.tar.gz
+[2023-05-20 19:32:21] INFO root fetch - processPackages [mlm8s]: Downloading https://files.pythonhosted.org/packages/b3/11/ea76cadf04339572e7e700178961609f12b97d08947092a42f7611e54584/mlm8s-1.0.1.tar.gz
+[2023-05-20 19:32:21] INFO root fetch - processPackages [teenstudy]: Downloading https://files.pythonhosted.org/packages/23/e6/b39a06922b37a39c778e41279b1eb1af1bddd6e6de042ca863abcf9c8ec1/TeenStudy-0.1.8.tar.gz
+[2023-05-20 19:32:21] INFO root fetch - processPackages [cdk-simplewebsite-deploy]: Downloading https://files.pythonhosted.org/packages/02/09/509568941e2977294b6ec9c2c0e2cac9e1ce7100d236a2d2edb7092f92f6/cdk-simplewebsite-deploy-2.0.8.tar.gz
+[2023-05-20 19:32:21] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-05-20 19:32:21] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.5.9.0.tar.gz tmp/crazy-thursday-2023.5.9.1.tar.gz --markdown 20230520/c/crazy-thursday/2023.5.9.0-2023.5.9.1/diff.md --exclude *.pyd
+[2023-05-20 19:32:21] INFO root fetch - processPackages [align4d]: executing diffoscope
+[2023-05-20 19:32:21] INFO root fetch - processPackages [align4d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/align4d-1.1.2.tar.gz tmp/align4d-1.1.3.tar.gz --markdown 20230520/a/align4d/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-20 19:32:21] INFO root fetch - processPackages [pyrofork-dev]: executing diffoscope
+[2023-05-20 19:32:21] INFO root fetch - processPackages [pyrofork-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrofork_dev-2.1.8.dev202305201705.tar.gz tmp/pyrofork_dev-2.1.8.dev202305201726.tar.gz --markdown 20230520/p/pyrofork-dev/2.1.8.dev202305201705-2.1.8.dev202305201726/diff.md --exclude *.pyd
+[2023-05-20 19:32:21] INFO root fetch - processPackages [pytket-qir]: Downloading https://files.pythonhosted.org/packages/9a/4a/4781f828a3cdab83f52811d8476cdb280d9aff4ff08efdbc6094c3983012/pytket_qir-0.2.0rc2-py3-none-any.whl
+[2023-05-20 19:32:21] INFO root fetch - processPackages [mlm8s]: Downloading https://files.pythonhosted.org/packages/37/80/83c1b70a7e4a73e191ef1bc4a8653c5b26ba30ed6fbbc33dd4ee25e9c017/mlm8s-1.0.2.tar.gz
+[2023-05-20 19:32:21] INFO root fetch - processPackages [MoskaEngine]: Downloading https://files.pythonhosted.org/packages/fe/c2/f0b231c9d0ff4f50de363379a5c82685582904d0ae7422cf3d563a60605b/MoskaEngine-0.1.5.tar.gz
+[2023-05-20 19:32:21] INFO root fetch - processPackages [mlm8s]: executing diffoscope
+[2023-05-20 19:32:21] INFO root fetch - processPackages [mlm8s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlm8s-1.0.1.tar.gz tmp/mlm8s-1.0.2.tar.gz --markdown 20230520/m/mlm8s/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-20 19:32:21] INFO root fetch - processPackages [pytket-qir]: executing diffoscope
+[2023-05-20 19:32:21] INFO root fetch - processPackages [pytket-qir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytket_qir-0.2.0rc1-py3-none-any.whl.zip tmp/pytket_qir-0.2.0rc2-py3-none-any.whl.zip --markdown 20230520/p/pytket-qir/0.2.0rc1-0.2.0rc2/diff.md --exclude *.pyd
+[2023-05-20 19:32:21] INFO root fetch - processPackages [cdk-simplewebsite-deploy]: Downloading https://files.pythonhosted.org/packages/a5/35/77391fb27067de60169cb289bd2577928fdd4a47f364673fe38812583ee9/cdk-simplewebsite-deploy-2.0.9.tar.gz
+[2023-05-20 19:32:21] WARNING root fetch - processPackages [MoskaEngine]: Skipping package: exceeds size limit 16454886>=10485760
+[2023-05-20 19:32:21] INFO root fetch - main [MainThread]: End processing [MoskaEngine] error
+[2023-05-20 19:32:22] INFO root fetch - processPackages [cdk-simplewebsite-deploy]: executing diffoscope
+[2023-05-20 19:32:22] INFO root fetch - processPackages [cdk-simplewebsite-deploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-simplewebsite-deploy-2.0.8.tar.gz tmp/cdk-simplewebsite-deploy-2.0.9.tar.gz --markdown 20230520/c/cdk-simplewebsite-deploy/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-20 19:32:22] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-05-20 19:32:22] INFO root fetch - main [MainThread]: End processing [align4d]: success
+[2023-05-20 19:32:23] INFO root fetch - main [MainThread]: End processing [cdk-simplewebsite-deploy]: success
+[2023-05-20 19:32:23] INFO root fetch - processPackages [teenstudy]: Downloading https://files.pythonhosted.org/packages/37/d7/986f7405655a83d924279abc6314bd618c438ccbcd3ab060fe1d45e05287/TeenStudy-0.1.9.tar.gz
+[2023-05-20 19:32:23] INFO root fetch - main [MainThread]: End processing [pytket-qir]: success
+[2023-05-20 19:32:23] INFO root fetch - processPackages [teenstudy]: executing diffoscope
+[2023-05-20 19:32:23] INFO root fetch - processPackages [teenstudy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TeenStudy-0.1.8.tar.gz tmp/TeenStudy-0.1.9.tar.gz --markdown 20230520/t/teenstudy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 19:32:23] INFO root fetch - main [MainThread]: End processing [mlm8s]: success
+[2023-05-20 19:32:26] INFO root fetch - main [MainThread]: End processing [teenstudy]: success
+[2023-05-20 19:32:48] INFO root fetch - main [MainThread]: End processing [pyrofork-dev]: success
+[2023-05-20 19:32:48] INFO root fetch - main [MainThread]: Store serial: [18183554]
