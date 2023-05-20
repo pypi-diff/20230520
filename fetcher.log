@@ -5662,3 +5662,18 @@
 [2023-05-20 05:59:10] ERROR root fetch - processPackages [baiduads-sdk-auto]: Timeout during execution of pkgdiff
 [2023-05-20 05:59:10] INFO root fetch - main [MainThread]: End processing [baiduads-sdk-auto] error
 [2023-05-20 05:59:10] INFO root fetch - main [MainThread]: Store serial: [18179575]
+[2023-05-20 06:04:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18179575]
+[2023-05-20 06:04:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-20 06:04:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: polygon-finance
+[2023-05-20 06:04:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: textagon
+[2023-05-20 06:04:18] INFO root fetch - processPackages [textagon]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-20 06:04:18] INFO root fetch - processPackages [polygon-finance]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-20 06:04:18] INFO root fetch - processPackages [textagon]: executing diffoscope
+[2023-05-20 06:04:18] INFO root fetch - processPackages [textagon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textagon-0.1.6.tar.gz tmp/textagon-0.1.7.tar.gz --markdown 20230520/t/textagon/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-20 06:04:18] INFO root fetch - processPackages [polygon-finance]: Downloading https://files.pythonhosted.org/packages/e0/74/b2497956cdbb12cf2dc0560d1ae01fe12c7a1e516c56a95eb56bf84b59ed/polygon_finance-1.0.5.tar.gz
+[2023-05-20 06:04:19] INFO root fetch - processPackages [polygon-finance]: Downloading https://files.pythonhosted.org/packages/a9/4e/b057f8bd7753be70930802a341f1926fe44d9a83d4f809426a846a12136f/polygon_finance-1.0.6.tar.gz
+[2023-05-20 06:04:19] INFO root fetch - processPackages [polygon-finance]: executing diffoscope
+[2023-05-20 06:04:19] INFO root fetch - processPackages [polygon-finance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polygon_finance-1.0.5.tar.gz tmp/polygon_finance-1.0.6.tar.gz --markdown 20230520/p/polygon-finance/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-20 06:04:20] INFO root fetch - main [MainThread]: End processing [textagon]: success
+[2023-05-20 06:04:21] INFO root fetch - main [MainThread]: End processing [polygon-finance]: success
+[2023-05-20 06:04:21] INFO root fetch - main [MainThread]: Store serial: [18179587]
