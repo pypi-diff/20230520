@@ -10621,3 +10621,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 16:57:42] INFO root fetch - main [MainThread]: End processing [pyloobins]: success
 [2023-05-20 16:57:45] INFO root fetch - main [MainThread]: End processing [temboz]: success
 [2023-05-20 16:57:45] INFO root fetch - main [MainThread]: Store serial: [18182784]
+[2023-05-20 17:02:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18182784]
+[2023-05-20 17:02:54] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-20 17:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tryceratops
+[2023-05-20 17:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-stock-picking-invoicing
+[2023-05-20 17:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: file-and-string-encryption
+[2023-05-20 17:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chanfig
+[2023-05-20 17:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PyTraffic
+[2023-05-20 17:02:54] INFO root fetch - processPackages [tryceratops]: New version: [2.3.1] Old Version: [2.3.0]
+[2023-05-20 17:02:54] WARNING root fetch - processPackages [odoo-addon-stock-picking-invoicing]: Skipping, unable to determine old version
+[2023-05-20 17:02:54] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-picking-invoicing] error
+[2023-05-20 17:02:54] INFO root fetch - processPackages [chanfig]: New version: [0.0.9.post7] Old Version: [0.0.9.post5]
+[2023-05-20 17:02:54] INFO root fetch - processPackages [file-and-string-encryption]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-20 17:02:54] INFO root fetch - processPackages [PyTraffic]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-20 17:02:54] INFO root fetch - processPackages [tryceratops]: Downloading https://files.pythonhosted.org/packages/a9/8b/f6327cbfeb8b8a747cc3e949054410d89bb2c196f30d1ba990e24ac3665f/tryceratops-2.3.1.tar.gz
+[2023-05-20 17:02:54] INFO root fetch - processPackages [PyTraffic]: Downloading https://files.pythonhosted.org/packages/da/6b/7afc8c17180513014e415a051d658d9963976f8db5ab898dde511092e459/PyTraffic-1.1.3.tar.gz
+[2023-05-20 17:02:54] INFO root fetch - processPackages [chanfig]: Downloading https://files.pythonhosted.org/packages/9c/95/3464fcb2ce09549672e7ef758061448ee3c098e9227e8fd3d9ff272e3f1c/chanfig-0.0.9.post5.tar.gz
+[2023-05-20 17:02:54] INFO root fetch - processPackages [file-and-string-encryption]: Downloading https://files.pythonhosted.org/packages/b3/c9/80e564a4fa777afc33adac630e4366bfff4713d6b8d63589f64df119a865/file_and_string_encryption-0.0.3.tar.gz
+[2023-05-20 17:02:54] WARNING root fetch - processPackages [PyTraffic]: Skipping package: exceeds size limit 53117552>=10485760
+[2023-05-20 17:02:54] INFO root fetch - main [MainThread]: End processing [PyTraffic] error
+[2023-05-20 17:02:54] INFO root fetch - processPackages [file-and-string-encryption]: executing diffoscope
+[2023-05-20 17:02:54] INFO root fetch - processPackages [file-and-string-encryption]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/file_and_string_encryption-0.0.2.tar.gz tmp/file_and_string_encryption-0.0.3.tar.gz --markdown 20230520/f/file-and-string-encryption/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-20 17:02:54] INFO root fetch - processPackages [tryceratops]: executing diffoscope
+[2023-05-20 17:02:54] INFO root fetch - processPackages [tryceratops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tryceratops-2.3.0.tar.gz tmp/tryceratops-2.3.1.tar.gz --markdown 20230520/t/tryceratops/2.3.0-2.3.1/diff.md --exclude *.pyd
+[2023-05-20 17:02:55] INFO root fetch - processPackages [chanfig]: Downloading https://files.pythonhosted.org/packages/8c/b9/eed7fd81e144603e27c017fb099cfcb7eb4f36c186f1c76bd2eab7350b7f/chanfig-0.0.9.post7.tar.gz
+[2023-05-20 17:02:55] INFO root fetch - processPackages [chanfig]: executing diffoscope
+[2023-05-20 17:02:55] INFO root fetch - processPackages [chanfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chanfig-0.0.9.post5.tar.gz tmp/chanfig-0.0.9.post7.tar.gz --markdown 20230520/c/chanfig/0.0.9.post5-0.0.9.post7/diff.md --exclude *.pyd
+[2023-05-20 17:02:55] INFO root fetch - main [MainThread]: End processing [file-and-string-encryption]: success
+[2023-05-20 17:02:56] INFO root fetch - main [MainThread]: End processing [tryceratops]: success
+[2023-05-20 17:03:38] INFO root fetch - main [MainThread]: End processing [chanfig]: success
+[2023-05-20 17:03:38] INFO root fetch - main [MainThread]: Store serial: [18182799]
