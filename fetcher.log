@@ -13183,3 +13183,29 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-20 22:28:11] INFO root fetch - main [MainThread]: End processing [TMDBTraktSyncer]: success
 [2023-05-20 22:28:12] INFO root fetch - main [MainThread]: End processing [dorado]: success
 [2023-05-20 22:28:12] INFO root fetch - main [MainThread]: Store serial: [18184171]
+[2023-05-20 22:33:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18184171]
+[2023-05-20 22:33:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-20 22:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: molecule-multipass
+[2023-05-20 22:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sapx
+[2023-05-20 22:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crossmark-jotform-api
+[2023-05-20 22:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-lav
+[2023-05-20 22:33:22] INFO root fetch - processPackages [molecule-multipass]: New version: [0.4.9] Old Version: [0.4.7]
+[2023-05-20 22:33:22] INFO root fetch - processPackages [crossmark-jotform-api]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-20 22:33:22] INFO root fetch - processPackages [sapx]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-20 22:33:22] INFO root fetch - processPackages [py-lav]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-20 22:33:22] INFO root fetch - processPackages [molecule-multipass]: executing diffoscope
+[2023-05-20 22:33:22] INFO root fetch - processPackages [molecule-multipass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/molecule_multipass-0.4.7.tar.gz tmp/molecule_multipass-0.4.9.tar.gz --markdown 20230520/m/molecule-multipass/0.4.7-0.4.9/diff.md --exclude *.pyd
+[2023-05-20 22:33:22] INFO root fetch - processPackages [py-lav]: executing diffoscope
+[2023-05-20 22:33:22] INFO root fetch - processPackages [py-lav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_lav-1.9.0.tar.gz tmp/py_lav-1.9.1.tar.gz --markdown 20230520/p/py-lav/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-20 22:33:22] INFO root fetch - processPackages [sapx]: Downloading https://files.pythonhosted.org/packages/27/27/89f9a5b0116908fd2ae9913a7c258aef5e0a5e2f4b253c34990bfb759c69/sapx-0.1.8.tar.gz
+[2023-05-20 22:33:22] INFO root fetch - processPackages [crossmark-jotform-api]: Downloading https://files.pythonhosted.org/packages/29/0e/4baa84d97c7592fe4067a28c060c7021ad965947fcb98418842f76ce408e/crossmark-jotform-api-0.3.3.tar.gz
+[2023-05-20 22:33:22] INFO root fetch - processPackages [crossmark-jotform-api]: executing diffoscope
+[2023-05-20 22:33:22] INFO root fetch - processPackages [crossmark-jotform-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crossmark-jotform-api-0.3.2.tar.gz tmp/crossmark-jotform-api-0.3.3.tar.gz --markdown 20230520/c/crossmark-jotform-api/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-20 22:33:22] INFO root fetch - processPackages [sapx]: Downloading https://files.pythonhosted.org/packages/5b/05/bb11875f582c00540be87c66c5a948911aa4b7d582d75efba2d5cafe881a/sapx-0.1.9.tar.gz
+[2023-05-20 22:33:22] INFO root fetch - processPackages [sapx]: executing diffoscope
+[2023-05-20 22:33:22] INFO root fetch - processPackages [sapx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230520:/home/abi/fetcher/20230520:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sapx-0.1.8.tar.gz tmp/sapx-0.1.9.tar.gz --markdown 20230520/s/sapx/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-20 22:33:23] INFO root fetch - main [MainThread]: End processing [molecule-multipass]: success
+[2023-05-20 22:33:24] INFO root fetch - main [MainThread]: End processing [sapx]: success
+[2023-05-20 22:34:00] INFO root fetch - main [MainThread]: End processing [crossmark-jotform-api]: success
+[2023-05-20 22:34:08] INFO root fetch - main [MainThread]: End processing [py-lav]: success
+[2023-05-20 22:34:08] INFO root fetch - main [MainThread]: Store serial: [18184183]
